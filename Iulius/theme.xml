@@ -19,6 +19,12 @@
     </text>
   </genericbutton>
   
+  <logo>
+    <position>566,36</position>
+    <image>mythtv-logo.png</image>
+  </logo>
+
+  <!--
   <titles>
     <position>65,36</position>
     <image mode="TV">title/title_tv.png</image>
@@ -49,5 +55,6 @@
     <image mode="OPTICAL_DISK">title/title_blank.png</image>
     <image mode="UTIL">title/title_blank.png</image>
   </titles>
+  -->
 
 </myththeme>

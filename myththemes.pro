@@ -8,7 +8,7 @@ TEMPLATE = app
 CONFIG -= moc qt
 
 themes.path = $${PREFIX}/share/mythtv/themes/
-themes.files = Iulius Minimalist-wide Titivillus Titivillus-OSD
+themes.files = Iulius Minimalist-wide Titivillus Titivillus-OSD isthmus
 
 INSTALLS += themes
 

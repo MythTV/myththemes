@@ -2,7 +2,7 @@
 
   <!-- if timeformat is set to 'FROMSETTINGS', it will use the time format
        specified in the general mythtv settings -->
-  <timeformat>h:mm ap</timeformat>
+  <timeformat>FROMSETTINGS</timeformat>
   <fadeaway>30</fadeaway>
 
   <font name="notifyfont">
@@ -79,14 +79,14 @@
     </textarea>
     <textarea name="description">
       <multiline>yes</multiline>
-      <area>100,405,500,61</area>
+      <area>100,405,500,71</area>
       <font>infofont</font>
       <value>%SUBTITLE|"|" %%DESCRIPTION%</value>
     </textarea>
     <textarea name="starttime">
       <area>100,378,440,20</area>
       <font>grayfont</font>
-      <value>(%STARTTIME% - %ENDTIME%)  %LENMINS%</value>
+      <value>(%ORIGINALAIRDATE% %STARTTIME% - %ENDTIME%)  %LENMINS%</value>
     </textarea> 
     <image name="channelicon">
       <position>25,354</position>
@@ -115,7 +115,7 @@
     </textarea>
     <textarea name="description">
       <multiline>yes</multiline>
-      <area>100,405,500,61</area>
+      <area>100,405,500,71</area>
       <font>infofont</font>
       <value>%SUBTITLE|"|" %%DESCRIPTION%</value>
     </textarea>

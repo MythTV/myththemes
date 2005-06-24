@@ -9,20 +9,21 @@
       <shadow>2,2</shadow>
       <bold>yes</bold>
     </font>
+   
    <font name="title" base="basefont" face="Arial Black">
       <!--<color>#ffffdd</color>-->
       <color>#DEEAF9</color>
       <dropcolor>#000000</dropcolor>
-      <size>24</size>
+      <size>22</size>
       <size:big>24</size:big>
       <size:small>18</size:small>
     </font>
     
     <font name="subtitle" base="basefont"  face="Arial Black">
       <color>#ffffdd</color>
-      <size>22</size>
-      <size:big>24</size:big>
-      <size:small>20</size:small>
+      <size>18</size>
+      <size:big>20</size:big>
+      <size:small>16</size:small>
     </font>
     
     <font name="info" base="basefont">
@@ -95,7 +96,7 @@
     </font>
 
   <background style="normal">
-    <image>background.jpg</image>
+    <image>button-background.jpg</image>
     <buttonspread>yes</buttonspread>
     <balancerows>no</balancerows>
     <buttonarea>15,215,1250,400</buttonarea>
@@ -104,7 +105,7 @@
   </background>
 
   <titles>
-    <position>20,10</position>
+    <position>0,80</position>
     <image mode="TV">title/title_tv.png</image>
     <image mode="MAIN">title/title_main.png</image>
     <image mode="MUSIC">title/title_music.png</image>
@@ -113,7 +114,7 @@
     <image mode="SCHEDULE">title/title_schedule.png</image>
     <image mode="SEARCH">title/title_search.png</image>
     <image mode="SETUP">title/title_setup.png</image>
-    <image mode="MEDIA_SETUP">title/media_setup.png</image>
+    <image mode="MEDIA_SETUP">title/title_media_settings.png</image>
     <image mode="INFO_SETUP">title/title_info_setup.png</image>
     <image mode="TVSETUP">title/title_tv_setup.png</image>
     <image mode="DVD">title/title_dvd.png</image>
@@ -134,17 +135,14 @@
     <active>button_off.png</active>
     <text>
       <area>0,0,0,0</area>
-<!--       <area>50,8,3,0</area> -->
-      <color>#DEEAF9</color>
-<!--       <color>white</color> -->
-<!--       <fontname>Kimberley</fontname> -->
+      <color>#8AAAF8</color>
       <fontname>Freesans</fontname>
       <fontsize>21</fontsize>
       <bold>yes</bold>
       <italics>no</italics>
       <centered>yes</centered>
       <outline>
-         <color>black</color>
+         <color>#41517D</color>
          <size>1</size>
       </outline>
       <shadow>
@@ -155,16 +153,14 @@
     </text>
     <activetext>
     <area>0,0,0,0</area>
-<!--       <area>50,8,3,0</area> -->
-<!--       <color>#000000</color> -->
-      <color>#3C5574</color>
+      <color>#D1F1FF</color>
       <fontname>Freesans</fontname>
       <fontsize>21</fontsize>
       <bold>yes</bold>
       <italics>no</italics>
       <centered>yes</centered>
     <outline>
-         <color>black</color>
+         <color>#41517D</color>
          <size>2</size>
       </outline>
       <!--<shadow>

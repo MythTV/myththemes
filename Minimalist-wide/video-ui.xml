@@ -531,21 +531,13 @@
                 <filename>playback_box/pbb_back.png</filename>
                 <position>0,3</position>
             </image>
-<!--            <image name="titlelines" draworder="0" fleximage="no">
-                <filename>shared/trans-titles.png</filename>
-                <position>0,10</position>
-            </image>-->
-            <!--<image name="morefiller" draworder="0" fleximage="no">
-                <filename>mv_other_background.png</filename>
-                <position>0,300</position>
-            </image> -->
         </container>
 
         <container name="videoselector">
-            <area>0,0,1280,413</area>
+            <area>30,23,1250,413</area>
             <image name="titlelines" draworder="3" fleximage="no">
-              <filename>shared/trans-titles.png</filename>
-              <position>-1,1</position>
+                <filename>shared/trans-titles.png</filename>
+                <position>-1,1</position>
             </image>
             <managedtreelist name="videotreelist" draworder="4" bins="2">
                 <area>20,20,1240,413</area>
@@ -555,30 +547,24 @@
                 <image function="leftarrow" filename="leftarrow.png"></image>
                 <image function="rightarrow" filename="rightarrow.png"></image>
                 <bin number="1">
-                    <area>0,0,310,410</area>
+                    <area>0,15,310,295</area>
                     <fcnfont name="list-active" function="active"></fcnfont>
                     <fcnfont name="list-inactive" function="inactive"></fcnfont>
                     <fcnfont name="list-selected" function="selected"></fcnfont>
                     <fcnfont name="list-selectable" function="selectable"></fcnfont>
                 </bin>
                 <bin number="2">
-                    <area>335,10,900,410</area>
+                    <area>310,10,890,305</area>
                     <fcnfont name="list-active" function="active"></fcnfont>
                     <fcnfont name="list-selected" function="selected"></fcnfont>
                     <fcnfont name="list-inactive" function="inactive"></fcnfont>
                     <fcnfont name="list-selectable" function="selectable"></fcnfont>
                 </bin>
             </managedtreelist>
-
-            <image name="showinglines" draworder="5" fleximage="yes">
-                <filename>playback_box/showings.png</filename>
-                <position>0,0</position>
-            </image>
-    
         </container>
 
         <container name="videoinfo">
-            <area>0,440,1280,300</area>
+            <area>30,390,1240,300</area>
             <textarea name="video_title" draworder="4">
                 <area>40,0,580,44</area>
                 <font>title</font>
@@ -604,21 +590,21 @@
             </textarea>
             <image name="video_poster" draworder="1" fleximage="no">
 <!--                 <area>1048,495,174,174</area> -->
-                <position>1048,55</position>
+                <position>1034,55</position>
                 <staticsize>166,215</staticsize>
             </image>
             <textarea name="help" draworder="4" align="left">
-                <area>30,237,565,40</area>
+                <area>30,257,565,40</area>
                 <font>help</font>
                 <value>MENU - Options    INFO - Action Menu</value>
             </textarea>
             <textarea name="pl_label" draworder="4" align="left">
-                <area>680,237,360,40</area>
+                <area>680,257,360,40</area>
                 <font>info</font>
                 <value>Current Parental Level: </value>
             </textarea>
             <textarea name="pl_value" draworder="4">
-                <area>1000,237,20,40</area>
+                <area>1000,257,20,40</area>
                 <font>info</font>
                 <value>1</value>
             </textarea>

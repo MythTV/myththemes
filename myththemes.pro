@@ -1,6 +1,4 @@
-isEmpty( PREFIX ) {
-  PREFIX = /usr/local
-}
+include ( mythconfig.mak )
 
 QMAKE_STRIP = echo
 

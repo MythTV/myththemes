@@ -189,14 +189,14 @@
     <container name="moviesel">
         <area>207,100,640,360</area>
         <listarea name="listing" draworder="4">
-            <area>10,30,625,330</area>
+            <area>40,10,595,310</area>
             <fcnfont name="list-active" function="active"></fcnfont>
             <fcnfont name="list-inactive" function="inactive"></fcnfont>
             <fcnfont name="list-selected" function="selected"></fcnfont>
             <columnpadding>10</columnpadding>
-            <column number="1" width="600" context="-1"></column>
+            <column number="1" width="590" context="-1"></column>
             <items>11</items>
-            <image function="selectionbar" filename="video/imdb-selectbar.png" location="-14,-5"></image>
+            <image function="selectionbar" filename="video/imdb-selectbar.png" location="-34,-5"></image>
             <image function="uparrow" filename="uparrow.png" location="350,15"></image>
             <image function="downarrow" filename="downarrow.png" location="350,330"></image>
         </listarea>

@@ -8,134 +8,108 @@
 <mythuitheme>
     <!-- music selection screen -->
     <window name="music_select">
-      <font name="active" base="list-inactive">
-         <color>#ffffff</color>
-      </font>
+        <font name="active" base="list-inactive">
+            <color>#ffffff</color>
+        </font>
 
-      <font name="inactive" base="list-inactive">
-        <color>#9999cc</color>
-      </font>
+        <font name="inactive" base="list-inactive">
+            <color>#9999cc</color>
+        </font>
 
-      <container name="musictree">
-        <area>40,20,1280,400</area>
+        <container name="musictree">
+            <area>40,20,1280,400</area>
 
-        <listtreearea name="musictree" draworder="0">
-          <area>0,0,1200,400</area>
-          <listsize>0,0,590,360</listsize>
-          <leveloffset>10</leveloffset>
-          <gradient type="unselected" start="#DDDDFF" end="#505050" alpha="100">
-          </gradient>
-          <gradient type="selected" start="#DDDDFF" end="#909090" alpha="255">
-          </gradient>
-          <fcnfont name="active" function="active"></fcnfont>
-          <fcnfont name="inactive" function="inactive"></fcnfont>
-        </listtreearea>
-      </container>
+            <listtreearea name="musictree" draworder="0">
+                <area>0,0,1200,400</area>
+                <listsize>0,0,590,360</listsize>
+                <leveloffset>10</leveloffset>
+                <gradient type="unselected" start="#DDDDFF" end="#505050" alpha="100"></gradient>
+                <gradient type="selected" start="#DDDDFF" end="#909090" alpha="255"></gradient>
+                <fcnfont name="active" function="active"></fcnfont>
+                <fcnfont name="inactive" function="inactive"></fcnfont>
+            </listtreearea>
+        </container>
 
-      <container name="info">
-        <area>0,410,1280,300</area>
+        <container name="info">
+            <area>0,410,1280,300</area>
 
-        <image name="background" draworder="0" fleximage="no">
-          <filename>music/mm-sel-bg.png</filename>
-          <position>0,0</position>
-        </image>
+            <image name="background" draworder="0" fleximage="no">
+                <filename>music/mm-sel-bg.png</filename>
+                <position>0,0</position>
+            </image>
 
-        <textarea name="line1" draworder="1" align="left">
-            <font>info</font>
-            <area>25,20,1200,30</area>
-            <cutdown>yes</cutdown>
-        </textarea>
+            <textarea name="line1" draworder="1" align="left">
+                <font>info</font>
+                <area>25,20,1200,30</area>
+                <cutdown>yes</cutdown>
+            </textarea>
  
-        <textarea name="line2" draworder="1" align="left">
-            <font>info</font>
-            <area>25,55,1200,30</area>
-            <cutdown>yes</cutdown>
-        </textarea>
+            <textarea name="line2" draworder="1" align="left">
+                <font>info</font>
+                <area>25,55,1200,30</area>
+                <cutdown>yes</cutdown>
+            </textarea>
   
-        <textarea name="line3" draworder="1" align="left">
-            <font>info</font>
-            <area>25,90,1200,30</area>
-            <cutdown>yes</cutdown>
-        </textarea>
+            <textarea name="line3" draworder="1" align="left">
+                <font>info</font>
+                <area>25,90,1200,30</area>
+                <cutdown>yes</cutdown>
+            </textarea>
   
-        <textarea name="line4" draworder="1" align="left">
-            <font>info</font>
-            <area>25,125,1200,30</area>
-            <cutdown>yes</cutdown>
-        </textarea>
+            <textarea name="line4" draworder="1" align="left">
+                <font>info</font>
+                <area>25,125,1200,30</area>
+                <cutdown>yes</cutdown>
+            </textarea>
   
-        <textarea name="line5" draworder="1" align="left">
-            <font>info</font>
-            <area>25,160,1200,30</area>
-            <cutdown>yes</cutdown>
-        </textarea>
+            <textarea name="line5" draworder="1" align="left">
+                <font>info</font>
+                <area>25,160,1200,30</area>
+                <cutdown>yes</cutdown>
+            </textarea>
   
-        <textarea name="line6" draworder="1" align="left">
-            <font>info</font>
-            <area>25,195,1200,30</area>
-            <cutdown>yes</cutdown>
-        </textarea>
-
-      </container>
-
-
+            <textarea name="line6" draworder="1" align="left">
+                <font>info</font>
+                <area>25,195,1200,30</area>
+                <cutdown>yes</cutdown>
+            </textarea>
+        </container>
     </window>
 
-    <!--
-        The play music screen
-    -->
+    <!-- The play music screen -->
     <window name="music_play">
-    
-        <!--
-            First, define all the fonts we need on this screen
-        -->
         <font name="active" face="Arial">
             <color>#ffffff</color>
             <size>17</size>
-	    <shadow>2,2</shadow>
-	    <bold>yes</bold>
+            <shadow>2,2</shadow>
+            <bold>yes</bold>
         </font>
 
         <font name="inactive" face="Arial">
             <color>#9999cc</color>
             <size>17</size>
-	    <shadow>2,2</shadow>
-	    <bold>yes</bold>
+            <shadow>2,2</shadow>
+            <bold>yes</bold>
         </font>
   
         <font name="selected" face="Arial">
             <color>#ffff00</color>
             <size>18</size>
-	    <shadow>2,2</shadow>
-	    <bold>yes</bold>
-        </font>
-
-        <font name="currenttitle" face="Arial">
-            <color>#DDDDFF</color>
-            <size>20</size>
-	    <shadow>3,3</shadow>
-            <bold>yes</bold>
-	    <bold>yes</bold>
-        </font>
-
-        <font name="currentartist" face="Arial">
-            <color>#ffffbb</color>
-            <size>18</size>
-	    <shadow>2,2</shadow>
+            <shadow>2,2</shadow>
             <bold>yes</bold>
         </font>
 
         <font name="infotext" face="Arial">
             <color>#ffffff</color>
             <size>16</size>
-	    <shadow>1,1</shadow>
-	    <bold>yes</bold>
+            <shadow>1,1</shadow>
+            <bold>yes</bold>
         </font>
 
         <font name="infotext2" face="Arial">
             <color>#ffffff</color>
             <size>16</size>
-	    <shadow>2,2</shadow>
+            <shadow>2,2</shadow>
             <bold>yes</bold>
         </font>
 
@@ -145,9 +119,7 @@
             <bold>yes</bold>
         </font>
 
-        <!--
-            The (unchanging) background
-        -->
+        <!-- The (unchanging) background-->
 
         <container name="background">
             <image name="filler" draworder="0" fleximage="yes">
@@ -171,9 +143,7 @@
             
         </container>
 
-        <!--
-            The view of playlists; tracks at the top
-        -->
+        <!-- The view of playlists; tracks at the top -->
         <container name="musicselector">
             <area>0,46,1280,395</area>
             <!--
@@ -188,7 +158,7 @@
                     regular area, but is only used if the user has
                     ShowWholeTree set to false.
                 -->
-                <area>40,10,1220,370</area>
+                <area>60,8,1170,300</area>
                 <!--
                     An image to show the current navigation node
                 -->
@@ -245,7 +215,7 @@
             </image>-->
             <textarea name="waiting_text" draworder="1" align="center">
                 <context>0</context>
-                <font>currenttitle</font>
+                <font>title</font>
                 <area>190,140,380,40</area>
                 <value>Please Wait...</value>
                 <value lang="DK">Vent venligst...</value>
@@ -275,7 +245,7 @@
         -->
 
         <container name="trackinfo">
-            <area>0,422,1280,298</area>
+            <area>15,380,1280,298</area>
 
 
             <textarea name="title_text" draworder="1" align="left">
@@ -311,7 +281,7 @@
 
             <textarea name="info_text" draworder="1" align="left">
                 <font>info</font>
-                <area>35,150,260,30</area>
+                <area>35,150,360,30</area>
             </textarea>
 
             <textarea name="time_text" draworder="1" align="center">
@@ -344,7 +314,7 @@
         -->
 
         <container name="musicbuttons">
-            <area>25,614,785,110</area>
+            <area>50,580,785,110</area>
             
             <textbutton name="shuffle_button" draworder="0">
                 <position>20,0</position>
@@ -379,49 +349,49 @@
             </textbutton>
 
             <pushbutton name="prev_button" draworder="0">
-                <position>10,40</position>
+                <position>10,50</position>
                 <image function="on" filename="music/cdplayer-prev.png"></image>
                 <image function="off" filename="music/cdplayer-prev.png"></image>
                 <image function="pushed" filename="music/cdplayer-prev.png"></image>
             </pushbutton>
             
             <pushbutton name="rew_button" draworder="0">
-                <position>125,40</position>
+                <position>125,50</position>
                 <image function="on" filename="music/cdplayer-backward.png"></image>
                 <image function="off" filename="music/cdplayer-backward.png"></image>
                 <image function="pushed" filename="music/cdplayer-backward.png"></image>
             </pushbutton>
             
             <pushbutton name="pause_button" draworder="0">
-                <position>240,40</position>
+                <position>240,50</position>
                 <image function="on" filename="music/cdplayer-pause.png"></image>
                 <image function="off" filename="music/cdplayer-pause.png"></image>
                 <image function="pushed" filename="music/cdplayer-pause.png"></image>
             </pushbutton>
             
             <pushbutton name="play_button" draworder="0">
-                <position>355,40</position>
+                <position>355,50</position>
                 <image function="on" filename="music/cdplayer-play.png"></image>
                 <image function="off" filename="music/cdplayer-play.png"></image>
                 <image function="pushed" filename="music/cdplayer-play.png"></image>
             </pushbutton>
             
             <pushbutton name="stop_button" draworder="0">
-                <position>470,40</position>
+                <position>470,50</position>
                 <image function="on" filename="music/cdplayer-stop.png"></image>
                 <image function="off" filename="music/cdplayer-stop.png"></image>
                 <image function="pushed" filename="music/cdplayer-stop.png"></image>
             </pushbutton>
             
             <pushbutton name="ff_button" draworder="0">
-                <position>585,40</position>
+                <position>585,50</position>
                 <image function="on" filename="music/cdplayer-forward.png"></image>
                 <image function="off" filename="music/cdplayer-forward.png"></image>
                 <image function="pushed" filename="music/cdplayer-forward.png"></image>
             </pushbutton>
             
             <pushbutton name="next_button" draworder="0">
-                <position>700,40</position>
+                <position>700,50</position>
                 <image function="on" filename="music/cdplayer-next.png"></image>
                 <image function="off" filename="music/cdplayer-next.png"></image>
                 <image function="pushed" filename="music/cdplayer-next.png"></image>

@@ -8,7 +8,7 @@ CONFIG -= moc qt
 !macx:QMAKE_COPY_DIR = sh ./cpsvndir
 
 themes.path = $${PREFIX}/share/mythtv/themes/
-themes.files = Iulius Minimalist-wide Titivillus Titivillus-OSD isthmus
+themes.files = Iulius Iulius-OSD Minimalist-wide Titivillus Titivillus-OSD isthmus
 
 INSTALLS += themes
 

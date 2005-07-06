@@ -148,25 +148,37 @@
   <container name="editmode">
     <image name="background">
       <filename>osd-edit-bg.png</filename>
-      <position>0,414</position>
+      <position>0,424</position>
     </image>
     <slider name="editslider" type="edit">
-	    <area>92,410,455,437</area>
+	    <area>92,420,455,437</area>
       <filename>blue.png</filename>
       <altfilename>red.png</altfilename>
     </slider>
     <slider name="editposition" type="position">
-      <area>92,405,455,415</area>
+      <area>92,415,455,415</area>
       <filename>position-indicator.png</filename>
     </slider>
     <editarrow name="left">
       <filename>cut-end.png</filename>
-      <area>92,411,455,470</area>
+      <area>92,421,455,470</area>
     </editarrow>
     <editarrow name="right">
       <filename>cut-start.png</filename>
-      <area>92,411,455,470</area>
+      <area>92,421,455,470</area>
     </editarrow>
+    <textarea name="timedisplay" align="right">
+      <area>246,48,330,30</area>
+      <font>settings</font>
+    </textarea>
+    <textarea name="cutindicator">
+      <area>64,48,100,30</area>
+      <font>settings</font>
+    </textarea>
+    <textarea name="seekamount" align="right">
+      <area>246,390,300,30</area>
+      <font>infofont</font>
+    </textarea>
   </container>
 
   <container name="settings">

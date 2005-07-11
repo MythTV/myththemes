@@ -1,606 +1,486 @@
 <mythuitheme>
 
-  <window name="programguide">
+<window name="programguide">
     <font name="descinfo2" base="info">
-      <color>#ffffee</color>
-      <size>16</size>
-      <size:small>14</size:small>
-      <size:big>18</size:big>
+        <!--<color>#ffffee</color>-->
+        <color>#000000</color>
+        <size>16</size>
+        <size:small>14</size:small>
+        <size:big>18</size:big>
+        <shadow>no</shadow>
     </font>
 
     <font name="descinfo"  base="info">
-      <color>#ffffff</color>
-      <size>16</size>
-      <size:small>11</size:small>
-      <size:big>18</size:big>
-      <shadow>3,3</shadow>
-      <bold>yes</bold>
+        <color>#ffffff</color>
+        <size>16</size>
+        <size:small>11</size:small>
+        <size:big>18</size:big>
+        <shadow>3,3</shadow>
+        <bold>yes</bold>
     </font>
 
     <font name="chaninfo"  base="info">
-      <shadow>1,1</shadow>
-      <color>#ffffff</color>
-      <size>14</size>
-      <size:small>12</size:small>
-      <size:big>15</size:big>
-      <bold>yes</bold>
+        <shadow>1,1</shadow>
+        <color>#ffffff</color>
+        <size>14</size>
+        <size:small>12</size:small>
+        <size:big>15</size:big>
+        <bold>yes</bold>
     </font>
 
     <font name="recstatus"  base="info">
-      <color>#ffff33</color>
-      <size>15</size>
-      <size:small>12</size:small>
-      <size:big>17</size:big>
-      <shadow>2,2</shadow>
-      <bold>yes</bold>
+        <color>#ffff33</color>
+        <size>15</size>
+        <size:small>12</size:small>
+        <size:big>17</size:big>
+        <shadow>2,2</shadow>
+        <bold>yes</bold>
     </font>
 
     <font name="small"  base="info">
-      <color>#ffff33</color>
-      <size>16</size>
-      <size:small>10</size:small>
-      <size:big>18</size:big>
+        <color>#ffff33</color>
+        <size>16</size>
+        <size:small>10</size:small>
+        <size:big>18</size:big>
     </font>
 
     <container name="background">
-      <image name="backup" draworder="0" fleximage="no">
-        <context>0</context>
-        <position>0,0</position>
-        <filename>guide/gg-background.png</filename>
-      </image>
+        <image name="backup" draworder="0" fleximage="no">
+            <context>0</context>
+            <position>0,0</position>
+            <filename>guide/gg-background.png</filename>
+        </image>
     </container>
 
-     <container name="date_info">
-      <area>20,210,115,25</area>
-      <textarea name="date" draworder="4" align="center">
-         <font>info</font>
-         <area>0,0,115,25</area>
-         <cutdown>no</cutdown>
-      </textarea>
+    <container name="date_info">
+        <area>20,210,115,25</area>
+        <textarea name="date" draworder="4" align="center">
+            <font>info</font>
+            <area>0,0,115,25</area>
+            <cutdown>no</cutdown>
+        </textarea>
     </container>
 
     <container name="chanbar">
-      <area>25,243,123,430</area>
-      <bar name="chans" draworder="4">
-        <area>0,0,123,430</area>
-        <textoffset>38,0</textoffset>
-        <iconoffset>3,10</iconoffset>
-        <iconsize>30,30</iconsize>
-        <orientation>vertical</orientation>
-        <align>allcenter</align>
-        <font>chaninfo</font>
-        <imagefile>guide/gg-chans-trans.png</imagefile>
-      </bar>
+        <area>30,242,123,430</area>
+        <bar name="chans" draworder="4">
+            <area>0,0,123,430</area>
+            <textoffset>38,0</textoffset>
+            <iconoffset>3,10</iconoffset>
+            <iconsize>30,30</iconsize>
+            <orientation>vertical</orientation>
+            <align>allcenter</align>
+            <font>chaninfo</font>
+            <imagefile>guide/gg-chans-trans.png</imagefile>
+        </bar>
     </container>
 
     <container name="timebar">
-      <area>153,212,1110,32</area>
-      <bar name="times" draworder="4">
-        <area>0,0,1110,32</area>
-        <align>allcenter</align>
-        <imagefile>guide/gg-times-trans.png</imagefile>
-        <font>info</font>
-      </bar>
+        <area>153,212,1110,32</area>
+        <bar name="times" draworder="4">
+            <area>0,0,1110,32</area>
+            <align>allcenter</align>
+            <imagefile>guide/gg-times-trans.png</imagefile>
+            <font>info</font>
+        </bar>
     </container>
 
     <container name="guide">
-      <area>155,243,1110,430</area>
-      <guidegrid name="guidegrid" draworder="4">
-        <area>0,0,1110,430</area>
-        <solidcolor>#003256</solidcolor>
-        <selector type="box" color="#ffff33"></selector>
-        <recordingcolor>#00aa00</recordingcolor>
-        <conflictingcolor>#ff6600</conflictingcolor>
-        <cutdown>no</cutdown>
-        <multiline>yes</multiline>
-        <textoffset>3,3</textoffset>
-        <catcolor category="Unknown" color="#222200"></catcolor>
-        <catcolor category="Shopping" color="#222200"></catcolor>
-        <catcolor category="Educational" color="CornflowerBlue"></catcolor>
-        <catcolor category="Adult" color="thistle3"></catcolor>
-        <catcolor category="Musical" color="turquoise3"></catcolor>
-        <catcolor category="News" color="DarkOrange3"></catcolor>
-        <catcolor category="Newsmagazine" color="DarkOrange3"></catcolor>
-        <catcolor category="Reality" color="sienna"></catcolor>
-        <catcolor category="Cooking" color="tan3"></catcolor>
-        <catcolor category="Documentary" color="goldenrod"></catcolor>
-        <catcolor category="Doc" color="goldenrod"></catcolor>
-        <catcolor category="Sports" color="DarkCyan"></catcolor>
-        <catcolor category="Sports event" color="DarkCyan"></catcolor>
-        <catcolor category="Sports non-event" color="DarkCyan"></catcolor>
-        <catcolor category="Sports talk" color="DarkCyan"></catcolor>
-        <catcolor category="Mystery" color="SlateGrey"></catcolor>
-        <catcolor category="Crime/Mystery" color="SlateGrey"></catcolor>
-        <catcolor category="Music" color="DarkRed"></catcolor>
-        <catcolor category="Music special" color="#aa0000"></catcolor>
-        <catcolor category="Movies" color="Blue"></catcolor>
-        <catcolor category="Drama" color="rosybrown3"></catcolor>
-        <catcolor category="Classic" color="grey62"></catcolor>
-        <catcolor category="Crime" color="MediumVioletRed"></catcolor>
-        <catcolor category="Crime drama" color="MediumVioletRed"></catcolor>
-        <catcolor category="Talk" color="MediumTurquoise"></catcolor>
-        <catcolor category="Western" color="#bbbb00"></catcolor>
-        <catcolor category="War" color="#dddd00"></catcolor>
-        <catcolor category="Comedy" color="#8800aa"></catcolor>
-        <catcolor category="Comedy-drama" color="#880099"></catcolor>
-        <catcolor category="Romance-comedy" color="#bb00aa"></catcolor>
-        <catcolor category="Sitcom" color="#880088"></catcolor>
+        <area>155,243,1110,430</area>
+        <guidegrid name="guidegrid" draworder="4">
+            <area>0,0,1110,430</area>
+            <solidcolor>#003256</solidcolor>
+            <selector type="box" color="#ffff33"></selector>
+            <recordingcolor>#00aa00</recordingcolor>
+            <conflictingcolor>#ff6600</conflictingcolor>
+            <cutdown>no</cutdown>
+            <multiline>yes</multiline>
+            <textoffset>3,3</textoffset>
+            <catcolor category="Action" color="#b4bde6"></catcolor>
+            <catcolor category="Action/Adv" color="#b4bde6"></catcolor>
+            <catcolor category="Adventure" color="#b4bde6"></catcolor>
+            <catcolor category="Adult" color="thistle3"></catcolor>
+            <catcolor category="Animals" color="#00ff44"></catcolor>
+            <catcolor category="Animated" color="#3333aa"></catcolor>
+            <catcolor category="Anthology" color="DarkOrchid"></catcolor>
+            <catcolor category="Auto" color="#a8bde8"></catcolor>
+            
+            <catcolor category="Biography" color="#e9ecf3"></catcolor>
+            <catcolor category="Bus./financial" color="#a89df4"></catcolor>
+            <catcolor category="Bus./financial" color="#a89df4"></catcolor>
+            
+            <catcolor category="Children" color="#707fb9"></catcolor>
+            <catcolor category="Childrens" color="#707fb9"></catcolor>
+            <catcolor category="Children's" color="#707fb9"></catcolor>
+            <catcolor category="Children-musical" color="#707fb9"></catcolor>
+            <catcolor category="Children-music" color="#707fb9"></catcolor>
+            <catcolor category="CINE" color="Blue"></catcolor>
+            <catcolor category="Classic" color="grey62"></catcolor>
+            <catcolor category="Comedy" color="#a4bdd6"></catcolor>
+            <catcolor category="Comedy-drama" color="#a4bdd6"></catcolor>
+            <catcolor category="Cooking" color="#b4cdd6"></catcolor>
+            <catcolor category="Classic" color="grey62"></catcolor>
+            <catcolor category="Crime" color="#c4bdd6"></catcolor>
+            <catcolor category="Crime drama" color="#c4bdd6"></catcolor>
+            <catcolor category="Crime/Mystery" color="#c4bdd6"></catcolor>
+                        
+            <catcolor category="Doc" color="#507fa9"></catcolor>
+            <catcolor category="Docudrama" color="#507fa9"></catcolor>
+            <catcolor category="DOCUMENTAL" color="#507fa9"></catcolor>
+            <catcolor category="Documentary" color="#507fa9"></catcolor>
+            <catcolor category="Drama" color="#4b5ca9"></catcolor>
+            
+            <catcolor category="Educational" color="CornflowerBlue"></catcolor>
+            <catcolor category="Excercise" color="#00dd99"></catcolor>
+            
+            <catcolor category="Fantasy" color="#b4bdc6"></catcolor>
+            <catcolor category="Fashion" color="#a8cdea"></catcolor>
+            <catcolor category="Food/Travel" color="#aa00aa"></catcolor>
+            
+            <catcolor category="Game" color="#507f99"></catcolor>
+            <catcolor category="Game show" color="#507f99"></catcolor>
+            
+            <catcolor category="Historical drama" color="#4b5c79"></catcolor>
+            <catcolor category="Home/How-to" color="#a8bde8"></catcolor>
+            <catcolor category="Home improvement" color="#a8bde8"></catcolor>
+            <catcolor category="Horror" color="#c8bdd4"></catcolor>
+            <catcolor category="How-to" color="#a8bde8"></catcolor>
+            <catcolor category="House/garden" color="#a8bde8"></catcolor>
+            
+            <catcolor category="Kids" color="#707fb9"></catcolor>
+            
+            <catcolor category="Live" color="#607fc9"></catcolor>
+            
+            <catcolor category="Movie" color="Blue"></catcolor>
+            <catcolor category="Movies" color="Blue"></catcolor>
+            <catcolor category="Music" color="#4b6c79"></catcolor>
+            <catcolor category="Musical" color="#4b6c79"></catcolor>
+            <catcolor category="Music special" color="#4b6c79"></catcolor>
+            <catcolor category="Mystery" color="SlateGrey"></catcolor>
+            
+            <catcolor category="Nature" color="#33ff99"></catcolor>
+            <catcolor category="News" color="#707fa9"></catcolor>
+            <catcolor category="news" color="#707fa9"></catcolor>
+            <catcolor category="Newsmagazine" color="#707fa9"></catcolor>
+            
+            <catcolor category="Public affairs" color="#b4bde6"></catcolor>
+            
+            <catcolor category="Reality" color="#5b5c79"></catcolor>
+            <catcolor category="Romance" color="#ff9999"></catcolor>
+            <catcolor category="Romance-comedy" color="#b4bdd6"></catcolor>
+            
+            <catcolor category="Science/Nature" color="#33ff99"></catcolor>
+            <catcolor category="Science fiction" color="#807fa9"></catcolor>
+            <catcolor category="SciFi" color="#807fa9"></catcolor>
+            <catcolor category="Sci-fi/Fantasy" color="#807c90"></catcolor>
+            <catcolor category="Self improvement" color="#00ffaa"></catcolor>
+            <catcolor category="Shopping" color="#222200"></catcolor>
+            <catcolor category="Sitcom" color="#b4bdd6"></catcolor>
+            <catcolor category="Soap" color="#b4bdd6"></catcolor>
+            <catcolor category="Special" color="#4b5c8e"></catcolor>
+            <catcolor category="Sports" color="DarkCyan"></catcolor>
+            <catcolor category="Sports event" color="DarkCyan"></catcolor>
+            <catcolor category="Sports non-event" color="DarkCyan"></catcolor>
+            <catcolor category="Sports talk" color="DarkCyan"></catcolor>
+            <catcolor category="Suspense" color="#c8bdd4"></catcolor>
+            
+            <catcolor category="Talk" color="#a8bde4"></catcolor>
+                        
+            <catcolor category="Unknown" color="#222200"></catcolor>
+            
+            <catcolor category="Weather" color="#e9ecf3"></catcolor>
+            
+            <catcolor category="Western" color="#bbbb00"></catcolor>
+            <catcolor category="War" color="#889dc9"></catcolor>
 
-        <catcolor category="Special" color="#ee0000"></catcolor>
-        <catcolor category="Animals" color="#00ff44"></catcolor>
-        <catcolor category="Nature" color="#33ff99"></catcolor>
-        <catcolor category="Science/Nature" color="#33ff99"></catcolor>
-  
-        <catcolor category="SciFi" color="#DD6666"></catcolor>
-        <catcolor category="Sci-fi/Fantasy" color="#aa6666"></catcolor>
-        <catcolor category="Fantasy" color="#996666"></catcolor>
-        <catcolor category="Science fiction" color="#DD6666"></catcolor>
-        <catcolor category="Horror" color="firebrick3"></catcolor>
+            <recordstatus type="SingleRecord" image="guide/gg-rs-single.png"></recordstatus>
+            <recordstatus type="TimeslotRecord" image="guide/gg-rs-timeslot.png"></recordstatus>
+            <recordstatus type="ChannelRecord" image="guide/gg-rs-channel.png"></recordstatus>
+            <recordstatus type="AllRecord" image="guide/gg-rs-all.png"></recordstatus>
+            <recordstatus type="WeekslotRecord" image="guide/gg-rs-weekslot.png"></recordstatus>
+            <recordstatus type="FindOneRecord" image="guide/gg-rs-findone.png"></recordstatus>
 
-        <catcolor category="Suspense" color="firebrick3"></catcolor>
-        <catcolor category="Action" color="maroon"></catcolor>
-        <catcolor category="Action/Adv" color="maroon"></catcolor>
-        <catcolor category="Adventure" color="maroon"></catcolor>
-        <catcolor category="Romance" color="#ff9999"></catcolor>
-
-        <catcolor category="Food/Travel" color="#aa00aa"></catcolor>
-        <catcolor category="Home/How-to" color="#00aa00"></catcolor>
-        <catcolor category="Home improvement" color="#00cc00"></catcolor>
-        <catcolor category="How-to" color="#00aa00"></catcolor>
-        <catcolor category="House/garden" color="#00ee00"></catcolor>
-        <catcolor category="Game" color="orchid"></catcolor>
-        <catcolor category="Children's" color="#3333ff"></catcolor>
-        <catcolor category="Children" color="#3333ff"></catcolor>
-        <catcolor category="Children-musical" color="#3333dd"></catcolor>
-        <catcolor category="Children-music" color="#3333dd"></catcolor>
-        <catcolor category="Kids" color="MediumSlateBlue"></catcolor>
-        <catcolor category="Anthology" color="DarkOrchid"></catcolor>
-        <catcolor category="CINE" color="Blue"></catcolor>
-        <catcolor category="SERIE" color="DarkOrchid"></catcolor>
-        <catcolor category="DOCUMENTAL" color="goldenrod"></catcolor>
-        <catcolor category="INFORMATIVO" color="DarkOrange3"></catcolor>
-        <catcolor category="DEPORTES" color="DarkCyan"></catcolor>
-        <catcolor category="FUTBOL" color="DarkCyan"></catcolor>
-        <catcolor category="MUSICAL" color="turquoise3"></catcolor>
-        <catcolor category="INFANTIL" color="MediumSlateBlue"></catcolor>
-        <catcolor category="MAGAZINE" color="MediumTurquoise"></catcolor>
-        <catcolor category="TIEMPO" color="#33ff99"></catcolor>
-        <catcolor category="SHOW" color="sienna"></catcolor>
-        <catcolor category="Animated" color="#3333aa"></catcolor>
-        <catcolor category="Game show" color="orchid"></catcolor>
-        <catcolor category="Docudrama" color="goldenrod"></catcolor>
-        <catcolor category="Self improvement" color="#00ffaa"></catcolor>
-        <catcolor category="Excercise" color="#00dd99"></catcolor>
-        <catcolor category="Bus./financial" color="DarkOrange3"></catcolor>
-
-
-                <!-- Categories introduced by tv_grab_au -->
-        <catcolor category="Childrens" color="MediumSlateBlue"></catcolor>
-        <catcolor category="Movie" color="Blue"></catcolor>
-        <catcolor category="Live" color="DarkOrange3"></catcolor>
-
-        <!-- categories used by the NextView EPG service -->
-        <!-- (available in some european countries) -->
-        <catcolor category="news" color="DarkOrange3"></catcolor>
-        <catcolor category="music/ballet/dance" color="DarkRed"></catcolor>
-        <catcolor category="sports" color="DarkCyan"></catcolor>
-        <catcolor category="series" color="DarkOrchid"></catcolor>
-        <catcolor category="social/political/economics" color="DarkOrange3"></catcolor>
-        <catcolor category="show/game show" color="MediumTurquoise"></catcolor>
-        <catcolor category="science" color="#33ff99"></catcolor>
-        <catcolor category="technology" color="#33ff99"></catcolor>
-        <catcolor category="kids" color="MediumSlateBlue"></catcolor>
-        <catcolor category="leisure hobbies" color="Red"></catcolor>
-        <catcolor category="tourism/travel" color="#aa00aa"></catcolor>
-        <catcolor category="arts/culture" color="goldenrod"></catcolor>
-        <catcolor category="movie" color="Blue"></catcolor>
-
-       <!-- Categories introduced by tv_grab_uk_rt -->
-        <catcolor category="Animation" color="MediumSlateBlue"></catcolor>
-        <catcolor category="Business" color="DarkOrange3"></catcolor>
-        <catcolor category="Children's Show" color="MediumSlateBlue"></catcolor>
-        <catcolor category="Consumer" color="goldenrod"></catcolor>
-        <catcolor category="Cookery" color="#aa00aa"></catcolor>
-        <catcolor category="Current Affairs" color="DarkOrange3"></catcolor>
-        <catcolor category="Drama Series" color="rosybrown3"></catcolor>
-        <catcolor category="Entertainment" color="DarkOrchid"></catcolor>
-        <catcolor category="Environment" color="#33ff99"></catcolor>
-        <catcolor category="Film" color="Blue"></catcolor>
-        <catcolor category="Game Show" color="orchid"></catcolor>
-        <catcolor category="Gardening" color="Red"></catcolor>
-        <catcolor category="Interests" color="Red"></catcolor>
-        <catcolor category="Music &amp; Arts" color="goldenrod"></catcolor>
-        <catcolor category="News &amp; Current Affairs" color="DarkOrange3"></catcolor>
-        <catcolor category="Religious" color="goldenrod"></catcolor>
-        <catcolor category="Sitcoms" color="DarkOrchid"></catcolor>
-        <catcolor category="Soaps" color="DarkOrchid"></catcolor>
-	<catcolor category="Soap" color="DarkOrchid"></catcolor>
-        <catcolor category="Sport" color="DarkCyan"></catcolor>
-        <catcolor category="Talk Show" color="MediumTurquoise"></catcolor>
-        <catcolor category="Transport" color="#33ff99"></catcolor>
-        <catcolor category="Travel" color="#aa00aa"></catcolor>
-
- <!-- Categories introduced by belgian and dutch grabbers teveblad.be -->
-        <catcolor category="nieuws" color="DarkOrange3"></catcolor>
-        <catcolor category="actua" color="sienna"></catcolor>
-        <catcolor category="documentaire" color="goldenrod"></catcolor>
-        <catcolor category="wielrennen" color="DarkCyan"></catcolor>
-        <catcolor category="sport" color="DarkCyan"></catcolor>
-        <catcolor category="voetbal" color="DarkCyan"></catcolor>
-        <catcolor category="soap" color="SlateGrey"></catcolor>
-        <catcolor category="muziek" color="DarkRed"></catcolor>
-        <catcolor category="film" color="Blue"></catcolor>
-        <catcolor category="talkshow" color="MediumTurquoise"></catcolor>
-        <catcolor category="serie" color="DarkOrchid"></catcolor>
-        <catcolor category="spelprogramma" color="orchid"></catcolor>
-        <catcolor category="quiz" color="orchid"></catcolor>
-        <catcolor category="kinderprogramma" color="MediumSlateBlue"></catcolor>
-        <catcolor category="tekenfilm" color="MediumSlateBlue"></catcolor>
-        <catcolor category="tekenfilm kind" color="MediumSlateBlue"></catcolor>
-
-
-        <!-- Categories introduced by tv_grab_jp -->
-        <catcolor category="ドラマ" color="rosybrown3"></catcolor>
-        <catcolor category="映画" color="Blue"></catcolor>
-        <catcolor category="スポーツ" color="DarkCyan"></catcolor>
-        <catcolor category="演劇・伝統芸" color="turquoise3"></catcolor>
-        <catcolor category="音楽" color="DarkRed"></catcolor>
-        <catcolor category="バラエティー" color="DarkOrchid"></catcolor>
-        <catcolor category="教養" color="CornflowerBlue"></catcolor>
-        <catcolor category="アニメ・キッズ" color="MediumSlateBlue"></catcolor>
-        <catcolor category="社会・報道" color="DarkOrange3"></catcolor>
-        <catcolor category="趣味・暮らし" color="goldenrod"></catcolor>
-
-        <recordstatus type="SingleRecord" image="guide/gg-rs-single.png"></recordstatus>
-        <recordstatus type="TimeslotRecord" image="guide/gg-rs-timeslot.png"></recordstatus>
-        <recordstatus type="ChannelRecord" image="guide/gg-rs-channel.png"></recordstatus>
-        <recordstatus type="AllRecord" image="guide/gg-rs-all.png"></recordstatus>
-        <recordstatus type="WeekslotRecord" image="guide/gg-rs-weekslot.png"></recordstatus>
-        <recordstatus type="FindOneRecord" image="guide/gg-rs-findone.png"></recordstatus>
-
-        <!--<arrow direction="left" image="guide/gg-arrow-left.png"></arrow>
-        <arrow direction="right" image="guide/gg-arrow-right.png"></arrow> -->
+            <arrow direction="left" image="gg-arrow-left.png"></arrow>
+            <arrow direction="right" image="gg-arrow-right.png"></arrow>
         <font>descinfo2</font>
       </guidegrid>
     </container>
 
     <container name="current_info">
-      <area>870,40,380,32</area>
-      <textarea name="time" draworder="4" align="right">
-        <area>0,0,380,30</area>
-        <cutdown>no</cutdown>
-        <font>info</font>
-      </textarea>
+        <area>870,40,380,32</area>
+        <textarea name="time" draworder="4" align="right">
+            <area>0,0,380,30</area>
+            <cutdown>no</cutdown>
+            <font>info</font>
+        </textarea>
     </container>
 
 
     <container name="program_info">
-      <area>5,20,1280,180</area>
-      <textarea name="title" draworder="4" align="left">
-        <area>25,10,1000,60</area>
-        <font>title</font>
-      </textarea>
-      <textarea name="subtitle" draworder="6">
-        <area>25,50,1200,40</area>
-        <font>subtitle</font>
-        <value>%SUBTITLE|"|"%</value>
-      </textarea>
-      <textarea name="description" draworder="6">
-        <area>25,90,1250,150</area>
-        <font>metadata</font>
-        <multiline>yes</multiline>
-        <value>%LONGREPEAT%%STARS%%DESCRIPTION%</value>
-      </textarea>
-      <textarea name="recordingstatus" draworder="6" align="right">
-        <area>870,50,380,30</area>
-        <font>recstatus</font>
-      </textarea>
-
+        <area>5,20,1280,180</area>
+        <textarea name="title" draworder="4" align="left">
+            <area>25,10,1000,60</area>
+            <font>title</font>
+        </textarea>
+      
+        <textarea name="subtitle" draworder="6">
+            <area>25,50,1200,40</area>
+            <font>subtitle</font>
+            <value>%SUBTITLE|"|"%</value>
+        </textarea>
+      
+        <textarea name="description" draworder="6">
+            <area>25,90,1250,150</area>
+            <font>metadata</font>
+            <multiline>yes</multiline>
+            <value>%LONGREPEAT%%STARS%%DESCRIPTION%</value>
+        </textarea>
+      
+        <textarea name="recordingstatus" draworder="6" align="right">
+            <area>870,50,380,30</area>
+            <font>recstatus</font>
+        </textarea>
     </container>
 
-  </window>
+</window>
 
-   <window name="programguide-video">
+<window name="programguide-video">
 
     <font name="descinfo2" base="info">
-      <color>#ffffee</color>
-      <size>16</size>
-      <size:small>14</size:small>
-      <size:big>18</size:big>
+        <color>#ffffee</color>
+        <size>16</size>
+        <size:small>14</size:small>
+        <size:big>18</size:big>
     </font>
 
     <font name="descinfo"  base="info">
-      <color>#ffffff</color>
-      <size>16</size>
-      <size:small>11</size:small>
-      <size:big>18</size:big>
-      <shadow>3,3</shadow>
-      <bold>yes</bold>
-    </font>
+        <color>#ffffff</color>
+        <size>16</size>
+        <size:small>11</size:small>
+        <size:big>18</size:big>
+        <shadow>3,3</shadow>
+        <bold>yes</bold>
+        </font>
 
     <font name="chaninfo"  base="info">
-      <shadow>1,1</shadow>
-      <color>#ffffff</color>
-      <size>15</size>
-      <size:small>12</size:small>
-      <size:big>17</size:big>
-      <bold>yes</bold>
+        <shadow>1,1</shadow>
+        <color>#ffffff</color>
+        <size>15</size>
+        <size:small>12</size:small>
+        <size:big>17</size:big>
+        <bold>yes</bold>
     </font>
-
-    <!--<font name="recstatus"  base="info">
-      <color>#ffff33</color>
-      <size>15</size>
-      <size:small>12</size:small>
-      <size:big>17</size:big>
-      <shadow>2,2</shadow>
-      <bold>yes</bold>
-    </font>-->
-
+    
     <font name="small"  base="info">
-      <color>#ffff33</color>
-      <size>16</size>
-      <size:small>10</size:small>
-      <size:big>18</size:big>
+        <color>#ffff33</color>
+        <size>16</size>
+        <size:small>10</size:small>
+        <size:big>18</size:big>
     </font>
 
     <container name="background">
-      <image name="backup" draworder="0" fleximage="no">
-        <context>0</context>
-        <position>0,0</position>
-        <filename>guide/gg-background.png</filename>
-      </image>
+        <image name="backup" draworder="0" fleximage="no">
+            <context>0</context>
+            <position>0,0</position>
+            <filename>guide/gg-background.png</filename>
+        </image>
     </container>
 
-     <container name="date_info">
-      <area>20,210,115,25</area>
-      <textarea name="date" draworder="4" align="center">
-         <font>info</font>
-         <area>0,0,115,25</area>
-         <cutdown>no</cutdown>
-      </textarea>
+    <container name="date_info">
+        <area>20,210,115,25</area>
+        <textarea name="date" draworder="4" align="center">
+            <font>info</font>
+            <area>0,0,115,25</area>
+            <cutdown>no</cutdown>
+        </textarea>
     </container>
 
     <container name="chanbar">
-      <area>25,240,123,465</area>
-      <bar name="chans" draworder="4">
-        <area>0,0,123,465</area>
-        <textoffset>38,0</textoffset>
-        <iconoffset>3,10</iconoffset>
-        <iconsize>30,30</iconsize>
-        <orientation>vertical</orientation>
-        <align>allcenter</align>
-        <font>chaninfo</font>
-        <imagefile>guide/gg-chans-trans.png</imagefile>
-      </bar>
+        <area>30,242,123,430</area>
+        <bar name="chans" draworder="4">
+            <area>0,0,123,430</area>
+            <textoffset>38,0</textoffset>
+            <iconoffset>3,10</iconoffset>
+            <iconsize>30,30</iconsize>
+            <orientation>vertical</orientation>
+            <align>allcenter</align>
+            <font>chaninfo</font>
+            <imagefile>guide/gg-chans-trans.png</imagefile>
+        </bar>
     </container>
 
     <container name="timebar">
-      <area>155,210,1110,31</area>
-      <bar name="times" draworder="4">
-        <area>0,0,1110,31</area>
-        <align>allcenter</align>
-        <imagefile>guide/gg-times-trans.png</imagefile>
-        <font>info</font>
-      </bar>
+        <area>153,212,1110,32</area>
+        <bar name="times" draworder="4">
+            <area>0,0,1110,32</area>
+            <align>allcenter</align>
+            <imagefile>guide/gg-times-trans.png</imagefile>
+            <font>info</font>
+        </bar>
     </container>
 
     <container name="guide">
-      <area>155,240,1110,465</area>
-      <guidegrid name="guidegrid" draworder="4">
-        <area>0,0,1110,465</area>
-        <solidcolor>#003256</solidcolor>
-        <selector type="box" color="#ffff33"></selector>
-        <recordingcolor>#00aa00</recordingcolor>
-        <conflictingcolor>#ff6600</conflictingcolor>
-        <cutdown>no</cutdown>
-        <multiline>yes</multiline>
-        <textoffset>3,3</textoffset>
-        <catcolor category="Unknown" color="#222200"></catcolor>
-        <catcolor category="Shopping" color="#222200"></catcolor>
-        <catcolor category="Educational" color="CornflowerBlue"></catcolor>
-        <catcolor category="Adult" color="thistle3"></catcolor>
-        <catcolor category="Musical" color="turquoise3"></catcolor>
-        <catcolor category="News" color="DarkOrange3"></catcolor>
-        <catcolor category="Newsmagazine" color="DarkOrange3"></catcolor>
-        <catcolor category="Reality" color="sienna"></catcolor>
-        <catcolor category="Cooking" color="tan3"></catcolor>
-        <catcolor category="Documentary" color="goldenrod"></catcolor>
-        <catcolor category="Doc" color="goldenrod"></catcolor>
-        <catcolor category="Sports" color="DarkCyan"></catcolor>
-        <catcolor category="Sports event" color="DarkCyan"></catcolor>
-        <catcolor category="Sports non-event" color="DarkCyan"></catcolor>
-        <catcolor category="Sports talk" color="DarkCyan"></catcolor>
-        <catcolor category="Mystery" color="SlateGrey"></catcolor>
-        <catcolor category="Crime/Mystery" color="SlateGrey"></catcolor>
-        <catcolor category="Music" color="DarkRed"></catcolor>
-        <catcolor category="Music special" color="#aa0000"></catcolor>
-        <catcolor category="Movies" color="Blue"></catcolor>
-        <catcolor category="Drama" color="rosybrown3"></catcolor>
-        <catcolor category="Classic" color="grey62"></catcolor>
-        <catcolor category="Crime" color="MediumVioletRed"></catcolor>
-        <catcolor category="Crime drama" color="MediumVioletRed"></catcolor>
-        <catcolor category="Talk" color="MediumTurquoise"></catcolor>
-        <catcolor category="Western" color="#bbbb00"></catcolor>
-        <catcolor category="War" color="#dddd00"></catcolor>
-        <catcolor category="Comedy" color="#8800aa"></catcolor>
-        <catcolor category="Comedy-drama" color="#880099"></catcolor>
-        <catcolor category="Romance-comedy" color="#bb00aa"></catcolor>
-        <catcolor category="Sitcom" color="#880088"></catcolor>
+        <area>155,243,1110,430</area>
+        <guidegrid name="guidegrid" draworder="4">
+            <area>0,0,1110,430</area>
+            <solidcolor>#003256</solidcolor>
+            <selector type="box" color="#ffff33"></selector>
+            <recordingcolor>#00aa00</recordingcolor>
+            <conflictingcolor>#ff6600</conflictingcolor>
+            <cutdown>no</cutdown>
+            <multiline>yes</multiline>
+            <textoffset>3,3</textoffset>
+            <catcolor category="Action" color="#b4bde6"></catcolor>
+            <catcolor category="Action/Adv" color="#b4bde6"></catcolor>
+            <catcolor category="Adventure" color="#b4bde6"></catcolor>
+            <catcolor category="Adult" color="thistle3"></catcolor>
+            <catcolor category="Animals" color="#00ff44"></catcolor>
+            <catcolor category="Animated" color="#3333aa"></catcolor>
+            <catcolor category="Anthology" color="DarkOrchid"></catcolor>
+            <catcolor category="Auto" color="#a8bde8"></catcolor>
+            
+            <catcolor category="Biography" color="#e9ecf3"></catcolor>
+            <catcolor category="Bus./financial" color="#a89df4"></catcolor>
+            <catcolor category="Bus./financial" color="#a89df4"></catcolor>
+            
+            <catcolor category="Children" color="#707fb9"></catcolor>
+            <catcolor category="Childrens" color="#707fb9"></catcolor>
+            <catcolor category="Children's" color="#707fb9"></catcolor>
+            <catcolor category="Children-musical" color="#707fb9"></catcolor>
+            <catcolor category="Children-music" color="#707fb9"></catcolor>
+            <catcolor category="CINE" color="Blue"></catcolor>
+            <catcolor category="Classic" color="grey62"></catcolor>
+            <catcolor category="Comedy" color="#a4bdd6"></catcolor>
+            <catcolor category="Comedy-drama" color="#a4bdd6"></catcolor>
+            <catcolor category="Cooking" color="#b4cdd6"></catcolor>
+            <catcolor category="Classic" color="grey62"></catcolor>
+            <catcolor category="Crime" color="#c4bdd6"></catcolor>
+            <catcolor category="Crime drama" color="#c4bdd6"></catcolor>
+            <catcolor category="Crime/Mystery" color="#c4bdd6"></catcolor>
+                        
+            <catcolor category="Doc" color="#507fa9"></catcolor>
+            <catcolor category="Docudrama" color="#507fa9"></catcolor>
+            <catcolor category="DOCUMENTAL" color="#507fa9"></catcolor>
+            <catcolor category="Documentary" color="#507fa9"></catcolor>
+            <catcolor category="Drama" color="#4b5ca9"></catcolor>
+            
+            <catcolor category="Educational" color="CornflowerBlue"></catcolor>
+            <catcolor category="Excercise" color="#00dd99"></catcolor>
+            
+            <catcolor category="Fantasy" color="#b4bdc6"></catcolor>
+            <catcolor category="Fashion" color="#a8cdea"></catcolor>
+            <catcolor category="Food/Travel" color="#aa00aa"></catcolor>
+            
+            <catcolor category="Game" color="#507f99"></catcolor>
+            <catcolor category="Game show" color="#507f99"></catcolor>
+            
+            <catcolor category="Historical drama" color="#4b5c79"></catcolor>
+            <catcolor category="Home/How-to" color="#a8bde8"></catcolor>
+            <catcolor category="Home improvement" color="#a8bde8"></catcolor>
+            <catcolor category="Horror" color="#c8bdd4"></catcolor>
+            <catcolor category="How-to" color="#a8bde8"></catcolor>
+            <catcolor category="House/garden" color="#a8bde8"></catcolor>
+            
+            <catcolor category="Kids" color="#707fb9"></catcolor>
+            
+            <catcolor category="Live" color="#607fc9"></catcolor>
+            
+            <catcolor category="Movie" color="Blue"></catcolor>
+            <catcolor category="Movies" color="Blue"></catcolor>
+            <catcolor category="Music" color="#4b6c79"></catcolor>
+            <catcolor category="Musical" color="#4b6c79"></catcolor>
+            <catcolor category="Music special" color="#4b6c79"></catcolor>
+            <catcolor category="Mystery" color="SlateGrey"></catcolor>
+            
+            <catcolor category="Nature" color="#33ff99"></catcolor>
+            <catcolor category="News" color="#707fa9"></catcolor>
+            <catcolor category="news" color="#707fa9"></catcolor>
+            <catcolor category="Newsmagazine" color="#707fa9"></catcolor>
+            
+            <catcolor category="Public affairs" color="#b4bde6"></catcolor>
+            
+            <catcolor category="Reality" color="#5b5c79"></catcolor>
+            <catcolor category="Romance" color="#ff9999"></catcolor>
+            <catcolor category="Romance-comedy" color="#b4bdd6"></catcolor>
+            
+            <catcolor category="Science/Nature" color="#33ff99"></catcolor>
+            <catcolor category="Science fiction" color="#807fa9"></catcolor>
+            <catcolor category="SciFi" color="#807fa9"></catcolor>
+            <catcolor category="Sci-fi/Fantasy" color="#807c90"></catcolor>
+            <catcolor category="Self improvement" color="#00ffaa"></catcolor>
+            <catcolor category="Shopping" color="#222200"></catcolor>
+            <catcolor category="Sitcom" color="#b4bdd6"></catcolor>
+            <catcolor category="Soap" color="#b4bdd6"></catcolor>
+            <catcolor category="Special" color="#4b5c8e"></catcolor>
+            <catcolor category="Sports" color="DarkCyan"></catcolor>
+            <catcolor category="Sports event" color="DarkCyan"></catcolor>
+            <catcolor category="Sports non-event" color="DarkCyan"></catcolor>
+            <catcolor category="Sports talk" color="DarkCyan"></catcolor>
+            <catcolor category="Suspense" color="#c8bdd4"></catcolor>
+            
+            <catcolor category="Talk" color="#a8bde4"></catcolor>
+                        
+            <catcolor category="Unknown" color="#222200"></catcolor>
+            
+            <catcolor category="Weather" color="#e9ecf3"></catcolor>
+            
+            <catcolor category="Western" color="#bbbb00"></catcolor>
+            <catcolor category="War" color="#889dc9"></catcolor>
 
-        <catcolor category="Special" color="#ee0000"></catcolor>
-        <catcolor category="Animals" color="#00ff44"></catcolor>
-        <catcolor category="Nature" color="#33ff99"></catcolor>
-        <catcolor category="Science/Nature" color="#33ff99"></catcolor>
-  
-        <catcolor category="SciFi" color="#DD6666"></catcolor>
-        <catcolor category="Sci-fi/Fantasy" color="#aa6666"></catcolor>
-        <catcolor category="Fantasy" color="#996666"></catcolor>
-        <catcolor category="Science fiction" color="#DD6666"></catcolor>
-        <catcolor category="Horror" color="firebrick3"></catcolor>
+            <recordstatus type="SingleRecord" image="guide/gg-rs-single.png"></recordstatus>
+            <recordstatus type="TimeslotRecord" image="guide/gg-rs-timeslot.png"></recordstatus>
+            <recordstatus type="ChannelRecord" image="guide/gg-rs-channel.png"></recordstatus>
+            <recordstatus type="AllRecord" image="guide/gg-rs-all.png"></recordstatus>
+            <recordstatus type="WeekslotRecord" image="guide/gg-rs-weekslot.png"></recordstatus>
+            <recordstatus type="FindOneRecord" image="guide/gg-rs-findone.png"></recordstatus>
 
-        <catcolor category="Suspense" color="firebrick3"></catcolor>
-        <catcolor category="Action" color="maroon"></catcolor>
-        <catcolor category="Action/Adv" color="maroon"></catcolor>
-        <catcolor category="Adventure" color="maroon"></catcolor>
-        <catcolor category="Romance" color="#ff9999"></catcolor>
-
-        <catcolor category="Food/Travel" color="#aa00aa"></catcolor>
-        <catcolor category="Home/How-to" color="#00aa00"></catcolor>
-        <catcolor category="Home improvement" color="#00cc00"></catcolor>
-        <catcolor category="How-to" color="#00aa00"></catcolor>
-        <catcolor category="House/garden" color="#00ee00"></catcolor>
-        <catcolor category="Game" color="orchid"></catcolor>
-        <catcolor category="Children's" color="#3333ff"></catcolor>
-        <catcolor category="Children" color="#3333ff"></catcolor>
-        <catcolor category="Children-musical" color="#3333dd"></catcolor>
-        <catcolor category="Children-music" color="#3333dd"></catcolor>
-        <catcolor category="Kids" color="MediumSlateBlue"></catcolor>
-        <catcolor category="Anthology" color="DarkOrchid"></catcolor>
-        <catcolor category="CINE" color="Blue"></catcolor>
-        <catcolor category="SERIE" color="DarkOrchid"></catcolor>
-        <catcolor category="DOCUMENTAL" color="goldenrod"></catcolor>
-        <catcolor category="INFORMATIVO" color="DarkOrange3"></catcolor>
-        <catcolor category="DEPORTES" color="DarkCyan"></catcolor>
-        <catcolor category="FUTBOL" color="DarkCyan"></catcolor>
-        <catcolor category="MUSICAL" color="turquoise3"></catcolor>
-        <catcolor category="INFANTIL" color="MediumSlateBlue"></catcolor>
-        <catcolor category="MAGAZINE" color="MediumTurquoise"></catcolor>
-        <catcolor category="TIEMPO" color="#33ff99"></catcolor>
-        <catcolor category="SHOW" color="sienna"></catcolor>
-        <catcolor category="Animated" color="#3333aa"></catcolor>
-        <catcolor category="Game show" color="orchid"></catcolor>
-        <catcolor category="Docudrama" color="goldenrod"></catcolor>
-        <catcolor category="Self improvement" color="#00ffaa"></catcolor>
-        <catcolor category="Excercise" color="#00dd99"></catcolor>
-        <catcolor category="Bus./financial" color="DarkOrange3"></catcolor>
-
-
-                <!-- Categories introduced by tv_grab_au -->
-        <catcolor category="Childrens" color="MediumSlateBlue"></catcolor>
-        <catcolor category="Movie" color="Blue"></catcolor>
-        <catcolor category="Live" color="DarkOrange3"></catcolor>
-
-        <!-- categories used by the NextView EPG service -->
-        <!-- (available in some european countries) -->
-        <catcolor category="news" color="DarkOrange3"></catcolor>
-        <catcolor category="music/ballet/dance" color="DarkRed"></catcolor>
-        <catcolor category="sports" color="DarkCyan"></catcolor>
-        <catcolor category="series" color="DarkOrchid"></catcolor>
-        <catcolor category="social/political/economics" color="DarkOrange3"></catcolor>
-        <catcolor category="show/game show" color="MediumTurquoise"></catcolor>
-        <catcolor category="science" color="#33ff99"></catcolor>
-        <catcolor category="technology" color="#33ff99"></catcolor>
-        <catcolor category="kids" color="MediumSlateBlue"></catcolor>
-        <catcolor category="leisure hobbies" color="Red"></catcolor>
-        <catcolor category="tourism/travel" color="#aa00aa"></catcolor>
-        <catcolor category="arts/culture" color="goldenrod"></catcolor>
-        <catcolor category="movie" color="Blue"></catcolor>
-
-       <!-- Categories introduced by tv_grab_uk_rt -->
-        <catcolor category="Animation" color="MediumSlateBlue"></catcolor>
-        <catcolor category="Business" color="DarkOrange3"></catcolor>
-        <catcolor category="Children's Show" color="MediumSlateBlue"></catcolor>
-        <catcolor category="Consumer" color="goldenrod"></catcolor>
-        <catcolor category="Cookery" color="#aa00aa"></catcolor>
-        <catcolor category="Current Affairs" color="DarkOrange3"></catcolor>
-        <catcolor category="Drama Series" color="rosybrown3"></catcolor>
-        <catcolor category="Entertainment" color="DarkOrchid"></catcolor>
-        <catcolor category="Environment" color="#33ff99"></catcolor>
-        <catcolor category="Film" color="Blue"></catcolor>
-        <catcolor category="Game Show" color="orchid"></catcolor>
-        <catcolor category="Gardening" color="Red"></catcolor>
-        <catcolor category="Interests" color="Red"></catcolor>
-        <catcolor category="Music &amp; Arts" color="goldenrod"></catcolor>
-        <catcolor category="News &amp; Current Affairs" color="DarkOrange3"></catcolor>
-        <catcolor category="Religious" color="goldenrod"></catcolor>
-        <catcolor category="Sitcoms" color="DarkOrchid"></catcolor>
-        <catcolor category="Soaps" color="DarkOrchid"></catcolor>
-	<catcolor category="Soap" color="DarkOrchid"></catcolor>
-        <catcolor category="Sport" color="DarkCyan"></catcolor>
-        <catcolor category="Talk Show" color="MediumTurquoise"></catcolor>
-        <catcolor category="Transport" color="#33ff99"></catcolor>
-        <catcolor category="Travel" color="#aa00aa"></catcolor>
-
- <!-- Categories introduced by belgian and dutch grabbers teveblad.be -->
-        <catcolor category="nieuws" color="DarkOrange3"></catcolor>
-        <catcolor category="actua" color="sienna"></catcolor>
-        <catcolor category="documentaire" color="goldenrod"></catcolor>
-        <catcolor category="wielrennen" color="DarkCyan"></catcolor>
-        <catcolor category="sport" color="DarkCyan"></catcolor>
-        <catcolor category="voetbal" color="DarkCyan"></catcolor>
-        <catcolor category="soap" color="SlateGrey"></catcolor>
-        <catcolor category="muziek" color="DarkRed"></catcolor>
-        <catcolor category="film" color="Blue"></catcolor>
-        <catcolor category="talkshow" color="MediumTurquoise"></catcolor>
-        <catcolor category="serie" color="DarkOrchid"></catcolor>
-        <catcolor category="spelprogramma" color="orchid"></catcolor>
-        <catcolor category="quiz" color="orchid"></catcolor>
-        <catcolor category="kinderprogramma" color="MediumSlateBlue"></catcolor>
-        <catcolor category="tekenfilm" color="MediumSlateBlue"></catcolor>
-        <catcolor category="tekenfilm kind" color="MediumSlateBlue"></catcolor>
-
-
-        <!-- Categories introduced by tv_grab_jp -->
-        <catcolor category="ドラマ" color="rosybrown3"></catcolor>
-        <catcolor category="映画" color="Blue"></catcolor>
-        <catcolor category="スポーツ" color="DarkCyan"></catcolor>
-        <catcolor category="演劇・伝統芸" color="turquoise3"></catcolor>
-        <catcolor category="音楽" color="DarkRed"></catcolor>
-        <catcolor category="バラエティー" color="DarkOrchid"></catcolor>
-        <catcolor category="教養" color="CornflowerBlue"></catcolor>
-        <catcolor category="アニメ・キッズ" color="MediumSlateBlue"></catcolor>
-        <catcolor category="社会・報道" color="DarkOrange3"></catcolor>
-        <catcolor category="趣味・暮らし" color="goldenrod"></catcolor>
-
-        <recordstatus type="SingleRecord" image="guide/gg-rs-single.png"></recordstatus>
-        <recordstatus type="TimeslotRecord" image="guide/gg-rs-timeslot.png"></recordstatus>
-        <recordstatus type="ChannelRecord" image="guide/gg-rs-channel.png"></recordstatus>
-        <recordstatus type="AllRecord" image="guide/gg-rs-all.png"></recordstatus>
-        <recordstatus type="WeekslotRecord" image="guide/gg-rs-weekslot.png"></recordstatus>
-        <recordstatus type="FindOneRecord" image="guide/gg-rs-findone.png"></recordstatus>
-
-        <!--<arrow direction="left" image="guide/gg-arrow-left.png"></arrow>
-        <arrow direction="right" image="guide/gg-arrow-right.png"></arrow> -->
+            <arrow direction="left" image="gg-arrow-left.png"></arrow>
+            <arrow direction="right" image="gg-arrow-right.png"></arrow>
         <font>descinfo2</font>
       </guidegrid>
     </container>
 
     <container name="current_info">
-      <area>25,160,380,32</area>
-      <textarea name="time" draworder="4" align="left">
-        <area>0,0,380,30</area>
-        <cutdown>no</cutdown>
-        <font>info</font>
-      </textarea>
+        <area>1060,143,180,32</area>
+        
+        <textarea name="time" draworder="4" align="right">
+            <area>0,0,180,30</area>
+            <cutdown>no</cutdown>
+            <font>info</font>
+        </textarea>
+    </container>
+    
+    <container name="current_video">
+        <area>30,42,231,135</area>
     </container>
 
+    
 
     <container name="program_info">
-      <area>0,0,900,190</area>
-      <textarea name="title" draworder="4" align="left">
-        <area>25,10,1000,60</area>
-        <font>title</font>
-      </textarea>
-      <textarea name="subtitle" draworder="6">
-        <area>25,50,1200,40</area>
-        <font>subtitle</font>
-        <value>%SUBTITLE|"|"%</value>
-      </textarea>
-      <textarea name="description" draworder="6">
-        <area>25,95,850,130</area>
-        <font>metadata</font>
-        <multiline>yes</multiline>
-        <value>%LONGREPEAT%%STARS%%DESCRIPTION%</value>
-      </textarea>
-      <textarea name="recordingstatus" draworder="6" align="right">
-        <area>500,158,380,34</area>
-        <font>recstatus</font>
-      </textarea>
-
-    </container>
-
-    <container name="current_video">
-      <area>902,16,344,173</area>
+        <area>264,22,1050,180</area>
+        
+        <textarea name="title" draworder="4" align="left">
+            <area>5,10,1000,60</area>
+            <font>title</font>
+        </textarea>
+      
+        <textarea name="subtitle" draworder="6">
+            <area>25,50,1200,40</area>
+            <font>subtitle</font>
+            <value>%SUBTITLE|"|"%</value>
+        </textarea>
+      
+        <textarea name="description" draworder="6">
+            <area>25,90,850,100</area>
+            <font>metadata</font>
+            <multiline>yes</multiline>
+            <value>%LONGREPEAT%%STARS%%DESCRIPTION%</value>
+        </textarea>
+      
+        <textarea name="recordingstatus" draworder="6" align="right">
+            <area>600,15,380,34</area>
+            <font>recstatus</font>
+        </textarea>
     </container>
   </window>
 
@@ -1094,7 +974,7 @@
         <items>3</items>
       </listarea>
       <image name="titlelines" draworder="1" fleximage="no">
-        <filename>shared/trans-titles.png</filename> 
+         <filename>shared/trans-titles.png</filename> 
         <position>0,0</position>
       </image>
       <listarea name="bottomtitles" draworder="2">

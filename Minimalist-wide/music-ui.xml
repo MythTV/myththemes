@@ -84,7 +84,7 @@
         <font name="inactive" base="list-inactive">
         </font>
   
-        <font name="selected" face="list-selected">
+        <font name="selected" base="list-selected">
         </font>
 
         <font name="infotext" base="info">

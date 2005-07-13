@@ -78,42 +78,30 @@
 
     <!-- The play music screen -->
     <window name="music_play">
-        <font name="active" face="Arial">
-            <color>#ffffff</color>
-            <size>17</size>
-            <shadow>2,2</shadow>
-            <bold>yes</bold>
+        <font name="active" base="list-active">
         </font>
 
-        <font name="inactive" face="Arial">
-            <color>#9999cc</color>
-            <size>17</size>
-            <shadow>2,2</shadow>
-            <bold>yes</bold>
+        <font name="inactive" base="list-inactive">
         </font>
   
-        <font name="selected" face="Arial">
-            <color>#ffff00</color>
-            <size>18</size>
-            <shadow>2,2</shadow>
-            <bold>yes</bold>
+        <font name="selected" face="list-selected">
         </font>
 
-        <font name="infotext" face="Arial">
+        <font name="infotext" base="info">
             <color>#ffffff</color>
             <size>16</size>
             <shadow>1,1</shadow>
             <bold>yes</bold>
         </font>
 
-        <font name="infotext2" face="Arial">
+        <font name="infotext2" base="info">
             <color>#ffffff</color>
             <size>16</size>
             <shadow>2,2</shadow>
             <bold>yes</bold>
         </font>
 
-        <font name="buttons" face="Arial">
+        <font name="buttons" base="info">
             <color>#FFFFBB</color>
             <size>12</size>
             <bold>yes</bold>

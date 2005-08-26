@@ -96,102 +96,24 @@
             <cutdown>no</cutdown>
             <multiline>yes</multiline>
             <textoffset>3,3</textoffset>
+
+            <!-- customized category colors -->
             <catcolor category="Action" color="#b4bde6"></catcolor>
             <catcolor category="Action/Adv" color="#b4bde6"></catcolor>
             <catcolor category="Adventure" color="#b4bde6"></catcolor>
-            <catcolor category="Adult" color="thistle3"></catcolor>
-            <catcolor category="Animals" color="#00ff44"></catcolor>
-            <catcolor category="Animated" color="#3333aa"></catcolor>
-            <catcolor category="Anthology" color="DarkOrchid"></catcolor>
-            <catcolor category="Auto" color="#a8bde8"></catcolor>
-            
-            <catcolor category="Biography" color="#e9ecf3"></catcolor>
             <catcolor category="Bus./financial" color="#a89df4"></catcolor>
             <catcolor category="Bus./financial" color="#a89df4"></catcolor>
-            
             <catcolor category="Children" color="#707fb9"></catcolor>
             <catcolor category="Childrens" color="#707fb9"></catcolor>
             <catcolor category="Children's" color="#707fb9"></catcolor>
             <catcolor category="Children-musical" color="#707fb9"></catcolor>
             <catcolor category="Children-music" color="#707fb9"></catcolor>
-            <catcolor category="CINE" color="Blue"></catcolor>
-            <catcolor category="Classic" color="grey62"></catcolor>
             <catcolor category="Comedy" color="#a4bdd6"></catcolor>
             <catcolor category="Comedy-drama" color="#a4bdd6"></catcolor>
             <catcolor category="Cooking" color="#b4cdd6"></catcolor>
-            <catcolor category="Classic" color="grey62"></catcolor>
             <catcolor category="Crime" color="#c4bdd6"></catcolor>
             <catcolor category="Crime drama" color="#c4bdd6"></catcolor>
             <catcolor category="Crime/Mystery" color="#c4bdd6"></catcolor>
-                        
-            <catcolor category="Doc" color="#507fa9"></catcolor>
-            <catcolor category="Docudrama" color="#507fa9"></catcolor>
-            <catcolor category="DOCUMENTAL" color="#507fa9"></catcolor>
-            <catcolor category="Documentary" color="#507fa9"></catcolor>
-            <catcolor category="Drama" color="#4b5ca9"></catcolor>
-            
-            <catcolor category="Educational" color="CornflowerBlue"></catcolor>
-            <catcolor category="Excercise" color="#00dd99"></catcolor>
-            
-            <catcolor category="Fantasy" color="#b4bdc6"></catcolor>
-            <catcolor category="Fashion" color="#a8cdea"></catcolor>
-            <catcolor category="Food/Travel" color="#aa00aa"></catcolor>
-            
-            <catcolor category="Game" color="#507f99"></catcolor>
-            <catcolor category="Game show" color="#507f99"></catcolor>
-            
-            <catcolor category="Historical drama" color="#4b5c79"></catcolor>
-            <catcolor category="Home/How-to" color="#a8bde8"></catcolor>
-            <catcolor category="Home improvement" color="#a8bde8"></catcolor>
-            <catcolor category="Horror" color="#c8bdd4"></catcolor>
-            <catcolor category="How-to" color="#a8bde8"></catcolor>
-            <catcolor category="House/garden" color="#a8bde8"></catcolor>
-            
-            <catcolor category="Kids" color="#707fb9"></catcolor>
-            
-            <catcolor category="Live" color="#607fc9"></catcolor>
-            
-            <catcolor category="Movie" color="Blue"></catcolor>
-            <catcolor category="Movies" color="Blue"></catcolor>
-            <catcolor category="Music" color="#4b6c79"></catcolor>
-            <catcolor category="Musical" color="#4b6c79"></catcolor>
-            <catcolor category="Music special" color="#4b6c79"></catcolor>
-            <catcolor category="Mystery" color="SlateGrey"></catcolor>
-            
-            <catcolor category="Nature" color="#33ff99"></catcolor>
-            <catcolor category="News" color="#707fa9"></catcolor>
-            <catcolor category="news" color="#707fa9"></catcolor>
-            <catcolor category="Newsmagazine" color="#707fa9"></catcolor>
-            
-            <catcolor category="Public affairs" color="#b4bde6"></catcolor>
-            
-            <catcolor category="Reality" color="#5b5c79"></catcolor>
-            <catcolor category="Romance" color="#ff9999"></catcolor>
-            <catcolor category="Romance-comedy" color="#b4bdd6"></catcolor>
-            
-            <catcolor category="Science/Nature" color="#33ff99"></catcolor>
-            <catcolor category="Science fiction" color="#807fa9"></catcolor>
-            <catcolor category="SciFi" color="#807fa9"></catcolor>
-            <catcolor category="Sci-fi/Fantasy" color="#807c90"></catcolor>
-            <catcolor category="Self improvement" color="#00ffaa"></catcolor>
-            <catcolor category="Shopping" color="#222200"></catcolor>
-            <catcolor category="Sitcom" color="#b4bdd6"></catcolor>
-            <catcolor category="Soap" color="#b4bdd6"></catcolor>
-            <catcolor category="Special" color="#4b5c8e"></catcolor>
-            <catcolor category="Sports" color="DarkCyan"></catcolor>
-            <catcolor category="Sports event" color="DarkCyan"></catcolor>
-            <catcolor category="Sports non-event" color="DarkCyan"></catcolor>
-            <catcolor category="Sports talk" color="DarkCyan"></catcolor>
-            <catcolor category="Suspense" color="#c8bdd4"></catcolor>
-            
-            <catcolor category="Talk" color="#a8bde4"></catcolor>
-                        
-            <catcolor category="Unknown" color="#222200"></catcolor>
-            
-            <catcolor category="Weather" color="#e9ecf3"></catcolor>
-            
-            <catcolor category="Western" color="#bbbb00"></catcolor>
-            <catcolor category="War" color="#889dc9"></catcolor>
 
             <recordstatus type="SingleRecord" image="guide/gg-rs-single.png"></recordstatus>
             <recordstatus type="TimeslotRecord" image="guide/gg-rs-timeslot.png"></recordstatus>
@@ -330,102 +252,24 @@
             <cutdown>no</cutdown>
             <multiline>yes</multiline>
             <textoffset>3,3</textoffset>
+
+            <!-- customized category colors -->
             <catcolor category="Action" color="#b4bde6"></catcolor>
             <catcolor category="Action/Adv" color="#b4bde6"></catcolor>
             <catcolor category="Adventure" color="#b4bde6"></catcolor>
-            <catcolor category="Adult" color="thistle3"></catcolor>
-            <catcolor category="Animals" color="#00ff44"></catcolor>
-            <catcolor category="Animated" color="#3333aa"></catcolor>
-            <catcolor category="Anthology" color="DarkOrchid"></catcolor>
-            <catcolor category="Auto" color="#a8bde8"></catcolor>
-            
-            <catcolor category="Biography" color="#e9ecf3"></catcolor>
             <catcolor category="Bus./financial" color="#a89df4"></catcolor>
             <catcolor category="Bus./financial" color="#a89df4"></catcolor>
-            
             <catcolor category="Children" color="#707fb9"></catcolor>
             <catcolor category="Childrens" color="#707fb9"></catcolor>
             <catcolor category="Children's" color="#707fb9"></catcolor>
             <catcolor category="Children-musical" color="#707fb9"></catcolor>
             <catcolor category="Children-music" color="#707fb9"></catcolor>
-            <catcolor category="CINE" color="Blue"></catcolor>
-            <catcolor category="Classic" color="grey62"></catcolor>
             <catcolor category="Comedy" color="#a4bdd6"></catcolor>
             <catcolor category="Comedy-drama" color="#a4bdd6"></catcolor>
             <catcolor category="Cooking" color="#b4cdd6"></catcolor>
-            <catcolor category="Classic" color="grey62"></catcolor>
             <catcolor category="Crime" color="#c4bdd6"></catcolor>
             <catcolor category="Crime drama" color="#c4bdd6"></catcolor>
             <catcolor category="Crime/Mystery" color="#c4bdd6"></catcolor>
-                        
-            <catcolor category="Doc" color="#507fa9"></catcolor>
-            <catcolor category="Docudrama" color="#507fa9"></catcolor>
-            <catcolor category="DOCUMENTAL" color="#507fa9"></catcolor>
-            <catcolor category="Documentary" color="#507fa9"></catcolor>
-            <catcolor category="Drama" color="#4b5ca9"></catcolor>
-            
-            <catcolor category="Educational" color="CornflowerBlue"></catcolor>
-            <catcolor category="Excercise" color="#00dd99"></catcolor>
-            
-            <catcolor category="Fantasy" color="#b4bdc6"></catcolor>
-            <catcolor category="Fashion" color="#a8cdea"></catcolor>
-            <catcolor category="Food/Travel" color="#aa00aa"></catcolor>
-            
-            <catcolor category="Game" color="#507f99"></catcolor>
-            <catcolor category="Game show" color="#507f99"></catcolor>
-            
-            <catcolor category="Historical drama" color="#4b5c79"></catcolor>
-            <catcolor category="Home/How-to" color="#a8bde8"></catcolor>
-            <catcolor category="Home improvement" color="#a8bde8"></catcolor>
-            <catcolor category="Horror" color="#c8bdd4"></catcolor>
-            <catcolor category="How-to" color="#a8bde8"></catcolor>
-            <catcolor category="House/garden" color="#a8bde8"></catcolor>
-            
-            <catcolor category="Kids" color="#707fb9"></catcolor>
-            
-            <catcolor category="Live" color="#607fc9"></catcolor>
-            
-            <catcolor category="Movie" color="Blue"></catcolor>
-            <catcolor category="Movies" color="Blue"></catcolor>
-            <catcolor category="Music" color="#4b6c79"></catcolor>
-            <catcolor category="Musical" color="#4b6c79"></catcolor>
-            <catcolor category="Music special" color="#4b6c79"></catcolor>
-            <catcolor category="Mystery" color="SlateGrey"></catcolor>
-            
-            <catcolor category="Nature" color="#33ff99"></catcolor>
-            <catcolor category="News" color="#707fa9"></catcolor>
-            <catcolor category="news" color="#707fa9"></catcolor>
-            <catcolor category="Newsmagazine" color="#707fa9"></catcolor>
-            
-            <catcolor category="Public affairs" color="#b4bde6"></catcolor>
-            
-            <catcolor category="Reality" color="#5b5c79"></catcolor>
-            <catcolor category="Romance" color="#ff9999"></catcolor>
-            <catcolor category="Romance-comedy" color="#b4bdd6"></catcolor>
-            
-            <catcolor category="Science/Nature" color="#33ff99"></catcolor>
-            <catcolor category="Science fiction" color="#807fa9"></catcolor>
-            <catcolor category="SciFi" color="#807fa9"></catcolor>
-            <catcolor category="Sci-fi/Fantasy" color="#807c90"></catcolor>
-            <catcolor category="Self improvement" color="#00ffaa"></catcolor>
-            <catcolor category="Shopping" color="#222200"></catcolor>
-            <catcolor category="Sitcom" color="#b4bdd6"></catcolor>
-            <catcolor category="Soap" color="#b4bdd6"></catcolor>
-            <catcolor category="Special" color="#4b5c8e"></catcolor>
-            <catcolor category="Sports" color="DarkCyan"></catcolor>
-            <catcolor category="Sports event" color="DarkCyan"></catcolor>
-            <catcolor category="Sports non-event" color="DarkCyan"></catcolor>
-            <catcolor category="Sports talk" color="DarkCyan"></catcolor>
-            <catcolor category="Suspense" color="#c8bdd4"></catcolor>
-            
-            <catcolor category="Talk" color="#a8bde4"></catcolor>
-                        
-            <catcolor category="Unknown" color="#222200"></catcolor>
-            
-            <catcolor category="Weather" color="#e9ecf3"></catcolor>
-            
-            <catcolor category="Western" color="#bbbb00"></catcolor>
-            <catcolor category="War" color="#889dc9"></catcolor>
 
             <recordstatus type="SingleRecord" image="guide/gg-rs-single.png"></recordstatus>
             <recordstatus type="TimeslotRecord" image="guide/gg-rs-timeslot.png"></recordstatus>

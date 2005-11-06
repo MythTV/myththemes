@@ -3,12 +3,12 @@
 
   <background style="normal">
     <image>ui/background.png</image>
-    <buttonarea>200,155,300,290</buttonarea>
-    <visiblerowlimit>5</visiblerowlimit>
+    <buttonarea>160,120,300,320</buttonarea>
+    <visiblerowlimit>6</visiblerowlimit>
   </background>
 
   <titles>
-    <position>25,25</position>
+    <position>25,28</position>
     <image mode="TV">title/title_tv.png</image>
     <image mode="MAIN">title/title_main.png</image>
     <image mode="MUSIC">title/title_music.png</image>
@@ -35,11 +35,11 @@
     <image mode="INFO">title/title_info_center.png</image>
     <image mode="OPTICAL_DISK">title/title_dvd.png</image>
     <image mode="UTIL">title/title_setup.png</image>
-    <image mode="NETFLIX">title/title_netflix.png</image>
+    <image mode="NETFLIX">title/title_dvd.png</image>
   </titles>
 
   <genericbutton> <!-- Size: 300 x 50 px -->
-    <watermarkposition>545,220</watermarkposition>
+    <watermarkposition>520,200</watermarkposition>
     <normal>ui/button_off.png</normal>
     <active>ui/button_on.png</active>
     <text>
@@ -69,17 +69,17 @@
   
   <logo> <!-- Size: 275 x 77 px -->
     <image>ui/mythtv_logo.png</image>
-    <position>25,498</position>
+    <position>30,495</position>
   </logo>
   
   <uparrow> <!-- Size: 50 x 50 px -->
     <image>ui/up.png</image>
-    <position>325,95</position>
+    <position>410,70</position>
   </uparrow>
 
   <downarrow> <!-- Size: 50 x 50 px -->
     <image>ui/down.png</image>
-    <position>325,455</position>
+    <position>410,435</position>
   </downarrow>
   
 <!-- ################################################################ -->
@@ -340,6 +340,12 @@
     <offset>0,0</offset>
   </buttondef>
 
+  <buttondef name="SETUP_KEYS">
+    <image>ui/button_off.png</image>
+     <watermarkimage>watermark/setup.png</watermarkimage>
+    <offset>0,0</offset>
+  </buttondef>
+
 <!-- ######################################-->
 <!-- ########  music_settings.xml  ########-->
 <!-- ######################################-->
@@ -512,7 +518,7 @@
 
   <buttondef name="TV_CONFLICTS">
     <image>ui/button_off.png</image>
-    <watermarkimage>watermark/error.png</watermarkimage>
+    <watermarkimage>watermark/record.png</watermarkimage>
     <offset>0,0</offset>
   </buttondef>
 

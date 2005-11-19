@@ -477,6 +477,120 @@
 
   </window>
 
+  <window name="schdiff">
+    <font name="norecordfnt" base="list-active">
+      <color>#9999cc</color>
+    </font>
+
+    <font name="conflictfnt" base="list-active">
+      <color>#ffff33</color>
+    </font>
+
+    <font name="currenttitle" base="list-active">
+      <color>#ffff33</color>
+    </font>
+
+    <container name="background">
+      <textarea name="sched" draworder="0">
+        <area>35,10,480,32</area>
+        <font>info</font>
+        <value>Preview Schedule Changes:</value>
+      </textarea>
+      <textarea name="view" align="right" draworder="0">
+        <area>650,10,580,32</area>
+        <font>info</font>
+      </textarea>
+      <image name="filler" draworder="0" fleximage="no">
+        <filename>rec_priority/trans-rk-background.png</filename>
+        <position>0,0</position>
+      </image>
+    </container>
+
+    <container name="selector">
+        <area>30,34,1210,395</area>
+        <listarea name="conflictlist" draworder="4">
+            <area>25,20,1210,280</area>
+            <fcnfont name="list-conflict" function="conflictingrecording"></fcnfont>
+            <fcnfont name="norecordfnt" function="disabledrecording"></fcnfont>
+            <fcnfont name="list-active" function="active"></fcnfont>
+            <fcnfont name="list-inactive" function="inactive"></fcnfont>
+            <fcnfont name="list-record" function="record"></fcnfont>
+            <fcnfont name="list-recording" function="recording"></fcnfont>
+            <fcnfont name="list-selected" function="selected"></fcnfont>
+            <columnpadding>10</columnpadding>
+            <column number="1" width="170" context="-1"></column>
+            <column number="2" width="185" context="-1"></column>
+            <column number="3" width="705" context="-1"></column>
+            <column number="4" width="30" context="-1"></column>
+            <column number="5" width="30" context="-1"></column>
+            <items>6</items>
+            <image function="selectionbar" filename="shared/very_long_bar.png" location="-14,0"></image>
+            <image function="uparrow" filename="shared/up_arrow.png" location="1170,15"></image>
+            <image function="downarrow" filename="shared/down_arrow.png" location="1170,265"></image>
+        </listarea>
+    </container>
+
+    <container name="program_info">
+        <area>50,393,1280,310</area>
+        
+        <textarea name="title" draworder="6">
+            <area>0,0,800,45</area>
+            <font>title</font>
+        </textarea>
+        
+        <textarea name="type" draworder="6" align="right">
+            <area>710,255,470,45</area>
+            <font>recstatus</font>
+        </textarea>
+        
+        <textarea name="programid" draworder="6">
+            <area>0,255,480,30</area>
+            <font>info</font>
+        </textarea>
+
+        <textarea name="subtitle" draworder="6">
+            <area>10,45,1100,45</area>
+            <font>subtitle</font>
+        </textarea>
+        
+        <textarea name="channel" draworder="6">
+            <area>10,95,160,30</area>
+            <font>info</font>
+        </textarea>
+
+        <textarea name="timedate" draworder="6">
+            <area>185,95,440,30</area>
+            <font>info</font>
+        </textarea>
+
+        <textarea name="description" draworder="6">
+            <value>%LONGREPEAT%%STARS%%DESCRIPTION%</value>
+            <area>10, 140,1160,120</area>
+            <font>metadata</font>
+            <multiline>yes</multiline>
+        </textarea>
+
+    </container>
+
+<!--    <container name="status_info">
+      <area>863,447,480,30</area>
+      <textarea name="recordingstatus" align="left" draworder="6">
+        <area>0,0,480,30</area>
+        <font>recstatus</font>
+      </textarea>
+    </container>-->
+
+   <container name="norecordings_list">
+      <textarea name="msg" align="center" draworder="8">
+         <area>0,110,800,70</area>
+         <font>info</font>
+         <value>The recording schedule would not be affected.</value>
+         <multiline>yes</multiline>
+      </textarea>
+    </container>
+
+  </window>
+
   <window name="recprioritychannels">
 
     <container name="background">

@@ -1,4 +1,4 @@
-<!-- ui.xml for the MythCenter theme - by Jeroen Brosens -->
+	<!-- ui.xml for the MythCenter theme - by Jeroen Brosens -->
 <mythuitheme>
 
   <window name="programguide">
@@ -1107,6 +1107,20 @@
       <bold>yes</bold>
     </font>
 
+    <font name="recording_font" face="Trebuchet MS">
+      <color>#FF33FF</color>
+      <size>16</size>
+      <size:small>11</size:small>
+      <bold>yes</bold>
+    </font>
+
+    <font name="conflict_font" face="Trebuchet MS">
+      <color>#ffff33</color>
+      <size>16</size>
+      <size:small>11</size:small>
+      <bold>yes</bold>
+    </font>
+
     <font name="currenttitle" face="Trebuchet MS">
       <color>#ffff33</color>
       <size>18</size>
@@ -1197,6 +1211,8 @@
         <fcnfont name="active_font" function="active"></fcnfont>
         <fcnfont name="inactive_font" function="inactive"></fcnfont>
         <fcnfont name="record_font" function="record"></fcnfont>
+        <fcnfont name="recording_font" function="recording"></fcnfont>
+        <fcnfont name="conflict_font" function="conflicting"></fcnfont>
         <fcnfont name="active_font" function="selected"></fcnfont>
         <columnpadding>1</columnpadding>
         <column number="1" width="35" context="-1"></column>

@@ -685,6 +685,12 @@
     <offset>25,-100</offset>
   </buttondef>
 
+  <buttondef name="TV_SETTINGS_PLAYBACK_GROUPS">
+    <image>buttons/TV_WATCH_TV_off.png</image>
+    <activeimage>buttons/TV_WATCH_TV.png</activeimage>
+    <offset>25,-100</offset>
+  </buttondef>
+
   <buttondef name="TV_SETTINGS_RECORDING_PROFILES">
     <image>text-blank.png</image>
 <!--     <watermarkimage>watermark/tv_schedule.png</watermarkimage> -->

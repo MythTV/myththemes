@@ -1464,7 +1464,41 @@
 
   </window>
 
+  <window name="progdetails">
 
+    <container name="main_display">
+      <area>0,0,1280,700</area>
+      <textarea name="title" draworder="0">
+        <area>40,30,720,40</area>
+        <font>basefont</font>
+        <value>Program Details:</value>
+      </textarea>
 
+      <richtextarea name="richtext" draworder="0">
+        <area>270,60,735,550</area>
+        <textarea>290,70,660,530</textarea>
+        <font>small-info</font>
+        <value>Program Details</value>
+        <image function="uparrow-reg" filename="blank.png" location="975,85"></image>
+        <image function="downarrow-reg" filename="blank.png" location="975,555"></image>
+        <image function="uparrow-sel" filename="uparrow.png" location="975,85"></image>
+        <image function="downarrow-sel" filename="downarrow.png" location="975,555"></image>
+        <backgroundreg>blank.png</backgroundreg>
+        <backgroundsel>blank.png</backgroundsel>
+      </richtextarea>
 
+            <!-- 
+                ok button
+            -->
+
+      <textbutton name="ok_button" draworder="1">
+        <position>321,635</position>
+        <font>small-info</font>
+        <image function="on" filename="mw_text_button_on.png"></image>
+        <image function="off" filename="mw_text_button_off.png"></image>
+        <image function="pushed" filename="mw_text_button_pushed.png"></image>
+      </textbutton>
+
+    </container>
+  </window>
 </mythuitheme>

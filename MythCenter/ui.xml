@@ -2158,6 +2158,14 @@
       <bold>yes</bold>
     </font>
 
+    <font name="heading" base="info">
+        <color>#ffff00</color>
+    </font>
+
+    <font name="body" base="info">
+        <color>#ffffff</color>
+    </font>
+
     <font name="buttons" face="Trebuchet MS">
       <color>#FFFFFF</color>
       <size>14</size>

@@ -1475,7 +1475,7 @@
       </font>
 
     <container name="main_display">
-      <area>0,0,1280,700</area>
+      <area>0,0,1280,720</area>
       <textarea name="title" draworder="0">
         <area>50,30,720,40</area>
         <font>basefont</font>
@@ -1483,16 +1483,16 @@
       </textarea>
 
       <richtextarea name="richtext" draworder="0">
-        <area>280,58,730,640</area>
-        <textarea>305,70,640,585</textarea>
+        <area>130,78,1000,610</area>
+        <textarea>155,95,900,540</textarea>
         <font>info</font>
         <value>Program Details</value>
-        <image function="uparrow-reg" filename="blank.png" location="960,90"></image>
-        <image function="downarrow-reg" filename="blank.png" location="960,600"></image>
-        <image function="uparrow-sel" filename="uparrow.png" location="960,90"></image>
-        <image function="downarrow-sel" filename="downarrow.png" location="960,600"></image>
-        <backgroundreg>pd-background.png</backgroundreg>
-        <backgroundsel>pd-background.png</backgroundsel>
+        <image function="uparrow-reg" filename="blank.png" location="1075,115"></image>
+        <image function="downarrow-reg" filename="blank.png" location="1075,575"></image>
+        <image function="uparrow-sel" filename="uparrow.png" location="1075,115"></image>
+        <image function="downarrow-sel" filename="downarrow.png" location="1075,575"></image>
+        <backgroundreg>pd-wbackground.png</backgroundreg>
+        <backgroundsel>pd-wbackground.png</backgroundsel>
       </richtextarea>
 
             <!-- An "OK" button may be included but is not necessary

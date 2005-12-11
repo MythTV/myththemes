@@ -391,9 +391,9 @@
             <fcnfont name="list-recording" function="recording"></fcnfont>
             <fcnfont name="list-selected" function="selected"></fcnfont>
             <columnpadding>10</columnpadding>
-            <column number="1" width="170" context="-1"></column>
-            <column number="2" width="185" context="-1"></column>
-            <column number="3" width="745" context="-1"></column>
+            <column number="1" width="205" context="-1"></column>
+            <column number="2" width="180" context="-1"></column>
+            <column number="3" width="725" context="-1"></column>
             <column number="4" width="30" context="-1"></column>
             <items>6</items>
             <image function="selectionbar" filename="shared/very_long_bar.png" location="-14,0"></image>
@@ -518,8 +518,8 @@
             <fcnfont name="list-recording" function="recording"></fcnfont>
             <fcnfont name="list-selected" function="selected"></fcnfont>
             <columnpadding>10</columnpadding>
-            <column number="1" width="170" context="-1"></column>
-            <column number="2" width="185" context="-1"></column>
+            <column number="1" width="205" context="-1"></column>
+            <column number="2" width="180" context="-1"></column>
             <column number="3" width="705" context="-1"></column>
             <column number="4" width="30" context="-1"></column>
             <column number="5" width="30" context="-1"></column>
@@ -954,10 +954,10 @@
         <fcnfont name="list-selected" function="selected"></fcnfont>
         <fcnfont name="list-inactive" function="inactive"></fcnfont>
         <columnpadding>15</columnpadding>
-        <column number="1" width="645" context="-1"></column>
-        <column number="2" width="60" context="-1"></column>
-        <column number="3" width="144" context="0"></column>
-        <column number="4" width="110" context="1"></column>
+        <column number="1" width="635" context="-1"></column>
+        <column number="2" width="105" context="-1"></column>
+        <column number="3" width="134" context="0"></column>
+        <column number="4" width="100" context="1"></column>
 
         <items>7</items>
         <image function="selectionbar" filename="shared/long_bar.png" location="-20,-8"></image>
@@ -1017,7 +1017,7 @@
 
       <textarea name="description" draworder="6">
         <area>25,140,1000,125</area>
-        <altarea>20,140,760,125</altarea>
+        <altarea>20,140,1100,125</altarea>
         <font>metadata</font>
         <multiline>yes</multiline>
         <value>%LONGREPEAT%%STARS%%DESCRIPTION%</value>
@@ -1038,7 +1038,7 @@
       </image>
       <image name="cutlist" draworder="6">
         <filename>type/cutlist.png</filename>
-        <position>1023,10</position>
+        <position>923,10</position>
       </image>
 
       <image name="processing" draworder="6">
@@ -1050,7 +1050,7 @@
 
     <container name="program_info_del">
       <context>1</context>
-      <area>0,440,1280,300</area>
+      <area>60,390,1200,320</area>
       
       <textarea name="title" draworder="6">
         <area>40,0,580,44</area>
@@ -1064,7 +1064,7 @@
       </textarea>
 
       <textarea name="channel" draworder="6">
-        <area>25,100,160,30</area>
+        <area>25,100,180,33</area>
         <font>info</font>
       </textarea>
 
@@ -1074,7 +1074,7 @@
       </textarea>
 
       <textarea name="description" draworder="6">
-        <area>25,140,1000,75</area>
+        <area>20,140,1100,125</area>
         <font>metadata</font>
         <multiline>yes</multiline>
         <value>%LONGREPEAT%%STARS%%DESCRIPTION%</value>
@@ -1303,7 +1303,7 @@
             <fcnfont name="list-recording" function="recording"></fcnfont>
             <fcnfont name="list-conflict" function="conflicting"></fcnfont>
             <columnpadding>5</columnpadding>
-            <column number="1" width="175" context="-1"></column>
+            <column number="1" width="205" context="-1"></column>
             <column number="2" width="178" context="-1"></column>
             <column number="3" width="800" context="-1"></column>
             <items>6</items>

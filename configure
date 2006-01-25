@@ -25,7 +25,7 @@ exit 1
 fi
 
 # bring in mythtv config
-rm mythconfig.mak
+rm -f mythconfig.mak
 ln -s $prefix/include/mythtv/mythconfig.mak mythconfig.mak
 
 qmake myththemes.pro

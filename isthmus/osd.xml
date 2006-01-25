@@ -62,7 +62,7 @@
  
   <container name="channel_number">
     <textarea name="callsign">
-       <area>25,20,300,27</area>
+       <area>25,20,300,32</area>
        <font>channelfont</font>
        <value>%CALLSIGN% - %CHANNUM%</value>
     </textarea>
@@ -128,7 +128,7 @@
         <font>timefont</font>
      </textarea>
     <textarea name="callsign">
-       <area>25,20,300,27</area>
+       <area>25,20,300,32</area>
        <font>channelfont</font>
        <value>%CALLSIGN% - %CHANNUM%</value>
     </textarea>

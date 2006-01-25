@@ -48,7 +48,7 @@
             <position>0,10</position>
         </image>
         <image name="infofiller" draworder="0" fleximage="no">
-            <filename>profind/progfind_top.png</filename>
+            <filename>progfind/progfind_top.png</filename>
             <position>26,350</position>
         </image>
     </container>

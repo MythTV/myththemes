@@ -44,7 +44,7 @@
             <position>0,10</position>
         </image>
         <image name="titlelines" draworder="0" fleximage="no">
-            <filename>trans-titles.png</filename>
+            <filename>shared/trans-titles.png</filename>
             <position>0,10</position>
         </image>
         <image name="infofiller" draworder="0" fleximage="no">

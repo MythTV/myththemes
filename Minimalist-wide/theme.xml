@@ -507,27 +507,27 @@
   </buttondef>
 
   <buttondef name="SETUP_CAPTURE_CARDS">
-    <image>text-blank.png</image>
-<!--     <watermarkimage>watermark/setup.png</watermarkimage> -->
-    <offset>0,0</offset>
+    <image>buttons/MENU_UTILITIES_SETUP_off.png</image>
+    <activeimage>buttons/MENU_UTILITIES_SETUP.png</activeimage>
+    <offset>25,-100</offset>
   </buttondef>
 
   <buttondef name="SETUP_VIDEO_SOURCES">
-    <image>text-blank.png</image>
-<!--     <watermarkimage>watermark/setup.png</watermarkimage> -->
-    <offset>0,0</offset>
+    <image>buttons/MENU_UTILITIES_SETUP_off.png</image>
+    <activeimage>buttons/MENU_UTILITIES_SETUP.png</activeimage>
+    <offset>25,-100</offset>
   </buttondef>
 
   <buttondef name="SETUP_INPUT_CONNECTIONS">
-    <image>text-blank.png</image>
-<!--     <watermarkimage>watermark/setup.png</watermarkimage> -->
-    <offset>0,0</offset>
+    <image>buttons/MENU_UTILITIES_SETUP_off.png</image>
+    <activeimage>buttons/MENU_UTILITIES_SETUP.png</activeimage>
+    <offset>25,-100</offset>
   </buttondef>
 
   <buttondef name="SETUP_CHANNEL_EDITOR">
-    <image>text-blank.png</image>
-<!--     <watermarkimage>watermark/setup.png</watermarkimage> -->
-    <offset>0,0</offset>
+    <image>buttons/MENU_UTILITIES_SETUP_off.png</image>
+    <activeimage>buttons/MENU_UTILITIES_SETUP.png</activeimage>
+    <offset>25,-100</offset>
   </buttondef>
 
 <!-- ###################################-->

@@ -1,4 +1,6 @@
-include ( mythconfig.mak )
+!include ( mythconfig.mak ) {
+    error("Please run ./configure")
+}
 
 QMAKE_STRIP = echo
 

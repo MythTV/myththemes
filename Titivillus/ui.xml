@@ -1261,6 +1261,7 @@
         <column number="1" width="155" context="-1"></column>
         <column number="2" width="122" context="-1"></column>
         <column number="3" width="420" context="-1"></column>
+        <column number="4" width="20" context="-1"></column>
         <items>8</items>
         <image function="selectionbar" filename="conflict/tit-cr-selectbar.png" location="-10,-6"></image>
         <image function="uparrow" filename="shared/up_arrow.png" location="745,10"></image>

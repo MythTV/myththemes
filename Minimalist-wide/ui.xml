@@ -1278,7 +1278,8 @@
             <columnpadding>5</columnpadding>
             <column number="1" width="205" context="-1"></column>
             <column number="2" width="178" context="-1"></column>
-            <column number="3" width="800" context="-1"></column>
+            <column number="3" width="750" context="-1"></column>
+            <column number="4" width="30" context="-1"></column>
             <items>6</items>
             <image function="selectionbar" filename="shared/very_long_bar.png" location="-15,0"></image>
             <image function="uparrow" filename="shared/up_arrow.png" location="1170,15"></image>

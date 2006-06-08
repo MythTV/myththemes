@@ -1661,7 +1661,8 @@
         <columnpadding>10</columnpadding>
         <column number="1" width="232" context="-1"></column>
         <column number="2" width="135" context="-1"></column>
-        <column number="3" width="725" context="-1"></column>
+        <column number="3" width="685" context="-1"></column>
+        <column number="4" width="20" context="-1"></column>
         <items>11</items>
         <image function="selectionbar" filename="rk-selectbar.png" location="-6,-2"></image>
         <image function="uparrow" filename="uparrow.png" location="1201,36"></image>

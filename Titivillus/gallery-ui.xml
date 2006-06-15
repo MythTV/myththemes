@@ -30,10 +30,22 @@
     </font>    
     
     <container name="menu">
-      <area>20,20,140,270</area>
+      <area>20,20,140,560</area>
 
       <listbtnarea name="menu" draworder="0">
         <area>0,77,140,270</area>
+        <gradient type="unselected" start="#DDDDFF" end="#505050" alpha="100">
+        </gradient>
+        <gradient type="selected" start="#DDDDFF" end="#909090" alpha="255">
+        </gradient>
+        <fcnfont name="active" function="active"></fcnfont>
+        <fcnfont name="inactive" function="inactive"></fcnfont>
+        <showarrow>no</showarrow>
+        <showscrollarrows>no</showscrollarrows>
+      </listbtnarea>
+
+      <listbtnarea name="submenu" draworder="0">
+        <area>0,287,140,260</area>
         <gradient type="unselected" start="#DDDDFF" end="#505050" alpha="100">
         </gradient>
         <gradient type="selected" start="#DDDDFF" end="#909090" alpha="255">

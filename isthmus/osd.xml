@@ -86,7 +86,7 @@
     <textarea name="starttime">
       <area>100,378,440,20</area>
       <font>grayfont</font>
-      <value>(%ORIGINALAIRDATE% %STARTTIME% - %ENDTIME%)  %LENMINS%</value>
+      <value>(%STARTDATE% %STARTTIME% - %ENDTIME%)  %LENMINS%</value>
     </textarea> 
     <image name="channelicon">
       <position>25,354</position>

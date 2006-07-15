@@ -496,7 +496,7 @@
         </textarea>
         
         <textarea name="director" draworder="4">
-            <area>197,50,850,35</area>
+            <area>217,50,850,35</area>
             <font>info</font>
         </textarea>
         
@@ -799,10 +799,10 @@
 
     <container name="editing_container">
 
-            <area>10,10,780,580</area>
+            <area>10,10,1260,580</area>
  
             <textarea name="title" draworder="0" align="center">
-                <area>10,10,760,50</area>
+                <area>10,10,1240,50</area>
                 <font>title</font>
                 <value>Edit Video Information</value>
             </textarea>
@@ -858,11 +858,11 @@
             -->
 
             <blackhole name="title_hack" draworder="0">
-                <area>310,95,300,40</area>
+                <area>310,95,850,40</area>
             </blackhole>
 
 	    <selector name="category_select" draworder="0">
-		<area>310,145,300,40</area>
+		<area>310,145,850,40</area>
 		<font>display</font>
 		<image function="on" filename="mv_leftright_on.png"></image>
 		<image function="off" filename="mv_leftright_off.png"></image>
@@ -870,7 +870,7 @@
 	    </selector>
 
             <selector name="level_select" draworder="0">
-                <area>310,195,300,40</area>
+                <area>310,195,850,40</area>
                 <font>display</font>
                 <image function="on" filename="mv_leftright_on.png"></image>
                 <image function="off" filename="mv_leftright_off.png"></image>
@@ -878,7 +878,7 @@
             </selector>
 
             <selector name="child_select" draworder="0">
-                <area>310,245,300,40</area>
+                <area>310,245,850,40</area>
                 <font>display</font>
                 <image function="on" filename="mv_leftright_on.png"></image>
                 <image function="off" filename="mv_leftright_off.png"></image>
@@ -900,13 +900,13 @@
                 <image function="pushed" filename="mv_blankbutton_pushed.png"></image>
             </pushbutton>
             <textarea name="coverart_text" draworder="0" align="left">
-                <area>350,350,250,40</area>
+                <area>350,350,800,40</area>
                 <font>display</font>
                 <value>/path/to/the/thing.jpg</value>
             </textarea>
 
             <blackhole name="player_hack" draworder="0">
-                <area>310,395,300,40</area>
+                <area>310,395,850,40</area>
             </blackhole>
 
             <textbutton name="done_button" draworder="0">
@@ -944,23 +944,23 @@
         </container>
         
         <container name="chooser_area">
-            <area>0,0,600,250</area>
+            <area>0,0,1000,300</area>
             <managedtreelist name="file_browser" draworder="1" bins="2">
-                <area>185,20,400,210</area>
-                <image function="selectionbar" filename="conflict/tit-cr-selectbar.png"></image>
+                <area>300,10,500,260</area>
+                <image function="selectionbar" filename="cr-selectbar.png"></image>
                 <image function="uparrow" filename="shared/up_arrow.png"></image>
                 <image function="downarrow" filename="shared/down_arrow.png"></image>
                 <image function="leftarrow" filename="shared/left_arrow.png"></image>
                 <image function="rightarrow" filename="shared/right_arrow.png"></image>
                 <bin number="1">
-                    <area>185,20,145,210</area>
+                    <area>300,50,220,210</area>
                     <fcnfont name="chooser_font" function="active"></fcnfont>
                     <fcnfont name="chooser_font" function="inactive"></fcnfont>
                     <fcnfont name="chooser_font" function="selected"></fcnfont>
                     <fcnfont name="chooser_font" function="selectable"></fcnfont>
                 </bin>
                 <bin number="2">
-                    <area>350,20,235,210</area>
+                    <area>575,20,350,260</area>
                     <fcnfont name="chooser_font" function="active"></fcnfont>
                     <fcnfont name="chooser_font" function="inactive"></fcnfont>
                     <fcnfont name="chooser_font" function="selected"></fcnfont>
@@ -968,7 +968,7 @@
                 </bin>
             </managedtreelist>
             <image name="image_box" draworder="1" fleximage="no">
-                <position>19,20</position>
+                <position>70,45</position>
                 <staticsize>143,209</staticsize>
             </image>
 

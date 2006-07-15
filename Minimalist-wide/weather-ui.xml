@@ -95,16 +95,16 @@
       
       <image name="logo" draworder="1">
         <filename>weather/logo.png</filename>
-        <position>400,200</position>
+        <position>496,200</position>
       </image>
       <textarea name="loading" draworder="2" align="right"> 
         <font>header</font>
-        <area>30,170,400,50</area>
+        <area>126,170,400,50</area>
         <value>Loading...</value>
       </textarea>
       <textarea name="retrieve" draworder="3" align="center">
         <font>timedate</font>
-        <area>0,480,800,42</area>
+        <area>0,480,1280,42</area>
         <value>[ retrieving weather data ... ]</value>
       </textarea>
     </container>
@@ -131,45 +131,45 @@
         <position>0,75</position>
       </image>
 
-      <textarea name="currenttime-1" draworder="2" align="right">
+      <textarea name="currenttime-1" draworder="2">
         <context>1</context>
         <font>timedate</font>
         <area>1040,120,130,40</area>
       </textarea>
-      <textarea name="currentdate-1" draworder="2">
+      <textarea name="currentdate-1" draworder="2" align="right">
         <context>1</context>
         <font>timedate</font>
-        <area>900,120,200,40</area>
+        <area>830,120,200,40</area>
       </textarea>
-      <textarea name="currenttime-2" draworder="2" align="right">
+      <textarea name="currenttime-2" draworder="2">
         <context>2</context>
         <font>timedate</font>
         <area>1040,120,130,40</area>
       </textarea>
-      <textarea name="currentdate-2" draworder="2">
+      <textarea name="currentdate-2" draworder="2" align="right">
         <context>2</context>
         <font>timedate</font>
-        <area>900,120,200,40</area>
+        <area>830,120,200,40</area>
       </textarea>
-      <textarea name="currenttime-3" draworder="2" align="right">
+      <textarea name="currenttime-3" draworder="2">
         <context>3</context>
         <font>timedate</font>
         <area>1040,120,130,40</area>
       </textarea>
-      <textarea name="currentdate-3" draworder="2">
+      <textarea name="currentdate-3" draworder="2" align="right">
         <context>3</context>
         <font>timedate</font>
-        <area>900,120,200,40</area>
+        <area>830,120,200,40</area>
       </textarea>
-      <textarea name="currenttime-4" draworder="2" align="right">
+      <textarea name="currenttime-4" draworder="2">
         <context>4</context>
         <font>timedate</font>
         <area>1040,120,130,40</area>
       </textarea>
-      <textarea name="currentdate-4" draworder="2">
+      <textarea name="currentdate-4" draworder="2" align="right">
         <context>4</context>
         <font>timedate</font>
-        <area>900,120,200,40</area>
+        <area>830,120,200,40</area>
       </textarea>
  
       <image name="logo1" draworder="2">
@@ -253,23 +253,23 @@
       <textarea name="curtemp" draworder="5" align="right">
         <context>1</context>
         <cutdown>no</cutdown>
-        <area>545,437,138,70</area>
+        <area>845,437,138,70</area>
         <font>temp</font>
       </textarea>
       <textarea name="units" draworder="5">
         <context>1</context>
-        <area>683,434,82,70</area>
+        <area>983,434,82,70</area>
         <font>weatherdata</font>
       </textarea>
       <textarea name="curcond" draworder="5" align="allcenter">
         <context>1</context>
-        <area>545,370,227,78</area>
+        <area>845,370,227,78</area>
         <font>weatherdata</font>
         <multiline>yes</multiline>
       </textarea>
       <image name="currentpic" draworder="3">
         <context>1</context>
-        <position>555,226</position>
+        <position>855,226</position>
         <staticsize>200,150</staticsize>
       </image>
 
@@ -334,81 +334,81 @@
       </textarea>
       <textarea name="date2" draworder="5" align="center">
         <context>2</context>
-        <area>376,220,245,32</area>
+        <area>516,220,245,32</area>
         <font>weatherdata</font>
       </textarea>
       <image name="pic2" draworder="6">
         <context>2</context>
-        <position>404,254</position>
+        <position>544,254</position>
         <staticsize>200,150</staticsize>
       </image>
       <textarea name="desc2" draworder="5" align="allcenter">
         <context>2</context>
-        <area>366,400,265,64</area>
+        <area>506,400,265,64</area>
         <font>weatherdata</font>
         <multiline>yes</multiline>
       </textarea>
       <textarea name="lolbl2" draworder="5" align="center">
         <context>2</context>
-        <area>376,458,122,32</area>
+        <area>516,458,122,32</area>
         <font>lohifont</font>
         <value>LO</value>
       </textarea>
       <textarea name="hilbl2" draworder="5" align="center">
         <context>2</context>
-        <area>479,458,122,32</area>
+        <area>619,458,122,32</area>
         <font>lohifont</font>
         <value>HI</value>
       </textarea>
       <textarea name="low2" draworder="5" align="center">
         <context>2</context>
-        <area>376,489,122,32</area>
+        <area>516,489,122,32</area>
         <font>tempdata</font>
         <cutdown>no</cutdown>
       </textarea>
       <textarea name="high2" draworder="5" align="center">
         <context>2</context>
-        <area>479,489,122,32</area>
+        <area>619,489,122,32</area>
         <font>tempdata</font>
         <cutdown>no</cutdown>
       </textarea>
       <textarea name="date3" draworder="5" align="center">
         <context>2</context>
-        <area>724,220,245,32</area>
+        <area>1004,220,245,32</area>
         <font>weatherdata</font>
       </textarea>
       <image name="pic3" draworder="6">
         <context>2</context>
-        <position>749,254</position>
+        <position>1029,254</position>
         <staticsize>200,150</staticsize>
       </image>
       <textarea name="desc3" draworder="5" align="allcenter">
         <context>2</context>
-        <area>714,400,265,64</area>
+        <area>994,400,265,64</area>
         <font>weatherdata</font>
         <multiline>yes</multiline>
       </textarea>
       <textarea name="lolbl3" draworder="5" align="center">
         <context>2</context>
-        <area>724,458,122,32</area>
+        <area>1004,458,122,32</area>
         <font>lohifont</font>
         <value>LO</value>
       </textarea>
       <textarea name="hilbl3" draworder="5" align="center">
         <context>2</context>
-        <area>824,458,122,32</area>
+        <area>1104,458,122,32</area>
         <font>lohifont</font>
         <value>HI</value>
       </textarea>
       <textarea name="low3" draworder="5" align="center">
         <context>2</context>
-        <area>724,489,122,32</area>
+        <area>1004,489,122,32</area>
         <font>tempdata</font>
         <cutdown>no</cutdown>
       </textarea>
       <textarea name="high3" draworder="5" align="center">
         <context>2</context>
-        <area>824,489,122,32</area>
+        <area>1104,489,122,32</area>
         <font>tempdata</font>
         <cutdown>no</cutdown>
       </textarea>
@@ -433,19 +433,19 @@
       </textarea>
       <textarea name="updatetime-3" draworder="5">
         <context>3</context>
-        <area>39,540,700,35</area>
+        <area>39,540,1200,35</area>
         <font>footer</font>
       </textarea>
       <textarea name="today-desc" draworder="5">
         <context>3</context>
         <cutdown>no</cutdown>
-        <area>38,230,700,400</area>
+        <area>38,230,1200,400</area>
         <font>todayfont</font>
         <multiline>yes</multiline>
       </textarea>
       <textarea name="updatetime-3" draworder="5">
         <context>3</context>
-        <area>39,540,700,35</area>
+        <area>39,540,1200,35</area>
         <font>footer</font>
       </textarea>
 
@@ -475,13 +475,13 @@
       </textarea>
       <textarea name="tempforecast" draworder="5">
         <context>4</context>
-        <area>260,313,800,100</area>
+        <area>260,313,880,100</area>
         <font>todayfont</font>
         <multiline>yes</multiline>
       </textarea>
       <textarea name="condforecast" draworder="5">
         <context>4</context>
-        <area>260,429,500,100</area>
+        <area>260,429,880,100</area>
         <font>todayfont</font>
         <multiline>yes</multiline>
       </textarea>
@@ -510,64 +510,64 @@
       </textarea>
       <textarea name="err1" draworder="5" align="center">
         <context>5</context>
-        <area>0,250,800,45</area>
+        <area>0,250,1280,45</area>
         <font>header</font>
         <value>Map Unavailable</value>
       </textarea>
 
       <textarea name="maplabel-1" draworder="5" align="center">
         <context>5</context>
-        <area>343,70,114,15</area>
+        <area>133,70,181,15</area>
         <font>label</font>
         <value>RAIN</value>
       </textarea>
       <textarea name="maplabel-2" draworder="5" align="center">
         <context>5</context>
-        <area>599,70,114,15</area>
+        <area>541,70,181,15</area>
         <font>label</font>
         <value>MIX/ICE</value>
       </textarea>
       <textarea name="maplabel-3" draworder="5" align="center">
         <context>5</context>
-        <area>855,70,114,15</area>
+        <area>952,70,181,15</area>
         <font>label</font>
         <value>SNOW</value>
       </textarea>
 
       <textarea name="maplabel-4" draworder="5" align="right">
         <context>5</context>
-        <area>260,86,80,16</area>
+        <area>53,86,80,16</area>
         <font>label2</font>
         <value>LIGHT</value>
       </textarea>
       <textarea name="maplabel-5" draworder="5" align="right">
         <context>5</context>
-        <area>515,86,80,16</area>
+        <area>461,86,80,16</area>
         <font>label2</font>
         <value>LIGHT</value>
       </textarea>
       <textarea name="maplabel-6" draworder="5" align="right">
         <context>5</context>
-        <area>772,86,80,16</area>
+        <area>872,86,80,16</area>
         <font>label2</font>
         <value>LIGHT</value>
       </textarea>
 
       <textarea name="maplabel-7" draworder="5" align="left">
         <context>5</context>
-        <area>457,86,80,16</area>
+        <area>314,86,80,16</area>
         <font>label2</font>
         <value>HEAVY</value>
       </textarea>
       <textarea name="maplabel-8" draworder="5" align="left">
         <context>5</context>
-        <area>711,86,80,16</area>
+        <area>720,86,80,16</area>
         <font>label2</font>
         <value>HEAVY</value>
       </textarea>
       <textarea name="maplabel-9" draworder="5" align="left">
         <context>5</context>
-        <area>968,86,80,16</area>
+        <area>1131,86,80,16</area>
         <font>label2</font>
         <value>HEAVY</value>
       </textarea>
@@ -594,7 +594,7 @@
       <image name="radarbk" draworder="4">
         <context>5</context>
         <filename>weather/mw-map.png</filename>
-        <position>258,0</position>
+        <position>0,0</position>
       </image>
       <image name="radarimg" draworder="6">
         <context>5</context>
@@ -604,7 +604,7 @@
       </image>
       <animatedimage name="animatedradarimg" draworder="6">
         <context>5</context>
-        <position>276,134</position>
+        <position>276,184</position>
         <staticsize>765,500</staticsize>
         <skipin>0,58</skipin>
         <interval>200</interval>
@@ -615,7 +615,7 @@
       <image name="logo" draworder="7">
         <context>5</context>
         <filename>weather/logo.png</filename>
-        <position>25,5</position>
+        <position>50,184</position>
         <staticsize>157,118</staticsize>
       </image>
     </container>

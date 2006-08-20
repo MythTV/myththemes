@@ -362,52 +362,50 @@
   <container name="editmode" fademovement="0,6">
     <image name="background">
       <filename>osd-editmode.png</filename>
-      <position>55,357</position>
-      <staticsize>530,80</staticsize>
+      <position>55,347</position>
+      <staticsize>530,100</staticsize>
     </image>
     <image name="sliderframe">
       <filename>slider_frame.png</filename>
-      <position>123,402</position>
+      <position>123,392</position>
       <staticsize>414,25</staticsize>
     </image>
     <textarea name="edit">
-      <area>80,365,250,27</area>
+      <area>80,355,250,27</area>
       <font>scroller</font>
       <value>Edit</value>
     </textarea>
     <slider name="editslider" type="edit">
-      <area>127,404,406,20</area>
+      <area>127,394,406,20</area>
       <filename>fill_green.png</filename>
       <altfilename>fill_red.png</altfilename>
     </slider>
     <slider name="editposition" type="position">
-      <area>127,398,406,40</area>
+      <area>127,388,406,40</area>
       <filename>position_marker.png</filename>
     </slider>
     <editarrow name="left">
       <filename>cut_end.png</filename>
-      <area>125,401,406,40</area>
+      <area>125,391,406,40</area>
     </editarrow>
     <editarrow name="right">
       <filename>cut_start.png</filename>
-      <area>125,401,406,40</area>
+      <area>125,391,406,40</area>
     </editarrow>
     <textarea name="timedisplay">
-      <area>255,378,200,60</area>
+      <area>255,368,200,60</area>
       <font>infofont</font>
     </textarea>
-<!--
-    <textarea name="framedisplay">
-      <area>380,378,200,60</area>
-      <font>infofont</font>
+    <textarea name="framedisplay" align="center">
+      <area>220,422,200,60</area>
+      <font>grayfont</font>
     </textarea>
--->
     <textarea name="cutindicator">
       <area>40,30,100,30</area>
       <font>settings</font>
     </textarea>
     <textarea name="seekamount" align="right">
-      <area>440,365,125,40</area>
+      <area>440,355,125,40</area>
       <font>statustimefont</font>
     </textarea>
   </container>

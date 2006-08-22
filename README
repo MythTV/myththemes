@@ -6,7 +6,7 @@ This is generally /usr/local if you're compiling from source.
 
 To install:
 
-qmake myththemes.pro
-make install
-
-
+$ ./configure
+$ qmake myththemes.pro
+$ su
+# make install

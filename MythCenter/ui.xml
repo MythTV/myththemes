@@ -217,7 +217,7 @@
     </container>
 
     <container name="current_video">
-      <area>540,30,240,180</area>
+      <area>540,31,240,180</area>
     </container>
 
     <container name="date_info">

@@ -61,15 +61,15 @@
       <area>0,0,1280,197</area>
       <textarea name="misicon" draworder="5">
         <cutdown>no</cutdown>
-        <area>38,19,95,71</area>
+        <area>40,20,60,60</area>
         <font>small</font>
       </textarea>
       <image name="icon" draworder="6">
-        <position>38,19</position>
-        <staticsize>95,71</staticsize>
+        <position>40,20</position>
+        <staticsize>60,60</staticsize>
       </image>
       <textarea name="title" draworder="4" align="vcenter">
-        <area>152,16,934,72</area>
+        <area>120,16,908,72</area>
         <font>title</font>
       </textarea>
       <textarea name="subtitle" draworder="6">
@@ -99,19 +99,19 @@
     </container>
 
     <container name="date_info">
-      <area>40,216,160,36</area>
+      <area>40,216,188,36</area>
       <textarea name="date" draworder="4" align="allcenter">
          <font>info</font>
-         <area>0,0,160,36</area>
+         <area>0,0,188,36</area>
          <cutdown>no</cutdown>
       </textarea>
     </container>
 
     <container name="timebar">
       <!-- adjust left by 4 pixels: bug in myth layout engine? -->
-      <area>196,216,1048,36</area>
+      <area>232,216,1012,36</area>
       <bar name="times" draworder="4">
-        <area>0,0,1048,36</area>
+        <area>0,0,1012,36</area>
         <align>allcenter</align>
         <imagefile>gg-times.png</imagefile>
         <font>descinfo</font>
@@ -119,12 +119,12 @@
     </container>
 
     <container name="chanbar">
-      <area>40,252,160,448</area>
+      <area>40,252,188,448</area>
       <bar name="chans" draworder="4">
-        <area>0,0,160,448</area>
+        <area>0,0,188,448</area>
         <iconoffset>16,10</iconoffset>
         <iconsize>40,40</iconsize>
-        <textoffset>48,0</textoffset>
+        <textoffset>64,0</textoffset>
         <orientation>vertical</orientation>
         <align>allcenter</align>
         <font>chaninfo</font>
@@ -133,9 +133,9 @@
     </container>
 
     <container name="guide">
-      <area>200,252,1048,448</area>
+      <area>236,252,1012,448</area>
       <guidegrid name="guidegrid" draworder="4">
-        <area>0,0,1048,448</area>
+        <area>0,0,1012,448</area>
         <solidcolor>#003256</solidcolor>
         <selector type="box" color="#33ff33"></selector>
         <recordingcolor>#00aa00</recordingcolor>
@@ -217,18 +217,18 @@
     </container>
 
     <container name="program_info">
-      <area>0,0,1280,339</area>
+      <area>0,0,828,339</area>
       <textarea name="misicon" draworder="5">
         <cutdown>no</cutdown>
-        <area>38,32,95,71</area>
+        <area>32,32,60,60</area>
         <font>small</font>
       </textarea>
       <image name="icon" draworder="6">
-        <position>38,32</position>
-        <staticsize>95,71</staticsize>
+        <position>32,32</position>
+        <staticsize>60,60</staticsize>
       </image>
       <textarea name="title" draworder="4" align="vcenter">
-        <area>152,32,760,72</area>
+        <area>108,32,741,72</area>
         <font>title</font>
       </textarea>
       <textarea name="subtitle" draworder="6">
@@ -248,7 +248,7 @@
     </container>
 
     <container name="current_video">
-      <area>864,40,386,216</area>
+      <area>864,37,386,217</area>
     </container>
 
     <container name="current_info">
@@ -284,7 +284,7 @@
         <area>0,0,188,308</area>
         <iconoffset>16,10</iconoffset>
         <iconsize>40,40</iconsize>
-        <textoffset>48,0</textoffset>
+        <textoffset>64,0</textoffset>
         <orientation>vertical</orientation>
         <align>allcenter</align>
         <font>chaninfo</font>
@@ -1320,7 +1320,7 @@
     </container>
 
     <container name="video">
-      <area>1056,391,160,120</area>
+      <area>1056,391,160,90</area>
     </container>
 
     <!-- Confirm delete and legend help popup -->

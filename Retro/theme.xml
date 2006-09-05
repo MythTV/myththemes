@@ -3,12 +3,12 @@
 
   <background style="normal">
     <image>ui/background.png</image>
-    <buttonarea>100,144,324,252</buttonarea>
-    <visiblerowlimit>5</visiblerowlimit>
+    <buttonarea>100,150,324,270</buttonarea>
+    <visiblerowlimit>6</visiblerowlimit>
   </background>
 
   <titles>
-    <position>0,0</position>
+    <position>30,24</position>
     <image mode="TV">title/title_tv.png</image>
     <image mode="MAIN">title/title_main.png</image>
     <image mode="MUSIC">title/title_music.png</image>
@@ -45,7 +45,7 @@
       <area>27,4,0,0</area>
       <color>#5D82CD</color>
       <fontname>Trebuchet MS</fontname>
-      <fontsize>22</fontsize>
+      <fontsize>20</fontsize>
       <bold>yes</bold>
       <italics>no</italics>
       <centered>no</centered>
@@ -59,7 +59,7 @@
       <area>27,4,0,0</area>
       <color>white</color>
       <fontname>Trebuchet MS</fontname>
-      <fontsize>22</fontsize>
+      <fontsize>20</fontsize>
       <bold>yes</bold>
       <italics>no</italics>
       <centered>no</centered>      
@@ -73,17 +73,17 @@
   
   <logo> <!-- Size: 133 x 29 px -->
     <image>ui/mythtv_logo.png</image>
-    <position>628,529</position>
+    <position>612,526</position>
   </logo>
   
   <uparrow> <!-- Size: 20 x 20 px -->
     <image>ui/up.png</image>
-    <position>127,120</position>
+    <position>127,126</position>
   </uparrow>
 
   <downarrow> <!-- Size: 50 x 50 px -->
     <image>ui/down.png</image>
-    <position>127,400</position>
+    <position>127,418</position>
   </downarrow>
   
 <!-- ################################################################ -->
@@ -180,7 +180,7 @@
 
   <buttondef name="FM">
     <image>ui/button_off.png</image>
-    <watermarkimage>watermark/radio.png</watermarkimage>
+    <watermarkimage>watermark/music.png</watermarkimage>
     <offset>0,0</offset>
   </buttondef>
 
@@ -216,7 +216,7 @@
 
   <buttondef name="RECIPE">
     <image>ui/button_off.png</image>
-    <watermarkimage>watermark/pie.png</watermarkimage>
+    <watermarkimage>blank.png</watermarkimage>
     <offset>0,0</offset>
   </buttondef>
 
@@ -286,7 +286,7 @@
 
   <buttondef name="SETTINGS_FM">
     <image>ui/button_off.png</image>
-    <watermarkimage>watermark/radio.png</watermarkimage>
+    <watermarkimage>watermark/music.png</watermarkimage>
     <offset>0,0</offset>
   </buttondef>
 
@@ -322,7 +322,7 @@
 
   <buttondef name="SETTINGS_RECIPE">
     <image>ui/button_off.png</image>
-    <watermarkimage>watermark/pie.png</watermarkimage>
+    <watermarkimage>blank.png</watermarkimage>
     <offset>0,0</offset>
   </buttondef>
 

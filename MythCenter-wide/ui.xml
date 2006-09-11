@@ -1293,7 +1293,7 @@
       </image>
       <image name="watched" draworder="6">
           <filename>type/watched.png</filename>
-          <position>300,104</position>
+          <position>300,258</position>
       </image>
     </container>
 

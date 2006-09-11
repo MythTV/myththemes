@@ -1317,9 +1317,13 @@
       </image>
       <image name="hdtv" draworder="6">
         <filename>type/hd.png</filename>
-        <position>275,195</position>
+        <position>265,195</position>
       </image>
-
+      <image name="watched" draworder="6">
+          <filename>type/watched.png</filename>
+          <position>300,195</position>
+      </image>
+      
     </container>
 
     <container name="program_info_del">

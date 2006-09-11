@@ -1291,6 +1291,10 @@
         <filename>type/hd.png</filename>
         <position>255,258</position>
       </image>
+      <image name="watched" draworder="6">
+          <filename>type/watched.png</filename>
+          <position>300,104</position>
+      </image>
     </container>
 
     <container name="program_info_del">

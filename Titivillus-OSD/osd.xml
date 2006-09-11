@@ -382,21 +382,26 @@
       <multiline>yes</multiline>
     </textarea>
     <textarea name="option1">
-      <area>110,253,470,30</area>
+      <area>110,223,470,30</area>
       <font>infofont2</font>
       <altfont>infofontgray</altfont>
     </textarea>
     <textarea name="option2">
-      <area>110,283,470,30</area>
+      <area>110,253,470,30</area>
       <font>infofont2</font>
       <altfont>infofontgray</altfont>
     </textarea>
     <textarea name="option3">
-      <area>110,313,470,30</area>
+      <area>110,283,470,30</area>
       <font>infofont2</font>
       <altfont>infofontgray</altfont>
     </textarea>
     <textarea name="option4">
+      <area>110,313,470,30</area>
+      <font>infofont2</font>
+      <altfont>infofontgray</altfont>
+    </textarea>
+    <textarea name="option5">
       <area>110,343,470,30</area>
       <font>infofont2</font>
       <altfont>infofontgray</altfont>
@@ -405,6 +410,7 @@
     <positionrects name="selector"> <!-- draws a white rectangle at these 
                                          coords indicating the current 
                                          selection -->
+      <area>105,216,460,30</area>
       <area>105,246,460,30</area>
       <area>105,276,460,30</area>
       <area>105,306,460,30</area>

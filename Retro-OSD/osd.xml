@@ -309,10 +309,11 @@
    </image> 
    <positionimage name="selector"> 
      <filename>select.png</filename> 
+      <position>114,233</position> 
       <position>114,263</position> 
       <position>114,293</position> 
       <position>114,323</position> 
-      <position>114,353</position> 
+      <position>114,353</position>
     </positionimage> 
     <textarea name="message"> 455
       <area>120,94,394,220</area> 
@@ -320,25 +321,30 @@
       <multiline>yes</multiline> 
    </textarea> 
    <textarea name="option1"> 
-      <area>120,269,455,30</area> 
+      <area>120,239,455,30</area> 
       <font>notify</font> 
       <altfont>grayfont</altfont> 
    </textarea> 
    <textarea name="option2"> 
-      <area>120,299,455,30</area> 
+      <area>120,269,455,30</area> 
       <font>notify</font> 
       <altfont>grayfont</altfont> 
    </textarea> 
    <textarea name="option3"> 
-      <area>120,329,455,30</area> 
+      <area>120,299,455,30</area> 
       <font>notify</font> 
       <altfont>grayfont</altfont> 
    </textarea> 
    <textarea name="option4"> 
-      <area>120,359,455,30</area> 
+      <area>120,329,455,30</area> 
       <font>notify</font> 
       <altfont>grayfont</altfont> 
    </textarea> 
+   <textarea name="option5">
+      <area>120,359,455,30</area>
+      <font>notify</font>
+      <altfont>grayfont</altfont>
+    </textarea>
  </container> 
  
 

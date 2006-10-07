@@ -1255,8 +1255,8 @@
         <area>0,90,1152,164</area>
         <font>info</font>
         <multiline>yes</multiline>
-        <value>%SUBTITLE|"|"
-%%STARS%%DESCRIPTION%</value>
+        <value>%SUBTITLE|"|"%
+%STARS%%DESCRIPTION%</value>
       </textarea>
 
       <image name="autoexpire" draworder="6">
@@ -1318,8 +1318,8 @@
         <area>0,90,1152,164</area>
         <font>info</font>
         <multiline>yes</multiline>
-        <value>%SUBTITLE|"|"
-%%STARS%%DESCRIPTION%</value>
+        <value>%SUBTITLE|"|"%
+%STARS%%DESCRIPTION%</value>
       </textarea>
     </container>
 

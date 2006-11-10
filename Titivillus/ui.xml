@@ -1089,6 +1089,217 @@
 
   </window>
 
+  <window name="playback-video">
+    
+    
+    <font name="overunderrecfont" base="list-active">
+      <color>#ffffAA</color>
+    </font>
+    
+    <font name="currenttitle" base="list-active">
+      <color>#ffff33</color>
+    </font>
+    
+    
+    
+    <container name="background">
+      <textarea name="messagedel" draworder="0" align="hcenter">
+        <area>20,10,760,35</area>
+        <font>info</font>
+        <value>Select a recording to permanently erase.</value>
+        <context>1</context>
+      </textarea>
+      <textarea name="messageplay" draworder="0" align ="hcenter">
+        <area>20,10,760,35</area>
+        <font>info</font>
+        <value>Select a recording to watch.</value>
+        <context>0</context>
+      </textarea>
+    </container>
+    
+    <container name="selector">
+      <area>0,290,800,320</area>
+      <listarea name="toptitles" draworder="2">
+        <area>30,22,180,105</area>
+        <fcnfont name="list-active" function="active"></fcnfont>
+        <fcnfont name="list-selected" function="selected"></fcnfont>
+        <fcnfont name="list-inactive" function="inactive"></fcnfont>
+        <items>3</items>
+      </listarea>
+      <image name="titlelines" draworder="3" fleximage="no">
+        <filename>shared/trans-titles.png</filename>
+        <position>0,0</position>
+      </image>
+      <listarea name="bottomtitles" draworder="2">
+        <area>30,172,180,105</area>
+        <fcnfont name="list-active" function="active"></fcnfont>
+        <fcnfont name="list-selected" function="selected"></fcnfont>
+        <fcnfont name="list-inactive" function="inactive"></fcnfont>
+        <items>3</items>
+      </listarea>
+      <listarea name="showing" draworder="4">
+        <area>240,18,600,265</area>
+        <fcnfont name="list-record" function="record"></fcnfont>
+        <fcnfont name="list-recording" function="recording"></fcnfont>
+        <fcnfont name="overunderrecfont" function="overunderrecording"></fcnfont>
+        <fcnfont name="list-active" function="active"></fcnfont>
+        <fcnfont name="list-selected" function="selected"></fcnfont>
+        <fcnfont name="list-inactive" function="inactive"></fcnfont>
+        <fcnfont name="list-tagged" function="tagged"></fcnfont>
+        <columnpadding>5</columnpadding>
+        <column number="1" width="340" context="-1"></column>
+        <column number="2" width="60" context="-1"></column>
+        <column number="3" width="134" context="0"></column>
+        <column number="4" width="110" context="1"></column>
+        
+        <items>7</items>
+        <image function="selectionbar" filename="shared/long_bar.png" location="-20,-7"></image>
+        <image function="uparrow" draworder="6" filename="shared/up_arrow.png" location="750,15"></image>
+        <image function="downarrow" draworder="6" filename="shared/down_arrow.png" location="750,258"></image>
+      </listarea>
+      <image name="showinglines" draworder="5" fleximage="yes">
+        <filename>playback_box/showings.png</filename>
+        <position>0,3</position>
+      </image>
+      <textarea name="current" draworder="6">
+        <area>34,131,185,40</area>
+        <font>currenttitle</font>
+      </textarea>
+    </container>
+    
+    <container name="group_info">
+      <context>0</context>
+      <area>0,40,799,240</area>
+      
+      <textarea name="title" draworder="6">
+        <area>23,12,779,45</area>
+        <font>title</font>
+      </textarea>
+      <textarea name="description" draworder="6">
+        <area>25,50,600,120</area>
+        <altarea>25,50,600,120</altarea>
+        <font>metadata</font>
+        <multiline>yes</multiline>
+      </textarea>
+    </container>
+    
+    <container name="program_info_play">
+      <context>0</context>
+      <area>0,40,440,240</area>
+      <textarea name="title" draworder="6">
+        <area>25,0,420,44</area>
+        <altarea>20,0,420,44</altarea>
+        <font>title</font>
+      </textarea>
+      
+      <textarea name="subtitle" draworder="6">
+        <area>25,42,380,40</area>
+        <font>subtitle</font>
+        <multiline>yes</multiline>
+      </textarea>
+      
+      <textarea name="channel" draworder="6">
+        <area>25,74,100,30</area>
+        <font>info</font>
+      </textarea>
+      
+      <textarea name="timedate" draworder="6">
+        <area>140,74,330,30</area>
+        <font>info</font>
+      </textarea>
+      
+      <textarea name="description" draworder="6">
+        <area>25,130,400,120</area>
+        <altarea>20,140,400,120</altarea>
+        <font>metadata</font>
+        <multiline>yes</multiline>
+        <value>%LONGREPEAT%%STARS%%DESCRIPTION%</value>
+      </textarea>
+      
+      <image name="commflagged" draworder="6">
+        <filename>type/commflagged.png</filename>
+        <position>84,104</position>
+      </image>
+      <image name="autoexpire" draworder="6">
+        <filename>type/autoexpire.png</filename>
+        <position>52,104</position>
+      </image>
+      <image name="bookmark" draworder="6">
+        <filename>type/bookmark.png</filename>
+        <position>116,104</position>
+      </image>
+      <image name="cutlist" draworder="6">
+        <filename>type/cutlist.png</filename>
+        <position>148,104</position>
+      </image>
+      <image name="stereo" draworder="6">
+        <filename>type/stereo.png</filename>
+        <position>180,104</position>
+      </image>
+      <image name="cc" draworder="6">
+        <filename>type/cc.png</filename>
+        <position>212,104</position>
+      </image>
+      <image name="hdtv" draworder="6">
+        <filename>type/hd.png</filename>
+        <position>257,104</position>
+      </image>
+      
+      
+      <image name="processing" draworder="6">
+        <filename>type/processing.png</filename>
+        <position>20,104</position>
+      </image>
+      
+    </container>
+    
+    <container name="video">
+      <area>460,40,320,240</area>
+    </container>
+    
+    <!-- Confirm delete and legend help popup -->
+    <popup name="confirmdelete">
+      <foreground>#ffffff</foreground>
+      <highlight>#ffffff</highlight>
+    </popup>
+    
+    <container name="usage">
+      <context>1</context>
+      <area>0,530,800,50</area>
+      <statusbar name="usedbar" draworder="5">
+        <container fleximage="yes">playback_box/container.png</container>
+        <fill>playback_box/delrec-filler.png</fill>
+        <position>20,0</position>
+      </statusbar>
+      <textarea name="freereport" draworder="6">
+        <area>430,3,370,30</area>
+        <font>info</font>
+      </textarea>
+    </container>
+    
+    <container name="norecordings_list">
+      <textarea name="msg" align="center" draworder="8">
+        <area>200,140,600,30</area>
+        <font>info</font>
+        <value>Sorry, No Recordings Available</value>
+      </textarea>
+    </container>
+    
+    <container name="norecordings_info">
+      <textarea name="topline" align="center" draworder="8">
+        <area>20,80,580,30</area>
+        <font>info</font>
+        <value>To schedule a recording, exit this screen and</value>
+      </textarea>
+      <textarea name="botline" align="center" draworder="8">
+        <area>20,110,580,30</area>
+        <font>info</font>
+        <value>Select 'Schedule a Recording' from the Main Menu</value>
+      </textarea>
+    </container>
+    
+  </window>
+  
   <window name="programfind">
 
     <container name="background">

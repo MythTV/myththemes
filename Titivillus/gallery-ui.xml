@@ -60,9 +60,9 @@
 
     <container name="text">
 
-      <area>110,40,680,40</area>
+      <area>110,30,680,45</area>
       <textarea name="text" draworder="0">
-        <area>30,0,620,40</area>
+        <area>30,0,620,45</area>
         <font>title</font>
         <multiline>no</multiline>
       </textarea>

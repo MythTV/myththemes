@@ -138,7 +138,7 @@
       <position>15,20</position>
     </image>
     <textarea name="title">
-      <area>55,26,450,27</area>
+      <area>70,26,450,27</area>
       <font>titlefont</font>
     </textarea>
     <textarea name="subtitle">
@@ -147,10 +147,10 @@
     </textarea>
     <textarea name="description">
       <multiline>yes</multiline>
-      <area>37,106,576,240</area>
+      <area>37,106,576,110</area>
       <font>infofont2</font>
       <value>%LONGREPEAT%%STARS%%DESCRIPTION%</value>
-      <linespacing>2</linespacing>
+      <linespacing>1.5</linespacing>
     </textarea>
 
      <!-- here to see which one I like better -->
@@ -165,13 +165,10 @@
       <position>25,26</position>
       <staticsize>25,25</staticsize> <!-- resize the image to these dimensions -->
     </image>
-    <!-- removed and replaced by chan_number at the end of this file
-    <textarea name="channel" align="center">
+    <textarea name="channum" align="center">
        <area>526,30,90,30</area>
        <font>channelfont</font>
-       <value>%CHANNUM%</value>
     </textarea>
-    -->
     <textarea name="callsign" align="center">
        <area>520,70,100,30</area>
        <font>mediuminfofont</font>
@@ -261,7 +258,7 @@
          <value>Browsing</value>
      </textarea>
      <textarea name="title">
-      <area>55,26,450,27</area>
+      <area>70,26,450,27</area>
       <font>titlefont</font>
     </textarea>
     <textarea name="subtitle">
@@ -278,9 +275,10 @@
 
     <textarea name="description">
       <multiline>yes</multiline>
-      <area>37,106,576,240</area>
+      <area>37,106,576,110</area>
       <font>infofont2</font>
       <value>%LONGREPEAT%%STARS%%DESCRIPTION%</value>
+      <linespacing>1.5</linespacing>
     </textarea>
 
         <image name="channelicon"> <!-- set internally, doesn't need a filename -->

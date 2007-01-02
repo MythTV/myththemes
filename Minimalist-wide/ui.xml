@@ -1442,7 +1442,7 @@
 
   <window name="progdetails">
 
-      <font name="heading" base="small-info">
+      <font name="heading" base="title">
           <color>#DEEAF9</color>
       </font>
 
@@ -1454,14 +1454,14 @@
       <area>0,0,1280,720</area>
       <textarea name="title" draworder="0">
         <area>50,30,720,40</area>
-        <font>basefont</font>
+        <font>heading</font>
         <value>Program Details:</value>
       </textarea>
 
       <richtextarea name="richtext" draworder="0">
         <area>130,78,1000,610</area>
         <textarea>155,95,900,540</textarea>
-        <font>info</font>
+        <font>body</font>
         <value>Program Details</value>
         <image function="uparrow-reg" filename="blank.png" location="1075,115"></image>
         <image function="downarrow-reg" filename="blank.png" location="1075,575"></image>

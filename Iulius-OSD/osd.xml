@@ -219,21 +219,21 @@
       <position>0,424</position>
     </image>
     <slider name="editslider" type="edit">
-	    <area>92,420,455,437</area>
+	    <area>92,420,455,26</area>
       <filename>blue.png</filename>
       <altfilename>red.png</altfilename>
     </slider>
     <slider name="editposition" type="position">
-      <area>92,415,455,415</area>
+      <area>92,413,455,40</area>
       <filename>position-indicator.png</filename>
     </slider>
     <editarrow name="left">
       <filename>cut-end.png</filename>
-      <area>92,421,455,470</area>
+      <area>92,420,455,26</area>
     </editarrow>
     <editarrow name="right">
       <filename>cut-start.png</filename>
-      <area>92,421,455,470</area>
+      <area>92,420,455,26</area>
     </editarrow>
     <textarea name="timedisplay" align="right">
       <area>246,48,330,30</area>

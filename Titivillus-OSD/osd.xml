@@ -327,12 +327,12 @@
       <position>31,325</position>
     </image>
     <slider name="editslider" type="edit">
-      <area>160,407,410,65</area>
+      <area>160,407,410,22</area>
       <filename>fill-blue.png</filename>
       <altfilename>red.png</altfilename>
     </slider>
     <slider name="editposition" type="position">
-      <area>160,400,410,60</area>
+      <area>160,402,410,36</area>
       <filename>position-indicator.png</filename>
     </slider>
     <textarea name="timedisplay" align="center">
@@ -349,11 +349,11 @@
     </textarea>
     <editarrow name="left">
       <filename>cut-end.png</filename>
-      <area>160,405,410,25</area>
+      <area>160,405,410,26</area>
     </editarrow>
     <editarrow name="right">
       <filename>cut-start.png</filename>
-      <area>160,405,410,25</area>
+      <area>160,405,410,26</area>
     </editarrow>
   </container>
 

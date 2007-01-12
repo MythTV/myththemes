@@ -266,16 +266,16 @@
       <altfilename>fill_red.png</altfilename>
     </slider>
     <slider name="editposition" type="position">
-	<area>32,395,580,16</area>
+	<area>30,390,580,28</area>
       	<filename>position_marker.png</filename>
     </slider>
     <editarrow name="left">
       <filename>cut_end.png</filename>
-      <area>26,393,580,20</area>
+      <area>30,390,580,28</area>
     </editarrow>
     <editarrow name="right">
       <filename>cut_start.png</filename>
-      <area>26,393,580,20</area>
+      <area>30,390,580,28</area>
     </editarrow>
     <textarea name="timedisplay">
       <area>30,424,100,60</area>

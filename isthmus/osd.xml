@@ -288,16 +288,16 @@
       <altfilename>fill_red.png</altfilename>
     </slider>
     <slider name="editposition" type="position">
-      <area>127,428,406,40</area>
+      <area>127,430,406,34</area>
       <filename>position_marker.png</filename>
     </slider>
     <editarrow name="left">
       <filename>cut_end.png</filename>
-      <area>125,431,406,40</area>
+      <area>127,432,406,26</area>
     </editarrow>
     <editarrow name="right">
       <filename>cut_start.png</filename>
-      <area>125,431,406,40</area>
+      <area>127,432,406,26</area>
     </editarrow>
     <textarea name="timedisplay">
       <area>125,408,200,60</area>

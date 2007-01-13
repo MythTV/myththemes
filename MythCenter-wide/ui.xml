@@ -5,16 +5,16 @@
     <font name="title" face="Trebuchet MS">
       <color>#ffffff</color>
       <dropcolor>#000000</dropcolor>
-      <size>25</size>
-      <size:small>14</size:small>
+      <size>24</size>
+      <size:small>18</size:small>
       <shadow>3,3</shadow>
       <bold>yes</bold>
     </font>
 
     <font name="info" face="Trebuchet MS">
       <color>#ffffff</color>
-      <size>17</size>
-      <size:small>14</size:small>
+      <size>18</size>
+      <size:small>12</size:small>
       <shadow>2,2</shadow>
       <bold>yes</bold>
     </font>
@@ -22,7 +22,7 @@
     <font name="descinfo" face="Trebuchet MS">
       <shadow>2,2</shadow>
       <color>#ffffff</color>
-      <size>16</size>
+      <size>18</size>
       <size:small>12</size:small>
       <bold>yes</bold>
     </font>
@@ -30,23 +30,23 @@
     <font name="chaninfo" face="Trebuchet MS">
       <shadow>1,1</shadow>
       <color>#ffffff</color>
-      <size>14</size>
+      <size>18</size>
       <size:small>12</size:small>
       <bold>yes</bold>
     </font>
 
     <font name="recstatus" face="Trebuchet MS">
       <color>#33ff33</color>
-      <size>17</size>
-      <size:small>14</size:small>
+      <size>18</size>
+      <size:small>12</size:small>
       <shadow>2,2</shadow>
       <bold>yes</bold>
     </font>
 
     <font name="small" face="Trebuchet MS">
       <color>#33ff33</color>
-      <size>16</size>
-      <size:small>10</size:small>
+      <size>18</size>
+      <size:small>12</size:small>
     </font>
 
     <container name="background">
@@ -164,16 +164,16 @@
     <font name="title" face="Trebuchet MS">
       <color>#ffffff</color>
       <dropcolor>#000000</dropcolor>
-      <size>25</size>
-      <size:small>14</size:small>
+      <size>24</size>
+      <size:small>18</size:small>
       <shadow>3,3</shadow>
       <bold>yes</bold>
     </font>
 
     <font name="info" face="Trebuchet MS">
       <color>#ffffff</color>
-      <size>17</size>
-      <size:small>14</size:small>
+      <size>18</size>
+      <size:small>12</size:small>
       <shadow>2,2</shadow>
       <bold>yes</bold>
     </font>
@@ -181,7 +181,7 @@
     <font name="descinfo" face="Trebuchet MS">
       <shadow>2,2</shadow>
       <color>#ffffff</color>
-      <size>16</size>
+      <size>18</size>
       <size:small>12</size:small>
       <bold>yes</bold>
     </font>
@@ -189,23 +189,23 @@
     <font name="chaninfo" face="Trebuchet MS">
       <shadow>1,1</shadow>
       <color>#ffffff</color>
-      <size>14</size>
+      <size>18</size>
       <size:small>12</size:small>
       <bold>yes</bold>
     </font>
 
     <font name="recstatus" face="Trebuchet MS">
       <color>#33ff33</color>
-      <size>17</size>
-      <size:small>14</size:small>
+      <size>18</size>
+      <size:small>12</size:small>
       <shadow>2,2</shadow>
       <bold>yes</bold>
     </font>
 
     <font name="small" face="Trebuchet MS">
       <color>#33ff33</color>
-      <size>16</size>
-      <size:small>8</size:small>
+      <size>18</size>
+      <size:small>12</size:small>
     </font>
 
     <container name="background">
@@ -320,43 +320,43 @@
 
     <font name="active_font" face="Trebuchet MS">
       <color>#ffffff</color>
-      <size>16</size>
-      <size:small>11</size:small>
+      <size>18</size>
+      <size:small>12</size:small>
       <bold>yes</bold>
     </font>
 
     <font name="inactive_font" face="Trebuchet MS">
       <color>#666666</color>
-      <size>16</size>
-      <size:small>11</size:small>
+      <size>18</size>
+      <size:small>12</size:small>
       <bold>yes</bold>
     </font>
 
     <font name="record_font" face="Trebuchet MS">
       <color>#00FF00</color>
-      <size>16</size>
-      <size:small>11</size:small>
+      <size>18</size>
+      <size:small>12</size:small>
       <bold>yes</bold>
     </font>
 
     <font name="recording_font" face="Trebuchet MS">
       <color>#FF4040</color>
-      <size>16</size>
-      <size:small>11</size:small>
+      <size>18</size>
+      <size:small>12</size:small>
       <bold>yes</bold>
     </font>
 
     <font name="norecordfnt" face="Trebuchet MS">
       <color>#999999</color>
-      <size>16</size>
-      <size:small>11</size:small>
+      <size>18</size>
+      <size:small>12</size:small>
       <bold>yes</bold>
     </font>
 
     <font name="conflictfnt" face="Trebuchet MS">
       <color>#33ff33</color>
-      <size>16</size>
-      <size:small>11</size:small>
+      <size>18</size>
+      <size:small>12</size:small>
       <bold>yes</bold>
     </font>
 
@@ -370,32 +370,32 @@
     <font name="title" face="Trebuchet MS">
       <color>#ffffff</color>
       <dropcolor>#000000</dropcolor>
-      <size>27</size>
-      <size:small>13</size:small>
+      <size>24</size>
+      <size:small>18</size:small>
       <shadow>3,3</shadow>
       <bold>yes</bold>
     </font>
 
     <font name="info" face="Trebuchet MS">
       <color>#ffffff</color>
-      <size>17</size>
-      <size:small>8</size:small>
+      <size>18</size>
+      <size:small>12</size:small>
       <shadow>1,1</shadow>
       <bold>yes</bold>
     </font>
 
     <font name="message" face="Trebuchet MS">
       <color>#ffffff</color>
-      <size>16</size>
-      <size:small>10</size:small>
+      <size>18</size>
+      <size:small>12</size:small>
       <shadow>1,1</shadow>
       <bold>yes</bold>
     </font>
 
     <font name="messagegray" face="Trebuchet MS">
       <color>#999999</color>
-      <size>16</size>
-      <size:small>10</size:small>
+      <size>18</size>
+      <size:small>12</size:small>
       <shadow>1,1</shadow>
       <bold>yes</bold>
     </font>
@@ -524,43 +524,43 @@
 
     <font name="active_font" face="Trebuchet MS">
       <color>#ffffff</color>
-      <size>16</size>
-      <size:small>11</size:small>
+      <size>18</size>
+      <size:small>12</size:small>
       <bold>yes</bold>
     </font>
 
     <font name="inactive_font" face="Trebuchet MS">
       <color>#9999cc</color>
-      <size>16</size>
-      <size:small>11</size:small>
+      <size>18</size>
+      <size:small>12</size:small>
       <bold>yes</bold>
     </font>
 
     <font name="record_font" face="Trebuchet MS">
       <color>#33FF33</color>
-      <size>16</size>
-      <size:small>11</size:small>
+      <size>18</size>
+      <size:small>12</size:small>
       <bold>yes</bold>
     </font>
 
     <font name="recording_font" face="Trebuchet MS">
       <color>#FF33FF</color>
-      <size>16</size>
-      <size:small>11</size:small>
+      <size>18</size>
+      <size:small>12</size:small>
       <bold>yes</bold>
     </font>
 
     <font name="norecordfnt" face="Trebuchet MS">
       <color>#999999</color>
-      <size>16</size>
-      <size:small>11</size:small>
+      <size>18</size>
+      <size:small>12</size:small>
       <bold>yes</bold>
     </font>
 
     <font name="conflictfnt" face="Trebuchet MS">
       <color>#33ff33</color>
-      <size>16</size>
-      <size:small>11</size:small>
+      <size>18</size>
+      <size:small>12</size:small>
       <bold>yes</bold>
     </font>
 
@@ -574,32 +574,32 @@
     <font name="title" face="Trebuchet MS">
       <color>#ffffff</color>
       <dropcolor>#000000</dropcolor>
-      <size>27</size>
-      <size:small>13</size:small>
+      <size>24</size>
+      <size:small>18</size:small>
       <shadow>3,3</shadow>
       <bold>yes</bold>
     </font>
 
     <font name="info" face="Trebuchet MS">
       <color>#ffffff</color>
-      <size>17</size>
-      <size:small>8</size:small>
+      <size>18</size>
+      <size:small>12</size:small>
       <shadow>1,1</shadow>
       <bold>yes</bold>
     </font>
 
     <font name="message" face="Trebuchet MS">
       <color>#ffffff</color>
-      <size>16</size>
-      <size:small>10</size:small>
+      <size>18</size>
+      <size:small>12</size:small>
       <shadow>1,1</shadow>
       <bold>yes</bold>
     </font>
 
     <font name="messagegray" face="Trebuchet MS">
       <color>#999999</color>
-      <size>16</size>
-      <size:small>10</size:small>
+      <size>18</size>
+      <size:small>12</size:small>
       <shadow>1,1</shadow>
       <bold>yes</bold>
     </font>
@@ -694,15 +694,15 @@
 
     <font name="active_font" face="Trebuchet MS">
       <color>#ffffff</color>
-      <size>16</size>
-      <size:small>10</size:small>
+      <size>18</size>
+      <size:small>12</size:small>
       <bold>yes</bold>
     </font>
 
     <font name="inactive_font" face="Trebuchet MS">
       <color>#9999cc</color>
-      <size>16</size>
-      <size:small>10</size:small>
+      <size>18</size>
+      <size:small>12</size:small>
       <bold>yes</bold>
     </font>
 
@@ -716,24 +716,24 @@
     <font name="title" face="Trebuchet MS">
       <color>#ffffff</color>
       <dropcolor>#000000</dropcolor>
-      <size>29</size>
-      <size:small>13</size:small>
+      <size>24</size>
+      <size:small>18</size:small>
       <shadow>3,3</shadow>
       <bold>yes</bold>
     </font>
 
     <font name="info" face="Trebuchet MS">
       <color>#ffffff</color>
-      <size>17</size>
-      <size:small>10</size:small>
+      <size>18</size>
+      <size:small>12</size:small>
       <shadow>1,1</shadow>
       <bold>yes</bold>
     </font>
 
     <font name="message" face="Trebuchet MS">
       <color>#ffffff</color>
-      <size>16</size>
-      <size:small>10</size:small>
+      <size>18</size>
+      <size:small>12</size:small>
       <shadow>1,1</shadow>
       <bold>yes</bold>
     </font>
@@ -831,36 +831,36 @@
 
     <font name="active_font" face="Trebuchet MS">
       <color>#ffffff</color>
-      <size>16</size>
-      <size:small>11</size:small>
+      <size>18</size>
+      <size:small>12</size:small>
       <bold>yes</bold>
     </font>
 
     <font name="inactive_font" face="Trebuchet MS">
       <color>#9999cc</color>
-      <size>16</size>
-      <size:small>11</size:small>
+      <size>18</size>
+      <size:small>12</size:small>
       <bold>yes</bold>
     </font>
 
     <font name="record_font" face="Trebuchet MS">
       <color>#33FF33</color>
-      <size>16</size>
-      <size:small>11</size:small>
+      <size>18</size>
+      <size:small>12</size:small>
       <bold>yes</bold>
     </font>
 
     <font name="recording_font" face="Trebuchet MS">
       <color>#FF33FF</color>
-      <size>16</size>
-      <size:small>11</size:small>
+      <size>18</size>
+      <size:small>12</size:small>
       <bold>yes</bold>
     </font>
 
     <font name="conflict_font" face="Trebuchet MS">
       <color>#33ff33</color>
-      <size>16</size>
-      <size:small>11</size:small>
+      <size>18</size>
+      <size:small>12</size:small>
       <bold>yes</bold>
     </font>
 
@@ -874,48 +874,48 @@
     <font name="title" face="Trebuchet MS">
       <color>#ffffff</color>
       <dropcolor>#000000</dropcolor>
-      <size>27</size>
-      <size:small>13</size:small>
+      <size>24</size>
+      <size:small>18</size:small>
       <shadow>3,3</shadow>
       <bold>yes</bold>
     </font>
 
     <font name="info" face="Trebuchet MS">
       <color>#ffffff</color>
-      <size>17</size>
-      <size:small>10</size:small>
+      <size>18</size>
+      <size:small>12</size:small>
       <shadow>1,1</shadow>
       <bold>yes</bold>
     </font>
 
     <font name="tinyinfo" face="Trebuchet MS">
       <color>#cccccc</color>
-      <size>12</size>
-      <size:small>10</size:small>
+      <size>18</size>
+      <size:small>12</size:small>
       <shadow>1,1</shadow>
       <bold>yes</bold>
     </font>
 
     <font name="grayinfo" face="Trebuchet MS">
       <color>#cccccc</color>
-      <size>17</size>
-      <size:small>10</size:small>
+      <size>18</size>
+      <size:small>12</size:small>
       <shadow>1,1</shadow>
       <bold>yes</bold>
     </font>
 
     <font name="greeninfo" face="Trebuchet MS">
       <color>#33ff33</color>
-      <size>17</size>
-      <size:small>10</size:small>
+      <size>18</size>
+      <size:small>12</size:small>
       <shadow>1,1</shadow>
       <bold>yes</bold>
     </font>
 
     <font name="message" face="Trebuchet MS">
       <color>#ffffff</color>
-      <size>16</size>
-      <size:small>10</size:small>
+      <size>18</size>
+      <size:small>12</size:small>
       <shadow>1,1</shadow>
       <bold>yes</bold>
     </font>
@@ -927,18 +927,18 @@
         <value>Program Recording Priorities</value>
       </textarea>
       <textarea name="recprioritylabel" draworder="0" align="allcenter">
-        <area>922,36,82,40</area>
+        <area>920,36,96,40</area>
         <font>tinyinfo</font>
         <value>Priority</value>
       </textarea>
       <textarea name="finalrecprioritylabel" draworder="0" align="allcenter">
-        <area>1024,36,142,40</area>
+        <area>1024,36,176,40</area>
         <font>tinyinfo</font>
         <value>Final Priority</value>
       </textarea>
       <image name="filler" draworder="0" fleximage="yes">
         <filename>rk-background.png</filename>
-        <position>0,60</position>
+        <position>0,68</position>
       </image>
       <textarea name="keyinstr" align="center" draworder="0">
         <area>0,654,1152,30</area>
@@ -976,7 +976,7 @@
     </container>
 
     <container name="program_info">
-      <area>64,474,1152,188</area>
+      <area>64,480,1152,188</area>
       <textarea name="title" draworder="6">
         <area>0,0,1152,50</area>
         <font>title</font>
@@ -1073,8 +1073,8 @@
 
     <font name="active" face="Trebuchet MS">
       <color>#eeeeee</color>
-      <size>16</size>
-      <size:small>11</size:small>
+      <size>18</size>
+      <size:small>12</size:small>
       <bold>yes</bold>
       <dropcolor>#000000</dropcolor>
       <shadow>1,1</shadow>
@@ -1082,8 +1082,8 @@
 
     <font name="inactive" face="Trebuchet MS">
       <color>#9999cc</color>
-      <size>16</size>
-      <size:small>11</size:small>
+      <size>18</size>
+      <size:small>12</size:small>
       <bold>yes</bold>
       <dropcolor>#000000</dropcolor>
       <shadow>1,1</shadow>
@@ -1091,29 +1091,29 @@
 
     <font name="record_font" face="Trebuchet MS">
       <color>#33FF33</color>
-      <size>16</size>
-      <size:small>11</size:small>
+      <size>18</size>
+      <size:small>12</size:small>
       <bold>yes</bold>
     </font>
 
     <font name="recording_font" face="Trebuchet MS">
       <color>#FF33FF</color>
-      <size>16</size>
-      <size:small>11</size:small>
+      <size>18</size>
+      <size:small>12</size:small>
       <bold>yes</bold>
     </font>
 
     <font name="overunderrecfont" face="Trebuchet MS">
       <color>#ffffAA</color>
-      <size>16</size>
-      <size:small>11</size:small>
+      <size>18</size>
+      <size:small>12</size:small>
       <bold>yes</bold>
     </font>
 
     <font name="tagged_font" face="Trebuchet MS">
       <color>#dddd33</color>
-      <size>16</size>
-      <size:small>11</size:small>
+      <size>18</size>
+      <size:small>12</size:small>
       <bold>yes</bold>
     </font>
 
@@ -1121,7 +1121,7 @@
       <color>#ffffff</color>
       <dropcolor>#000000</dropcolor>
       <shadow>3,3</shadow>
-      <size>16</size>
+      <size>18</size>
       <size:small>12</size:small>
       <bold>yes</bold>
     </font>
@@ -1129,24 +1129,24 @@
     <font name="title" face="Trebuchet MS">
       <color>#ffffff</color>
       <dropcolor>#000000</dropcolor>
-      <size>22</size>
-      <size:small>14</size:small>
+      <size>24</size>
+      <size:small>18</size:small>
       <shadow>3,3</shadow>
       <bold>yes</bold>
     </font>
 
     <font name="info" face="Trebuchet MS">
       <color>#ffffff</color>
-      <size>17</size>
-      <size:small>10</size:small>
+      <size>18</size>
+      <size:small>12</size:small>
       <shadow>1,1</shadow>
       <bold>yes</bold>
     </font>
 
     <font name="message" face="Trebuchet MS">
       <color>#ffffff</color>
-      <size>17</size>
-      <size:small>12</size:small>
+      <size>24</size>
+      <size:small>18</size:small>
       <shadow>3,3</shadow>
       <bold>yes</bold>
     </font>
@@ -1174,7 +1174,11 @@
       <area>0,70,1280,331</area>
       <image name="titlelines" draworder="3" fleximage="no">
         <filename>trans-titles.png</filename>
-        <position>0,0</position>
+        <position>0,4</position>
+      </image>
+      <image name="showinglines" draworder="5" fleximage="yes">
+        <filename>showings.png</filename>
+        <position>0,4</position>
       </image>
       <listarea name="toptitles" draworder="2">
         <area>64,40,293,105</area>
@@ -1194,10 +1198,6 @@
         <fcnfont name="inactive" function="inactive"></fcnfont>
         <items>3</items>
       </listarea>
-      <image name="showinglines" draworder="5" fleximage="yes">
-        <filename>showings.png</filename>
-        <position>0,0</position>
-      </image>
       <listarea name="showing" draworder="4">
         <area>376,23,840,280</area>
         <fcnfont name="record_font" function="record"></fcnfont>
@@ -1375,29 +1375,29 @@
 
     <font name="active" face="Trebuchet MS">
       <color>#ffffff</color>
-      <size>16</size>
-      <size:small>11</size:small>
+      <size>18</size>
+      <size:small>12</size:small>
       <bold>yes</bold>
     </font>
 
     <font name="inactive" face="Trebuchet MS">
       <color>#999999</color>
-      <size>16</size>
-      <size:small>11</size:small>
+      <size>18</size>
+      <size:small>12</size:small>
       <bold>yes</bold>
     </font>
 
     <font name="record_font" face="Trebuchet MS">
       <color>#33FF33</color>
-      <size>16</size>
-      <size:small>11</size:small>
+      <size>18</size>
+      <size:small>12</size:small>
       <bold>yes</bold>
     </font>
 
     <font name="recording_font" face="Trebuchet MS">
       <color>#FF33FF</color>
-      <size>16</size>
-      <size:small>11</size:small>
+      <size>18</size>
+      <size:small>12</size:small>
       <bold>yes</bold>
     </font>
 
@@ -1412,24 +1412,24 @@
 
     <font name="info" face="Trebuchet MS">
       <color>#ffffff</color>
-      <size>17</size>
-      <size:small>10</size:small>
+      <size>18</size>
+      <size:small>12</size:small>
       <shadow>1,1</shadow>
       <bold>yes</bold>
     </font>
 
     <font name="recinfo" face="Trebuchet MS">
       <color>#33ff33</color>
-      <size>17</size>
-      <size:small>10</size:small>
+      <size>18</size>
+      <size:small>12</size:small>
       <shadow>1,1</shadow>
       <bold>yes</bold>
     </font>
 
     <font name="channel" face="Trebuchet MS">
       <color>#ffffff</color>
-      <size>22</size>
-      <size:small>14</size:small>
+      <size>24</size>
+      <size:small>18</size:small>
       <bold>yes</bold>
     </font>
 
@@ -1533,7 +1533,7 @@
         <fcnfont name="active" function="selected"></fcnfont>
         <fcnfont name="inactive" function="inactive"></fcnfont>
         <items>9</items>
-        <image function="selectionbar" filename="pf-sel1.png" location="-36,-10"></image>
+        <image function="selectionbar" filename="pf-sel1.png" location="-36,-12"></image>
       </listarea>
       <listarea name="shows" draworder="2">
         <area>128,16,552,286</area>
@@ -1543,7 +1543,7 @@
         <fcnfont name="record_font" function="record"></fcnfont>
         <fcnfont name="recording_font" function="recording"></fcnfont>
         <items>9</items>
-        <image function="selectionbar" filename="pf-sel2.png" location="-20,-10"></image>
+        <image function="selectionbar" filename="pf-sel2.png" location="-20,-12"></image>
       </listarea>
       <listarea name="times" draworder="2">
         <area>740,16,400,286</area>
@@ -1553,7 +1553,7 @@
         <fcnfont name="record_font" function="record"></fcnfont>
         <fcnfont name="recording_font" function="recording"></fcnfont>
         <items>9</items>
-        <image function="selectionbar" filename="pf-sel3.png" location="-36,-10"></image>
+        <image function="selectionbar" filename="pf-sel3.png" location="-36,-12"></image>
       </listarea>
     </container>
 
@@ -1563,68 +1563,68 @@
 
     <font name="active_font" face="Trebuchet MS">
       <color>#ffffff</color>
-      <size>16</size>
-      <size:small>11</size:small>
+      <size>18</size>
+      <size:small>12</size:small>
       <bold>yes</bold>
     </font>
 
     <font name="inactive_font" face="Trebuchet MS">
       <color>#9999cc</color>
-      <size>16</size>
-      <size:small>11</size:small>
+      <size>18</size>
+      <size:small>12</size:small>
       <bold>yes</bold>
     </font>
 
     <font name="record_font" face="Trebuchet MS">
       <color>#33FF33</color>
-      <size>16</size>
-      <size:small>11</size:small>
+      <size>18</size>
+      <size:small>12</size:small>
       <bold>yes</bold>
     </font>
 
     <font name="recording_font" face="Trebuchet MS">
       <color>#FF33FF</color>
-      <size>16</size>
-      <size:small>11</size:small>
+      <size>18</size>
+      <size:small>12</size:small>
       <bold>yes</bold>
     </font>
 
     <font name="conflict_font" face="Trebuchet MS">
       <color>#33ff33</color>
-      <size>16</size>
-      <size:small>11</size:small>
+      <size>18</size>
+      <size:small>12</size:small>
       <bold>yes</bold>
     </font>
 
     <font name="title" face="Trebuchet MS">
       <color>#ffffff</color>
       <dropcolor>#000000</dropcolor>
-      <size>27</size>
-      <size:small>12</size:small>
+      <size>24</size>
+      <size:small>18</size:small>
       <shadow>3,3</shadow>
       <bold>yes</bold>
     </font>
 
     <font name="info" face="Trebuchet MS">
       <color>#ffffff</color>
-      <size>17</size>
-      <size:small>10</size:small>
+      <size>18</size>
+      <size:small>12</size:small>
       <shadow>1,1</shadow>
       <bold>yes</bold>
     </font>
 
     <font name="greeninfo" face="Trebuchet MS">
       <color>#33ff33</color>
-      <size>17</size>
-      <size:small>10</size:small>
+      <size>18</size>
+      <size:small>12</size:small>
       <shadow>1,1</shadow>
       <bold>yes</bold>
     </font>
 
     <font name="message" face="Trebuchet MS">
       <color>#ffffff</color>
-      <size>16</size>
-      <size:small>10</size:small>
+      <size>18</size>
+      <size:small>12</size:small>
       <shadow>1,1</shadow>
       <bold>yes</bold>
     </font>
@@ -1727,29 +1727,29 @@
     <font name="active" face="Trebuchet MS">
       <color>#ffffff</color>
       <size>18</size>
-      <size:small>11</size:small>
+      <size:small>12</size:small>
       <bold>yes</bold>
     </font>
 
     <font name="inactive" face="Trebuchet MS">
       <color>#9999cc</color>
       <size>18</size>
-      <size:small>11</size:small>
+      <size:small>12</size:small>
       <bold>yes</bold>
     </font>
 
     <font name="enabled_state_0_font" face="Trebuchet MS">
       <color>#ffffff</color>
       <size>18</size>
-      <size:small>11</size:small>
+      <size:small>12</size:small>
       <bold>yes</bold>
     </font>
 
     <font name="title" face="Trebuchet MS">
       <color>#ffffff</color>
       <dropcolor>#000000</dropcolor>
-      <size>27</size>
-      <size:small>14</size:small>
+      <size>24</size>
+      <size:small>18</size:small>
       <shadow>3,3</shadow>
       <bold>yes</bold>
     </font>
@@ -1757,8 +1757,8 @@
     <font name="subtitle" face="Trebuchet MS">
       <color>#ffffff</color>
       <dropcolor>#000000</dropcolor>
-      <size>20</size>
-      <size:small>14</size:small>
+      <size>18</size>
+      <size:small>12</size:small>
       <shadow>3,3</shadow>
       <bold>yes</bold>
     </font>
@@ -1766,7 +1766,7 @@
     <font name="info" face="Trebuchet MS">
       <color>#ffffff</color>
       <size>18</size>
-      <size:small>10</size:small>
+      <size:small>12</size:small>
       <shadow>2,2</shadow>
       <bold>yes</bold>
     </font>
@@ -1774,14 +1774,14 @@
     <font name="infob" face="Trebuchet MS">
       <color>#ffffff</color>
       <size>18</size>
-      <size:small>10</size:small>
+      <size:small>12</size:small>
       <shadow>2,2</shadow>
       <bold>yes</bold>
     </font>
 
     <font name="message" face="Trebuchet MS">
       <color>#ffffff</color>
-      <size>20</size>
+      <size>18</size>
       <size:small>12</size:small>
       <shadow>2,2</shadow>
       <bold>yes</bold>
@@ -1864,7 +1864,7 @@
 
     <font name="title" face="Trebuchet MS">
       <color>#ffffff</color>
-      <size>17</size>
+      <size>18</size>
       <size:small>12</size:small>
       <shadow>3,3</shadow>
       <bold>yes</bold>
@@ -1872,7 +1872,7 @@
 
     <font name="info" face="Trebuchet MS">
       <color>#FFFFFF</color>
-      <size>16</size>
+      <size>18</size>
       <size:small>12</size:small>
       <shadow>1,1</shadow>
       <bold>yes</bold>

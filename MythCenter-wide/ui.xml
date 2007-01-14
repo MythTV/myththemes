@@ -438,8 +438,8 @@
         <fcnfont name="active_font" function="selected"></fcnfont>
         <columnpadding>10</columnpadding>
         <column number="1" width="210" context="-1"></column>
-        <column number="2" width="105" context="-1"></column>
-        <column number="3" width="737" context="-1"></column>
+        <column number="2" width="125" context="-1"></column>
+        <column number="3" width="717" context="-1"></column>
         <column number="4" width="20" context="-1"></column>
         <items>8</items>
         <image function="selectionbar" filename="cr-selectbar.png" location="-38,-6"></image>

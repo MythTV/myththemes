@@ -404,6 +404,12 @@
     <offset>0,0</offset>
   </buttondef>
 
+  <buttondef name="TV_RECPRIORITIES_CUSTOM">
+    <image>ui/button_off.png</image>
+    <watermarkimage>watermark/priority.png</watermarkimage>
+    <offset>0,0</offset>
+  </buttondef>
+
 <!-- #############################-->
 <!-- ########  setup.xml  ########-->
 <!-- #############################-->

@@ -140,7 +140,7 @@
       <fontsize>21</fontsize>
       <bold>yes</bold>
       <italics>no</italics>
-      <centered>yes</centered>
+      <halign>center</halign>
       <outline>
          <color>#41517D</color>
          <size>1</size>
@@ -158,7 +158,7 @@
       <fontsize>21</fontsize>
       <bold>yes</bold>
       <italics>no</italics>
-      <centered>yes</centered>
+      <halign>center</halign>
     <outline>
          <color>#41517D</color>
          <size>2</size>

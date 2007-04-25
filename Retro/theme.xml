@@ -48,13 +48,7 @@
       <fontsize>20</fontsize>
       <bold>yes</bold>
       <italics>no</italics>
-      <centered>no</centered>
-      <!--
-	  <outline>
-         <color>black</color>
-         <size>1</size>
-      </outline>-->
-	</text>
+   </text>
    <activetext>
       <area>27,4,0,0</area>
       <color>white</color>
@@ -62,12 +56,6 @@
       <fontsize>20</fontsize>
       <bold>yes</bold>
       <italics>no</italics>
-      <centered>no</centered>      
-	<!--
-	  <outline>
-         <color>black</color>
-         <size>1</size>
-      </outline>-->
     </activetext>
   </genericbutton>
   

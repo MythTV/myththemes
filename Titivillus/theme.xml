@@ -138,7 +138,6 @@
       <fontsize>28</fontsize>
       <bold>yes</bold>
       <italics>no</italics>
-      <centered>no</centered>
       <outline>
          <color>black</color>
          <size>3</size>
@@ -156,7 +155,6 @@
       <fontsize>28</fontsize>
       <bold>yes</bold>
       <italics>no</italics>
-      <centered>no</centered>
       <outline>
          <color>black</color>
          <size>3</size>

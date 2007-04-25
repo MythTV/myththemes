@@ -15,7 +15,7 @@
       <fontname>Arial</fontname>
       <fontsize>20</fontsize>
       <bold>yes</bold>
-      <centered>yes</centered>
+      <halign>center</halign>
     </text>
   </genericbutton>
   

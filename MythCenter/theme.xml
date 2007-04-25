@@ -49,22 +49,16 @@
       <fontsize>17</fontsize>
       <bold>yes</bold>
       <italics>no</italics>
-      <centered>no</centered>
-      <!--
-	  <outline>
-         <color>black</color>
-         <size>1</size>
-      </outline>-->
       <shadow>
          <color>black</color>
          <offset>2,2</offset>
          <alpha>50</alpha>
       </shadow>
     </text>
-	<!--
-	<activetext>
-	</activetext>
-	-->
+    <!--
+    <activetext>
+    </activetext>
+    -->
   </genericbutton>
   
   <logo> <!-- Size: 275 x 77 px -->

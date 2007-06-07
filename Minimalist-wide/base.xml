@@ -1,0 +1,28 @@
+
+<mythuitheme>
+
+  <window name="backgroundwindow">
+    <imagetype name="backimg">
+      <filename>button-background.jpg</filename>
+    </imagetype>
+
+    <font name="clock" face="Nimbus Sans L">
+         <color>#FFFFFF</color>
+         <size>22</size>
+         <size:small>18</size:small>
+         <size:big>22</size:big>
+         <bold>yes</bold>
+    </font>
+
+    <clock name="clock">
+      <area>800,600,300,40</area>
+      <font>clock</font>
+      <format>%DATE%, %TIME%</format>
+<!--      <colonflash>yes</colonflash>
+      <secondflash>yes</secondflash> -->
+      <align>left</align>
+    </clock>
+  </window>
+
+</mythuitheme>
+

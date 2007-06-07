@@ -1,0 +1,29 @@
+<mythuitheme>
+
+  <window name="backgroundwindow">
+    <imagetype name="backimg">
+      <filename>background.png</filename>
+    </imagetype>
+
+    <font name="clock" face="Trebuchet Ms">
+         <color>#0086FF</color>
+         <size>21</size>
+         <size:small>18</size:small>
+         <size:big>22</size:big>
+         <bold>yes</bold>
+    </font>
+
+    <clock name="clock">
+         <color>#FFFFFF</color>
+         <area>450,50,300,50</area>
+         <font>clock</font>
+         <align>left</align>
+         <format>%DATE%, %TIME%</format>
+         <secondflash>no</secondflash>
+    </clock>
+
+
+  </window>
+
+</mythuitheme>
+

@@ -1436,7 +1436,7 @@
       </image>
       <image name="lineback" draworder="0" fleximage="no">
         <filename>pf-background.png</filename> <!-- 1160x318 -->
-        <position>60,316</position>
+        <position>62,320</position>
       </image>
       <textarea name="programbar" align="center">
         <area>0,654,1280,30</area>

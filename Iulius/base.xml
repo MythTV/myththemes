@@ -4,22 +4,22 @@
          <filename>background.png</filename> 
          <staticsize>-1,-1</staticsize> 
     </imagetype> 
-	 
+
     <font name="clock" face="Arial"> 
          <color>#FFFFFF</color> 
-         <size>22</size> 
-         <size:small>18</size:small> 
-         <size:big>22</size:big> 
+         <size>16</size> 
+         <size:small>14</size:small> 
+         <size:big>18</size:big> 
          <bold>yes</bold> 
     </font> 
-	 
+
     <clock name="clock"> 
-         <area>110,40,600,50</area> 
+         <area>280,44,415,50</area> 
          <font>clock</font> 
-         <align>left</align> 
+         <align>right</align> 
          <format>%DATE% %TIME%</format> 
     </clock> 
   </window> 
- 
+
 </mythuitheme> 
  

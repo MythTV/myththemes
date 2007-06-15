@@ -937,10 +937,12 @@
         <image function="uparrow" draworder="6" filename="shared/up_arrow.png" location="1167,5"></image>
         <image function="downarrow" draworder="6" filename="shared/down_arrow.png" location="1167,285"></image>
       </listarea>
+<!--
       <image name="showinglines" draworder="5" fleximage="yes">
-<!--         <filename>playback_box/showings.png</filename> -->
+         <filename>playback_box/showings.png</filename>
         <position>3,0</position>
       </image>
+-->
       <textarea name="current" draworder="6">
         <area>20,140,295,40</area>
         <font>currenttitle</font>

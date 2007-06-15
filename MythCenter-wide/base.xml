@@ -9,8 +9,8 @@
 
     <font name="clock" face="Arial">
          <color>#FFFFFF</color>
-         <size>22</size>
-         <size:small>18</size:small>
+         <size>18</size>
+         <size:small>14</size:small>
          <size:big>22</size:big>
          <bold>yes</bold>
     </font>
@@ -21,7 +21,7 @@
       <format>%DATE%, %TIME%</format>
 <!--      <colonflash>yes</colonflash>
       <secondflash>yes</secondflash> -->
-      <align>center</align>
+      <align>right</align>
     </clock>
   </window>
 

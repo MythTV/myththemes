@@ -437,8 +437,8 @@
         <fcnfont name="recording_font" function="recording"></fcnfont>
         <fcnfont name="active_font" function="selected"></fcnfont>
         <columnpadding>10</columnpadding>
-        <column number="1" width="210" context="-1"></column>
-        <column number="2" width="125" context="-1"></column>
+        <column number="1" width="170" context="-1"></column>
+        <column number="2" width="165" context="-1"></column>
         <column number="3" width="717" context="-1"></column>
         <column number="4" width="20" context="-1"></column>
         <items>8</items>

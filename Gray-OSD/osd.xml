@@ -183,11 +183,6 @@
        <area>30,80,60,30</area>
        <font>channelfont</font>
     </textarea>
-    <textarea name="callsign" align="center">
-       <multiline>yes</multiline>
-       <area>26,110,72,60</area>
-       <font>callsignfont</font>
-    </textarea>
     <textarea name="time" align="right">
         <area>485,38,105,45</area>
         <font>statustimefont</font>

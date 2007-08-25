@@ -234,6 +234,24 @@
     <offset>0,0</offset>
   </buttondef>
 
+  <buttondef name="NETFLIX_QUEUE">
+    <image>ui/button_off.png</image>
+    <watermarkimage>watermark/radio.png</watermarkimage>
+    <offset>0,0</offset>
+  </buttondef>
+
+  <buttondef name="NETFLIX_BROWSE">
+    <image>ui/button_off.png</image>
+    <watermarkimage>watermark/radio.png</watermarkimage>
+    <offset>0,0</offset>
+  </buttondef>
+
+  <buttondef name="NETFLIX_HISTORY">
+    <image>ui/button_off.png</image>
+    <watermarkimage>watermark/radio.png</watermarkimage>
+    <offset>0,0</offset>
+  </buttondef>
+
   <buttondef name="QUEUE">
     <image>ui/button_off.png</image>
     <watermarkimage>watermark/priority.png</watermarkimage>

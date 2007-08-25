@@ -252,6 +252,12 @@
     <offset>0,0</offset>
   </buttondef>
 
+  <buttondef name="SETTINGS_NETFLIX">
+    <image>ui/button_off.png</image>
+    <watermarkimage>watermark/radio.png</watermarkimage>
+    <offset>0,0</offset>
+  </buttondef>
+
   <buttondef name="QUEUE">
     <image>ui/button_off.png</image>
     <watermarkimage>watermark/priority.png</watermarkimage>

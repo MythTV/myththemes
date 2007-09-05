@@ -624,6 +624,12 @@
     <offset>0,0</offset>
   </buttondef>
 
+  <buttondef name="TV_SETTINGS_PLAYBACK_OSD">
+    <image>ui/button_off.png</image>
+    <watermarkimage>watermark/tv.png</watermarkimage>
+    <offset>0,0</offset>
+  </buttondef>
+
   <buttondef name="TV_SETTINGS_PLAYBACK_GROUPS">
     <image>ui/button_off.png</image>
     <watermarkimage>watermark/tv.png</watermarkimage>

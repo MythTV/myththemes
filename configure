@@ -25,8 +25,16 @@ exit 1
 fi
 
 # bring in mythtv config
-rm -f mythconfig.mak
-ln -s $prefix/include/mythtv/mythconfig.mak mythconfig.mak
+if [ -e $prefix/include/mythtv/mythconfig.mak ] ; then
+  rm mythconfig.mak 2> /dev/null
+  ln -s $prefix/include/mythtv/mythconfig.mak mythconfig.mak
+else
+  echo "ERROR: mythconfig.mak not found at $prefix/include/mythtv/mythconfig.mak"
+  echo "Did you make AND install MythTV first?"
+  echo "Are you using the correct prefix ($prefix)?"
+  echo "Bailing out!!"
+  exit
+fi
 
 if test -x $QTDIR/bin/qmake; then
   $QTDIR/bin/qmake QMAKE=${QTDIR}/bin/qmake myththemes.pro

@@ -436,6 +436,9 @@
       <color>#ffff33</color>
     </font>
 
+    <font name="conflictwarn" base="info">
+      <color>#ffff33</color>
+    </font>
 
 
 
@@ -458,6 +461,10 @@
       <textarea name="status" align="right" draworder="4">
         <area>0,0,380,30</area>
         <font>info</font>
+      </textarea>
+      <textarea name="warning" align="right" draworder="4">
+        <area>0,0,380,30</area>
+        <font>conflictwarn</font>
       </textarea>
     </container>
 

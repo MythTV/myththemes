@@ -392,6 +392,10 @@
       <bold>yes</bold>
     </font>
 
+    <font name="conflictwarn" base="info">
+      <color>#ffff33</color>
+    </font>
+
     <font name="message" face="Trebuchet MS">
       <color>#ffffff</color>
       <size>16</size>
@@ -438,6 +442,10 @@
       <textarea name="status" align="right" draworder="4">
         <area>0,0,380,30</area>
         <font>info</font>
+      </textarea>
+      <textarea name="warning" align="right" draworder="4">
+        <area>0,0,380,30</area>
+        <font>conflictwarn</font>
       </textarea>
     </container>
 

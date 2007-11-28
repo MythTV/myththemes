@@ -701,9 +701,10 @@
                 <image function="pushed" filename="mv_leftright_pushed.png"></image>
             </selector>
 
-            <blackhole name="command_hack" draworder="0">
+            <remoteedit name="command" draworder="0">
                 <area>300,255,300,40</area>
-            </blackhole>
+                <font>display</font>
+            </remoteedit>
 
             <checkbox name="default_check" draworder="0">
                 <position>300,315</position>

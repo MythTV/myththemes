@@ -614,7 +614,7 @@
       <textarea name="keyinstr" align="center" draworder="0">
         <area>0,570,800,30</area>
         <font>help</font>
-        <value>(1) Sort by Channel    (2) Sort by Priority</value>
+        <value>(1) Channel    (2) Priority</value>
       </textarea>
     </container>
 

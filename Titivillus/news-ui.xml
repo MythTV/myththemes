@@ -15,7 +15,7 @@
     </font>
 
     <font name="title" face="Arial">
-     	<color>#DDDDFF</color>
+        <color>#DDDDFF</color>
         <size>18</size>
 	<shadow>3,3</shadow>
         <bold>yes</bold>
@@ -99,6 +99,41 @@
 
     </container>
 
+  </window>
+
+  <window name="newsconfig">
+
+      <font name="active" face="Arial">
+          <color>#ffffff</color>
+          <size>15</size>
+          <shadow>1,1</shadow>
+      </font>
+      
+      <font name="inactive" face="Arial">
+          <size>15</size>
+          <shadow>1,1</shadow>
+          <color>#9999cc</color>
+      </font>
+      
+      <font name="title" face="Arial">
+          <color>#DDDDFF</color>
+          <size>18</size>
+          <shadow>3,3</shadow>
+          <bold>yes</bold>
+      </font>
+      
+      <font name="desc" face="Arial Narrow">
+          <color>#ffffff</color>
+          <size>16</size>
+          <bold>no</bold>
+      </font>
+      
+      <font name="updated" face="Arial Narrow">
+          <color>#ffffff</color>
+          <dropcolor>#000000</dropcolor>
+          <size>14</size>
+          <bold>no</bold>
+    </font>
 
     <container name="config-sites">
 

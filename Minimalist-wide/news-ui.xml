@@ -87,7 +87,30 @@
 
     </container>
 
+  </window>
 
+  <window name="newsconfig">
+
+    <font name="active" base="list-active">
+        <color>#ffffff</color>
+    </font>
+    
+    <font name="inactive" base="list-inactive">
+        <color>#9999cc</color>-->
+    </font>
+    
+    <font name="desc" face="Arial Narrow">
+        <color>#ffffff</color>
+        <size>16</size>
+        <bold>no</bold>
+    </font>
+    
+    <font name="updated" face="info">
+        <color>#000000</color>
+        <size>14</size>
+        <bold>no</bold>
+    </font>
+      
     <container name="config-sites">
 
       <area>20,40,760,560</area>

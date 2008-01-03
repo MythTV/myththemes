@@ -96,7 +96,6 @@
     </font>
 
   <background style="normal">
-    <image>button-background.jpg</image>
     <buttonspread>yes</buttonspread>
     <balancerows>no</balancerows>
     <buttonarea>15,155,1250,400</buttonarea>

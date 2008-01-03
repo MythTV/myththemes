@@ -95,8 +95,6 @@
     </font>
 
   <background style="normal">
-    <image>background.jpg</image>
-
     <buttonarea>30,115,650,390</buttonarea>
     <visiblerowlimit>7</visiblerowlimit>
     <columns>1</columns>

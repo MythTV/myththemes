@@ -359,7 +359,7 @@
 
   <buttondef name="SETUP_KEYS">
     <image>ui/button_off.png</image>
-     <watermarkimage>watermark/setup.png</watermarkimage>
+     <watermarkimage>watermark/keys.png</watermarkimage>
     <offset>0,0</offset>
   </buttondef>
 

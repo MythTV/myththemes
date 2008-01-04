@@ -825,4 +825,34 @@
     <offset>0,0</offset>
   </buttondef>
 
+  <buttondef name="SETTINGS_ARCHIVE">
+    <image>ui/button_off.png</image>
+    <watermarkimage>watermark/dvd_burn.png</watermarkimage>
+    <offset>0,0</offset>
+  </buttondef>
+
+  <buttondef name="MOVIETIMES">
+    <image>ui/button_off.png</image>
+    <watermarkimage>watermark/movietime.png</watermarkimage>
+    <offset>0,0</offset>
+  </buttondef>
+
+  <buttondef name="SETTINGS_MOVIETIME">
+    <image>ui/button_off.png</image>
+    <watermarkimage>watermark/movietime.png</watermarkimage>
+    <offset>0,0</offset>
+  </buttondef>
+
+  <buttondef name="ZONEMINDER">
+    <image>ui/button_off.png</image>
+    <watermarkimage>watermark/zoneminder.png</watermarkimage>
+    <offset>0,0</offset>
+  </buttondef>
+
+  <buttondef name="SETTINGS_ZONEMINDER">
+    <image>ui/button_off.png</image>
+    <watermarkimage>watermark/zoneminder.png</watermarkimage>
+    <offset>0,0</offset>
+  </buttondef>
+
 </myththeme>

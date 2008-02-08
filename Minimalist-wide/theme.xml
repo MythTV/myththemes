@@ -351,6 +351,12 @@
     <offset>25,0</offset>
   </buttondef>
 
+  <buttondef name="SCREENSETUPWIZARD">
+    <image>buttons/SETTINGS_APPEARANCE_off.png</image>
+    <activeimage>buttons/SETTINGS_APPEARANCE.png</activeimage>
+    <offset>25,0</offset>
+  </buttondef>
+
   <buttondef name="SETTINGS_TV">
     <image>buttons/TV_WATCH_TV_off.png</image>
     <activeimage>buttons/TV_WATCH_TV.png</activeimage>

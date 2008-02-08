@@ -339,6 +339,12 @@
     <offset>0,0</offset>
   </buttondef>
 
+  <buttondef name="SCREENSETUPWIZARD">
+    <image>text-blank.png</image>
+    <watermarkimage>watermark/setup.png</watermarkimage>
+    <offset>0,0</offset>
+  </buttondef>
+
   <buttondef name="SETTINGS_TV">
     <image>text-blank.png</image>
     <watermarkimage>watermark/tv.png</watermarkimage>

@@ -431,6 +431,12 @@
     <offset>0,0</offset>
   </buttondef>
 
+  <buttondef name="SETUP_STORAGE_GROUPS">
+    <image>ui/button_off.png</image>
+    <watermarkimage>watermark/setup.png</watermarkimage>
+    <offset>0,0</offset>
+  </buttondef>
+
   <buttondef name="SETUP_CAPTURE_CARDS">
     <image>ui/button_off.png</image>
     <watermarkimage>watermark/setup.png</watermarkimage>

@@ -523,6 +523,12 @@
     <offset>25,0</offset>
   </buttondef>
 
+  <buttondef name="SETUP_STORAGE_GROUPS">
+    <image>buttons/MENU_UTILITIES_SETUP_off.png</image>
+    <activeimage>buttons/MENU_UTILITIES_SETUP.png</activeimage>
+    <offset>25,0</offset>
+  </buttondef>
+
   <buttondef name="SETUP_CAPTURE_CARDS">
     <image>buttons/MENU_UTILITIES_SETUP_off.png</image>
     <activeimage>buttons/MENU_UTILITIES_SETUP.png</activeimage>

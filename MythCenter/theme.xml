@@ -42,7 +42,7 @@
     <normal>ui/button_off.png</normal>
     <active>ui/button_on.png</active>
     <text>
-      <area>10,10,0,0</area>
+      <area>10,10,10,0</area>
       <color>white</color>
       <fontname>Trebuchet MS</fontname>
       <fontsize>17</fontsize>

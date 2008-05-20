@@ -5,9 +5,13 @@
 
 prefix="/usr/local"
 
+qmake="qmake"
+
 for opt do
   case "$opt" in
   --prefix=*) prefix=`echo $opt | cut -d '=' -f 2`
+  ;;
+  --qmake=*) qmake=`echo $opt | cut -d '=' -f 2`
   ;;
   esac
 done
@@ -19,6 +23,7 @@ Usage:   configure [options]
 Options: [defaults in brackets after descriptions]
 Generic options:
   --prefix=PREFIX          MythTV install location PREFIX [$prefix]"
+  --qmake=QMAKE            use specified qmake [$qmake]
   --help                   print this message
 EOF
 exit 1
@@ -36,8 +41,18 @@ else
   exit
 fi
 
-if test -x $QTDIR/bin/qmake; then
-  $QTDIR/bin/qmake QMAKE=${QTDIR}/bin/qmake myththemes.pro
-else
-  qmake myththemes.pro
+is_qmake4()
+{
+    $1 --version 2>&1 | grep -q "Qt version 4"
+}
+ 
+if ! is_qmake4 $qmake; then
+    if is_qmake4 qmake-qt4; then
+        qmake=qmake-qt4
+    else
+        echo "qmake for Qt4 not found. Please specify the correct qmake with --qmake="
+        exit 1
+    fi
 fi
+
+${qmake} QMAKE=$(which ${qmake}) myththemes.pro

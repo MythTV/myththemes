@@ -24,21 +24,105 @@
             <size:big>22</size:big>
         </font>
 
-        <font name="clock" from="small">
-            <color>#0086FF</color>
-            <size>21</size>
-            <size:small>18</size:small>
-            <size:big>22</size:big>
+        <!-- fonts need sorting -->
+
+        <font name="basefont"  face="Trebuchet Ms">
+            <color>#FFFFFF</color>
+            <size>15</size>
+            <size:small>14</size:small>
+            <size:big>20</size:big>
+            <shadowcolor>#000000</shadowcolor>
+            <shadow>2,2</shadow>
+            <bold>yes</bold>
         </font>
 
-        <clock name="clock">
+        <font name="title" base="basefont" face="Arial Black">
+            <color>#FFFFDD</color>
+            <size>18</size>
+            <bold>yes</bold>
+            <size:big>24</size:big>
+            <size:small>18</size:small>
+            <shadow>3,3</shadow>
+        </font>
+
+        <font name="subtitle" base="basefont">
+            <color>#FFFFDD</color>
+            <size>16</size>
+            <size:big>21</size:big>
+            <size:small>17</size:small>
+            <shadow>2,2</shadow>
+        </font>
+
+        <font name="info" base="basefont">
+            <shadow>2,2</shadow>
+        </font>
+
+        <font name="metadata" base="info">
+            <color>#FFFFDD</color>
+        </font>
+
+        <font name="help" base="info">
+            <shadow>2,2</shadow>
+            <color>#aaaaee</color>
+        </font>
+
+        <font name="description" base="info">
+            <shadow>1,1</shadow>
+        </font>
+
+        <font name="small-info" base="info">
+            <size>14</size>
+            <size:small>12</size:small>
+            <size:big>17</size:big>
+        </font>
+
+        <font name="list-active" base="basefont" face="Freesans">
+            <size>15</size>
+            <size:small>14</size:small>
+            <size:big>18</size:big>
+            <shadow>2,2</shadow>
+            <color>#ddddff</color>
+        </font>
+
+        <font name="list-inactive" base="list-active">
+            <color>#aaaaee</color>
+        </font>
+
+        <font name="list-record" base="list-active">
+            <color>#33ff33</color>
+        </font>
+
+        <font name="list-recording" base="list-active">
+            <color>#ff5544</color>
+        </font>
+
+        <font name="list-norecord" base="list-active">
+            <color>#999999</color>
+        </font>
+
+        <font name="list-conflict"  base="list-active">
+            <color>#dddd33</color>
+        </font>
+
+        <font name="list-tagged"  base="list-active">
+            <color>#dddd33</color>
+        </font>
+
+        <font name="list-selected"  base="list-active">
             <color>#FFFFFF</color>
-            <area>350,50,400,50</area>
-            <font>clock</font>
-            <align>left</align>
-            <format>%DATE%, %TIME%</format>
-            <secondflash>no</secondflash>
-        </clock>
+        </font>
+
+        <font name="list-selectable" base="list-active">
+            <color>#ddddff</color>
+        </font>
+
+
+        <font name="recstatus" base="info">
+            <color>#ffff33</color>
+            <shadow>2,2</shadow>
+        </font>
+
+        <!-- End needs sorting -->
 
     </window>
 

@@ -1,98 +1,4 @@
 <myththeme>
-    <font name="basefont"  face="Trebuchet Ms">
-      <color>#ffffff</color>
-      <dropcolor>#000000</dropcolor>
-      <size>15</size>
-      <size:small>14</size:small>
-      <size:big>20</size:big>
-      <shadow>2,2</shadow>
-      <bold>yes</bold>
-    </font>
-   <font name="title" base="basefont" face="Arial Black">
-      <color>#ffffdd</color>
-      <size>18</size>
-      <bold>yes</bold>
-      <size:big>24</size:big>
-      <size:small>18</size:small>
-      <shadow>3,3</shadow>
-    </font>
-    
-    <font name="subtitle" base="basefont">
-      <color>#ffffdd</color>
-      <size>16</size>
-      <size:big>21</size:big>
-      <size:small>17</size:small>
-      <shadow>2,2</shadow>
-    </font>
-    
-    <font name="info" base="basefont">
-      <shadow>2,2</shadow>
-    </font>
-    
-    <font name="metadata" base="info">
-      <color>#ffffdd</color>
-    </font>
-    
-    <font name="help" base="info">
-      <shadow>2,2</shadow>
-      <color>#aaaaee</color>
-    </font>
-    
-    <font name="description" base="info">
-      <shadow>1,1</shadow>
-    </font>
-    
-    <font name="small-info" base="info">
-      <size>14</size>
-      <size:small>12</size:small>
-      <size:big>17</size:big>
-    </font>
-
-    <font name="list-active" base="basefont" face="Freesans">
-      <size>15</size>
-      <size:small>14</size:small>
-      <size:big>18</size:big>
-      <shadow>2,2</shadow>
-      <color>#ddddff</color>
-    </font>
-
-    <font name="list-inactive" base="list-active">
-      <color>#aaaaee</color>
-    </font>
-  
-    <font name="list-record" base="list-active">
-      <color>#33ff33</color>
-    </font>
-
-    <font name="list-recording" base="list-active">
-      <color>#ff5544</color>
-    </font>
-
-    <font name="list-norecord" base="list-active">
-      <color>#999999</color>
-    </font>
-
-    <font name="list-conflict"  base="list-active">
-      <color>#dddd33</color>
-    </font>
-    
-    <font name="list-tagged"  base="list-active">
-      <color>#dddd33</color>
-    </font>
-    
-    <font name="list-selected"  base="list-active">
-      <color>#ffffff</color>
-    </font>
-
-    <font name="list-selectable" base="list-active">
-        <color>#ddddff</color>
-    </font>
-
-        
-    <font name="recstatus" base="info">
-      <color>#ffff33</color>
-      <shadow>2,2</shadow>
-    </font>
 
   <background style="normal">
     <buttonarea>30,115,650,390</buttonarea>
@@ -140,11 +46,6 @@
          <color>black</color>
          <size>3</size>
       </outline>
-      <!--<shadow>
-         <color>black</color>
-         <offset>2,2</offset>
-         <alpha>128</alpha>
-      </shadow>-->
     </text>
     <activetext>
       <area>50,8,3,0</area>
@@ -157,14 +58,9 @@
          <color>black</color>
          <size>3</size>
       </outline>
-      <!--<shadow>
-         <color>black</color>
-         <offset>3,3</offset>
-         <alpha>128</alpha>
-      </shadow>-->
     </activetext>
   </genericbutton>
-  
+
 
   <uparrow>
     <image>shared/up_arrow.png</image>
@@ -176,7 +72,7 @@
     <position>65,460</position>
   </downarrow>
 
-  
+
 <!-- ################################################################ -->
 <!-- ########  Below are all the buttons that's in the menus ######## -->
 <!-- ################################################################ -->
@@ -428,7 +324,7 @@
     <offset>0,0</offset>
   </buttondef>
 
-  
+
 <!-- ######################################-->
 <!-- ########  music_settings.xml  ########-->
 <!-- ######################################-->
@@ -660,14 +556,14 @@
     <watermarkimage>watermark/search_keywords.png</watermarkimage>
     <offset>0,0</offset>
   </buttondef>
-  
+
     <buttondef name="TV_SEARCH_LISTINGS">
     <image>text-blank.png</image>
     <watermarkimage>watermark/tv_searchlistings.png</watermarkimage>
     <offset>0,0</offset>
   </buttondef>
-  
-  
+
+
 <!-- ###################################-->
 <!-- ########  tv_settings.xml  ########-->
 <!-- ###################################-->

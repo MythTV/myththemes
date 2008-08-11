@@ -25,19 +25,6 @@
             <size:big>22</size:big>
         </font>
 
-        <font name="clock" from="small">
-            <size>20</size>
-            <size:small>18</size:small>
-            <size:big>22</size:big>
-        </font>
-
-        <clock name="clock">
-            <area>500,525,280,40</area>
-            <font>clock</font>
-            <format>%DATE%, %TIME%</format>
-            <align>center</align>
-            <alpha>85</alpha>
-        </clock>
     </window>
 
 </mythuitheme>

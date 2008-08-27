@@ -39,14 +39,12 @@
          <bold>yes</bold>
     </font>
 
-    <clock name="clock">
+<!--    <clock name="clock">
       <area>800,40,400,40</area>
       <font>clock</font>
       <format>%DATE%, %TIME%</format>
-<!--      <colonflash>yes</colonflash>
-      <secondflash>yes</secondflash> -->
       <align>right</align>
-    </clock>
+    </clock> -->
   </window>
 
 </mythuitheme>

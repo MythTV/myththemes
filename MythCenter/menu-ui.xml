@@ -297,7 +297,7 @@
             <state name="SETTINGS_DVD" from="DVD" />
             <state name="SETTINGS_FM" from="FM" />
             <state name="SETTINGS_IMAGES" from="IMAGES" />
-            <state name="SETTINGS_GAME" from="GALLERY" />
+            <state name="SETTINGS_GAME" from="GAME" />
             <state name="SETTINGS_WEATHER" from="WEATHER" />
             <state name="SETTINGS_NEWS" from="NEWS" />
             <state name="SETTINGS_WEBPAGE" from="WEBPAGE" />

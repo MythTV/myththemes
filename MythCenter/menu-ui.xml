@@ -282,7 +282,10 @@
                     <filename>watermark/appearance.png</filename>
                 </imagetype>
             </state>
-            <state name="SCREENSETUPWIZARD" from="SETTINGS_APPEARANCE" />
+            <state name="SCREENSETUPWIZARD">
+                <imagetype name="watermark">
+                    <filename>watermark/screenwiz.png</filename>
+                </imagetype>
             <state name="SETTINGS_TV" from="TV" />
             <state name="SETTINGS_MUSIC">
                 <imagetype name="watermark">
@@ -449,7 +452,7 @@
             </state>
             <state name="SETTINGS_INFO_CENTER">
                 <imagetype name="watermark">
-                    <filename>watermark/hardware_info.png</filename>
+                    <filename>watermark/info_setup.png</filename>
                 </imagetype>
             </state>
             <state name="MENU_MEDIA_LIBRARY" from="SETTINGS_MEDIA" />

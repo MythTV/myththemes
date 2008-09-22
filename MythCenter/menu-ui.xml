@@ -286,6 +286,7 @@
                 <imagetype name="watermark">
                     <filename>watermark/screenwiz.png</filename>
                 </imagetype>
+            </state>
             <state name="SETTINGS_TV" from="TV" />
             <state name="SETTINGS_MUSIC">
                 <imagetype name="watermark">

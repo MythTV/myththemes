@@ -1,106 +1,11 @@
 <myththeme>
-<!--     <font name="basefont"  face="Trebuchet Ms"> -->
-    <font name="basefont"  face="Nimbus Sans L"> -->
-      <color>#ffffff</color>
-      <dropcolor>#3B4045</dropcolor>
-      <size>20</size>
-      <size:small>18</size:small>
-      <size:big>22</size:big>
-      <shadow>2,2</shadow>
-      <bold>yes</bold>
-    </font>
-   
-   <font name="title" base="basefont" face="Arial Black">
-      <!--<color>#ffffdd</color>-->
-      <color>#DEEAF9</color>
-      <dropcolor>#000000</dropcolor>
-      <size>22</size>
-      <size:big>24</size:big>
-      <size:small>18</size:small>
-    </font>
-    
-    <font name="subtitle" base="basefont"  face="Arial Black">
-      <color>#ffffdd</color>
-      <size>18</size>
-      <size:big>20</size:big>
-      <size:small>16</size:small>
-    </font>
-    
-    <font name="info" base="basefont">
-      <size>18</size>
-      <shadow>2,2</shadow>
-    </font>
-    
-    <font name="metadata" base="info">
-      <size>18</size>
-      <color>#ffffdd</color>
-    </font>
-    
-    <font name="help" base="info">
-      <shadow>2,2</shadow>
-      <color>#aaaaee</color>
-    </font>
-    
-    <font name="description" base="info">
-      <shadow>2,2</shadow>
-    </font>
-    
-    <font name="small-info" base="info">
-      <size>14</size>
-      <shadow>1,1</shadow>
-      <size:small>12</size:small>
-      <size:big>17</size:big>
-    </font>
-
-    <font name="list-active" base="basefont" face="Nimbus Sans L">
-      <size>19</size>
-      <size:small>15</size:small>
-      <size:big>21</size:big>
-      <shadow>2,2</shadow>
-      <color>#ddddff</color>
-    </font>
-
-    <font name="list-inactive" base="list-active">
-      <color>#aaaaee</color>
-    </font>
-  
-    <font name="list-record" base="list-active">
-      <color>#33ff33</color>
-    </font>
-
-    <font name="list-recording" base="list-active">
-      <color>#ff5544</color>
-    </font>
-
-    <font name="list-norecord" base="list-active">
-      <color>#999999</color>
-    </font>
-
-    <font name="list-conflict"  base="list-active">
-      <color>#dddd33</color>
-    </font>
-    
-    <font name="list-selected"  base="list-active">
-      <color>#ffffff</color>
-    </font>
-
-    <font name="list-selectable" base="list-active">
-        <color>#ddddff</color>
-    </font>
-
-        
-    <font name="recstatus" base="info">
-      <color>#ffff33</color>
-      <dropcolor>#000000</dropcolor>
-      <shadow>2,2</shadow>
-    </font>
 
   <background style="normal">
     <buttonspread>yes</buttonspread>
     <balancerows>no</balancerows>
     <buttonarea>15,155,1250,400</buttonarea>
     <visiblerowlimit>6</visiblerowlimit>
-    <columns>6</columns> 
+    <columns>6</columns>
   </background>
 
   <titles>
@@ -169,7 +74,7 @@
       </shadow>-->
     </activetext>
   </genericbutton>
-  
+
 
   <uparrow>
     <image>shared/up_arrow.png</image>
@@ -181,7 +86,7 @@
     <position>65,460</position>
   </downarrow>
 
-  
+
 <!-- ################################################################ -->
 <!-- ########  Below are all the buttons that's in the menus ######## -->
 <!-- ################################################################ -->
@@ -437,7 +342,7 @@
     <offset>25,0</offset>
   </buttondef>
 
-  
+
 <!-- ######################################-->
 <!-- ########  music_settings.xml  ########-->
 <!-- ######################################-->
@@ -580,13 +485,13 @@
     <activeimage>buttons/TV_SEARCH_LISTS.png</activeimage>
     <offset>25,0</offset>
   </buttondef>
-  
+
   <buttondef name="TV_CUSTOM_RECORD">
     <image>buttons/TV_CUSTOM_RECORD_off.png</image>
     <activeimage>buttons/TV_CUSTOM_RECORD.png</activeimage>
     <offset>25,0</offset>
   </buttondef>
-  
+
   <buttondef name="TV_MANUAL_SCHEDULE">
     <image>buttons/TV_MANUAL_SCHEDULE_off.png</image>
     <activeimage>buttons/TV_MANUAL_SCHEDULE.png</activeimage>
@@ -672,14 +577,14 @@
     <activeimage>buttons/TV_SEARCH_TITLES.png</activeimage>
     <offset>25,0</offset>
   </buttondef>
-  
+
     <buttondef name="TV_SEARCH_LISTINGS">
     <image>buttons/TV_SEARCH_LISTINGS_off.png</image>
     <activeimage>buttons/TV_SEARCH_LISTINGS.png</activeimage>
     <offset>25,0</offset>
   </buttondef>
-  
-  
+
+
 <!-- ###################################-->
 <!-- ########  tv_settings.xml  ########-->
 <!-- ###################################-->

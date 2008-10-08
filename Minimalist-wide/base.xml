@@ -108,7 +108,6 @@
         <color>#ddddff</color>
     </font>
 
-
     <font name="recstatus" base="info">
         <color>#ffff33</color>
         <dropcolor>#000000</dropcolor>

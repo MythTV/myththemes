@@ -191,7 +191,7 @@
             <state name="NETFLIX" from="DVD" />
         </statetype>
 
-        <buttonlist2 name="menu">
+        <buttonlist name="menu">
             <area>100,150,324,290</area>
             <layout>vertical</layout>
             <spacing>0</spacing>
@@ -234,7 +234,7 @@
                     </imagetype>
                 </state>
             </statetype>
-        </buttonlist2>
+        </buttonlist>
 
         <statetype name="watermarks">
             <position>424,240</position>
@@ -529,7 +529,7 @@
                 </imagetype>
             </state>
             <state name="TV_SETTINGS_RECORDING_PROFILES" from="TV_SCHEDULE_RECORDINGS" />
-            <state name="TV_SETTINGS_PROGRAM_GUIDE" from="TV_SCHEDULE_RECORDINGS" />          
+            <state name="TV_SETTINGS_PROGRAM_GUIDE" from="TV_SCHEDULE_RECORDINGS" />
             <state name="TV_SETTINGS_RECPRIORITIES" from="TV_RECPRIORITIES" />
 
             <state name="TV_WATCH_RECORDINGS">

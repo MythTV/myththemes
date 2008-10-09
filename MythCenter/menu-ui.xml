@@ -129,7 +129,7 @@
             <filename>ui/mythtv_logo.png</filename>
         </imagetype>
 
-        <buttonlist2 name="menu">
+        <buttonlist name="menu">
             <area>160,70,300,320</area>
             <layout>vertical</layout>
             <spacing>0</spacing>
@@ -169,7 +169,7 @@
                     </imagetype>
                 </state>
             </statetype>
-        </buttonlist2>
+        </buttonlist>
 
         <statetype name="watermarks">
             <position>520,200</position>

@@ -138,7 +138,7 @@
             </state>
         </statetype>
 
-        <buttonlist2 name="menu">
+        <buttonlist name="menu">
             <area>30,115,650,390</area>
             <layout>vertical</layout>
             <spacing>5</spacing>
@@ -180,7 +180,7 @@
                     </imagetype>
                 </state>
             </statetype>
-        </buttonlist2>
+        </buttonlist>
 
         <statetype name="watermarks">
             <position>524,105</position>

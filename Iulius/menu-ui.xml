@@ -16,7 +16,7 @@
         </imagetype>
 
         <clock name="clock">
-            <area>280,44,415,50</area>
+            <area>280,44,415,40</area>
             <font>medium</font>
             <align>right</align>
             <format>%DATE% %TIME%</format>
@@ -30,9 +30,7 @@
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,649,60</area>
-                    <imagetype name="background">
-                        <filename>button_off.png</filename>
-                    </imagetype>
+                    <imagetype name="background" />
                     <textarea name="buttontext">
                         <area>10,0,624,52</area>
                         <font>menufont</font>

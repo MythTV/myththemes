@@ -130,10 +130,10 @@
         </imagetype>
 
         <buttonlist name="menu">
-            <area>160,70,300,320</area>
+            <area>160,70,300,415</area>
             <layout>vertical</layout>
             <spacing>0</spacing>
-            <buttonarea>0,57,300,320</buttonarea>
+            <buttonarea>0,57,300,300</buttonarea>
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,300,50</area>

@@ -141,6 +141,7 @@
         <buttonlist name="menu">
             <area>30,115,650,390</area>
             <layout>vertical</layout>
+            <wrapstyle>selection</wrapstyle>
             <spacing>5</spacing>
             <buttonarea>0,10,650,390</buttonarea>
             <statetype name="buttonitem">

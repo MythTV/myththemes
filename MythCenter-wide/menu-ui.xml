@@ -4,7 +4,7 @@
 
         <font name="menufont" face="Trebuchet MS">
             <color>#FFFFFF</color>
-            <size>17</size>
+            <size>22</size>
             <bold>yes</bold>
             <shadowcolor>#000000</shadowcolor>
             <shadowoffset>2,2</shadowoffset>
@@ -137,15 +137,15 @@
         <buttonlist name="menu">
             <area>160,160,600,450</area>
             <layout>vertical</layout>
-            <spacing>20</spacing>
+            <spacing>5</spacing>
             <wrapstyle>selection</wrapstyle>
-            <buttonarea>0,0,300,400</buttonarea>
+            <buttonarea>0,0,480,400</buttonarea>
             <statetype name="buttonitem">
                 <state name="active">
-                    <area>0,0,300,50</area>
+                    <area>0,0,480,60</area>
                     <imagetype name="background" />
                     <textarea name="buttontext">
-                        <area>10,5,300,50</area>
+                        <area>15,7,450,50</area>
                         <font>menufont</font>
                         <align>left,vcenter</align>
                         <cutdown>yes</cutdown>

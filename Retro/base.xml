@@ -31,13 +31,6 @@
             <size:big>22</size:big>
             <bold>no</bold>
         </font>
-
-        <clock name="clock">
-            <area>20,500,780,40</area>
-            <font>clock</font>
-            <format>%DATE%, %TIME%</format>
-            <align>center</align>
-        </clock>
     </window>
 
 </mythuitheme>

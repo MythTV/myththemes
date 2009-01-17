@@ -36,7 +36,7 @@
             <bold>yes</bold>
         </font>
 
-        <font name="title" base="basefont" face="Arial Black">
+        <font name="title" from="basefont" face="Arial Black">
             <color>#FFFFDD</color>
             <size>18</size>
             <bold>yes</bold>
@@ -45,7 +45,7 @@
             <shadow>3,3</shadow>
         </font>
 
-        <font name="subtitle" base="basefont">
+        <font name="subtitle" from="basefont">
             <color>#FFFFDD</color>
             <size>16</size>
             <size:big>21</size:big>
@@ -53,30 +53,30 @@
             <shadow>2,2</shadow>
         </font>
 
-        <font name="info" base="basefont">
+        <font name="info" from="basefont">
             <shadow>2,2</shadow>
         </font>
 
-        <font name="metadata" base="info">
+        <font name="metadata" from="info">
             <color>#FFFFDD</color>
         </font>
 
-        <font name="help" base="info">
+        <font name="help" from="info">
             <shadow>2,2</shadow>
             <color>#aaaaee</color>
         </font>
 
-        <font name="description" base="info">
+        <font name="description" from="info">
             <shadow>1,1</shadow>
         </font>
 
-        <font name="small-info" base="info">
+        <font name="small-info" from="info">
             <size>14</size>
             <size:small>12</size:small>
             <size:big>17</size:big>
         </font>
 
-        <font name="list-active" base="basefont" face="Freesans">
+        <font name="list-active" from="basefont" face="Freesans">
             <size>15</size>
             <size:small>14</size:small>
             <size:big>18</size:big>
@@ -84,40 +84,40 @@
             <color>#ddddff</color>
         </font>
 
-        <font name="list-inactive" base="list-active">
+        <font name="list-inactive" from="list-active">
             <color>#aaaaee</color>
         </font>
 
-        <font name="list-record" base="list-active">
+        <font name="list-record" from="list-active">
             <color>#33ff33</color>
         </font>
 
-        <font name="list-recording" base="list-active">
+        <font name="list-recording" from="list-active">
             <color>#ff5544</color>
         </font>
 
-        <font name="list-norecord" base="list-active">
+        <font name="list-norecord" from="list-active">
             <color>#999999</color>
         </font>
 
-        <font name="list-conflict"  base="list-active">
+        <font name="list-conflict"  from="list-active">
             <color>#dddd33</color>
         </font>
 
-        <font name="list-tagged"  base="list-active">
+        <font name="list-tagged"  from="list-active">
             <color>#dddd33</color>
         </font>
 
-        <font name="list-selected"  base="list-active">
+        <font name="list-selected"  from="list-active">
             <color>#FFFFFF</color>
         </font>
 
-        <font name="list-selectable" base="list-active">
+        <font name="list-selectable" from="list-active">
             <color>#ddddff</color>
         </font>
 
 
-        <font name="recstatus" base="info">
+        <font name="recstatus" from="info">
             <color>#ffff33</color>
             <shadow>2,2</shadow>
         </font>

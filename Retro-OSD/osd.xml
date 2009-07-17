@@ -129,6 +129,35 @@
 	  </textarea>
   </container>
 
+  <container name="program_info_video" fademovement="0,6">
+	  <image name="background">
+		  <filename>osd_mid.png</filename>
+		  <position>0,320</position>
+	  </image>
+	  <textarea name="title">
+		  <area>100,348,400,22</area>
+		  <font>titlefont</font>
+	  </textarea>
+	  <textarea name="description">
+		  <multiline>yes</multiline>
+		  <area>100,398,500,74</area>
+		  <font>descriptfont</font>
+	  </textarea>
+	  <textarea name="year">
+		  <area>100,374,440,20</area>
+		  <font>grayfont</font>
+		  <value>(%STARTDATE%)  %LENMINS%</value>
+	  </textarea> 
+	  <image name="coverart">
+		  <position>12,348</position>
+		  <staticsize>75,110</staticsize>
+	  </image>
+	  <textarea name="time" align="right">
+		  <area>512,350,100,40</area>
+		  <font>timefont</font>
+	  </textarea>
+  </container>
+
   <container name="channel_number" fademovement="0,6">
 	  <textarea name="channum" align="center">
 		  <area>24,400,60,30</area>

@@ -18,7 +18,7 @@
         </font>
 
         <clock name="clock">
-            <area>800,40,400,40</area>
+            <area>780,40,480,40</area>
             <font>clock</font>
             <format>%DATE%, %TIME%</format>
             <align>center</align>

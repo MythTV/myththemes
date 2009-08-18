@@ -173,75 +173,82 @@
         </buttonlist>
 
         <statetype name="watermarks">
-            <position>520,200</position>
+            <position>520,140</position>
+
+            <state name="DEFAULT">
+                <imagetype name="watermark">
+                    <filename>watermark/tv.png</filename>
+                    <reflection axis="vertical" shear="0" scale="85" length="35" />
+                </imagetype>
+            </state>
 
             <!--   mainmenu.xml  -->
-            <state name="TV">
+            <state name="TV" from="DEFAULT">
                 <imagetype name="watermark">
                     <filename>watermark/tv.png</filename>
                 </imagetype>
             </state>
-            <state name="MUSIC">
+            <state name="MUSIC" from="DEFAULT">
                 <imagetype name="watermark">
                     <filename>watermark/music.png</filename>
                 </imagetype>
             </state>
-            <state name="VIDEO">
+            <state name="VIDEO" from="DEFAULT">
                 <imagetype name="watermark">
                     <filename>watermark/video.png</filename>
                 </imagetype>
             </state>
-            <state name="DVD">
+            <state name="DVD" from="DEFAULT">
                 <imagetype name="watermark">
                     <filename>watermark/dvd.png</filename>
                 </imagetype>
             </state>
-            <state name="FM">
+            <state name="FM" from="DEFAULT">
                 <imagetype name="watermark">
                     <filename>watermark/radio.png</filename>
                 </imagetype>
             </state>
-            <state name="IMAGES">
+            <state name="IMAGES" from="DEFAULT">
                 <imagetype name="watermark">
                     <filename>watermark/gallery.png</filename>
                 </imagetype>
             </state>
-            <state name="GAME">
+            <state name="GAME" from="DEFAULT">
                 <imagetype name="watermark">
                     <filename>watermark/joystick.png</filename>
                 </imagetype>
             </state>
-            <state name="WEATHER">
+            <state name="WEATHER" from="DEFAULT">
                 <imagetype name="watermark">
                     <filename>watermark/weather.png</filename>
                 </imagetype>
             </state>
-            <state name="NEWS">
+            <state name="NEWS" from="DEFAULT">
                 <imagetype name="watermark">
                     <filename>watermark/news.png</filename>
                 </imagetype>
             </state>
-            <state name="WEBPAGE">
+            <state name="WEBPAGE" from="DEFAULT">
                 <imagetype name="watermark">
                     <filename>watermark/browser.png</filename>
                 </imagetype>
             </state>
-            <state name="RECIPE">
+            <state name="RECIPE" from="DEFAULT">
                 <imagetype name="watermark">
                     <filename>watermark/pie.png</filename>
                 </imagetype>
             </state>
-            <state name="PHONE">
+            <state name="PHONE" from="DEFAULT">
                 <imagetype name="watermark">
                     <filename>watermark/phone.png</filename>
                 </imagetype>
             </state>
-            <state name="SETUP">
+            <state name="SETUP" from="DEFAULT">
                 <imagetype name="watermark">
                     <filename>watermark/setup.png</filename>
                 </imagetype>
             </state>
-            <state name="SHUTDOWN">
+            <state name="SHUTDOWN" from="DEFAULT">
                 <imagetype name="watermark">
                     <filename>watermark/important.png</filename>
                 </imagetype>
@@ -249,12 +256,12 @@
 
             <!--   dvdmenu.xml  -->
             <state name="DVD_PLAY" from="DVD" />
-            <state name="VCD_PLAY">
+            <state name="VCD_PLAY" from="DEFAULT">
                 <imagetype name="watermark">
                     <filename>watermark/cd.png</filename>
                 </imagetype>
             </state>
-            <state name="DVD_RIP">
+            <state name="DVD_RIP" from="DEFAULT">
                 <imagetype name="watermark">
                     <filename>watermark/dvd_rip.png</filename>
                 </imagetype>
@@ -278,23 +285,23 @@
 
             <!--   main_settings.xml  -->
             <state name="SETTINGS_GENERAL" from="SETUP" />
-            <state name="SETTINGS_APPEARANCE">
+            <state name="SETTINGS_APPEARANCE" from="DEFAULT">
                 <imagetype name="watermark">
                     <filename>watermark/appearance.png</filename>
                 </imagetype>
             </state>
-            <state name="SCREENSETUPWIZARD">
+            <state name="SCREENSETUPWIZARD" from="DEFAULT">
                 <imagetype name="watermark">
                     <filename>watermark/screenwiz.png</filename>
                 </imagetype>
             </state>
             <state name="SETTINGS_TV" from="TV" />
-            <state name="SETTINGS_MUSIC">
+            <state name="SETTINGS_MUSIC" from="DEFAULT">
                 <imagetype name="watermark">
                     <filename>watermark/music_settings.png</filename>
                 </imagetype>
             </state>
-            <state name="SETTINGS_VIDEO">
+            <state name="SETTINGS_VIDEO" from="DEFAULT">
                 <imagetype name="watermark">
                     <filename>watermark/video_settings.png</filename>
                 </imagetype>
@@ -308,7 +315,7 @@
             <state name="SETTINGS_WEBPAGE" from="WEBPAGE" />
             <state name="SETTINGS_RECIPE" from="RECIPE" />
             <state name="SETTINGS_XBOX" from="SETUP" />
-            <state name="SETUP_KEYS">
+            <state name="SETUP_KEYS" from="DEFAULT">
                 <imagetype name="watermark">
                     <filename>watermark/keys.png</filename>
                 </imagetype>
@@ -317,12 +324,12 @@
             <!--   musicmenu.xml  -->
             <state name="MUSIC_PLAY" from="MUSIC" />
             <state name="MUSIC_PLAYLIST" from="MUSIC" />
-            <state name="MUSIC_RIP">
+            <state name="MUSIC_RIP" from="DEFAULT">
                 <imagetype name="watermark">
                     <filename>watermark/cd_rip.png</filename>
                 </imagetype>
             </state>
-            <state name="MUSIC_SCAN">
+            <state name="MUSIC_SCAN" from="DEFAULT">
                 <imagetype name="watermark">
                     <filename>watermark/search.png</filename>
                 </imagetype>
@@ -335,12 +342,12 @@
 
             <!--   tv_schedule.xml  -->
 
-            <state name="TV_PROGRAM_GUIDE">
+            <state name="TV_PROGRAM_GUIDE" from="DEFAULT">
                 <imagetype name="watermark">
                     <filename>watermark/clock.png</filename>
                 </imagetype>
             </state>
-            <state name="TV_PROGFIND">
+            <state name="TV_PROGFIND" from="DEFAULT">
                 <imagetype name="watermark">
                     <filename>watermark/search.png</filename>
                 </imagetype>
@@ -351,13 +358,13 @@
             <state name="TV_SEARCH_PEOPLE" from="TV_PROGFIND" />
             <state name="TV_SEARCH_POWER" from="TV_PROGFIND" />
             <state name="TV_SEARCH_KEYWORDS" from="TV_PROGFIND" />
-            <state name="TV_CUSTOM_RECORD">
+            <state name="TV_CUSTOM_RECORD" from="DEFAULT">
                 <imagetype name="watermark">
                     <filename>watermark/record.png</filename>
                 </imagetype>
             </state>
             <state name="TV_MANUAL_SCHEDULE" from="TV_PROGRAM_GUIDE" />
-            <state name="TV_RECPRIORITIES">
+            <state name="TV_RECPRIORITIES" from="DEFAULT">
                 <imagetype name="watermark">
                     <filename>watermark/priority.png</filename>
                 </imagetype>
@@ -372,18 +379,18 @@
             <!--   setup.xml  -->
             <state name="SETUP_GENERAL" from="SETUP" />
             <state name="SETUP_STORAGE_GROUPS" from="SETUP" />
-            <state name="SETUP_CAPTURE_CARDS">
+            <state name="SETUP_CAPTURE_CARDS" from="DEFAULT">
                 <imagetype name="watermark">
                     <filename>watermark/hardware_settings.png</filename>
                 </imagetype>
             </state>
             <state name="SETUP_VIDEO_SOURCES" from="SETTINGS_VIDEO" />
-            <state name="SETUP_INPUT_CONNECTIONS">
+            <state name="SETUP_INPUT_CONNECTIONS" from="DEFAULT">
                 <imagetype name="watermark">
                     <filename>watermark/hardware_info.png</filename>
                 </imagetype>
             </state>
-            <state name="SETUP_CHANNEL_EDITOR">
+            <state name="SETUP_CHANNEL_EDITOR" from="DEFAULT">
                 <imagetype name="watermark">
                     <filename>watermark/checklist.png</filename>
                 </imagetype>
@@ -413,22 +420,22 @@
             <!--   tvmenu.xml  -->
             <state name="TV_WATCH_TV" from="TV" />
             <state name="TV_SCHEDULE_RECORDINGS" from="TV_PROGRAM_GUIDE" />
-            <state name="TV_WATCH_RECORDINGS">
+            <state name="TV_WATCH_RECORDINGS" from="DEFAULT">
                 <imagetype name="watermark">
                     <filename>watermark/play.png</filename>
                 </imagetype>
             </state>
-            <state name="TV_DELETE">
+            <state name="TV_DELETE" from="DEFAULT">
                 <imagetype name="watermark">
                     <filename>watermark/error.png</filename>
                 </imagetype>
             </state>
-            <state name="TV_PREVIOUS">
+            <state name="TV_PREVIOUS" from="DEFAULT">
                 <imagetype name="watermark">
                     <filename>watermark/big_arrow_down.png</filename>
                 </imagetype>
             </state>
-            <state name="TV_STATUS">
+            <state name="TV_STATUS" from="DEFAULT">
                 <imagetype name="watermark">
                     <filename>watermark/info.png</filename>
                 </imagetype>
@@ -447,12 +454,12 @@
 
             <!--   AltMenus Specific Icons  -->
             <state name="TV_UPCOMING_RECORDINGS" from="TV_PROGRAM_GUIDE" />
-            <state name="SETTINGS_MEDIA">
+            <state name="SETTINGS_MEDIA" from="DEFAULT">
                 <imagetype name="watermark">
                     <filename>watermark/multimedia.png</filename>
                 </imagetype>
             </state>
-            <state name="SETTINGS_INFO_CENTER">
+            <state name="SETTINGS_INFO_CENTER" from="DEFAULT">
                 <imagetype name="watermark">
                     <filename>watermark/info_setup.png</filename>
                 </imagetype>
@@ -465,17 +472,17 @@
             <state name="SETUP_FRONTEND" from="SETUP" />
             <state name="SETUP_BACKEND" from="SETUP" />
             <state name="SETUP_MENU" from="SETUP" />
-            <state name="STREAM">
+            <state name="STREAM" from="DEFAULT">
                 <imagetype name="watermark">
                     <filename>watermark/stream.png</filename>
                 </imagetype>
             </state>
-            <state name="EJECT">
+            <state name="EJECT" from="DEFAULT">
                 <imagetype name="watermark">
                     <filename>watermark/dvd_eject.png</filename>
                 </imagetype>
             </state>
-            <state name="ARCHIVE">
+            <state name="ARCHIVE" from="DEFAULT">
                 <imagetype name="watermark">
                     <filename>watermark/dvd_burn.png</filename>
                 </imagetype>
@@ -491,14 +498,14 @@
             <state name="ARCHIVE_CREATE_ARCHIVE" from="ARCHIVE" />
             <state name="ARCHIVE_UTILITIES" from="ARCHIVE" />
             <state name="ARCHIVE_LAST_LOG" from="TV_STATUS" />
-            <state name="ARCHIVE_TEST_DVD">
+            <state name="ARCHIVE_TEST_DVD" from="DEFAULT">
                 <imagetype name="watermark">
                     <filename>watermark/play.png</filename>
                 </imagetype>
             </state>
             <state name="ARCHIVE_BURN_DVD" from="ARCHIVE" />
             <!-- Movietimes -->
-            <state name="MOVIETIMES">
+            <state name="MOVIETIMES" from="DEFAULT">
                 <imagetype name="watermark">
                     <filename>watermark/movietime.png</filename>
                 </imagetype>

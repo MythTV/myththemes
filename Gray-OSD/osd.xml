@@ -174,13 +174,17 @@
       <area>100,70,450,20</area>
       <font>grayfont</font>
       <value>(%TIMEDATE%)  %LENMINS%</value>
-    </textarea> 
+    </textarea>
+    <image name="coverart">
+      <position>40,35</position>
+      <staticsize>40,80</staticsize>
+    </image>
     <image name="channelicon">
       <position>40,35</position>
       <staticsize>40,40</staticsize>
     </image>
     <textarea name="channum" align="center">
-       <area>30,80,60,30</area>
+       <area>25,125,70,30</area>
        <font>channelfont</font>
     </textarea>
     <textarea name="time" align="right">

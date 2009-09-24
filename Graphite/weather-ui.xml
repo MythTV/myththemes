@@ -1,0 +1,941 @@
+<mythuitheme>
+    
+    <window name="weatherbase">
+        <area>-1,-1,1280,720</area>
+        
+        <shape name="shape">
+            <area>40,50,1200,500</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="180" />
+            <line color="#FFFFFF" alpha="255" width="2" />
+            <cornerradius>12</cornerradius>
+        </shape>
+        
+        <textarea name="header" from="basetextarea">
+            <area>100,60,1080,30</area>
+            <font>baselarge</font>
+            <align>allcenter</align>
+        </textarea>
+        
+        <textarea name="pause_text" from="basetextarea">
+            <area>50,15,1180,30</area>
+            <align>right,vcenter</align>
+        </textarea>
+        
+        <textarea name="update_text" from="basetextarea">
+            <area>50,500,1180,30</area>
+            <align>center</align>
+        </textarea>
+        
+        <imagetype name="clockback">
+            <area>525,695,230,51</area>
+            <filename>images/clock_backdrop.png</filename>
+        </imagetype>
+        
+        <font name="clock" from="baseextrasmall">
+            <size>11</size>
+            <color>#FFFFFF</color>
+        </font>
+        
+        <clock name="clock">
+            <area>529,700,219,25</area>
+            <font>clock</font>
+            <format>%DATE%, %TIME%</format>
+            <align>center</align>
+            <alpha>255</alpha>
+        </clock>
+        
+        <imagetype name="clockbackoverlay">
+            <area>525,695,230,23</area>
+            <filename>images/clock_backdrop_overlay.png</filename>
+        </imagetype>
+        
+    </window>
+    
+    <window name="Current Conditions">
+        
+        <textarea name="cclocation" from="basetextarea">
+            <area>290,100,700,35</area>
+            <align>center</align>
+        </textarea>
+        
+        <textarea name="humiditylbl" from="basetextarea">
+            <area>340,155,245,32</area>
+            <font>basemedium</font>
+            <value>Humidity</value>
+        </textarea>
+        
+        <textarea name="relative_humidity" from="basetextarea">
+            <area>530,155,300,32</area>
+            <font>basemedium</font>
+            <align>right,top</align>
+        </textarea>
+        
+        <textarea name="pressurelbl" from="humiditylbl">
+            <area>340,203,245,32</area>
+            <value>Pressure</value>
+        </textarea>
+        
+        <textarea name="pressure" from="basetextarea">
+            <area>530,203,300,32</area>
+            <font>basemedium</font>
+            <align>right,top</align>
+        </textarea>
+        
+        <textarea name="windlbl" from="humiditylbl">
+            <area>340,251,245,32</area>
+            <value>Wind(Gust)</value>
+        </textarea>
+        
+        <textarea name="wind_spdgst" from="basetextarea">
+            <area>530,251,300,32</area>
+            <font>basemedium</font>
+            <align>right,top</align>
+        </textarea>
+        
+        <textarea name="dirlbl" from="humiditylbl">
+            <area>340,299,245,32</area>
+            <value>Wind Direction</value>
+        </textarea>
+        
+        <textarea name="wind_dir" from="basetextarea">
+            <area>530,299,300,32</area>
+            <font>basemedium</font>
+            <align>right,top</align>
+        </textarea>
+        
+        <textarea name="visilbl" from="humiditylbl">
+            <area>890,155,245,32</area>
+            <value>Visibility</value>
+        </textarea>
+        
+        <textarea name="visibility" from="basetextarea">
+            <area>900,155,300,32</area>
+            <font>basemedium</font>
+            <align>right,top</align>
+        </textarea>
+        
+        <textarea name="apptlbl" from="humiditylbl">
+            <area>890,203,245,32</area>
+            <value>Feels Like</value>
+        </textarea>
+        
+        <textarea name="appt" from="basetextarea">
+            <area>900,203,300,32</area>
+            <font>basemedium</font>
+            <align>right,top</align>
+        </textarea>
+        
+        <textarea name="temp" from="basetextarea">
+            <area>45,270,227,70</area>
+            <font>baseextralarge</font>
+            <align>allcenter</align>
+        </textarea>
+        
+        <textarea name="weather" from="basetextarea">
+            <area>42,220,227,78</area>
+            <font>basemedium</font>
+            <multiline>yes</multiline>
+            <align>allcenter</align>
+        </textarea>
+        
+        <imagetype name="weather_icon">
+            <area>55,70,200,150</area>
+            <filename>images/unknown.png</filename>
+        </imagetype>
+        
+        <textarea name="observation_prefix" from="basetextarea">
+            <area>890,300,700,35</area>
+            <align>left</align>
+            <value>As of</value>
+        </textarea>
+        
+        <textarea name="observation_time" from="basetextarea">
+            <area>947,300,700,35</area>
+            <align>left</align>
+        </textarea>
+        
+    </window>
+    
+    <window name="Three Day Forecast">
+        
+        <textarea name="3dlocation" from="basetextarea">
+            <area>290,100,700,35</area>
+            <align>center</align>
+        </textarea>
+        
+        <shape name="boxshape1">
+            <area>220,180,270,300</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="100" />
+            <line color="#FFFFFF" alpha="30" />
+            <cornerradius>15</cornerradius>
+        </shape>
+        
+        <textarea name="date-0">
+            <area>240,180,230,32</area>
+            <font>basemedium</font>
+            <align>allcenter</align>
+        </textarea>
+        
+        <imagetype name="icon-0">
+            <area>255,215,200,150</area>
+        </imagetype>
+        
+        <textarea name="lolbl0" from="basetextarea">
+            <area>250,445,100,32</area>
+            <value>Low</value>
+            <align>allcenter</align>
+        </textarea>
+        
+        <textarea name="hilbl0" from="lolbl0">
+            <position>250,400</position>
+            <value>High</value>
+        </textarea>
+        
+        <textarea name="low-0" from="basetextarea">
+            <area>360,445,100,32</area>
+            <cutdown>no</cutdown>
+            <font>baselarge</font>
+            <align>allcenter</align>
+        </textarea>
+        
+        <textarea name="high-0" from="low-0">
+            <position>360,400</position>
+        </textarea>
+        
+        <shape name="boxshape2">
+            <area>505,180,270,300</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="100" />
+            <line color="#FFFFFF" alpha="30" />
+            <cornerradius>15</cornerradius>
+        </shape>
+        
+        <textarea name="date-1" from="date-0">
+            <position>525,180</position>
+        </textarea>
+        
+        <imagetype name="icon-1" from="icon-0">
+            <position>540,215</position>
+        </imagetype>
+        
+        <textarea name="lolbl1" from="lolbl0">
+            <position>535,445</position>
+        </textarea>
+        
+        <textarea name="hilbl1" from="hilbl0">
+            <position>535,400</position>
+        </textarea>
+        
+        <textarea name="low-1" from="low-0">
+            <position>645,445</position>
+        </textarea>
+        
+        <textarea name="high-1" from="low-0">
+            <position>645,400</position>
+        </textarea>
+        
+        <shape name="boxshape3">
+            <area>790,180,270,300</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="100" />
+            <line color="#FFFFFF" alpha="30" />
+            <cornerradius>15</cornerradius>
+        </shape>
+        
+        <textarea name="date-2" from="date-0">
+            <position>810,180</position>
+        </textarea>
+        
+        <imagetype name="icon-2" from="icon-0">
+            <position>825,215</position>
+        </imagetype>
+        
+        <textarea name="lolbl2" from="lolbl0">
+            <position>820,445</position>
+        </textarea>
+        
+        <textarea name="hilbl2" from="hilbl0">
+            <position>820,400</position>
+        </textarea>
+        
+        <textarea name="low-2" from="low-0">
+            <position>930,445</position>
+        </textarea>
+        
+        <textarea name="high-2" from="low-0">
+            <position>930,400</position>
+        </textarea>
+    </window>
+    
+    <window name="Six Day Forecast">
+        
+        <textarea name="6dlocation" from="basetextarea">
+            <area>290,100,700,35</area>
+            <align>center</align>
+        </textarea>
+        
+        <shape name="boxshape0">
+            <area>60,180,180,300</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="100" />
+            <line color="#FFFFFF" alpha="30" />
+            <cornerradius>15</cornerradius>
+        </shape>
+        
+        <shape name="boxshape1">
+            <area>255,180,180,300</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="100" />
+            <line color="#FFFFFF" alpha="30" />
+            <cornerradius>15</cornerradius>
+        </shape>
+        
+        <shape name="boxshape2">
+            <area>450,180,180,300</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="100" />
+            <line color="#FFFFFF" alpha="30" />
+            <cornerradius>15</cornerradius>
+        </shape>
+        
+        <shape name="boxshape3">
+            <area>645,180,180,300</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="100" />
+            <line color="#FFFFFF" alpha="30" />
+            <cornerradius>15</cornerradius>
+        </shape>
+        
+        <shape name="boxshape4">
+            <area>840,180,180,300</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="100" />
+            <line color="#FFFFFF" alpha="30" />
+            <cornerradius>15</cornerradius>
+        </shape>
+        
+        <shape name="boxshape5">
+            <area>1035,180,180,300</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="100" />
+            <line color="#FFFFFF" alpha="30" />
+            <cornerradius>15</cornerradius>
+        </shape>
+        
+        <textarea name="date-0" from="basetextarea">
+            <area>60,200,180,25</area>
+            <align>allcenter</align>
+        </textarea>
+        <textarea name="date-1" from="date-0">
+            <position>255,200</position>
+        </textarea>
+        <textarea name="date-2" from="date-0">
+            <position>450,200</position>
+        </textarea>
+        <textarea name="date-3" from="date-0">
+            <position>645,200</position>
+        </textarea>
+        <textarea name="date-4" from="date-0">
+            <position>840,200</position>
+        </textarea>
+        <textarea name="date-5" from="date-0">
+            <position>1035,200</position>
+        </textarea>
+        
+        <imagetype name="icon-0">
+            <area>60,245,180,125</area>
+        </imagetype>
+        <imagetype name="icon-1" from="icon-0">
+            <position>255,245</position>
+        </imagetype>
+        <imagetype name="icon-2" from="icon-0">
+            <position>450,245</position>
+        </imagetype>
+        <imagetype name="icon-3" from="icon-0">
+            <position>645,245</position>
+        </imagetype>
+        <imagetype name="icon-4" from="icon-0">
+            <position>840,245</position>
+        </imagetype>
+        <imagetype name="icon-5" from="icon-0">
+            <position>1035,245</position>
+        </imagetype>
+        
+        <textarea name="hilbl0" from="basetextarea">
+            <area>70,400,160,30</area>
+            <value>High</value>
+        </textarea>
+        <textarea name="hilbl1" from="hilbl0">
+            <position>265,400</position>
+        </textarea>
+        <textarea name="hilbl2" from="hilbl0">
+            <position>460,400</position>
+        </textarea>
+        <textarea name="hilbl3" from="hilbl0">
+            <position>655,400</position>
+        </textarea>
+        <textarea name="hilbl4" from="hilbl0">
+            <position>850,400</position>
+        </textarea>
+        <textarea name="hilbl5" from="hilbl0">
+            <position>1045,400</position>
+        </textarea>
+        
+        <textarea name="lolbl0" from="basetextarea">
+            <area>70,450,160,30</area>
+            <value>Low</value>
+        </textarea>
+        <textarea name="lolbl1" from="lolbl0">
+            <position>265,450</position>
+        </textarea>
+        <textarea name="lolbl2" from="lolbl0">
+            <position>460,450</position>
+        </textarea>
+        <textarea name="lolbl3" from="lolbl0">
+            <position>655,450</position>
+        </textarea>
+        <textarea name="lolbl4" from="lolbl0">
+            <position>850,450</position>
+        </textarea>
+        <textarea name="lolbl5" from="lolbl0">
+            <position>1045,450</position>
+        </textarea>
+        
+        <textarea name="high-0" from="basetextarea">
+            <area>70,400,160,30</area>
+            <value />
+            <align>right</align>
+        </textarea>
+        <textarea name="high-1" from="high-0">
+            <position>265,400</position>
+        </textarea>
+        <textarea name="high-2" from="high-0">
+            <position>460,400</position>
+        </textarea>
+        <textarea name="high-3" from="high-0">
+            <position>655,400</position>
+        </textarea>
+        <textarea name="high-4" from="high-0">
+            <position>850,400</position>
+        </textarea>
+        <textarea name="high-5" from="high-0">
+            <position>1045,400</position>
+        </textarea>
+        
+        <textarea name="low-0" from="basetextarea">
+            <area>70,450,160,30</area>
+            <value />
+            <align>right</align>
+        </textarea>
+        <textarea name="low-1" from="low-0">
+            <position>265,450</position>
+        </textarea>
+        <textarea name="low-2" from="low-0">
+            <position>460,450</position>
+        </textarea>
+        <textarea name="low-3" from="low-0">
+            <position>655,450</position>
+        </textarea>
+        <textarea name="low-4" from="low-0">
+            <position>850,450</position>
+        </textarea>
+        <textarea name="low-5" from="low-0">
+            <position>1045,450</position>
+        </textarea>
+    </window>
+    
+    <window name="Static Map">
+        
+        <textarea name="smdec" from="basetextarea">
+            <area>290,100,700,35</area>
+            <align>center</align>
+        </textarea>
+        
+        <imagetype name="map">
+            <area>60,180,1060,300</area>
+            <preserveaspect>true</preserveaspect>
+        </imagetype>
+    </window>
+    
+    <window name="Animated Map">
+        
+        <textarea name="amdesc" from="basetextarea">
+            <area>290,100,700,35</area>
+            <align>center</align>
+        </textarea>
+        
+        <imagetype name="animatedimage">
+            <area>60,180,1060,300</area>
+            <preserveaspect>true</preserveaspect>
+        </imagetype>
+    </window>
+    
+    <window name="Severe Weather Alerts">
+        
+        <textarea name="swlocation" from="basetextarea">
+            <area>290,100,700,35</area>
+            <align>center</align>
+        </textarea>
+        
+        <textarea name="alerts" from="basetextarea">
+            <area>100,230,1080,300</area>
+            <value>Weather Alerts</value>
+        </textarea>
+    </window>
+    
+    <window name="18 Hour Forecast">
+        
+        <textarea name="18hrlocation" from="basetextarea">
+            <area>290,100,700,35</area>
+            <align>center</align>
+        </textarea>
+        
+        <shape name="boxshape0">
+            <area>60,180,180,300</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="100" />
+            <line color="#FFFFFF" alpha="30" />
+            <cornerradius>15</cornerradius>
+        </shape>
+        
+        <shape name="boxshape1">
+            <area>255,180,180,300</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="100" />
+            <line color="#FFFFFF" alpha="30" />
+            <cornerradius>15</cornerradius>
+        </shape>
+        
+        <shape name="boxshape2">
+            <area>450,180,180,300</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="100" />
+            <line color="#FFFFFF" alpha="30" />
+            <cornerradius>15</cornerradius>
+        </shape>
+        
+        <shape name="boxshape3">
+            <area>645,180,180,300</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="100" />
+            <line color="#FFFFFF" alpha="30" />
+            <cornerradius>15</cornerradius>
+        </shape>
+        
+        <shape name="boxshape4">
+            <area>840,180,180,300</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="100" />
+            <line color="#FFFFFF" alpha="30" />
+            <cornerradius>15</cornerradius>
+        </shape>
+        
+        <shape name="boxshape5">
+            <area>1035,180,180,300</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="100" />
+            <line color="#FFFFFF" alpha="30" />
+            <cornerradius>15</cornerradius>
+        </shape>
+        
+        <textarea name="time-0" from="basetextarea">
+            <area>60,200,180,25</area>
+            <align>allcenter</align>
+        </textarea>
+        <textarea name="time-1" from="time-0">
+            <position>255,200</position>
+        </textarea>
+        <textarea name="time-2" from="time-0">
+            <position>450,200</position>
+        </textarea>
+        <textarea name="time-3" from="time-0">
+            <position>645,200</position>
+        </textarea>
+        <textarea name="time-4" from="time-0">
+            <position>840,200</position>
+        </textarea>
+        <textarea name="time-5" from="time-0">
+            <position>1035,200</position>
+        </textarea>
+        
+        <imagetype name="18icon-0">
+            <area>60,245,180,125</area>
+        </imagetype>
+        <imagetype name="18icon-1" from="18icon-0">
+            <position>255,245</position>
+        </imagetype>
+        <imagetype name="18icon-2" from="18icon-0">
+            <position>450,245</position>
+        </imagetype>
+        <imagetype name="18icon-3" from="18icon-0">
+            <position>645,245</position>
+        </imagetype>
+        <imagetype name="18icon-4" from="18icon-0">
+            <position>840,245</position>
+        </imagetype>
+        <imagetype name="18icon-5" from="18icon-0">
+            <position>1035,245</position>
+        </imagetype>
+        
+        <textarea name="tmplbl0" from="basetextarea">
+            <area>70,400,160,30</area>
+            <value>Temp</value>
+        </textarea>
+        <textarea name="tmplbl1" from="tmplbl0">
+            <position>265,400</position>
+        </textarea>
+        <textarea name="tmplbl2" from="tmplbl0">
+            <position>460,400</position>
+        </textarea>
+        <textarea name="tmplbl3" from="tmplbl0">
+            <position>655,400</position>
+        </textarea>
+        <textarea name="tmplbl4" from="tmplbl0">
+            <position>850,400</position>
+        </textarea>
+        <textarea name="tmplbl5" from="tmplbl0">
+            <position>1045,400</position>
+        </textarea>
+        
+        <textarea name="poplbl0" from="basetextarea">
+            <area>70,450,160,30</area>
+            <value>Low</value>
+        </textarea>
+        <textarea name="poplbl1" from="poplbl0">
+            <position>265,450</position>
+        </textarea>
+        <textarea name="poplbl2" from="poplbl0">
+            <position>460,450</position>
+        </textarea>
+        <textarea name="poplbl3" from="poplbl0">
+            <position>655,450</position>
+        </textarea>
+        <textarea name="poplbl4" from="poplbl0">
+            <position>850,450</position>
+        </textarea>
+        <textarea name="poplbl5" from="poplbl0">
+            <position>1045,450</position>
+        </textarea>
+        
+        <textarea name="temp-0" from="basetextarea">
+            <area>70,400,160,30</area>
+            <value />
+            <align>right</align>
+        </textarea>
+        <textarea name="temp-1" from="temp-0">
+            <position>265,400</position>
+        </textarea>
+        <textarea name="temp-2" from="temp-0">
+            <position>460,400</position>
+        </textarea>
+        <textarea name="temp-3" from="temp-0">
+            <position>655,400</position>
+        </textarea>
+        <textarea name="temp-4" from="temp-0">
+            <position>850,400</position>
+        </textarea>
+        <textarea name="temp-5" from="temp-0">
+            <position>1045,400</position>
+        </textarea>
+        
+        <textarea name="pop-0" from="basetextarea">
+            <area>70,450,160,30</area>
+            <value />
+            <align>right</align>
+        </textarea>
+        <textarea name="pop-1" from="pop-0">
+            <position>265,450</position>
+        </textarea>
+        <textarea name="pop-2" from="pop-0">
+            <position>460,450</position>
+        </textarea>
+        <textarea name="pop-3" from="pop-0">
+            <position>655,450</position>
+        </textarea>
+        <textarea name="pop-4" from="pop-0">
+            <position>850,450</position>
+        </textarea>
+        <textarea name="pop-5" from="pop-0">
+            <position>1045,450</position>
+        </textarea>
+    </window>
+    
+    <window name="global-setup">
+        <area>-1,-1,1280,720</area>
+        
+        <shape name="shape">
+            <area>90,50,1100,520</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="180" />
+            <line color="#FFFFFF" alpha="255" width="2" />
+            <cornerradius>12</cornerradius>
+        </shape>
+        
+        <textarea name="backgroundlbl" from="basetextarea">
+            <area>65,225,500,60</area>
+            <align>right</align>
+            <value>Retrieve data in the background:</value>
+        </textarea>
+        
+        <checkbox name="backgroundcheck" from="basecheckbox">
+            <position>600,220</position>
+        </checkbox>
+        
+        <textarea name="timeout_text" from="basetextarea">
+            <area>165,305,400,60</area>
+            <align>right,vcenter</align>
+            <value>Seconds to display each page:</value>
+        </textarea>
+        
+        <spinbox name="timeout_spinbox" from="basespinbox">
+            <position>600,315</position>
+        </spinbox>
+        
+        <button name="finishbutton" from="basebutton">
+            <position>565,500</position>
+        </button>
+        
+        <imagetype name="clockback">
+            <area>525,695,230,51</area>
+            <filename>images/clock_backdrop.png</filename>
+        </imagetype>
+        
+        <font name="clock" from="baseextrasmall">
+            <size>11</size>
+            <color>#FFFFFF</color>
+        </font>
+        
+        <clock name="clock">
+            <area>529,700,219,25</area>
+            <font>clock</font>
+            <format>%DATE%, %TIME%</format>
+            <align>center</align>
+            <alpha>255</alpha>
+        </clock>
+        
+        <imagetype name="clockbackoverlay">
+            <area>525,695,230,23</area>
+            <filename>images/clock_backdrop_overlay.png</filename>
+        </imagetype>
+        
+    </window>
+    
+    <window name="screen-setup">
+        <area>-1,-1,1280,720</area>
+        
+        <shape name="shape">
+            <area>90,50,1100,520</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="180" />
+            <line color="#FFFFFF" alpha="255" width="2" />
+            <cornerradius>12</cornerradius>
+        </shape>
+        
+        <textarea name="inactivehdr" from="basetextarea">
+            <area>300,135,300,30</area>
+            <font>basemedium</font>
+            <align>allcenter</align>
+        </textarea>
+        
+        <buttonlist name="inactivelist" from="basebuttonlist">
+            <area>300,170,300,200</area>
+        </buttonlist>
+        
+        <textarea name="activehdr" from="inactivehdr">
+            <position>670,135</position>
+        </textarea>
+        
+        <buttonlist name="activelist" from="basebuttonlist">
+            <area>670,170,300,200</area>
+        </buttonlist>
+        
+        <textarea name="helptxt" from="basetextarea">
+            <area>290,390,700,100</area>
+            <multiline>yes</multiline>
+            <align>allcenter</align>
+        </textarea>
+        
+        <button name="finishbutton" from="basebutton">
+            <position>565,500</position>
+        </button>
+        
+        <imagetype name="clockback">
+            <area>525,695,230,51</area>
+            <filename>images/clock_backdrop.png</filename>
+        </imagetype>
+        
+        <font name="clock" from="baseextrasmall">
+            <size>11</size>
+            <color>#FFFFFF</color>
+        </font>
+        
+        <clock name="clock">
+            <area>529,700,219,25</area>
+            <font>clock</font>
+            <format>%DATE%, %TIME%</format>
+            <align>center</align>
+            <alpha>255</alpha>
+        </clock>
+        
+        <imagetype name="clockbackoverlay">
+            <area>525,695,230,23</area>
+            <filename>images/clock_backdrop_overlay.png</filename>
+        </imagetype>
+        
+    </window>
+    
+    <window name="source-setup">
+        <area>-1,-1,1280,720</area>
+        
+        <shape name="shape">
+            <area>90,50,1100,520</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="180" />
+            <line color="#FFFFFF" alpha="255" width="2" />
+            <cornerradius>12</cornerradius>
+        </shape>
+        
+        <buttonlist name="srclist" from="basebuttonlist">
+            <area>230,145,220,348</area>
+        </buttonlist>
+        
+        <imagetype name="srclines">
+            <area>315,95,500,370</area>
+            <filename>images/cr-background.png</filename>
+        </imagetype>
+        
+        <textarea name="updatetxt" from="basetextarea">
+            <area>690,150,300,60</area>
+            <multiline>yes</multiline>
+            <value>Data Retrieval Interval (minutes):</value>
+        </textarea>
+        
+        <textarea name="retrievetxt" from="basetextarea">
+            <area>690,260,300,60</area>
+            <multiline>yes</multiline>
+            <value>Source Update Timeout (seconds):</value>
+        </textarea>
+        
+        <spinbox name="update_spinbox" from="basespinbox">
+            <position>1000,150</position>
+        </spinbox>
+        
+        <spinbox name="retrieve_spinbox" from="basespinbox">
+            <position>1000,260</position>
+        </spinbox>
+        
+        <textarea name="srcinfo" from="basetextarea">
+            <area>690,390,450,90</area>
+            <multiline>yes</multiline>
+        </textarea>
+        
+        <button name="finishbutton" from="basebutton">
+            <position>565,500</position>
+            <value>Finish</value>
+        </button>
+        
+        <imagetype name="clockback">
+            <area>525,695,230,51</area>
+            <filename>images/clock_backdrop.png</filename>
+        </imagetype>
+        
+        <font name="clock" from="baseextrasmall">
+            <size>11</size>
+            <color>#FFFFFF</color>
+        </font>
+        
+        <clock name="clock">
+            <area>529,700,219,25</area>
+            <font>clock</font>
+            <format>%DATE%, %TIME%</format>
+            <align>center</align>
+            <alpha>255</alpha>
+        </clock>
+        
+        <imagetype name="clockbackoverlay">
+            <area>525,695,230,23</area>
+            <filename>images/clock_backdrop_overlay.png</filename>
+        </imagetype>
+        
+    </window>
+    
+    <window name="setup-location">
+        
+        <textarea name="label">
+            <area>100,15,1080,30</area>
+            <align>center</align>
+            <font>basemedium</font>
+            <value>Weather Location Search</value>
+        </textarea>
+        
+        <shape name="shape">
+            <area>90,50,1100,520</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="180" />
+            <line color="#FFFFFF" alpha="255" width="2" />
+            <cornerradius>12</cornerradius>
+        </shape>
+        
+        <textarea name="helptxt" from="basetextarea">
+            <area>240,180,800,60</area>
+            <value>Enter your current location, nearest large town or city. In some countries postal codes are also supported.</value>
+            <multiline>yes</multiline>
+            <align>allcenter</align>
+        </textarea>
+        
+        <textarea name="editlbl" from="basetextarea">
+            <area>425,115,170,40</area>
+            <value>Enter Location:</value>
+            <align>right,top</align>
+        </textarea>
+        
+        <textedit name="loc-edit" from="basetextedit">
+            <position>615,110</position>
+        </textedit>
+        
+        <button name="searchbtn" from="basebutton">
+            <position>565,600</position>
+        </button>
+        
+        <buttonlist name="results" from="basebuttonlist">
+            <area>465,260,700,250</area>
+        </buttonlist>
+        
+        <textarea name="numresults" from="basetextarea">
+            <area>440,530,400,40</area>
+            <align>allcenter</align>
+        </textarea>
+        
+        <textarea name="source" from="basetextarea">
+            <area>440,565,400,40</area>
+            <align>allcenter</align>
+        </textarea>
+        
+        <imagetype name="clockback">
+            <area>525,695,230,51</area>
+            <filename>images/clock_backdrop.png</filename>
+        </imagetype>
+        
+        <font name="clock" from="baseextrasmall">
+            <size>11</size>
+            <color>#FFFFFF</color>
+        </font>
+        
+        <clock name="clock">
+            <area>529,700,219,25</area>
+            <font>clock</font>
+            <format>%DATE%, %TIME%</format>
+            <align>center</align>
+            <alpha>255</alpha>
+        </clock>
+        
+        <imagetype name="clockbackoverlay">
+            <area>525,695,230,23</area>
+            <filename>images/clock_backdrop_overlay.png</filename>
+        </imagetype>
+        
+    </window>
+    
+</mythuitheme>

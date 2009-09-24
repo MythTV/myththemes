@@ -1,0 +1,497 @@
+<mythuitheme>
+
+    <window name="manualschedule">
+
+        <textarea name="pagetitle" from="baseheading">
+            <value>Manual Recording</value>
+        </textarea>
+
+        <imagetype name="background">
+            <position>78,66</position>
+            <filename>backgrounds/menu_background.png</filename>
+        </imagetype>
+
+        <textarea name="titlelabel" from="basetextarea">
+            <area>260,140,250,30</area>
+            <font>basemedium</font>
+            <align>right</align>
+            <value>Title (Optional):</value>
+        </textarea>
+
+        <textedit name="title" from="basetextedit">
+            <position>520,130</position>
+        </textedit>
+
+        <textarea name="channellabel" from="titlelabel">
+            <position>260,218</position>
+            <value>Channel:</value>
+        </textarea>
+
+        <buttonlist name="channel" from="basewideselector">
+            <position>520,210</position>
+        </buttonlist>
+
+        <textarea name="datelabel" from="titlelabel">
+            <position>260,298</position>
+            <value>Date, or day of week:</value>
+        </textarea>
+
+        <buttonlist name="startdate" from="basewideselector">
+            <position>520,290</position>
+        </buttonlist>
+
+        <textarea name="timelabel" from="titlelabel">
+            <area>260,378,160,30</area>
+            <value>Start Time:</value>
+        </textarea>
+
+        <textarea name="hourlabel" from="basetextarea">
+            <area>430,380,80,30</area>
+            <value>Hour</value>
+            <align>right</align>
+        </textarea>
+
+        <spinbox name="starthour" from="basespinbox">
+            <position>520,370</position>
+        </spinbox>
+
+        <textarea name="minutelabel" from="hourlabel">
+            <position>630,380</position>
+            <value>Minute</value>
+        </textarea>
+
+        <spinbox name="startminute" from="basespinbox">
+            <position>720,370</position>
+        </spinbox>
+
+        <textarea name="durationlabel" from="titlelabel">
+            <position>260,468</position>
+            <value>Duration:</value>
+        </textarea>
+
+        <spinbox name="duration" from="basespinbox">
+            <position>520,460</position>
+        </spinbox>
+
+        <button name="cancel" from="basebutton">
+            <position>120,575</position>
+            <value>Cancel</value>
+        </button>
+
+        <button name="next" from="basebutton">
+            <position>960,575</position>
+            <value>Next</value>
+        </button>
+
+    </window>
+
+    <window name="viewscheduled">
+
+        <textarea name="pagetitle" from="baseheading">
+            <value>Upcoming Recordings</value>
+        </textarea>
+
+        <imagetype name="position">
+            <position>49,72</position>
+            <filename>backgrounds/up-background.png</filename>
+        </imagetype>
+
+        <imagetype name="instr-background">
+            <position>462,665</position>
+            <filename>backgrounds/delete_usage_background.png</filename>
+        </imagetype>
+
+        <imagetype name="showing-background">
+            <position>462,20</position>
+            <filename>backgrounds/delete_usage_background.png</filename>
+        </imagetype>
+
+        <textarea name="showinstr">
+            <area>462,665,356,35</area>
+            <font>small</font>
+            <value>(1) All  (2) Important</value>
+            <align>allcenter</align>
+        </textarea>
+
+        <!--        <textarea name="status" from="basetextarea">
+            <area>400,10,380,30</area>
+            <align>right</align>
+            <font>basemedium</font>
+            <font state="warning">basemediumred</font>
+            <align>right</align>
+        </textarea>-->
+
+        <textarea name="filter" from="basetextarea">
+            <area>470,19,350,38</area>
+            <align>allcenter</align>
+        </textarea>
+
+        <buttonlist name="schedules" from="basebuttonlist">
+            <area>58,75,1165,314</area>
+            <buttonarea>0,8,1165,300</buttonarea>
+            <spacing>4</spacing>
+            <statetype name="buttonitem">
+                <area>0,0,1165,25</area>
+                <state name="active">
+                    <textarea name="shorttimedate" from="buttontext">
+                        <area>30,1,275,25</area>
+                    </textarea>
+                    <textarea name="channel" from="buttontext">
+                        <area>320,1,245,25</area>
+                    </textarea>
+                    <textarea name="title" from="buttontext">
+                        <area>560,1,605,25</area>
+                    </textarea>
+                    <textarea name="card" from="buttontext">
+                        <area>1130,1,25,25</area>
+                        <align>right</align>
+                    </textarea>
+                </state>
+                <state name="selected" from="active" />
+                <state name="inactive" from="active" />
+            </statetype>
+            <statetype name="upscrollarrow">
+                <position>560,0</position>
+            </statetype>
+            <statetype name="downscrollarrow">
+                <position>560,304</position>
+            </statetype>
+        </buttonlist>
+
+        <textarea name="title">
+            <area>85,437,780,35</area>
+            <font>extralargebold</font>
+        </textarea>
+
+        <textarea name="subtitle">
+            <area>85,472,780,30</area>
+            <font>mediumbold</font>
+            <multiline>yes</multiline>
+        </textarea>
+
+        <textarea name="channel">
+            <area>885,502,310,30</area>
+            <font>mediumgrey</font>
+            <align>right,top</align>
+        </textarea>
+
+        <textarea name="timedate">
+            <area>85,502,540,30</area>
+            <font>mediumgrey</font>
+        </textarea>
+
+        <textarea name="description">
+            <area>85,532,1115,110</area>
+            <font>medium</font>
+            <multiline>yes</multiline>
+            <template>%YEARSTARS| %%DESCRIPTION%%LONGREPEAT%</template>
+        </textarea>
+
+        <textarea name="recordingstatus" from="basetextarea">
+            <area>790,445,405,60</area>
+            <multiline>yes</multiline>
+            <align>right</align>
+        </textarea>
+
+        <textarea name="norecordings_info">
+            <area>90,60,1100,250</area>
+            <font>basemedium</font>
+            <value>You Haven't Scheduled Any Programs To Be Recorded\n
+            To schedule a recording, exit this screen and select 'Program
+            Guide' or 'Program Finder'</value>
+            <multiline>yes</multiline>
+            <align>allcenter</align>
+        </textarea>
+
+    </window>
+
+    <window name="programfind">
+
+        <textarea name="pagetitle" from="baseheading">
+            <value>Programme Finder</value>
+        </textarea>
+
+        <imagetype name="background">
+            <position>49,72</position>
+            <filename>backgrounds/finder_background.png</filename>
+        </imagetype>
+
+        <buttonlist name="alphabet" from="basebuttonlist">
+            <area>57,73,60,285</area>
+            <scrollstyle>center</scrollstyle>
+            <wrapstyle>items</wrapstyle>
+            <spacing>8</spacing>
+            <buttonarea>0,16,60,265</buttonarea>
+            <statetype name="upscrollarrow">
+                <position>21,0</position>
+            </statetype>
+            <statetype name="downscrollarrow">
+                <position>21,275</position>
+            </statetype>
+        </buttonlist>
+
+        <buttonlist name="shows" from="basebuttonlist">
+            <area>168,73,710,285</area>
+            <buttonarea>0,8,710,275</buttonarea>
+            <statetype name="upscrollarrow">
+                <position>350,0</position>
+            </statetype>
+            <statetype name="downscrollarrow">
+                <position>350,275</position>
+            </statetype>
+        </buttonlist>
+
+        <buttonlist name="times" from="basebuttonlist">
+            <area>938,73,282,285</area>
+            <buttonarea>0,8,282,275</buttonarea>
+        </buttonlist>
+
+        <textarea name="title" from="basetextarea">
+            <area>85,401,800,35</area>
+            <font>extralargebold</font>
+        </textarea>
+
+        <textarea name="subtitle" from="basetextarea">
+            <area>85,436,800,30</area>
+            <font>mediumbold</font>
+        </textarea>
+
+        <textarea name="channel"  from="basetextarea">
+            <area>895,471,310,30</area>
+            <font>smallgrey</font>
+            <align>right</align>
+        </textarea>
+
+        <textarea name="timedate" from="basetextarea">
+            <area>85,471,540,30</area>
+            <font>smallgrey</font>
+        </textarea>
+
+        <textarea name="description" from="basetextarea">
+            <area>85,498,1110,155</area>
+            <font>medium</font>
+            <multiline>yes</multiline>
+            <template>%YEARSTARS% %DESCRIPTION% %LONGREPEAT%</template>
+        </textarea>
+
+        <textarea name="recordingstatus" from="basetextarea">
+            <area>895,406,310,60</area>
+            <multiline>yes</multiline>
+            <align>right</align>
+        </textarea>
+
+        <textarea name="help1text" from="subtitle" />
+        <textarea name="help2text" from="description" />
+
+    </window>
+
+    <window name="programguide">
+
+        <textarea name="pagetitle" from="baseheading">
+            <value>Programme Guide</value>
+        </textarea>
+
+        <imagetype name="background">
+            <position>49,72</position>
+            <filename>backgrounds/guide-background.png</filename>
+        </imagetype>
+
+        <textarea name="date" from="basetextarea">
+            <area>64,79,180,30</area>
+            <align>allcenter</align>
+        </textarea>
+
+        <buttonlist name="channellist">
+            <area>65,108,180,330</area>
+            <buttonarea>0,0,180,330</buttonarea>
+            <align>allcenter</align>
+            <spacing>1</spacing>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <shape name="background">
+                        <area>0,0,180,54</area>
+                        <fill color="#CCCCCC" alpha="28" />
+                    </shape>
+                    <imagetype name="channelicon">
+                        <area>5,7,40,40</area>
+                        <align>allcenter</align>
+                    </imagetype>
+                    <textarea name="buttontext" from="basetextarea">
+                        <area>48,0,130,54</area>
+                        <multiline>true</multiline>
+                        <cutdown>yes</cutdown>
+                        <font state="favourite">basesmallyellow</font>
+                        <font state="unavailable">basesmallblue</font>
+                        <font state="favunavailable">basesmallpurple</font>
+                        <align>allcenter</align>
+                    </textarea>
+                </state>
+                <state name="selected" from="active"/>
+                <state name="inactive" from="active"/>
+            </statetype>
+        </buttonlist>
+
+        <buttonlist name="timelist">
+            <area>246,79,966,30</area>
+            <layout>horizontal</layout>
+            <buttonarea>0,0,966,30</buttonarea>
+            <spacing>1</spacing>
+            <statetype name="buttonitem">
+                <area>0,0,240,30</area>
+                <state name="active">
+                    <imagetype name="buttonbackground">
+                        <area>0,0,240,30</area>
+                        <filename>guide/gg-times.png</filename>
+                    </imagetype>
+                    <textarea name="buttontext" from="basetextarea">
+                        <area>10,3,220,28</area>
+                        <font>basesmall</font>
+                        <align>allcenter</align>
+                    </textarea>
+                </state>
+                <state name="selected" from="active"/>
+                <state name="inactive" from="active"/>
+            </statetype>
+        </buttonlist>
+    
+        <guidegrid name="guidegrid">
+            <area>246,108,966,330</area>
+            <layout>horizontal</layout>
+            <channels>6</channels>
+            <timeslots>4</timeslots>
+            <solidcolor>#404040</solidcolor>
+            <selector type="box" linecolor="#808080" />
+            <recordingcolor>#00aa00</recordingcolor>
+            <conflictingcolor>#ff6600</conflictingcolor>
+            <cutdown>yes</cutdown>
+            <multiline>yes</multiline>
+            <textoffset>9,6</textoffset>
+            <recordstatus type="SingleRecord" image="guide/gg-rs-single.png" />
+            <recordstatus type="TimeslotRecord" image="guide/gg-rs-timeslot.png" />
+            <recordstatus type="ChannelRecord" image="guide/gg-rs-channel.png" />
+            <recordstatus type="AllRecord" image="guide/gg-rs-all.png" />
+            <recordstatus type="WeekslotRecord" image="guide/gg-rs-weekslot.png" />
+            <recordstatus type="FindOneRecord" image="guide/gg-rs-findone.png" />
+            <arrow direction="left" image="shared/leftarrow.png" />
+            <arrow direction="right" image="shared/rightarrow.png" />
+            <font>small</font>
+        </guidegrid>
+
+        <textarea name="title">
+            <area>85,493,760,35</area>
+            <font>extralargebold</font>
+        </textarea>
+        
+        <textarea name="subtitle">
+            <area>85,529,760,25</area>
+            <font>mediumbold</font>
+            <template>%|"SUBTITLE|"%</template>
+        </textarea>
+        
+        <textarea name="description">
+            <area>85,558,1115,90</area>
+            <font>medium</font>
+            <multiline>yes</multiline>
+            <template>%YEARSTARS% %DESCRIPTION% %LONGREPEAT%</template>
+        </textarea>
+        
+        <textarea name="rectypestatus" from="basetextarea">
+            <area>860,503,325,60</area>
+            <multiline>yes</multiline>
+            <align>right</align>
+        </textarea>
+        
+    </window>
+
+    <window name="programguide-video">
+
+        <textarea name="pagetitle" from="baseheading">
+            <value>Programme Guide</value>
+        </textarea>
+
+        <imagetype name="background" from="basebackground1" />
+
+        <textarea name="date" from="basetextarea">
+            <area>64,79,180,30</area>
+            <align>allcenter</align>
+        </textarea>
+
+        <container name="chanbar">
+            <area>63,109,182,272</area>
+            <bar name="chans" draworder="4">
+                <area>0,0,180,272</area>
+                <textoffset>46,0</textoffset>
+                <iconoffset>5,-5</iconoffset>
+                <iconsize>40,40</iconsize>
+                <orientation>vertical</orientation>
+                <align>allcenter</align>
+                <font>small</font>
+                <imagefile>guide/gg-chans.png</imagefile>
+            </bar>
+        </container>
+
+        <container name="timebar">
+            <area>245,80,963,29</area>
+            <bar name="times" draworder="4">
+                <area>0,0,963,29</area>
+                <align>center</align>
+                <font>small</font>
+                <imagefile>guide/gg-times.png</imagefile>
+            </bar>
+        </container>
+
+        <guidegrid name="guidegrid">
+            <area>247,109,980,272</area>
+            <solidcolor>#404040</solidcolor>
+            <selector type="box" linecolor="#808080" />
+            <recordingcolor>#00aa00</recordingcolor>
+            <conflictingcolor>#ff6600</conflictingcolor>
+            <cutdown>yes</cutdown>
+            <multiline>yes</multiline>
+            <textoffset>9,6</textoffset>
+            <recordstatus type="SingleRecord" image="guide/gg-rs-single.png" />
+            <recordstatus type="TimeslotRecord" image="guide/gg-rs-timeslot.png" />
+            <recordstatus type="ChannelRecord" image="guide/gg-rs-channel.png" />
+            <recordstatus type="AllRecord" image="guide/gg-rs-all.png" />
+            <recordstatus type="WeekslotRecord" image="guide/gg-rs-weekslot.png" />
+            <recordstatus type="FindOneRecord" image="guide/gg-rs-findone.png" />
+            <arrow direction="left" image="shared/leftarrow.png" />
+            <arrow direction="right" image="shared/rightarrow.png" />
+            <font>small</font>
+        </guidegrid>
+
+        <container name="current_info">
+            <area>1135,25,101,30</area>
+            <textarea name="time" draworder="4" align="center">
+                <area>0,0,101,30</area>
+                <cutdown>no</cutdown>
+                <font>mediumlightgrey</font>
+                <multiline>yes</multiline>
+            </textarea>
+        </container>
+
+        <textarea name="title">
+            <area>375,442,830,40</area>
+            <font>extralargebold</font>
+        </textarea>
+
+        <textarea name="subtitle">
+            <area>375,480,830,30</area>
+            <font>mediumbold</font>
+            <template>%|"SUBTITLE|"%</template>
+        </textarea>
+
+        <textarea name="description">
+            <area>375,514,830,120</area>
+            <font>medium</font>
+            <multiline>yes</multiline>
+            <template>%YEARSTARS% %DESCRIPTION% %LONGREPEAT%</template>
+        </textarea>
+
+        <container name="current_video">
+            <area>88,466,260,146</area>
+        </container>
+
+    </window>
+
+</mythuitheme>

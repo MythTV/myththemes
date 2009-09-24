@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mythuitheme>
+    <window name="appearance">
+        
+        <imagetype name="background">
+            <area>525,695,230,23</area>
+            <filename>images/backgrounds/</filename>
+        </imagetype>
+        
+        <textarea name="part" from="basetextarea">
+            <font>baselarge</font>
+            <area>20,100,1240,40</area>
+            <value>Appearance Wizard</value>
+            <align>center</align>
+        </textarea>
+        
+        <imagetype name="topleft">
+            <position>0,0</position>
+            <filename>topleft.png</filename>
+        </imagetype>
+        
+        <imagetype name="bottomright">
+            <position>800,600</position>
+            <filename>bottomright.png</filename>
+        </imagetype>
+        
+        <textarea name="part1" from="basetextarea">
+            <font>basemedium</font>
+            <area>320,160,600,170</area>
+            <value>Move the selected arrow to the corner of the TV screen.  Press SELECT to edit the other arrow.  Press MENU for options and ESC to quit.</value>
+            <multiline>yes</multiline>
+        </textarea>
+        
+        <textarea name="size" from="basetextarea">
+            <font>basemedium</font>
+            <area>320,290,500,50</area>
+            <value>1280 x 720</value>
+        </textarea>
+        
+        <textarea name="offsets" from="size">
+            <area>320,340,500,140</area>
+            <value>0 x 0</value>
+        </textarea>
+        
+        <textarea name="changeamount" from="size">
+            <area>320,420,500,140</area>
+            <value>1 pixel</value>
+        </textarea>
+        
+    </window>
+</mythuitheme>

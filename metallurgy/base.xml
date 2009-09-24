@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mythuitheme>
+
+    <!-- Base Fonts -->
+    <font name="extralarge" face="DejaVu Sans">
+        <color>#FFFFFF</color>
+        <size>19</size>
+        <size:small>18</size:small>
+        <bold>yes</bold>
+    </font>
+
+    <font name="large" face="DejaVu Sans">
+        <color>#FFFFFF</color>
+        <size>18</size>
+        <size:small>17</size:small>
+    </font>
+
+    <font name="medium" face="DejaVu Sans">
+        <color>#FFFFFF</color>
+        <size>16</size>
+        <size:small>15</size:small>
+    </font>
+
+    <font name="small" face="DejaVu Sans">
+        <color>#FFFFFF</color>
+        <size>14</size>
+        <size:small>13</size:small>
+    </font>
+
+    <!-- Derived Fonts -->
+    <font name="extralargebold" from="extralarge">
+        <bold>yes</bold>
+    </font>
+
+    <font name="extralargeboldgrey" from="extralargebold">
+        <color>#CCCCCC</color>
+    </font>
+
+    <font name="largelightgrey" from="large">
+        <color>#CCCCCC</color>
+    </font>
+
+    <font name="mediumbold" from="medium">
+        <bold>yes</bold>
+    </font>
+
+    <font name="mediumlightgrey" from="medium">
+        <color>#CCCCCC</color>
+    </font>
+
+    <font name="mediumgrey" from="medium">
+        <color>#AAAAAA</color>
+    </font>
+
+    <font name="smalllightgrey" from="small">
+        <color>#CCCCCC</color>
+    </font>
+
+    <font name="smallgrey" from="small">
+        <color>#AAAAAA</color>
+    </font>
+
+    <font name="smallgreen" from="small">
+        <color>#3EAE09</color>
+    </font>
+
+    <font name="smallred" from="small">
+        <color>#D40101</color>
+    </font>
+
+    <font name="smallblue" from="small">
+        <color>#0492A7</color>
+    </font>
+
+    <font name="smallboldgreen" from="smallgreen">
+        <bold>yes</bold>
+    </font>
+
+    <font name="smallboldred" from="smallred">
+        <bold>yes</bold>
+    </font>
+
+    <font name="smallboldblue" from="smallblue">
+        <bold>yes</bold>
+    </font>
+
+    <!-- Base definition of a button -->
+    <button name="basebutton">
+        <position>0,0</position>
+        <statetype name="buttonstate">
+            <state name="active">
+                <imagetype name="background">
+                    <filename>shared/text_button_off.png</filename>
+                </imagetype>
+                <textarea name="text">
+                    <area>5,5,140,30</area>
+                    <align>allcenter</align>
+                    <font>basemedium</font>
+                    <font state="selected">mediumlightgrey</font>
+                    <font state="disabled">mediumlightgrey</font>
+                </textarea>
+            </state>
+            <state name="selected" from="active">
+                <imagetype name="background">
+                    <filename>shared/text_button_on.png</filename>
+                </imagetype>
+            </state>
+            <state name="disabled" from="active" />
+            <state name="pushed" from="active">
+                <imagetype name="background">
+                    <filename>button_pushed_background.png</filename>
+                </imagetype>
+                <textarea name="text">
+                    <position>8,8</position>
+                </textarea>
+            </state>
+        </statetype>
+    </button>
+
+    <textarea name="basetextarea">
+        <area>0,0,10,10</area>
+        <font>small</font>
+        <align>left</align>
+        <multiline>no</multiline>
+    </textarea>
+
+    <textarea name="baseheading">
+        <area>48,19,360,39</area>
+        <font>largelightgrey</font>
+        <align>allcenter</align>
+    </textarea>
+
+    <imagetype name="basebackground0">
+        <filename>backgrounds/menu_background.png</filename>
+        <position>78,66</position>
+    </imagetype>
+
+    <imagetype name="basebackground1">
+        <filename>backgrounds/up-background.png</filename>
+        <position>45,72</position>
+    </imagetype>
+
+    <imagetype name="basebackground2">
+        <filename>backgrounds/play-background.png</filename>
+        <position>49,72</position>
+    </imagetype>
+
+    <buttonlist name="basebuttonlist">
+        <area>0,0,275,300</area>
+        <buttonarea>0,5,100%,98%</buttonarea>
+        <wrapstyle>selection</wrapstyle>
+        <spacing>5</spacing>
+        <statetype name="buttonitem">
+            <state name="active">
+                <area>0,0,90%,30</area>
+                <textarea name="buttontext" from="basetextarea">
+                    <area>30,2,100%,30</area>
+                    <font state="running">smallgreen</font>
+                    <font state="disabled">smallgrey</font>
+                    <font state="error">smallred</font>
+                    <font state="normal">smallblue</font>
+                    <font state="warning">smallyellow</font>
+                </textarea>
+                <imagetype name="buttonarrow">
+                    <position>270,0</position>
+                    <filename>shared/rightarrow.png</filename>
+                </imagetype>
+            </state>
+            <state name="selected" from="active">
+                <imagetype name="selectindicator">
+                    <filename>shared/selectbar.png</filename>
+                </imagetype>
+            </state>
+            <state name="inactive" from="active">
+                <imagetype name="selectindicator">
+                    <filename>shared/inactiveselectbar.png</filename>
+                </imagetype>
+            </state>
+        </statetype>
+        <statetype name="upscrollarrow">
+            <position>135,0</position>
+            <showempty>yes</showempty>
+            <state type="full">
+                <imagetype name="upon">
+                    <filename>shared/uparrow.png</filename>
+                </imagetype>
+            </state>
+        </statetype>
+        <statetype name="downscrollarrow">
+            <position>135,275</position>
+            <showempty>yes</showempty>
+            <state type="full">
+                <imagetype name="dnon">
+                    <filename>shared/downarrow.png</filename>
+                </imagetype>
+            </state>
+        </statetype>
+    </buttonlist>
+
+
+    <window name="backgroundwindow">
+
+        <imagetype name="backgroundimage">
+            <filename>backgrounds/background.png</filename>
+        </imagetype>
+
+        <imagetype name="mythtvlogo">
+            <position>47,664</position>
+            <filename>mythtvlogo.png</filename>
+        </imagetype>
+
+        <clock name="date">
+            <area>846,24,257,30</area>
+            <font>small</font>
+            <format>%DATE%</format>
+            <align>allcenter</align>
+            <cutdown>true</cutdown>
+        </clock>
+
+        <clock name="time" from="date">
+            <area>1114,24,123,30</area>
+            <format>%TIME%</format>
+        </clock>
+
+<!--        <imagetype name="alert_background">
+            <position>218,660</position>
+            <filename>backgrounds/miniplayer_background.png</filename>
+        </imagetype>
+
+        <imagetype name="alert_icon">
+            <filename>music/music_icon.png</filename>
+            <position>236,665</position>
+        </imagetype>
+
+        <textarea name="alert_text">
+            <area>290,660,760,47</area>
+            <font>medium</font>
+            <value></value>
+            <scroll direction="left" type="auto" />
+            <align>vcenter</align>
+        </textarea>-->
+
+    </window>
+
+    <window name="MythPopupBox">
+        <area>402,176,476,368</area>
+        <imagetype name="backimg">
+            <filename>backgrounds/popup_background.png</filename>
+        </imagetype>
+        <textarea name="messagearea" from="basetextarea">
+            <area>15,8,440,95</area>
+            <align>allcenter</align>
+            <multiline>yes</multiline>
+        </textarea>
+
+        <buttonlist name="list" from="basebuttonlist">
+            <area>10,115,440,240</area>
+            <buttonarea>0,0,440,240</buttonarea>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <textarea name="buttontext" from="basetextarea">
+                        <area>30,0,405,30</area>
+                    </textarea>
+                    <imagetype name="buttonarrow">
+                        <position>405,3</position>
+                        <filename>shared/rightarrow.png</filename>
+                    </imagetype>
+                </state>
+                <state name="selected" from="active">
+                    <imagetype name="selectindicator">
+                        <filename>shared/selectbar.png</filename>
+                    </imagetype>
+                </state>
+                <state name="inactive" from="active">
+                    <imagetype name="selectindicator">
+                        <filename>shared/inactiveselectbar.png</filename>
+                    </imagetype>
+                </state>
+            </statetype>
+            <statetype name="upscrollarrow">
+                <position>405,0</position>
+            </statetype>
+            <statetype name="downscrollarrow">
+                <position>405,230</position>
+            </statetype>
+        </buttonlist>
+    </window>
+
+</mythuitheme>
+

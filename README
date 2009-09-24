@@ -1,0 +1,7 @@
+This module provides a number of themes for MythTV that are not distributed in
+the main download.
+
+To install:
+
+$ ./configure
+$ sudo make install

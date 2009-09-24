@@ -1,0 +1,273 @@
+<mythuitheme>
+
+    <window name="watchrecordings">
+
+        <textarea name="heading" from="baseheading">
+            <value>Watch Recordings</value>
+        </textarea>
+        <!--        <progressbar name="usedbar" from="baseprogressbar">
+            <position>100,10</position>
+        </progressbar>-->
+
+        <imagetype name="background" from="basebackground2" />
+
+        <buttonlist name="groups" from="basebuttonlist">
+            <position>55,75</position>
+            <scrollstyle>center</scrollstyle>
+            <wrapstyle>items</wrapstyle>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <textarea name="buttontext">
+                        <case>capitaliseall</case>
+                    </textarea>
+                </state>
+                <state name="inactive" from="active" />
+                <state name="selected" from="active" />
+            </statetype>
+        </buttonlist>
+
+        <buttonlist name="recordings" from="basebuttonlist">
+            <area>397,75,870,300</area>
+            <buttonarea>0,5,870,280</buttonarea>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>0,5,870,30</area>
+                    <textarea name="titlesubtitle" from="buttontext">
+                        <area>30,0,590,30</area>
+                    </textarea>
+                    <textarea name="shortdate" from="titlesubtitle">
+                        <area>610,0,120,30</area>
+                        <align>right</align>
+                    </textarea>
+                    <textarea name="starttime" from="shortdate">
+                        <area>730,0,80,30</area>
+                    </textarea>
+                </state>
+                <state name="inactive" from="active" />
+                <state name="selected" from="active" />
+            </statetype>
+            <statetype name="upscrollarrow">
+                <position>430,0</position>
+            </statetype>
+            <statetype name="downscrollarrow">
+                <position>430,275</position>
+            </statetype>
+        </buttonlist>
+
+        <imagetype name="autoexpire">
+            <filename>type/autoexpire.png</filename>
+            <position>878,415</position>
+        </imagetype>
+
+        <imagetype name="commflagged">
+            <filename>type/commflagged.png</filename>
+            <position>912,415</position>
+        </imagetype>
+
+        <imagetype name="bookmark">
+            <filename>type/bookmark.png</filename>
+            <position>946,415</position>
+        </imagetype>
+
+        <imagetype name="cutlist">
+            <filename>type/cutlist.png</filename>
+            <position>980,415</position>
+        </imagetype>
+
+        <statetype name="audioprops">
+            <position>1014,415</position>
+            <showempty>yes</showempty>
+            <state name="stereo">
+                <imagetype name="stereo">
+                    <filename>type/stereo.png</filename>
+                </imagetype>
+            </state>
+            <state name="surround">
+                <imagetype name="surround">
+                    <filename>type/surround.png</filename>
+                </imagetype>
+            </state>
+            <state name="dolby">
+                <imagetype name="dolby">
+                    <filename>type/dd.png</filename>
+                </imagetype>
+            </state>
+            <state name="mono">
+                <imagetype name="mono">
+                    <filename>type/mono.png</filename>
+                </imagetype>
+            </state>
+        </statetype>
+
+        <statetype name="subtitletypes">
+            <position>1048,415</position>
+            <showempty>yes</showempty>
+            <state name="cc">
+                <imagetype name="cc">
+                    <filename>type/cc.png</filename>
+                </imagetype>
+            </state>
+            <state name="subtitles">
+                <imagetype name="subtitles">
+                    <filename>type/subs.png</filename>
+                </imagetype>
+            </state>
+            <state name="onscreensub">
+                <imagetype name="onscreensub">
+                    <filename>type/subs_onscreen.png</filename>
+                </imagetype>
+            </state>
+        </statetype>
+
+        <statetype name="videoprops">
+            <position>1082,415</position>
+            <showempty>yes</showempty>
+            <state name="hdtv">
+                <imagetype name="hdtv">
+                    <filename>type/hd.png</filename>
+                    <position>257,420</position>
+                </imagetype>
+            </state>
+            <state name="widescreen">
+                <imagetype name="widescreen">
+                    <filename>type/wide.png</filename>
+                    <position>257,420</position>
+                </imagetype>
+            </state>
+        </statetype>
+
+        <imagetype name="watched">
+            <filename>type/watched.png</filename>
+            <position>1116,415</position>
+        </imagetype>
+
+        <imagetype name="processing">
+            <filename>type/processing.png</filename>
+            <position>1150,415</position>
+        </imagetype>
+
+        <textarea name="title">
+            <area>85,404,800,35</area>
+            <font>extralargebold</font>
+        </textarea>
+
+        <textarea name="subtitle">
+            <area>85,439,800,30</area>
+            <font>mediumbold</font>
+            <multiline>yes</multiline>
+        </textarea>
+
+        <textarea name="channel">
+            <area>665,474,250,30</area>
+            <altarea>700,70,410,30</altarea>
+            <font>smallgrey</font>
+            <align>right</align>
+        </textarea>
+
+        <textarea name="timedate">
+            <area>85,474,540,30</area>
+            <font>smallgrey</font>
+        </textarea>
+
+        <textarea name="description">
+            <area>85,501,830,140</area>
+            <altarea>0,97,1110,140</altarea>
+            <font>medium</font>
+            <multiline>yes</multiline>
+            <cutdown>yes</cutdown>
+            <value>%YEARSTARS% %DESCRIPTION%</value>
+        </textarea>
+
+        <imagetype name="video_background">
+            <position>927,460</position>
+            <filename>backgrounds/livevid_background.png</filename>
+        </imagetype>
+
+        <imagetype name="preview">
+            <area>940,470,260,146</area>
+            <preserveaspect>true</preserveaspect>
+        </imagetype>
+
+        <textarea name="norecordings">
+            <area>85,75,1240,400</area>
+            <font>basemedium</font>
+            <value></value>
+            <multiline>yes</multiline>
+            <align>allcenter</align>
+        </textarea>
+    </window>
+
+    <window name="changeview">
+        <area>-1,-1,500,500</area>
+        <imagetype name="backimg">
+            <filename>mythdialogbox-background.png</filename>
+        </imagetype>
+
+        <textarea name="title" from="basetextarea">
+            <area>12,35,470,30</area>
+            <align>allcenter</align>
+            <font>basemedium</font>
+            <value>Change View</value>
+        </textarea>
+
+        <checkbox name="titles" from="basecheckbox">
+            <position>90,100</position>
+        </checkbox>
+
+        <textarea name="titlelabel" from="basetextarea">
+            <area>140,100,300,30</area>
+            <value>Show Titles</value>
+        </textarea>
+
+        <checkbox name="categories" from="basecheckbox">
+            <position>90,150</position>
+        </checkbox>
+
+        <textarea name="catlabel" from="titlelabel">
+            <position>140,150</position>
+            <value>Show Categories</value>
+        </textarea>
+
+        <checkbox name="recgroups" from="basecheckbox">
+            <position>90,200</position>
+        </checkbox>
+
+        <textarea name="grouplabel" from="titlelabel">
+            <position>140,200</position>
+            <value>Show Recording Groups</value>
+        </textarea>
+
+        <checkbox name="watchlist" from="basecheckbox">
+            <position>90,250</position>
+        </checkbox>
+
+        <textarea name="watchlabel" from="titlelabel">
+            <position>140,250</position>
+            <value>Show Watch List</value>
+        </textarea>
+
+        <checkbox name="searches" from="basecheckbox">
+            <position>90,300</position>
+        </checkbox>
+
+        <textarea name="searchlabel" from="titlelabel">
+            <position>140,300</position>
+            <value>Show Searches</value>
+        </textarea>
+
+        <checkbox name="livetv" from="basecheckbox">
+            <position>90,350</position>
+        </checkbox>
+
+        <textarea name="livelabel" from="titlelabel">
+            <position>140,350</position>
+            <value>Show LiveTV</value>
+        </textarea>
+
+        <button name="save" from="basebutton">
+            <position>315,435</position>
+            <value>Save</value>
+        </button>
+    </window>
+
+</mythuitheme>

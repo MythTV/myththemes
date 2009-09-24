@@ -1,0 +1,386 @@
+<mythuitheme>
+    <window name="iconimport">
+        
+        <imagetype name="background">
+            <area>0,0,1280,720</area>
+            <filename>images/backgrounds/</filename>
+        </imagetype>
+        
+        <textarea name="name">
+            <area>100,15,1080,30</area>
+            <align>center</align>
+            <font>basemedium</font>
+            <value>Select an Icon</value>
+        </textarea>
+        
+        <imagetype name="previewdrop">
+            <area>0,230,1280,410</area>
+            <filename>images/pbb_preview_backdrop.png</filename>
+        </imagetype>
+        
+        <buttonlist name="icons">
+            <area>0,245,1280,380</area>
+            <buttonarea>0,0,1280,390</buttonarea>
+            <scrollstyle>free</scrollstyle>
+            <layout>grid</layout>
+            <spacing>0</spacing>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>0,0,160,90</area>
+                    <imagetype name="icon">
+                        <area>0,0,160,90</area>
+                        <filename>images/43corrector.png</filename>
+                    </imagetype>
+                </state>
+                <state name="selected">
+                    <area>-30,-30,220,150</area>
+                    <imagetype name="buttonbackground">
+                        <area>0,0,220,150</area>
+                        <filename>images/pbb_recording_underlay.png</filename>
+                        <alphapulse min="80" max="255" change="2"/>
+                    </imagetype>
+                    <imagetype name="icon">
+                        <area>10,10,200,130</area>
+                        <filename />
+                        <mask>images/pbb_recording_mask.png</mask>
+                    </imagetype>
+                </state>
+                <state name="inactive" from="active">
+                </state>
+            </statetype>
+            <statetype name="upscrollarrow">
+                <position>1200,420</position>
+                <state type="off">
+                    <imagetype name="upon">
+                        <filename>images/uparrow.png</filename>
+                        <alpha>50</alpha>
+                    </imagetype>
+                </state>
+                <state type="full">
+                    <imagetype name="upoff">
+                        <filename>images/uparrow.png</filename>
+                    </imagetype>
+                </state>
+            </statetype>
+            <statetype name="downscrollarrow">
+                <position>1250,420</position>
+                <state type="off">
+                    <imagetype name="dnon">
+                        <filename>images/downarrow.png</filename>
+                        <alpha>50</alpha>
+                    </imagetype>
+                </state>
+                <state type="full">
+                    <imagetype name="dnoff">
+                        <filename>images/downarrow.png</filename>
+                    </imagetype>
+                </state>
+            </statetype>
+        </buttonlist>
+        
+        <textarea name="manuallabel" from="basetextarea">
+            <area>240,110,300,25</area>
+            <value>Search terms:</value>
+            <align>right</align>
+        </textarea>
+        
+        <textedit name="manualsearch" from="basetextedit">
+            <position>550,105</position>
+        </textedit>
+        
+        <button name="search" from="basebutton">
+            <position>480,158</position>
+            <value>Search</value>
+        </button>
+        
+        <button name="skip" from="basebutton">
+            <position>660,158</position>
+            <value>Skip</value>
+        </button>
+        
+        <imagetype name="clockback">
+            <area>525,695,230,51</area>
+            <filename>images/clock_backdrop.png</filename>
+        </imagetype>
+        
+        <font name="clock" from="baseextrasmall">
+            <size>11</size>
+            <color>#FFFFFF</color>
+        </font>
+        
+        <clock name="clock">
+            <area>529,700,219,25</area>
+            <font>clock</font>
+            <format>%DATE%, %TIME%</format>
+            <align>center</align>
+            <alpha>255</alpha>
+        </clock>
+        
+        <imagetype name="clockbackoverlay">
+            <area>525,695,230,23</area>
+            <filename>images/clock_backdrop_overlay.png</filename>
+        </imagetype>
+        
+    </window>
+    
+    <window name="channeloverview">
+        
+        <imagetype name="background">
+            <area>0,0,1280,720</area>
+            <filename>images/backgrounds/</filename>
+        </imagetype>
+        
+        <textarea name="label">
+            <area>100,15,1080,30</area>
+            <align>center</align>
+            <font>basemedium</font>
+            <value>Edit Channels</value>
+        </textarea>
+        
+        <shape name="shape">
+            <area>190,50,900,430</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="180" />
+            <line color="#FFFFFF" alpha="255" width="2" />
+            <cornerradius>12</cornerradius>
+        </shape>
+        
+        <buttonlist name="channels">
+            <area>240,60,1100,400</area>
+            <layout>vertical</layout>
+            <spacing>3</spacing>
+            <buttonarea>0,0,100%,97%</buttonarea>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>0,0,100%,30</area>
+                    <imagetype name="buttonbackground">
+                        <area>15,0,100,40</area>
+                        <filename>images/buttonbackground.png</filename>
+                    </imagetype>
+                    <imagetype name="icon">
+                        <area>115,0,60,40</area>
+                        <preserveaspect>true</preserveaspect>
+                    </imagetype>
+                    <textarea name="channum">
+                        <font>basesmall</font>
+                        <area>32,10,60,24</area>
+                        <align>center</align>
+                    </textarea>
+                    <textarea name="name" from="channum">
+                        <area>200,10,380,24</area>
+                    </textarea>
+                    <textarea name="sourcename" from="name">
+                        <area>600,10,200,24</area>
+                    </textarea>
+                    <imagetype name="buttonarrow">
+                        <position>92%,11</position>
+                        <filename>images/rightarrow.png</filename>
+                    </imagetype>
+                </state>
+                <state name="selected" from="active">
+                    <imagetype name="buttonbackground">
+                        <filename>images/buttonbackground_selected.png</filename>
+                        <alphapulse min="200" max="255" change="1"/>
+                    </imagetype>
+                </state>
+                <state name="inactive" from="active">
+                    <imagetype name="buttonbackground">
+                        <filename>images/buttonbackground_selected.png</filename>
+                        <alpha>127</alpha>
+                    </imagetype>
+                    <textarea name="buttontext">
+                        <font>basesmallgrey</font>
+                    </textarea>
+                </state>
+            </statetype>
+            <statetype name="upscrollarrow">
+                <position>20,97%</position>
+                <state type="off">
+                    <imagetype name="upon">
+                        <filename>images/uparrow.png</filename>
+                        <alpha>90</alpha>
+                    </imagetype>
+                </state>
+                <state type="full">
+                    <imagetype name="upoff">
+                        <filename>images/uparrow.png</filename>
+                    </imagetype>
+                </state>
+            </statetype>
+            <statetype name="downscrollarrow">
+                <position>50,97%</position>
+                <state type="off">
+                    <imagetype name="dnon">
+                        <filename>images/downarrow.png</filename>
+                        <alpha>90</alpha>
+                    </imagetype>
+                </state>
+                <state type="full">
+                    <imagetype name="dnoff">
+                        <filename>images/downarrow.png</filename>
+                    </imagetype>
+                </state>
+            </statetype>
+        </buttonlist>
+        
+        <textarea name="sortlabel" from="basetextarea">
+            <area>320,505,170,30</area>
+            <value>Sort Mode:</value>
+            <font>basemedium</font>
+        </textarea>
+        
+        <buttonlist name="sorting" from="basewideselector">
+            <position>470,500</position>
+        </buttonlist>
+        
+        <textarea name="sourcelabel" from="sortlabel">
+            <position>290,560</position>
+            <value>Video Source:</value>
+        </textarea>
+        
+        <buttonlist name="source" from="basewideselector">
+            <position>470,555</position>
+        </buttonlist>
+        
+        <button name="delete" from="basebutton">
+            <position>870,557</position>
+            <value>Delete</value>
+        </button>
+        
+        <textarea name="nochannumlabel" from="basetextarea">
+            <area>450,610,500,60</area>
+            <value>Hide Channels without channel number.</value>
+        </textarea>
+        
+        <checkbox name="nochannum" from="basecheckbox">
+            <position>410,605</position>
+        </checkbox>
+        
+        <button name="scan" from="basebutton">
+            <position>100,650</position>
+            <statetype name="buttonstate">
+                <state name="active">
+                    <imagetype name="background">
+                        <area>0,0,300,35</area>
+                        <filename>images/buttonbackground.png</filename>
+                    </imagetype>
+                    <textarea name="text">
+                        <area>5,5,290,30</area>
+                        <value>Channel Scan</value>
+                    </textarea>
+                </state>
+                <state name="selected" from="active">
+                    <imagetype name="background">
+                        <area>0,0,300,35</area>
+                        <filename>images/buttonbackground_selected.png</filename>
+                        <alphapulse min="200" max="255" change="1"/>
+                    </imagetype>
+                </state>
+                <state name="disabled" from="active" />
+                <state name="pushed" from="active" />
+            </statetype>
+        </button>
+        
+        <button name="importicons" from="scan">
+            <position>500,650</position>
+            <value>Icon Download</value>
+        </button>
+        
+        <button name="edittransport" from="scan">
+            <position>900,650</position>
+            <value>Edit Transports</value>
+        </button>
+        
+        <imagetype name="clockback">
+            <area>525,695,230,51</area>
+            <filename>images/clock_backdrop.png</filename>
+        </imagetype>
+        
+        <font name="clock" from="baseextrasmall">
+            <size>11</size>
+            <color>#FFFFFF</color>
+        </font>
+        
+        <clock name="clock">
+            <area>529,700,219,25</area>
+            <font>clock</font>
+            <format>%DATE%, %TIME%</format>
+            <align>center</align>
+            <alpha>255</alpha>
+        </clock>
+        
+        <imagetype name="clockbackoverlay">
+            <area>525,695,230,23</area>
+            <filename>images/clock_backdrop_overlay.png</filename>
+        </imagetype>
+        
+    </window>
+    
+    <window name="osdmenueditor">
+        <area>-1,-1,1280,720</area>
+        
+        <shape name="shape">
+            <area>90,50,1100,520</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="180" />
+            <line color="#FFFFFF" alpha="255" width="2" />
+            <cornerradius>12</cornerradius>
+        </shape>
+        
+        <textarea name="label">
+            <area>100,60,1080,30</area>
+            <align>center</align>
+            <font>basemedium</font>
+            <value>OSD Menu Editor</value>
+        </textarea>
+        
+        <textarea name="leftdesc" from="basetextarea">
+            <area>64,86,540,30</area>
+            <value>OSD Context</value>
+            <align>center</align>
+        </textarea>
+        
+        <buttonlist name="states" from="basebuttonlist">
+            <area>164,126,560,310</area>
+            <showarrow>no</showarrow>
+        </buttonlist>
+        
+        <textarea name="rightdesc" from="leftdesc">
+            <area>656,86,540,30</area>
+            <value>OSD Menu Items</value>
+        </textarea>
+        
+        <buttonlist name="categories" from="basebuttonlist">
+            <area>756,126,560,310</area>
+        </buttonlist>
+        
+        <button name="done" from="basebutton">
+            <position>565,500</position>
+            <value>Done</value>
+        </button>
+        
+        <imagetype name="clockback">
+            <area>525,695,230,51</area>
+            <filename>images/clock_backdrop.png</filename>
+        </imagetype>
+        
+        <font name="clock" from="baseextrasmall">
+            <size>11</size>
+            <color>#FFFFFF</color>
+        </font>
+        
+        <clock name="clock">
+            <area>529,700,219,25</area>
+            <font>clock</font>
+            <format>%DATE%, %TIME%</format>
+            <align>center</align>
+            <alpha>255</alpha>
+        </clock>
+        
+        <imagetype name="clockbackoverlay">
+            <area>525,695,230,23</area>
+            <filename>images/clock_backdrop_overlay.png</filename>
+        </imagetype>
+        
+    </window>
+</mythuitheme>

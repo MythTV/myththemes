@@ -1,0 +1,1553 @@
+<mythuitheme>
+    
+    <!-- Popups -->
+    <window name="moviesel">
+        <area>-1,-1,413,526</area>
+        
+        <shape name="shape">
+            <area>0,0,388,526</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="150" />
+            <line color="#FFFFFF" alpha="180" width="1" />
+            <cornerradius>12</cornerradius>
+        </shape>
+        
+        <textarea name="searchedname" from="basetextarea">
+            <area>0,10,388,100</area>
+            <multiline>yes</multiline>
+            <font>basesmall</font>
+            <align>center</align>
+        </textarea>
+
+        <buttonlist name="results" from="basebuttonlist">
+            <area>20,122,357,388</area>
+            <showarrow>no</showarrow>
+        </buttonlist>
+    </window>
+    
+    <window name="castpopup">
+        <area>-1,-1,413,426</area>
+        
+        <shape name="shape">
+            <area>0,0,388,426</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="150" />
+            <line color="#FFFFFF" alpha="180" width="1" />
+            <cornerradius>12</cornerradius>
+        </shape>
+        
+        <buttonlist name="cast" from="basebuttonlist">
+            <area>18,18,357,368</area>
+            <showarrow>no</showarrow>
+        </buttonlist>
+        
+        <button name="ok" from="basebutton">
+            <position>119,365</position>
+            <value>OK</value>
+        </button>
+    </window>
+    
+    <window name="plotpopup">
+        <area>-1,-1,620,460</area>
+        
+        <shape name="shape">
+            <area>0,0,600,440</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="150" />
+            <line color="#FFFFFF" alpha="180" width="1" />
+            <cornerradius>12</cornerradius>
+        </shape>
+        
+        <textarea name="plot" from="basetextarea">
+            <area>18,18,560,385</area>
+            <multiline>yes</multiline>
+        </textarea>
+        
+        <button name="ok" from="basebutton">
+            <position>225,385</position>
+            <value>OK</value>
+        </button>
+    </window>
+    
+    <!-- Main Windows -->
+    <window name="manager">
+        
+        <textarea name="novideos" from="basetextarea">
+            <area>0,110,800,70</area>
+            <multiline>yes</multiline>
+            <align>hcenter,vcenter</align>
+        </textarea>
+        
+        <textarea name="title" from="basetextarea">
+            <area>20,10,710,80</area>
+            <font>baselarge</font>
+        </textarea>
+        
+        <textarea name="dirlbl" from="basetextarea">
+            <area>20,65,130,35</area>
+            <font>basesmall</font>
+            <align>right,top</align>
+            <value>Director:</value>
+        </textarea>
+        
+        <textarea name="director" from="basetextarea">
+            <area>160,65,350,35</area>
+            <font>basesmallyellow</font>
+        </textarea>
+        
+        <textarea name="yrlbl" from="dirlbl">
+            <position>500,65</position>
+            <value>Year:</value>
+        </textarea>
+        
+        <textarea name="year" from="director">
+            <area>650,65,100,35</area>
+        </textarea>
+        
+        <textarea name="ratlbl" from="dirlbl">
+            <position>20,95</position>
+            <value>Rated:</value>
+        </textarea>
+        
+        <textarea name="rating" from="director">
+            <area>160,95,350,35</area>
+        </textarea>
+        
+        <textarea name="lvllbl" from="dirlbl">
+            <position>500,95</position>
+            <value>Parental Level:</value>
+        </textarea>
+        
+        <textarea name="browselbl" from="dirlbl">
+            <position>500,125</position>
+            <value>Browsable:</value>
+            <align>right,top</align>
+        </textarea>
+        
+        <textarea name="browseable" from="director">
+            <area>650,125,100,35</area>
+        </textarea>
+        
+        <textarea name="lenlbl" from="dirlbl">
+            <position>20,125</position>
+            <value>Runtime:</value>
+        </textarea>
+        
+        <textarea name="length" from="director">
+            <area>160,125,350,35</area>
+        </textarea>
+        
+        <textarea name="pltlbl" from="dirlbl">
+            <position>20,155</position>
+            <value>Plot:</value>
+        </textarea>
+        
+        <textarea name="plot" from="director">
+            <area>160,155,600,35</area>
+        </textarea>
+        
+        <textarea name="fillbl" from="dirlbl">
+            <position>20,185</position>
+            <value>Filename:</value>
+        </textarea>
+        
+        <textarea name="filename" from="director">
+            <area>160,185,600,35</area>
+        </textarea>
+        
+        <textarea name="cvflbl" from="dirlbl">
+            <position>20,215</position>
+            <value>Cover File:</value>
+        </textarea>
+        
+        <textarea name="coverfile" from="director">
+            <area>160,215,600,35</area>
+        </textarea>
+        
+        <textarea name="imdblbl" from="dirlbl">
+            <position>20,245</position>
+            <value>Video Num.:</value>
+        </textarea>
+        
+        <textarea name="inetref" from="director">
+            <area>160,245,100,35</area>
+        </textarea>
+        
+        <imagetype name="menu_background">
+            <position>0,270</position>
+            <filename>images/cr-background.png</filename>
+        </imagetype>
+        
+        <buttonlist name="videos">
+            <area>20,282,760,242</area>
+            <layout>vertical</layout>
+            <spacing>5</spacing>
+            <buttonarea>0,0,760,250</buttonarea>
+            <statetype name="buttonitem">
+                <area>0,0,760,25</area>
+                <state name="active">
+                    <imagetype name="buttonimage">
+                        <area>0,2,25,25</area>
+                        <preserveaspect>yes</preserveaspect>
+                        <filename>images/mv_browse_nocover.png</filename>
+                    </imagetype>
+                    <statetype name="nodetype">
+                        <position>0,9</position>
+                        <state name="subfolder">
+                            <imagetype name="icon">
+                                <area>0,20,53,40</area>
+                                <filename>images/folderclosed.png</filename>
+                                <preserveaspect>yes</preserveaspect>
+                            </imagetype>
+                        </state>
+                        <state name="upfolder">
+                            <imagetype name="icon">
+                                <area>0,20,53,40</area>
+                                <filename>images/mv_gallery_dir_up.png</filename>
+                                <preserveaspect>yes</preserveaspect>
+                            </imagetype>
+                        </state>
+                    </statetype>
+                    <textarea name="buttontext" from="basetextarea">
+                        <area>30,4,250,30</area>
+                        <font>basesmallgrey</font>
+                    </textarea>
+                    <textarea name="director" from="buttontext">
+                        <area>380,4,150,25</area>
+                    </textarea>
+                    <textarea name="year" from="buttontext">
+                        <area>670,4,50,25</area>
+                    </textarea>
+                </state>
+                <state name="selected" from="active">
+                    <statetype name="nodetype">
+                        <position>0,9</position>
+                        <state name="subfolder">
+                            <imagetype name="icon">
+                                <area>0,20,53,40</area>
+                                <filename>images/folderopen.png</filename>
+                                <preserveaspect>yes</preserveaspect>
+                            </imagetype>
+                        </state>
+                        <state name="upfolder">
+                            <imagetype name="icon">
+                                <area>0,20,53,40</area>
+                                <filename>images/mv_gallery_dir_up_open.png</filename>
+                                <preserveaspect>yes</preserveaspect>
+                            </imagetype>
+                        </state>
+                    </statetype>
+                    <textarea name="buttontext">
+                        <font>basesmall</font>
+                    </textarea>
+                    <textarea name="director">
+                        <font>basesmall</font>
+                    </textarea>
+                    <textarea name="year">
+                        <font>basesmall</font>
+                    </textarea>
+                </state>
+            </statetype>
+            <statetype name="upscrollarrow">
+                <position>240,270</position>
+                <showempty>yes</showempty>
+                <state type="full">
+                    <imagetype name="upon">
+                        <filename>images/up_arrow.png</filename>
+                    </imagetype>
+                </state>
+            </statetype>
+            <statetype name="downscrollarrow">
+                <position>456,270</position>
+                <showempty>yes</showempty>
+                <state type="full">
+                    <imagetype name="dnon">
+                        <filename>images/down_arrow.png</filename>
+                    </imagetype>
+                </state>
+            </statetype>
+        </buttonlist>
+        
+    </window>
+    
+    <window name="browser">
+        <area>-1,-1,1280,720</area>
+        
+        <imagetype name="fanart">
+            <area>0,0,1280,720</area>
+            <filename />
+            <mask>images/fanartmask.png</mask>
+        </imagetype>
+        
+        <imagetype name="textback">
+            <area>0,0,1280,40</area>
+            <filename>images/mv_gallery_topstrip.png</filename>
+            <alpha>200</alpha>
+        </imagetype>
+
+        <shape name="videobox">
+            <area>0,360,1280,210</area>
+            <type>box</type>
+            <fill color="#000000" alpha="220" />
+        </shape>
+        
+        <shape name="descbox">
+            <area>10,615,1260,75</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="220" />
+        </shape>
+        
+        <textarea name="plot" from="basetextarea">
+            <area>15,620,1245,65</area>
+            <multiline>yes</multiline>
+            <cutdown>yes</cutdown>
+            <font>baseextrasmall</font>
+            <align>justify</align>
+        </textarea>
+        
+        <buttonlist name="videos">
+            <area>0,385,1280,100</area>
+            <layout>horizontal</layout>
+            <wrapstyle>items</wrapstyle>
+            <scrollstyle>center</scrollstyle>
+            <spacing>6</spacing>
+            <buttonarea>0,0,1280,120</buttonarea>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>0,0,80,120</area>
+                    <imagetype name="buttonimage">
+                        <area>0,0,80,120</area>
+                        <filename>images/mv_browse_nocover.png</filename>
+                        <reflection axis="vertical" scale="65" length="35" />
+                        <preserveaspect>true</preserveaspect>
+                    </imagetype>
+                    <statetype name="nodetype">
+                        <position>10,15</position>
+                        <state name="subfolder">
+                            <imagetype name="icon">
+                                <area>10,60,53,40</area>
+                                <filename>images/folderclosed.png</filename>
+                                <preserveaspect>yes</preserveaspect>
+                            </imagetype>
+                        </state>
+                        <state name="upfolder">
+                            <imagetype name="icon">
+                                <area>10,60,53,40</area>
+                                <filename>images/mv_gallery_dir_up.png</filename>
+                                <preserveaspect>yes</preserveaspect>
+                            </imagetype>
+                        </state>
+                    </statetype>
+                </state>
+                <state name="selected" from="active">
+                    <imagetype name="buttonimage">
+                        <area>-60,-20,200,160</area>
+                        <preserveaspect>true</preserveaspect>
+                    </imagetype>
+                    <statetype name="nodetype">
+                        <position>10,15</position>
+                        <state name="subfolder">
+                            <imagetype name="icon">
+                                <area>60,95,53,40</area>
+                                <filename>images/folderopen.png</filename>
+                                <preserveaspect>yes</preserveaspect>
+                            </imagetype>
+                        </state>
+                        <state name="upfolder">
+                            <imagetype name="icon">
+                                <area>60,95,53,40</area>
+                                <filename>images/mv_gallery_dir_up_open.png</filename>
+                                <preserveaspect>yes</preserveaspect>
+                            </imagetype>
+                        </state>
+                    </statetype>
+                </state>
+            </statetype>
+        </buttonlist>
+        
+        <textarea name="title" from="basetextarea">
+            <area>10,5,560,50</area>
+            <cutdown>no</cutdown>
+            <font>baselarge</font>
+        </textarea>
+
+        <textarea name="##x##" from="basetextarea">
+            <area>590,5,100,38</area>
+            <cutdown>yes</cutdown>
+            <align>right</align>
+            <font>baselarge</font>
+        </textarea>
+
+        <textarea name="subtitle" from="basetextarea">
+            <area>700,5,520,38</area>
+            <cutdown>yes</cutdown>
+            <align>right</align>
+            <font>baselarge</font>
+        </textarea>
+
+        <statetype name="parentallevel">
+            <area>1235,5,20,20</area>
+            <state name="None">
+                <imagetype name="icon">
+                    <area>0,0,30,30</area>
+                    <filename>images/mv_level_none.png</filename>
+                </imagetype>
+            </state>
+            <state name="Lowest">
+                <imagetype name="icon">
+                    <area>0,0,30,30</area>
+                    <filename>images/mv_level_lowest.png</filename>
+                </imagetype>
+            </state>
+            <state name="Low">
+                <imagetype name="icon">
+                    <area>0,0,30,30</area>
+                    <filename>images/mv_level_low.png</filename>
+                </imagetype>
+            </state>
+            <state name="Medium">
+                <imagetype name="icon">
+                    <area>0,0,30,30</area>
+                    <filename>images/mv_level_medium.png</filename>
+                </imagetype>
+            </state>
+            <state name="High">
+                <imagetype name="icon">
+                    <area>0,0,30,30</area>
+                    <filename>images/mv_level_high.png</filename>
+                </imagetype>
+            </state>
+        </statetype>
+        
+        <imagetype name="clockback">
+            <area>525,695,230,51</area>
+            <filename>images/clock_backdrop.png</filename>
+        </imagetype>
+        
+        <font name="clock" from="baseextrasmall">
+            <size>11</size>
+            <color>#FFFFFF</color>
+        </font>
+        
+        <clock name="clock">
+            <area>529,700,219,25</area>
+            <font>clock</font>
+            <format>%DATE%, %TIME%</format>
+            <align>center</align>
+            <alpha>255</alpha>
+        </clock>
+        
+        <imagetype name="clockbackoverlay">
+            <area>525,695,230,23</area>
+            <filename>images/clock_backdrop_overlay.png</filename>
+        </imagetype>
+        
+        <textarea name="novideos" from="basetextarea">
+            <area>250,130,540,70</area>
+            <multiline>yes</multiline>
+            <align>hcenter,vcenter</align>
+        </textarea>
+        
+    </window>
+    
+    <window name="gallery">
+        <area>-1,-1,1280,720</area>
+        
+        <imagetype name="fanart">
+            <area>0,0,1280,720</area>
+            <filename>images/backgrounds/</filename>
+            <mask>images/fanartmask.png</mask>
+        </imagetype>
+        
+        <imagetype name="textback">
+            <area>0,0,1280,40</area>
+            <filename>images/mv_gallery_topstrip.png</filename>
+            <alpha>200</alpha>
+        </imagetype>
+
+        <textarea name="title" from="basetextarea">
+            <area>10,5,560,50</area>
+            <cutdown>no</cutdown>
+            <font>baselarge</font>
+        </textarea>
+
+        <textarea name="##x##" from="basetextarea">
+            <area>590,5,100,38</area>
+            <cutdown>yes</cutdown>
+            <align>right</align>
+            <font>baselarge</font>
+        </textarea>
+
+        <textarea name="subtitle" from="basetextarea">
+            <area>700,5,520,38</area>
+            <cutdown>yes</cutdown>
+            <align>right</align>
+            <font>baselarge</font>
+        </textarea>
+        
+        <imagetype name="gallerybox">
+            <area>0,145,1280,400</area>
+            <filename>images/mv_gallery_box.png</filename>
+        </imagetype>
+        
+        <buttonlist name="videos">
+            <area>0,155,1280,375</area>
+            <layout>grid</layout>
+            <wrapstyle>selection</wrapstyle>
+            <spacing>0</spacing>
+            <buttonarea>0,0,1280,375</buttonarea>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>0,0,80,125</area>
+                    <imagetype name="buttonimage" draworder="0">
+                        <area>0,0,80,125</area>
+                        <alpha>35</alpha>
+                        <filename>images/mv_browse_nocover.png</filename>
+                    </imagetype>
+                    <statetype name="nodetype">
+                        <position>0,50</position>
+                        <state name="subfolder">
+                            <imagetype name="icon">
+                                <area>10,30,53,40</area>
+                                <filename>images/folderclosed.png</filename>
+                                <preserveaspect>yes</preserveaspect>
+                            </imagetype>
+                        </state>
+                        <state name="upfolder">
+                            <imagetype name="icon">
+                                <area>10,30,53,40</area>
+                                <filename>images/mv_gallery_dir_up.png</filename>
+                                <preserveaspect>yes</preserveaspect>
+                            </imagetype>
+                        </state>
+                    </statetype>
+                </state>
+                <state name="selected">
+                    <area>-40,-40,160,220</area>
+                    <imagetype name="buttonbackground">
+                        <area>2,-8,160,217</area>
+                        <filename>images/mv_video_underlay.png</filename>
+                        <alphapulse min="80" max="255" change="2"/>
+                    </imagetype>
+                    <imagetype name="buttonimage">
+                        <area>10,0,140,200</area>
+                        <mask>images/mv_browsemodemask.png</mask>
+                        <filename>images/mv_browse_nocover.png</filename>
+                    </imagetype>
+                    <statetype name="nodetype">
+                        <position>0,50</position>
+                        <state name="subfolder">
+                            <imagetype name="icon">
+                                <area>50,60,53,40</area>
+                                <filename>images/folderopen.png</filename>
+                                <preserveaspect>yes</preserveaspect>
+                            </imagetype>
+                        </state>
+                        <state name="upfolder">
+                            <imagetype name="icon">
+                                <area>50,60,53,40</area>
+                                <filename>images/mv_gallery_dir_up_open.png</filename>
+                                <preserveaspect>yes</preserveaspect>
+                            </imagetype>
+                        </state>
+                    </statetype>
+                </state>
+            </statetype>
+        </buttonlist>
+        
+        <textarea name="position" from="basetextarea">
+            <area>540,665,200,35</area>
+            <align>hcenter,vcenter</align>
+            <font>basemedium</font>
+        </textarea>
+        
+        
+        <textarea name="novideos" from="basetextarea">
+            <area>50,50,700,50</area>
+            <multiline>yes</multiline>
+            <align>hcenter,vcenter</align>
+        </textarea>
+        
+        <statetype name="parentallevel">
+            <area>1235,5,20,20</area>
+            <state name="None">
+                <imagetype name="icon">
+                    <area>0,0,30,30</area>
+                    <filename>images/mv_level_none.png</filename>
+                </imagetype>
+            </state>
+            <state name="Lowest">
+                <imagetype name="icon">
+                    <area>0,0,30,30</area>
+                    <filename>images/mv_level_lowest.png</filename>
+                </imagetype>
+            </state>
+            <state name="Low">
+                <imagetype name="icon">
+                    <area>0,0,30,30</area>
+                    <filename>images/mv_level_low.png</filename>
+                </imagetype>
+            </state>
+            <state name="Medium">
+                <imagetype name="icon">
+                    <area>0,0,30,30</area>
+                    <filename>images/mv_level_medium.png</filename>
+                </imagetype>
+            </state>
+            <state name="High">
+                <imagetype name="icon">
+                    <area>0,0,30,30</area>
+                    <filename>images/mv_level_high.png</filename>
+                </imagetype>
+            </state>
+        </statetype>
+        
+        <imagetype name="clockback">
+            <area>525,695,230,51</area>
+            <filename>images/clock_backdrop.png</filename>
+        </imagetype>
+        
+        <font name="clock" from="baseextrasmall">
+            <size>11</size>
+            <color>#FFFFFF</color>
+        </font>
+        
+        <clock name="clock">
+            <area>529,700,219,25</area>
+            <font>clock</font>
+            <format>%DATE%, %TIME%</format>
+            <align>center</align>
+            <alpha>255</alpha>
+        </clock>
+        
+        <imagetype name="clockbackoverlay">
+            <area>525,695,230,23</area>
+            <filename>images/clock_backdrop_overlay.png</filename>
+        </imagetype>
+        
+    </window>
+    
+    <window name="tree">
+        <area>-1,-1,1280,720</area>        
+
+        <imagetype name="fanart">
+            <area>0,0,1280,720</area>
+            <filename />
+            <mask>images/fanartmask.png</mask>
+        </imagetype>
+        
+        <imagetype name="titleback">
+            <area>10,665,500,50</area>
+            <filename>images/mv_title_back.png</filename>
+        </imagetype>
+        
+        <textarea name="breadcrumbs" from="basetextarea">
+            <area>22,678,475,38</area>
+            <font>basemedium</font>
+        </textarea>
+        
+        <imagetype name="gallerybox">
+            <area>0,330,1280,230</area>
+            <filename>images/mv_gallery_box.png</filename>
+        </imagetype>
+        
+        <buttontree name="videos">
+            <area>50,342,1240,146</area>
+            <numlists>3</numlists>
+            <spacing>6</spacing>
+            <buttonlist name="listtemplate" from="basebuttonlist" />
+        </buttontree>
+        
+        <imagetype name="plotbox">
+            <area>365,50,805,230</area>
+            <filename>images/mv_treeplot_box.png</filename>
+        </imagetype>
+        
+        <textarea name="title" from="basetextarea">
+            <area>375,58,500,38</area>
+            <cutdown>yes</cutdown>
+            <font>baselarge</font>
+        </textarea>
+        
+        <textarea name="subtitle" from="basetextarea">
+            <area>747,58,415,38</area>
+            <cutdown>yes</cutdown>
+            <align>right</align>
+            <font>baselarge</font>
+        </textarea>
+        
+        <textarea name="dirlabel" from="basetextarea">
+            <value>Directed by:</value>
+            <area>375,98,450,30</area>
+        </textarea>
+        
+        <textarea name="director" from="basetextarea">
+            <area>518,98,450,30</area>
+        </textarea>
+        
+        <textarea name="year" from="basetextarea">
+            <area>950,98,80,30</area>
+            <align>right</align>
+        </textarea>
+        
+        <textarea name="plot" from="basetextarea">
+            <area>375,133,785,160</area>
+            <font>basesmaller</font>
+            <align>justify</align>
+            <multiline>yes</multiline>
+            <cutdown>yes</cutdown>
+        </textarea>
+        
+        <textarea name="position" from="basetextarea">
+            <area>540,665,200,35</area>
+            <align>hcenter,vcenter</align>
+            <font>basemedium</font>
+        </textarea>
+        
+        <imagetype name="clockback" draworder="0">
+            <area>540,695,200,51</area>
+            <filename>images/clock_backdrop.png</filename>
+        </imagetype>
+        
+        <font name="clock" from="baseextrasmall">
+            <size>11</size>
+            <color>#FFFFFF</color>
+        </font>
+        
+        <clock name="clock">
+            <area>544,700,189,25</area>
+            <font>clock</font>
+            <format>%DATE%, %TIME%</format>
+            <align>center</align>
+            <alpha>255</alpha>
+        </clock>
+        
+        <imagetype name="clockbackoverlay" draworder="0">
+            <area>540,695,200,23</area>
+            <filename>images/clock_backdrop_overlay.png</filename>
+        </imagetype>
+        
+        <imagetype name="coverimage">
+            <area>100,20,200,277</area>
+            <preserveaspect>yes</preserveaspect>
+            <mask>images/mv_list_mask.png</mask>
+        </imagetype>
+        
+        <statetype name="parentallevel">
+            <area>1235,5,20,20</area>
+            <state name="None">
+                <imagetype name="icon">
+                    <area>0,0,30,30</area>
+                    <filename>images/mv_level_none.png</filename>
+                </imagetype>
+            </state>
+            <state name="Lowest">
+                <imagetype name="icon">
+                    <area>0,0,30,30</area>
+                    <filename>images/mv_level_lowest.png</filename>
+                </imagetype>
+            </state>
+            <state name="Low">
+                <imagetype name="icon">
+                    <area>0,0,30,30</area>
+                    <filename>images/mv_level_low.png</filename>
+                </imagetype>
+            </state>
+            <state name="Medium">
+                <imagetype name="icon">
+                    <area>0,0,30,30</area>
+                    <filename>images/mv_level_medium.png</filename>
+                </imagetype>
+            </state>
+            <state name="High">
+                <imagetype name="icon">
+                    <area>0,0,30,30</area>
+                    <filename>images/mv_level_high.png</filename>
+                </imagetype>
+            </state>
+        </statetype>
+        
+        <imagetype name="clockback">
+            <area>525,695,230,51</area>
+            <filename>images/clock_backdrop.png</filename>
+        </imagetype>
+        
+        <font name="clock" from="baseextrasmall">
+            <size>11</size>
+            <color>#FFFFFF</color>
+        </font>
+        
+        <clock name="clock">
+            <area>529,700,219,25</area>
+            <font>clock</font>
+            <format>%DATE%, %TIME%</format>
+            <align>center</align>
+            <alpha>255</alpha>
+        </clock>
+        
+        <imagetype name="clockbackoverlay">
+            <area>525,695,230,23</area>
+            <filename>images/clock_backdrop_overlay.png</filename>
+        </imagetype>
+        
+    </window>
+    
+    <window name="file_associations">
+        <area>-1,-1,1280,720</area>
+        
+        <shape name="shape">
+            <area>90,50,1100,520</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="180" />
+            <line color="#FFFFFF" alpha="255" width="2" />
+            <cornerradius>12</cornerradius>
+        </shape>
+        
+        <textarea name="extension_text" from="basetextarea">
+            <area>290,150,200,40</area>
+            <value>Extension:</value>
+            <align>right,vcenter</align>
+        </textarea>
+        
+        <textarea name="command_text" from="extension_text">
+            <position>290,240</position>
+            <value>Command:</value>
+        </textarea>
+        
+        <textarea name="default_text" from="extension_text">
+            <position>290,320</position>
+            <value>Use default player:</value>
+        </textarea>
+        
+        <textarea name="ignore_text" from="extension_text">
+            <position>290,400</position>
+            <value>Ignore:</value>
+        </textarea>
+        
+        <buttonlist name="extension_select" from="baseselector">
+            <position>500,145</position>
+        </buttonlist>
+        
+        <textedit name="command" from="basetextedit">
+            <position>500,230</position>
+        </textedit>
+        
+        <checkbox name="default_check" from="basecheckbox">
+            <position>500,320</position>
+        </checkbox>
+        
+        <checkbox name="ignore_check" from="basecheckbox">
+            <position>500,400</position>
+        </checkbox>
+        
+        <button name="done_button" from="basebutton">
+            <position>365,500</position>
+        </button>
+        
+        <button name="new_button" from="basebutton">
+            <position>565,500</position>
+        </button>
+        
+        <button name="delete_button" from="basebutton">
+            <position>765,500</position>
+        </button>
+        
+        <imagetype name="clockback">
+            <area>525,695,230,51</area>
+            <filename>images/clock_backdrop.png</filename>
+        </imagetype>
+        
+        <font name="clock" from="baseextrasmall">
+            <size>11</size>
+            <color>#FFFFFF</color>
+        </font>
+        
+        <clock name="clock">
+            <area>529,700,219,25</area>
+            <font>clock</font>
+            <format>%DATE%, %TIME%</format>
+            <align>center</align>
+            <alpha>255</alpha>
+        </clock>
+        
+        <imagetype name="clockbackoverlay">
+            <area>525,695,230,23</area>
+            <filename>images/clock_backdrop_overlay.png</filename>
+        </imagetype>
+        
+    </window>
+    
+    <window name="edit_metadata">
+        <area>-1,-1,1280,720</area>
+
+        <imagetype name="fanart">
+            <area>0,0,1280,720</area>
+            <filename>images/popup_darken.png</filename>
+        </imagetype>
+
+        <imagetype name="darken">
+            <area>0,0,1280,720</area>
+            <filename>images/popup_darken.png</filename>
+        </imagetype>
+
+        <shape name="shape">
+            <area>795,50,395,340</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="180" />
+            <line color="#FFFFFF" alpha="255" width="2" />
+            <cornerradius>12</cornerradius>
+        </shape>
+
+        <shape name="covershape">
+            <area>90,50,220,340</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="180" />
+            <line color="#FFFFFF" alpha="255" width="2" />
+            <cornerradius>12</cornerradius>
+        </shape>
+
+        <imagetype name="coverimage">
+            <area>100,60,200,320</area>
+            <preserveaspect>true</preserveaspect>
+            <filename>images/popup_darken.png</filename>
+        </imagetype>
+
+        <shape name="shape2">
+            <area>320,50,465,340</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="180" />
+            <line color="#FFFFFF" alpha="255" width="2" />
+            <cornerradius>12</cornerradius>
+        </shape>
+
+        <shape name="shape3">
+            <area>90,410,1100,260</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="180" />
+            <line color="#FFFFFF" alpha="255" width="2" />
+            <cornerradius>12</cornerradius>
+        </shape>
+
+<!--        <imagetype name="screenshot">
+            <area>100,290,200,90</area>
+            <preserveaspect>true</preserveaspect>
+            <filename>images/popup_darken.png</filename>
+        </imagetype>
+
+        <imagetype name="banner">
+            <area>95,55,210,50</area>
+            <preserveaspect>true</preserveaspect>
+            <filename>images/popup_darken.png</filename>
+        </imagetype>-->
+
+        <!-- Labels  -->
+        
+        <textarea name="title_text" from="basetextarea">
+            <area>335,65,150,40</area>
+            <value>Title:</value>
+            <align>left,top</align>
+        </textarea>
+        
+        <textarea name="subtitle_text" from="basetextarea">
+            <area>335,103,100,40</area>
+            <value>Subtitle:</value>
+            <align>left,top</align>
+        </textarea>
+        
+        <textarea name="rating_text" from="basetextarea">
+            <area>335,141,100,40</area>
+            <value>Rating:</value>
+            <align>left,top</align>
+        </textarea>
+
+        <textarea name="director_text" from="basetextarea">
+            <area>335,179,100,40</area>
+            <value>Director:</value>
+            <align>left,top</align>
+        </textarea>
+
+        <textarea name="inetref_text" from="basetextarea">
+            <area>335,217,100,40</area>
+            <value>TMDB:</value>
+            <align>left,top</align>
+        </textarea>
+
+        <textarea name="plot_text" from="basetextarea">
+            <area>335,255,100,40</area>
+            <value>Plot:</value>
+            <align>left,top</align>
+        </textarea>
+
+        <textarea name="season_text" from="basetextarea">
+            <area>810,65,250,40</area>
+            <value>Season:</value>
+            <align>left,top</align>
+        </textarea>
+        
+        <textarea name="episode_text" from="basetextarea">
+            <area>810,105,150,40</area>
+            <value>Episode:</value>
+            <align>left,top</align>
+        </textarea>
+        
+        <textarea name="year_text" from="title_text">
+            <area>810,145,150,40</area>
+            <align>left,top</align>
+            <value>Year:</value>
+        </textarea>
+        
+        <textarea name="userrating_text" from="title_text">
+            <area>810,185,200,40</area>
+            <align>left,top</align>
+            <value>User Rating:</value>
+        </textarea>
+        
+        <textarea name="length_text" from="title_text">
+            <area>810,225,300,40</area>
+            <align>left,top</align>
+            <value>Length:</value>
+        </textarea>
+        
+        <textarea name="parent_text" from="title_text">
+            <area>810,265,280,40</area>
+            <align>left,top</align>
+            <value>Parental Lvl:</value>
+        </textarea>
+        
+        <textarea name="category_text" from="title_text">
+            <area>810,305,280,40</area>
+            <align>left,top</align>
+            <value>Category:</value>
+        </textarea>
+
+        <textarea name="child_text" from="title_text">
+            <area>810,345,280,40</area>
+            <align>left,top</align>
+            <value>Next File:</value>
+        </textarea>
+
+        <textarea name="browse_text" from="title_text">
+            <position>700,535</position>
+            <value>Browseable</value>
+        </textarea>
+
+        <textarea name="watched_text" from="title_text">
+            <position>150,585</position>
+            <value>Watched</value>
+        </textarea>
+
+        <textarea name="coverart_text_label" from="title_text">
+            <position>150,435</position>
+            <value>Cover Art:</value>
+        </textarea>
+        
+        <textarea name="screenshot_text_label" from="title_text">
+            <position>700,435</position>
+            <value>Screenshot:</value>
+        </textarea>
+        
+        <textarea name="banner_text_label" from="title_text">
+            <position>150,485</position>
+            <value>Banner:</value>
+        </textarea>
+        
+        <textarea name="fanart_text_label" from="title_text">
+            <position>700,485</position>
+            <value>Fanart:</value>
+        </textarea>
+        
+        <textarea name="trailer_text_label" from="title_text">
+            <position>150,535</position>
+            <value>Trailer:</value>
+        </textarea>
+        
+        <textarea name="player_text" from="title_text">
+            <area>620,585,300,40</area>
+            <align>left,top</align>
+            <value>Player Command:</value>
+        </textarea>
+        
+        <!-- Widgets -->
+
+        <textedit name="title_edit" from="basetextedit">
+            <position>450,64</position>
+        </textedit>
+        
+        <textedit name="subtitle_edit" from="basetextedit">
+            <position>450,102</position>
+        </textedit>
+        
+        <textedit name="rating_edit" from="basetextedit">
+            <position>450,140</position>
+        </textedit>
+
+        <textedit name="director_edit" from="basetextedit">
+            <position>450,178</position>
+        </textedit>
+
+        <textedit name="inetref_edit" from="basetextedit">
+            <position>450,216</position>
+        </textedit>
+
+        <textedit name="plot_edit" from="basetextedit">
+            <position>450,254</position>
+        </textedit>
+
+        <spinbox name="season" from="basespinbox">
+            <position>1095,59</position>
+        </spinbox>
+        
+        <spinbox name="episode" from="basespinbox">
+            <position>1095,99</position>
+        </spinbox>
+        
+        <spinbox name="year_spin" from="basespinbox">
+            <position>1095,139</position>
+        </spinbox>
+
+        <spinbox name="userrating_spin" from="basespinbox">
+            <position>1095,179</position>
+        </spinbox>
+
+        <spinbox name="length_spin" from="basespinbox">
+            <position>1095,219</position>
+        </spinbox>
+
+        <buttonlist name="level_select" from="baseselector">
+            <position>965,259</position>
+        </buttonlist>
+        
+        <buttonlist name="category_select" from="baseselector">
+            <position>965,299</position>
+        </buttonlist>
+        
+        <buttonlist name="child_select" from="baseselector">
+            <position>965,339</position>
+        </buttonlist>
+
+        <button name="coverart_button" from="basesearchbutton">
+            <area>110,435,32,32</area>
+        </button>
+        
+        <textarea name="coverart_text" from="basetextarea">
+            <area>280,435,300,40</area>
+            <value>/path/to/the/thing.jpg</value>
+        </textarea>
+        
+        <button name="screenshot_button" from="basesearchbutton">
+            <area>660,435,32,32</area>
+        </button>
+        
+        <textarea name="screenshot_text" from="basetextarea">
+            <area>840,435,300,40</area>
+            <value>/path/to/the/thing.jpg</value>
+        </textarea>
+        
+        <button name="banner_button" from="basesearchbutton">
+            <area>110,485,32,32</area>
+        </button>
+        
+        <textarea name="banner_text" from="basetextarea">
+            <area>280,485,300,40</area>
+            <value>/path/to/the/thing.jpg</value>
+        </textarea>
+        
+        <button name="fanart_button" from="basesearchbutton">
+            <area>660,485,32,32</area>
+        </button>
+        
+        <textarea name="fanart_text" from="basetextarea">
+            <area>840,485,300,40</area>
+            <value>/path/to/the/thing.jpg</value>
+        </textarea>
+        
+        <button name="trailer_button" from="basesearchbutton">
+            <area>110,535,32,32</area>
+        </button>
+        
+        <textarea name="trailer_text" from="basetextarea">
+            <area>280,535,300,40</area>
+            <value>/path/to/the/thing.jpg</value>
+        </textarea>
+        
+        <checkbox name="browse_check" from="basecheckbox">
+            <position>660,535</position>
+        </checkbox>
+
+        <checkbox name="watched_check" from="basecheckbox">
+            <position>110,585</position>
+        </checkbox>
+
+        <textedit name="player_edit" from="basetextedit">
+            <position>850,585</position>
+        </textedit>
+        
+        <button name="done_button" from="basebutton">
+            <area>565,625,150,50</area>
+            <value>Done</value>
+        </button>
+        
+        <imagetype name="clockback">
+            <area>525,695,230,51</area>
+            <filename>images/clock_backdrop.png</filename>
+        </imagetype>
+        
+        <font name="clock" from="baseextrasmall">
+            <size>11</size>
+            <color>#FFFFFF</color>
+        </font>
+        
+        <clock name="clock">
+            <area>529,700,219,25</area>
+            <font>clock</font>
+            <format>%DATE%, %TIME%</format>
+            <align>center</align>
+            <alpha>255</alpha>
+        </clock>
+        
+        <imagetype name="clockbackoverlay">
+            <area>525,695,230,23</area>
+            <filename>images/clock_backdrop_overlay.png</filename>
+        </imagetype>
+        
+    </window>
+    
+    <window name="filter">
+        <area>-1,-1,1280,720</area>
+
+        <imagetype name="darken">
+            <area>0,0,1280,720</area>
+            <filename>images/popup_darken.png</filename>
+        </imagetype>
+
+        <shape name="desc_background">
+            <area>240,50,800,620</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="180" />
+            <line color="#FFFFFF" alpha="255" width="2" />
+            <cornerradius>12</cornerradius>
+        </shape>
+        
+        <!-- Labels -->
+        
+        <textarea name="category_text" from="basetextarea">
+            <area>260,127,140,34</area>
+            <value>Category :</value>
+            <align>right,top</align>
+        </textarea>
+        
+        <textarea name="genre_text" from="category_text">
+            <position>260,171</position>
+            <value>Genre :</value>
+        </textarea>
+        
+        <textarea name="country_text" from="category_text">
+            <position>260,215</position>
+            <value>Country :</value>
+        </textarea>
+        
+        <textarea name="cast_text" from="category_text">
+            <position>260,259</position>
+            <value>Actor/Actress :</value>
+        </textarea>
+        
+        <textarea name="year_text" from="category_text">
+            <position>260,303</position>
+            <value>Year :</value>
+        </textarea>
+        
+        <textarea name="runtime_text" from="category_text">
+            <position>260,347</position>
+            <value>Runtime :</value>
+        </textarea>
+        
+        <textarea name="userrating_text" from="category_text">
+            <position>650,127</position>
+            <value>User Rating :</value>
+        </textarea>
+        
+        <textarea name="browse_text" from="category_text">
+            <position>650,171</position>
+            <value>Browse :</value>
+        </textarea>
+        
+        <textarea name="inetref_text" from="category_text">
+            <position>650,215</position>
+            <value>InetRef :</value>
+        </textarea>
+        
+        <textarea name="coverfile_text" from="category_text">
+            <position>650,259</position>
+            <value>Cover File :</value>
+        </textarea>
+        
+        <textarea name="orderby_text" from="category_text">
+            <position>650,303</position>
+            <value>Sort by :</value>
+        </textarea>
+
+        <textarea name="watched_text" from="category_text">
+            <position>650,347</position>
+            <value>Watched :</value>
+        </textarea>
+
+        <textarea name="filter_text" from="category_text">
+            <area>180,415,400,40</area>
+            <value>Text Filter :</value>
+        </textarea>
+        
+        <textarea name="watched_text" from="category_text">
+            <position>650,347</position>
+            <value>Watched :</value>
+        </textarea>
+
+        <!-- Widgets -->
+        
+        <buttonlist name="category_select" from="baseselector">
+            <position>410,120</position>
+        </buttonlist>
+        
+        <buttonlist name="genre_select" from="baseselector">
+            <position>410,164</position>
+        </buttonlist>
+        
+        <buttonlist name="country_select" from="baseselector">
+            <position>410,208</position>
+        </buttonlist>
+        
+        <buttonlist name="cast_select" from="baseselector">
+            <position>410,252</position>
+        </buttonlist>
+        
+        <buttonlist name="year_select" from="baseselector">
+            <position>410,296</position>
+        </buttonlist>
+        
+        <buttonlist name="runtime_select" from="baseselector">
+            <position>410,340</position>
+        </buttonlist>
+        
+        <buttonlist name="userrating_select" from="baseselector">
+            <position>800,120</position>
+        </buttonlist>
+        
+        <buttonlist name="browse_select" from="baseselector">
+            <position>800,164</position>
+        </buttonlist>
+        
+        <buttonlist name="inetref_select" from="baseselector">
+            <position>800,208</position>
+        </buttonlist>
+        
+        <buttonlist name="coverfile_select" from="baseselector">
+            <position>800,252</position>
+        </buttonlist>
+        
+        <buttonlist name="orderby_select" from="baseselector">
+            <position>800,296</position>
+        </buttonlist>
+
+        <buttonlist name="watched_select" from="baseselector">
+            <position>800,340</position>
+        </buttonlist>
+        
+        <textedit name="textfilter_input" from="basetextedit">
+            <position>590,415</position>
+        </textedit>
+
+        <textarea name="numvideos_text" from="basetextarea">
+            <area>270,480,760,30</area>
+            <value>Result</value>
+            <align>allcenter</align>
+        </textarea>
+        
+        <button name="done_button" from="basebutton">
+            <position>665,600</position>
+            <value>Done</value>
+        </button>
+        
+        <button name="save_button" from="basebutton">
+            <position>465,600</position>
+            <value>Save</value>
+        </button>
+        
+        <imagetype name="clockback">
+            <area>525,695,230,51</area>
+            <filename>images/clock_backdrop.png</filename>
+        </imagetype>
+        
+        <font name="clock" from="baseextrasmall">
+            <size>11</size>
+            <color>#FFFFFF</color>
+        </font>
+        
+        <clock name="clock">
+            <area>529,700,219,25</area>
+            <font>clock</font>
+            <format>%DATE%, %TIME%</format>
+            <align>center</align>
+            <alpha>255</alpha>
+        </clock>
+        
+        <imagetype name="clockbackoverlay">
+            <area>525,695,230,23</area>
+            <filename>images/clock_backdrop_overlay.png</filename>
+        </imagetype>
+        
+    </window>
+    
+    <window name="itemdetailpopup">
+        <area>-1,-1,1280,720</area>        
+
+        <imagetype name="fanart">
+            <area>0,0,1280,720</area>
+            <filename>images/popup_darken.png</filename>
+        </imagetype>
+        
+        <imagetype name="itemdetailbackdrop">
+            <area>190,130,900,520</area>
+            <filename>images/itemdetailbackdrop2.png</filename>
+        </imagetype>
+        
+        <shape name="shape1">
+            <area>553,152,514,475</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="150"></fill>
+            <cornerradius>46</cornerradius>
+        </shape>
+        
+        <imagetype name="coverimage">
+            <area>254,184,243,364</area>
+            <filename>images/mv_browse_nocover.png</filename>
+            <preserveaspect>true</preserveaspect>
+            <reflection axis="vertical" scale="65" length="35" />
+        </imagetype>
+        
+        <imagetype name="screenshot">
+            <area>220,510,161,90</area>
+            <filename />
+            <preserveaspect>true</preserveaspect>
+            <reflection axis="vertical" scale="65" length="35" />
+        </imagetype>
+        
+        <textarea name="title" from="basetextarea">
+            <area>570,163,468,70</area>
+            <multiline>no</multiline>
+            <font>baselarge</font>
+            <align>center</align>
+            <cutdown>yes</cutdown>
+        </textarea>
+        
+        <textarea name="subtitle" from="basetextarea">
+            <area>564,215,480,70</area>
+            <multiline>no</multiline>
+            <font>basesmaller</font>
+            <align>center</align>
+            <cutdown>yes</cutdown>
+            <italics>yes</italics>
+        </textarea>
+        
+        <textarea name="seasonlabel" from="basetextarea">
+            <area>564,300,160,35</area>
+            <font>baseextrasmall</font>
+            <align>left</align>
+            <value>Seas/Ep:</value>
+        </textarea>
+        
+        <textarea name="##x##" from="basetextarea">
+            <area>660,300,100,35</area>
+            <font>baseextrasmall</font>
+            <align>left</align>
+        </textarea>
+        
+        <textarea name="lengthlabel" from="basetextarea">
+            <area>564,320,160,35</area>
+            <font>baseextrasmall</font>
+            <align>left</align>
+            <value>Length:</value>
+        </textarea>
+        
+        <textarea name="length" from="basetextarea">
+            <area>660,320,100,35</area>
+            <font>baseextrasmall</font>
+            <align>left</align>
+        </textarea>
+        
+        <textarea name="plot" from="basetextarea">
+            <area>565,354,486,203</area>
+            <multiline>yes</multiline>
+            <font>baseextrasmall</font>
+            <align>justify</align>
+        </textarea>
+        
+        <textarea name="dirlabel" from="basetextarea">
+            <area>780,300,70,35</area>
+            <font>baseextrasmall</font>
+            <align>left</align>
+            <value>Director:</value>
+        </textarea>
+        
+        <textarea name="director" from="basetextarea">
+            <area>865,300,190,35</area>
+            <font>baseextrasmall</font>
+            <align>left</align>
+        </textarea>
+        
+        <textarea name="yearlbl" from="basetextarea">
+            <area>780,320,70,35</area>
+            <align>left</align>
+            <font>baseextrasmall</font>
+            <value>Year:</value>
+        </textarea>
+        
+        <textarea name="year" from="basetextarea">
+            <area>865,320,100,35</area>
+            <align>left</align>
+            <font>baseextrasmall</font>
+        </textarea>
+        
+        <imagetype name="banner">
+            <area>615,160,379,70</area>
+            <mask>images/bannermask.png</mask>
+        </imagetype>
+        
+        <statetype name="userratingstate" from="baserating">
+            <area>710,268,187,25</area>
+        </statetype>
+        
+        <button name="done_button" from="basebutton">
+            <value>Done</value>
+            <position>862,560</position>
+        </button>
+        
+        <button name="play_button" from="basebutton">
+            <value>Play</value>
+            <position>616,560</position>
+        </button>
+        
+        <imagetype name="clockback">
+            <area>525,695,230,51</area>
+            <filename>images/clock_backdrop.png</filename>
+        </imagetype>
+        
+        <font name="clock" from="baseextrasmall">
+            <size>11</size>
+            <color>#FFFFFF</color>
+        </font>
+        
+        <clock name="clock">
+            <area>529,700,219,25</area>
+            <font>clock</font>
+            <format>%DATE%, %TIME%</format>
+            <align>center</align>
+            <alpha>255</alpha>
+        </clock>
+        
+        <imagetype name="clockbackoverlay">
+            <area>525,695,230,23</area>
+            <filename>images/clock_backdrop_overlay.png</filename>
+        </imagetype>
+        
+    </window>
+    
+</mythuitheme>

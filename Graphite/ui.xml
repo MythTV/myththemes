@@ -1,0 +1,85 @@
+<mythuitheme>
+    
+    <!-- workaround file for non mythui screens that refuse to fall back-->
+    
+    <window name="recording_options">
+        
+        <font name="enabled_state_0_font" base="list-active">
+            <color>#ffffff</color>
+        </font>
+        
+        <container name="background">
+            <image name="filler" draworder="0" fleximage="yes">
+                <filename>sr-background.png</filename>
+                <position>0,0</position>
+            </image>
+        </container>
+        
+        <container name="selector">
+            <area>0,300,800,300</area>
+            <listarea name="menu_list" draworder="4">
+                <area>20,10,760,274</area>
+                <fcnfont name="list-active" function="active"></fcnfont>
+                <fcnfont name="list-inactive" function="inactive"></fcnfont>
+                <fcnfont name="list-inactive" function="disabled"></fcnfont>
+                <fcnfont name="list-selected" function="selected"></fcnfont>
+                <fcnfont name="enabled_state_0_font" function="enabled_state_0"></fcnfont>
+                <columnpadding>1</columnpadding>
+                <column number="1" width="715" context="-1"></column>
+                <items>8</items>
+                <image function="selectionbar" filename="cr-selectbar.png" location="-10,-5"></image>
+                <image function="uparrow" filename="uparrow.png" location="755,15"></image>
+                <image function="downarrow" filename="downarrow.png" location="755,235"></image>
+                <image function="rightarrow" filename="rightarrow.png" location="0,0"></image>
+                <image function="leftarrow" filename="leftarrow.png" location="-10,0"></image>
+                
+            </listarea>
+            <image name="showinglines" draworder="3" fleximage="no">
+                <filename>rk-lines.png</filename>
+                <position>0,0</position>
+            </image>
+        </container>
+        
+        <container name="program_info">
+            <area>30,35,760,275</area>
+            <textarea name="banner" draworder="6">
+                <area>0,0,760,45</area>
+                <font>basemedium</font>
+            </textarea>
+            <textarea name="episode" draworder="6">
+                <area>0,35,760,40</area>
+                <font>basesmall</font>
+            </textarea>
+            <textarea name="infotime" draworder="6" align="right">
+                <area>10,70,120,30</area>
+                <font>basesmall</font>
+                <value>Airdate:</value>
+            </textarea>
+            <textarea name="timedate" draworder="6">
+                <area>135,70,600,30</area>
+                <font>basesmall</font>
+            </textarea>
+            <textarea name="infochan" draworder="6" align="right">
+                <area>10,100,120,30</area>
+                <font>basesmall</font>
+                <value>Channel:</value>
+            </textarea>
+            <textarea name="channel" draworder="6">
+                <area>135,100,600,30</area>
+                <font>basesmall</font>
+            </textarea>
+            <textarea name="infodesc" draworder="6" align="right">
+                <area>0,130,130,30</area>
+                <font>basesmall</font>
+                <value>Description:</value>
+            </textarea>
+            <textarea name="description" draworder="6">
+                <area>135,130,605,100</area>
+                <font>basesmall</font>
+                <multiline>yes</multiline>
+            </textarea>
+        </container>
+        
+    </window>
+</mythuitheme>
+

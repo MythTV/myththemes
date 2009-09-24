@@ -1,0 +1,99 @@
+<mythuitheme>
+    
+    <window name="gametree">
+        
+        <container name="background">
+            <image name="filler" draworder="0">
+                <filename>backgrounds/background.png</filename>
+                <position>0,0</position>
+            </image>
+            
+            <textarea name="heading" draworder="0" align="allcenter">
+                <area>45,19,364,39</area>
+                <font>largelightgrey</font>
+                <value>Video Manager</value>
+            </textarea>
+            
+            <image name="background" draworder="0">
+                <filename>backgrounds/up-background.png</filename>
+                <position>49,72</position>
+            </image>
+        </container>
+        
+        <container name="gameselector">
+            <area>56,75,1188,350</area>
+            <managedtreelist name="gametreelist" draworder="1" bins="2">
+                <area>25,10,1165,300</area>
+                <image function="selectionbar" filename="shared/selectbar.png" location="-26,0" scale="no"></image>
+                <!-- Some arrow images -->
+                <image function="uparrow" filename="shared/uparrow.png" location="-560,0"></image>
+                <image function="downarrow" filename="shared/downarrow.png" location="-560,10"></image>
+                <image function="leftarrow" filename="shared/leftarrow.png" location="0,0"></image>
+                <image function="rightarrow" filename="shared/rightarrow.png" location="0,0"></image>
+                <bin number="1">
+                    <area>30,16,190,250</area>
+                    <fcnfont name="smalllightgrey" function="active"></fcnfont>
+                    <fcnfont name="smallgrey" function="inactive"></fcnfont>
+                    <fcnfont name="small" function="selected"></fcnfont>
+                    <fcnfont name="smalllightgrey" function="selectable"></fcnfont>
+                </bin>
+                <bin number="2">
+                    <area>235,10,535,270</area>
+                    <fcnfont name="smalllightgrey" function="active"></fcnfont>
+                    <fcnfont name="small" function="selected"></fcnfont>
+                    <fcnfont name="smallgrey" function="inactive"></fcnfont>
+                    <fcnfont name="smalllightgrey" function="selectable"></fcnfont>
+                </bin>
+            </managedtreelist>
+            
+        </container>
+        
+        <container name="game_info">
+            <area>85,437,1115,270</area>
+            
+            <textarea name="gametitle" draworder="6">
+                <area>0,5,500,50</area>
+                <font>extralargebold</font>
+            </textarea>
+
+            <textarea name="systemname" draworder="6">
+                <area>140,75,500,35</area>
+                <font>medium</font>
+            </textarea>
+            
+            <textarea name="yearname" draworder="6">
+                <area>140,110,500,35</area>
+                <font>medium</font>
+            </textarea>
+            
+            <textarea name="genre" draworder="6">
+                <area>0,140,150,35</area>
+                <font>mediumgrey</font>
+                <value>Genre:</value>
+            </textarea>
+            
+            <textarea name="genrename" draworder="6">
+                <area>140,140,500,35</area>
+                <font>medium</font>
+            </textarea>
+            
+            <textarea name="favorite" draworder="6">
+                <area>0,170,150,35</area>
+                <font>mediumgrey</font>
+                <value>Favorite:</value>
+            </textarea>
+            
+            <textarea name="showfavorite" draworder="6">
+                <area>153,170,500,35</area>
+                <font>medium</font>
+            </textarea>
+            
+            <image name="gameimage" draworder="6" fleximage="no">
+                <position>535,25</position>
+                <staticsize>180,150</staticsize>
+            </image>
+        </container>
+        
+    </window>
+    
+</mythuitheme>

@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mythuitheme>
+    
+    <window name="news">
+        <area>-1,-1,1280,720</area>
+        
+        <shape name="shape">
+            <area>10,50,1260,220</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="180" />
+            <line color="#FFFFFF" alpha="255" width="2" />
+            <cornerradius>12</cornerradius>
+        </shape>
+        
+        <shape name="shape2">
+            <area>110,300,1060,240</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="180" />
+            <line color="#FFFFFF" alpha="255" width="2" />
+            <cornerradius>12</cornerradius>
+        </shape>
+        
+        <buttonlist name="siteslist" from="basebuttonlist">
+            <area>200,320,500,240</area>
+            <showarrow>yes</showarrow>
+        </buttonlist>
+        
+        <buttonlist name="articleslist" from="basebuttonlist">
+            <area>740,320,500,240</area>
+            <showarrow>no</showarrow>
+        </buttonlist>
+        
+        <textarea name="nosites" from="basetextarea">
+            <area>200,100,880,150</area>
+            <align>allcenter</align>
+            <multiline>yes</multiline>
+        </textarea>
+        
+        <textarea name="title" from="basetextarea">
+            <area>40,70,1020,70</area>
+            <font>baselarge</font>
+            <multiline>yes</multiline>
+        </textarea>
+        
+        <textarea name="description" from="basetextarea">
+            <area>40,135,1020,90</area>
+            <multiline>yes</multiline>
+        </textarea>
+        
+        <textarea name="updated" from="basetextarea">
+            <area>40,230,1080,35</area>
+        </textarea>
+        
+        <imagetype name="thumbnail">
+            <area>1080,135,160,120</area>
+            <preserveaspect>true</preserveaspect>
+        </imagetype>
+        
+        <imagetype name="enclosures">
+            <filename>images/enclosures.png</filename>
+            <position>1080,70</position>
+        </imagetype>
+        
+        <imagetype name="download">
+            <filename>images/need-download.png</filename>
+            <position>1208,70</position>
+        </imagetype>
+        
+        <imagetype name="ispodcast">
+            <filename>images/podcast.png</filename>
+            <position>1208,70</position>
+        </imagetype>
+        
+        <imagetype name="clockback">
+            <area>525,695,230,51</area>
+            <filename>images/clock_backdrop.png</filename>
+        </imagetype>
+        
+        <font name="clock" from="baseextrasmall">
+            <size>11</size>
+            <color>#FFFFFF</color>
+        </font>
+        
+        <clock name="clock">
+            <area>529,700,219,25</area>
+            <font>clock</font>
+            <format>%DATE%, %TIME%</format>
+            <align>center</align>
+            <alpha>255</alpha>
+        </clock>
+        
+        <imagetype name="clockbackoverlay">
+            <area>525,695,230,23</area>
+            <filename>images/clock_backdrop_overlay.png</filename>
+        </imagetype>
+        
+    </window>
+    
+    <window name="editor">
+        
+        <imagetype name="background">
+            <area>0,0,1280,720</area>
+            <filename>images/backgrounds/</filename>
+        </imagetype>
+        
+        <textarea name="title">
+            <area>100,15,1080,30</area>
+            <align>center</align>
+            <font>basemedium</font>
+            <value>Edit RSS News Feed</value>
+        </textarea>
+        
+        <shape name="shape">
+            <area>90,50,1100,620</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="180" />
+            <line color="#FFFFFF" alpha="255" width="2" />
+            <cornerradius>12</cornerradius>
+        </shape>
+        
+        <textarea name="namelabel" from="basetextarea">
+            <area>435,150,100,30</area>
+            <align>right,vcenter</align>
+        </textarea>
+        
+        <textedit name="name" from="basetextedit">
+            <position>550,150</position>
+        </textedit>
+        
+        <textarea name="urllabel" from="basetextarea">
+            <area>435,250,100,30</area>
+            <align>right,vcenter</align>
+        </textarea>
+        
+        <textedit name="url" from="basetextedit">
+            <position>550,250</position>
+        </textedit>
+        
+        <textarea name="iconlabel" from="basetextarea">
+            <area>435,350,100,30</area>
+            <align>right,vcenter</align>
+        </textarea>
+        
+        <textedit name="icon" from="basetextedit">
+            <position>550,350</position>
+        </textedit>
+        
+        <checkbox name="podcast_check" from="basecheckbox">
+            <position>550,445</position>
+        </checkbox>
+        
+        <textarea name="podcastlabel" from="basetextarea">
+            <area>435,445,100,30</area>
+            <align>right,vcenter</align>
+        </textarea>
+        
+        <button name="cancel" from="basebutton">
+            <position>470,600</position>
+            <value>Cancel</value>
+        </button>
+        
+        <button name="ok" from="basebutton">
+            <position>660,600</position>
+            <value>Ok</value>
+        </button>
+        
+        <imagetype name="clockback">
+            <area>525,695,230,51</area>
+            <filename>images/clock_backdrop.png</filename>
+        </imagetype>
+        
+        <font name="clock" from="baseextrasmall">
+            <size>11</size>
+            <color>#FFFFFF</color>
+        </font>
+        
+        <clock name="clock">
+            <area>529,700,219,25</area>
+            <font>clock</font>
+            <format>%DATE%, %TIME%</format>
+            <align>center</align>
+            <alpha>255</alpha>
+        </clock>
+        
+        <imagetype name="clockbackoverlay">
+            <area>525,695,230,23</area>
+            <filename>images/clock_backdrop_overlay.png</filename>
+        </imagetype>
+        
+    </window>
+    
+    <window name="config">
+        <area>-1-1,500,500</area>
+        
+        <shape name="shape">
+            <area>90,50,1100,520</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="180" />
+            <line color="#FFFFFF" alpha="255" width="2" />
+            <cornerradius>12</cornerradius>
+        </shape>
+        
+        <textarea name="leftdesc" from="basetextarea">
+            <area>64,86,540,30</area>
+            <value>Contexts</value>
+            <align>center</align>
+        </textarea>
+        
+        <buttonlist name="category" from="basebuttonlist">
+            <area>164,126,300,415</area>
+            <showarrow>no</showarrow>
+        </buttonlist>
+        
+        <textarea name="rightdesc" from="leftdesc">
+            <area>656,86,540,30</area>
+            <value>Actions</value>
+        </textarea>
+        
+        <buttonlist name="sites" from="category">
+            <area>756,126,440,415</area>
+        </buttonlist>
+        
+        <imagetype name="clockback">
+            <area>525,695,230,51</area>
+            <filename>images/clock_backdrop.png</filename>
+        </imagetype>
+        
+        <font name="clock" from="baseextrasmall">
+            <size>11</size>
+            <color>#FFFFFF</color>
+        </font>
+        
+        <clock name="clock">
+            <area>529,700,219,25</area>
+            <font>clock</font>
+            <format>%DATE%, %TIME%</format>
+            <align>center</align>
+            <alpha>255</alpha>
+        </clock>
+        
+        <imagetype name="clockbackoverlay">
+            <area>525,695,230,23</area>
+            <filename>images/clock_backdrop_overlay.png</filename>
+        </imagetype>
+        
+    </window>
+    
+</mythuitheme>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mythuitheme>
+
+    <window name="gallery">
+
+    <!-- Page Title -->
+
+        <textarea name="heading" from="baseheading">
+            <value>Image Gallery</value>
+        </textarea>
+
+    <!-- Page Background -->
+
+        <imagetype name="background">
+            <filename>backgrounds/menu_background.png</filename>
+            <position>78,66</position>
+        </imagetype>
+
+        <buttonlist name="images">
+            <area>135,70,1010,580</area>
+            <layout>grid</layout>
+            <spacing>18</spacing>
+            <wrapstyle>selection</wrapstyle>
+            <buttonarea>0,14,1010,570</buttonarea>
+            <statetype name="buttonitem">
+                <area>0,0,187,150</area>
+                <state name="active">
+                    <imagetype name="buttonbackground">
+                        <filename>gallery/back_reg.png</filename>
+                    </imagetype>
+                    <imagetype name="buttonimage">
+                        <area>5,5,177,115</area>
+                        <preserveaspect>yes</preserveaspect>
+                    </imagetype>
+                    <statetype name="buttoncheck">
+                        <position>130,100</position>
+                        <showempty>yes</showempty>
+                        <state type="full">
+                            <imagetype name="marked">
+                                <filename>gallery/mark.png</filename>
+                            </imagetype>
+                        </state>
+                    </statetype>
+                </state>
+                <state name="selected" from="active">
+                    <imagetype name="buttonbackground">
+                        <filename>gallery/back_sel.png</filename>
+                    </imagetype>
+                    <!-- <imagetype name="labelbackground">
+                        <area>0,100,187,50</area>
+                        <filename>gallery/label_background.png</filename>
+                    </imagetype>
+                    <textarea name="buttontext" from="basetextarea">
+                        <area>8,100,170,50</area>
+                        <font>basesmall</font>
+                        <align>hcenter,vcenter</align>
+                        <cutdown>yes</cutdown>
+                        <multiline>yes</multiline>
+                    </textarea> -->
+                </state>
+            </statetype>
+            <statetype name="upscrollarrow">
+                <position>505,0</position>
+                <showempty>false</showempty>
+                <state type="off">
+                    <imagetype name="upon">
+                        <filename>shared/uparrow.png</filename>
+                    </imagetype>
+                </state>
+            </statetype>
+            <statetype name="downscrollarrow">
+                <position>505,570</position>
+                <showempty>false</showempty>
+                <state type="off">
+                    <imagetype name="dnon">
+                        <filename>shared/downarrow.png</filename>
+                    </imagetype>
+                </state>
+            </statetype>
+        </buttonlist>
+
+    </window>
+
+</mythuitheme>

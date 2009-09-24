@@ -1,0 +1,55 @@
+<mythuitheme>
+    
+    <window name="status">
+        <area>-1,-1,1280,720</area>
+        
+        <shape name="list_background">
+            <area>420,50,800,500</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="180" />
+            <line color="#FFFFFF" alpha="255" width="2" />
+            <cornerradius>12</cornerradius>
+        </shape>
+        
+        <buttonlist name="category" from="basebuttonlist">
+            <area>40,50,349,500</area>
+        </buttonlist>
+        
+        <buttonlist name="log" from="basebuttonlist2">
+            <area>430,60,730,480</area>
+        </buttonlist>
+        
+        <textarea name="helptext" from="basetextarea">
+            <area>40,625,1200,85</area>
+            <value>This screen displays the status of various system components</value>
+            <multiline>yes</multiline>
+            <align>center</align>
+        </textarea>
+        
+        <imagetype name="clockback">
+            <area>525,695,230,51</area>
+            <filename>images/clock_backdrop.png</filename>
+        </imagetype>
+        
+        <font name="clock" from="baseextrasmall">
+            <size>11</size>
+            <color>#FFFFFF</color>
+        </font>
+        
+        <clock name="clock">
+            <area>529,700,219,25</area>
+            <font>clock</font>
+            <format>%DATE%, %TIME%</format>
+            <align>center</align>
+            <alpha>255</alpha>
+        </clock>
+        
+        <imagetype name="clockbackoverlay">
+            <area>525,695,230,23</area>
+            <filename>images/clock_backdrop_overlay.png</filename>
+        </imagetype>
+        
+    </window>
+    
+</mythuitheme>
+

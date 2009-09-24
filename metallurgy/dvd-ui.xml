@@ -1,0 +1,270 @@
+<mythuitheme>
+    
+    <!-- The dvd ripping/transcoding screen -->
+    <window name="dvd_rip">
+        
+        <container name="background">
+            <image name="filler" draworder="0">
+                <filename>backgrounds/background.png</filename>
+                <position>0,0</position>
+            </image>
+            
+            <textarea name="heading" draworder="0" align="allcenter">
+                <area>45,19,364,39</area>
+                <font>largelightgrey</font>
+                <value>Ripping DVD</value>
+            </textarea>
+            
+            <image name="background" draworder="0">
+                <filename>backgrounds/menu_background.png</filename>
+                <position>78,66</position>
+            </image>
+        </container>
+        
+        <container name="main_display">
+            <area>100,120,1080,510</area>
+            
+            <!-- Context 1 & 2 Warnings or Status Messages-->
+            
+            <textarea name="warning" draworder="0" align="center">
+                <multiline>yes</multiline>
+                <font>small</font>
+                <area>0,0,1080,510</area>
+            </textarea>
+            
+            <!-- Context 3 Browse active jobs -->
+            
+            <textarea name="overall_text" draworder="1" align="center">
+                <context>3</context>
+                <font>small</font>
+                <area>0,30,1080,30</area>
+            </textarea>
+            
+            <textarea name="job_text" draworder="1" align="center">
+                <context>3</context>
+                <font>small</font>
+                <area>0,180,1080,30</area>
+            </textarea>
+            
+            <textarea name="numb_jobs_text" draworder="1" align="center">
+                <context>3</context>
+                <font>small</font>
+                <area>0,330,1080,30</area>
+                <value>Job 1 of 1</value>
+            </textarea>
+            
+            <statusbar name="overall_status" draworder="1" whitespace="15">
+                <context>3</context>
+                <container>shared/general_slider_background.png</container>
+                <fill>shared/general_slider_foreground.png</fill>
+                <position>184,70</position>
+                <orientation>LeftToRight</orientation>
+            </statusbar>
+            
+            <statusbar name="job_status" draworder="1" whitespace="15">
+                <context>3</context>
+                <container>shared/general_slider_background.png</container>
+                <fill>shared/general_slider_foreground.png</fill>
+                <position>184,220</position>
+                <orientation>LeftToRight</orientation>
+            </statusbar>
+            
+            <pushbutton name="job_next_button" draworder="2">
+                <context>3</context>
+                <position>435,315</position>
+                <image function="on" filename="shared/right_button_on.png"></image>
+                <image function="off" filename="shared/right_button_off.png"></image>
+                <image function="pushed" filename="shared/right_button_pushed.png"></image>
+            </pushbutton>
+            
+            <pushbutton name="job_prev_button" draworder="2">
+                <context>3</context>
+                <position>205,315</position>
+                <image function="on" filename="shared/left_button_on.png"></image>
+                <image function="off" filename="shared/left_button_off.png"></image>
+                <image function="pushed" filename="shared/left_button_pushed.png"></image>
+            </pushbutton>
+            
+            <textbutton name="ripscreen_button" draworder="1">
+                <context>3</context>
+                <position>435,460</position>
+                <image function="on" filename="shared/text_button_on.png"></image>
+                <image function="off" filename="shared/text_button_off.png"></image>
+                <image function="pushed" filename="shared/text_button_pushed.png"></image>
+                <font>small</font>
+            </textbutton>
+            
+            <textbutton name="cancel_button" draworder="1">
+                <context>3</context>
+                <position>855,460</position>
+                <image function="on" filename="shared/text_button_on.png"></image>
+                <image function="off" filename="shared/text_button_off.png"></image>
+                <image function="pushed" filename="shared/text_button_pushed.png"></image>
+                <font>small</font>
+            </textbutton>
+            
+        </container>
+    </window>
+    
+    <window name="title_dialog">
+        
+        <container name="background">
+            <image name="filler" draworder="0">
+                <filename>backgrounds/background.png</filename>
+                <position>0,0</position>
+            </image>
+            
+            <textarea name="heading" draworder="0" align="allcenter">
+                <area>45,19,364,39</area>
+                <font>largelightgrey</font>
+                <value>Rip DVD</value>
+            </textarea>
+            
+            <image name="background" draworder="0">
+                <filename>backgrounds/menu_background.png</filename>
+                <position>78,66</position>
+            </image>
+        </container>
+        
+        <container name="main_display">
+            <area>190,150,1080,600</area>
+            
+            <textarea name="ripname_text" draworder="0" align="right">
+                <area>0,2,350,34</area>
+                <font>mediumgrey</font>
+                <value>Name:</value>
+            </textarea>
+            
+            <remoteedit name="name_edit" draworder="0">
+                <area>375,0,450,34</area>
+                <font>medium</font>
+            </remoteedit>
+            
+            <textarea name="playtime_text" draworder="0" align="right">
+                <area>0,42,350,34</area>
+                <font>mediumgrey</font>
+                <value>Length:</value>
+            </textarea>
+            
+            <textarea name="playlength_text" draworder="0" align="left">
+                <font>medium</font>
+                <area>375,40,650,34</area>
+                <value>0:00:00</value>
+            </textarea>
+            
+            <textarea name="ripcheck_text" draworder="0" align="right">
+                <font>mediumgrey</font>
+                <area>0,82,350,34</area>
+                <value>Select:</value>
+            </textarea>
+            
+            <checkbox name="ripcheck" draworder="0">
+                <position>375,80</position>
+                <image function="checked" filename="shared/checkbox_on.png"></image>
+                <image function="unchecked" filename="shared/checkbox_off.png"></image>
+                <image function="checked_high" filename="shared/checkbox_on_selected.png"></image>
+                <image function="unchecked_high" filename="shared/checkbox_off_selected.png"></image>
+            </checkbox>
+            
+            <textarea name="ripquality_text" draworder="0" align="right">
+                <font>mediumgrey</font>
+                <area>0,122,350,34</area>
+                <value>Quality:</value>
+            </textarea>
+            
+            <textarea name="ripaudio_text" draworder="0" align="right">
+                <font>mediumgrey</font>
+                <area>0,162,350,34</area>
+                <value>Audio Track:</value>
+            </textarea>
+            
+            <textarea name="ripacthree_text" draworder="0" align="right">
+                <font>mediumgrey</font>
+                <area>0,202,350,34</area>
+                <value>AC3 Audio:</value>
+            </textarea>
+            
+            <textarea name="subtitle_text" draworder="0" align="right">
+                <font>mediumgrey</font>
+                <area>0,242,350,34</area>
+                <value>Subtitles:</value>
+            </textarea>
+            
+            <textarea name="ripview_text" draworder="0" align="right">
+                <font>mediumgrey</font>
+                <area>0,282,350,34</area>
+                <value>Preview:</value>
+            </textarea>
+            
+            <selector name="quality_select" draworder="0">
+                <area>375,120,450,34</area>
+                <font>small</font>
+                <image function="on" filename="shared/leftright_on.png"></image>
+                <image function="off" filename="shared/leftright_off.png"></image>
+                <image function="pushed" filename="shared/leftright_pushed.png"></image>
+            </selector>
+            
+            <selector name="audio_select" draworder="0">
+                <area>375,160,450,34</area>
+                <font>small</font>
+                <image function="on" filename="shared/leftright_on.png"></image>
+                <image function="off" filename="shared/leftright_off.png"></image>
+                <image function="pushed" filename="shared/leftright_pushed.png"></image>
+            </selector>
+            
+            <checkbox name="ripacthree" draworder="0">
+                <position>375,200</position>
+                <image function="checked" filename="shared/checkbox_on.png"></image>
+                <image function="unchecked" filename="shared/checkbox_off.png"></image>
+                <image function="checked_high" filename="shared/checkbox_on_selected.png"></image>
+                <image function="unchecked_high" filename="shared/checkbox_off_selected.png"></image>
+            </checkbox>
+            
+            <selector name="subtitle_select" draworder="0">
+                <area>375,240,450,34</area>
+                <font>small</font>
+                <image function="on" filename="shared/leftright_on.png"></image>
+                <image function="off" filename="shared/leftright_off.png"></image>
+                <image function="pushed" filename="shared/leftright_pushed.png"></image>
+            </selector>
+            
+            <pushbutton name="view_button" draworder="0">
+                <position>375,280</position>
+                <image function="on" filename="shared/find_on.png"></image>
+                <image function="off" filename="shared/find_off.png"></image>
+                <image function="pushed" filename="shared/find_pushed.png"></image>
+            </pushbutton>
+            
+            <pushbutton name="prev_title_button" draworder="0">
+                <position>323,370</position>
+                <image function="on" filename="shared/left_button_on.png"></image>
+                <image function="off" filename="shared/left_button_off.png"></image>
+                <image function="pushed" filename="shared/left_button_pushed.png"></image>
+            </pushbutton>
+            
+            <textarea name="numb_titles_text" draworder="0" align="center">
+                <font>small</font>
+                <area>375,370,150,32</area>
+                <value>Title 1 of 1</value>
+            </textarea>
+            
+            <pushbutton name="next_title_button" draworder="0">
+                <position>545,370</position>
+                <image function="on" filename="shared/right_button_on.png"></image>
+                <image function="off" filename="shared/right_button_off.png"></image>
+                <image function="pushed" filename="shared/right_button_pushed.png"></image>
+            </pushbutton>
+            
+            <textbutton name="ripaway_button" draworder="0">
+                <position>355,430</position>
+                <image function="on" filename="shared/text_button_on.png"></image>
+                <image function="off" filename="shared/text_button_off.png"></image>
+                <image function="pushed" filename="shared/text_button_pushed.png"></image>
+                <font>small</font>
+            </textbutton>
+            
+        </container>
+        
+    </window>
+    
+</mythuitheme>

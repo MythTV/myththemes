@@ -48,68 +48,77 @@
             <buttonlist name="listtemplate" from="basebuttonlist" />
         </buttontree>
         
-        <textarea name="gametitle">
+        <textarea name="title">
             <area>240,65,650,60</area>
             <font>baseextralarge</font>
             <cutdown>yes</cutdown>
         </textarea>
         
-        <textarea name="system">
+        <textarea name="systemlabel">
             <area>240,110,140,35</area>
             <font>basesmall</font>
             <value>System:</value>
         </textarea>
         
-        <textarea name="systemname">
+        <textarea name="system">
             <area>380,110,150,35</area>
             <font>basesmall</font>
         </textarea>
         
-        <textarea name="year">
+        <textarea name="yearlabel">
             <area>540,135,140,35</area>
             <font>basesmall</font>
             <value>Year:</value>
         </textarea>
         
-        <textarea name="yearname">
+        <textarea name="year">
             <area>680,135,220,35</area>
             <font>basesmall</font>
         </textarea>
         
-        <textarea name="genre">
+        <textarea name="genrelabel">
             <area>540,110,150,35</area>
             <font>basesmall</font>
             <value>Genre:</value>
         </textarea>
         
-        <textarea name="genrename">
+        <textarea name="genre">
             <area>680,110,220,35</area>
             <font>basesmall</font>
         </textarea>
 
-        <textarea name="plot">
+        <textarea name="description">
             <area>240,170,670,105</area>
             <multiline>yes</multiline>
             <font>basesmaller</font>
         </textarea>
         
-        <textarea name="favorite">
+        <textarea name="favoritelabel">
             <area>240,135,140,35</area>
             <font>basesmall</font>
             <value>Favorite:</value>
         </textarea>
         
-        <textarea name="showfavorite">
-            <area>380,135,150,35</area>
-            <font>basesmall</font>
-        </textarea>
-        
-        <imagetype name="gameimage">
+        <statetype name="favorite">
+            <state name="no">
+                <textarea name="favorite" from="basetextarea">
+                    <area>380,135,150,35</area>
+                    <value>No</value>
+                </textarea>
+            </state>
+            <state name="yes" from="no">
+                <textarea name="favorite">
+                    <value>Yes</value>
+                </textarea>
+            </state>
+        </statetype>
+
+        <imagetype name="screenshot">
             <area>945,60,315,210</area>
             <preserveaspect>true</preserveaspect>
         </imagetype>
         
-        <imagetype name="boxart">
+        <imagetype name="coverart">
             <area>20,55,160,220</area>
             <preserveaspect>true</preserveaspect>
         </imagetype>
@@ -158,21 +167,21 @@
             <cornerradius>46</cornerradius>
         </shape>
         
-        <imagetype name="boxart">
+        <imagetype name="coverart">
             <area>254,184,243,364</area>
             <filename>images/mv_browse_nocover_large.png</filename>
             <preserveaspect>true</preserveaspect>
             <reflection axis="vertical" scale="65" length="35" />
         </imagetype>
         
-        <imagetype name="gameimage">
+        <imagetype name="screenshot">
             <area>220,510,161,90</area>
             <filename />
             <preserveaspect>true</preserveaspect>
             <reflection axis="vertical" scale="65" length="35" />
         </imagetype>
         
-        <textarea name="gamename" from="basetextarea">
+        <textarea name="title" from="basetextarea">
             <area>570,163,468,70</area>
             <multiline>no</multiline>
             <font>baselarge</font>
@@ -200,7 +209,7 @@
             <font>baseextrasmall</font>
         </textarea>-->
         
-        <textarea name="plot" from="basetextarea">
+        <textarea name="description" from="basetextarea">
             <area>565,354,486,200</area>
             <multiline>yes</multiline>
             <font>baseextrasmall</font>
@@ -403,7 +412,7 @@
         
         <!-- Widgets -->
         
-        <textedit name="gamename_edit" from="basetextedit">
+        <textedit name="title_edit" from="basetextedit">
             <position>560,105</position>
         </textedit>
         
@@ -423,7 +432,7 @@
             <position>560,297</position>
         </textedit>
 
-        <textedit name="plot_edit" from="basetextedit">
+        <textedit name="description_edit" from="basetextedit">
             <position>560,345</position>
         </textedit>
         
@@ -440,11 +449,11 @@
             <value>/path/to/the/thing.jpg</value>
         </textarea>
 
-        <button name="boxart_button" from="basesearchbutton">
+        <button name="coverart_button" from="basesearchbutton">
             <area>640,490,32,32</area>
         </button>
         
-        <textarea name="boxart_text" from="basetextarea">
+        <textarea name="coverart_text" from="basetextarea">
             <area>680,494,470,40</area>
             <value>/path/to/the/thing.jpg</value>
         </textarea>

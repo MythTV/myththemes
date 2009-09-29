@@ -256,29 +256,9 @@
             <position>410,605</position>
         </checkbox>
         
-        <button name="scan" from="basebutton">
+        <button name="scan" from="basewidebutton">
             <position>100,650</position>
-            <statetype name="buttonstate">
-                <state name="active">
-                    <imagetype name="background">
-                        <area>0,0,300,35</area>
-                        <filename>images/buttonbackground.png</filename>
-                    </imagetype>
-                    <textarea name="text">
-                        <area>5,5,290,30</area>
-                        <value>Channel Scan</value>
-                    </textarea>
-                </state>
-                <state name="selected" from="active">
-                    <imagetype name="background">
-                        <area>0,0,300,35</area>
-                        <filename>images/buttonbackground_selected.png</filename>
-                        <alphapulse min="200" max="255" change="1"/>
-                    </imagetype>
-                </state>
-                <state name="disabled" from="active" />
-                <state name="pushed" from="active" />
-            </statetype>
+            <value>Channel Scan</value>
         </button>
         
         <button name="importicons" from="scan">

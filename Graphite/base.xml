@@ -259,7 +259,7 @@
         </statetype>
     </button>
 
-    <!-- Base definition of a button -->
+    <!-- Base wide definition of a button -->
     <button name="basewidebutton">
         <position>0,0</position>
         <statetype name="buttonstate">
@@ -269,7 +269,7 @@
                     <filename>images/buttonbackground.png</filename>
                 </imagetype>
                 <textarea name="text">
-                    <area>5,4,290,30</area>
+                    <area>5,2,290,30</area>
                     <align>allcenter</align>
                     <font>basemedium</font>
                     <font state="selected">basemedium</font>
@@ -278,22 +278,13 @@
             </state>
             <state name="selected" from="active">
                 <imagetype name="background">
-                    <area>0,0,290,35</area>
+                    <area>0,0,300,35</area>
                     <filename>images/buttonbackground_selected.png</filename>
-                    <alphapulse min="150" max="255" change="1"/>
+                    <alphapulse min="200" max="255" change="1"/>
                 </imagetype>
             </state>
             <state name="disabled" from="active" />
-            <state name="pushed" from="active">
-                <imagetype name="background">
-                    <area>0,0,290,35</area>
-                    <filename>images/buttonbackground.png</filename>
-                    <alpha>255</alpha>
-                </imagetype>
-                <textarea name="text">
-                    <position>8,8</position>
-                </textarea>
-            </state>
+            <state name="pushed" from="active" />
         </statetype>
     </button>
     

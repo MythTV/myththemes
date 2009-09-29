@@ -115,7 +115,7 @@
                     <filename>images/buttonbackground.png</filename>
                 </imagetype>
                 <textarea name="buttontext">
-                    <area>5,10,97%,30</area>
+                    <area>5,6,97%,30</area>
                     <font>basesmall</font>
                     <cutdown>yes</cutdown>
                     <align>left,vcenter</align>

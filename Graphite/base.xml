@@ -3,6 +3,11 @@
     
     <!-- Base Font Definitions -->
     <font name="basesmall" face="DejaVu Sans">
+<!--The following is an acceptable replacement font, freely downloadable
+    from http://www.fontsite.com/download-free-fonts/cartogothic-std/
+    You may uncomment if you wish and use it. Remember to comment out
+    the above definition. -->
+<!--    <font name="basesmall" face="CartoGothic Std"><weight>1</weight>-->
         <size>16</size>
         <color>#FFFFFF</color>
     </font>
@@ -938,18 +943,18 @@
             <statetype name="buttonitem">
                 <state name="active">
                     <textarea name="buttontext">
-                        <area>5,10,315,30</area>
+                        <area>5,6,315,30</area>
                     </textarea>
                 </state>
                 <state name="inactive">
                     <textarea name="buttontext">
-                        <area>5,10,315,30</area>
+                        <area>5,6,315,30</area>
                         <cutdown>yes</cutdown>
                     </textarea>
                 </state>
                 <state name="selected">
                     <textarea name="buttontext">
-                        <area>5,10,315,30</area>
+                        <area>5,6,315,30</area>
                     </textarea>
                 </state>
             </statetype>

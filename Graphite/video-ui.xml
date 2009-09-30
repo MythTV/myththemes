@@ -424,11 +424,6 @@
             <filename>images/clock_backdrop.png</filename>
         </imagetype>
         
-        <font name="clock" from="baseextrasmall">
-            <size>11</size>
-            <color>#FFFFFF</color>
-        </font>
-        
         <clock name="clock">
             <area>529,700,219,25</area>
             <font>clock</font>
@@ -607,11 +602,6 @@
             <filename>images/clock_backdrop.png</filename>
         </imagetype>
         
-        <font name="clock" from="baseextrasmall">
-            <size>11</size>
-            <color>#FFFFFF</color>
-        </font>
-        
         <clock name="clock">
             <area>529,700,219,25</area>
             <font>clock</font>
@@ -709,11 +699,6 @@
             <filename>images/clock_backdrop.png</filename>
         </imagetype>
         
-        <font name="clock" from="baseextrasmall">
-            <size>11</size>
-            <color>#FFFFFF</color>
-        </font>
-        
         <clock name="clock">
             <area>544,700,189,25</area>
             <font>clock</font>
@@ -771,11 +756,6 @@
             <area>525,695,230,51</area>
             <filename>images/clock_backdrop.png</filename>
         </imagetype>
-        
-        <font name="clock" from="baseextrasmall">
-            <size>11</size>
-            <color>#FFFFFF</color>
-        </font>
         
         <clock name="clock">
             <area>529,700,219,25</area>
@@ -856,11 +836,6 @@
             <area>525,695,230,51</area>
             <filename>images/clock_backdrop.png</filename>
         </imagetype>
-        
-        <font name="clock" from="baseextrasmall">
-            <size>11</size>
-            <color>#FFFFFF</color>
-        </font>
         
         <clock name="clock">
             <area>529,700,219,25</area>
@@ -1192,11 +1167,6 @@
             <filename>images/clock_backdrop.png</filename>
         </imagetype>
         
-        <font name="clock" from="baseextrasmall">
-            <size>11</size>
-            <color>#FFFFFF</color>
-        </font>
-        
         <clock name="clock">
             <area>529,700,219,25</area>
             <font>clock</font>
@@ -1376,11 +1346,6 @@
             <filename>images/clock_backdrop.png</filename>
         </imagetype>
         
-        <font name="clock" from="baseextrasmall">
-            <size>11</size>
-            <color>#FFFFFF</color>
-        </font>
-        
         <clock name="clock">
             <area>529,700,219,25</area>
             <font>clock</font>
@@ -1529,11 +1494,6 @@
             <area>525,695,230,51</area>
             <filename>images/clock_backdrop.png</filename>
         </imagetype>
-        
-        <font name="clock" from="baseextrasmall">
-            <size>11</size>
-            <color>#FFFFFF</color>
-        </font>
         
         <clock name="clock">
             <area>529,700,219,25</area>

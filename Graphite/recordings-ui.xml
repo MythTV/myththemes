@@ -49,7 +49,7 @@
         <textarea name="title" from="basetextarea">
             <area>340,65,810,37</area>
             <font>baseextralarge</font>
-            <size>28</size>
+            <pixelsize>39</pixelsize>
             <cutdown>yes</cutdown>
             <align>vcenter</align>
         </textarea>
@@ -474,11 +474,6 @@
             <filename>images/clock_backdrop.png</filename>
         </imagetype>
         
-        <font name="clock" from="baseextrasmall">
-            <size>11</size>
-            <color>#FFFFFF</color>
-        </font>
-        
         <clock name="clock">
             <area>529,700,219,25</area>
             <font>clock</font>
@@ -523,11 +518,6 @@
             <area>525,695,230,51</area>
             <filename>images/clock_backdrop.png</filename>
         </imagetype>
-        
-        <font name="clock" from="baseextrasmall">
-            <size>11</size>
-            <color>#FFFFFF</color>
-        </font>
         
         <clock name="clock">
             <area>529,700,219,25</area>
@@ -707,11 +697,6 @@
             <filename>images/clock_backdrop.png</filename>
         </imagetype>
         
-        <font name="clock" from="baseextrasmall">
-            <size>11</size>
-            <color>#FFFFFF</color>
-        </font>
-        
         <clock name="clock">
             <area>529,700,219,25</area>
             <font>clock</font>
@@ -797,11 +782,6 @@
             <area>525,695,230,51</area>
             <filename>images/clock_backdrop.png</filename>
         </imagetype>
-        
-        <font name="clock" from="baseextrasmall">
-            <size>11</size>
-            <color>#FFFFFF</color>
-        </font>
         
         <clock name="clock">
             <area>529,700,219,25</area>

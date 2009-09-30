@@ -34,7 +34,7 @@
         </imagetype>
         
         <font name="clock" from="baseextrasmall">
-            <size>11</size>
+            <pixelsize>15</pixelsize>
             <color>#FFFFFF</color>
         </font>
         
@@ -135,7 +135,7 @@
         </imagetype>
         
         <font name="clock" from="baseextrasmall">
-            <size>11</size>
+            <pixelsize>15</pixelsize>
             <color>#FFFFFF</color>
         </font>
         
@@ -214,7 +214,7 @@
         </imagetype>
         
         <font name="clock" from="baseextrasmall">
-            <size>11</size>
+            <pixelsize>15</pixelsize>
             <color>#FFFFFF</color>
         </font>
         
@@ -306,7 +306,7 @@
         </imagetype>
         
         <font name="clock" from="baseextrasmall">
-            <size>11</size>
+            <pixelsize>15</pixelsize>
             <color>#FFFFFF</color>
         </font>
         

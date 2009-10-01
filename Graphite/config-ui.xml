@@ -77,6 +77,13 @@
                 </state>
             </statetype>
         </buttonlist>
+
+        <textarea name="status">
+            <area>100,650,1080,30</area>
+            <align>center</align>
+            <font>basesmall</font>
+            <value>Icon Download Status...</value>
+        </textarea>
         
         <textarea name="manuallabel" from="basetextarea">
             <area>240,110,300,25</area>

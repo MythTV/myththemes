@@ -739,7 +739,7 @@
             <font>baselarge</font>
         </textarea>
 
-        <!-- Labels  -->
+        -- Labels  --
 
         <textarea name="title_text" from="basetextarea">
             <area>50,135,250,40</area>
@@ -777,7 +777,7 @@
             <value>Unique Player Command:</value>
         </textarea>
 
-        <!-- Widgets -->
+        -- Widgets --
 
         <textedit name="title_edit" from="basetextedit">
             <position>310,125</position>
@@ -819,7 +819,8 @@
             <position>310,505</position>
         </button>
 
-    </window>-->
+    </window>
+-->
 
     <window name="filter">
 

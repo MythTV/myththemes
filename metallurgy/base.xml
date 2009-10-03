@@ -5,26 +5,22 @@
     <font name="extralarge" face="DejaVu Sans">
         <color>#FFFFFF</color>
         <size>19</size>
-        <size:small>18</size:small>
         <bold>yes</bold>
     </font>
 
     <font name="large" face="DejaVu Sans">
         <color>#FFFFFF</color>
         <size>18</size>
-        <size:small>17</size:small>
     </font>
 
     <font name="medium" face="DejaVu Sans">
         <color>#FFFFFF</color>
         <size>16</size>
-        <size:small>15</size:small>
     </font>
 
     <font name="small" face="DejaVu Sans">
         <color>#FFFFFF</color>
         <size>14</size>
-        <size:small>13</size:small>
     </font>
 
     <!-- Derived Fonts -->

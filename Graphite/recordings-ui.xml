@@ -294,55 +294,75 @@
             <line color="#FFFFFF" alpha="80" width="2"/>
             <cornerradius>40</cornerradius>
         </shape>
-        
-        <imagetype name="autoexpireoff">
-            <filename>images/autoexpire.png</filename>
-            <area>694,643,23,30</area>
-            <alpha>55</alpha>
-        </imagetype>
-        
-        <imagetype name="autoexpire">
-            <filename>images/autoexpire.png</filename>
-            <area>694,643,23,30</area>
-            <alpha>255</alpha>
-        </imagetype>
-        
-        <imagetype name="commflaggedoff">
-            <filename>images/skiplist.png</filename>
-            <area>482,645,41,26</area>
-            <alpha>55</alpha>
-        </imagetype>
-        
-        <imagetype name="commflagged">
-            <filename>images/skiplist.png</filename>
-            <area>482,645,41,26</area>
-            <alpha>255</alpha>
-        </imagetype>
-        
-        <imagetype name="bookmarkoff">
-            <filename>images/bookmark.png</filename>
-            <area>632,640,13,37</area>
-            <alpha>55</alpha>
-        </imagetype>
-        
-        <imagetype name="bookmark">
-            <filename>images/bookmark.png</filename>
-            <area>632,640,13,37</area>
-            <alpha>255</alpha>
-        </imagetype>
-        
-        <imagetype name="cutlistoff">
-            <filename>images/cutlist.png</filename>
-            <area>550,650,41,21</area>
-            <alpha>55</alpha>
-        </imagetype>
-        
-        <imagetype name="cutlist">
-            <filename>images/cutlist.png</filename>
-            <area>550,650,41,21</area>
-            <alpha>255</alpha>
-        </imagetype>
-        
+
+        <statetype name="autoexpire">
+            <state name="no">
+                <imagetype name="autoexpireoff">
+                    <filename>images/autoexpire.png</filename>
+                    <area>694,643,23,30</area>
+                    <alpha>55</alpha>
+                </imagetype>
+            </state>
+            <state name="yes">
+                <imagetype name="autoexpire">
+                    <filename>images/autoexpire.png</filename>
+                    <area>694,643,23,30</area>
+                    <alpha>255</alpha>
+                </imagetype>
+            </state>
+        </statetype>
+
+        <statetype name="commflagged">
+            <state name="no">
+                <imagetype name="commflaggedoff">
+                    <filename>images/skiplist.png</filename>
+                    <area>482,645,41,26</area>
+                    <alpha>55</alpha>
+                </imagetype>
+            </state>
+            <state name="yes">
+                <imagetype name="commflagged">
+                    <filename>images/skiplist.png</filename>
+                    <area>482,645,41,26</area>
+                    <alpha>255</alpha>
+                </imagetype>
+            </state>
+        </statetype>
+
+        <statetype name="bookmark">
+            <state name="no">        
+                <imagetype name="bookmarkoff">
+                    <filename>images/bookmark.png</filename>
+                    <area>632,640,13,37</area>
+                    <alpha>55</alpha>
+                </imagetype>
+            </state>
+            <state name="yes">
+                <imagetype name="bookmark">
+                    <filename>images/bookmark.png</filename>
+                    <area>632,640,13,37</area>
+                    <alpha>255</alpha>
+                </imagetype>
+            </state>
+        </statetype>
+
+        <statetype name="cutlist">
+            <state name="no">
+                <imagetype name="cutlistoff">
+                    <filename>images/cutlist.png</filename>
+                    <area>550,650,41,21</area>
+                    <alpha>55</alpha>
+                </imagetype>
+            </state>
+            <state name="yes">
+                <imagetype name="cutlist">
+                    <filename>images/cutlist.png</filename>
+                    <area>550,650,41,21</area>
+                    <alpha>255</alpha>
+                </imagetype>
+            </state>
+        </statetype>
+
         <imagetype name="ccoff">
             <filename>images/cc.png</filename>
             <area>885,640,49,37</area>
@@ -360,7 +380,7 @@
             <area>759,643,29,30</area>
             <alpha>55</alpha>
         </imagetype>
-        
+
         <statetype name="audioprops">
             <showempty>yes</showempty>
             <state name="stereo">
@@ -444,31 +464,41 @@
                 </imagetype>
             </state>
         </statetype>
-        
-        <imagetype name="watchedoff">
-            <filename>images/watched.png</filename>
-            <area>344,645,44,26</area>
-            <alpha>55</alpha>
-        </imagetype>
-        
-        <imagetype name="watched">
-            <filename>images/watched.png</filename>
-            <area>344,645,44,26</area>
-            <alpha>255</alpha>
-        </imagetype>
-        
-        <imagetype name="processingoff">
-            <filename>images/commflagging.png</filename>
-            <area>417,644,34,30</area>
-            <alpha>55</alpha>
-        </imagetype>
-        
-        <imagetype name="processing">
-            <filename>images/commflagging.png</filename>
-            <area>417,644,34,30</area>
-            <alphapulse min="80" max="255" change="2"/>
-        </imagetype>
-        
+
+        <statetype name="watched">
+            <state name="no">
+                <imagetype name="watchedoff">
+                    <filename>images/watched.png</filename>
+                    <area>344,645,44,26</area>
+                    <alpha>55</alpha>
+                </imagetype>
+            </state>
+            <state name="yes">
+                <imagetype name="watched">
+                    <filename>images/watched.png</filename>
+                    <area>344,645,44,26</area>
+                    <alpha>255</alpha>
+                </imagetype>
+            </state>
+        </statetype>
+
+        <statetype name="processing">
+            <state name="no">
+                <imagetype name="processingoff">
+                    <filename>images/commflagging.png</filename>
+                    <area>417,644,34,30</area>
+                    <alpha>55</alpha>
+                </imagetype>
+            </state>
+            <state name="yes">
+                <imagetype name="processing">
+                    <filename>images/commflagging.png</filename>
+                    <area>417,644,34,30</area>
+                    <alphapulse min="80" max="255" change="2"/>
+                </imagetype>
+            </state>
+        </statetype>
+
         <imagetype name="clockback">
             <area>525,695,230,51</area>
             <filename>images/clock_backdrop.png</filename>

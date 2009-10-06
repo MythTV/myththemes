@@ -4,23 +4,23 @@
     <!-- Base Fonts -->
     <font name="extralarge" face="DejaVu Sans">
         <color>#FFFFFF</color>
-        <size>19</size>
+        <pixelsize>27</pixelsize>
         <bold>yes</bold>
     </font>
 
     <font name="large" face="DejaVu Sans">
         <color>#FFFFFF</color>
-        <size>18</size>
+        <pixelsize>25</pixelsize>
     </font>
 
     <font name="medium" face="DejaVu Sans">
         <color>#FFFFFF</color>
-        <size>16</size>
+        <pixelsize>22</pixelsize>
     </font>
 
     <font name="small" face="DejaVu Sans">
         <color>#FFFFFF</color>
-        <size>14</size>
+        <pixelsize>19</pixelsize>
     </font>
 
     <!-- Derived Fonts -->
@@ -89,7 +89,7 @@
                     <filename>shared/text_button_off.png</filename>
                 </imagetype>
                 <textarea name="text">
-                    <area>5,5,140,30</area>
+                    <area>11,6,170,40</area>
                     <align>allcenter</align>
                     <font>basemedium</font>
                     <font state="selected">mediumlightgrey</font>
@@ -104,11 +104,8 @@
             <state name="disabled" from="active" />
             <state name="pushed" from="active">
                 <imagetype name="background">
-                    <filename>button_pushed_background.png</filename>
+                    <filename>shared/text_button_pushed.png</filename>
                 </imagetype>
-                <textarea name="text">
-                    <position>8,8</position>
-                </textarea>
             </state>
         </statetype>
     </button>
@@ -143,14 +140,14 @@
 
     <buttonlist name="basebuttonlist">
         <area>0,0,275,300</area>
-        <buttonarea>0,5,100%,98%</buttonarea>
+        <buttonarea>0,10,100%,100%</buttonarea>
         <wrapstyle>selection</wrapstyle>
-        <spacing>5</spacing>
+        <spacing>3</spacing>
         <statetype name="buttonitem">
             <state name="active">
                 <area>0,0,90%,30</area>
                 <textarea name="buttontext" from="basetextarea">
-                    <area>30,2,100%,30</area>
+                    <area>30,2,100%,25</area>
                     <font state="running">smallgreen</font>
                     <font state="disabled">smallgrey</font>
                     <font state="error">smallred</font>
@@ -192,7 +189,6 @@
             </state>
         </statetype>
     </buttonlist>
-
 
     <window name="backgroundwindow">
 
@@ -250,12 +246,12 @@
         </textarea>
 
         <buttonlist name="list" from="basebuttonlist">
-            <area>10,115,440,240</area>
-            <buttonarea>0,0,440,240</buttonarea>
+            <area>10,114,440,240</area>
+            <spacing>2</spacing>
             <statetype name="buttonitem">
                 <state name="active">
                     <textarea name="buttontext" from="basetextarea">
-                        <area>30,0,405,30</area>
+                        <area>30,0,375,30</area>
                     </textarea>
                     <imagetype name="buttonarrow">
                         <position>405,3</position>
@@ -274,10 +270,10 @@
                 </state>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>405,0</position>
+                <position>423,0</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>405,230</position>
+                <position>423,223</position>
             </statetype>
         </buttonlist>
     </window>

@@ -13,7 +13,7 @@
 
         <textarea name="titlelabel" from="basetextarea">
             <area>260,140,250,30</area>
-            <font>basemedium</font>
+            <font>medium</font>
             <align>right</align>
             <value>Title (Optional):</value>
         </textarea>
@@ -91,10 +91,7 @@
             <value>Upcoming Recordings</value>
         </textarea>
 
-        <imagetype name="position">
-            <position>49,72</position>
-            <filename>backgrounds/up-background.png</filename>
-        </imagetype>
+        <imagetype name="background" from="basebackground1" />
 
         <imagetype name="instr-background">
             <position>462,665</position>
@@ -106,20 +103,12 @@
             <filename>backgrounds/delete_usage_background.png</filename>
         </imagetype>
 
-        <textarea name="showinstr">
+        <textarea name="status" from="basetextarea">
             <area>462,665,356,35</area>
             <font>small</font>
-            <value>(1) All  (2) Important</value>
+            <font state="warning">smallred</font>
             <align>allcenter</align>
         </textarea>
-
-        <!--        <textarea name="status" from="basetextarea">
-            <area>400,10,380,30</area>
-            <align>right</align>
-            <font>basemedium</font>
-            <font state="warning">basemediumred</font>
-            <align>right</align>
-        </textarea>-->
 
         <textarea name="filter" from="basetextarea">
             <area>470,19,350,38</area>
@@ -128,22 +117,22 @@
 
         <buttonlist name="schedules" from="basebuttonlist">
             <area>58,75,1165,314</area>
-            <buttonarea>0,8,1165,300</buttonarea>
-            <spacing>4</spacing>
+            <buttonarea>0,10,1165,300</buttonarea>
+            <spacing>3</spacing>
             <statetype name="buttonitem">
-                <area>0,0,1165,25</area>
                 <state name="active">
+                    <area>0,0,1165,30</area>
                     <textarea name="shorttimedate" from="buttontext">
-                        <area>30,1,275,25</area>
+                        <area>30,2,275,25</area>
                     </textarea>
                     <textarea name="channel" from="buttontext">
-                        <area>320,1,245,25</area>
+                        <area>320,2,245,25</area>
                     </textarea>
                     <textarea name="title" from="buttontext">
-                        <area>560,1,605,25</area>
+                        <area>560,2,605,25</area>
                     </textarea>
                     <textarea name="card" from="buttontext">
-                        <area>1130,1,25,25</area>
+                        <area>1130,2,25,25</area>
                         <align>right</align>
                     </textarea>
                 </state>
@@ -184,10 +173,10 @@
             <area>85,532,1115,110</area>
             <font>medium</font>
             <multiline>yes</multiline>
-            <template>%YEARSTARS| %%DESCRIPTION%%LONGREPEAT%</template>
+            <template>%YEARSTARS| %%DESCRIPTION%%| LONGREPEAT%</template>
         </textarea>
 
-        <textarea name="recordingstatus" from="basetextarea">
+        <textarea name="rectypestatus" from="basetextarea">
             <area>790,445,405,60</area>
             <multiline>yes</multiline>
             <align>right</align>
@@ -195,7 +184,7 @@
 
         <textarea name="norecordings_info">
             <area>90,60,1100,250</area>
-            <font>basemedium</font>
+            <font>medium</font>
             <value>You Haven't Scheduled Any Programs To Be Recorded\n
             To schedule a recording, exit this screen and select 'Program
             Guide' or 'Program Finder'</value>
@@ -220,8 +209,11 @@
             <area>57,73,60,285</area>
             <scrollstyle>center</scrollstyle>
             <wrapstyle>items</wrapstyle>
-            <spacing>8</spacing>
-            <buttonarea>0,16,60,265</buttonarea>
+            <spacing>0</spacing>
+            <buttonarea>0,10,60,271</buttonarea>
+            <statetype name="buttonitem">
+                <area>0,0,100%,25</area>
+            </statetype>
             <statetype name="upscrollarrow">
                 <position>21,0</position>
             </statetype>
@@ -232,7 +224,13 @@
 
         <buttonlist name="shows" from="basebuttonlist">
             <area>168,73,710,285</area>
-            <buttonarea>0,8,710,275</buttonarea>
+            <scrollstyle>center</scrollstyle>
+            <wrapstyle>items</wrapstyle>
+            <spacing>0</spacing>
+            <buttonarea>0,10,710,271</buttonarea>
+            <statetype name="buttonitem">
+                <area>0,0,100%,25</area>
+            </statetype>
             <statetype name="upscrollarrow">
                 <position>350,0</position>
             </statetype>
@@ -243,7 +241,13 @@
 
         <buttonlist name="times" from="basebuttonlist">
             <area>938,73,282,285</area>
-            <buttonarea>0,8,282,275</buttonarea>
+            <scrollstyle>center</scrollstyle>
+            <wrapstyle>items</wrapstyle>
+            <spacing>0</spacing>
+            <buttonarea>0,10,282,271</buttonarea>
+            <statetype name="buttonitem">
+                <area>0,0,100%,25</area>
+            </statetype>
         </buttonlist>
 
         <textarea name="title" from="basetextarea">
@@ -345,7 +349,7 @@
                     </imagetype>
                     <textarea name="buttontext" from="basetextarea">
                         <area>10,3,220,28</area>
-                        <font>basesmall</font>
+                        <font>small</font>
                         <align>allcenter</align>
                     </textarea>
                 </state>
@@ -491,6 +495,116 @@
         <container name="current_video">
             <area>88,466,260,146</area>
         </container>
+
+    </window>
+
+    <!-- Previously recorded screen -->
+    <window name="programlist">
+
+        <textarea name="sched" from="baseheading">
+            <value>Previously Recorded</value>
+        </textarea>
+
+        <imagetype name="background" from="basebackground1" />
+
+        <imagetype name="instr-background">
+            <filename>backgrounds/delete_usage_background.png</filename>
+            <position>462,665</position>
+        </imagetype>
+
+        <imagetype name="showing-background">
+            <filename>backgrounds/delete_usage_background.png</filename>
+            <position>462,20</position>
+        </imagetype>
+
+        <textarea name="showinstr" align="allcenter">
+            <area>462,665,356,35</area>
+            <font>small</font>
+            <value>(1) Time (2) Title</value>
+            <align>allcenter</align>
+        </textarea>
+
+        <textarea name="curview" align="allcenter">
+            <area>462,20,356,35</area>
+            <font>small</font>
+            <align>allcenter</align>
+        </textarea>
+
+        <buttonlist name="proglist" from="basebuttonlist">
+            <area>58,75,1165,314</area>
+            <buttonarea>0,10,1165,300</buttonarea>
+            <spacing>3</spacing>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>0,0,1165,30</area>
+                    <textarea name="shorttimedate" from="buttontext">
+                        <area>30,2,275,25</area>
+                    </textarea>
+                    <textarea name="channel" from="buttontext">
+                        <area>320,2,245,25</area>
+                    </textarea>
+                    <textarea name="title" from="buttontext">
+                        <area>560,2,605,25</area>
+                    </textarea>
+                    <textarea name="card" from="buttontext">
+                        <area>1130,2,25,25</area>
+                        <align>right</align>
+                    </textarea>
+                </state>
+                <state name="selected" from="active" />
+                <state name="inactive" from="active" />
+            </statetype>
+            <statetype name="upscrollarrow">
+                <position>560,0</position>
+            </statetype>
+            <statetype name="downscrollarrow">
+                <position>560,304</position>
+            </statetype>
+        </buttonlist>
+
+        <textarea name="title" from="basetextarea">
+            <area>85,437,780,35</area>
+            <font>extralargebold</font>
+        </textarea>
+
+        <textarea name="subtitle" from="basetextarea">
+            <area>85,472,780,30</area>
+            <font>mediumbold</font>
+            <multiline>yes</multiline>
+        </textarea>
+
+        <textarea name="channel" from="basetextarea">
+            <area>885,502,310,30</area>
+            <font>mediumgrey</font>
+            <align>right</align>
+        </textarea>
+
+        <textarea name="timedate" from="basetextarea">
+            <area>85,502,540,30</area>
+            <font>mediumgrey</font>
+        </textarea>
+
+        <textarea name="description" from="basetextarea">
+            <area>85,532,1115,110</area>
+            <font>medium</font>
+            <multiline>yes</multiline>
+            <value>%YEARSTARS% %DESCRIPTION% %LONGREPEAT%</value>
+        </textarea>
+
+        <textarea name="rectype" from="basetextarea">
+            <area>875,447,320,60</area>
+            <font>smallgrey</font>
+            <multiline>yes</multiline>
+            <align>right</align>
+        </textarea>
+
+        <textarea name="msg">
+            <area>90,60,1100,250</area>
+            <font>medium</font>
+            <value>No programs matched this search.</value>
+            <multiline>yes</multiline>
+            <align>allcenter</align>
+        </textarea>
 
     </window>
 

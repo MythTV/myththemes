@@ -11,7 +11,7 @@ QMAKE_COPY_DIR = sh ./cpsvndir
 win32:QMAKE_COPY_DIR = sh ./cpsimple
 
 themes.path = $${PREFIX}/share/mythtv/themes/
-themes.files = Graphite metallurgy
+themes.files = Graphite metallurgy BlackCurves-OSD
 
 INSTALLS += themes
 

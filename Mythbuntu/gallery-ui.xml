@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mythuitheme>
+
+    <window name="gallery">
+
+    <font name="menu" from="basesmall">
+      <color>#ffffff</color>
+      <size>16</size>
+    </font>
+
+    <font name="title" face="baselarge">
+      <color>#ffffff</color>
+      <shadowcolor>#666666</shadowcolor>
+      <shadow>2,2</shadow>
+      <size>24</size>
+    </font>
+
+        <buttonlist name="images">
+            <area>0,70,1280,520</area>
+            <layout>grid</layout>
+            <spacing>19</spacing>
+            <buttonarea>60,0,1170,520</buttonarea>
+            <statetype name="buttonitem">
+                <area>0,0,150,115</area>
+                <state name="active">
+            	    <shape name="btnbckgrnd">
+            		<area>0,0,150,115</area>
+        		<type>roundbox</type> 
+            		<fill color="#666666" alpha="50" />
+            		<line color="#FFFFFF" alpha="0" width="0" /> 
+            		<cornerradius>10</cornerradius> 
+            	    </shape>
+                    <imagetype name="buttonimage">
+                        <area>5,5,140,105</area>
+                        <preserveaspect>yes</preserveaspect>
+                    </imagetype>
+                    <statetype name="buttoncheck">
+                        <position>130,100</position>
+                        <showempty>yes</showempty>
+                        <state type="full">
+                            <imagetype name="marked">
+                                <filename>shared/mv_checked_high.png</filename>
+                            </imagetype>
+                        </state>
+                    </statetype>
+                </state>
+                <state name="selected" from="active">
+            	    <shape name="btnbckgrnd">
+            		<fill color="#FFFFFF" alpha="50" />
+            	    </shape>
+                </state>
+            </statetype>
+            <statetype name="upscrollarrow">
+                <position>5,0</position>
+                <state type="full">
+                    <imagetype name="upoff">
+                        <filename>uparrow.png</filename>
+                    </imagetype>
+                </state>
+            </statetype>
+            <statetype name="downscrollarrow">
+                <position>5,485</position>
+                <state type="full">
+                    <imagetype name="dnoff">
+                        <filename>downarrow.png</filename>
+                    </imagetype>
+                </state>
+            </statetype>
+        </buttonlist>
+
+        <shape name="infobox">
+	    <area>-10,600,1300,150</area>.
+	    <type>box</type>.
+            <fill color="#000000" alpha="100" />
+            <line color="#FFFFFF" alpha="200" width="3" />.
+        </shape>
+
+      <textarea name="help1" draworder="1">
+        <area>0,620,1280,35</area>
+        <font>menu</font>
+        <align>allcenter</align>
+        <value>SELECT: View</value>
+      </textarea>
+
+      <textarea name="help2" draworder="1">
+        <area>0,660,1280,35</area>
+        <font>menu</font>
+        <align>allcenter</align>
+        <value>MENU: Activate Menu</value>
+      </textarea>
+
+        <shape name="titlebox">
+	    <area>-10,-10,1300,65</area>.
+	    <type>box</type>.
+            <fill color="#000000" alpha="100" />
+            <line color="#FFFFFF" alpha="200" width="3" />.
+        </shape>
+
+        <textarea name="title" from="basetextarea">
+            <area>0,0,1280,50</area>
+            <font>title</font>
+            <align>allcenter</align>
+        </textarea>
+
+        <!-- optional - shows a message when no images are available
+             in the current directory -->
+        <textarea name="noimages" from="basetextarea">
+            <area>15,20,770,560</area>
+            <font>basemedium</font>
+            <align>allcenter</align>
+        </textarea>
+    </window>
+
+</mythuitheme>

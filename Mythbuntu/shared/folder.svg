@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.47pre1 r21720"
+   width="25"
+   height="21"
+   sodipodi:docname="folder.svg"
+   enable-background="new"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape"
+   inkscape:export-filename="/home/aphorism/Source/mythtv-theme-mythbuntu/usr/share/mythtv/themes/Mythbuntu-9.10/shared/folder.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
+  <metadata
+     id="metadata8">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs6">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       id="perspective10" />
+    <filter
+       inkscape:collect="always"
+       id="filter3606">
+      <feBlend
+         inkscape:collect="always"
+         mode="darken"
+         in2="BackgroundImage"
+         id="feBlend3608" />
+    </filter>
+    <inkscape:perspective
+       id="perspective3633"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3679"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <filter
+       inkscape:collect="always"
+       id="filter3728"
+       x="-0.071367249"
+       width="1.1427345"
+       y="-0.14659954"
+       height="1.2931991">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.62804285"
+         id="feGaussianBlur3730" />
+    </filter>
+  </defs>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="2048"
+     inkscape:window-height="1129"
+     id="namedview4"
+     showgrid="false"
+     borderlayer="true"
+     inkscape:showpageshadow="false"
+     inkscape:zoom="1"
+     inkscape:cx="5.5793345"
+     inkscape:cy="7.0223562"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <image
+     xlink:href="file:///home/aphorism/Source/mythtv-theme-mythbuntu/usr/share/mythtv/themes/Mythbuntu-9.10/shared/folder.png"
+     width="25"
+     height="21"
+     id="image12"
+     x="0"
+     y="0" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Work Canvas"
+     style="display:none;filter:url(#filter3606)">
+    <rect
+       style="fill:#000000;fill-opacity:1;stroke:none"
+       id="rect2824"
+       width="37"
+       height="38"
+       x="-4.8454938"
+       y="-7.161139" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer1"
+     inkscape:label="Ellipses">
+    <text
+       xml:space="preserve"
+       style="font-size:10.57795334000000054px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#000000;stroke:none;font-family:HeadlineNEWS;-inkscape-font-specification:HeadlineNEWS;filter:url(#filter3728);opacity:0.8"
+       x="1.6513199"
+       y="14.12551"
+       id="text3621-3"><tspan
+         sodipodi:role="line"
+         id="tspan3623-2"
+         x="1.6513199"
+         y="14.12551">[...]</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10.57795334px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#ffffff;stroke:none;font-family:HeadlineNEWS;-inkscape-font-specification:HeadlineNEWS"
+       x="1.1513199"
+       y="13.62551"
+       id="text3621"><tspan
+         sodipodi:role="line"
+         id="tspan3623"
+         x="1.1513199"
+         y="13.62551">[...]</tspan></text>
+  </g>
+</svg>

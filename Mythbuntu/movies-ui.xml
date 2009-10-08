@@ -1,0 +1,77 @@
+<mythuitheme>
+
+    <window name="moviesui">
+
+        <imagetype name="moviesbackground">
+            <filename>background.png</filename>
+            <position>0,0</position>
+        </imagetype>
+
+	<shape name="infofiller">
+	    <area>15,460,1250,220</area>
+	    <type>roundbox</type>
+            <fill color="#000000" alpha="150" />
+            <cornerradius>12</cornerradius>
+        </shape>
+
+	<shape name="theaternamebox">
+	    <area>15,400,1250,50</area>
+	    <type>roundbox</type>
+            <fill color="#000000" alpha="150" />
+            <cornerradius>12</cornerradius>
+        </shape>
+        <buttontree name="movietreelist">
+            <area>40,40,1200,330</area>
+            <numlists>2</numlists>
+            <spacing>10</spacing>
+            <buttonlist name="listtemplate" from="basebuttonlist" />
+        </buttontree>
+
+        <textarea name="theatername" from="basetextarea">
+            <area>25,400,1230,50</area>
+            <font>basesmall</font>
+            <multiline>yes</multiline>
+            <align>left,vcenter</align>
+            <value>Theater name</value>
+        </textarea>
+
+        <textarea name="movietitle" from="basetextarea">
+            <area>25,475,1230,80</area>
+            <font>baselarge</font>
+            <multiline>yes</multiline>
+        </textarea>
+
+        <textarea name="rating" from="basetextarea">
+            <area>25,550,150,35</area>
+                <align>left,vcenter</align>
+            <value>Rating:</value>
+        </textarea>
+
+        <textarea name="ratingvalue" from="basetextarea">
+            <area>260,550,500,35</area>
+            <align>left,vcenter</align>
+        </textarea>
+
+        <textarea name="runningtime" from="rating">
+            <area>25,580,300,35</area>
+            <value>Running Time:</value>
+        </textarea>
+
+        <textarea name="runningtimevalue" from="ratingvalue">
+            <area>260,580,300,35</area>
+        </textarea>
+
+        <textarea name="showtimes" from="rating">
+            <area>25,610,300,35</area>
+            <value>Show Times:</value>
+        </textarea>
+
+        <textarea name="showtimesvalue" from="ratingvalue">
+            <area>260,615,700,60</area>
+            <align>left,top</align>
+            <multiline>yes</multiline>
+        </textarea>
+
+    </window>
+
+</mythuitheme>

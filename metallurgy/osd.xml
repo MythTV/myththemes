@@ -8,24 +8,28 @@
         <color normal="#FFFFFF">255</color>
         <size>28</size>
         <shadow>2,2</shadow>
+        <filename>FreeSans.ttf</filename>
     </font>
 
     <font name="medium">
         <color>255</color>
         <size>24</size>
         <shadow>2,2</shadow>
+        <filename>FreeSans.ttf</filename>
     </font>
 
     <font name="small">
         <color>255</color>
         <size>20</size>
         <shadow>2,2</shadow>
+        <filename>FreeSans.ttf</filename>
     </font>
 
     <font name="smallgrey">
         <color>204</color>
         <size>20</size>
         <shadow>2,2</shadow>
+        <filename>FreeSans.ttf</filename>
     </font>
 
     <container name="program_info" fademovement="-30,0">

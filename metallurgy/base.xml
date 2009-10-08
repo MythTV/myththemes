@@ -56,6 +56,10 @@
         <color>#AAAAAA</color>
     </font>
 
+    <font name="smallblack" from="small">
+        <color>#000000</color>
+    </font>
+
     <font name="smallgreen" from="small">
         <color>#3EAE09</color>
     </font>
@@ -109,6 +113,43 @@
             </state>
         </statetype>
     </button>
+
+    <!-- Base definition of a textedit -->
+    <textedit name="basetextedit">
+        <area>0,0,375,41</area>
+        <statetype name="background">
+            <state name="active">
+                <area>0,0,375,41</area>
+                <shape name="background">
+                    <area>18,0,357,100%</area>
+                    <type>roundbox</type>
+                    <cornerradius>3</cornerradius>
+                    <fill color="#999999" alpha="255" />
+                    <line color="#444444" width="2" />
+                </shape>
+                <imagetype name="left">
+                    <position>0,1</position>
+                    <filename>shared/textedit_left_unselected.png</filename>
+                </imagetype>
+            </state>
+            <state name="selected" from="active">
+                <shape name="background">
+                    <fill color="#CCCCCC" alpha="255" />
+                </shape>
+                <imagetype name="left">
+                    <filename>shared/textedit_left_selected.png</filename>
+                </imagetype>
+            </state>
+            <state name="inactive" from="active" />
+        </statetype>
+        <imagetype name="cursor">
+            <filename>cursor.png</filename>
+        </imagetype>
+        <textarea name="text">
+            <area>25,8,345,25</area>
+            <font>smallblack</font>
+        </textarea>
+    </textedit>
 
     <textarea name="basetextarea">
         <area>0,0,10,10</area>

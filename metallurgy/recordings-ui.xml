@@ -207,7 +207,7 @@
             <font>medium</font>
             <multiline>yes</multiline>
             <cutdown>yes</cutdown>
-            <value>%YEARSTARS% %DESCRIPTION%</value>
+            <value>%YEARSTARS% %DESCRIPTION% %LONGREPEAT%</value>
         </textarea>
 
         <imagetype name="video_background">
@@ -343,86 +343,81 @@
         </buttonlist>
     </window>
 
-
-
-
-    <!-- Unported below this line -->
-
     <window name="passwordchanger">
-        <area>-1,-1,500,500</area>
-
+        <area>402,176,476,368</area>
         <imagetype name="backimg">
-            <filename>mythdialogbox-background.png</filename>
+            <filename>backgrounds/popup_background.png</filename>
         </imagetype>
-
         <textarea name="label" from="basetextarea">
-            <area>12,15,470,160</area>
-            <multiline>yes</multiline>
+            <area>15,8,440,95</area>
             <align>allcenter</align>
+            <multiline>yes</multiline>
             <value>Change Recording Group Password</value>
         </textarea>
 
         <textarea name="oldpasslabel" from="basetextarea">
-            <area>58,180,300,30</area>
-            <value>Old Password:</value>
+            <area>10,120,440,30</area>
+            <value>Old Password</value>
+            <align>hcenter</align>
         </textarea>
 
         <textedit name="oldpassword" from="basetextedit">
-            <position>58,210</position>
+            <position>45,150</position>
         </textedit>
 
-        <textarea name="newpasslabel" from="basetextarea">
-            <area>58,310,300,30</area>
-            <value>New Password:</value>
+        <textarea name="newpasslabel" from="oldpasslabel">
+            <position>10,200</position>
+            <value>New Password</value>
         </textarea>
 
         <textedit name="newpassword" from="basetextedit">
-            <position>58,340</position>
+            <position>45,230</position>
         </textedit>
 
         <button name="ok" from="basebutton">
-            <position>175,435</position>
+            <position>135,290</position>
             <value>Ok</value>
         </button>
     </window>
 
     <window name="editmetadata">
-        <area>-1,-1,500,500</area>
-
+        <area>402,176,476,368</area>
         <imagetype name="backimg">
-            <filename>mythdialogbox-background.png</filename>
+            <filename>backgrounds/popup_background.png</filename>
         </imagetype>
-
         <textarea name="label" from="basetextarea">
-            <area>12,15,470,160</area>
-            <multiline>yes</multiline>
+            <area>15,8,440,95</area>
             <align>allcenter</align>
+            <multiline>yes</multiline>
             <value>Edit Recording Metadata</value>
         </textarea>
 
         <textarea name="titlelabel" from="basetextarea">
-            <area>58,180,300,30</area>
-            <value>Title:</value>
+            <area>10,120,440,30</area>
+            <value>Title</value>
+            <align>hcenter</align>
         </textarea>
 
         <textedit name="title" from="basetextedit">
-            <position>58,210</position>
+            <position>45,150</position>
         </textedit>
 
-        <textarea name="subtitlelabel" from="basetextarea">
-            <area>58,310,300,30</area>
-            <value>Subtitle:</value>
+        <textarea name="subtitlelabel" from="oldpasslabel">
+            <position>10,200</position>
+            <value>Subtitle</value>
         </textarea>
 
         <textedit name="subtitle" from="basetextedit">
-            <position>58,340</position>
+            <position>45,230</position>
         </textedit>
 
         <button name="ok" from="basebutton">
-            <position>175,435</position>
+            <position>135,290</position>
             <value>Ok</value>
         </button>
     </window>
+
+    <!-- Unported below this line -->
 
     <window name="iconhelp">
         <area>-1,-1,700,500</area>

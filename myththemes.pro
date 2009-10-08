@@ -11,7 +11,9 @@ QMAKE_COPY_DIR = sh ./cpsvndir
 win32:QMAKE_COPY_DIR = sh ./cpsimple
 
 themes.path = $${PREFIX}/share/mythtv/themes/
-themes.files = Graphite metallurgy BlackCurves-OSD Mythbuntu
+themes.files = Graphite metallurgy Mythbuntu
+themes.files += blueosd Iulius-OSD Retro-OSD
+themes.files += defaultosd Titivillus-OSD
 
 INSTALLS += themes
 

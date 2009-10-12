@@ -365,6 +365,7 @@
             <timeslots>4</timeslots>
             <solidcolor>#404040</solidcolor>
             <selector type="box" linecolor="#808080" />
+            <showcategories>no</showcategories>
             <recordingcolor>#00aa00</recordingcolor>
             <conflictingcolor>#ff6600</conflictingcolor>
             <cutdown>yes</cutdown>

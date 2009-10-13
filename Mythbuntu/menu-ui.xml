@@ -856,7 +856,6 @@
 	</imagetype>
 
         <clock name="clock">
-            <color>#FFFFFF</color>
             <area>100,642,1120,60</area>
             <font>clock</font>
             <align>right</align>

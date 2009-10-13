@@ -631,7 +631,6 @@
         <buttonlist name="list" from="basebuttonlist">
             <area>18,225,470,250</area>
             <drawfrombottom>yes</drawfrombottom>
-            <align>center</align>
             <showarrow>no</showarrow>
             <wrapstyle>selection</wrapstyle>
             <statetype name="buttonitem">
@@ -680,7 +679,6 @@
         <buttonlist name="list" from="basebuttonlist">
             <area>100,320,1080,350</area>
             <drawfrombottom>yes</drawfrombottom>
-            <align>center</align>
             <showarrow>no</showarrow>
             <wrapstyle>selection</wrapstyle>
             <statetype name="buttonitem">
@@ -807,7 +805,6 @@
 
         <buttonlist name="itemlist" from="basebuttonlist">
             <area>10,150,480,260</area>
-            <align>left,vcenter</align>
             <showarrow>no</showarrow>
             <statetype name="buttonitem">
                 <state name="active">

@@ -740,6 +740,12 @@
             <align>vcenter,left</align>
         </textarea>
 
+        <textarea name="s##e##">
+            <area>600,10,140,60</area>
+            <font>basesmallgrey</font>
+            <align>vcenter,right</align>
+        </textarea>
+
         <textarea name="position" from="basetextarea">
             <area>1040,10,190,60</area>
             <align>vcenter,right</align>

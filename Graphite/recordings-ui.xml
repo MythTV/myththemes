@@ -84,7 +84,6 @@
             <font>basesmaller</font>
             <multiline>yes</multiline>
             <cutdown>yes</cutdown>
-            <value>%DESCRIPTION%</value>
             <align>justify</align>
         </textarea>
         

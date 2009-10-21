@@ -87,9 +87,7 @@
             <align>justify</align>
         </textarea>
         
-        <textarea name="norecordings">
-            <area>314,310,900,140</area>
-            <font>basemedium</font>
+        <textarea name="norecordings" from="description">
             <value>No Recordings Present...</value>
             <multiline>yes</multiline>
             <align>allcenter</align>

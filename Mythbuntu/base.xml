@@ -630,6 +630,7 @@
 
         <buttonlist name="list" from="basebuttonlist">
             <area>18,225,470,250</area>
+            <spacing>4</spacing>
             <drawfrombottom>yes</drawfrombottom>
             <showarrow>no</showarrow>
             <wrapstyle>selection</wrapstyle>

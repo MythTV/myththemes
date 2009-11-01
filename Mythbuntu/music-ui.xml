@@ -1060,10 +1060,9 @@
 
     <window name="miniplayer">
         <area>-1,5,590,190</area>
-        <imagetype name="track_info_background">
-            <filename>miniplayer_background.png</filename>
+	<shape name="track_info_background" from="basebackground">
             <area>10,10,569,170</area>
-        </imagetype>
+        </shape>
 
         <imagetype name="mm_blackhole_border">
             <filename>mm_blackhole_border.png</filename>

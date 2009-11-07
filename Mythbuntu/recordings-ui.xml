@@ -263,7 +263,7 @@
             <align>justify</align>
             <multiline>yes</multiline>
             <cutdown>yes</cutdown>
-            <value>%|"SUBTITLE|"% %STARS% %DESCRIPTION%</value>
+            <template>%|"SUBTITLE|"% %STARS% %DESCRIPTION%</template>
         </textarea>
 
         <imagetype name="preview">
@@ -271,10 +271,9 @@
             <preserveaspect>true</preserveaspect>
         </imagetype>
 
-        <textarea name="norecordings">
-            <area>20,75,760,300</area>
+        <textarea name="norecordings"from="description">
             <font>basemedium</font>
-            <value>No Recordings Available</value>
+            <value>No Recordings available, or screen loading...</value>
             <multiline>yes</multiline>
             <align>allcenter</align>
         </textarea>

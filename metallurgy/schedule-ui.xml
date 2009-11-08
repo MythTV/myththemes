@@ -357,7 +357,7 @@
                 <state name="inactive" from="active"/>
             </statetype>
         </buttonlist>
-    
+
         <guidegrid name="guidegrid">
             <area>246,108,966,330</area>
             <layout>horizontal</layout>
@@ -386,26 +386,26 @@
             <area>85,493,760,35</area>
             <font>extralargebold</font>
         </textarea>
-        
+
         <textarea name="subtitle">
             <area>85,529,760,25</area>
             <font>mediumbold</font>
             <template>%|"SUBTITLE|"%</template>
         </textarea>
-        
+
         <textarea name="description">
             <area>85,558,1115,90</area>
             <font>medium</font>
             <multiline>yes</multiline>
             <template>%YEARSTARS% %DESCRIPTION% %LONGREPEAT%</template>
         </textarea>
-        
+
         <textarea name="rectypestatus" from="basetextarea">
             <area>860,503,325,60</area>
             <multiline>yes</multiline>
             <align>right</align>
         </textarea>
-        
+
     </window>
 
     <window name="programguide-video">
@@ -421,29 +421,56 @@
             <align>allcenter</align>
         </textarea>
 
-        <container name="chanbar">
-            <area>63,109,182,272</area>
-            <bar name="chans" draworder="4">
-                <area>0,0,180,272</area>
-                <textoffset>46,0</textoffset>
-                <iconoffset>5,-5</iconoffset>
-                <iconsize>40,40</iconsize>
-                <orientation>vertical</orientation>
-                <align>allcenter</align>
-                <font>small</font>
-                <imagefile>guide/gg-chans.png</imagefile>
-            </bar>
-        </container>
+        <buttonlist name="channellist">
+            <area>65,108,180,330</area>
+            <buttonarea>0,0,180,330</buttonarea>
+            <spacing>1</spacing>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <shape name="background">
+                        <area>0,0,180,54</area>
+                        <fill color="#CCCCCC" alpha="28" />
+                    </shape>
+                    <imagetype name="channelicon">
+                        <area>5,7,40,40</area>
+                    </imagetype>
+                    <textarea name="buttontext" from="basetextarea">
+                        <area>48,0,130,54</area>
+                        <multiline>true</multiline>
+                        <cutdown>yes</cutdown>
+                        <font state="favourite">basesmallyellow</font>
+                        <font state="unavailable">basesmallblue</font>
+                        <font state="favunavailable">basesmallpurple</font>
+                        <align>allcenter</align>
+                    </textarea>
+                </state>
+                <state name="selected" from="active"/>
+                <state name="inactive" from="active"/>
+            </statetype>
+        </buttonlist>
 
-        <container name="timebar">
-            <area>245,80,963,29</area>
-            <bar name="times" draworder="4">
-                <area>0,0,963,29</area>
-                <align>center</align>
-                <font>small</font>
-                <imagefile>guide/gg-times.png</imagefile>
-            </bar>
-        </container>
+        <buttonlist name="timelist">
+            <area>246,79,966,30</area>
+            <layout>horizontal</layout>
+            <buttonarea>0,0,966,30</buttonarea>
+            <spacing>1</spacing>
+            <statetype name="buttonitem">
+                <area>0,0,240,30</area>
+                <state name="active">
+                    <imagetype name="buttonbackground">
+                        <area>0,0,240,30</area>
+                        <filename>guide/gg-times.png</filename>
+                    </imagetype>
+                    <textarea name="buttontext" from="basetextarea">
+                        <area>10,3,220,28</area>
+                        <font>small</font>
+                        <align>allcenter</align>
+                    </textarea>
+                </state>
+                <state name="selected" from="active"/>
+                <state name="inactive" from="active"/>
+            </statetype>
+        </buttonlist>
 
         <guidegrid name="guidegrid">
             <area>247,109,980,272</area>
@@ -465,16 +492,6 @@
             <font>small</font>
         </guidegrid>
 
-        <container name="current_info">
-            <area>1135,25,101,30</area>
-            <textarea name="time" draworder="4" align="center">
-                <area>0,0,101,30</area>
-                <cutdown>no</cutdown>
-                <font>mediumlightgrey</font>
-                <multiline>yes</multiline>
-            </textarea>
-        </container>
-
         <textarea name="title">
             <area>375,442,830,40</area>
             <font>extralargebold</font>
@@ -493,9 +510,9 @@
             <template>%YEARSTARS% %DESCRIPTION% %LONGREPEAT%</template>
         </textarea>
 
-        <container name="current_video">
+        <imagetype name="video">
             <area>88,466,260,146</area>
-        </container>
+        </imagetype>
 
     </window>
 

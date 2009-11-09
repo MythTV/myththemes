@@ -308,7 +308,6 @@
         <buttonlist name="channellist">
             <area>65,108,180,330</area>
             <buttonarea>0,0,180,330</buttonarea>
-            <align>allcenter</align>
             <spacing>1</spacing>
             <statetype name="buttonitem">
                 <state name="active">
@@ -318,7 +317,6 @@
                     </shape>
                     <imagetype name="channelicon">
                         <area>5,7,40,40</area>
-                        <align>allcenter</align>
                     </imagetype>
                     <textarea name="buttontext" from="basetextarea">
                         <area>48,0,130,54</area>
@@ -623,6 +621,25 @@
             <multiline>yes</multiline>
             <align>allcenter</align>
         </textarea>
+
+    </window>
+
+    <window name="progdetails">
+
+        <textarea name="title" from="baseheading">
+            <value>Program Details</value>
+        </textarea>
+
+        <imagetype name="background">
+            <position>78,66</position>
+            <filename>backgrounds/menu_background.png</filename>
+        </imagetype>
+
+        <webbrowser name="browser">
+            <area>90,80,1090,560</area>
+            <zoom>1.0</zoom>
+            <background color="#000000" alpha="1"/>
+        </webbrowser>
 
     </window>
 

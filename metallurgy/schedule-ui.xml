@@ -604,7 +604,7 @@
             <area>85,532,1115,110</area>
             <font>medium</font>
             <multiline>yes</multiline>
-            <value>%YEARSTARS% %DESCRIPTION% %LONGREPEAT%</value>
+            <template>%YEARSTARS% %DESCRIPTION% %LONGREPEAT%</template>
         </textarea>
 
         <textarea name="rectype" from="basetextarea">

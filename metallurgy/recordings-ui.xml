@@ -207,7 +207,7 @@
             <font>medium</font>
             <multiline>yes</multiline>
             <cutdown>yes</cutdown>
-            <value>%YEARSTARS% %DESCRIPTION% %LONGREPEAT%</value>
+            <template>%YEARSTARS% %DESCRIPTION% %LONGREPEAT%</template>
         </textarea>
 
         <imagetype name="video_background">

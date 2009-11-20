@@ -162,7 +162,7 @@
         <textarea name="description"  from="basetextarea">
             <area>40,150,1200,60</area>
             <multiline>yes</multiline>
-            <value>(%STARTTIME% - %ENDTIME%) %LONGREPEAT%%YEARSTARS%%DESCRIPTION%</value>
+            <template>(%STARTTIME% - %ENDTIME%) %LONGREPEAT%%YEARSTARS%%DESCRIPTION%</template>
         </textarea>
         
         <textarea name="rectypestatus" from="basetextarea">
@@ -371,13 +371,13 @@
             <area>150,54,550,50</area>
             <align>left,vcenter</align>
             <font>basesmall</font> 
-            <value>%|"SUBTITLE|"%</value>
+            <template>%|"SUBTITLE|"%</template>
         </textarea>
         
         <textarea name="description"  from="basetextarea">
             <area>45,110,620,150</area>
             <multiline>yes</multiline>
-            <value>(%STARTTIME% - %ENDTIME%) %LONGREPEAT%%YEARSTARS%%DESCRIPTION%</value>
+            <template>(%STARTTIME% - %ENDTIME%) %LONGREPEAT%%YEARSTARS%%DESCRIPTION%</template>
         </textarea>
 
         <textarea name="channelgroup"  from="basetextarea">
@@ -630,7 +630,7 @@
             <font>basesmaller</font>
             <multiline>yes</multiline>
             <cutdown>yes</cutdown>
-            <value>%|"SUBTITLE|"%</value>
+            <template>%|"SUBTITLE|"%</template>
         </textarea>
         
         <textarea name="rectypestatus" from="basetextarea">

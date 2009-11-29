@@ -9,37 +9,43 @@
         </textarea>
 
         <buttonlist name="category" from="basebuttonlist">
-            <area>40,90,250,260</area>
-            <buttonarea>25,0,250,250</buttonarea>
+            <area>40,75,250,260</area>
+            <buttonarea>25,10,250,250</buttonarea>
             <statetype name="buttonitem">
                 <area>0,0,250,30</area>
             </statetype>
         </buttonlist>
 
         <buttonlist name="log" from="category">
-            <position>390,90</position>
-            <buttonarea>25,0,800,250</buttonarea>
+            <position>390,75</position>
+            <buttonarea>25,10,800,250</buttonarea>
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,800,30</area>
                     <textarea name="buttontext" from="basetextarea">
-                        <area>0,0,800,30</area>
+                        <area>30,2,800,30</area>
                         <font>small</font>
                         <font state="error">smallred</font>
                         <font state="warning">smallyellow</font>
                     </textarea>
                 </state>
             </statetype>
+            <statetype name="upscrollarrow">
+                <position>400,0</position>
+            </statetype>
+            <statetype name="downscrollarrow">
+                <position>400,275</position>
+            </statetype>
         </buttonlist>
 
         <textarea name="helplabel">
-            <area>60,390,740,30</area>
+            <area>80,410,740,30</area>
             <value>Details</value>
             <font>basemedium</font>
         </textarea>
 
         <textarea name="helptext">
-            <area>60,470,730,150</area>
+            <area>70,490,730,150</area>
             <value>This screen displays the status of various system components</value>
             <multiline>yes</multiline>
         </textarea>

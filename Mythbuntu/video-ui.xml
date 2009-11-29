@@ -841,7 +841,6 @@
         <imagetype name="coverart">
             <area>1100,505,140,180</area>
             <preserveaspect>yes</preserveaspect>
-            <align>right,top</align>
         </imagetype>
 
         <textarea name="position" from="basetextarea">

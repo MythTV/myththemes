@@ -514,6 +514,209 @@
 
     </window>
 
+    <!-- search dialog popups -->
+    <window name="phrasepopup">
+        <area>-1,-1,620,600</area>
+
+        <imagetype name="box">
+            <filename>backgrounds/phrase_popup_background.png</filename>
+        </imagetype>
+
+        <textarea name="title_text" from="basetextarea">
+            <area>20,40,570,40</area>
+            <align>hcenter,top</align>
+            <value>Phrase</value>
+        </textarea>
+
+        <buttonlist name="phrase_list" from="basebuttonlist">
+            <area>20,115,570,330</area>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <textarea name="buttontext">
+                        <area>30,0,450,30</area>
+                    </textarea>
+                </state>
+                <state name="inactive">
+                    <textarea name="buttontext">
+                        <area>30,0,450,30</area>
+                    </textarea>
+                </state>
+                <state name="selected">
+                    <textarea name="buttontext">
+                        <area>30,0,450,30</area>
+                    </textarea>
+                </state>
+            </statetype>
+            <statetype name="upscrollarrow">
+                <position>550,0</position>
+            </statetype>
+            <statetype name="downscrollarrow">
+                <position>550,300</position>
+            </statetype>
+        </buttonlist>
+
+        <textedit name="phrase_edit" from="basetextedit">
+            <position>105,460</position>
+        </textedit>
+
+        <button name="ok_button" from="basebutton">
+            <position>12,520</position>
+        </button>
+
+        <button name="delete_button" from="basebutton">
+            <position>210,520</position>
+        </button>
+
+        <button name="record_button" from="basebutton">
+            <position>409,520</position>
+        </button>
+
+    </window>
+
+    <window name="timepopup">
+        <area>-1,-1,476,368</area>
+
+        <imagetype name="box">
+            <filename>backgrounds/popup_background.png</filename>
+        </imagetype>
+
+        <textarea name="title" from="basetextarea">
+            <area>15,8,440,95</area>
+            <align>allcenter</align>
+            <multiline>yes</multiline>
+            <value>Select Time</value>
+        </textarea>
+
+        <buttonlist name="date_list" from="baseselector">
+            <position>130,130</position>
+        </buttonlist>
+
+        <buttonlist name="time_list" from="baseselector">
+            <position>130,190</position>
+        </buttonlist>
+
+        <button name="ok_button" from="basebutton">
+            <position>140,290</position>
+        </button>
+
+    </window>
+
+    <window name="powersearchpopup">
+        <area>-1,-1,620,600</area>
+
+        <imagetype name="box">
+            <filename>backgrounds/powersearch_popup_background.png</filename>
+        </imagetype>
+
+        <textarea name="title_text" from="basetextarea">
+            <area>20,40,570,40</area>
+            <align>hcenter,top</align>
+            <value>Select Search</value>
+        </textarea>
+
+        <buttonlist name="phrase_list" from="basebuttonlist">
+            <area>20,115,570,400</area>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <textarea name="buttontext">
+                        <area>30,0,450,30</area>
+                    </textarea>
+                </state>
+                <state name="inactive">
+                    <textarea name="buttontext">
+                        <area>30,0,450,30</area>
+                    </textarea>
+                </state>
+                <state name="selected">
+                    <textarea name="buttontext">
+                        <area>30,0,450,30</area>
+                    </textarea>
+                </state>
+            </statetype>
+            <statetype name="upscrollarrow">
+                <position>550,0</position>
+            </statetype>
+            <statetype name="downscrollarrow">
+                <position>550,360</position>
+            </statetype>
+        </buttonlist>
+
+        <button name="edit_button" from="basebutton">
+            <position>12,515</position>
+        </button>
+
+        <button name="delete_button" from="basebutton">
+            <position>210,515</position>
+        </button>
+
+        <button name="record_button" from="basebutton">
+            <position>409,515</position>
+        </button>
+
+    </window>
+
+    <window name="editpowersearchpopup">
+        <area>-1,-1,650,650</area>
+
+        <imagetype name="box">
+            <filename>backgrounds/editpowersearch_popup_background.png</filename>
+        </imagetype>
+
+        <textarea name="title_text" from="basetextarea">
+            <area>20,40,610,40</area>
+            <font>basemedium</font>
+            <align>hcenter,top</align>
+            <value>Edit Power Search Fields</value>
+        </textarea>
+
+        <textarea name="titlelabel" from="basetextarea">
+            <area>60,120,460,30</area>
+            <font>basesmall</font>
+            <value>Optional title phrase:</value>
+        </textarea>
+
+        <textedit name="title_edit" from="basetextedit">
+            <position>60,155</position>
+        </textedit>
+
+        <textarea name="subtitlelabel" from="basetextarea">
+            <area>60,200,460,30</area>
+            <font>basesmall</font>
+            <value>Optional subtitle phrase:</value>
+        </textarea>
+
+        <textedit name="subtitle_edit" from="basetextedit">
+            <position>60,230</position>
+        </textedit>
+
+        <textarea name="desclabel" from="basetextarea">
+            <area>60,290,320,30</area>
+            <font>basesmall</font>
+            <value>Optional description phrase:</value>
+        </textarea>
+
+        <textedit name="desc_edit" from="basetextedit">
+            <position>60,320</position>
+        </textedit>
+
+        <buttonlist name="category_list" from="basewideselector">
+            <position>60,380</position>
+        </buttonlist>
+
+        <buttonlist name="genre_list" from="basewideselector">
+            <position>60,430</position>
+        </buttonlist>
+
+        <buttonlist name="channel_list" from="basewideselector">
+            <position>60,480</position>
+        </buttonlist>
+
+        <button name="ok_button" from="basebutton">
+            <position>220,560</position>
+        </button>
+
+    </window>
+    
     <!-- Previously recorded screen -->
     <window name="programlist">
 

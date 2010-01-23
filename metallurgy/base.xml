@@ -319,5 +319,53 @@
         </buttonlist>
     </window>
 
+    <window name="MythSearchDialog">
+        <area>-1,-1,500,550</area>
+        <imagetype name="backimg">
+            <filename>backgrounds/search_popup_background.png</filename>
+        </imagetype>
+
+        <textarea name="title" from="basetextarea">
+            <area>12,20,470,60</area>
+            <multiline>yes</multiline>
+            <align>allcenter</align>
+        </textarea>
+
+        <textedit name="input" from="basetextedit">
+            <position>58,110</position>
+        </textedit>
+
+        <buttonlist name="itemlist" from="basebuttonlist">
+            <area>22,170,470,280</area>
+            <showarrow>no</showarrow>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <textarea name="buttontext">
+                        <area>30,0,440,30</area>
+                    </textarea>
+                </state>
+                <state name="inactive" from="active"/>
+                <state name="selected" from="active"/>
+            </statetype>
+            <statetype name="upscrollarrow">
+                <position>423,0</position>
+            </statetype>
+            <statetype name="downscrollarrow">
+                <position>423,275</position>
+            </statetype>
+        </buttonlist>
+
+        <button name="cancel" from="basebutton">
+            <position>20,465</position>
+            <value>Cancel</value>
+        </button>
+
+        <button name="ok" from="basebutton">
+            <position>285,465</position>
+            <value>Ok</value>
+        </button>
+
+    </window>
+    
 </mythuitheme>
 

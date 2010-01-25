@@ -1,0 +1,85 @@
+<mythuitheme>
+
+    <window name="welcome_screen">
+        <area>-1,-1,790,962</area>
+
+        <imagetype name="backimg">
+            <area>0,0,790,962</area>
+            <filename>images/arclight_popup_large_bg.png</filename>
+        </imagetype>
+
+        <textarea name="wintitle" from="basetextarea">
+            <area>89,78,613,40</area>
+            <font>basemedium</font>
+            <align>allcenter</align>
+            <value>Welcome to MythTV</value>
+        </textarea>
+
+        <textarea name="time_text" from="basetextarea">
+            <area>89,198,613,30</area>
+            <multiline>yes</multiline>
+            <font>basesmall</font>
+            <align>allcenter</align>
+        </textarea>
+
+        <textarea name="date_text" from="basetextarea">
+            <area>89,138,613,60</area>
+            <multiline>yes</multiline>
+            <font>basesmall</font>
+            <align>allcenter</align>
+        </textarea>
+
+        <textarea name="status_text" from="basetextarea">
+            <area>89,248,613,90</area>
+            <multiline>yes</multiline>
+            <font>basesmall</font>
+            <align>allcenter</align>
+            <value>MythTV is idle and will shut down shortly.</value>
+        </textarea>
+
+        <button name="startfrontend_button" from="basebuttonwide">
+            <position>146,850</position>
+            <value>Save</value>
+        </button>
+
+        <!--
+            current recordings status
+        -->
+        <textarea name="recording_label" from="basetextarea">
+            <area>15,460,760,30</area>
+            <font>label</font>
+            <align>hcenter</align>
+            <value>Current Recording(s):</value>
+        </textarea>
+
+        <textarea name="recording_text" from="status_text">
+            <area>15,500,760,150</area>
+            <value>Retrieving Recording Status ...</value>
+        </textarea>
+
+        <!--
+            next scheduled recording status
+        -->
+        <textarea name="scheduled_label" from="recording_label">
+            <area>15,660,760,30</area>
+            <value>Next Scheduled Recording(s):</value>
+        </textarea>
+
+        <textarea name="scheduled_text" from="recording_text">
+            <area>15,700,760,120</area>
+            <value>Retrieving Scheduled Recordings ...</value>
+        </textarea>
+
+        <!--
+            scheduled recordings conflict warning
+        -->
+        <textarea name="conflicts_text" from="basetextarea">
+            <area>15,350,760,30</area>
+            <font>warning</font>
+            <align>hcenter</align>
+            <value>WARNING: There are conflicting scheduled recordings!</value>
+        </textarea>
+
+    </window>
+
+</mythuitheme>

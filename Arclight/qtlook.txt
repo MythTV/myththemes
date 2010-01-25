@@ -1,0 +1,69 @@
+# Color of the background
+str BackgroundColor=#1a1a1a
+# Color of lines, text, etc
+str ForegroundColor=1a1a1a
+# Pixmap to use for the background
+str BackgroundPixmap=Backgrounds/tendrils1.png
+str Font=Frutiger LT Std
+
+# Forground for dialogs
+str ActiveForeground=#FFFFFF
+
+# This is the background for active buttons
+str ActiveButton=#1a1a1a
+str ActiveLight=#808080
+str ActiveText=#FFFFFF
+str ActiveBrightText=#FFFFFF
+str ActiveButtonText=#FFFFFF
+str ActiveBase=#1a1a1a
+str ActiveBackground=#1a1a1a
+str ActiveShadow=#000000
+str ActiveHighlight=#333333
+str ActiveHighlightedText=#FFFFFF
+
+str InactiveForeground=#FFFFFF
+str InactiveButton=#254A55
+str InactiveLight=#435B70
+str InactiveText=#000000
+str InactiveBrightText=#000000
+str InactiveButtonText=#000000
+str InactiveBase=#254E56
+str InactiveBackground=#264F57
+str InactiveShadow=#000000
+str InactiveHighlight=#2D733F
+str InactiveHighlightedText=#FFFFFF
+
+str DisabledForeground=#FFFFFF
+str DisabledButton=#666666
+str DisabledLight=#808080
+str DisabledText=#4F535B
+str DisabledBrightText=#71757E
+str DisabledButtonText=#4F535B
+str DisabledBase=#1E3356
+str DisabledBackground=#1E3356
+str DisabledShadow=#000000
+str DisabledHighlight=#274E57
+str DisabledHighlightedText=#ffffff
+
+str curTimeChan_bgColor=#8f2813
+str curTimeChan_fgColor=#ffffff
+str date_bgColor=#0f2e8f
+str date_dsColor=#000000
+str date_fgColor=#ffffff
+str chan_bgColor=#0f2f5a
+str chan_dsColor=#000000
+str chan_fgColor=#ffffff
+str time_bgColor=#0f2e8f
+str time_dsColor=#000000
+str time_fgColor=#ffffff
+str prog_bgColor=#2d587b
+str prog_fgColor=#ffffff
+str progLine_Color=#104064
+str progArrow_Color=#ffffff
+int progArrow_Type=0
+str curProg_bgColor=#85a5bc
+str curRecProg_bgColor=#bc4c32
+str curProg_dsColor=#000000
+str curProg_fgColor=#eefb92
+str misChanIcon_bgColor=#000000
+str misChanIcon_fgColor=#ffffff

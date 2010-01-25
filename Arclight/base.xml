@@ -1,0 +1,2268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mythuitheme>
+
+    <!-- Base Font Definitions For Arclight-->
+
+    <!-- Unselected value of each is alpha = 100 -->
+
+    <!-- Used for Edit Metadata, description text, etc. -->
+    <!-- http://www.fontsite.com/download-free-fonts/cartogothic-std/ -->
+    <font name="basesmall" face="CartoGothic Std">
+        <pixelsize>25</pixelsize>
+        <color>#FFFFFF</color>
+    </font>
+
+    <!-- http://www.theleagueofmoveabletype.com/fonts/7-league-gothic -->
+    <font name="basegothicsmall" face="League Gothic">
+        <pixelsize>25</pixelsize>
+        <color>#FFFFFF</color>
+    </font>
+
+    <font name="baseextrasmall" from="basesmall">
+        <pixelsize>20</pixelsize>
+    </font>
+
+    <font name="basesmallblk" from="basesmall">
+        <color>#000000</color>
+    </font>
+
+    <font name="baseextrasmallblk" from="basesmallblk">
+        <pixelsize>20</pixelsize>
+    </font>
+
+    <font name="basesmallred" from="basesmall">
+        <color>#FF0000</color>
+    </font>
+
+    <font name="basesmallblue" from="basesmall">
+        <color>#0000FF</color>
+    </font>
+
+    <font name="basesmallgreen" from="basesmall">
+        <color>#00FF00</color>
+    </font>
+
+    <font name="basesmalllightblue" from="basesmall">
+        <color>#0767AB</color>
+    </font>
+
+    <font name="basegothicsmalllightblue" from="basegothicsmall">
+        <color>#0767AB</color>
+    </font>
+
+    <font name="basesmalllightgreen" from="basesmall">
+        <color>#00FF22</color>
+    </font>
+
+    <!-- Used for Menu items -->
+    <font name="basenormal" from="basesmall">
+        <!--<size>20</size>-->
+        <pixelsize>29</pixelsize>
+    </font>
+
+    <!-- Used for Menu items -->
+    <font name="basenormalblk" from="basesmallblk">
+        <!--<size>20</size>-->
+        <pixelsize>29</pixelsize>
+    </font>
+
+    <!-- Used for plots, long descriptions, clock -->
+    <font name="basesmallest" from="basesmall">
+        <!--<size>15</size>-->
+        <pixelsize>21</pixelsize>
+    </font>
+
+    <!-- Used for Menu Headings, Sub-subtitles (year, etc)  -->
+    <font name="basemedium" from="basesmall">
+        <pixelsize>35</pixelsize>
+    </font>
+
+    <font name="basegothicmedium" from="basegothicsmall">
+        <pixelsize>55</pixelsize>
+    </font>
+
+    <font name="basegothicmid" from="basegothicsmall">
+        <pixelsize>38</pixelsize>
+    </font>
+
+    <font name="basemid" from="basesmall">
+        <pixelsize>38</pixelsize>
+    </font>
+
+    <font name="basemediumblue" from="basesmalllightblue">
+        <pixelsize>35</pixelsize>
+    </font>
+
+    <font name="basegothicmediumblue" from="basegothicsmalllightblue">
+        <pixelsize>55</pixelsize>
+    </font>
+
+    <font name="basegothicmidblue" from="basegothicsmalllightblue">
+        <color>#3A9ADE</color>
+        <pixelsize>38</pixelsize>
+    </font>
+
+    <font name="basemidblue" from="basesmalllightblue">
+        <pixelsize>38</pixelsize>
+    </font>
+
+    <!-- Used for Menu Headings, Sub-subtitles (year, etc)  -->
+    <font name="basemediumblk" from="basemedium">
+        <color>#000000</color>
+    </font>
+
+    <!-- Used for Page Headers, Time, Subtitle -->
+    <font name="baselarge" from="basesmall">
+        <pixelsize>49</pixelsize>
+    </font>
+
+    <font name="basegothiclarge" from="basegothicsmall">
+        <pixelsize>49</pixelsize>
+    </font>
+
+    <!-- Used for Titles -->
+    <font name="baseextralarge" from="basesmall">
+        <pixelsize>72</pixelsize>
+    </font>
+
+    <!--Buttonlist for the popup menu -->
+    <buttonlist name="basepopupbuttonlist">
+        <area>0,0,444,328</area>
+        <layout>vertical</layout>
+        <spacing>0</spacing>
+        <buttonarea>0,0,100%,100%</buttonarea>
+        <statetype name="buttonitem">
+            <state name="active">
+                <area>0,0,100%,54</area>
+                <imagetype name="buttonline">
+                    <area>0,52,442,2</area>
+                    <filename>images/arclight_popup_divider.png</filename>
+                </imagetype>
+                <textarea name="buttontext">
+                    <area>5,5,434,54</area>
+                    <font>basenormal</font>
+                    <cutdown>yes</cutdown>
+                    <align>allcenter</align>
+                    <alpha>100</alpha>
+                </textarea>
+                <statetype name="buttoncheck">
+                    <position>91%,10</position>
+                    <state type="off">
+                        <imagetype name="checkoff">
+                        </imagetype>
+                    </state>
+                    <state type="half">
+                        <imagetype name="checkhalf">
+                        </imagetype>
+                    </state>
+                    <state type="full">
+                        <imagetype name="checkfull">
+                        </imagetype>
+                    </state>
+                </statetype>
+                <imagetype name="buttonarrow">
+                    <position>405,18</position>
+                    <filename>images/arclight_popup_rightarrow.png</filename>
+                    <alpha>100</alpha>
+                </imagetype>
+            </state>
+            <state name="selected" from="active">
+                <textarea name="buttontext">
+                    <alpha>255</alpha>
+                </textarea>
+                <imagetype name="buttonarrow">
+                    <alpha>255</alpha>
+                </imagetype>
+            </state>
+            <state name="inactive" from="active">
+                <imagetype name="buttonbackground">
+                    <alpha>100</alpha>
+                </imagetype>
+            </state>
+        </statetype>
+        <statetype name="upscrollarrow">
+            <position>395,326</position>
+            <state type="off">
+                <imagetype name="upoff">
+                    <filename>images/arclight_popup_uparrow.png</filename>
+                    <alpha>60</alpha>
+                </imagetype>
+            </state>
+            <state type="full">
+                <imagetype name="upon">
+                    <filename>images/arclight_popup_uparrow.png</filename>
+                    <alpha>190</alpha>
+                </imagetype>
+            </state>
+        </statetype>
+        <statetype name="downscrollarrow">
+            <position>412,326</position>
+            <state type="off">
+                <imagetype name="dnoff">
+                    <filename>images/arclight_popup_downarrow.png</filename>
+                    <alpha>60</alpha>
+                </imagetype>
+            </state>
+            <state type="full">
+                <imagetype name="dnon">
+                    <filename>images/arclight_popup_downarrow.png</filename>
+                    <alpha>190</alpha>
+                </imagetype>
+            </state>
+        </statetype>
+    </buttonlist>
+
+    <!-- Recording buttonlist -->
+    <buttonlist name="baseVBLwide">
+        <area>786,442,1136,613</area>
+        <scrollstyle>free</scrollstyle>
+        <arrange>stack</arrange>
+        <wrapstyle>items</wrapstyle>
+        <layout>vertical</layout>
+        <spacing>1</spacing>
+        <drawfrombottom>true</drawfrombottom>
+        <buttonarea>2,0,1136,645</buttonarea>
+        <statetype name="buttonitem">
+            <state name="active">
+                <area>0,0,100%,88</area>
+                <shape name="item">
+                    <area>0,0,100%,87</area>
+                    <type>box</type>
+                    <fill color="#000000" alpha="180" />
+                </shape>
+                <textarea name="buttontext">
+                    <area>10,27,1130,40</area>
+                    <align>left,vcenter</align>
+                    <font>basemedium</font>
+                    <alpha>210</alpha>
+                </textarea>
+                <textarea name="title">
+                    <area>10,10,573,40</area>
+                    <align>left,vcenter</align>
+                    <font>basemedium</font>
+                    <alpha>210</alpha>
+                </textarea>
+                <textarea name="subtitle">
+                    <area>30,56,550,30</area>
+                    <align>left,vcenter</align>
+                    <font>basesmall</font>
+                    <alpha>210</alpha>
+                </textarea>
+                <textarea name="name">
+                    <area>10,10,1000,40</area>
+                    <align>left,vcenter</align>
+                    <font>basemedium</font>
+                    <alpha>210</alpha>
+                </textarea>
+                <textarea name="url">
+                    <area>30,56,1000,30</area>
+                    <align>left,vcenter</align>
+                    <font>basesmall</font>
+                    <alpha>210</alpha>
+                </textarea>
+                <statetype name="watched">
+                    <state name="no">
+                        <textarea name="uhuh">
+                            <area>604,10,50,40</area>
+                            <align>allcenter</align>
+                            <font>basesmalllightgreen</font>
+                            <alpha>150</alpha>
+                            <value>New</value>
+                        </textarea>
+                    </state>
+                    <state name="yes" />
+                </statetype>
+                <textarea name="timedate">
+                    <area>659,10,465,40</area>
+                    <align>right,vcenter</align>
+                    <font>basesmall</font>
+                    <alpha>210</alpha>
+                </textarea>
+                <statetype name="videoprops">
+                    <showempty>yes</showempty>
+                    <state name="hdtv">
+                        <imagetype name="hdtv">
+                            <filename>images/hdicon_white.png</filename>
+                            <area>730,59,170,18</area>
+                            <preserveaspect>true</preserveaspect>
+                        </imagetype>
+                    </state>
+                    <state name="hd720">
+                        <imagetype name="hd720">
+                            <filename>images/720icon_white.png</filename>
+                            <area>730,59,170,22</area>
+                            <preserveaspect>true</preserveaspect>
+                        </imagetype>
+                    </state>
+                    <state name="hd1080">
+                        <imagetype name="hd1080">
+                            <filename>images/1080icon_white.png</filename>
+                            <area>730,59,170,18</area>
+                            <preserveaspect>true</preserveaspect>
+                        </imagetype>
+                    </state>
+                    <state name="widescreen">
+                        <imagetype name="widescreen">
+                            <filename>images/169_white.png</filename>
+                            <area>730,56,170,24</area>
+                            <preserveaspect>true</preserveaspect>
+                        </imagetype>
+                    </state>
+                    <state name="avchd">
+                        <imagetype name="avchd">
+                            <filename>images/avchd_white.png</filename>
+                            <area>730,59,170,18</area>
+                            <preserveaspect>true</preserveaspect>
+                        </imagetype>
+                    </state>
+                </statetype>
+                <statetype name="audioprops">
+                    <showempty>yes</showempty>
+                    <state name="stereo">
+                        <imagetype name="stereo">
+                            <filename>images/stereoicon_white.png</filename>
+                            <area>860,59,172,18</area>
+                            <preserveaspect>true</preserveaspect>
+                        </imagetype>
+                    </state>
+                    <state name="surround">
+                        <imagetype name="surround">
+                            <filename>images/51icon_white.png</filename>
+                            <area>860,56,172,24</area>
+                            <preserveaspect>true</preserveaspect>
+                        </imagetype>
+                    </state>
+                    <state name="dolby">
+                        <imagetype name="dolby">
+                            <filename>images/dolbyicon_white.png</filename>
+                            <area>860,54,172,26</area>
+                            <preserveaspect>true</preserveaspect>
+                        </imagetype>
+                    </state>
+                    <state name="mono">
+                        <imagetype name="mono">
+                            <filename>images/monoicon_white.png</filename>
+                            <area>860,59,172,18</area>
+                            <preserveaspect>true</preserveaspect>
+                        </imagetype>
+                    </state>
+                </statetype>
+                <textarea name="filesize_str">
+                    <area>937,56,187,30</area>
+                    <align>right,vcenter</align>
+                    <font>basesmall</font>
+                    <alpha>210</alpha>
+                </textarea>
+                <imagetype name="divider">
+                    <area>0,88,1136,2</area>
+                    <filename>images/baserecordinglistwide_divider.png</filename>
+                    <alpha>100</alpha>
+                </imagetype>
+                <imagetype name="buttonarrow">
+                    <position>1090,32</position>
+                    <filename>images/reclist-arrow-white.png</filename>
+                    <alpha>210</alpha>
+                </imagetype>
+            </state>
+            <state name="selected" from="active">
+                <area>0,0,100%,199</area>
+                <shape name="item">
+                    <area>0,0,100%,197</area>
+                    <fill color="#0767AB" alpha="240" />
+                </shape>
+                <textarea name="title">
+                    <alpha>200</alpha>
+                </textarea>
+                <textarea name="buttontext">
+                    <alpha>200</alpha>
+                </textarea>
+                <textarea name="subtitle">
+                    <area>30,56,550,30</area>
+                    <alpha>200</alpha>
+                </textarea>
+                <textarea name="name">
+                    <alpha>200</alpha>
+                </textarea>
+                <textarea name="url">
+                    <alpha>200</alpha>
+                </textarea>
+                <statetype name="watched">
+                    <state name="no">
+                        <textarea name="uhuh">
+                            <area>604,10,50,40</area>
+                            <align>allcenter</align>
+                            <font>basesmall</font>
+                            <alpha>210</alpha>
+                            <value>New</value>
+                        </textarea>
+                    </state>
+                    <state name="yes" />
+                </statetype>
+                <textarea name="timedate">
+                    <alpha>200</alpha>
+                </textarea>
+                <statetype name="videoprops">
+                    <showempty>yes</showempty>
+                    <state name="hdtv">
+                        <imagetype name="hdtv">
+                            <area>730,169,170,18</area>
+                        </imagetype>
+                    </state>
+                    <state name="hd720">
+                        <imagetype name="hd720">
+                            <area>730,169,170,22</area>
+                        </imagetype>
+                    </state>
+                    <state name="hd1080">
+                        <imagetype name="hd1080">
+                            <area>730,169,170,18</area>
+                        </imagetype>
+                    </state>
+                    <state name="widescreen">
+                        <imagetype name="widescreen">
+                            <area>730,166,170,24</area>
+                        </imagetype>
+                    </state>
+                    <state name="avchd">
+                        <imagetype name="avchd">
+                            <area>730,169,170,18</area>
+                        </imagetype>
+                    </state>
+                </statetype>
+                <statetype name="audioprops">
+                    <showempty>yes</showempty>
+                    <state name="stereo">
+                        <imagetype name="stereo">
+                            <area>860,169,172,18</area>
+                        </imagetype>
+                    </state>
+                    <state name="surround">
+                        <imagetype name="surround">
+                            <area>860,167,172,24</area>
+                        </imagetype>
+                    </state>
+                    <state name="dolby">
+                        <imagetype name="dolby">
+                            <area>860,165,172,26</area>
+                        </imagetype>
+                    </state>
+                    <state name="mono">
+                        <imagetype name="mono">
+                            <area>860,169,172,18</area>
+                        </imagetype>
+                    </state>
+                </statetype>
+                <textarea name="filesize_str">
+                    <area>937,166,187,30</area>
+                    <alpha>200</alpha>
+                </textarea>
+                <imagetype name="divider">
+                    <filename />
+                </imagetype>
+                <imagetype name="buttonarrow">
+                    <filename>images/reclist-arrow-black.png</filename>
+                    <alpha>200</alpha>
+                </imagetype>
+            </state>
+            <state name="inactive" from="active">
+                <area>0,0,100%,199</area>
+                <shape name="item">
+                    <area>0,0,100%,197</area>
+                    <fill color="#222222" alpha="190" />
+                </shape>
+                <imagetype name="divider">
+                    <area>0,196,1136,2</area>
+                    <filename>images/baserecordinglistwide_divider.png</filename>
+                    <alpha>100</alpha>
+                </imagetype>
+                <statetype name="videoprops">
+                    <showempty>yes</showempty>
+                    <state name="hdtv">
+                        <imagetype name="hdtv">
+                            <area>730,169,170,18</area>
+                            <filename>images/hdicon_white.png</filename>
+                        </imagetype>
+                    </state>
+                    <state name="hd720">
+                        <imagetype name="hd720">
+                            <area>730,169,170,22</area>
+                            <filename>images/720icon_white.png</filename>
+                        </imagetype>
+                    </state>
+                    <state name="hd1080">
+                        <imagetype name="hd1080">
+                            <area>730,169,170,18</area>
+                            <filename>images/1080icon_white.png</filename>
+                        </imagetype>
+                    </state>
+                    <state name="widescreen">
+                        <imagetype name="widescreen">
+                            <area>730,166,170,24</area>
+                            <filename>images/169_white.png</filename>
+                        </imagetype>
+                    </state>
+                    <state name="avchd">
+                        <imagetype name="avchd">
+                            <area>730,169,170,18</area>
+                            <filename>images/avchd_white.png</filename>
+                        </imagetype>
+                    </state>
+                </statetype>
+                <statetype name="audioprops">
+                    <showempty>yes</showempty>
+                    <state name="stereo">
+                        <imagetype name="stereo">
+                            <area>860,169,172,18</area>
+                            <filename>images/stereoicon_white.png</filename>
+                        </imagetype>
+                    </state>
+                    <state name="surround">
+                        <imagetype name="surround">
+                            <area>860,167,172,24</area>
+                            <filename>images/51icon_white.png</filename>
+                        </imagetype>
+                    </state>
+                    <state name="dolby">
+                        <imagetype name="dolby">
+                            <area>860,165,172,26</area>
+                            <filename>images/dolbyicon_white.png</filename>
+                        </imagetype>
+                    </state>
+                    <state name="mono">
+                        <imagetype name="mono">
+                            <area>860,169,172,18</area>
+                            <filename>images/monoicon_white.png</filename>
+                        </imagetype>
+                    </state>
+                </statetype>
+                <textarea name="filesize_str">
+                    <area>937,166,187,30</area>
+                    <alpha>200</alpha>
+                    <font>basesmall</font>
+                </textarea>
+            </state>
+        </statetype>
+        <statetype name="upscrollarrow">
+            <position>1075,-30</position>
+            <state type="off">
+            </state>
+            <state type="full">
+                <imagetype name="upon">
+                    <filename>images/arclight_popup_uparrow.png</filename>
+                    <alpha>230</alpha>
+                </imagetype>
+            </state>
+        </statetype>
+        <statetype name="downscrollarrow">
+            <position>1057,-30</position>
+            <state type="off">
+            </state>
+            <state type="full">
+                <imagetype name="dnon">
+                    <filename>images/arclight_popup_downarrow.png</filename>
+                    <alpha>230</alpha>
+                </imagetype>
+            </state>
+        </statetype>
+    </buttonlist>
+
+
+
+    <!-- Recording buttonlist -->
+    <buttonlist name="baserecordinglistwide">
+        <area>786,542,1136,540</area>
+        <scrollstyle>free</scrollstyle>
+        <wrapstyle>items</wrapstyle>
+        <layout>vertical</layout>
+        <spacing>1</spacing>
+        <drawfrombottom>true</drawfrombottom>
+        <buttonarea>2,0,1136,540</buttonarea>
+        <statetype name="buttonitem">
+            <state name="active">
+                <area>0,0,100%,89</area>
+                <shape name="item">
+                    <area>0,0,100%,88</area>
+                    <type>box</type>
+                    <fill color="#000000" alpha="180" />
+                </shape>
+                <textarea name="buttontext">
+                    <area>13,27,1130,40</area>
+                    <align>left,vcenter</align>
+                    <font>basemedium</font>
+                    <alpha>210</alpha>
+                </textarea>
+                <textarea name="title">
+                    <area>13,10,653,40</area>
+                    <align>left,vcenter</align>
+                    <font>basemedium</font>
+                    <alpha>210</alpha>
+                </textarea>
+                <textarea name="subtitle">
+                    <area>33,56,560,30</area>
+                    <align>left,vcenter</align>
+                    <font>basesmall</font>
+                    <alpha>210</alpha>
+                </textarea>
+                <textarea name="name">
+                    <area>13,10,1000,40</area>
+                    <align>left,vcenter</align>
+                    <font>basemedium</font>
+                    <alpha>210</alpha>
+                </textarea>
+                <textarea name="url">
+                    <area>33,56,1000,30</area>
+                    <align>left,vcenter</align>
+                    <font>basesmall</font>
+                    <alpha>210</alpha>
+                </textarea>
+                <textarea name="timedate">
+                    <area>674,10,450,40</area>
+                    <align>right,vcenter</align>
+                    <font>basesmall</font>
+                    <alpha>210</alpha>
+                </textarea>
+                <statetype name="videoprops">
+                    <showempty>yes</showempty>
+                    <state name="hdtv">
+                        <imagetype name="hdtv">
+                            <filename>images/hdicon_white.png</filename>
+
+                            <area>730,59,170,18</area>
+                            <preserveaspect>true</preserveaspect>
+                        </imagetype>
+                    </state>
+                    <state name="hd720">
+                        <imagetype name="hd720">
+                            <filename>images/720icon_white.png</filename>
+                            <area>730,59,170,22</area>
+                            <preserveaspect>true</preserveaspect>
+                        </imagetype>
+                    </state>
+                    <state name="hd1080">
+                        <imagetype name="hd1080">
+                            <filename>images/1080icon_white.png</filename>
+                            <area>730,59,170,18</area>
+                            <preserveaspect>true</preserveaspect>
+                        </imagetype>
+                    </state>
+                    <state name="widescreen">
+                        <imagetype name="widescreen">
+                            <filename>images/169_white.png</filename>
+                            <area>730,56,170,24</area>
+                            <preserveaspect>true</preserveaspect>
+                        </imagetype>
+                    </state>
+                    <state name="avchd">
+                        <imagetype name="avchd">
+                            <filename>images/avchd_white.png</filename>
+                            <area>730,59,170,18</area>
+                            <preserveaspect>true</preserveaspect>
+                        </imagetype>
+                    </state>
+                </statetype>
+                <statetype name="audioprops">
+                    <showempty>yes</showempty>
+                    <state name="stereo">
+                        <imagetype name="stereo">
+                            <filename>images/stereoicon_white.png</filename>
+                            <area>860,59,172,18</area>
+                            <preserveaspect>true</preserveaspect>
+                        </imagetype>
+                    </state>
+                    <state name="surround">
+                        <imagetype name="surround">
+                            <filename>images/51icon_white.png</filename>
+                            <area>860,56,172,24</area>
+                            <preserveaspect>true</preserveaspect>
+                        </imagetype>
+                    </state>
+                    <state name="dolby">
+                        <imagetype name="dolby">
+                            <filename>images/dolbyicon_white.png</filename>
+                            <area>860,54,172,26</area>
+                            <preserveaspect>true</preserveaspect>
+                        </imagetype>
+                    </state>
+                    <state name="mono">
+                        <imagetype name="mono">
+                            <filename>images/monoicon_white.png</filename>
+                            <area>860,59,172,18</area>
+                            <preserveaspect>true</preserveaspect>
+                        </imagetype>
+                    </state>
+                </statetype>
+                <textarea name="filesize_str">
+                    <area>937,56,187,30</area>
+                    <align>right,vcenter</align>
+                    <font>basesmall</font>
+                    <alpha>210</alpha>
+                </textarea>
+                <imagetype name="divider">
+                    <area>0,88,1136,2</area>
+                    <filename>images/baserecordinglistwide_divider.png</filename>
+                    <alpha>100</alpha>
+                </imagetype>
+                <imagetype name="buttonarrow">
+                    <position>1090,32</position>
+                    <filename>images/reclist-arrow-white.png</filename>
+                    <alpha>210</alpha>
+                </imagetype>
+                <statetype name="buttoncheck">
+                    <state type="off">
+                    </state>
+                    <state type="half">
+                    </state>
+                    <state type="full">
+                        <shape name="plfill">
+                            <type>box</type>
+                            <area>3,3,6,82</area>
+                            <fill color="#0767AB" alpha="230" />
+                        </shape>
+                    </state>
+                </statetype>
+            </state>
+            <state name="selected" from="active">
+                <shape name="item">
+                    <fill color="#0767AB" alpha="240" />
+                </shape>
+                <textarea name="title">
+                    <alpha>200</alpha>
+                </textarea>
+                <textarea name="buttontext">
+                    <alpha>200</alpha>
+                </textarea>
+                <textarea name="subtitle">
+                    <alpha>200</alpha>
+                </textarea>
+                <textarea name="name">
+                    <alpha>200</alpha>
+                </textarea>
+                <textarea name="url">
+                    <alpha>200</alpha>
+                </textarea>
+                <textarea name="timedate">
+                    <alpha>200</alpha>
+                </textarea>
+                <statetype name="videoprops">
+                    <showempty>yes</showempty>
+                    <state name="hdtv">
+                        <imagetype name="hdtv">
+                            <filename>images/hdicon_black.png</filename>
+                        </imagetype>
+                    </state>
+                    <state name="hd720">
+                        <imagetype name="hd720">
+                            <filename>images/720icon_black.png</filename>
+                        </imagetype>
+                    </state>
+                    <state name="hd1080">
+                        <imagetype name="hd1080">
+                            <filename>images/1080icon_black.png</filename>
+                        </imagetype>
+                    </state>
+                    <state name="widescreen">
+                        <imagetype name="widescreen">
+                            <filename>images/169_black.png</filename>
+                        </imagetype>
+                    </state>
+                    <state name="avchd">
+                        <imagetype name="avchd">
+                            <filename>images/avchd_black.png</filename>
+                        </imagetype>
+                    </state>
+                </statetype>
+                <statetype name="audioprops">
+                    <showempty>yes</showempty>
+                    <state name="stereo">
+                        <imagetype name="stereo">
+                            <filename>images/stereoicon_black.png</filename>
+                        </imagetype>
+                    </state>
+                    <state name="surround">
+                        <imagetype name="surround">
+                            <filename>images/51icon_black.png</filename>
+                        </imagetype>
+                    </state>
+                    <state name="dolby">
+                        <imagetype name="dolby">
+                            <filename>images/dolbyicon_black.png</filename>
+                        </imagetype>
+                    </state>
+                    <state name="mono">
+                        <imagetype name="mono">
+                            <filename>images/monoicon_black.png</filename>
+                        </imagetype>
+                    </state>
+                </statetype>
+                <textarea name="filesize_str">
+                    <alpha>200</alpha>
+                </textarea>
+                <imagetype name="divider">
+                    <filename />
+                </imagetype>
+                <imagetype name="buttonarrow">
+                    <filename>images/reclist-arrow-white.png</filename>
+                    <alpha>200</alpha>
+                </imagetype>
+                <statetype name="buttoncheck">
+                    <state type="off">
+                    </state>
+                    <state type="half">
+                    </state>
+                    <state type="full">
+                        <shape name="plfill">
+                            <type>box</type>
+                            <area>3,3,6,82</area>
+                            <fill color="#FFFFFF" alpha="230" />
+                        </shape>
+                    </state>
+                </statetype>
+            </state>
+            <state name="inactive" from="active">
+                <shape name="item">
+                    <fill color="#222222" alpha="190" />
+                </shape>
+            </state>
+        </statetype>
+        <statetype name="upscrollarrow">
+            <position>1075,-30</position>
+            <state type="off">
+            </state>
+            <state type="full">
+                <imagetype name="upon">
+                    <filename>images/arclight_popup_uparrow.png</filename>
+                    <alpha>230</alpha>
+                </imagetype>
+            </state>
+        </statetype>
+        <statetype name="downscrollarrow">
+            <position>1057,-30</position>
+            <state type="off">
+            </state>
+            <state type="full">
+                <imagetype name="dnon">
+                    <filename>images/arclight_popup_downarrow.png</filename>
+                    <alpha>230</alpha>
+                </imagetype>
+            </state>
+        </statetype>
+    </buttonlist>
+
+    <!-- Wide buttonlist -->
+    <buttonlist name="basebuttonlistwide">
+        <area>0,0,671,338</area>
+        <layout>vertical</layout>
+        <spacing>0</spacing>
+        <buttonarea>0,0,100%,97%</buttonarea>
+        <statetype name="buttonitem">
+            <area>0,0,671,50</area>
+            <state name="active">
+                <area>0,0,100%,50</area>
+                <imagetype name="bulb">
+                    <area>0,10,30,30</area>
+                    <filename>images/checkbox_unselected_unchecked.png</filename>
+                </imagetype>
+                <textarea name="buttontext">
+                    <area>57,14,615,30</area>
+                    <align>vcenter,left</align>
+                    <font>basesmall</font>
+                    <alpha>100</alpha>
+                </textarea>
+                <imagetype name="divider">
+                    <area>10,48,631,2</area>
+                    <filename>images/arclight_wide_divider.png</filename>
+                </imagetype>
+                <statetype name="buttoncheck">
+                    <position>91%,10</position>
+                    <state type="off">
+                        <imagetype name="checkoff">
+                        </imagetype>
+                    </state>
+                    <state type="half">
+                        <imagetype name="checkhalf">
+                        </imagetype>
+                    </state>
+                    <state type="full">
+                        <imagetype name="checkfull">
+                        </imagetype>
+                    </state>
+                </statetype>
+                <imagetype name="buttonarrow">
+                </imagetype>
+            </state>
+            <state name="selected" from="active">
+                <imagetype name="bulb">
+                    <area>0,10,30,30</area>
+                    <filename>images/checkbox_unselected_checked.png</filename>
+                </imagetype>
+                <textarea name="buttontext">
+                    <alpha>255</alpha>
+                </textarea>
+            </state>
+            <state name="inactive" from="active">
+                <imagetype name="bulb">
+                    <area>0,10,30,30</area>
+                    <filename>images/checkbox_unselected_checked.png</filename>
+                </imagetype>
+                <textarea name="buttontext">
+                    <alpha>100</alpha>
+                </textarea>
+            </state>
+        </statetype>
+        <statetype name="upscrollarrow">
+        </statetype>
+        <statetype name="downscrollarrow">
+        </statetype>
+    </buttonlist>
+
+    <buttonlist name="baseshapebuttonlist">
+        <area>0,0,767,338</area>
+        <layout>vertical</layout>
+        <spacing>1</spacing>
+        <drawfrombottom>true</drawfrombottom>
+        <buttonarea>0,0,100%,97%</buttonarea>
+        <statetype name="buttonitem">
+            <area>0,0,767,50</area>
+            <state name="active">
+                <area>0,0,100%,50</area>
+                <shape name="item">
+                    <area>0,0,100%,49</area>
+                    <type>box</type>
+                    <fill color="#000000" alpha="160" />
+                </shape>
+                <textarea name="buttontext">
+                    <area>5,9,757,40</area>
+                    <align>allcenter</align>
+                    <font>basesmall</font>
+                    <alpha>100</alpha>
+                </textarea>
+                <imagetype name="divider">
+                    <area>10,48,631,2</area>
+                    <filename>images/arclight_wide_divider.png</filename>
+                </imagetype>
+                <statetype name="buttoncheck">
+                    <position>91%,10</position>
+                    <state type="off">
+                        <imagetype name="checkoff">
+                        </imagetype>
+                    </state>
+                    <state type="half">
+                        <imagetype name="checkhalf">
+                        </imagetype>
+                    </state>
+                    <state type="full">
+                        <imagetype name="checkfull">
+                        </imagetype>
+                    </state>
+                </statetype>
+                <imagetype name="buttonarrow">
+                </imagetype>
+            </state>
+            <state name="selected" from="active">
+                <shape name="item">
+                    <fill color="#0767AB" alpha="240" />
+                </shape>
+                <textarea name="buttontext">
+                    <alpha>255</alpha>
+                </textarea>
+            </state>
+            <state name="inactive" from="active">
+                <shape name="item">
+                    <fill color="#222222" alpha="180" />
+                </shape>
+                <textarea name="buttontext">
+                    <alpha>200</alpha>
+                    <font>basesmall</font>
+                </textarea>
+            </state>
+        </statetype>
+        <statetype name="upscrollarrow">
+            <position>718,306</position>
+            <state type="off">
+                <imagetype name="upoff">
+                    <filename>images/arclight_popup_uparrow.png</filename>
+                    <alpha>60</alpha>
+                </imagetype>
+            </state>
+            <state type="full">
+                <imagetype name="upon">
+                    <filename>images/arclight_popup_uparrow.png</filename>
+                    <alpha>190</alpha>
+                </imagetype>
+            </state>
+        </statetype>
+        <statetype name="downscrollarrow">
+            <position>701,306</position>
+            <state type="off">
+                <imagetype name="dnoff">
+                    <filename>images/arclight_popup_downarrow.png</filename>
+                    <alpha>60</alpha>
+                </imagetype>
+            </state>
+            <state type="full">
+                <imagetype name="dnon">
+                    <filename>images/arclight_popup_downarrow.png</filename>
+                    <alpha>190</alpha>
+                </imagetype>
+            </state>
+        </statetype>
+    </buttonlist>
+
+    <buttonlist name="baseshapebuttonlistwide">
+        <area>786,96,1136,1000</area>
+        <layout>vertical</layout>
+        <spacing>1</spacing>
+        <drawfrombottom>true</drawfrombottom>
+        <buttonarea>2,0,1136,1000</buttonarea>
+        <statetype name="buttonitem">
+            <area>0,0,767,50</area>
+            <state name="active">
+                <area>0,0,100%,50</area>
+                <shape name="item">
+                    <area>0,0,100%,49</area>
+                    <type>box</type>
+                    <fill color="#000000" alpha="160" />
+                </shape>
+                <textarea name="buttontext">
+                    <area>5,9,757,40</area>
+                    <align>allcenter</align>
+                    <font>basesmall</font>
+                    <alpha>100</alpha>
+                </textarea>
+                <imagetype name="divider">
+                    <area>10,48,631,2</area>
+                    <filename>images/arclight_wide_divider.png</filename>
+                </imagetype>
+                <statetype name="buttoncheck">
+                    <position>91%,10</position>
+                    <state type="off">
+                        <imagetype name="checkoff">
+                        </imagetype>
+                    </state>
+                    <state type="half">
+                        <imagetype name="checkhalf">
+                        </imagetype>
+                    </state>
+                    <state type="full">
+                        <imagetype name="checkfull">
+                        </imagetype>
+                    </state>
+                </statetype>
+                <imagetype name="buttonarrow">
+                </imagetype>
+            </state>
+            <state name="selected" from="active">
+                <shape name="item">
+                    <fill color="#0767AB" alpha="240" />
+                </shape>
+                <textarea name="buttontext">
+                    <alpha>255</alpha>
+                </textarea>
+            </state>
+            <state name="inactive" from="active">
+                <shape name="item">
+                    <fill color="#222222" alpha="180" />
+                </shape>
+                <textarea name="buttontext">
+                    <alpha>200</alpha>
+                    <font>basesmall</font>
+                </textarea>
+            </state>
+        </statetype>
+        <statetype name="upscrollarrow">
+            <position>1075,-30</position>
+            <state type="off">
+            </state>
+            <state type="full">
+                <imagetype name="upon">
+                    <filename>images/arclight_popup_uparrow.png</filename>
+                    <alpha>230</alpha>
+                </imagetype>
+            </state>
+        </statetype>
+        <statetype name="downscrollarrow">
+            <position>1057,-30</position>
+            <state type="off">
+            </state>
+            <state type="full">
+                <imagetype name="dnon">
+                    <filename>images/arclight_popup_downarrow.png</filename>
+                    <alpha>230</alpha>
+                </imagetype>
+            </state>
+        </statetype>
+    </buttonlist>
+
+    <!-- Base definition of a button -->
+    <button name="basebutton">
+        <position>0,0</position>
+        <statetype name="buttonstate">
+            <state name="active">
+                <imagetype name="buttonbackground">
+                    <area>0,0,156,38</area>
+                    <filename>images/spinbox_unselected.png</filename>
+                </imagetype>
+                <textarea name="text">
+                    <area>5,8,146,30</area>
+                    <align>allcenter</align>
+                    <font>basesmall</font>
+                    <alpha>100</alpha>
+                </textarea>
+            </state>
+            <state name="selected" from="active">
+                <imagetype name="buttonbackground">
+                    <area>0,0,156,38</area>
+                    <filename>images/spinbox_selected.png</filename>
+                </imagetype>
+                <textarea name="text">
+                    <alpha>255</alpha>
+                </textarea>
+            </state>
+            <state name="disabled" from="active" />
+            <state name="pushed" from="selected">
+            </state>
+        </statetype>
+    </button>
+
+    <button name="basebuttonslim">
+        <position>0,0</position>
+        <statetype name="buttonstate">
+            <state name="active">
+                <imagetype name="buttonbackground">
+                    <area>0,0,116,38</area>
+                    <filename>images/spinbox_unselected.png</filename>
+                </imagetype>
+                <textarea name="text">
+                    <area>5,8,106,30</area>
+                    <align>allcenter</align>
+                    <font>basesmall</font>
+                    <alpha>100</alpha>
+                </textarea>
+            </state>
+            <state name="selected" from="active">
+                <imagetype name="buttonbackground">
+                    <area>0,0,116,38</area>
+                    <filename>images/spinbox_selected.png</filename>
+                </imagetype>
+                <textarea name="text">
+                    <alpha>255</alpha>
+                </textarea>
+            </state>
+            <state name="disabled" from="active" />
+            <state name="pushed" from="selected">
+            </state>
+        </statetype>
+    </button>
+
+    <button name="basebuttonwide">
+        <position>0,0</position>
+        <statetype name="buttonstate">
+            <state name="active">
+                <imagetype name="buttonbackground">
+                    <area>0,0,500,38</area>
+                    <filename>images/textedit_unselected.png</filename>
+                </imagetype>
+                <textarea name="text">
+                    <area>0,3,500,38</area>
+                    <align>allcenter</align>
+                    <font>basesmall</font>
+                    <alpha>100</alpha>
+                </textarea>
+            </state>
+            <state name="selected" from="active">
+                <imagetype name="buttonbackground">
+                    <area>0,0,500,38</area>
+                    <filename>images/textedit_selected.png</filename>
+                </imagetype>
+                <textarea name="text">
+                    <alpha>255</alpha>
+                </textarea>
+            </state>
+            <state name="disabled" from="active" />
+            <state name="pushed" from="selected">
+            </state>
+        </statetype>
+    </button>
+
+    <button name="basesearchbutton">
+        <area>0,0,500,38</area>
+        <statetype name="buttonstate">
+            <state name="active">
+                <imagetype name="background">
+                    <area>0,0,500,38</area>
+                    <filename>images/textedit_unselected.png</filename>
+                </imagetype>
+                <textarea name="text">
+                    <area>0,3,500,38</area>
+                    <align>allcenter</align>
+                    <font>basesmall</font>
+                    <font state="selected">basesmall</font>
+                    <font state="disabled">basesmall</font>
+                    <alpha>100</alpha>
+                </textarea>
+            </state>
+            <state name="selected" from="active">
+                <imagetype name="background">
+                    <area>0,0,500,38</area>
+                    <filename>images/textedit_selected.png</filename>
+                </imagetype>
+                <textarea name="text">
+                    <alpha>255</alpha>
+                </textarea>
+            </state>
+            <state name="disabled" from="active" />
+            <state name="pushed" from="active">
+            </state>
+        </statetype>
+    </button>
+
+    <!-- Base definition of checkbox -->
+    <checkbox name="basecheckbox">
+        <area>0,0,30,30</area>
+        <statetype name="background">
+            <state name="active">
+                <!--                <imagetype name="background">
+                    <area>0,0,30,30</area>
+                    <filename>images/checkbox_unselected_unchecked.png</filename>
+                </imagetype>-->
+            </state>
+            <state name="selected">
+                <imagetype name="background">
+                    <area>0,0,30,30</area>
+                    <filename>images/checkbox_selected_unchecked.png</filename>
+                    <alphapulse min="128" max="255" change="2"/>
+                </imagetype>
+                <imagetype name="foreground">
+                    <area>0,0,30,30</area>
+                    <filename>images/checkbox_unselected_unchecked.png</filename>
+                </imagetype>
+            </state>
+            <state name="disabled" />
+        </statetype>
+        <statetype name="checkstate">
+            <area>0,0,45,45</area>
+            <state type="off" />
+            <state type="half">
+                <imagetype name="background">
+                    <area>0,0,30,30</area>
+                    <filename>images/checkbox_selected_unchecked.png</filename>
+                </imagetype>
+            </state>
+            <state type="full">
+                <imagetype name="mark">
+                    <area>0,0,30,30</area>
+                    <filename>images/checkbox_unselected_checked.png</filename>
+                </imagetype>
+            </state>
+        </statetype>
+    </checkbox>
+
+    <!-- Base definition of a spinbox -->
+    <spinbox name="basespinbox">
+        <area>0,0,193,38</area>
+        <layout>horizontal</layout>
+        <statetype name="buttonitem">
+            <state name="active">
+                <area>0,0,171,38</area>
+                <imagetype name="buttonbackground">
+                    <filename>images/spinbox_unselected.png</filename>
+                </imagetype>
+                <textarea name="buttontext">
+                    <area>5,8,161,30</area>
+                    <font>basesmall</font>
+                    <cutdown>yes</cutdown>
+                    <align>allcenter</align>
+                </textarea>
+            </state>
+            <state name="selected" from="active">
+                <imagetype name="buttonbackground">
+                    <filename>images/spinbox_selected.png</filename>
+                </imagetype>
+            </state>
+            <state name="inactive" from="active">
+                <textarea name="buttontext">
+                    <alpha>60</alpha>
+                </textarea>
+            </state>
+        </statetype>
+        <statetype name="upscrollarrow">
+            <position>175,0</position>
+            <state type="off">
+                <imagetype name="dnoff">
+                    <filename>images/arclight_rightarrow.png</filename>
+                    <alpha>100</alpha>
+                </imagetype>
+            </state>
+            <state type="full">
+                <imagetype name="dnon">
+                    <filename>images/arclight_rightarrow.png</filename>
+                    <alpha>190</alpha>
+                </imagetype>
+            </state>
+        </statetype>
+        <statetype name="downscrollarrow">
+            <position>175,18</position>
+            <state type="off">
+                <imagetype name="upoff">
+                    <filename>images/arclight_leftarrow.png</filename>
+                    <alpha>100</alpha>
+                </imagetype>
+            </state>
+            <state type="full">
+                <imagetype name="upon">
+                    <filename>images/arclight_leftarrow.png</filename>
+                    <alpha>190</alpha>
+                </imagetype>
+            </state>
+        </statetype>
+    </spinbox>
+
+    <!-- Base definition of a spinbox -->
+    <spinbox name="basewidespinbox">
+        <area>0,0,521,38</area>
+        <layout>horizontal</layout>
+        <statetype name="buttonitem">
+            <state name="active">
+                <area>0,0,521,38</area>
+                <imagetype name="buttonbackground">
+                    <filename>images/wideselector_unselected.png</filename>
+                </imagetype>
+                <textarea name="buttontext">
+                    <area>5,9,490,28</area>
+                    <font>basesmall</font>
+                    <cutdown>yes</cutdown>
+                    <align>allcenter</align>
+                </textarea>
+            </state>
+            <state name="selected" from="active">
+                <imagetype name="buttonbackground">
+                    <filename>images/wideselector_selected.png</filename>
+                </imagetype>
+            </state>
+            <state name="inactive" from="active">
+                <textarea name="buttontext">
+                    <alpha>60</alpha>
+                </textarea>
+            </state>
+        </statetype>
+        <statetype name="upscrollarrow">
+            <position>503,0</position>
+            <state type="off">
+                <imagetype name="dnoff">
+                    <filename>images/arclight_rightarrow.png</filename>
+                    <alpha>100</alpha>
+                </imagetype>
+            </state>
+            <state type="full">
+                <imagetype name="dnon">
+                    <filename>images/arclight_rightarrow.png</filename>
+                    <alpha>190</alpha>
+                </imagetype>
+            </state>
+        </statetype>
+        <statetype name="downscrollarrow">
+            <position>503,18</position>
+            <state type="off">
+                <imagetype name="upoff">
+                    <filename>images/arclight_leftarrow.png</filename>
+                    <alpha>100</alpha>
+                </imagetype>
+            </state>
+            <state type="full">
+                <imagetype name="upon">
+                    <filename>images/arclight_leftarrow.png</filename>
+                    <alpha>190</alpha>
+                </imagetype>
+            </state>
+        </statetype>
+    </spinbox>
+
+    <!-- Base definition of a list in 'selector' configuration -->
+    <buttonlist name="baseselector">
+        <area>0,0,193,38</area>
+        <layout>horizontal</layout>
+        <buttonarea>0,0,100%,100%</buttonarea>
+        <statetype name="buttonitem">
+            <state name="active">
+                <area>0,0,171,38</area>
+                <imagetype name="buttonbackground">
+                    <filename>images/spinbox_unselected.png</filename>
+                </imagetype>
+                <textarea name="buttontext">
+                    <area>5,8,161,30</area>
+                    <font>basesmall</font>
+                    <cutdown>yes</cutdown>
+                    <align>allcenter</align>
+                </textarea>
+            </state>
+            <state name="selected" from="active">
+                <imagetype name="buttonbackground">
+                    <filename>images/spinbox_selected.png</filename>
+                </imagetype>
+            </state>
+            <state name="inactive" from="active">
+                <textarea name="buttontext">
+                    <alpha>60</alpha>
+                </textarea>
+            </state>
+        </statetype>
+        <statetype name="upscrollarrow">
+            <position>175,0</position>
+            <state type="off">
+                <imagetype name="dnoff">
+                    <filename>images/arclight_rightarrow.png</filename>
+                    <alpha>100</alpha>
+                </imagetype>
+            </state>
+            <state type="full">
+                <imagetype name="dnon">
+                    <filename>images/arclight_rightarrow.png</filename>
+                    <alpha>190</alpha>
+                </imagetype>
+            </state>
+        </statetype>
+        <statetype name="downscrollarrow">
+            <position>175,18</position>
+            <state type="off">
+                <imagetype name="upoff">
+                    <filename>images/arclight_leftarrow.png</filename>
+                    <alpha>100</alpha>
+                </imagetype>
+            </state>
+            <state type="full">
+                <imagetype name="upon">
+                    <filename>images/arclight_leftarrow.png</filename>
+                    <alpha>190</alpha>
+                </imagetype>
+            </state>
+        </statetype>
+    </buttonlist>
+
+    <!-- Base definition of a list in wide 'selector' configuration -->
+    <buttonlist name="basewideselector">
+        <area>0,0,521,38</area>
+        <layout>horizontal</layout>
+        <buttonarea>0,0,500,38</buttonarea>
+        <statetype name="buttonitem">
+            <state name="active">
+                <area>0,0,500,38</area>
+                <imagetype name="buttonbackground">
+                    <filename>images/wideselector_unselected.png</filename>
+                </imagetype>
+                <textarea name="buttontext">
+                    <area>5,9,490,28</area>
+                    <font>basesmall</font>
+                    <cutdown>yes</cutdown>
+                    <align>allcenter</align>
+                </textarea>
+            </state>
+            <state name="selected" from="active">
+                <imagetype name="buttonbackground">
+                    <filename>images/wideselector_selected.png</filename>
+                </imagetype>
+            </state>
+            <state name="inactive" from="active">
+                <textarea name="buttontext">
+                    <alpha>60</alpha>
+                </textarea>
+            </state>
+        </statetype>
+        <statetype name="upscrollarrow">
+            <position>503,0</position>
+            <state type="off">
+                <imagetype name="dnoff">
+                    <filename>images/arclight_rightarrow.png</filename>
+                    <alpha>100</alpha>
+                </imagetype>
+            </state>
+            <state type="full">
+                <imagetype name="dnon">
+                    <filename>images/arclight_rightarrow.png</filename>
+                    <alpha>190</alpha>
+                </imagetype>
+            </state>
+        </statetype>
+        <statetype name="downscrollarrow">
+            <position>503,18</position>
+            <state type="off">
+                <imagetype name="upoff">
+                    <filename>images/arclight_leftarrow.png</filename>
+                    <alpha>100</alpha>
+                </imagetype>
+            </state>
+            <state type="full">
+                <imagetype name="upon">
+                    <filename>images/arclight_leftarrow.png</filename>
+                    <alpha>190</alpha>
+                </imagetype>
+            </state>
+        </statetype>
+    </buttonlist>
+
+    <!-- Base definition of a textarea -->
+    <textarea name="basetextarea">
+        <area>0,0,10,10</area>
+        <font>basesmall</font>
+        <multiline>no</multiline>
+        <align>left</align>
+    </textarea>
+
+    <!-- Base definition of a textedit -->
+    <textedit name="basetextedit">
+        <area>0,0,500,38</area>
+        <statetype name="background">
+            <state name="active">
+                <imagetype name="background">
+                    <filename>images/textedit_unselected.png</filename>
+                </imagetype>
+            </state>
+            <state name="selected">
+                <imagetype name="background">
+                    <filename>images/textedit_selected.png</filename>
+                </imagetype>
+            </state>
+            <state name="inactive">
+                <imagetype name="background">
+                    <filename>images/textedit_unselected.png</filename>
+                </imagetype>
+            </state>
+        </statetype>
+        <imagetype name="cursor">
+            <position>0,0</position>
+            <filename>images/textedit_cursor.png</filename>
+        </imagetype>
+        <textarea name="text">
+            <area>5,8,490,30</area>
+            <font>basesmall</font>
+            <align>allcenter</align>
+        </textarea>
+    </textedit>
+
+    <!-- Base definition of a half width textedit -->
+    <textedit name="basehalftextedit">
+        <area>0,0,375,38</area>
+        <statetype name="background">
+            <state name="active">
+                <imagetype name="background">
+                    <area>0,0,375,38</area>
+                    <filename>images/textedit_unselected.png</filename>
+                </imagetype>
+            </state>
+            <state name="selected">
+                <imagetype name="background">
+                    <area>0,0,375,38</area>
+                    <filename>images/textedit_selected.png</filename>
+                </imagetype>
+            </state>
+            <state name="inactive">
+                <imagetype name="background">
+                    <area>0,0,375,38</area>
+                    <filename>images/textedit_unselected.png</filename>
+                </imagetype>
+            </state>
+        </statetype>
+        <imagetype name="cursor">
+            <position>0,0</position>
+            <filename>images/textedit_cursor.png</filename>
+        </imagetype>
+        <textarea name="text">
+            <area>5,8,365,30</area>
+            <font>basesmall</font>
+            <align>allcenter</align>
+        </textarea>
+    </textedit>
+
+    <!-- Base definition of a textedit with centered text-->
+    <textedit name="basecentertextedit">
+        <area>0,0,500,38</area>
+        <statetype name="background">
+            <state name="active">
+                <imagetype name="background">
+                    <filename>images/textedit_unselected.png</filename>
+                </imagetype>
+            </state>
+            <state name="selected">
+                <imagetype name="background">
+                    <filename>images/textedit_selected.png</filename>
+                </imagetype>
+            </state>
+            <state name="inactive">
+                <imagetype name="background">
+                    <filename>images/textedit_unselected.png</filename>
+                </imagetype>
+            </state>
+        </statetype>
+        <imagetype name="cursor">
+            <position>0,0</position>
+            <filename>images/textedit_cursor.png</filename>
+        </imagetype>
+        <textarea name="text">
+            <area>5,8,490,30</area>
+            <font>basesmall</font>
+            <align>allcenter</align>
+        </textarea>
+    </textedit>
+
+    <!-- Base definition of a multiline textedit -->
+    <textedit name="basemultilinetextedit">
+        <area>0,0,500,163</area>
+        <multiline>true</multiline>
+        <statetype name="background">
+            <state name="active">
+                <imagetype name="background">
+                    <area>0,0,500,163</area>
+                    <filename>images/multiline_textedit_unselected.png</filename>
+                </imagetype>
+            </state>
+            <state name="selected">
+                <imagetype name="background">
+                    <area>0,0,500,163</area>
+                    <filename>images/multiline_textedit_selected.png</filename>
+                </imagetype>
+            </state>
+            <state name="inactive">
+                <imagetype name="background">
+                    <area>0,0,500,163</area>
+                    <filename>images/multiline_textedit_unselected.png</filename>
+                </imagetype>
+            </state>
+        </statetype>
+        <imagetype name="cursor">
+            <position>0,-5</position>
+            <filename>images/textedit_cursor.png</filename>
+        </imagetype>
+        <textarea name="text">
+            <area>5,8,490,147</area>
+            <font>basesmall</font>
+            <align>justify</align>
+            <multiline>true</multiline>
+        </textarea>
+    </textedit>
+
+    <statetype name="baserating">
+        <area>0,0,178,30</area>
+        <state name="0">
+        </state>
+        <state name="1">
+            <imagetype name="stars">
+                <area>0,0,178,30</area>
+                <filename>images/arclight_star_1.png</filename>
+            </imagetype>
+        </state>
+        <state name="2">
+            <imagetype name="stars">
+                <area>0,0,178,30</area>
+                <filename>images/arclight_star_2.png</filename>
+            </imagetype>
+        </state>
+        <state name="3">
+            <imagetype name="stars">
+                <area>0,0,178,30</area>
+                <filename>images/arclight_star_3.png</filename>
+            </imagetype>
+        </state>
+        <state name="4">
+            <imagetype name="stars">
+                <area>0,0,178,30</area>
+                <filename>images/arclight_star_4.png</filename>
+            </imagetype>
+        </state>
+        <state name="5">
+            <imagetype name="stars">
+                <area>0,0,178,30</area>
+                <filename>images/arclight_star_5.png</filename>
+            </imagetype>
+        </state>
+        <state name="6">
+            <imagetype name="stars">
+                <area>0,0,178,30</area>
+                <filename>images/arclight_star_6.png</filename>
+            </imagetype>
+        </state>
+        <state name="7">
+            <imagetype name="stars">
+                <area>0,0,178,30</area>
+                <filename>images/arclight_star_7.png</filename>
+            </imagetype>
+        </state>
+        <state name="8">
+            <imagetype name="stars">
+                <area>0,0,178,30</area>
+                <filename>images/arclight_star_8.png</filename>
+            </imagetype>
+        </state>
+        <state name="9">
+            <imagetype name="stars">
+                <area>0,0,178,30</area>
+                <filename>images/arclight_star_9.png</filename>
+            </imagetype>
+        </state>
+        <state name="10">
+            <imagetype name="stars">
+                <area>0,0,178,30</area>
+                <filename>images/arclight_star_10.png</filename>
+            </imagetype>
+        </state>
+    </statetype>
+
+    <!-- Base definition of a progressbar -->
+    <progressbar name="baseprogressbar">
+        <area>0,0,10,10</area>
+        <layout>horizontal</layout>
+        <style>reveal</style>
+        <imagetype name="background">
+            <filename>images/progressbar_background.png</filename>
+        </imagetype>
+        <imagetype name="progressimage">
+            <filename>images/progressbar_fill.png</filename>
+        </imagetype>
+    </progressbar>
+
+    <!-- Popup Dialogue Box -->
+    <window name="MythPopupBox">
+        <area>-1,-1,518,633</area>
+
+        <imagetype name="backimg">
+            <filename>images/arclight_popup_bg2.png</filename>
+        </imagetype>
+
+        <textarea name="messagearea" from="basetextarea">
+            <area>35,40,448,195</area>
+            <multiline>yes</multiline>
+            <font>basenormal</font>
+            <align>allcenter</align>
+        </textarea>
+
+        <imagetype name="dialogboxoverlay">
+            <position>0,0</position>
+            <filename>images/arclight_popup_overlay.png</filename>
+        </imagetype>
+
+        <buttonlist name="list" from="basepopupbuttonlist">
+            <area>36,249,444,328</area>
+            <wrapstyle>items</wrapstyle>
+            <drawfrombottom>yes</drawfrombottom>
+            <align>center</align>
+            <showarrow>no</showarrow>
+        </buttonlist>
+    </window>
+
+    <!-- Large Popup Box -->
+    <window name="MythDialogBox">
+        <area>-1,-1,790,962</area>
+
+        <imagetype name="backimg">
+            <area>0,0,790,962</area>
+            <filename>images/arclight_popup_large_bg.png</filename>
+        </imagetype>
+
+        <textarea name="title" from="basetextarea">
+            <area>89,78,613,40</area>
+            <font>basemedium</font>
+            <align>allcenter</align>
+        </textarea>
+
+        <textarea name="messagearea" from="basetextarea">
+            <area>89,138,613,280</area>
+            <multiline>yes</multiline>
+            <font>basesmall</font>
+            <align>allcenter</align>
+        </textarea>
+
+        <buttonlist name="list" from="basepopupbuttonlist">
+            <area>61,440,667,443</area>
+            <layout>vertical</layout>
+            <spacing>0</spacing>
+            <drawfrombottom>true</drawfrombottom>
+            <buttonarea>0,0,100%,100%</buttonarea>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>0,0,100%,54</area>
+                    <imagetype name="buttonline">
+                        <area>0,52,667,2</area>
+                        <filename>images/arclight_popup_divider.png</filename>
+                    </imagetype>
+                    <textarea name="buttontext">
+                        <area>5,5,657,54</area>
+                        <font>basenormal</font>
+                        <cutdown>yes</cutdown>
+                        <align>allcenter</align>
+                        <alpha>100</alpha>
+                    </textarea>
+                    <statetype name="buttoncheck">
+                        <position>91%,10</position>
+                        <state type="off">
+                            <imagetype name="checkoff">
+                            </imagetype>
+                        </state>
+                        <state type="half">
+                            <imagetype name="checkhalf">
+                            </imagetype>
+                        </state>
+                        <state type="full">
+                            <imagetype name="checkfull">
+                            </imagetype>
+                        </state>
+                    </statetype>
+                    <imagetype name="buttonarrow">
+                        <position>628,18</position>
+                        <filename>images/arclight_popup_rightarrow.png</filename>
+                        <alpha>100</alpha>
+                    </imagetype>
+                </state>
+                <state name="selected" from="active">
+                    <textarea name="buttontext">
+                        <alpha>255</alpha>
+                    </textarea>
+                    <imagetype name="buttonarrow">
+                        <alpha>255</alpha>
+                    </imagetype>
+                </state>
+                <state name="inactive" from="active">
+                    <imagetype name="buttonbackground">
+                        <alpha>100</alpha>
+                    </imagetype>
+                </state>
+            </statetype>
+            <statetype name="upscrollarrow">
+                <position>618,441</position>
+                <state type="off">
+                    <imagetype name="upoff">
+                        <filename>images/arclight_popup_uparrow.png</filename>
+                        <alpha>60</alpha>
+                    </imagetype>
+                </state>
+                <state type="full">
+                    <imagetype name="upon">
+                        <filename>images/arclight_popup_uparrow.png</filename>
+                        <alpha>190</alpha>
+                    </imagetype>
+                </state>
+            </statetype>
+            <statetype name="downscrollarrow">
+                <position>601,441</position>
+                <state type="off">
+                    <imagetype name="dnoff">
+                        <filename>images/arclight_popup_downarrow.png</filename>
+                        <alpha>60</alpha>
+                    </imagetype>
+                </state>
+                <state type="full">
+                    <imagetype name="dnon">
+                        <filename>images/arclight_popup_downarrow.png</filename>
+                        <alpha>190</alpha>
+                    </imagetype>
+                </state>
+            </statetype>
+        </buttonlist>
+
+        <imagetype name="dialogboxoverlay">
+            <position>0,0</position>
+            <filename>images/arclight_popup_large_overlay.png</filename>
+        </imagetype>
+
+    </window>
+
+    <window name="MythBusyDialog">
+        <area>1200,780,706,298</area>
+
+        <imagetype name="entry_bg">
+            <position>0,0</position>
+            <filename>images/textentry_bg.png</filename>
+        </imagetype>
+
+        <imagetype name="animation">
+            <position>90,240</position>
+            <filepattern low="1" high="50">images/progressbar/progress%1.png</filepattern>
+            <delay>30</delay>
+        </imagetype>
+
+        <textarea name="message" from="basetextarea">
+            <area>53,80,600,100</area>
+            <align>allcenter</align>
+        </textarea>
+
+        <imagetype name="entry_overlay">
+            <position>0,0</position>
+            <filename>images/textentry_overlay.png</filename>
+        </imagetype>
+
+    </window>
+
+    <window name="MythProgressDialog">
+        <area>1200,780,706,298</area>
+
+        <imagetype name="entry_bg">
+            <position>0,0</position>
+            <filename>images/textentry_bg.png</filename>
+        </imagetype>
+
+        <progressbar name="progressbar" from="baseprogressbar">
+            <position>90,200</position>
+        </progressbar>
+
+        <textarea name="message" from="basetextarea">
+            <area>53,80,600,100</area>
+            <align>allcenter</align>
+        </textarea>
+
+        <textarea name="progresstext" from="basetextarea">
+            <area>53,240,600,300</area>
+            <align>allcenter</align>
+            <value>0%</value>
+        </textarea>
+
+
+        <imagetype name="entry_overlay">
+            <position>0,0</position>
+            <filename>images/textentry_overlay.png</filename>
+        </imagetype>
+
+    </window>
+
+    <window name="MythConfirmationDialog">
+        <area>-1,-1,706,298</area>
+
+        <imagetype name="entry_bg">
+            <position>0,0</position>
+            <filename>images/textentry_bg.png</filename>
+        </imagetype>
+
+        <textarea name="message" from="basetextarea">
+            <area>75,40,554,150</area>
+            <font>basesmall</font>
+            <align>center</align>
+            <multiline>yes</multiline>
+        </textarea>
+
+        <button name="ok" from="basebutton">
+            <position>509,219</position>
+            <value>OK</value>
+        </button>
+
+        <button name="cancel" from="basebutton">
+            <position>45,219</position>
+            <value>Cancel</value>
+        </button>
+
+        <imagetype name="entry_overlay">
+            <position>0,0</position>
+            <filename>images/textentry_overlay.png</filename>
+        </imagetype>
+
+    </window>
+
+    <window name="MythTextInputDialog">
+        <area>-1,-1,706,298</area>
+
+        <imagetype name="entry_bg">
+            <position>0,0</position>
+            <filename>images/textentry_bg.png</filename>
+        </imagetype>
+
+
+        <textarea name="message" from="basetextarea">
+            <area>105,40,494,50</area>
+            <font>basesmall</font>
+            <align>center</align>
+        </textarea>
+
+        <textedit name="input" from="basetextedit">
+            <position>103,128</position>
+        </textedit>
+
+        <button name="ok" from="basebutton">
+            <position>529,219</position>
+            <value>OK</value>
+        </button>
+
+        <imagetype name="entry_overlay">
+            <position>0,0</position>
+            <filename>images/textentry_overlay.png</filename>
+        </imagetype>
+
+    </window>
+
+    <window name="MythSearchDialog">
+        <area>-1,-1,518,633</area>
+
+        <imagetype name="backimg">
+            <filename>images/arclight_search_bg.png</filename>
+        </imagetype>
+
+        <textedit name="input" from="basehalftextedit">
+            <position>73,110</position>
+        </textedit>
+
+        <buttonlist name="itemlist" from="basepopupbuttonlist">
+            <area>36,169,444,328</area>
+            <drawfrombottom>yes</drawfrombottom>
+            <align>center</align>
+            <showarrow>no</showarrow>
+        </buttonlist>
+
+        <textarea name="title" from="basetextarea">
+            <area>29,50,460,60</area>
+            <font>basesmall</font>
+            <align>allcenter</align>
+        </textarea>
+
+        <imagetype name="dialogboxoverlay">
+            <position>0,0</position>
+            <filename>images/arclight_search_overlay.png</filename>
+        </imagetype>
+
+        <button name="cancel" from="basebutton">
+            <position>73,530</position>
+            <value>Cancel</value>
+        </button>
+
+        <button name="ok" from="basebutton">
+            <position>293,530</position>
+            <value>OK</value>
+        </button>
+
+    </window>
+
+    <window name="MythFileBrowser">
+        <area>0,0,1920,1080</area>
+
+        <imagetype name="fanart">
+            <area>0,0,1920,1080</area>
+            <filename>Backgrounds/</filename>
+        </imagetype>
+
+        <imagetype name="leftpanel_bg">
+            <position>-20,0</position>
+            <filename>images/editmetadata_leftpanel_bg.png</filename>
+        </imagetype>
+
+        <shape name="infobox">
+            <area>35,13,694,913</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="180" />
+
+        </shape>
+
+        <imagetype name="preview">
+            <area>165,23,450,296</area>
+            <filename />
+            <preserveaspect>true</preserveaspect>
+        </imagetype>
+
+        <imagetype name="coverart">
+            <area>515,23,200,296</area>
+            <filename />
+            <preserveaspect>true</preserveaspect>
+        </imagetype>
+
+        <textarea name="filename" from="basetextarea">
+            <area>45,334,674,60</area>
+            <font>basegothicmedium</font>
+            <align>left,vcenter</align>
+        </textarea>
+
+        <textarea name="fullpath" from="basetextarea">
+            <area>45,385,674,57</area>
+            <multiline>yes</multiline>
+            <font>basegothicmidblue</font>
+            <align>left,vcenter</align>
+            <cutdown>yes</cutdown>
+        </textarea>
+
+        <textarea name="info" from="basetextarea">
+            <area>45,425,674,57</area>
+            <multiline>no</multiline>
+            <font>basesmall</font>
+            <align>left,vcenter</align>
+            <cutdown>yes</cutdown>
+        </textarea>
+
+        <shape name="item">
+            <area>1620,-14,313,55</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="200" />
+        </shape>
+
+        <clock name="clock">
+            <area>1620,-2,303,50</area>
+            <font>basesmall</font>
+            <align>allcenter</align>
+            <format>%DATE%, %TIME%</format>
+        </clock>
+
+        <buttonlist name="filelist">
+            <area>786,80,1136,1000</area>
+            <scrollstyle>free</scrollstyle>
+            <wrapstyle>items</wrapstyle>
+            <layout>vertical</layout>
+            <spacing>2</spacing>
+            <drawfrombottom>true</drawfrombottom>
+            <buttonarea>0,0,100%,1000</buttonarea>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>0,0,100%,89</area>
+                    <shape name="item">
+                        <area>0,0,100%,89</area>
+                        <type>box</type>
+                        <fill color="#000000" alpha="180" />
+                    </shape>
+                    <imagetype name="buttonimage">
+                        <area>6,3,130,83</area>
+                        <preserveaspect>true</preserveaspect>
+                        <alpha>160</alpha>
+                    </imagetype>
+                    <textarea name="buttontext">
+                        <area>150,10,1070,69</area>
+                        <align>left,vcenter</align>
+                        <font>basemedium</font>
+                        <alpha>210</alpha>
+                    </textarea>
+                    <imagetype name="divider">
+                        <area>0,88,1136,2</area>
+                        <filename>images/baserecordinglistwide_divider.png</filename>
+                        <alpha>100</alpha>
+                    </imagetype>
+                    <statetype name="nodetype">
+                        <state name="folder">
+                            <imagetype name="icon">
+                                <area>6,2,50,85</area>
+                                <preserveaspect>true</preserveaspect>
+                                <filename>images/folderopen.png</filename>
+                            </imagetype>
+                        </state>
+                        <state name="upfolder">
+                            <imagetype name="icon">
+                                <area>6,2,50,85</area>
+                                <preserveaspect>true</preserveaspect>
+                                <filename>images/mv_gallery_dir_up.png</filename>
+                            </imagetype>
+                        </state>
+                        <state name="executable">
+                            <area>6,2,50,85</area>
+                            <imagetype name="icon">
+                            </imagetype>
+                        </state>
+                        <state name="file">
+                            <area>6,2,50,85</area>
+                            <imagetype name="icon">
+                            </imagetype>
+                        </state>
+                    </statetype>
+                </state>
+                <state name="selected" from="active">
+                    <shape name="item">
+                        <fill color="#0767AB" alpha="240" />
+                    </shape>
+                    <textarea name="buttontext">
+                        <alpha>200</alpha>
+                        <font>basemedium</font>
+                    </textarea>
+                    <imagetype name="buttonimage">
+                        <alpha>255</alpha>
+                    </imagetype>
+                    <imagetype name="divider">
+                        <filename />
+                    </imagetype>
+                    <statetype name="nodetype">
+                        <state name="folder">
+                            <imagetype name="icon">
+                                <area>6,2,50,85</area>
+                                <preserveaspect>true</preserveaspect>
+                                <filename>images/folderopen.png</filename>
+                            </imagetype>
+                        </state>
+                        <state name="upfolder">
+                            <imagetype name="icon">
+                                <area>6,2,50,85</area>
+                                <preserveaspect>true</preserveaspect>
+                                <filename>images/mv_gallery_dir_up.png</filename>
+                            </imagetype>
+                        </state>
+                        <state name="executable">
+                            <area>6,2,50,85</area>
+                            <imagetype name="icon">
+                            </imagetype>
+                        </state>
+                        <state name="file">
+                            <area>6,2,50,85</area>
+                            <imagetype name="icon">
+                            </imagetype>
+                        </state>
+                    </statetype>
+                </state>
+                <state name="inactive" from="active" />
+            </statetype>
+            <statetype name="upscrollarrow">
+                <position>1075,-30</position>
+                <state type="off">
+                </state>
+                <state type="full">
+                    <imagetype name="upon">
+                        <filename>images/arclight_popup_uparrow.png</filename>
+                        <alpha>230</alpha>
+                    </imagetype>
+                </state>
+            </statetype>
+            <statetype name="downscrollarrow">
+                <position>1057,-30</position>
+                <state type="off">
+                </state>
+                <state type="full">
+                    <imagetype name="dnon">
+                        <filename>images/arclight_popup_downarrow.png</filename>
+                        <alpha>230</alpha>
+                    </imagetype>
+                </state>
+            </statetype>
+        </buttonlist>
+
+        <textedit name="location" from="basetextedit">
+            <position>140,528</position>
+        </textedit>
+
+        <button name="back" from="basebutton">
+            <position>290,650</position>
+            <value>Go up a level</value>
+        </button>
+
+        <button name="home" from="basebutton">
+            <position>290,710</position>
+            <value>Home</value>
+        </button>
+
+        <button name="cancel" from="basebutton">
+            <position>290,770</position>
+            <value>Cancel</value>
+        </button>
+
+        <button name="ok" from="basebutton">
+            <position>290,830</position>
+            <value>Ok</value>
+        </button>
+
+    </window>
+
+    <window name="videowindow">
+        <area>-1,-1,706,298</area>
+
+        <imagetype name="entry_bg">
+            <position>0,0</position>
+            <filename>images/textentry_bg.png</filename>
+        </imagetype>
+
+        <textarea name="message" from="basetextarea">
+            <area>0,0,706,298</area>
+            <font>basemedium</font>
+            <align>allcenter</align>
+            <value>Please Wait...</value>
+        </textarea>
+
+        <imagetype name="entry_overlay">
+            <position>0,0</position>
+            <filename>images/textentry_overlay.png</filename>
+        </imagetype>
+
+    </window>
+
+</mythuitheme>

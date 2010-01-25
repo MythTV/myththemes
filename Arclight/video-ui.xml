@@ -1,0 +1,1778 @@
+<mythuitheme>
+
+    <!-- Popups -->
+    <window name="moviesel">
+        <area>-1,-1,1920,1080</area>
+
+        <shape name="shape">
+            <area>784,0,1138,1080</area>
+            <type>box</type>
+            <fill color="#000000" alpha="230" />
+            <line color="#000000" alpha="230" width="-1" />
+        </shape>
+
+        <buttonlist name="results" from="baserecordinglistwide">
+            <area>786,542,1136,540</area>
+            <scrollstyle>free</scrollstyle>
+            <wrapstyle>items</wrapstyle>
+            <layout>vertical</layout>
+            <spacing>1</spacing>
+            <drawfrombottom>true</drawfrombottom>
+            <buttonarea>2,0,1136,540</buttonarea>
+        </buttonlist>
+
+    </window>
+
+    <window name="castpopup">
+        <area>-1,-1,1920,1080</area>
+
+        <shape name="shape">
+            <area>784,0,1138,1080</area>
+            <type>box</type>
+            <fill color="#000000" alpha="230" />
+            <line color="#000000" alpha="230" width="-1" />
+        </shape>
+
+        <textarea name="title" from="basetextarea">
+            <area>796,44,1118,48</area>
+            <font>basegothicmedium</font>
+            <align>left,vcenter</align>
+            <value>Cast</value>
+        </textarea>
+
+        <buttonlist name="cast" from="baserecordinglistwide">
+            <area>786,542,1136,540</area>
+            <scrollstyle>free</scrollstyle>
+            <wrapstyle>items</wrapstyle>
+            <layout>vertical</layout>
+            <spacing>1</spacing>
+            <drawfrombottom>true</drawfrombottom>
+            <buttonarea>2,0,1136,540</buttonarea>
+        </buttonlist>
+
+    </window>
+
+    <window name="descriptionpopup">
+        <area>-1,-1,1920,1080</area>
+
+        <shape name="shape">
+            <area>786,1,1136,548</area>
+            <type>box</type>
+            <fill color="#000000" alpha="230" />
+        </shape>
+
+        <textarea name="title" from="basetextarea">
+            <area>796,44,1118,48</area>
+            <font>basegothicmedium</font>
+            <align>left,vcenter</align>
+            <value>Plot</value>
+        </textarea>
+
+        <textarea name="description" from="basetextarea">
+            <area>796,84,1116,425</area>
+            <multiline>yes</multiline>
+            <align>vcenter,justify</align>
+            <font>basesmall</font>
+        </textarea>
+
+        <button name="ok" from="basebutton">
+            <position>1314,500</position>
+            <value>OK</value>
+        </button>
+
+    </window>
+
+    <!-- Main Windows -->
+    <window name="manager">
+        <area>0,0,1920,1080</area>
+
+        <imagetype name="fanart">
+            <area>0,0,1920,1080</area>
+            <filename>Backgrounds/</filename>
+        </imagetype>
+
+        <imagetype name="leftpanel_bg">
+            <position>-20,0</position>
+            <filename>images/editmetadata_leftpanel_bg.png</filename>
+        </imagetype>
+
+        <shape name="panel_dark">
+            <area>0,0,768,1080</area>
+            <fill color="#000000" alpha="80" />
+        </shape>
+
+        <shape name="item">
+            <area>1620,-14,313,55</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="200" />
+        </shape>
+
+        <clock name="clock">
+            <area>1620,-2,303,50</area>
+            <font>basesmall</font>
+            <align>allcenter</align>
+            <format>%DATE%, %TIME%</format>
+        </clock>
+
+        <shape name="infobox">
+            <area>35,13,694,1033</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="180" />
+
+        </shape>
+
+        <imagetype name="screenshot">
+            <area>265,23,450,296</area>
+            <filename />
+            <preserveaspect>true</preserveaspect>
+        </imagetype>
+
+        <imagetype name="coverart">
+            <area>45,23,200,296</area>
+            <filename />
+            <preserveaspect>true</preserveaspect>
+        </imagetype>
+
+        <textarea name="title" from="basetextarea">
+            <area>45,334,674,60</area>
+            <font>basegothicmedium</font>
+            <align>left,vcenter</align>
+        </textarea>
+
+        <textarea name="subtitle" from="basetextarea">
+            <area>45,385,674,57</area>
+            <multiline>yes</multiline>
+            <font>basegothicmidblue</font>
+            <align>left,vcenter</align>
+            <cutdown>yes</cutdown>
+        </textarea>
+
+        <textarea name="##x##" from="basetextarea">
+            <area>45,425,674,57</area>
+            <multiline>yes</multiline>
+            <font>basesmalllightblue</font>
+            <align>left,vcenter</align>
+            <cutdown>yes</cutdown>
+            <template>Season/Episode: %1</template>
+        </textarea>
+
+        <textarea name="director" from="basetextarea">
+            <area>45,460,674,57</area>
+            <multiline>yes</multiline>
+            <font>basesmalllightblue</font>
+            <align>left,vcenter</align>
+            <cutdown>yes</cutdown>
+            <template>Directed by %1</template>
+        </textarea>
+
+        <textarea name="description" from="basetextarea">
+            <area>45,510,674,395</area>
+            <multiline>yes</multiline>
+            <font>basesmall</font>
+            <align>left,top</align>
+            <cutdown>yes</cutdown>
+        </textarea>
+
+        <textarea name="cast" from="description">
+            <area>45,935,674,90</area>
+            <multiline>yes</multiline>
+            <cutdown>yes</cutdown>
+            <align>justify</align>
+            <font>basesmall</font>
+            <template>Starring: %1</template>
+        </textarea>
+
+        <buttonlist name="videos">
+            <area>786,90,1136,980</area>
+            <scrollstyle>free</scrollstyle>
+            <wrapstyle>items</wrapstyle>
+            <layout>vertical</layout>
+            <spacing>2</spacing>
+            <drawfrombottom>true</drawfrombottom>
+            <buttonarea>0,0,100%,990</buttonarea>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>0,0,100%,89</area>
+                    <shape name="item">
+                        <area>0,0,100%,89</area>
+                        <type>box</type>
+                        <fill color="#000000" alpha="180" />
+                        <line color="#000000" alpha="180" width="-1"/>
+                    </shape>
+                    <textarea name="title">
+                        <area>10,10,1130,40</area>
+                        <align>left,vcenter</align>
+                        <font>basemedium</font>
+                        <alpha>210</alpha>
+                    </textarea>
+                    <textarea name="subtitle">
+                        <area>30,56,500,30</area>
+                        <align>left,vcenter</align>
+                        <font>basesmall</font>
+                        <alpha>210</alpha>
+                    </textarea>
+                    <statetype name="videolevel">
+                        <state name="None">
+                            <textarea name="none">
+                                <area>674,10,450,40</area>
+                                <align>right,vcenter</align>
+                                <font>basesmall</font>
+                                <alpha>210</alpha>
+                                <value>Parental Level 0</value>
+                            </textarea>
+                        </state>
+                        <state name="Lowest">
+                            <textarea name="lowest">
+                                <area>674,10,450,40</area>
+                                <align>right,vcenter</align>
+                                <font>basesmall</font>
+                                <alpha>210</alpha>
+                                <value>Parental Level 1</value>
+                            </textarea>
+                        </state>
+                        <state name="Low">
+                            <textarea name="low">
+                                <area>674,10,450,40</area>
+                                <align>right,vcenter</align>
+                                <font>basesmall</font>
+                                <alpha>210</alpha>
+                                <value>Parental Level 2</value>
+                            </textarea>
+                        </state>
+                        <state name="Medium">
+                            <textarea name="medium">
+                                <area>674,10,450,40</area>
+                                <align>right,vcenter</align>
+                                <font>basesmall</font>
+                                <alpha>210</alpha>
+                                <value>Parental Level 3</value>
+                            </textarea>
+                        </state>
+                        <state name="High">
+                            <textarea name="high">
+                                <area>674,10,450,40</area>
+                                <align>right,vcenter</align>
+                                <font>basesmall</font>
+                                <alpha>210</alpha>
+                                <value>Parental Level 4</value>
+                            </textarea>
+                        </state>
+                    </statetype>
+                    <textarea name="filename">
+                        <area>537,56,587,30</area>
+                        <align>right,vcenter</align>
+                        <font>basesmall</font>
+                        <alpha>210</alpha>
+                    </textarea>
+                    <imagetype name="divider">
+                        <area>0,88,1136,2</area>
+                        <filename>images/baserecordinglistwide_divider.png</filename>
+                        <alpha>100</alpha>
+                    </imagetype>
+                    <statetype name="nodetype">
+                        <state name="subfolder">
+                            <imagetype name="buttonarrow">
+                                <position>1090,32</position>
+                                <filename>images/reclist-arrow-white.png</filename>
+                                <alpha>210</alpha>
+                            </imagetype>
+                        </state>
+                        <state name="upfolder">
+                            <imagetype name="buttonarrow">
+                                <position>10,56</position>
+                                <filename>images/reclist-arrow-white-left.png</filename>
+                                <alpha>210</alpha>
+                            </imagetype>
+                        </state>
+                    </statetype>
+                </state>
+                <state name="selected" from="active">
+                    <shape name="item">
+                        <fill color="#0767AB" alpha="240" />
+                    </shape>
+                    <textarea name="title">
+                        <alpha>200</alpha>
+                    </textarea>
+                    <textarea name="subtitle">
+                        <alpha>200</alpha>
+                    </textarea>
+                    <statetype name="videolevel">
+                        <state name="None">
+                            <textarea name="none">
+                                <alpha>200</alpha>
+                            </textarea>
+                        </state>
+                        <state name="Lowest">
+                            <textarea name="lowest">
+                                <alpha>200</alpha>
+                            </textarea>
+                        </state>
+                        <state name="Low">
+                            <textarea name="low">
+                                <alpha>200</alpha>
+                            </textarea>
+                        </state>
+                        <state name="Medium">
+                            <textarea name="medium">
+                                <alpha>200</alpha>
+                            </textarea>
+                        </state>
+                        <state name="High">
+                            <textarea name="high">
+                                <alpha>200</alpha>
+                            </textarea>
+                        </state>
+                    </statetype>
+                    <textarea name="year">
+                        <alpha>200</alpha>
+                    </textarea>
+                    <textarea name="filename">
+                        <alpha>200</alpha>
+                    </textarea>
+                    <imagetype name="divider">
+                        <filename />
+                    </imagetype>
+                    <statetype name="nodetype">
+                        <state name="subfolder">
+                            <imagetype name="buttonarrow">
+                                <position>1090,32</position>
+                                <filename>images/reclist-arrow-white.png</filename>
+                                <alpha>210</alpha>
+                            </imagetype>
+                        </state>
+                        <state name="upfolder">
+                            <imagetype name="buttonarrow">
+                                <position>10,56</position>
+                                <filename>images/reclist-arrow-white-left.png</filename>
+                                <alpha>210</alpha>
+                            </imagetype>
+                        </state>
+                    </statetype>
+                </state>
+                <state name="inactive" from="active" />
+            </statetype>
+            <statetype name="upscrollarrow">
+                <position>1075,-30</position>
+                <state type="off">
+                </state>
+                <state type="full">
+                    <imagetype name="upon">
+                        <filename>images/arclight_popup_uparrow.png</filename>
+                        <alpha>230</alpha>
+                    </imagetype>
+                </state>
+            </statetype>
+            <statetype name="downscrollarrow">
+                <position>1057,-30</position>
+                <state type="off">
+                </state>
+                <state type="full">
+                    <imagetype name="dnon">
+                        <filename>images/arclight_popup_downarrow.png</filename>
+                        <alpha>230</alpha>
+                    </imagetype>
+                </state>
+            </statetype>
+        </buttonlist>
+
+    </window>
+
+    <window name="browser">
+        <area>0,0,1920,1080</area>
+
+        <imagetype name="fanart">
+            <area>0,0,1920,1080</area>
+            <filename>Backgrounds/</filename>
+        </imagetype>
+
+        <imagetype name="leftpanel_bg">
+            <position>-20,0</position>
+            <filename>images/editmetadata_leftpanel_bg.png</filename>
+        </imagetype>
+
+        <shape name="panel_dark">
+            <area>0,0,768,1080</area>
+            <fill color="#000000" alpha="80" />
+        </shape>
+
+        <shape name="item">
+            <area>1620,-14,313,55</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="200" />
+        </shape>
+
+        <clock name="clock">
+            <area>1620,-2,303,50</area>
+            <font>basesmall</font>
+            <align>allcenter</align>
+            <format>%DATE%, %TIME%</format>
+        </clock>
+
+        <shape name="infobox">
+            <area>35,13,694,1033</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="180" />
+
+        </shape>
+
+        <imagetype name="screenshot">
+            <area>265,23,450,296</area>
+            <filename />
+            <preserveaspect>true</preserveaspect>
+        </imagetype>
+
+        <imagetype name="coverart">
+            <area>45,23,200,296</area>
+            <filename />
+            <preserveaspect>true</preserveaspect>
+        </imagetype>
+
+        <textarea name="title" from="basetextarea">
+            <area>45,334,674,60</area>
+            <font>basegothicmedium</font>
+            <align>left,vcenter</align>
+        </textarea>
+
+        <textarea name="subtitle" from="basetextarea">
+            <area>45,385,674,57</area>
+            <multiline>yes</multiline>
+            <font>basegothicmidblue</font>
+            <align>left,vcenter</align>
+            <cutdown>yes</cutdown>
+        </textarea>
+
+        <textarea name="##x##" from="basetextarea">
+            <area>45,425,674,57</area>
+            <multiline>yes</multiline>
+            <font>basesmalllightblue</font>
+            <align>left,vcenter</align>
+            <cutdown>yes</cutdown>
+            <template>Season/Episode: %1</template>
+        </textarea>
+
+        <textarea name="director" from="basetextarea">
+            <area>45,460,674,57</area>
+            <multiline>yes</multiline>
+            <font>basesmalllightblue</font>
+            <align>left,vcenter</align>
+            <cutdown>yes</cutdown>
+            <template>Directed by %1</template>
+        </textarea>
+
+        <textarea name="description" from="basetextarea">
+            <area>45,510,674,395</area>
+            <multiline>yes</multiline>
+            <font>basesmall</font>
+            <align>left,top</align>
+            <cutdown>yes</cutdown>
+        </textarea>
+
+        <textarea name="cast" from="description">
+            <area>45,935,674,90</area>
+            <multiline>yes</multiline>
+            <cutdown>yes</cutdown>
+            <align>justify</align>
+            <font>basesmall</font>
+            <template>Starring: %1</template>
+        </textarea>
+
+        <shape name="backplane">
+            <area>786,732,1136,350</area>
+            <type>box</type>
+            <fill color="#000000" alpha="200" />
+            <line color="#000000" alpha="200" width="0" />
+        </shape>
+
+        <buttonlist name="videos">
+            <area>786,730,1136,350</area>
+            <layout>horizontal</layout>
+            <wrapstyle>items</wrapstyle>
+            <scrollstyle>center</scrollstyle>
+            <spacing>0</spacing>
+            <buttonarea>10,50,1116,350</buttonarea>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>0,0,186,225</area>
+                    <imagetype name="buttonimage">
+                        <area>0,0,186,225</area>
+                        <filename />
+                        <alpha>70</alpha>
+                        <reflection axis="vertical" scale="65" length="35" />
+                        <preserveaspect>true</preserveaspect>
+                    </imagetype>
+                    <statetype name="nodetype">
+                        <position>10,15</position>
+                        <state name="subfolder">
+                            <imagetype name="icon">
+                                <alpha>70</alpha>
+                                <area>50,90,53,40</area>
+                                <filename>images/folderclosed.png</filename>
+                                <preserveaspect>yes</preserveaspect>
+                            </imagetype>
+                        </state>
+                        <state name="upfolder">
+                            <imagetype name="icon">
+                                <alpha>70</alpha>
+                                <area>50,90,53,40</area>
+                                <filename>images/mv_gallery_dir_up.png</filename>
+                                <preserveaspect>yes</preserveaspect>
+                            </imagetype>
+                        </state>
+                    </statetype>
+                </state>
+                <state name="selected" from="active">
+                    <imagetype name="buttonimage">
+                        <area>-30,-10,246,285</area>
+                        <preserveaspect>true</preserveaspect>
+                        <reflection axis="vertical" scale="65" length="35" />
+                        <alpha>255</alpha>
+                    </imagetype>
+                    <textarea name="buttontext" from="basetextarea">
+                        <area>-210,-41,606,30</area>
+                        <font>baseextrasmall</font>
+                        <align>allcenter</align>
+                    </textarea>
+                    <statetype name="nodetype">
+                        <position>50,65</position>
+                        <state name="subfolder">
+                            <imagetype name="icon">
+                                <alpha>255</alpha>
+                                <area>60,95,53,40</area>
+                                <filename>images/folderopen.png</filename>
+                                <preserveaspect>yes</preserveaspect>
+                            </imagetype>
+                        </state>
+                        <state name="upfolder">
+                            <imagetype name="icon">
+                                <alpha>255</alpha>
+                                <area>60,95,53,40</area>
+                                <filename>images/mv_gallery_dir_up_open.png</filename>
+                                <preserveaspect>yes</preserveaspect>
+                            </imagetype>
+                        </state>
+                    </statetype>
+                </state>
+            </statetype>
+        </buttonlist>
+
+    </window>
+
+    <window name="gallery">
+        <area>0,0,1920,1080</area>
+
+        <imagetype name="fanart">
+            <area>0,0,1920,1080</area>
+            <filename>Backgrounds/</filename>
+        </imagetype>
+
+        <imagetype name="leftpanel_bg">
+            <position>-20,0</position>
+            <filename>images/editmetadata_leftpanel_bg.png</filename>
+        </imagetype>
+
+        <shape name="panel_dark">
+            <area>0,0,768,1080</area>
+            <fill color="#000000" alpha="80" />
+        </shape>
+
+        <shape name="item">
+            <area>1620,-14,313,55</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="200" />
+        </shape>
+
+        <clock name="clock">
+            <area>1620,-2,303,50</area>
+            <font>basesmall</font>
+            <align>allcenter</align>
+            <format>%DATE%, %TIME%</format>
+        </clock>
+
+        <shape name="infobox">
+            <area>35,13,694,1033</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="180" />
+
+        </shape>
+
+        <imagetype name="screenshot">
+            <area>265,23,450,296</area>
+            <filename />
+            <preserveaspect>true</preserveaspect>
+        </imagetype>
+
+        <imagetype name="coverart">
+            <area>45,23,200,296</area>
+            <filename />
+            <preserveaspect>true</preserveaspect>
+        </imagetype>
+
+        <textarea name="title" from="basetextarea">
+            <area>45,334,674,60</area>
+            <font>basegothicmedium</font>
+            <align>left,vcenter</align>
+        </textarea>
+
+        <textarea name="subtitle" from="basetextarea">
+            <area>45,385,674,57</area>
+            <multiline>yes</multiline>
+            <font>basegothicmidblue</font>
+            <align>left,vcenter</align>
+            <cutdown>yes</cutdown>
+        </textarea>
+
+        <textarea name="##x##" from="basetextarea">
+            <area>45,425,674,57</area>
+            <multiline>yes</multiline>
+            <font>basesmalllightblue</font>
+            <align>left,vcenter</align>
+            <cutdown>yes</cutdown>
+            <template>Season/Episode: %1</template>
+        </textarea>
+
+        <textarea name="director" from="basetextarea">
+            <area>45,460,674,57</area>
+            <multiline>yes</multiline>
+            <font>basesmalllightblue</font>
+            <align>left,vcenter</align>
+            <cutdown>yes</cutdown>
+            <template>Directed by %1</template>
+        </textarea>
+
+        <textarea name="description" from="basetextarea">
+            <area>45,510,674,390</area>
+            <multiline>yes</multiline>
+            <font>basesmall</font>
+            <align>left,top</align>
+            <cutdown>yes</cutdown>
+        </textarea>
+
+        <textarea name="cast" from="description">
+            <area>45,935,674,90</area>
+            <multiline>yes</multiline>
+            <cutdown>yes</cutdown>
+            <align>justify</align>
+            <font>basesmall</font>
+            <template>Starring: %1</template>
+        </textarea>
+
+        <buttonlist name="videos">
+            <area>786,549,1136,535</area>
+            <scrollstyle>free</scrollstyle>
+            <wrapstyle>items</wrapstyle>
+            <layout>vertical</layout>
+            <spacing>0</spacing>
+            <drawfrombottom>true</drawfrombottom>
+            <buttonarea>2,0,1136,535</buttonarea>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>1,0,1132,89</area>
+                    <shape name="item">
+                        <area>0,0,100%,88</area>
+                        <type>box</type>
+                        <fill color="#000000" alpha="180" />
+                    </shape>
+                    <imagetype name="coverart">
+                        <area>6,2,50,85</area>
+                        <preserveaspect>true</preserveaspect>
+                        <alpha>160</alpha>
+                    </imagetype>
+                    <textarea name="title">
+                        <area>70,10,1070,40</area>
+                        <align>left,vcenter</align>
+                        <font>basemedium</font>
+                        <alpha>210</alpha>
+                    </textarea>
+                    <textarea name="subtitle">
+                        <area>90,56,860,30</area>
+                        <align>left,vcenter</align>
+                        <font>basesmall</font>
+                        <alpha>210</alpha>
+                    </textarea>
+                    <textarea name="year">
+                        <area>674,10,450,40</area>
+                        <align>right,vcenter</align>
+                        <font>basesmall</font>
+                        <alpha>210</alpha>
+                    </textarea>
+                    <textarea name="##x##">
+                        <area>937,56,187,30</area>
+                        <align>right,vcenter</align>
+                        <font>basesmall</font>
+                        <alpha>210</alpha>
+                    </textarea>
+                    <imagetype name="divider">
+                        <area>0,88,1136,2</area>
+                        <filename>images/baserecordinglistwide_divider.png</filename>
+                        <alpha>100</alpha>
+                    </imagetype>
+                    <statetype name="nodetype">
+                        <state name="subfolder">
+                            <imagetype name="buttonarrow">
+                                <position>1090,32</position>
+                                <filename>images/reclist-arrow-white.png</filename>
+                                <alpha>210</alpha>
+                            </imagetype>
+                        </state>
+                        <state name="upfolder">
+                            <imagetype name="buttonarrow">
+                                <position>10,32</position>
+                                <filename>images/reclist-arrow-white-left.png</filename>
+                                <alpha>210</alpha>
+                            </imagetype>
+                        </state>
+                    </statetype>
+                </state>
+                <state name="selected" from="active">
+                    <shape name="item">
+                        <fill color="#0767AB" alpha="240" />
+                    </shape>
+                    <textarea name="title">
+                        <alpha>200</alpha>
+                    </textarea>
+                    <imagetype name="coverart">
+                        <alpha>255</alpha>
+                    </imagetype>
+                    <textarea name="subtitle">
+                        <alpha>200</alpha>
+                    </textarea>
+                    <textarea name="year">
+                        <alpha>200</alpha>
+                    </textarea>
+                    <textarea name="##x##">
+                        <alpha>200</alpha>
+                    </textarea>
+                    <imagetype name="divider">
+                        <filename />
+                    </imagetype>
+                    <statetype name="nodetype">
+                        <state name="subfolder">
+                            <imagetype name="buttonarrow">
+                                <position>1090,32</position>
+                                <filename>images/reclist-arrow-white.png</filename>
+                                <alpha>210</alpha>
+                            </imagetype>
+                        </state>
+                        <state name="upfolder">
+                            <imagetype name="buttonarrow">
+                                <position>10,32</position>
+                                <filename>images/reclist-arrow-white-left.png</filename>
+                                <alpha>210</alpha>
+                            </imagetype>
+                        </state>
+                    </statetype>
+                </state>
+                <state name="inactive" from="active" />
+            </statetype>
+            <statetype name="upscrollarrow">
+                <position>1075,-30</position>
+                <state type="off">
+                </state>
+                <state type="full">
+                    <imagetype name="upon">
+                        <filename>images/arclight_popup_uparrow.png</filename>
+                        <alpha>230</alpha>
+                    </imagetype>
+                </state>
+            </statetype>
+            <statetype name="downscrollarrow">
+                <position>1057,-30</position>
+                <state type="off">
+                </state>
+                <state type="full">
+                    <imagetype name="dnon">
+                        <filename>images/arclight_popup_downarrow.png</filename>
+                        <alpha>230</alpha>
+                    </imagetype>
+                </state>
+            </statetype>
+        </buttonlist>
+
+    </window>
+
+    <window name="tree">
+        <area>0,0,1920,1080</area>
+
+        <imagetype name="fanart">
+            <area>0,0,1920,1080</area>
+            <filename>Backgrounds/</filename>
+        </imagetype>
+
+        <imagetype name="leftpanel_bg">
+            <position>-20,0</position>
+            <filename>images/editmetadata_leftpanel_bg.png</filename>
+        </imagetype>
+
+        <shape name="panel_dark">
+            <area>0,0,768,1080</area>
+            <fill color="#000000" alpha="80" />
+        </shape>
+
+        <shape name="item">
+            <area>1620,-14,313,55</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="200" />
+        </shape>
+
+        <clock name="clock">
+            <area>1620,-2,303,50</area>
+            <font>basesmall</font>
+            <align>allcenter</align>
+            <format>%DATE%, %TIME%</format>
+        </clock>
+
+        <shape name="infobox">
+            <area>35,13,694,1033</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="180" />
+
+        </shape>
+
+        <imagetype name="screenshot">
+            <area>265,23,450,296</area>
+            <filename />
+            <preserveaspect>true</preserveaspect>
+        </imagetype>
+
+        <imagetype name="coverart">
+            <area>45,23,200,296</area>
+            <filename />
+            <preserveaspect>true</preserveaspect>
+        </imagetype>
+
+        <textarea name="title" from="basetextarea">
+            <area>45,334,674,60</area>
+            <font>basegothicmedium</font>
+            <align>left,vcenter</align>
+        </textarea>
+
+        <textarea name="subtitle" from="basetextarea">
+            <area>45,385,674,57</area>
+            <multiline>yes</multiline>
+            <font>basegothicmidblue</font>
+            <align>left,vcenter</align>
+            <cutdown>yes</cutdown>
+        </textarea>
+
+        <textarea name="##x##" from="basetextarea">
+            <area>45,425,674,57</area>
+            <multiline>yes</multiline>
+            <font>basesmalllightblue</font>
+            <align>left,vcenter</align>
+            <cutdown>yes</cutdown>
+            <template>Season/Episode: %1</template>
+        </textarea>
+
+        <textarea name="director" from="basetextarea">
+            <area>45,460,674,57</area>
+            <multiline>yes</multiline>
+            <font>basesmalllightblue</font>
+            <align>left,vcenter</align>
+            <cutdown>yes</cutdown>
+            <template>Directed by %1</template>
+        </textarea>
+
+        <textarea name="description" from="basetextarea">
+            <area>45,510,674,395</area>
+            <multiline>yes</multiline>
+            <font>basesmall</font>
+            <align>left,top</align>
+            <cutdown>yes</cutdown>
+        </textarea>
+
+        <textarea name="cast" from="description">
+            <area>45,935,674,90</area>
+            <multiline>yes</multiline>
+            <cutdown>yes</cutdown>
+            <align>justify</align>
+            <font>basesmall</font>
+            <template>Starring: %1</template>
+        </textarea>
+
+        <buttontree name="videos">
+            <area>786,557,1136,525</area>
+            <numlists>1</numlists>
+            <buttonlist name="listtemplate" from="baserecordinglistwide" />
+        </buttontree>
+
+    </window>
+
+    <window name="file_associations">
+        <area>-1,-1,790,962</area>
+
+        <imagetype name="backimg">
+            <area>0,0,790,962</area>
+            <filename>images/arclight_popup_large_bg.png</filename>
+        </imagetype>
+
+        <textarea name="title" from="basetextarea">
+            <area>89,78,613,40</area>
+            <font>basemedium</font>
+            <align>allcenter</align>
+            <value>Add New File Types</value>
+        </textarea>
+
+        <textarea name="helparea" from="basetextarea">
+            <area>89,138,613,280</area>
+            <multiline>yes</multiline>
+            <font>basesmall</font>
+            <align>allcenter</align>
+            <value>On this screen, you can add new extensions to be recognized by the Video Plugin.  If a scan does not add your files, create a new extension below by clicking the "New" button.\n\nIf you select "Use Default Player," the player command set for the extension will be ignored.  "Ignore This File Type" prevents the items from appearing in a scan.</value>
+        </textarea>
+
+        <textarea name="extension_text" from="basetextarea">
+            <area>0,490,185,40</area>
+            <value>Extension:</value>
+            <align>right,vcenter</align>
+        </textarea>
+
+        <textarea name="command_text" from="extension_text">
+            <position>0,590</position>
+            <value>Command:</value>
+        </textarea>
+
+        <textarea name="default_text" from="extension_text">
+            <area>165,690,200,40</area>
+            <value>Use Default Player</value>
+            <align>left,vcenter</align>
+        </textarea>
+
+        <textarea name="ignore_text" from="default_text">
+            <area>460,690,230,40</area>
+            <value>Ignore This File Type</value>
+        </textarea>
+
+        <buttonlist name="extension_select" from="basewideselector">
+            <position>200,487</position>
+        </buttonlist>
+
+        <textedit name="command" from="basetextedit">
+            <position>200,587</position>
+        </textedit>
+
+        <checkbox name="default_check" from="basecheckbox">
+            <position>120,692</position>
+        </checkbox>
+
+        <checkbox name="ignore_check" from="basecheckbox">
+            <position>415,692</position>
+        </checkbox>
+
+        <button name="new_button" from="basebutton">
+            <position>90,850</position>
+            <value>New</value>
+        </button>
+
+        <button name="delete_button" from="basebutton">
+            <position>322,850</position>
+            <value>Delete</value>
+        </button>
+
+        <button name="done_button" from="basebutton">
+            <position>545,850</position>
+            <value>OK</value>
+        </button>
+
+        <imagetype name="dialogboxoverlay">
+            <position>0,0</position>
+            <filename>images/arclight_popup_large_overlay.png</filename>
+        </imagetype>
+
+    </window>
+
+    <window name="edit_metadata">
+        <area>0,0,1920,1080</area>
+
+        <imagetype name="fanart">
+            <area>0,0,1920,1080</area>
+            <filename>Backgrounds/</filename>
+        </imagetype>
+
+        <imagetype name="leftpanel_bg">
+            <position>-20,0</position>
+            <filename>images/editmetadata_leftpanel_bg.png</filename>
+        </imagetype>
+
+        <shape name="panel_dark">
+            <area>0,0,768,1080</area>
+            <fill color="#000000" alpha="80" />
+        </shape>
+
+        <imagetype name="rightpanel_bg">
+            <position>1440,0</position>
+            <filename>images/editmetadata_rightpanel_bg.png</filename>
+        </imagetype>
+
+        <shape name="rightpanel_dark">
+            <area>1510,0,412,1080</area>
+            <fill color="#000000" alpha="80" />
+        </shape>
+
+        <shape name="infobox">
+            <area>25,13,724,1048</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="180" />
+        </shape>
+
+        <!-- Labels  -->
+
+        <textarea name="pagetitle" from="basetextarea">
+            <area>45,24,674,60</area>
+            <font>basegothicmedium</font>
+            <align>left,vcenter</align>
+            <value>Edit Metadata</value>
+        </textarea>
+
+        <textarea name="pagesubtitle" from="basetextarea">
+            <area>45,70,674,57</area>
+            <multiline>yes</multiline>
+            <font>basesmalllightblue</font>
+            <align>left,vcenter</align>
+            <cutdown>yes</cutdown>
+            <value>Modify your film's metadata.</value>
+        </textarea>
+
+        <textarea name="title_text" from="basetextarea">
+            <area>8,125,190,40</area>
+            <value>Title:</value>
+            <align>right,vcenter</align>
+        </textarea>
+
+        <textarea name="subtitle_text" from="title_text">
+            <position>8,185</position>
+            <value>Subtitle:</value>
+        </textarea>
+
+        <textarea name="rating_text" from="title_text">
+            <position>8,245</position>
+            <value>Rating:</value>
+        </textarea>
+
+        <textarea name="director_text" from="title_text">
+            <position>8,305</position>
+            <value>Director:</value>
+        </textarea>
+
+        <textarea name="inetref_text" from="title_text">
+            <position>8,365</position>
+            <value>TMDB Number:</value>
+        </textarea>
+
+        <textarea name="desc_text" from="title_text">
+            <position>8,425</position>
+            <value>Plot:</value>
+        </textarea>
+
+        <textarea name="coverart_text_label" from="title_text">
+            <position>8,605</position>
+            <value>Cover Art:</value>
+        </textarea>
+
+        <textarea name="screenshot_text_label" from="title_text">
+            <position>8,665</position>
+            <value>Screenshot:</value>
+        </textarea>
+
+        <textarea name="banner_text_label" from="title_text">
+            <position>8,725</position>
+            <value>Banner:</value>
+        </textarea>
+
+        <textarea name="fanart_text_label" from="title_text">
+            <position>8,785</position>
+            <value>Fanart:</value>
+        </textarea>
+
+        <textarea name="trailer_text_label" from="title_text">
+            <position>8,845</position>
+            <value>Trailer:</value>
+        </textarea>
+
+        <textarea name="homepage_text_label" from="title_text">
+            <position>8,905</position>
+            <value>Homepage:</value>
+        </textarea>
+
+        <textarea name="player_text" from="title_text">
+            <position>8,965</position>
+            <value>Custom Player:</value>
+        </textarea>
+
+        <textarea name="watched_text" from="title_text">
+            <area>119,1019,260,40</area>
+            <align>left,vcenter</align>
+            <value>Film has been Watched</value>
+        </textarea>
+
+        <textarea name="browse_text" from="title_text">
+            <position>479,1019</position>
+            <align>left,vcenter</align>
+            <value>Film is Browsable</value>
+        </textarea>
+
+        <textarea name="season_text" from="basetextarea">
+            <area>1515,486,162,40</area>
+            <value>Season:</value>
+            <align>right,vcenter</align>
+        </textarea>
+
+        <textarea name="episode_text" from="season_text">
+            <position>1515,546</position>
+            <value>Episode:</value>
+        </textarea>
+
+        <textarea name="year_text" from="season_text">
+            <position>1515,606</position>
+            <value>Year:</value>
+        </textarea>
+
+        <textarea name="userrating_text" from="season_text">
+            <position>1515,666</position>
+            <value>User Rating:</value>
+        </textarea>
+
+        <textarea name="length_text" from="season_text">
+            <position>1515,726</position>
+            <value>Length:</value>
+        </textarea>
+
+        <textarea name="parent_text" from="season_text">
+            <position>1515,786</position>
+            <value>Parental Level:</value>
+        </textarea>
+
+        <textarea name="category_text" from="season_text">
+            <position>1515,846</position>
+            <value>Category:</value>
+        </textarea>
+
+        <textarea name="child_text" from="season_text">
+            <position>1515,906</position>
+            <value>Next File:</value>
+        </textarea>
+
+        <imagetype name="coverart">
+            <area>1574,37,266,399</area>
+            <filename />
+        </imagetype>
+
+        <!-- Widgets -->
+
+        <textedit name="title_edit" from="basecentertextedit">
+            <position>217,123</position>
+        </textedit>
+
+        <textedit name="subtitle_edit" from="basecentertextedit">
+            <position>217,183</position>
+        </textedit>
+
+        <textedit name="rating_edit" from="basecentertextedit">
+            <position>217,243</position>
+        </textedit>
+
+        <textedit name="director_edit" from="basecentertextedit">
+            <position>217,303</position>
+        </textedit>
+
+        <textedit name="inetref_edit" from="basecentertextedit">
+            <position>217,363</position>
+        </textedit>
+
+        <textedit name="description_edit" from="basemultilinetextedit">
+            <position>217,423</position>
+        </textedit>
+
+        <button name="coverart_button" from="basesearchbutton">
+            <position>217,603</position>
+        </button>
+
+        <textarea name="coverart_text" from="basetextarea">
+            <area>222,606,490,38</area>
+            <value></value>
+            <align>allcenter</align>
+            <cutdown>yes</cutdown>
+            <value>Click here to search existing coverart...</value>
+        </textarea>
+
+        <button name="screenshot_button" from="basesearchbutton">
+            <position>217,663</position>
+        </button>
+
+        <textarea name="screenshot_text" from="coverart_text">
+            <position>217,666</position>
+            <value>Click here to search existing screenshots...</value>
+        </textarea>
+
+        <button name="banner_button" from="basesearchbutton">
+            <position>217,723</position>
+        </button>
+
+        <textarea name="banner_text" from="coverart_text">
+            <position>217,726</position>
+            <value>Click here to search existing banners...</value>
+        </textarea>
+
+        <button name="fanart_button" from="basesearchbutton">
+            <position>217,783</position>
+        </button>
+
+        <textarea name="fanart_text" from="coverart_text">
+            <position>217,786</position>
+            <value>Click here to search existing fanart...</value>
+        </textarea>
+
+        <button name="trailer_button" from="basesearchbutton">
+            <position>217,843</position>
+        </button>
+
+        <textarea name="trailer_text" from="coverart_text">
+            <position>217,846</position>
+            <value>Click here to search existing trailers...</value>
+        </textarea>
+
+        <textedit name="homepage_edit" from="basecentertextedit">
+            <position>217,903</position>
+        </textedit>
+
+        <textedit name="player_edit" from="basecentertextedit">
+            <position>217,963</position>
+        </textedit>
+
+        <checkbox name="watched_check" from="basecheckbox">
+            <position>81,1019</position>
+        </checkbox>
+
+        <checkbox name="browse_check" from="basecheckbox">
+            <position>441,1019</position>
+        </checkbox>
+
+        <spinbox name="season" from="basespinbox">
+            <position>1696,484</position>
+        </spinbox>
+
+        <spinbox name="episode" from="basespinbox">
+            <position>1696,544</position>
+        </spinbox>
+
+        <spinbox name="year_spin" from="basespinbox">
+            <position>1696,604</position>
+        </spinbox>
+
+        <spinbox name="userrating_spin" from="basespinbox">
+            <position>1696,664</position>
+        </spinbox>
+
+        <spinbox name="length_spin" from="basespinbox">
+            <position>1696,724</position>
+        </spinbox>
+
+        <buttonlist name="level_select" from="baseselector">
+            <position>1696,784</position>
+        </buttonlist>
+
+        <buttonlist name="category_select" from="baseselector">
+            <position>1696,844</position>
+        </buttonlist>
+
+        <buttonlist name="child_select" from="baseselector">
+            <position>1696,904</position>
+        </buttonlist>
+
+        <button name="done_button" from="basebutton">
+            <position>1655,994</position>
+            <value>OK</value>
+        </button>
+
+    </window>
+
+    <window name="filter">
+        <area>0,0,1920,1080</area>
+
+        <imagetype name="fanart">
+            <area>0,0,1920,1080</area>
+            <filename>Backgrounds/</filename>
+        </imagetype>
+
+        <shape name="item">
+            <area>1620,-14,313,55</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="200" />
+        </shape>
+
+        <clock name="clock">
+            <area>1620,-2,303,50</area>
+            <font>basesmall</font>
+            <align>allcenter</align>
+            <format>%DATE%, %TIME%</format>
+        </clock>
+
+        <imagetype name="leftpanel_bg">
+            <position>-20,0</position>
+            <filename>images/editmetadata_leftpanel_bg.png</filename>
+        </imagetype>
+
+        <shape name="panel_dark">
+            <area>0,0,768,1080</area>
+            <fill color="#000000" alpha="80" />
+        </shape>
+
+        <!-- Labels  -->
+
+        <textarea name="pagelabel" from="basetextarea">
+            <area>245,44,274,38</area>
+            <value>Filter Videos</value>
+            <font>basemedium</font>
+            <align>allcenter</align>
+        </textarea>
+
+        <textarea name="category_text" from="basetextarea">
+            <area>8,125,190,40</area>
+            <value>Category:</value>
+            <align>right,vcenter</align>
+        </textarea>
+
+        <textarea name="genre_text" from="category_text">
+            <position>8,185</position>
+            <value>Genre:</value>
+        </textarea>
+
+        <textarea name="country_text" from="category_text">
+            <position>8,245</position>
+            <value>Country:</value>
+        </textarea>
+
+        <textarea name="cast_text" from="category_text">
+            <position>8,305</position>
+            <value>Actor/Actress:</value>
+        </textarea>
+
+        <textarea name="year_text" from="category_text">
+            <position>8,365</position>
+            <value>Year:</value>
+        </textarea>
+
+        <textarea name="runtime_text" from="category_text">
+            <position>8,425</position>
+            <value>Runtime:</value>
+        </textarea>
+
+        <textarea name="userrating_label" from="category_text">
+            <position>8,485</position>
+            <value>User Rating:</value>
+        </textarea>
+
+        <textarea name="browse_text" from="category_text">
+            <position>8,545</position>
+            <value>Browse:</value>
+        </textarea>
+
+        <textarea name="inetref_text" from="category_text">
+            <position>8,605</position>
+            <value>TMDB/TVDB #:</value>
+        </textarea>
+
+        <textarea name="coverart_text" from="category_text">
+            <position>8,665</position>
+            <value>Coverart:</value>
+        </textarea>
+
+        <textarea name="sortby_text" from="category_text">
+            <position>8,725</position>
+            <value>Sort By:</value>
+        </textarea>
+
+        <textarea name="watched_text" from="category_text">
+            <position>8,785</position>
+            <value>Watched:</value>
+        </textarea>
+
+        <textarea name="filter_text" from="category_text">
+            <position>8,845</position>
+            <value>Text Filter:</value>
+        </textarea>
+
+        <!-- Widgets -->
+
+        <buttonlist name="category_select" from="basewideselector">
+            <position>217,123</position>
+        </buttonlist>
+
+        <buttonlist name="genre_select" from="basewideselector">
+            <position>217,183</position>
+        </buttonlist>
+
+        <buttonlist name="country_select" from="basewideselector">
+            <position>217,243</position>
+        </buttonlist>
+
+        <buttonlist name="cast_select" from="basewideselector">
+            <position>217,303</position>
+        </buttonlist>
+
+        <buttonlist name="year_select" from="basewideselector">
+            <position>217,363</position>
+        </buttonlist>
+
+        <buttonlist name="runtime_select" from="basewideselector">
+            <position>217,423</position>
+        </buttonlist>
+
+        <buttonlist name="userrating_select" from="basewideselector">
+            <position>217,483</position>
+        </buttonlist>
+
+        <buttonlist name="browse_select" from="basewideselector">
+            <position>217,543</position>
+        </buttonlist>
+
+        <buttonlist name="inetref_select" from="basewideselector">
+            <position>217,603</position>
+        </buttonlist>
+
+        <buttonlist name="coverfile_select" from="basewideselector">
+            <position>217,663</position>
+        </buttonlist>
+
+        <buttonlist name="orderby_select" from="basewideselector">
+            <position>217,723</position>
+        </buttonlist>
+
+        <buttonlist name="watched_select" from="basewideselector">
+            <position>217,783</position>
+        </buttonlist>
+
+        <textedit name="textfilter_input" from="basetextedit">
+            <position>217,843</position>
+        </textedit>
+
+        <textarea name="numvideos_text" from="basetextarea">
+            <area>145,930,474,38</area>
+            <value>Result</value>
+            <align>allcenter</align>
+        </textarea>
+
+        <button name="save_button" from="basebutton">
+            <position>235,1000</position>
+            <value>Save</value>
+        </button>
+
+        <button name="done_button" from="basebutton">
+            <position>435,1000</position>
+            <value>OK</value>
+        </button>
+
+
+    </window>
+
+    <window name="itemdetailpopup">
+
+        <imagetype name="fanart">
+            <area>0,0,1920,1080</area>
+            <filename>images/popup_darken.png</filename>
+        </imagetype>
+
+        <imagetype name="leftpanel_bg">
+            <position>-20,0</position>
+            <filename>images/editmetadata_leftpanel_bg.png</filename>
+        </imagetype>
+
+        <shape name="panel_dark">
+            <area>0,0,768,1080</area>
+            <fill color="#000000" alpha="80" />
+        </shape>
+
+        <shape name="infobox">
+            <area>35,13,694,1033</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="180" />
+        </shape>
+
+        <imagetype name="screenshot">
+            <area>265,23,450,296</area>
+            <filename />
+            <preserveaspect>true</preserveaspect>
+        </imagetype>
+
+        <imagetype name="coverart">
+            <area>45,23,200,296</area>
+            <filename />
+            <preserveaspect>true</preserveaspect>
+        </imagetype>
+
+        <textarea name="title" from="basetextarea">
+            <area>45,334,674,60</area>
+            <font>basegothicmedium</font>
+            <align>left,vcenter</align>
+        </textarea>
+
+        <textarea name="subtitle" from="basetextarea">
+            <area>45,385,674,57</area>
+            <multiline>yes</multiline>
+            <font>basegothicmidblue</font>
+            <align>left,vcenter</align>
+            <cutdown>yes</cutdown>
+        </textarea>
+
+        <textarea name="##x##" from="basetextarea">
+            <area>45,425,674,57</area>
+            <multiline>yes</multiline>
+            <font>basesmalllightblue</font>
+            <align>left,vcenter</align>
+            <cutdown>yes</cutdown>
+            <template>Season/Episode: %1</template>
+        </textarea>
+
+        <textarea name="director" from="basetextarea">
+            <area>45,460,674,57</area>
+            <multiline>yes</multiline>
+            <font>basesmalllightblue</font>
+            <align>left,vcenter</align>
+            <cutdown>yes</cutdown>
+            <template>Directed by %1</template>
+        </textarea>
+
+        <textarea name="description" from="basetextarea">
+            <area>45,510,674,375</area>
+            <multiline>yes</multiline>
+            <font>basesmall</font>
+            <align>left,top</align>
+            <cutdown>yes</cutdown>
+        </textarea>
+
+        <textarea name="releasedate" from="basetextarea">
+            <area>45,885,674,57</area>
+            <multiline>yes</multiline>
+            <font>basesmalllightblue</font>
+            <align>left,vcenter</align>
+            <cutdown>yes</cutdown>
+            <template>This item was released on %1.</template>
+        </textarea>
+
+        <textarea name="insertdate" from="basetextarea">
+            <area>45,920,674,57</area>
+            <multiline>yes</multiline>
+            <font>basesmalllightblue</font>
+            <align>left,vcenter</align>
+            <cutdown>yes</cutdown>
+            <template>It was added to your collection on %1.</template>
+        </textarea>
+
+        <button name="done_button" from="basebutton">
+            <value>Cancel</value>
+            <position>151,985</position>
+        </button>
+
+        <button name="play_button" from="basebutton">
+            <value>Play</value>
+            <position>500,985</position>
+        </button>
+
+    </window>
+
+    <window name="playersettings">
+        <area>-1,-1,790,962</area>
+
+        <imagetype name="backimg">
+            <area>0,0,790,962</area>
+            <filename>images/arclight_popup_large_bg.png</filename>
+        </imagetype>
+
+        <textarea name="wintitle" from="basetextarea">
+            <area>89,78,613,40</area>
+            <font>basemedium</font>
+            <align>allcenter</align>
+            <value>Video Player Settings</value>
+        </textarea>
+
+        <textarea name="helptext" from="basetextarea">
+            <area>89,138,613,280</area>
+            <multiline>yes</multiline>
+            <font>basesmall</font>
+            <align>allcenter</align>
+        </textarea>
+
+        <textarea name="title_text" from="basetextarea">
+            <area>25,460,175,40</area>
+            <value>Default:</value>
+            <align>right,vcenter</align>
+        </textarea>
+
+        <textarea name="dvdplay_text" from="title_text">
+            <position>25,520</position>
+            <value>DVD Player:</value>
+        </textarea>
+
+        <textarea name="dvddrive_text" from="title_text">
+            <position>25,580</position>
+            <value>DVD Drive:</value>
+        </textarea>
+
+        <textarea name="vcdplay_text" from="title_text">
+            <position>25,640</position>
+            <value>VCD Player:</value>
+        </textarea>
+
+        <textarea name="vcddrive_text" from="title_text">
+            <position>25,700</position>
+            <value>VCD Drive:</value>
+        </textarea>
+
+        <textarea name="altcheck_text" from="title_text">
+            <area>135,750,400,40</area>
+            <value>Enable Alternate Player</value>
+        </textarea>
+
+        <textarea name="altplay_text" from="title_text">
+            <position>25,800</position>
+            <value>Alt. Player:</value>
+        </textarea>
+
+
+        <!--Widgets-->
+
+        <textedit name="defaultplayer" from="basetextedit">
+            <position>205,457</position>
+        </textedit>
+
+        <textedit name="dvdplayer" from="basetextedit">
+            <position>205,517</position>
+        </textedit>
+
+        <textedit name="dvddrive" from="basetextedit">
+            <position>205,577</position>
+        </textedit>
+
+        <textedit name="vcdplayer" from="basetextedit">
+            <position>205,637</position>
+        </textedit>
+
+        <textedit name="vcddrive" from="basetextedit">
+            <position>205,697</position>
+        </textedit>
+
+        <checkbox name="altcheck" from="basecheckbox">
+            <position>245,752</position>
+        </checkbox>
+
+        <textedit name="altplayer" from="basetextedit">
+            <position>205,797</position>
+        </textedit>
+
+        <imagetype name="dialogboxoverlay">
+            <position>0,0</position>
+            <filename>images/arclight_popup_large_overlay.png</filename>
+        </imagetype>
+
+        <button name="cancel" from="basebutton">
+            <position>208,850</position>
+            <value>Cancel</value>
+        </button>
+
+        <button name="ok" from="basebutton">
+            <position>455,850</position>
+            <value>OK</value>
+        </button>
+
+    </window>
+
+    <window name="metadatasettings">
+        <area>-1,-1,790,962</area>
+
+        <imagetype name="backimg">
+            <area>0,0,790,962</area>
+            <filename>images/arclight_popup_large_bg.png</filename>
+        </imagetype>
+
+        <textarea name="wintitle" from="basetextarea">
+            <area>89,78,613,40</area>
+            <font>basemedium</font>
+            <align>allcenter</align>
+            <value>Video Metadata Settings</value>
+        </textarea>
+
+        <textarea name="helptext" from="basetextarea">
+            <area>89,138,613,280</area>
+            <multiline>yes</multiline>
+            <font>basesmall</font>
+            <align>allcenter</align>
+        </textarea>
+
+        <textarea name="movie_text" from="basetextarea">
+            <area>25,460,175,40</area>
+            <value>Movie Grab:</value>
+            <align>right,vcenter</align>
+        </textarea>
+
+        <textarea name="tv_text" from="movie_text">
+            <position>25,520</position>
+            <value>TV Grab:</value>
+        </textarea>
+
+        <textarea name="unknownfilecheck_text" from="movie_text">
+            <area>285,580,400,40</area>
+            <value>Display unknown file types</value>
+            <align>left,vcenter</align>
+        </textarea>
+
+        <textarea name="treeloadsmetacheck_text" from="movie_text">
+            <area>285,640,400,40</area>
+            <value>Enable metadata in file browse mode</value>
+            <align>left,vcenter</align>
+        </textarea>
+
+        <textarea name="trailercheck_text" from="movie_text">
+            <area>285,700,400,40</area>
+            <value>Enable Random Trailer Playback</value>
+            <align>left,vcenter</align>
+        </textarea>
+
+        <textarea name="trailerplay_text" from="movie_text">
+            <position>25,760</position>
+            <value>Trailer #:</value>
+        </textarea>
+
+        <!--Widgets-->
+
+        <buttonlist name="moviegrabber" from="basewideselector">
+            <position>205,457</position>
+        </buttonlist>
+
+        <buttonlist name="tvgrabber" from="basewideselector">
+            <position>205,517</position>
+        </buttonlist>
+
+        <checkbox name="unknownfilecheck" from="basecheckbox">
+            <position>245,582</position>
+        </checkbox>
+
+        <checkbox name="treeloadsmetacheck" from="basecheckbox">
+            <position>245,642</position>
+        </checkbox>
+
+        <checkbox name="randomtrailercheck" from="basecheckbox">
+            <position>245,702</position>
+        </checkbox>
+
+        <spinbox name="trailernum" from="basewidespinbox">
+            <position>205,757</position>
+        </spinbox>
+
+        <imagetype name="dialogboxoverlay">
+            <position>0,0</position>
+            <filename>images/arclight_popup_large_overlay.png</filename>
+        </imagetype>
+
+        <button name="cancel" from="basebutton">
+            <position>208,850</position>
+            <value>Cancel</value>
+        </button>
+
+        <button name="ok" from="basebutton">
+            <position>455,850</position>
+            <value>OK</value>
+        </button>
+
+    </window>
+
+</mythuitheme>
+

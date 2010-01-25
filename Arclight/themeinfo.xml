@@ -1,0 +1,25 @@
+<themeinfo>
+    <name>Arclight</name>
+    <aspect>16:9</aspect>
+    <author>
+        <name>Robert McNamara</name>
+        <email>robert.mcnamara@gmail.com</email>
+    </author>
+
+    <types>
+        <type>UI</type>
+    </types>
+
+    <baseres>1920x1080</baseres>
+
+    <version>
+        <major>1</major>
+        <minor>1</minor>
+    </version>
+
+    <detail>
+        <thumbnail name="preview">preview.png</thumbnail>
+        <description>Arclight is a sleek theme meant for widescreen HD screens.  It is high contrast and uses shapes and attractive layout to convey information simply, consistently, and attractively.</description>
+        <errata>Arclight is distributed under the GPL version 2.  Please install both included fonts before using.</errata>
+    </detail>
+</themeinfo>

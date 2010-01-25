@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mythuitheme>
+    <window name="appearance">
+
+        <imagetype name="background">
+            <area>0,0,1920,1080</area>
+            <filename>Backgrounds/</filename>
+        </imagetype>
+
+        <shape name="item">
+            <area>100,60,1760,960</area>
+            <type>box</type>
+            <fill color="#1d1d1d" alpha="230" />
+            <line color="#1d1d1d" alpha="240" width="1" />
+        </shape>
+
+        <textarea name="part" from="basetextarea">
+            <font>basegothiclarge</font>
+            <area>300,230,1320,60</area>
+            <value>Appearance Wizard</value>
+            <align>left,vcenter</align>
+        </textarea>
+
+        <textarea name="part1" from="basetextarea">
+            <font>basegothicmidblue</font>
+            <area>300,300,1320,470</area>
+            <value>Move the selected arrow to the corner of the TV screen.  Press SELECT to edit the other arrow.  Press MENU to change the granularity of the adjustment or to quit without saving.  When you have finished, press BACK.</value>
+            <multiline>yes</multiline>
+        </textarea>
+
+        <textarea name="size" from="basetextarea">
+            <font>basemedium</font>
+            <area>300,450,1320,140</area>
+            <align>allcenter</align>
+            <value>1920 x 1080</value>
+        </textarea>
+
+        <textarea name="offsets" from="size">
+            <area>300,550,1320,140</area>
+            <align>allcenter</align>
+        </textarea>
+
+        <textarea name="changeamount" from="size">
+            <area>300,650,1320,140</area>
+            <align>allcenter</align>
+            <value>1 pixel</value>
+        </textarea>
+
+        <imagetype name="topleft">
+            <position>0,0</position>
+            <filename>topleft.png</filename>
+        </imagetype>
+
+        <imagetype name="bottomright">
+            <position>800,600</position>
+            <filename>bottomright.png</filename>
+        </imagetype>
+
+
+    </window>
+</mythuitheme>

@@ -31,6 +31,56 @@
             <format>%DATE%, %TIME%</format>
         </clock>
 
+        <shape name="infobox">
+            <area>35,13,524,721</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="180" />
+        </shape>
+
+        <imagetype name="channelicon">
+            <area>45,33,504,150</area>
+            <preserveaspect>true</preserveaspect>
+        </imagetype>
+
+        <textarea name="title" from="basetextarea">
+            <area>45,183,504,60</area>
+            <font>basegothicmedium</font>
+            <align>left,vcenter</align>
+        </textarea>
+
+        <textarea name="subtitle" from="basetextarea">
+            <area>45,234,504,57</area>
+            <multiline>yes</multiline>
+            <font>basegothicmidblue</font>
+            <align>left,vcenter</align>
+            <cutdown>yes</cutdown>
+        </textarea>
+
+        <textarea name="channel" from="basetextarea">
+            <area>45,275,504,57</area>
+            <multiline>yes</multiline>
+            <font>basesmalllightblue</font>
+            <align>left,vcenter</align>
+            <cutdown>yes</cutdown>
+        </textarea>
+
+        <textarea name="timedate" from="basetextarea">
+            <area>45,310,504,57</area>
+            <multiline>yes</multiline>
+            <font>basesmalllightblue</font>
+            <align>left,vcenter</align>
+            <cutdown>yes</cutdown>
+        </textarea>
+            
+        <textarea name="description" from="basetextarea">
+            <area>45,360,504,345</area>
+            <multiline>yes</multiline>
+            <font>basesmall</font>
+            <align>left,top</align>
+            <cutdown>yes</cutdown>
+            <template>(%STARTTIME% - %ENDTIME%) %LONGREPEAT% %YEARSTARS%%DESCRIPTION%</template>
+        </textarea>
+
         <guidegrid name="guidegrid">
             <area>936,90,1001,990</area>
             <layout>horizontal</layout>
@@ -108,6 +158,11 @@
             <statetype name="buttonitem">
                 <area>0,0,343,88</area>
                 <state name="active">
+                    <shape name="textback">
+                        <area>0,1,180,88</area>
+                        <type>roundbox</type>
+                        <fill color="#FFFFFF" alpha="60" />
+                    </shape>
                     <shape name="channelback">
                         <area>205,0,150,88</area>
                         <type>box</type>
@@ -154,33 +209,6 @@
             </statetype>
         </buttonlist>
 
-        <imagetype name="channelicon">
-            <area>33,135,544,223</area>
-            <filename />
-            <preserveaspect>true</preserveaspect>
-        </imagetype>
-
-        <textarea name="title" from="basetextarea">
-            <area>45,30,674,42</area>
-            <font>basemedium</font>
-            <align>allcenter</align>
-        </textarea>
-
-        <textarea name="subtitle" from="basetextarea">
-            <area>59,75,644,30</area>
-            <multiline>no</multiline>
-            <font>basesmall</font>
-            <align>allcenter</align>
-            <cutdown>yes</cutdown>
-        </textarea>
-
-        <textarea name="description"  from="basetextarea">
-            <area>33,410,544,500</area>
-            <multiline>yes</multiline>
-            <align>justify</align>
-            <template>(%STARTTIME% - %ENDTIME%) %LONGREPEAT% %YEARSTARS%%DESCRIPTION%</template>
-        </textarea>
-
     </window>
 
     <window name="programguide-video">
@@ -213,6 +241,50 @@
             <align>allcenter</align>
             <format>%DATE%, %TIME%</format>
         </clock>
+
+        <shape name="infobox">
+            <area>35,18,694,500</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="180" />
+        </shape>
+
+        <textarea name="title" from="basetextarea">
+            <area>45,33,674,60</area>
+            <font>basegothicmedium</font>
+            <align>left,vcenter</align>
+        </textarea>
+
+        <textarea name="subtitle" from="basetextarea">
+            <area>45,84,674,57</area>
+            <multiline>yes</multiline>
+            <font>basegothicmidblue</font>
+            <align>left,vcenter</align>
+            <cutdown>yes</cutdown>
+        </textarea>
+
+        <textarea name="channel" from="basetextarea">
+            <area>45,125,674,57</area>
+            <multiline>yes</multiline>
+            <font>basesmalllightblue</font>
+            <align>left,vcenter</align>
+            <cutdown>yes</cutdown>
+        </textarea>
+
+        <textarea name="timedate" from="basetextarea">
+            <area>45,160,674,57</area>
+            <multiline>yes</multiline>
+            <font>basesmalllightblue</font>
+            <align>left,vcenter</align>
+            <cutdown>yes</cutdown>
+        </textarea>
+
+        <textarea name="description" from="basetextarea">
+            <area>45,210,674,245</area>
+            <multiline>yes</multiline>
+            <font>basesmall</font>
+            <align>left,top</align>
+            <cutdown>yes</cutdown>
+        </textarea>
 
         <imagetype name="video">
             <area>786,50,1201,446</area>
@@ -296,6 +368,11 @@
             <statetype name="buttonitem">
                 <area>0,0,343,88</area>
                 <state name="active">
+                    <shape name="textback">
+                        <area>0,1,180,88</area>
+                        <type>roundbox</type>
+                        <fill color="#FFFFFF" alpha="60" />
+                    </shape>
                     <shape name="channelback">
                         <area>205,0,150,88</area>
                         <type>box</type>
@@ -341,33 +418,6 @@
                 </state>
             </statetype>
         </buttonlist>
-
-        <imagetype name="channelicon">
-            <area>33,135,700,223</area>
-            <filename />
-            <preserveaspect>true</preserveaspect>
-        </imagetype>
-
-        <textarea name="title" from="basetextarea">
-            <area>45,30,674,42</area>
-            <font>basemedium</font>
-            <align>allcenter</align>
-        </textarea>
-
-        <textarea name="subtitle" from="basetextarea">
-            <area>59,75,644,30</area>
-            <multiline>no</multiline>
-            <font>basesmall</font>
-            <align>allcenter</align>
-            <cutdown>yes</cutdown>
-        </textarea>
-
-        <textarea name="description"  from="basetextarea">
-            <area>33,410,700,100</area>
-            <multiline>yes</multiline>
-            <align>justify</align>
-            <template>(%STARTTIME% - %ENDTIME%) %LONGREPEAT% %YEARSTARS%%DESCRIPTION%</template>
-        </textarea>
 
     </window>
 
@@ -503,7 +553,6 @@
             <area>35,18,694,600</area>
             <type>roundbox</type>
             <fill color="#000000" alpha="180" />
-
         </shape>
 
         <textarea name="title" from="basetextarea">
@@ -698,7 +747,6 @@
             <area>35,213,694,651</area>
             <type>roundbox</type>
             <fill color="#000000" alpha="180" />
-
         </shape>
 
         <imagetype name="icon">
@@ -838,7 +886,6 @@
             <area>35,18,694,930</area>
             <type>roundbox</type>
             <fill color="#000000" alpha="180" />
-
         </shape>
 
         <textarea name="title" from="basetextarea">
@@ -1354,7 +1401,6 @@
             <area>35,18,694,620</area>
             <type>roundbox</type>
             <fill color="#000000" alpha="180" />
-
         </shape>
 
         <textarea name="title" from="basetextarea">
@@ -1536,7 +1582,6 @@
             <area>35,18,694,600</area>
             <type>roundbox</type>
             <fill color="#000000" alpha="180" />
-
         </shape>
 
         <textarea name="title" from="basetextarea">
@@ -1640,7 +1685,6 @@
             <area>35,18,694,1033</area>
             <type>roundbox</type>
             <fill color="#000000" alpha="180" />
-
         </shape>
 
         <textarea name="title" from="basetextarea">
@@ -2411,7 +2455,6 @@
             <area>35,18,694,600</area>
             <type>roundbox</type>
             <fill color="#000000" alpha="180" />
-
         </shape>
 
         <textarea name="title" from="basetextarea">

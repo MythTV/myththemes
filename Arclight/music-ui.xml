@@ -872,223 +872,210 @@
     </window>
 
     <window name="import_music">
-        <area>-1,-1,1280,720</area>
+        <area>0,0,1920,1080</area>
 
-        <shape name="shape">
-            <area>90,50,1100,520</area>
-            <type>roundbox</type>
-            <fill color="#000000" alpha="180" />
-            <line color="#FFFFFF" alpha="255" width="2" />
-            <cornerradius>12</cornerradius>
+        <imagetype name="fanart">
+            <area>0,0,1920,1080</area>
+            <filename>Backgrounds/</filename>
+        </imagetype>
+
+        <imagetype name="leftpanel_bg">
+            <position>-20,0</position>
+            <filename>images/editmetadata_leftpanel_bg.png</filename>
+        </imagetype>
+
+        <shape name="panel_dark">
+            <area>0,0,768,1080</area>
+            <fill color="#000000" alpha="80" />
         </shape>
 
-        <!-- Labels -->
+        <shape name="item">
+            <area>1620,-14,313,55</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="200" />
+        </shape>
+
+        <clock name="clock">
+            <area>1620,-2,303,50</area>
+            <font>basesmall</font>
+            <align>allcenter</align>
+            <format>%DATE%, %TIME%</format>
+        </clock>
+
+        <shape name="infobox">
+            <area>35,74,714,990</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="180" />
+        </shape>
+
+        <textarea name="pagelabel" from="basetextarea">
+            <area>45,84,674,60</area>
+            <font>basegothicmedium</font>
+            <align>left,vcenter</align>
+            <value>Import Music</value>
+        </textarea>
+
+        <textarea name="subtitle" from="basetextarea">
+            <area>45,135,674,57</area>
+            <multiline>yes</multiline>
+            <font>basesmalllightblue</font>
+            <align>left,vcenter</align>
+            <cutdown>yes</cutdown>
+            <value>Import local music files.</value>
+        </textarea>
+
+        <!-- Labels  -->
 
         <textarea name="location_label" from="basetextarea">
-            <area>390,85,170,30</area>
+            <area>8,225,190,40</area>
             <value>Location:</value>
+            <align>right,vcenter</align>
         </textarea>
 
         <textarea name="filename_label" from="location_label">
-            <position>245,185</position>
+            <position>8,465</position>
             <value>Filename:</value>
         </textarea>
 
         <textarea name="compilation_label" from="location_label">
-            <position>245,225</position>
-            <value>Compilation:</value>
+            <area>217,515,500,40</area>
+            <align>left,vcenter</align>
+            <value>Track is part of a compilation</value>
         </textarea>
 
         <textarea name="compilation_artist_label" from="location_label">
-            <position>245,265</position>
+            <position>8,565</position>
             <value>Comp. Artist:</value>
         </textarea>
 
         <textarea name="artist_label" from="location_label">
-            <position>245,305</position>
+            <position>8,615</position>
             <value>Artist:</value>
         </textarea>
 
         <textarea name="album_label" from="location_label">
-            <position>245,345</position>
+            <position>8,665</position>
             <value>Album:</value>
         </textarea>
 
         <textarea name="title_text" from="location_label">
-            <position>245,385</position>
+            <position>8,715</position>
             <value>Title:</value>
         </textarea>
 
         <textarea name="genre_label" from="location_label">
-            <position>245,425</position>
+            <position>8,765</position>
             <value>Genre:</value>
         </textarea>
 
         <textarea name="year_label" from="location_label">
-            <position>245,465</position>
+            <position>8,815</position>
             <value>Year:</value>
         </textarea>
 
         <textarea name="track_label" from="location_label">
-            <position>595,465</position>
+            <position>8,865</position>
             <value>Track No.:</value>
-        </textarea>
-
-        <textarea name="position" from="basetextarea">
-            <area>480,500,300,30</area>
-            <align>hcenter</align>
-        </textarea>
-
-        <textarea name="status" from="position">
-            <position>480,535</position>
-            <value>Already in database</value>
         </textarea>
 
         <!-- data fields -->
 
         <textedit name="location" from="basetextedit">
-            <position>490,80</position>
+            <position>217,223</position>
         </textedit>
 
         <button name="directoryfinder" from="basesearchbutton">
-            <position>785,79</position>
+            <position>217,283</position>
+            <value>Click to browse directories...</value>
         </button>
 
-        <button name="scan" from="basebutton">
-            <position>565,130</position>
+        <button name="scan" from="basesearchbutton">
+            <position>217,343</position>
             <value>Search</value>
         </button>
 
-        <button name="coverart" from="basebutton">
-            <position>800,130</position>
-            <value>Cover Art</value>
+        <button name="coverart" from="basesearchbutton">
+            <position>217,403</position>
+            <value>Choose Coverart</value>
         </button>
 
         <textarea name="filename" from="basetextarea">
-            <area>430,185,750,30</area>
-            <align>left</align>
+            <area>217,465,520,40</area>
+            <align>left,vcenter</align>
         </textarea>
 
         <checkbox name="compilation" from="basecheckbox">
-            <position>425,220</position>
+            <position>167,515</position>
         </checkbox>
 
-        <textarea name="compartist" from="basetextarea">
-            <area>430,265,515,30</area>
+        <textarea name="compartist" from="filename">
+            <position>217,565</position>
         </textarea>
 
-        <textarea name="artist" from="basetextarea">
-            <area>430,305,515,30</area>
+        <textarea name="artist" from="filename">
+            <position>217,615</position>
         </textarea>
 
-        <textarea name="album" from="basetextarea">
-            <area>430,345,515,30</area>
+        <textarea name="album" from="filename">
+            <position>217,665</position>
         </textarea>
 
-        <textarea name="title" from="basetextarea">
-            <area>430,385,515,30</area>
+        <textarea name="title" from="filename">
+            <position>217,715</position>
         </textarea>
 
-        <textarea name="genre" from="basetextarea">
-            <area>430,425,515,30</area>
+        <textarea name="genre" from="filename">
+            <position>217,765</position>
         </textarea>
 
-        <textarea name="year" from="basetextarea">
-            <area>430,465,165,30</area>
+        <textarea name="year" from="filename">
+            <position>217,815</position>
         </textarea>
 
-        <textarea name="track" from="basetextarea">
-            <area>780,465,165,30</area>
+        <textarea name="track" from="filename">
+            <position>217,865</position>
+        </textarea>
+
+        <textarea name="position" from="basetextarea">
+            <area>45,915,674,40</area>
+            <align>allcenter</align>
+        </textarea>
+
+        <textarea name="status" from="position">
+            <position>45,958</position>
         </textarea>
 
         <!-- Push buttons -->
 
+        <button name="prev" from="basebutton">
+            <position>140,915</position>
+            <value>Previous</value>
+        </button>
+
+        <button name="next" from="basebutton">
+            <position>475,915</position>
+            <value>Next</value>
+        </button>
+
         <button name="add" from="basebutton">
-            <position>115,520</position>
+            <position>50,1000</position>
             <value>Add</value>
         </button>
 
-        <button name="play" from="basebutton">
-            <position>280,520</position>
+        <button name="play" from="add">
+            <position>225,1000</position>
             <value>Play</value>
         </button>
 
-        <button name="prev">
-            <area>460,510,60,60</area>
-            <statetype name="buttonstate">
-                <state name="active">
-                    <imagetype name="background">
-                        <filename>mm_prev_off.png</filename>
-                    </imagetype>
-                </state>
-                <state name="selected" from="active">
-                    <imagetype name="background">
-                        <filename>mm_prev_on.png</filename>
-                    </imagetype>
-                </state>
-                <state name="disabled" from="active" />
-                <state name="pushed" from="active">
-                    <imagetype name="background">
-                        <filename>mm_prev_pushed.png</filename>
-                    </imagetype>
-                </state>
-            </statetype>
-        </button>
-
-        <button name="next">
-            <area>730,510,60,60</area>
-            <statetype name="buttonstate">
-                <state name="active">
-                    <imagetype name="background">
-                        <filename>mm_next_off.png</filename>
-                    </imagetype>
-                </state>
-                <state name="selected" from="active">
-                    <imagetype name="background">
-                        <filename>mm_next_on.png</filename>
-                    </imagetype>
-                </state>
-                <state name="disabled" from="active" />
-                <state name="pushed" from="active">
-                    <imagetype name="background">
-                        <filename>mm_next_pushed.png</filename>
-                    </imagetype>
-                </state>
-            </statetype>
-        </button>
-
-        <button name="nextnew" from="basebutton">
-            <position>840,520</position>
+        <button name="nextnew" from="add">
+            <position>400,1000</position>
             <value>Next New</value>
         </button>
 
-        <button name="addallnew" from="basebutton">
-            <position>1010,520</position>
+        <button name="addallnew" from="add">
+            <position>575,1000</position>
             <value>Add All New</value>
         </button>
-
-        <imagetype name="clockback">
-            <area>525,695,230,51</area>
-            <filename>images/clock_backdrop.png</filename>
-        </imagetype>
-
-        <font name="clock" from="baseextrasmall">
-            <size>11</size>
-            <color>#FFFFFF</color>
-        </font>
-
-        <clock name="clock">
-            <area>529,700,219,25</area>
-            <font>clock</font>
-            <format>%DATE%, %TIME%</format>
-            <align>center</align>
-            <alpha>255</alpha>
-        </clock>
-
-        <imagetype name="clockbackoverlay">
-            <area>525,695,230,23</area>
-            <filename>images/clock_backdrop_overlay.png</filename>
-        </imagetype>
 
     </window>
 

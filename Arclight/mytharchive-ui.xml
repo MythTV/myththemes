@@ -1,8 +1,3 @@
-<!--
-
-Common MythArchive window definitions
-
--->
 <mythuitheme>
 
     <window name="selectdestination">
@@ -118,6 +113,18 @@ Common MythArchive window definitions
             <value>Erase DVD-RW before burning</value>
         </textarea>
 
+        <checkbox name="makeisoimage_check" from="basecheckbox">
+            <position>165,467</position>
+        </checkbox>
+
+        <checkbox name="burntodvdr_check" from="basecheckbox">
+            <position>165,527</position>
+        </checkbox>
+
+        <checkbox name="erasedvdrw_check" from="basecheckbox">
+            <position>165,587</position>
+        </checkbox>
+
         <button name="cancel_button" from="basebutton">
             <position>70,900</position>
             <value>Cancel</value>
@@ -133,24 +140,9 @@ Common MythArchive window definitions
             <value>Next</value>
         </button>
 
-        <checkbox name="makeisoimage_check" from="basecheckbox">
-            <position>165,467</position>
-        </checkbox>
-
-        <checkbox name="burntodvdr_check" from="basecheckbox">
-            <position>165,527</position>
-        </checkbox>
-
-        <checkbox name="erasedvdrw_check" from="basecheckbox">
-            <position>165,587</position>
-        </checkbox>
-
     </window>
 
-  <!-- 
-      Recording Selector
-  -->
-  <window name="recording_selector">
+    <window name="recording_selector">
         <area>0,0,1920,1080</area>
 
         <imagetype name="fanart">
@@ -359,78 +351,163 @@ Common MythArchive window definitions
     </window>
 
     <window name="file_selector">
-        <font name="title" from="baselarge">
-            <color>#ffff00</color>
-            <dropcolor>#000000</dropcolor>
-            <size>24</size>
-            <shadow>3,3</shadow>
-            <bold>yes</bold>
-        </font>
+        <area>0,0,1920,1080</area>
 
-        <textarea name="title_text" from="basetextarea">
-            <area>0,5,1280,45</area>
-            <font>title</font>
+        <imagetype name="fanart">
+            <area>0,0,1920,1080</area>
+            <filename>Backgrounds/</filename>
+        </imagetype>
+
+        <imagetype name="leftpanel_bg">
+            <position>-20,0</position>
+            <filename>images/editmetadata_leftpanel_bg.png</filename>
+        </imagetype>
+
+        <shape name="panel_dark">
+            <area>0,0,768,1080</area>
+            <fill color="#000000" alpha="80" />
+        </shape>
+
+        <shape name="item">
+            <area>1620,-14,313,55</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="200" />
+        </shape>
+
+        <clock name="clock">
+            <area>1620,-2,303,50</area>
+            <font>basesmall</font>
             <align>allcenter</align>
+            <format>%DATE%, %TIME%</format>
+        </clock>
+
+        <shape name="infobox">
+            <area>35,324,694,310</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="180" />
+        </shape>
+
+        <textarea name="title" from="basetextarea">
+            <area>45,334,674,60</area>
+            <font>basegothicmedium</font>
+            <align>left,vcenter</align>
             <value>File Finder</value>
         </textarea>
 
+        <textarea name="subtitle" from="basetextarea">
+            <area>45,385,674,57</area>
+            <multiline>yes</multiline>
+            <font>basesmalllightblue</font>
+            <align>left,vcenter</align>
+            <cutdown>yes</cutdown>
+            <value>Select the file you wish to use.</value>
+        </textarea>
+
         <textedit name="location_edit" from="basetextedit">
-            <position>200,65</position>
+            <position>140,468</position>
         </textedit>
 
         <button name="back_button" from="basebutton">
-            <position>625,70</position>
+            <position>40,520</position>
         </button>
 
-        <button name="home_button" from="basebutton">
-            <position>785,70</position>
+        <button name="home_button" from="action_0">
+            <position>215,520</position>
         </button>
 
-        <buttonlist name="filelist" from="basebuttonlist">
-            <area>40,130,1200,505</area>
+        <button name="cancel_button" from="action_0">
+            <position>390,520</position>
+        </button>
+
+        <button name="ok_button" from="action_0">
+            <position>565,520</position>
+        </button>
+
+        <buttonlist name="filelist">
+            <area>786,549,1136,535</area>
+            <scrollstyle>free</scrollstyle>
+            <wrapstyle>items</wrapstyle>
+            <layout>vertical</layout>
+            <spacing>0</spacing>
+            <drawfrombottom>true</drawfrombottom>
+            <buttonarea>2,0,1136,535</buttonarea>
             <statetype name="buttonitem">
                 <state name="active">
+                    <area>1,0,1132,89</area>
+                    <shape name="item">
+                        <area>0,0,100%,88</area>
+                        <type>box</type>
+                        <fill color="#000000" alpha="180" />
+                    </shape>
                     <imagetype name="buttonimage">
-                        <area>2,2,28,28</area>
+                        <area>6,2,50,85</area>
+                        <preserveaspect>true</preserveaspect>
+                        <alpha>160</alpha>
                     </imagetype>
                     <textarea name="buttontext">
-                        <area>35,0,1020,35</area>
+                        <area>70,10,1070,40</area>
+                        <align>left,vcenter</align>
+                        <font>basemedium</font>
+                        <alpha>210</alpha>
                     </textarea>
-                    <textarea name="size" from="buttontext">
-                        <area>1025,0,125,35</area>
-                        <align>right,vcenter</align>
+                    <textarea name="size">
+                        <area>90,56,860,30</area>
+                        <align>left,vcenter</align>
+                        <font>basesmall</font>
+                        <alpha>210</alpha>
                     </textarea>
-                    <statetype name="buttoncheck">
-                        <position>1170,5</position>
-                    </statetype>
+                    <imagetype name="divider">
+                        <area>0,88,1136,2</area>
+                        <filename>images/baserecordinglistwide_divider.png</filename>
+                        <alpha>100</alpha>
+                    </imagetype>
                 </state>
                 <state name="selected" from="active">
-                    <imagetype name="buttonbackground">
-                        <gradient start="#52CA38" end="#349838" alpha="255" />
+                    <shape name="item">
+                        <fill color="#0767AB" alpha="240" />
+                    </shape>
+                    <textarea name="buttontext">
+                        <alpha>200</alpha>
+                    </textarea>
+                    <imagetype name="buttonimage">
+                        <alpha>255</alpha>
+                    </imagetype>
+                    <textarea name="size">
+                        <alpha>200</alpha>
+                    </textarea>
+                    <imagetype name="divider">
+                        <filename />
                     </imagetype>
                 </state>
-                <state name="inactive" from="active">
-                    <imagetype name="buttonbackground">
-                        <gradient start="#52CA38" end="#349838" alpha="100" />
+                <state name="inactive" from="active" />
+            </statetype>
+            <statetype name="upscrollarrow">
+                <position>1075,-30</position>
+                <state type="off">
+                </state>
+                <state type="full">
+                    <imagetype name="upon">
+                        <filename>images/arclight_popup_uparrow.png</filename>
+                        <alpha>230</alpha>
                     </imagetype>
-                    <textarea name="buttontext">
-                        <font>basesmallpurple</font>
-                    </textarea>
+                </state>
+            </statetype>
+            <statetype name="downscrollarrow">
+                <position>1057,-30</position>
+                <state type="off">
+                </state>
+                <state type="full">
+                    <imagetype name="dnon">
+                        <filename>images/arclight_popup_downarrow.png</filename>
+                        <alpha>230</alpha>
+                    </imagetype>
                 </state>
             </statetype>
         </buttonlist>
 
-        <button name="cancel_button" from="basebutton">
-            <position>55,650</position>
-        </button>
-
-        <button name="ok_button" from="basebutton">
-            <position>1060,650</position>
-        </button>
-
     </window>
 
-  <window name="video_selector">
+    <window name="video_selector">
         <area>0,0,1920,1080</area>
 
         <imagetype name="fanart">
@@ -638,73 +715,98 @@ Common MythArchive window definitions
     </window>
 
     <window name="logviewer">
+        <area>0,0,1920,1080</area>
 
-        <font name="title" from="basesmall">
-            <color>#ffff00</color>
-            <dropcolor>#000000</dropcolor>
-            <size>24</size>
-            <shadow>3,3</shadow>
-            <bold>yes</bold>
-        </font>
+        <imagetype name="fanart">
+            <area>0,0,1920,1080</area>
+            <filename>Backgrounds/</filename>
+        </imagetype>
 
-        <textarea name="title1" from="basetextarea">
-            <area>0,10,1280,50</area>
-            <font>title</font>
-            <align>center</align>
+        <imagetype name="leftpanel_bg">
+            <position>-20,0</position>
+            <filename>images/editmetadata_leftpanel_bg.png</filename>
+        </imagetype>
+
+        <shape name="panel_dark">
+            <area>0,0,768,1080</area>
+            <fill color="#000000" alpha="80" />
+        </shape>
+
+        <shape name="item">
+            <area>1620,-14,313,55</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="200" />
+        </shape>
+
+        <clock name="clock">
+            <area>1620,-2,303,50</area>
+            <font>basesmall</font>
+            <align>allcenter</align>
+            <format>%DATE%, %TIME%</format>
+        </clock>
+
+        <shape name="infobox">
+            <area>35,324,714,310</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="180" />
+        </shape>
+
+        <textarea name="title" from="basetextarea">
+            <area>45,334,674,60</area>
+            <font>basegothicmedium</font>
+            <align>left,vcenter</align>
             <value>Log Viewer</value>
         </textarea>
 
-        <shape name="logbackground" from="basebackground">
-            <area>30,60,1220,440</area>
-        </shape>
+        <textarea name="logitem_text" from="basetextarea">
+            <area>45,385,674,57</area>
+            <multiline>no</multiline>
+            <font>basesmalllightblue</font>
+            <align>left,vcenter</align>
+            <cutdown>yes</cutdown>
+            <value>See logs from your archive runs.</value>
+        </textarea>
 
-        <buttonlist name="loglist" from="basebuttonlist">
-            <area>50,80,1165,400</area>
+        <buttonlist name="loglist" from="baseshapebuttonlistwide">
             <statetype name="buttonitem">
                 <state name="active">
                     <textarea name="buttontext">
-                        <area>5,0,1140,30</area>
+                        <area>5,9,1100,40</area>
+                        <align>vcenter,left</align>
+                        <font>basesmall</font>
+                        <alpha>100</alpha>
                     </textarea>
-                    <statetype name="buttoncheck">
-                        <position>1100,5</position>
-                    </statetype>
                 </state>
-                <state name="selected" from="active">
-                    <imagetype name="buttonbackground">
-                        <gradient start="#52CA38" end="#349838" alpha="255" />
-                    </imagetype>
-                </state>
-                <state name="inactive" from="active">
-                    <imagetype name="buttonbackground">
-                        <gradient start="#52CA38" end="#349838" alpha="100" />
-                    </imagetype>
+                <state name="selected">
                     <textarea name="buttontext">
-                        <font>basesmallpurple</font>
+                        <area>5,9,1100,40</area>
+                        <align>vcenter,left</align>
+                        <font>basesmall</font>
+                    </textarea>
+                </state>
+                <state name="inactive">
+                    <textarea name="buttontext">
+                        <area>5,9,1100,40</area>
+                        <align>vcenter,left</align>
+                        <font>basesmall</font>
                     </textarea>
                 </state>
             </statetype>
         </buttonlist>
 
-        <shape name="bottombackground" from="basebackground">
-            <area>30,510,1220,130</area>
-        </shape>
-
-        <textarea name="logitem_text" from="basetextarea">
-            <area>45,515,1190,120</area>
-            <value></value>
-            <multiline>yes</multiline>
-        </textarea>
-
         <button name="cancel_button" from="basebutton">
-            <position>55,650</position>
+            <position>50,570</position>
+            <value>Cancel</value>
         </button>
 
         <button name="update_button" from="basebutton">
-            <position>500,650</position>
+            <position>300,570</position>
+            <value>Update</value>
         </button>
 
         <button name="exit_button" from="basebutton">
-            <position>1060,650</position>
+            <position>550,570</position>
+            <value>Exit</value>
         </button>
 
     </window>

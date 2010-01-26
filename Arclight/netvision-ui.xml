@@ -32,7 +32,7 @@
         </clock>
 
         <shape name="infobox">
-            <area>35,13,694,481</area>
+            <area>35,13,694,561</area>
             <type>roundbox</type>
             <fill color="#000000" alpha="180" />
         </shape>
@@ -76,12 +76,18 @@
             <template>Page %1</template>
         </textarea>
 
+        <textarea name="searchlabel" from="basetextarea">
+            <area>45,508,125,40</area>
+            <align>right,vcenter</align>
+            <value>Search:</value>
+        </textarea>
+
         <textedit name="search" from="basetextedit">
-            <position>130,508</position>
+            <position>190,508</position>
         </textedit>
 
         <buttonlist name="sites">
-            <area>0,569,767,438</area>
+            <area>0,589,767,438</area>
             <layout>vertical</layout>
             <spacing>1</spacing>
             <drawfrombottom>true</drawfrombottom>

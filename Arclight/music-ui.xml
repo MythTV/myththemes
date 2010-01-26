@@ -786,89 +786,122 @@
         </container>
     </window>
 
-    <window name="albumart_browser">
+    <window name="import_coverart">
+        <area>0,0,1920,1080</area>
+
+        <imagetype name="fanart">
+            <area>0,0,1920,1080</area>
+            <filename>Backgrounds/</filename>
+        </imagetype>
+
+        <imagetype name="leftpanel_bg">
+            <position>-20,0</position>
+            <filename>images/editmetadata_leftpanel_bg.png</filename>
+        </imagetype>
+
+        <shape name="item">
+            <area>1620,-14,313,55</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="200" />
+        </shape>
+
+        <clock name="clock">
+            <area>1620,-2,303,50</area>
+            <font>basesmall</font>
+            <align>allcenter</align>
+            <format>%DATE%, %TIME%</format>
+        </clock>
+
+        <shape name="infobox">
+            <area>35,25,714,810</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="180" />
+        </shape>
 
         <textarea name="heading" from="basetextarea">
-            <area>0,0,800,50</area>
-            <value>Album Art</value>
-            <font>baselarge</font>
-            <align>hcenter</align>
+            <area>45,334,674,60</area>
+            <font>basegothicmedium</font>
+            <align>left,vcenter</align>
+            <value>Import Coverart</value>
         </textarea>
 
-        <imagetype name="background">
-            <area>300,55,440,390</area>
-            <filename>mm_trans_background.png</filename>
-        </imagetype>
-
-        <textarea name="imagefilename" from="basetextarea">
-            <area>320,75,400,350</area>
-            <value>No Album Art Found</value>
-            <align>allcenter</align>
+        <textarea name="subtitle" from="basetextarea">
+            <area>45,385,674,57</area>
+            <multiline>yes</multiline>
+            <font>basesmalllightblue</font>
+            <align>left,vcenter</align>
+            <cutdown>yes</cutdown>
+            <value>Browse cover images on your system.</value>
         </textarea>
 
-        <imagetype name="coverart_image">
-            <area>320,75,350,350</area>
+        <!-- Labels -->
+        <textarea name="file_label" from="basetextarea">
+            <area>45,465,140,40</area>
+            <value>File:</value>
+            <align>right,vcenter</align>
+        </textarea>
+
+        <textarea name="destination_label" from="file_label">
+            <position>45,525</position>
+            <value>Destination:</value>
+        </textarea>
+
+        <textarea name="title" from="file_label">
+            <position>45,585</position>
+            <value>Image Type:</value>
+        </textarea>
+
+        <!-- data fields -->
+
+        <imagetype name="coverart">
+            <area>45,45,250,250</area>
         </imagetype>
 
-        <imagetype name="another_background">
-            <area>300,450,440,70</area>
-            <filename>mm_trans_background.png</filename>
-        </imagetype>
+        <buttonlist name="type" from="basewideselector">
+            <position>197,585</position>
+        </buttonlist>
 
-        <textarea name="filenamelabel" from="basetextarea">
-            <area>290,455,170,30</area>
-            <value>Filename:</value>
+        <button name="prev" from="basebutton">
+            <position>50,740</position>
+            <value>Previous</value>
+        </button>
+
+        <button name="next" from="prev">
+            <position>225,740</position>
+            <value>Next</value>
+        </button>
+
+        <button name="copy" from="prev">
+            <position>400,740</position>
+            <value>Copy</value>
+        </button>
+
+        <button name="exit" from="prev">
+            <position>575,740</position>
+            <value>Done</value>
+        </button>
+
+        <textarea name="file" from="basetextarea">
+            <area>207,465,510,40</area>
             <align>right</align>
         </textarea>
 
-        <textarea name="typelabel" from="filenamelabel">
-            <position>290,485</position>
-            <value>Type:</value>
+        <textarea name="destination" from="basetextarea">
+            <area>295,525,730,30</area>
+            <align>right</align>
         </textarea>
 
-        <textarea name="imagefilename" from="basetextarea">
-            <area>465,455,190,30</area>
+        <textarea name="position" from="basetextarea">
+            <area>45,585,674,57</area>
+            <align>allcenter</align>
         </textarea>
 
-        <textarea name="imagetype" from="imagefilename">
-            <position>465,485</position>
+        <textarea name="status" from="basetextarea">
+            <area>45,645,674,57</area>
+            <value>Already in database</value>
+            <align>allcenter</align>
         </textarea>
 
-        <buttonlist name="coverart_grid">
-            <area>70,65,450,450</area>
-            <layout>grid</layout>
-            <buttonarea>0,0,450,450</buttonarea>
-            <spacing>10</spacing>
-            <statetype name="buttonitem">
-                <state name="active">
-                    <area>0,0,100,100</area>
-                    <imagetype name="buttonbackground">
-                        <filename>mm_browser_back_reg.png</filename>
-                    </imagetype>
-                    <imagetype name="buttonimage">
-                        <filename>mm_nothumb.png</filename>
-                    </imagetype>
-                </state>
-                <state name="selected" from="active">
-                    <imagetype name="buttonbackground">
-                        <filename>mm_browser_back_sel.png</filename>
-                    </imagetype>
-                </state>
-                <state name="inactive" from="selected" />
-            </statetype>
-        </buttonlist>
-
-        <!-- Push buttons -->
-
-        <button name="metadata" from="basebutton">
-            <position>20,540</position>
-            <value>Metadata</value>
-        </button>
-
-        <button name="done" from="basebutton">
-            <position>630,540</position>
-            <value>Done</value>
-        </button>
     </window>
 
     <window name="import_music">

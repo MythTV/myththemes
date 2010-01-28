@@ -141,7 +141,7 @@
 	  <textarea name="description">
 		  <multiline>yes</multiline>
 		  <area>100,398,500,74</area>
-		  <font>descriptfont</font>
+		  <font>infofont</font>
 	  </textarea>
 	  <textarea name="year">
 		  <area>100,374,440,20</area>

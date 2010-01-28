@@ -1844,9 +1844,9 @@
 
         <spinbox name="startoffset" from="basewidespinbox">
             <position>1396,504</position>
-            <template type="negative">%n minute(s) late</template>
+            <template type="negative">%n minute(s) early</template>
             <template type="zero">Start on time</template>
-            <template type="positive">%n minute(s) early</template>
+            <template type="positive">%n minute(s) late</template>
         </spinbox>
 
         <textarea name="endoffset_label" from="basetextarea">
@@ -1858,9 +1858,9 @@
 
         <spinbox name="endoffset" from="basewidespinbox">
             <position>1396,564</position>
-            <template type="negative">%n minute(s) late</template>
+            <template type="negative">%n minute(s) early</template>
             <template type="zero">End on time</template>
-            <template type="positive">%n minute(s) early</template>
+            <template type="positive">%n minute(s) late</template>
         </spinbox>
 
         <textarea name="dupmethod_label" from="basetextarea">

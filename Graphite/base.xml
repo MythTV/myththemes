@@ -358,7 +358,7 @@
                 </imagetype>
                 <textarea name="buttontext">
                     <area>5,5,55,30</area>
-                    <font>basesmall</font>
+                    <font>basesmallest</font>
                     <cutdown>yes</cutdown>
                     <align>right,vcenter</align>
                 </textarea>
@@ -413,7 +413,7 @@
                 </imagetype>
                 <textarea name="buttontext">
                     <area>5,5,365,30</area>
-                    <font>basesmall</font>
+                    <font>basesmallest</font>
                     <cutdown>yes</cutdown>
                     <align>left,vcenter</align>
                 </textarea>
@@ -470,7 +470,7 @@
                 </imagetype>
                 <textarea name="buttontext">
                     <area>5,5,190,30</area>
-                    <font>basesmall</font>
+                    <font>basesmallest</font>
                     <cutdown>yes</cutdown>
                     <align>left,vcenter</align>
                 </textarea>
@@ -527,7 +527,7 @@
                 </imagetype>
                 <textarea name="buttontext">
                     <area>5,5,365,30</area>
-                    <font>basesmall</font>
+                    <font>basesmallest</font>
                     <cutdown>yes</cutdown>
                     <align>left,vcenter</align>
                 </textarea>

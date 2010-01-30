@@ -47,7 +47,7 @@
         </textarea>
 
         <buttonlist name="groups" from="basebuttonlist">
-            <area>15,86,409,338</area>
+            <area>15,86,434,338</area>
             <buttonarea>32,5,375,333</buttonarea>
             <spacing>6</spacing>
             <wrapstyle>items</wrapstyle>
@@ -75,7 +75,7 @@
 
         <buttonlist name="recordings" from="basebuttonlist">
             <area>499,86,776,338</area>
-            <buttonarea>0,5,736,338</buttonarea>
+            <buttonarea>0,5,731,338</buttonarea>
             <spacing>6</spacing>
             <wrapstyle>items</wrapstyle>
             <statetype name="buttonitem">

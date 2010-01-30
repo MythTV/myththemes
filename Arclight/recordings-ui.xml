@@ -100,11 +100,12 @@
 
         <buttonlist name="recordings" from="baseVBLwide">
             <align>bottom</align>
-            <area>786,436,1136,613</area>
+            <area>786,436,1136,645</area>
             <scrollstyle>free</scrollstyle>
             <wrapstyle>items</wrapstyle>
             <layout>vertical</layout>
             <spacing>0</spacing>
+            <buttonarea>2,0,1136,645</buttonarea>
             <statetype name="buttonitem">
                 <state name="active">
                     <imagetype name="preview">

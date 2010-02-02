@@ -166,7 +166,7 @@
                     <alpha>100</alpha>
                 </imagetype>
             </state>
-            <state name="selected" from="active">
+            <state name="selectedactive" from="active">
                 <textarea name="buttontext">
                     <alpha>255</alpha>
                 </textarea>
@@ -174,7 +174,7 @@
                     <alpha>255</alpha>
                 </imagetype>
             </state>
-            <state name="inactive" from="active">
+            <state name="selectedinactive" from="active">
                 <imagetype name="buttonbackground">
                     <alpha>100</alpha>
                 </imagetype>
@@ -364,7 +364,7 @@
                     <alpha>210</alpha>
                 </imagetype>
             </state>
-            <state name="selected" from="active">
+            <state name="selectedactive" from="active">
                 <area>0,0,100%,199</area>
                 <shape name="item">
                     <area>0,0,100%,197</area>
@@ -464,7 +464,7 @@
                     <alpha>200</alpha>
                 </imagetype>
             </state>
-            <state name="inactive" from="active">
+            <state name="selectedinactive" from="active">
                 <area>0,0,100%,199</area>
                 <shape name="item">
                     <area>0,0,100%,197</area>
@@ -721,7 +721,7 @@
                     </state>
                 </statetype>
             </state>
-            <state name="selected" from="active">
+            <state name="selectedactive" from="active">
                 <shape name="item">
                     <fill color="#0767AB" alpha="240" />
                 </shape>
@@ -818,7 +818,7 @@
                     </state>
                 </statetype>
             </state>
-            <state name="inactive" from="active">
+            <state name="selectedinactive" from="active">
                 <shape name="item">
                     <fill color="#222222" alpha="190" />
                 </shape>
@@ -890,7 +890,7 @@
                 <imagetype name="buttonarrow">
                 </imagetype>
             </state>
-            <state name="selected" from="active">
+            <state name="selectedactive" from="active">
                 <imagetype name="bulb">
                     <area>0,10,30,30</area>
                     <filename>images/checkbox_unselected_checked.png</filename>
@@ -899,7 +899,7 @@
                     <alpha>255</alpha>
                 </textarea>
             </state>
-            <state name="inactive" from="active">
+            <state name="selectedinactive" from="active">
                 <imagetype name="bulb">
                     <area>0,10,30,30</area>
                     <filename>images/checkbox_unselected_checked.png</filename>
@@ -958,7 +958,7 @@
                 <imagetype name="buttonarrow">
                 </imagetype>
             </state>
-            <state name="selected" from="active">
+            <state name="selectedactive" from="active">
                 <shape name="item">
                     <fill color="#0767AB" alpha="240" />
                 </shape>
@@ -966,7 +966,7 @@
                     <alpha>255</alpha>
                 </textarea>
             </state>
-            <state name="inactive" from="active">
+            <state name="selectedinactive" from="active">
                 <shape name="item">
                     <fill color="#222222" alpha="180" />
                 </shape>
@@ -1051,7 +1051,7 @@
                 <imagetype name="buttonarrow">
                 </imagetype>
             </state>
-            <state name="selected" from="active">
+            <state name="selectedactive" from="active">
                 <shape name="item">
                     <fill color="#0767AB" alpha="240" />
                 </shape>
@@ -1059,7 +1059,7 @@
                     <alpha>255</alpha>
                 </textarea>
             </state>
-            <state name="inactive" from="active">
+            <state name="selectedinactive" from="active">
                 <shape name="item">
                     <fill color="#222222" alpha="180" />
                 </shape>
@@ -1274,12 +1274,12 @@
                     <align>allcenter</align>
                 </textarea>
             </state>
-            <state name="selected" from="active">
+            <state name="selectedactive" from="active">
                 <imagetype name="buttonbackground">
                     <filename>images/spinbox_selected.png</filename>
                 </imagetype>
             </state>
-            <state name="inactive" from="active">
+            <state name="selectedinactive" from="active">
                 <textarea name="buttontext">
                     <alpha>60</alpha>
                 </textarea>
@@ -1334,12 +1334,12 @@
                     <align>allcenter</align>
                 </textarea>
             </state>
-            <state name="selected" from="active">
+            <state name="selectedactive" from="active">
                 <imagetype name="buttonbackground">
                     <filename>images/wideselector_selected.png</filename>
                 </imagetype>
             </state>
-            <state name="inactive" from="active">
+            <state name="selectedinactive" from="active">
                 <textarea name="buttontext">
                     <alpha>60</alpha>
                 </textarea>
@@ -1395,12 +1395,12 @@
                     <align>allcenter</align>
                 </textarea>
             </state>
-            <state name="selected" from="active">
+            <state name="selectedactive" from="active">
                 <imagetype name="buttonbackground">
                     <filename>images/spinbox_selected.png</filename>
                 </imagetype>
             </state>
-            <state name="inactive" from="active">
+            <state name="selectedinactive" from="active">
                 <textarea name="buttontext">
                     <alpha>60</alpha>
                 </textarea>
@@ -1456,12 +1456,12 @@
                     <align>allcenter</align>
                 </textarea>
             </state>
-            <state name="selected" from="active">
+            <state name="selectedactive" from="active">
                 <imagetype name="buttonbackground">
                     <filename>images/wideselector_selected.png</filename>
                 </imagetype>
             </state>
-            <state name="inactive" from="active">
+            <state name="selectedinactive" from="active">
                 <textarea name="buttontext">
                     <alpha>60</alpha>
                 </textarea>
@@ -1810,7 +1810,7 @@
                         <alpha>100</alpha>
                     </imagetype>
                 </state>
-                <state name="selected" from="active">
+                <state name="selectedactive" from="active">
                     <textarea name="buttontext">
                         <alpha>255</alpha>
                     </textarea>
@@ -1818,7 +1818,7 @@
                         <alpha>255</alpha>
                     </imagetype>
                 </state>
-                <state name="inactive" from="active">
+                <state name="selectedinactive" from="active">
                     <imagetype name="buttonbackground">
                         <alpha>100</alpha>
                     </imagetype>
@@ -2150,7 +2150,7 @@
                         </state>
                     </statetype>
                 </state>
-                <state name="selected" from="active">
+                <state name="selectedactive" from="active">
                     <shape name="item">
                         <fill color="#0767AB" alpha="240" />
                     </shape>
@@ -2191,7 +2191,7 @@
                         </state>
                     </statetype>
                 </state>
-                <state name="inactive" from="active" />
+                <state name="selectedinactive" from="active" />
             </statetype>
             <statetype name="upscrollarrow">
                 <position>1075,-30</position>

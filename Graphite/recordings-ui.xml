@@ -130,7 +130,7 @@
                         <alpha>255</alpha>
                     </textarea>
                 </state>
-                <state name="selected">
+                <state name="selectedactive">
                     <area>0,0,300,30</area>
                     <shape name="recSelectedGroupShape">
                         <area>0, 0, 100%, 100%</area>
@@ -148,7 +148,7 @@
                         <alpha>255</alpha>
                     </textarea>
                 </state>
-                <state name="inactive" from="selected" />
+                <state name="selectedinactive" from="selectedactive" />
             </statetype>
             <statetype name="upscrollarrow">
                 <position>132,247</position>
@@ -175,7 +175,7 @@
                         <font>basesmallergrey</font>
                     </textarea>
                 </state>
-                <state name="selected">
+                <state name="selectedactive">
                     <area>8,0,400,83</area>
                     <imagetype name="pbbgroupselect">
                         <area>-80,-2,400,30</area>
@@ -189,7 +189,7 @@
                         <font>basesmall</font>
                     </textarea>
                 </state>
-                <state name="inactive" from="active">
+                <state name="selectedinactive" from="active">
                     <imagetype name="pbbgroupselect">
                         <area>-80,-2,400,30</area>
                         <filename>images/pbb_blueselector.png</filename>
@@ -263,7 +263,7 @@
                         </state>
                     </statetype>
                 </state>
-                <state name="selected">
+                <state name="selectedactive">
                     <area>-30,-30,220,150</area>
                     <imagetype name="buttonbackground">
                         <area>0,0,220,150</area>
@@ -293,7 +293,7 @@
                         </state>
                     </statetype>
                 </state>
-                <state name="inactive" from="active">
+                <state name="selectedinactive" from="active">
                     <textarea name="shortdate">
                         <font>basesmallergrey</font>
                     </textarea>
@@ -1045,7 +1045,7 @@
                         <align>vcenter</align>
                     </textarea>
                 </state>
-                <state name="selected" from="active">
+                <state name="selectedactive" from="active">
                     <shape name="selectbar">
                         <area>0,0,650,40</area>
                         <type>roundbox</type>
@@ -1053,7 +1053,7 @@
                         <cornerradius>13</cornerradius>
                     </shape>
                 </state>
-                <state name="inactive" from="active" />
+                <state name="selectedinactive" from="active" />
             </statetype>
             <statetype name="upscrollarrow">
                 <position>590,390</position>

@@ -116,7 +116,7 @@
                         </state>
                     </statetype>
                 </state>
-                <state name="selected" from="active">
+                <state name="selectedactive" from="active">
                     <shape name="item">
                         <fill color="#0767AB" alpha="240" />
                     </shape>
@@ -147,7 +147,7 @@
                         </state>
                     </statetype>
                 </state>
-                <state name="inactive" from="active" />
+                <state name="selectedinactive" from="active" />
             </statetype>
             <statetype name="upscrollarrow">
                 <position>1075,-30</position>

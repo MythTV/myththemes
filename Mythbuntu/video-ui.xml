@@ -372,7 +372,7 @@
                         <area>1050,1,100,30</area>
                     </textarea>
                 </state>
-                <state name="inactive" from="active">
+                <state name="selectedinactive" from="active">
 	            <shape name="buttonbackground">
 		        <type>roundbox</type>
 	    	        <area>0,0,100%,30</area>
@@ -380,7 +380,7 @@
 		        <cornerradius>15</cornerradius>
 	        </shape>
 		</state>
-                <state name="selected" from="active">
+                <state name="selectedactive" from="active">
 	            <shape name="buttonbackground">
 		        <type>roundbox</type>
 	    	        <area>0,0,100%,30</area>
@@ -486,7 +486,7 @@
                         <align>right</align>
                     </textarea>
                 </state>
-                <state name="selected" from="active">
+                <state name="selectedactive" from="active">
                     <imagetype name="buttonimage">
                         <area>-10,-10,110,170</area>
                         <alpha>255</alpha>
@@ -712,8 +712,8 @@
                         <align>right</align>
                     </textarea>
                 </state>
-                <state name="inactive" from="active" />
-                <state name="selected" from="active">
+                <state name="selectedinactive" from="active" />
+                <state name="selectedactive" from="active">
                     <shape name="buttonbackground">
 	                <area>-5,-5,250,213</area>
 		        <fill color="#666666" alpha="150" />

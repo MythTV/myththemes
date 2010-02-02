@@ -44,7 +44,7 @@
                         </state>
                     </statetype>
                 </state>
-                <state name="selected" from="active">
+                <state name="selectedactive" from="active">
             	    <shape name="btnbckgrnd">
             		<fill color="#FFFFFF" alpha="50" />
             	    </shape>

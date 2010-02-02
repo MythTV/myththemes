@@ -253,7 +253,7 @@
                         <area>670,4,50,25</area>
                     </textarea>
                 </state>
-                <state name="selected" from="active">
+                <state name="selectedactive" from="active">
                     <textarea name="buttontext">
                         <font>basesmall</font>
                     </textarea>
@@ -329,7 +329,7 @@
                         <align>hcenter</align>
                     </textarea>
                 </state>
-                <state name="selected" from="active">
+                <state name="selectedactive" from="active">
                     <imagetype name="buttonbackground">
                         <position>5,7</position>
                         <filename>mv_browse_selector.png</filename>
@@ -501,7 +501,7 @@
                         </state>
                     </statetype>
                 </state>
-                <state name="selected" from="active">
+                <state name="selectedactive" from="active">
                     <area>0,0,356,140</area>
                     <imagetype name="buttonbackground">
                         <filename>video/back_sel.png</filename>

@@ -46,7 +46,7 @@
                         <cutdown>yes</cutdown>
                     </textarea>
                 </state>
-                <state name="selected" from="active">
+                <state name="selectedactive" from="active">
                     <shape name="slctbr">
                 	<area>-10,-10,700,80</area>
 		        <type>roundbox</type> 

@@ -200,12 +200,12 @@
                     <filename>shared/rightarrow.png</filename>
                 </imagetype>
             </state>
-            <state name="selected" from="active">
+            <state name="selectedactive" from="active">
                 <imagetype name="selectindicator">
                     <filename>shared/selectbar.png</filename>
                 </imagetype>
             </state>
-            <state name="inactive" from="active">
+            <state name="selectedinactive" from="active">
                 <imagetype name="selectindicator">
                     <filename>shared/inactiveselectbar.png</filename>
                 </imagetype>
@@ -299,12 +299,12 @@
                         <filename>shared/rightarrow.png</filename>
                     </imagetype>
                 </state>
-                <state name="selected" from="active">
+                <state name="selectedactive" from="active">
                     <imagetype name="selectindicator">
                         <filename>shared/selectbar.png</filename>
                     </imagetype>
                 </state>
-                <state name="inactive" from="active">
+                <state name="selectedinactive" from="active">
                     <imagetype name="selectindicator">
                         <filename>shared/inactiveselectbar.png</filename>
                     </imagetype>
@@ -344,8 +344,8 @@
                         <area>30,0,440,30</area>
                     </textarea>
                 </state>
-                <state name="inactive" from="active"/>
-                <state name="selected" from="active"/>
+                <state name="selectedinactive" from="active"/>
+                <state name="selectedactive" from="active"/>
             </statetype>
             <statetype name="upscrollarrow">
                 <position>423,0</position>

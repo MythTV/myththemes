@@ -53,7 +53,7 @@
                         <align>allcenter</align>
                     </textarea>
                 </state>
-                <state name="selected" from="active">
+                <state name="selectedactive" from="active">
 	            <shape name="list_background">
 	                <area>0,0,190,40</area>
 	                <type>roundbox</type>
@@ -62,7 +62,7 @@
 	                <cornerradius>20</cornerradius>
 	            </shape>
                 </state>
-                <state name="inactive" from="active">
+                <state name="selectedinactive" from="active">
 	            <shape name="list_background">
 	                <area>0,0,190,40</area>
 	                <type>roundbox</type>

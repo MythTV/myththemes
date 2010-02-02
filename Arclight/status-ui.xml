@@ -110,14 +110,14 @@
                         <alpha>100</alpha>
                     </textarea>
                 </state>
-                <state name="selected">
+                <state name="selectedactive">
                     <textarea name="buttontext">
                         <area>5,9,1100,40</area>
                         <align>vcenter,left</align>
                         <font>basesmall</font>
                     </textarea>
                 </state>
-                <state name="inactive">
+                <state name="selectedinactive">
                     <textarea name="buttontext">
                         <area>5,9,1100,40</area>
                         <align>vcenter,left</align>

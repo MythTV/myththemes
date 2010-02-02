@@ -849,12 +849,12 @@
                         <filename>mm_nothumb.png</filename>
                     </imagetype>
                 </state>
-                <state name="selected" from="active">
+                <state name="selectedactive" from="active">
                     <imagetype name="buttonbackground">
                         <filename>mm_browser_back_sel.png</filename>
                     </imagetype>
                 </state>
-                <state name="inactive" from="selected" />
+                <state name="selectedinactive" from="selectedactive" />
             </statetype>
         </buttonlist>
         
@@ -1271,14 +1271,14 @@
                         <align>center</align>
                     </textarea>
                 </state>
-                <state name="selected" from="active">
+                <state name="selectedactive" from="active">
                     <imagetype name="buttonbackground">
                         <area>0,0,60,40</area>
                         <filename>images/buttonbackground_selected.png</filename>
                         <alphapulse min="200" max="255" change="1"/>
                     </imagetype>
                 </state>
-                <state name="inactive" from="active" />
+                <state name="selectedinactive" from="active" />
             </statetype>
         </buttonlist>
         

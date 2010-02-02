@@ -84,7 +84,7 @@
                         <position>5,9</position>
                     </statetype>
                 </state>
-                <state name="selected">
+                <state name="selectedactive">
                     <statetype name="buttoncheck">
                         <position>5,9</position>
                     </statetype>
@@ -99,7 +99,7 @@
                         <align>left,vcenter</align>
                     </textarea>
                 </state>
-                <state name="inactive">
+                <state name="selectedinactive">
                     <statetype name="buttoncheck">
                         <position>5,9</position>
                     </statetype>

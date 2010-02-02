@@ -36,7 +36,7 @@
                         <case>upper</case>
                     </textarea>
                 </state>
-                <state name="selected"> 
+                <state name="selectedactive"> 
 <!--                    <area>0,9,240,59</area>-->
                     <area>0,9,413,59</area>
                     <imagetype name="background" />

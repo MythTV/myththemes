@@ -837,7 +837,7 @@
                         <alpha>100</alpha>
                     </imagetype>
                 </state>
-                <state name="selected" from="active">
+                <state name="selectedactive" from="active">
                     <textarea name="buttontext">
                         <alpha>255</alpha>
                     </textarea>
@@ -845,7 +845,7 @@
                         <alpha>255</alpha>
                     </imagetype>
                 </state>
-                <state name="inactive" from="active">
+                <state name="selectedinactive" from="active">
                     <imagetype name="buttonbackground">
                         <alpha>100</alpha>
                     </imagetype>

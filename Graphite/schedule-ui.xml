@@ -65,8 +65,8 @@
                         <align>hcenter,bottom</align>
                     </textarea>
                 </state>
-                <state name="selected" from="active"/>
-                <state name="inactive" from="active"/>
+                <state name="selectedactive" from="active"/>
+                <state name="selectedinactive" from="active"/>
             </statetype>
             <statetype name="downscrollarrow">
                 <state type="off">
@@ -113,8 +113,8 @@
                         <align>center</align>
                     </textarea>
                 </state>
-                <state name="selected" from="active"/>
-                <state name="inactive" from="active"/>
+                <state name="selectedactive" from="active"/>
+                <state name="selectedinactive" from="active"/>
             </statetype>
             <statetype name="downscrollarrow">
                 <state type="off">
@@ -235,8 +235,8 @@
                         <align>left</align>
                     </textarea>
                 </state>
-                <state name="selected" from="active"/>
-                <state name="inactive" from="active"/>
+                <state name="selectedactive" from="active"/>
+                <state name="selectedinactive" from="active"/>
             </statetype>
             <statetype name="downscrollarrow">
                 <state type="off">
@@ -293,8 +293,8 @@
                         <align>hcenter</align>
                     </textarea>
                 </state>
-                <state name="selected" from="active"/>
-                <state name="inactive" from="active"/>
+                <state name="selectedactive" from="active"/>
+                <state name="selectedinactive" from="active"/>
             </statetype>
             <statetype name="downscrollarrow">
                 <state type="off">
@@ -593,8 +593,8 @@
                         <area>725,1,30,24</area>
                     </textarea>
                 </state>
-                <state name="selected" from="active" />
-                <state name="inactive" from="active" />
+                <state name="selectedactive" from="active" />
+                <state name="selectedinactive" from="active" />
             </statetype>
         </buttonlist>
         
@@ -606,12 +606,12 @@
                         <align>center</align>
                     </textarea>
                 </state>
-                <state name="selected">
+                <state name="selectedactive">
                     <textarea name="buttontext">
                         <align>center</align>
                     </textarea>
                 </state>
-                <state name="inactive">
+                <state name="selectedinactive">
                     <textarea name="buttontext">
                         <align>center</align>
                     </textarea>
@@ -738,7 +738,7 @@
                         <align>right</align>
                     </textarea>
                 </state>
-                <state name="selected">
+                <state name="selectedactive">
                     <imagetype name="icon">
                         <area>135,-2,25,25</area>
                         <preserveaspect>true</preserveaspect>
@@ -770,7 +770,7 @@
                         <cornerradius>12</cornerradius>
                     </shape>
                 </state>
-                <state name="inactive" from="active" />
+                <state name="selectedinactive" from="active" />
             </statetype>
         </buttonlist>
         
@@ -932,7 +932,7 @@
                         <position>1130,1</position>
                     </textarea>
                 </state>
-                <state name="selected">
+                <state name="selectedactive">
                     <textarea name="rectype" from="buttontext">
                         <area>30,1,20,24</area>
                         <align>hcenter</align>
@@ -958,7 +958,7 @@
                         <cornerradius>12</cornerradius>
                     </shape>
                 </state>
-                <state name="inactive" from="active" />
+                <state name="selectedinactive" from="active" />
             </statetype>
         </buttonlist>
         
@@ -1188,12 +1188,12 @@
                         <area>5,0,450,30</area>
                     </textarea>
                 </state>
-                <state name="inactive">
+                <state name="selectedinactive">
                     <textarea name="buttontext">
                         <area>5,0,450,30</area>
                     </textarea>
                 </state>
-                <state name="selected">
+                <state name="selectedactive">
                     <textarea name="buttontext">
                         <area>5,0,450,30</area>
                     </textarea>
@@ -1279,12 +1279,12 @@
                         <area>5,0,450,30</area>
                     </textarea>
                 </state>
-                <state name="inactive">
+                <state name="selectedinactive">
                     <textarea name="buttontext">
                         <area>5,0,450,30</area>
                     </textarea>
                 </state>
-                <state name="selected">
+                <state name="selectedactive">
                     <textarea name="buttontext">
                         <area>5,0,450,30</area>
                     </textarea>
@@ -1437,7 +1437,7 @@
                         <area>1125,1,30,24</area>
                     </textarea>
                 </state>
-                <state name="selected">
+                <state name="selectedactive">
                     <textarea name="shortstarttimedate" from="buttontext">
                         <area>32,1,190,24</area>
                     </textarea>
@@ -1461,7 +1461,7 @@
                         <cornerradius>12</cornerradius>
                     </shape>
                 </state>
-                <state name="inactive" from="active" />
+                <state name="selectedinactive" from="active" />
             </statetype>
         </buttonlist>
         
@@ -1584,13 +1584,13 @@
                         <align>allcenter</align>
                     </textarea>
                 </state>
-                <state name="selected">
+                <state name="selectedactive">
                     <textarea name="buttontext">
                         <align>allcenter</align>
                     </textarea>
                 </state>
                  
-                <state name="inactive">
+                <state name="selectedinactive">
                     <textarea name="buttontext">
                         <align>allcenter</align>
                     </textarea>

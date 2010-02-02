@@ -416,7 +416,7 @@
                         <multiline>yes</multiline>
                     </textarea>
                 </state>
-                <state name="selected" from="active">
+                <state name="selectedactive" from="active">
                     <area>0,0,450,125</area>
                     <statetype name="icon">
 

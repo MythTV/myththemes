@@ -43,7 +43,7 @@
                         </state>
                     </statetype>
                 </state>
-                <state name="selected">
+                <state name="selectedactive">
                     <area>-30,-30,220,150</area>
                     <imagetype name="buttonbackground">
                         <area>0,0,220,150</area>
@@ -56,7 +56,7 @@
                         <mask>images/pbb_recording_mask.png</mask>
                     </imagetype>
                 </state>
-                <state name="inactive" from="active">
+                <state name="selectedinactive" from="active">
                 </state>
             </statetype>
             <statetype name="upscrollarrow">

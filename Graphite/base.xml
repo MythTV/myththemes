@@ -147,13 +147,13 @@
                     <filename>images/rightarrow.png</filename>
                 </imagetype>
             </state>
-            <state name="selected" from="active">
+            <state name="selectedactive" from="active">
                 <imagetype name="buttonbackground">
                     <filename>images/buttonbackground_selected.png</filename>
                     <alphapulse min="200" max="255" change="1"/>
                 </imagetype>
             </state>
-            <state name="inactive" from="active">
+            <state name="selectedinactive" from="active">
                 <imagetype name="buttonbackground">
                     <filename>images/buttonbackground_selected.png</filename>
                     <alpha>127</alpha>
@@ -215,13 +215,13 @@
                     <align>vcenter</align>
                 </textarea>
             </state>
-            <state name="selected" from="active">
+            <state name="selectedactive" from="active">
                 <imagetype name="selectbar">
                     <position>25,0</position>
                     <filename>images/schedule_selectbar.png</filename>
                 </imagetype>
             </state>
-            <state name="inactive" from="active" />
+            <state name="selectedinactive" from="active" />
         </statetype>
     </buttonlist>
     
@@ -363,12 +363,12 @@
                     <align>right,vcenter</align>
                 </textarea>
             </state>
-            <state name="selected" from="active">
+            <state name="selectedactive" from="active">
                 <imagetype name="buttonbackground">
                     <filename>images/spinbox_background_selected.png</filename>
                 </imagetype>
             </state>
-            <state name="inactive" from="active">
+            <state name="selectedinactive" from="active">
                 <imagetype name="buttonbackground">
                     <filename>images/spinbox_background_inactive.png</filename>
                 </imagetype>
@@ -418,12 +418,12 @@
                     <align>left,vcenter</align>
                 </textarea>
             </state>
-            <state name="selected" from="active">
+            <state name="selectedactive" from="active">
                 <imagetype name="buttonbackground">
                     <filename>images/selector_wide_background_selected.png</filename>
                 </imagetype>
             </state>
-            <state name="inactive" from="active">
+            <state name="selectedinactive" from="active">
                 <imagetype name="buttonbackground">
                     <filename>images/selector_wide_background_inactive.png</filename>
                 </imagetype>
@@ -475,12 +475,12 @@
                     <align>left,vcenter</align>
                 </textarea>
             </state>
-            <state name="selected" from="active">
+            <state name="selectedactive" from="active">
                 <imagetype name="buttonbackground">
                     <filename>images/selector_background_selected.png</filename>
                 </imagetype>
             </state>
-            <state name="inactive" from="active">
+            <state name="selectedinactive" from="active">
                 <imagetype name="buttonbackground">
                     <filename>images/selector_background_inactive.png</filename>
                 </imagetype>
@@ -532,12 +532,12 @@
                     <align>left,vcenter</align>
                 </textarea>
             </state>
-            <state name="selected" from="active">
+            <state name="selectedactive" from="active">
                 <imagetype name="buttonbackground">
                     <filename>images/selector_wide_background_selected.png</filename>
                 </imagetype>
             </state>
-            <state name="inactive" from="active">
+            <state name="selectedinactive" from="active">
                 <imagetype name="buttonbackground">
                     <filename>images/selector_wide_background_inactive.png</filename>
                 </imagetype>
@@ -713,13 +713,13 @@
                         <align>allcenter</align>
                     </textarea>
                 </state>
-                <state name="inactive">
+                <state name="selectedinactive">
                     <textarea name="buttontext">
                         <area>0,7,100%,30</area>
                         <align>allcenter</align>
                     </textarea>
                 </state>
-                <state name="selected">
+                <state name="selectedactive">
                     <textarea name="buttontext">
                         <area>0,7,100%,30</area>
                         <align>allcenter</align>
@@ -762,13 +762,13 @@
                         <align>allcenter</align>
                     </textarea>
                 </state>
-                <state name="inactive">
+                <state name="selectedinactive">
                     <textarea name="buttontext">
                         <area>0,5,100%,30</area>
                         <align>allcenter</align>
                     </textarea>
                 </state>
-                <state name="selected">
+                <state name="selectedactive">
                     <textarea name="buttontext">
                         <area>0,5,100%,30</area>
                         <align>allcenter</align>
@@ -945,13 +945,13 @@
                         <area>5,6,315,30</area>
                     </textarea>
                 </state>
-                <state name="inactive">
+                <state name="selectedinactive">
                     <textarea name="buttontext">
                         <area>5,6,315,30</area>
                         <cutdown>yes</cutdown>
                     </textarea>
                 </state>
-                <state name="selected">
+                <state name="selectedactive">
                     <textarea name="buttontext">
                         <area>5,6,315,30</area>
                     </textarea>
@@ -1076,8 +1076,8 @@
                         </state>
                     </statetype>
                 </state>
-                <state name="inactive" from="active" />
-                <state name="selected">
+                <state name="selectedinactive" from="active" />
+                <state name="selectedactive">
                     <area>-40,-40,180,240</area>
                     <statetype name="nodetype">
                         <state name="folder">

@@ -220,7 +220,7 @@
                         <area>670,4,50,25</area>
                     </textarea>
                 </state>
-                <state name="selected" from="active">
+                <state name="selectedactive" from="active">
                     <statetype name="nodetype">
                         <position>0,9</position>
                         <state name="subfolder">
@@ -340,7 +340,7 @@
                         </state>
                     </statetype>
                 </state>
-                <state name="selected" from="active">
+                <state name="selectedactive" from="active">
                     <imagetype name="buttonimage">
                         <area>-60,-20,200,160</area>
                         <preserveaspect>true</preserveaspect>
@@ -519,7 +519,7 @@
                         </state>
                     </statetype>
                 </state>
-                <state name="selected">
+                <state name="selectedactive">
                     <area>-40,-40,160,220</area>
                     <imagetype name="buttonbackground">
                         <area>2,-8,160,217</area>

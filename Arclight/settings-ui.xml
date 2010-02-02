@@ -55,7 +55,7 @@
                         <alpha>100</alpha>
                     </textarea>
                 </state>
-                <state name="selected" from="active">
+                <state name="selectedactive" from="active">
                     <shape name="item">
                         <fill color="#0767AB" alpha="240" />
                     </shape>
@@ -64,7 +64,7 @@
                         <alpha>255</alpha>
                     </textarea>
                 </state>
-                <state name="inactive" from="active">
+                <state name="selectedinactive" from="active">
                     <shape name="item">
                         <fill color="#222222" alpha="180" />
                     </shape>

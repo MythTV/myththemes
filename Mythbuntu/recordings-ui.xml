@@ -58,12 +58,12 @@
                         <cutdown>yes</cutdown>
                     </textarea>
                 </state>
-                <state name="inactive">
+                <state name="selectedinactive">
                     <textarea name="name" from="buttontext">
                         <font>basesmall</font>
                     </textarea>
                 </state>
-                <state name="selected" from="inactive" />
+                <state name="selectedactive" from="selectedinactive" />
             </statetype>
             <statetype name="upscrollarrow">
                 <position>0,0</position>
@@ -121,7 +121,7 @@
                         <state name="no" />
                     </statetype>
                 </state>
-                <state name="selected" from="active">
+                <state name="selectedactive" from="active">
                     <shape name="buttonbackground">
                         <area>30,0,706,30</area>
                         <type>roundbox</type>
@@ -138,7 +138,7 @@
                         <font>basesmall</font>
                     </textarea>
                 </state>
-                <state name="inactive" from="active" />
+                <state name="selectedinactive" from="active" />
             </statetype>
             <statetype name="upscrollarrow">
                 <position>738,0</position>
@@ -587,8 +587,8 @@
                         <align>vcenter</align>
                     </textarea>
                 </state>
-                <state name="inactive" from="active" />
-                <state name="selected" from="active">
+                <state name="selectedinactive" from="active" />
+                <state name="selectedactive" from="active">
                     <shape name="selectbar">
                         <area>0,0,650,40</area>
                         <type>roundbox</type>

@@ -139,7 +139,7 @@
                     <imagetype name="buttonarrow">
                     </imagetype>
                 </state>
-                <state name="selected" from="active">
+                <state name="selectedactive" from="active">
                     <shape name="item">
                         <fill color="#0767AB" alpha="240" />
                     </shape>
@@ -150,7 +150,7 @@
                         <alpha>255</alpha>
                     </textarea>
                 </state>
-                <state name="inactive" from="active">
+                <state name="selectedinactive" from="active">
                     <shape name="item">
                         <fill color="#222222" alpha="180" />
                     </shape>
@@ -249,7 +249,7 @@
                         <alpha>100</alpha>
                     </imagetype>
                 </state>
-                <state name="selected" from="active">
+                <state name="selectedactive" from="active">
                     <shape name="item">
                         <area>0,0,100%,177</area>
                         <fill color="#0767AB" alpha="240" />
@@ -285,7 +285,7 @@
                         <filename />
                     </imagetype>
                 </state>
-                <state name="inactive" from="selected">
+                <state name="selectedinactive" from="selectedactive">
                     <shape name="item">
                         <fill color="#000000" alpha="130" />
                     </shape>
@@ -614,7 +614,7 @@
                         </state>
                     </statetype>
                 </state>
-                <state name="selected" from="active">
+                <state name="selectedactive" from="active">
                     <shape name="item">
                         <fill color="#0767AB" alpha="240" />
                     </shape>
@@ -642,7 +642,7 @@
                         </state>
                     </statetype>
                 </state>
-                <state name="inactive" from="active" />
+                <state name="selectedinactive" from="active" />
             </statetype>
             <statetype name="upscrollarrow">
                 <position>1075,-30</position>
@@ -789,7 +789,7 @@
                         </state>
                     </statetype>
                 </state>
-                <state name="selected" from="active">
+                <state name="selectedactive" from="active">
                     <shape name="item">
                         <fill color="#0767AB" alpha="240" />
                     </shape>
@@ -817,7 +817,7 @@
                         </state>
                     </statetype>
                 </state>
-                <state name="inactive" from="active">
+                <state name="selectedinactive" from="active">
                     <shape name="item">
                         <fill color="#000000" alpha="100" />
                     </shape>
@@ -1003,7 +1003,7 @@
                         <align>allcenter</align>
                     </textarea>
                 </state>
-                <state name="selected" from="active">
+                <state name="selectedactive" from="active">
                     <imagetype name="buttonimage">
                         <area>-30,-10,246,285</area>
                         <preserveaspect>true</preserveaspect>
@@ -1198,7 +1198,7 @@
                         </state>
                     </statetype>
                 </state>
-                <state name="selected" from="active">
+                <state name="selectedactive" from="active">
                     <shape name="item">
                         <fill color="#0767AB" alpha="240" />
                     </shape>
@@ -1237,7 +1237,7 @@
                         </state>
                     </statetype>
                 </state>
-                <state name="inactive" from="active" />
+                <state name="selectedinactive" from="active" />
             </statetype>
             <statetype name="upscrollarrow">
                 <position>1075,-30</position>

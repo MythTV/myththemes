@@ -64,7 +64,7 @@
                         <filename>images/arclight_wide_divider.png</filename>
                     </imagetype>
                 </state>
-                <state name="selected" from="active">
+                <state name="selectedactive" from="active">
                     <area>0,0,759,245</area>
                     <shape name="item">
                         <area>0,0,765,245</area>
@@ -223,7 +223,7 @@
                         <filename>images/arclight_wide_divider.png</filename>
                     </imagetype>
                 </state>
-                <state name="inactive" from="active">
+                <state name="selectedinactive" from="active">
                     <shape name="item">
                         <fill color="#222222" alpha="180" />
                     </shape>

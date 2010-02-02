@@ -266,7 +266,7 @@
                         </state>
                     </statetype>
                 </state>
-                <state name="selected" from="active">
+                <state name="selectedactive" from="active">
                     <shape name="item">
                         <fill color="#0767AB" alpha="240" />
                     </shape>
@@ -294,7 +294,7 @@
                         </state>
                     </statetype>
                 </state>
-                <state name="inactive" from="active">
+                <state name="selectedinactive" from="active">
                     <shape name="item">
                         <fill color="#000000" alpha="100" />
                     </shape>
@@ -462,7 +462,7 @@
                         <alpha>100</alpha>
                     </imagetype>
                 </state>
-                <state name="selected" from="active">
+                <state name="selectedactive" from="active">
                     <shape name="item">
                         <fill color="#0767AB" alpha="240" />
                     </shape>
@@ -479,7 +479,7 @@
                         <filename />
                     </imagetype>
                 </state>
-                <state name="inactive" from="active" />
+                <state name="selectedinactive" from="active" />
             </statetype>
             <statetype name="upscrollarrow">
                 <position>1075,-30</position>
@@ -631,7 +631,7 @@
                         </state>
                     </statetype>
                 </state>
-                <state name="selected" from="active">
+                <state name="selectedactive" from="active">
                     <shape name="item">
                         <fill color="#0767AB" alpha="240" />
                     </shape>
@@ -659,7 +659,7 @@
                         </state>
                     </statetype>
                 </state>
-                <state name="inactive" from="active">
+                <state name="selectedinactive" from="active">
                     <shape name="item">
                         <fill color="#000000" alpha="100" />
                     </shape>
@@ -777,14 +777,14 @@
                         <alpha>100</alpha>
                     </textarea>
                 </state>
-                <state name="selected">
+                <state name="selectedactive">
                     <textarea name="buttontext">
                         <area>5,9,1100,40</area>
                         <align>vcenter,left</align>
                         <font>basesmall</font>
                     </textarea>
                 </state>
-                <state name="inactive">
+                <state name="selectedinactive">
                     <textarea name="buttontext">
                         <area>5,9,1100,40</area>
                         <align>vcenter,left</align>

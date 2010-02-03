@@ -135,7 +135,7 @@
         </textarea>
 
         <textarea name="progdescription" from="basetextarea">
-            <area>45,365,674,120</area>
+            <area>45,365,674,180</area>
             <multiline>true</multiline>
         </textarea>
 
@@ -145,13 +145,13 @@
         </textarea>
 
         <button name="addrecording_button" from="basebuttonwide">
-            <position>150,572</position>
+            <position>140,572</position>
             <value>Add Recording</value>
         </button>
 
         <button name="addvideo_button" from="basebuttonwide">
-            <position>150,624</position>
-            <value>Add video</value>
+            <position>140,624</position>
+            <value>Add Video</value>
         </button>
 
         <button name="prev_button" from="basebutton">

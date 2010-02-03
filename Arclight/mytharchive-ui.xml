@@ -409,18 +409,22 @@
 
         <button name="back_button" from="basebutton">
             <position>40,520</position>
+            <value>Back</value>
         </button>
 
-        <button name="home_button" from="action_0">
+        <button name="home_button" from="back_button">
             <position>215,520</position>
+            <value>Home</value>
         </button>
 
-        <button name="cancel_button" from="action_0">
+        <button name="cancel_button" from="back_button">
             <position>390,520</position>
+            <value>Cancel</value>
         </button>
 
-        <button name="ok_button" from="action_0">
+        <button name="ok_button" from="back_button">
             <position>565,520</position>
+            <value>OK</value>
         </button>
 
         <buttonlist name="filelist">

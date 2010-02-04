@@ -47,23 +47,33 @@
         </textarea>
 
         <buttonlist name="groups" from="basebuttonlist">
-            <area>15,86,434,338</area>
-            <buttonarea>32,5,375,333</buttonarea>
+            <area>15,86,474,338</area>
+            <buttonarea>32,5,434,328</buttonarea>
             <spacing>6</spacing>
             <wrapstyle>items</wrapstyle>
             <statetype name="buttonitem">
                 <state name="active">
+                    <shape name="buttonbackground"> 
+                        <area>0,0,434,30</area> 
+                    </shape> 
                     <textarea name="name" from="buttontext">
                         <font>basesmallgrey</font>
                         <cutdown>yes</cutdown>
                     </textarea>
                 </state>
                 <state name="selectedinactive">
+                    <shape name="buttonbackground">                         
+                        <area>0,0,434,30</area>
+                    </shape> 
                     <textarea name="name" from="buttontext">
                         <font>basesmall</font>
                     </textarea>
                 </state>
-                <state name="selectedactive" from="selectedinactive" />
+                <state name="selectedactive" from="selectedinactive">
+                    <shape name="buttonbackground">                         
+                        <area>0,0,434,30</area>
+                    </shape> 
+                </state>
             </statetype>
             <statetype name="upscrollarrow">
                 <position>0,0</position>

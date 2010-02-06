@@ -470,7 +470,7 @@
         <area>-1,-1,700,500</area>
 
         <shape name="backimg" from="basebackground">
-            <area>0,0,500,500</area>
+            <area>0,0,700,500</area>
         </shape>
 
         <textarea name="title" from="basetextarea">

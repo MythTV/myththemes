@@ -1715,7 +1715,7 @@
         </textarea>
 
         <textarea name="description" from="basetextarea">
-            <area>150,125,980,200</area>
+            <area>150,125,980,100</area>
             <multiline>yes</multiline>
             <template>%|"SUBTITLE|"% %LONGREPEAT%%STARS| %%DESCRIPTION%</template>
         </textarea>

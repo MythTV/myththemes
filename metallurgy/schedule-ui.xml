@@ -300,7 +300,7 @@
             <filename>backgrounds/guide-background.png</filename>
         </imagetype>
 
-        <textarea name="date" from="basetextarea">
+        <textarea name="datetext" from="basetextarea">
             <area>64,79,180,30</area>
             <align>allcenter</align>
         </textarea>

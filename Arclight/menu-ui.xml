@@ -145,6 +145,11 @@
                                 <filename>Watermarks/newsbutton.png</filename>
                             </imagetype>
                         </state>
+                        <state name="SCREENSETUPWIZARD" from="default">
+                            <imagetype name="icon">
+                                <filename>Watermarks/appearwizbutton.png</filename>
+                            </imagetype>
+                        </state>
                         <state name="SETTINGS_NEWS" from="NEWS" />
                         <state name="SETTINGS_INFO_CENTER" from="NEWS" />
                         <state name="MENU_INFO_CENTER" from="NEWS" />
@@ -164,6 +169,13 @@
                         </state>
                         <state name="MENU_UTILITIES_SETUP" from="SETUP" />
                         <state name="SETUP_MENU" from="SETUP" />
+                        <state name="TV" from="default">
+                            <imagetype name="icon">
+                                <filename>Watermarks/tvbutton.png</filename>
+                            </imagetype>
+                        </state>
+                        <state name="TV_WATCH_TV" from="TV" />
+                        <state name="TV_WATCH_RECORDINGS" from="TV" />
                         <state name="TV_PROGFIND" from="default">
                             <imagetype name="icon">
                                 <filename>Watermarks/findbutton.png</filename>

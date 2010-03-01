@@ -384,7 +384,7 @@
         </checkbox>
 
         <textarea name="downloadtext" from="basetextarea">
-            <area>195,732,470,30</area>
+            <area>195,732,480,30</area>
             <font>basesmall</font>
             <align>left,vcenter</align>
             <multiline>false</multiline>

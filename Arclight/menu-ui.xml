@@ -145,6 +145,11 @@
                                 <filename>Watermarks/newsbutton.png</filename>
                             </imagetype>
                         </state>
+                        <state name="SETTINGS_SYSTEM_EVENTS" from="default">
+                            <imagetype name="icon">
+                                <filename>Watermarks/eventbutton.png</filename>
+                            </imagetype>
+                        </state>
                         <state name="SCREENSETUPWIZARD" from="default">
                             <imagetype name="icon">
                                 <filename>Watermarks/appearwizbutton.png</filename>
@@ -175,6 +180,8 @@
                             </imagetype>
                         </state>
                         <state name="NET_VIDEO_TREE" from="NET_VIDEO_SEARCH" />
+                        <state name="SETTINGS_WEBPAGE" from="NET_VIDEO_SEARCH" />
+                        <state name="WEBPAGE" from="NET_VIDEO_SEARCH" />
                         <state name="TV" from="default">
                             <imagetype name="icon">
                                 <filename>Watermarks/tvbutton.png</filename>
@@ -182,6 +189,16 @@
                         </state>
                         <state name="TV_WATCH_TV" from="TV" />
                         <state name="TV_WATCH_RECORDINGS" from="TV" />
+                        <state name="SETTINGS_TV" from="TV" />
+                        <state name="TV_SETTINGS_GENERAL" from="TV" />
+                        <state name="TV_SETTINGS_PROGRAM_GUIDE" from="TV" />
+                        <state name="TV_SETTINGS_PLAYBACK" from="TV" />
+                        <state name="TV_SETTINGS_PLAYBACK_OSD" from="TV" />
+                        <state name="TV_SETTINGS_OSD_MENU_EDITOR" from="TV" />
+                        <state name="TV_SETTINGS_PLAYBACK_GROUPS" from="TV" />
+                        <state name="TV_SETTINGS_CHANNEL_GROUP" from="TV" />
+                        <state name="TV_SETTINGS_RECORDING_PROFILES" from="TV" />
+                        <state name="TV_SETTINGS_RECPRIORITIES" from="TV" />
                         <state name="TV_PROGFIND" from="default">
                             <imagetype name="icon">
                                 <filename>Watermarks/findbutton.png</filename>
@@ -190,6 +207,8 @@
                         <state name="TV_SEARCH_LISTINGS" from="TV_PROGFIND" />
                         <state name="TV_SEARCH_WORDS" from="TV_PROGFIND" />
                         <state name="TV_SEARCH_LISTS" from="TV_PROGFIND" />
+                        <state name="TV_CUSTOM_RECORD" from="TV_PROGFIND" />
+                        <state name="TV_MANUAL_SCHEDULE" from="TV_PROGFIND" />
                         <state name="TV_SEARCH_PEOPLE" from="TV_PROGFIND" />
                         <state name="TV_SEARCH_KEYWORDS" from="TV_PROGFIND" />
                         <state name="TV_SEARCH_TITLES" from="TV_PROGFIND" />
@@ -228,6 +247,9 @@
                         <state name="TV_SCHEDULE_RECORDINGS" from="MENU_MANAGE_RECORDINGS" />
                         <state name="TV_RECORDING_RULES" from="MENU_MANAGE_RECORDINGS" />
                         <state name="TV_UPCOMING_RECORDINGS" from="MENU_MANAGE_RECORDINGS" />
+                        <state name="TV_DELETE" from="MENU_MANAGE_RECORDINGS" />
+                        <state name="TV_PREVIOUS" from="MENU_MANAGE_RECORDINGS" />
+                        <state name="TV_RECPRIORITIES" from="MENU_MANAGE_RECORDINGS" />
                         <state name="TV_PROGRAM_GUIDE" from="MENU_MANAGE_RECORDINGS" />
                     </statetype>
                     <textarea name="buttontext">

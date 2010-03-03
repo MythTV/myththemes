@@ -40,9 +40,9 @@
             <statetype name="buttonitem">
                 <area>2,2,759,198</area>
                 <state name="active">
-                    <area>0,0,759,198</area>
+                    <area>0,0,759,245</area>
                     <shape name="item">
-                        <area>0,0,765,198</area>
+                        <area>0,0,765,245</area>
                         <type>box</type>
                         <fill color="#000000" alpha="160" />
                     </shape>
@@ -52,26 +52,6 @@
                         <font>basegothicmedium</font>
                         <alpha>200</alpha>
                         <case>upper</case>
-                    </textarea>
-                    <textarea name="description">
-                        <area>25,80,709,40</area>
-                        <align>left,vcenter</align>
-                        <font>basesmalllightblue</font>
-                        <alpha>180</alpha>
-                    </textarea>
-                    <imagetype name="divider">
-                        <area>10,197,631,2</area>
-                        <filename>images/arclight_wide_divider.png</filename>
-                    </imagetype>
-                </state>
-                <state name="selectedactive" from="active">
-                    <area>0,0,759,245</area>
-                    <shape name="item">
-                        <area>0,0,765,245</area>
-                        <fill color="#0767AB" alpha="240" />
-                    </shape>
-                    <textarea name="description">
-                        <font>basesmall</font>
                     </textarea>
                     <statetype name="icon">
                         <loadondemand>true</loadondemand>
@@ -252,6 +232,26 @@
                         <state name="TV_RECPRIORITIES" from="MENU_MANAGE_RECORDINGS" />
                         <state name="TV_PROGRAM_GUIDE" from="MENU_MANAGE_RECORDINGS" />
                     </statetype>
+                    <textarea name="description">
+                        <area>25,80,709,40</area>
+                        <align>left,vcenter</align>
+                        <font>basesmalllightblue</font>
+                        <alpha>180</alpha>
+                    </textarea>
+                    <imagetype name="divider">
+                        <area>10,244,631,2</area>
+                        <filename>images/arclight_wide_divider.png</filename>
+                    </imagetype>
+                </state>
+                <state name="selectedactive" from="active">
+                    <area>0,0,759,245</area>
+                    <shape name="item">
+                        <area>0,0,765,245</area>
+                        <fill color="#0767AB" alpha="240" />
+                    </shape>
+                    <textarea name="description">
+                        <font>basesmall</font>
+                    </textarea>
                     <textarea name="buttontext">
                         <alpha>255</alpha>
                     </textarea>

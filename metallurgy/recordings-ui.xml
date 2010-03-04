@@ -5,9 +5,6 @@
         <textarea name="heading" from="baseheading">
             <value>Watch Recordings</value>
         </textarea>
-        <!--        <progressbar name="usedbar" from="baseprogressbar">
-            <position>100,10</position>
-        </progressbar>-->
 
         <imagetype name="background" from="basebackground2" />
 
@@ -300,6 +297,255 @@
             <position>315,435</position>
             <value>Save</value>
         </button>
+    </window>
+
+    <!-- Exact copy of watchrecordings, 
+         except for pagetitle, starttime => filesize_str,
+         and added usedbar and freereport --> 
+    <window name="deleterecordings">
+
+        <textarea name="heading" from="baseheading">
+            <value>Delete Recordings</value>
+        </textarea>
+
+        <imagetype name="background" from="basebackground2" />
+
+        <buttonlist name="groups" from="basebuttonlist">
+            <area>55,75,285,285</area>
+            <scrollstyle>center</scrollstyle>
+            <wrapstyle>items</wrapstyle>
+            <spacing>10</spacing>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <textarea name="buttontext">
+                        <case>capitaliseall</case>
+                    </textarea>
+                </state>
+                <state name="selectedinactive" from="active" />
+                <state name="selectedactive" from="active" />
+            </statetype>
+        </buttonlist>
+        
+        <buttonlist name="recordings" from="basebuttonlist">
+            <area>397,75,825,285</area>
+            <spacing>10</spacing>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>0,0,825,30</area>
+                    <textarea name="titlesubtitle" from="buttontext">
+                        <area>30,2,590,25</area>
+                    </textarea>
+                    <textarea name="shortdate" from="titlesubtitle">
+                        <area>610,2,120,25</area>
+                        <align>right</align>
+                    </textarea>
+                    <textarea name="filesize_str" from="shortdate">
+                        <area>730,2,95,25</area>
+                        <align>hcenter</align>
+                    </textarea>
+                </state>
+                <state name="selectedinactive" from="active" />
+                <state name="selectedactive" from="active" />
+            </statetype>
+            <statetype name="upscrollarrow">
+                <position>430,0</position>
+            </statetype>
+            <statetype name="downscrollarrow">
+                <position>430,275</position>
+            </statetype>
+        </buttonlist>
+
+        <statetype name="autoexpire">
+            <position>917,415</position>
+            <state name="no">
+                <imagetype name="blank">
+                    <filename>type/blank.png</filename>
+                </imagetype>
+            </state>
+            <state name="yes">
+                <imagetype name="on">
+                    <filename>type/autoexpire.png</filename>
+                </imagetype>
+            </state>
+        </statetype>
+
+        <statetype name="commflagged" from="autoexpire">
+            <position>955,415</position>
+            <state name="yes">
+                <imagetype name="on">
+                    <filename>type/commflagged.png</filename>                  
+                </imagetype>
+            </state>
+        </statetype>
+
+        <statetype name="bookmark" from="autoexpire">
+            <position>993,415</position>
+            <state name="yes">
+                <imagetype name="on">
+                    <filename>type/bookmark.png</filename>
+                </imagetype>
+            </state>
+        </statetype>
+
+        <statetype name="cutlist" from="autoexpire">
+            <position>1031,415</position>
+            <state name="yes">
+                <imagetype name="on">
+                    <filename>type/cutlist.png</filename>
+                </imagetype>
+            </state>
+        </statetype>
+
+        <statetype name="audioprops">
+            <position>1069,415</position>
+            <state name="default">
+                <imagetype name="blank">
+                    <filename>type/blank.png</filename>
+                </imagetype>
+            </state>
+            <state name="stereo">
+                <imagetype name="stereo">
+                    <filename>type/stereo.png</filename>
+                </imagetype>
+            </state>
+            <state name="surround">
+                <imagetype name="surround">
+                    <filename>type/surround.png</filename>
+                </imagetype>
+            </state>
+            <state name="dolby">
+                <imagetype name="dolby">
+                    <filename>type/dd.png</filename>
+                </imagetype>
+            </state>
+            <state name="mono">
+                <imagetype name="mono">
+                    <filename>type/mono.png</filename>
+                </imagetype>
+            </state>
+        </statetype>
+
+        <statetype name="subtitletypes">
+            <position>1107,415</position>
+            <state name="default">
+                <imagetype name="blank">
+                    <filename>type/blank.png</filename>
+                </imagetype>
+            </state>
+            <state name="cc">
+                <imagetype name="cc">
+                    <filename>type/cc.png</filename>
+                </imagetype>
+            </state>
+            <state name="subtitles">
+                <imagetype name="subtitles">
+                    <filename>type/subtitles.png</filename>
+                </imagetype>
+            </state>
+            <state name="onscreensub">
+                <imagetype name="onscreensub">
+                    <filename>type/subtitled.png</filename>
+                </imagetype>
+            </state>
+        </statetype>
+
+        <statetype name="videoprops">
+            <position>1145,415</position>
+            <state name="default">
+                <imagetype name="blank">
+                    <filename>type/blank.png</filename>
+                </imagetype>
+            </state>
+            <state name="hdtv">
+                <imagetype name="hdtv">
+                    <filename>type/hd.png</filename>
+                </imagetype>
+            </state>
+            <state name="widescreen">
+                <imagetype name="widescreen">
+                    <filename>type/wide.png</filename>
+                </imagetype>
+            </state>
+        </statetype>
+
+        <statetype name="watched" from="autoexpire">
+            <position>1183,415</position>
+            <state name="yes">
+                <imagetype name="on">
+                    <filename>type/watched.png</filename>
+                </imagetype>
+            </state>
+        </statetype>
+
+        <textarea name="title">
+            <area>85,404,800,35</area>
+            <font>extralargebold</font>
+        </textarea>
+
+        <textarea name="subtitle">
+            <area>85,439,800,30</area>
+            <font>mediumbold</font>
+            <multiline>yes</multiline>
+        </textarea>
+
+        <textarea name="channel">
+            <area>665,474,250,30</area>
+            <altarea>700,70,410,30</altarea>
+            <font>smallgrey</font>
+            <align>right</align>
+        </textarea>
+
+        <textarea name="timedate">
+            <area>85,474,540,30</area>
+            <font>smallgrey</font>
+        </textarea>
+
+        <textarea name="description">
+            <area>85,501,830,140</area>
+            <altarea>0,97,1110,140</altarea>
+            <font>medium</font>
+            <multiline>yes</multiline>
+            <cutdown>yes</cutdown>
+            <template>%YEARSTARS% %DESCRIPTION% %LONGREPEAT%</template>
+        </textarea>
+
+        <imagetype name="video_background">
+            <position>927,460</position>
+            <filename>backgrounds/livevid_background.png</filename>
+        </imagetype>
+
+        <imagetype name="preview">
+            <area>940,470,260,146</area>
+            <preserveaspect>true</preserveaspect>
+        </imagetype>
+
+        <textarea name="norecordings">
+            <area>85,501,830,140</area>
+            <font>medium</font>
+            <value>No recordings exist</value>
+            <multiline>yes</multiline>
+            <align>allcenter</align>
+        </textarea>
+
+        <!-- Copy of baseprogressbar from base.xml with changed fill image, 
+             so that its like a "temperature" gauge, where full=danger=red --> 
+        <progressbar name="usedbar"> 
+            <area>700,664,536,38</area> 
+            <layout>horizontal</layout> 
+            <style>reveal</style> 
+            <imagetype name="background"> 
+                <filename>progressbar_background.png</filename> 
+            </imagetype> 
+            <imagetype name="progressimage"> 
+                <area>0,0,100%,100%</area> 
+                <filename>progressbar_fill2.png</filename> 
+            </imagetype> 
+        </progressbar> 
+ 
+        <textarea name="freereport"> 
+            <area>710,668,325,40</area> 
+            <font>large</font> 
+        </textarea>
     </window>
 
     <window name="groupselector">

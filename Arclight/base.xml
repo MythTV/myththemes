@@ -1606,7 +1606,6 @@
     <!-- Base definition of a multiline textedit -->
     <textedit name="basemultilinetextedit">
         <area>0,0,500,163</area>
-        <multiline>true</multiline>
         <statetype name="background">
             <state name="active">
                 <imagetype name="background">

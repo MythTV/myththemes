@@ -553,7 +553,7 @@
         
         <textarea name="filterlabel" from="basetextarea">
             <area>0,665,615,30</area>
-            <value>Filter:  </value>
+            <value>Filter:</value>
             <font>baseextrasmall</font>
             <align>right</align>
         </textarea>

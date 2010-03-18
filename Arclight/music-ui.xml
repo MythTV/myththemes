@@ -1462,7 +1462,7 @@
             <position>122,460</position>
         </progressbar>
 
-        <progressbar name="job_progress" from="baseprogressbar">
+        <progressbar name="track_progress" from="baseprogressbar">
             <position>122,530</position>
         </progressbar>
 

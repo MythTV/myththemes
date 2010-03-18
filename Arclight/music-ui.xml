@@ -1454,10 +1454,6 @@
             <cutdown>yes</cutdown>
         </textarea>
 
-        <textarea name="job_text" from="numbjobs">
-            <area>45,465,674,57</area>
-        </textarea>
-
         <progressbar name="overall_progress" from="baseprogressbar">
             <position>122,460</position>
         </progressbar>

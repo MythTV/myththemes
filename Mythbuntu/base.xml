@@ -944,7 +944,7 @@
             <font>baseextralarge</font>
             <align>allcenter</align>
 	    <alphapulse min="75" max="255" change="5"/>
-            <value>Please Wait....</value>
+            <value>Please Wait...</value>
         </textarea>
 
     </window>

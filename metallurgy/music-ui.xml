@@ -930,7 +930,7 @@
             <textarea name="status_text" draworder="1" align="center">
                 <area>408,80,300,30</area>
                 <font>medium</font>
-                <value>All ready in database</value>
+                <value>Already in database</value>
             </textarea>
 
             <pushbutton name="next_button" draworder="0">
@@ -1164,7 +1164,7 @@
             <textarea name="status_text" draworder="1" align="center">
                 <area>152,110,308,60</area>
                 <font>medium</font>
-                <value>All ready in database</value>
+                <value>Already in database</value>
             </textarea>
 
         </container>

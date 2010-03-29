@@ -1141,7 +1141,7 @@
             <area>500,335,280,50</area>
             <font>baselarge</font>
             <align>allcenter</align>
-            <value>Please Wait....</value>
+            <value>Please Wait...</value>
         </textarea>
         
         <imagetype name="animation">

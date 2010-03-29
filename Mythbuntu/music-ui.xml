@@ -220,7 +220,7 @@
                 <context>0</context>
                 <font>currenttitle</font>
                 <area>32,0,1200,296</area>
-                <value>Please Wait ...</value>
+                <value>Please Wait...</value>
             </textarea>
 
         </container>
@@ -930,7 +930,7 @@
 
         <textarea name="status" from="position">
             <position>250,545</position>
-            <value>All ready in database</value>
+            <value>Already in database</value>
         </textarea>
 
         <!-- data fields -->

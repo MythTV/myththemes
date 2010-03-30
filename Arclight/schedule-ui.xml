@@ -153,7 +153,7 @@
         <buttonlist name="channellist">
             <area>581,92,555,980</area>
             <layout>vertical</layout>
-            <spacing>3</spacing>
+            <spacing>2</spacing>
             <buttonarea>0,0,555,990</buttonarea>
             <statetype name="buttonitem">
                 <area>0,0,343,88</area>

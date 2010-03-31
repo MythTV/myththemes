@@ -338,4 +338,87 @@
 
     </window>
 
+    <window name="osd_program_editor">
+        <area>838,736,1029,312</area>
+
+        <imagetype name="entry_bg">
+            <position>0,0</position>
+            <filename>images/osd_bg.png</filename>
+        </imagetype>
+
+        <textarea name="title" from="basetextarea">
+            <area>61,80,450,50</area>
+            <font>basenormal</font>
+            <align>left,vcenter</align>
+            <multiline>false</multiline>
+        </textarea>
+
+        <textarea name="seekamount" from="basetextarea">
+            <area>511,80,450,50</area>
+            <font>basenormal</font>
+            <align>right,vcenter</align>
+            <multiline>false</multiline>
+        </textarea>
+
+        <textarea name="timedisplay" from="basetextarea">
+            <area>261,220,500,50</area>
+            <font>basenormal</font>
+            <align>allcenter</align>
+            <multiline>false</multiline>
+        </textarea>
+
+        <textarea name="cutindicator" from="basetextarea">
+            <area>61,220,200,50</area>
+            <font>basenormal</font>
+            <align>left,vcenter</align>
+            <multiline>false</multiline>
+        </textarea>
+
+        <textarea name="framedisplay" from="basetextarea">
+            <area>761,220,200,50</area>
+            <font>basenormal</font>
+            <align>right,vcenter</align>
+            <multiline>false</multiline>
+            <template>Frame %1</template>
+        </textarea>
+
+        <editbar name="editbar">
+            <area>61,166,900,37</area>
+            <imagetype name="cut">
+                <position>0,2</position>
+                <filename>images/progressbar/progressbar_large_background.png</filename>
+            </imagetype>
+            <imagetype name="keep">
+                <position>0,2</position>
+                <filename>images/progressbar/progressbar_large_fill.png</filename>
+            </imagetype>
+            <shape name="position">
+                <area>0,0,4,100%</area>
+                <fill color="#FFFFFF" alpha="255" />
+            </shape>
+            <shape name="cuttoright">
+                <area>0,0,2,100%</area>
+                <fill color="#0000FF" alpha="255" />
+            </shape>
+            <shape name="cuttoleft">
+                <area>0,0,2,100%</area>
+                <fill color="#0000FF" alpha="255" />
+            </shape>
+            <shape name="keeptoright">
+                <area>0,0,2,100%</area>
+                <fill color="#0099FF" alpha="255" />
+            </shape>
+            <shape name="keeptoleft">
+                <area>0,0,2,100%</area>
+                <fill color="#0099FF" alpha="255" />
+            </shape>
+        </editbar>
+
+        <imagetype name="entry_overlay">
+            <position>28,18</position>
+            <filename>images/osd_overlay.png</filename>
+        </imagetype>
+
+    </window>
+
 </mythuitheme>

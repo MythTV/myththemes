@@ -1717,6 +1717,19 @@
         </imagetype>
     </progressbar>
 
+    <!-- Base definition of a wide (OSD) progressbar -->
+    <progressbar name="basewideprogressbar">
+        <area>0,0,10,10</area>
+        <layout>horizontal</layout>
+        <style>reveal</style>
+        <imagetype name="background">
+            <filename>images/progressbar/progressbar_large_background.png</filename>
+        </imagetype>
+        <imagetype name="progressimage">
+            <filename>images/progressbar/progressbar_large_fill.png</filename>
+        </imagetype>
+    </progressbar>
+
     <!-- Popup Dialogue Box -->
     <window name="MythPopupBox">
         <area>-1,-1,518,633</area>

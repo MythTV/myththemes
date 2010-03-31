@@ -88,26 +88,19 @@
             <format>%DATE%, %TIME%</format>
         </clock>
 
-        <imagetype name="coverart">
-            <area>265,23,450,296</area>
-            <filename />
-            <preserveaspect>true</preserveaspect>
-        </imagetype>
-
         <imagetype name="iconpath">
             <area>535,860,174,174</area>
-            <filename />
             <preserveaspect>true</preserveaspect>
         </imagetype>
 
         <textarea name="title" from="basetextarea">
-            <area>45,334,674,60</area>
+            <area>45,54,674,60</area>
             <font>basegothicmedium</font>
             <align>left,vcenter</align>
         </textarea>
 
         <textarea name="subtitle" from="basetextarea">
-            <area>45,385,674,57</area>
+            <area>45,105,674,57</area>
             <multiline>yes</multiline>
             <font>basegothicmidblue</font>
             <align>left,vcenter</align>
@@ -115,30 +108,49 @@
         </textarea>
 
         <textarea name="starttime" from="basetextarea">
-            <area>45,425,674,57</area>
+            <area>45,145,674,57</area>
             <multiline>yes</multiline>
             <font>basesmalllightblue</font>
             <align>left,vcenter</align>
             <cutdown>yes</cutdown>
-            <template>%STARTTIME%-%ENDTIME% : %LENMINS%</template>
+            <template>%STARTTIME%-%ENDTIME%, %RECSTARTDATE%</template>
         </textarea>
 
-        <textarea name="channum" from="basetextarea">
-            <area>45,460,674,57</area>
+        <textarea name="channel" from="basetextarea">
+            <area>45,180,674,57</area>
             <multiline>yes</multiline>
             <font>basesmalllightblue</font>
             <align>left,vcenter</align>
             <cutdown>yes</cutdown>
-            <template>Aired on channel %CHANNUM%</template>
         </textarea>
 
         <textarea name="description" from="basetextarea">
-            <area>45,510,674,330</area>
+            <area>45,230,674,430</area>
             <multiline>yes</multiline>
             <font>basesmall</font>
             <align>left,top</align>
             <cutdown>yes</cutdown>
         </textarea>
+
+    </window>
+
+    <window name="osd_status">
+        <area>838,736,1029,312</area>
+
+        <imagetype name="entry_bg">
+            <position>0,0</position>
+            <filename>images/osd_bg.png</filename>
+        </imagetype>
+
+        <progressbar name="position" from="basewideprogressbar">
+            <position>26,186</position>
+        </proressbar>
+
+        <imagetype name="entry_overlay">
+            <position>0,0</position>
+            <filename>images/osd_overlay.png</filename>
+        </imagetype>
+
     </window>
 
 </mythuitheme>

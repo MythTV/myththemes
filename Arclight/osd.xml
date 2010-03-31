@@ -232,4 +232,89 @@
 
     </window>
 
+    <window name="ChannelEditor">
+        <area>-1,-1,1920,1079</area>
+
+        <imagetype name="rightpanel_bg">
+            <position>1100,0</position>
+            <filename>images/editmetadata_leftpanelwide_bg.png</filename>
+        </imagetype>
+
+        <shape name="rightpanel_dark">
+            <area>1238,0,682,1080</area>
+            <fill color="#000000" alpha="80" />
+        </shape>
+
+        <textarea name="tit" from="basetextarea">
+            <area>1260,234,674,60</area>
+            <font>basegothicmedium</font>
+            <align>left,vcenter</align>
+            <value>Channel Editor</value>
+        </textarea>
+
+        <textarea name="message" from="basetextarea">
+            <area>1260,285,674,57</area>
+            <multiline>yes</multiline>
+            <font>basesmalllightblue</font>
+            <align>left,vcenter</align>
+            <cutdown>yes</cutdown>
+            <value>Edit the details about this channel.</value>
+        </textarea>
+
+        <textarea name="callsign_label" from="basetextarea">
+            <area>1140,392,250,30</area>
+            <align>right,vcenter</align>
+            <font>basesmall</font>
+            <value>Callsign:</value>
+        </textarea>
+
+        <textedit name="callsign" from="basetextedit">
+            <position>1396,384</position>
+        </textedit>
+
+        <textarea name="channum_label" from="basetextarea">
+            <area>1140,452,250,30</area>
+            <align>right,vcenter</align>
+            <font>basesmall</font>
+            <value>Channel #:</value>
+        </textarea>
+
+        <textedit name="channum" from="basetextedit">
+            <position>1396,444</position>
+        </textedit>
+
+        <textarea name="channame_label" from="basetextarea">
+            <area>1140,512,250,30</area>
+            <align>right,vcenter</align>
+            <font>basesmall</font>
+            <value>Chan Name:</value>
+        </textarea>
+
+        <textedit name="channame" from="basetextedit">
+            <position>1396,504</position>
+        </textedit>
+
+        <textarea name="xmltv_label" from="basetextarea">
+            <area>1140,572,250,30</area>
+            <align>right,vcenter</align>
+            <font>basesmall</font>
+            <value>XMLTV #:</value>
+        </textarea>
+
+        <textedit name="XMLTV" from="basetextedit">
+            <position>1396,564</position>
+        </textedit>
+
+        <button name="probe" from="basebutton">
+            <position>1400,694</position>
+            <value>Probe</value>
+        </button>
+
+        <button name="ok" from="basebutton">
+            <position>1600,694</position>
+            <value>OK</value>
+        </button>
+
+    </window>
+
 </mythuitheme>

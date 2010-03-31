@@ -221,12 +221,27 @@
             <filename>images/osd_bg.png</filename>
         </imagetype>
 
+        <textarea name="title" from="basetextarea">
+            <area>61,80,900,50</area>
+            <font>basenormal</font>
+            <align>allcenter</align>
+            <multiline>false</multiline>
+        </textarea>
+
         <progressbar name="position" from="basewideprogressbar">
-            <position>26,186</position>
-        </proressbar>
+            <position>61,166</position>
+        </progressbar>
+
+        <textarea name="description" from="basetextarea">
+            <area>61,200,900,50</area>
+            <font>basenormal</font>
+            <align>allcenter</align>
+            <multiline>false</multiline>
+            <template>%DESCRIPTION% %VALUE%%UNITS%</template>
+        </textarea>
 
         <imagetype name="entry_overlay">
-            <position>0,0</position>
+            <position>22,20</position>
             <filename>images/osd_overlay.png</filename>
         </imagetype>
 
@@ -242,7 +257,7 @@
 
         <shape name="rightpanel_dark">
             <area>1238,0,682,1080</area>
-            <fill color="#000000" alpha="80" />
+            <fill color="#000000" alpha="150" />
         </shape>
 
         <textarea name="tit" from="basetextarea">
@@ -306,12 +321,12 @@
         </textedit>
 
         <button name="probe" from="basebutton">
-            <position>1400,694</position>
+            <position>1396,694</position>
             <value>Probe</value>
         </button>
 
         <button name="ok" from="basebutton">
-            <position>1600,694</position>
+            <position>1740,694</position>
             <value>OK</value>
         </button>
 

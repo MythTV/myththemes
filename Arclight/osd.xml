@@ -241,7 +241,7 @@
         </textarea>
 
         <imagetype name="entry_overlay">
-            <position>22,20</position>
+            <position>26,20</position>
             <filename>images/osd_overlay.png</filename>
         </imagetype>
 

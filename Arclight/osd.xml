@@ -241,7 +241,7 @@
         </textarea>
 
         <imagetype name="entry_overlay">
-            <position>26,20</position>
+            <position>28,18</position>
             <filename>images/osd_overlay.png</filename>
         </imagetype>
 
@@ -250,14 +250,20 @@
     <window name="ChannelEditor">
         <area>-1,-1,1920,1079</area>
 
+        <shape name="rightpanel_dark">
+            <area>1238,0,682,1080</area>
+            <fill color="#000000" alpha="150" />
+        </shape>
+
         <imagetype name="rightpanel_bg">
             <position>1100,0</position>
             <filename>images/editmetadata_leftpanelwide_bg.png</filename>
         </imagetype>
 
-        <shape name="rightpanel_dark">
-            <area>1238,0,682,1080</area>
-            <fill color="#000000" alpha="150" />
+        <shape name="infobox">
+            <area>1250,210,660,580</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="180" />
         </shape>
 
         <textarea name="tit" from="basetextarea">
@@ -326,7 +332,7 @@
         </button>
 
         <button name="ok" from="basebutton">
-            <position>1740,694</position>
+            <position>1594,694</position>
             <value>OK</value>
         </button>
 

@@ -93,6 +93,16 @@
             <preserveaspect>true</preserveaspect>
         </imagetype>
 
+        <imagetype name="fanart">
+            <area>45,690,674,324</area>
+            <preserveaspect>true</preserveaspect>
+        </imagetype>
+
+        <imagetype name="banner">
+            <area>45,550,674,100</area>
+            <preserveaspect>true</preserveaspect>
+        </imagetype>
+
         <textarea name="title" from="basetextarea">
             <area>45,54,674,60</area>
             <font>basegothicmedium</font>
@@ -125,7 +135,7 @@
         </textarea>
 
         <textarea name="description" from="basetextarea">
-            <area>45,230,674,430</area>
+            <area>45,230,674,300</area>
             <multiline>yes</multiline>
             <font>basesmall</font>
             <align>left,top</align>
@@ -392,25 +402,25 @@
                 <position>0,2</position>
                 <filename>images/progressbar/progressbar_large_fill.png</filename>
             </imagetype>
-            <shape name="position">
-                <area>0,0,4,100%</area>
-                <fill color="#FFFFFF" alpha="255" />
-            </shape>
             <shape name="cuttoright">
-                <area>0,0,2,100%</area>
+                <area>0,0,4,100%</area>
                 <fill color="#0000FF" alpha="255" />
             </shape>
             <shape name="cuttoleft">
-                <area>0,0,2,100%</area>
+                <area>0,0,4,100%</area>
                 <fill color="#0000FF" alpha="255" />
             </shape>
             <shape name="keeptoright">
-                <area>0,0,2,100%</area>
+                <area>0,0,4,100%</area>
                 <fill color="#0099FF" alpha="255" />
             </shape>
             <shape name="keeptoleft">
-                <area>0,0,2,100%</area>
+                <area>0,0,4,100%</area>
                 <fill color="#0099FF" alpha="255" />
+            </shape>
+            <shape name="position">
+                <area>0,0,4,100%</area>
+                <fill color="#FFFFFF" alpha="255" />
             </shape>
         </editbar>
 

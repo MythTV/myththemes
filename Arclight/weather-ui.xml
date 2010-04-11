@@ -59,6 +59,14 @@
             <cutdown>yes</cutdown>
         </textarea>
 
+        <textarea name="copyright" from="basetextarea">
+            <area>45,930,674,30</area>
+            <multiline>yes</multiline>
+            <font>basesmalllightblue</font>
+            <align>left,vcenter</align>
+            <cutdown>yes</cutdown>
+        </textarea>
+
     </window>
 
     <window name="Current Conditions">
@@ -170,6 +178,14 @@
             <template>Last Updated %1</template>
         </textarea>
 
+        <textarea name="copyright" from="basetextarea">
+            <area>45,930,674,30</area>
+            <multiline>yes</multiline>
+            <font>basesmalllightblue</font>
+            <align>left,vcenter</align>
+            <cutdown>yes</cutdown>
+        </textarea>
+
     </window>
 
     <window name="Three Day Forecast">
@@ -259,6 +275,14 @@
 
         <textarea name="low-2" from="low-0">
             <position>1106,980</position>
+        </textarea>
+
+        <textarea name="copyright" from="basetextarea">
+            <area>45,930,674,30</area>
+            <multiline>yes</multiline>
+            <font>basesmalllightblue</font>
+            <align>left,vcenter</align>
+            <cutdown>yes</cutdown>
         </textarea>
 
     </window>
@@ -419,6 +443,14 @@
             <position>966,1024</position>
         </textarea>
 
+        <textarea name="copyright" from="basetextarea">
+            <area>45,930,674,30</area>
+            <multiline>yes</multiline>
+            <font>basesmalllightblue</font>
+            <align>left,vcenter</align>
+            <cutdown>yes</cutdown>
+        </textarea>
+
     </window>
 
     <window name="Static Map">
@@ -435,6 +467,15 @@
             <area>45,191,674,657</area>
             <preserveaspect>true</preserveaspect>
         </imagetype>
+
+        <textarea name="copyright" from="basetextarea">
+            <area>45,930,674,30</area>
+            <multiline>yes</multiline>
+            <font>basesmalllightblue</font>
+            <align>left,vcenter</align>
+            <cutdown>yes</cutdown>
+        </textarea>
+
     </window>
 
     <window name="Animated Map">
@@ -451,6 +492,15 @@
             <area>45,191,674,657</area>
             <preserveaspect>true</preserveaspect>
         </imagetype>
+
+        <textarea name="copyright" from="basetextarea">
+            <area>45,930,674,30</area>
+            <multiline>yes</multiline>
+            <font>basesmalllightblue</font>
+            <align>left,vcenter</align>
+            <cutdown>yes</cutdown>
+        </textarea>
+
     </window>
 
     <window name="Severe Weather Alerts">
@@ -464,10 +514,18 @@
         </textarea>
 
         <textarea name="alerts" from="basetextarea">
-            <area>45,291,674,657</area>
+            <area>45,291,674,607</area>
             <multiline>yes</multiline>
             <font>basesmalllightblue</font>
             <align>left</align>
+            <cutdown>yes</cutdown>
+        </textarea>
+
+        <textarea name="copyright" from="basetextarea">
+            <area>45,930,674,30</area>
+            <multiline>yes</multiline>
+            <font>basesmalllightblue</font>
+            <align>left,vcenter</align>
             <cutdown>yes</cutdown>
         </textarea>
 
@@ -627,6 +685,14 @@
 
         <textarea name="pop-5" from="pop-0">
             <position>966,1024</position>
+        </textarea>
+
+        <textarea name="copyright" from="basetextarea">
+            <area>45,930,674,30</area>
+            <multiline>yes</multiline>
+            <font>basesmalllightblue</font>
+            <align>left,vcenter</align>
+            <cutdown>yes</cutdown>
         </textarea>
 
     </window>

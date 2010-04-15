@@ -1010,12 +1010,6 @@
             <area>160,660,160,30</area>
         </textarea>
 
-        <textarea name="keyinstr" from="basetextarea">
-            <area>45,1000,674,70</area>
-            <value>Sort By:\n(1) Title (2) Priority (4) Type</value>
-            <align>allcenter</align>
-        </textarea>
-
         <textarea name="scheduleinfo" from="basetextarea">
             <area>45,540,680,30</area>
         </textarea>
@@ -2327,12 +2321,6 @@
 
         <textarea name="recordingprofile" from="basetextarea">
             <area>250,900,674,30</area>
-        </textarea>
-
-        <textarea name="keyinstr" from="basetextarea">
-            <area>45,1000,674,70</area>
-            <value>Sort By:\n(1) Title (2) Priority (4) Type</value>
-            <align>allcenter</align>
         </textarea>
 
     </window>

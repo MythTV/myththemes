@@ -278,7 +278,7 @@
             <template>%YEARSTARS% %DESCRIPTION% %LONGREPEAT%</template>
         </textarea>
 
-        <textarea name="recordingstatus" from="basetextarea">
+        <textarea name="recstatus" from="basetextarea">
             <area>895,406,310,60</area>
             <multiline>yes</multiline>
             <align>right</align>

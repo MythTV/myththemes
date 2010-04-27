@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mythuitheme>
+
+    <window name="keygrabpopup">
+
+        <area>0,0,800,600</area>
+    
+        <!-- Optional Items -->
+
+        <shape name="fade" from="basefadebg" />
+
+        <imagetype name="backimg">
+            <position>200,85</position>
+            <filename>popups/popup_small.png</filename>
+        </imagetype>
+
+        <!-- Required Items -->
+
+        <textarea name="message" from="basetextarea">
+            <area>200,85,400,230</area>
+            <multiline>yes</multiline>
+            <align>allcenter</align>
+            <font>lgreenlarge</font>
+        </textarea>
+
+        <button name="cancel" from="basesmallbutton">
+            <position>215,420</position>
+            <value>Cancel</value>
+        </button>
+
+        <button name="ok" from="basesmallbutton">
+            <position>405,420</position>
+            <value>OK</value>
+        </button>
+    </window>
+
+    <window name="controls">
+
+        <!-- Optional Items -->
+
+        <imagetype name="topbar" from="basetopbar" />
+
+        <textarea name="header" from="baseheading">
+            <value>Edit Keys</value>
+        </textarea>
+
+        <shape name="headerbg" from="basegreenbg">
+            <area>10,45,780,45</area>
+            <cornerradius>6</cornerradius>
+        </shape>
+
+        <shape name="listbg" from="basegreenbg">
+            <area>10,100,780,495</area>
+            <cornerradius>6</cornerradius>
+        </shape>
+
+        <!-- Required Items -->
+
+        <textarea name="leftdesc" from="basetextarea">
+            <area>20,55,370,35</area>
+            <font>dgreenlarge</font>
+            <value>Contexts</value>
+            <align>allcenter</align>
+        </textarea>
+
+        <buttonlist name="leftlist" from="popupbuttonlist">
+            <area>10,110,370,410</area>
+            <showarrow>no</showarrow>
+        </buttonlist>
+
+        <textarea name="rightdesc" from="leftdesc">
+            <area>410,50,370,35</area>
+            <value>Actions</value>
+        </textarea>
+
+        <buttonlist name="rightlist" from="leftlist">
+            <area>400,110,370,410</area>
+        </buttonlist>
+
+        <button name="action_0" from="basesmallbutton">
+            <position>30,500</position>
+        </button>
+
+        <button name="action_1" from="action_0">
+            <position>210,500</position>
+        </button>
+
+        <button name="action_2" from="action_0">
+            <position>400,500</position>
+        </button>
+
+        <button name="action_3" from="action_0">
+            <position>590,500</position>
+        </button>
+
+        <textarea name="description" from="basetextarea">
+            <area>20,555,760,35</area>
+            <multiline>yes</multiline>
+            <align>center</align>
+            <font>dgreenmed</font>
+        </textarea>
+
+    </window>
+
+</mythuitheme>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<mythuitheme>
+
+    <window name="rawsettingseditor">
+
+        <!-- Optional Items -->
+
+        <imagetype name="topbar" from="basetopbar" />
+
+        <textarea name="heading" from="baseheading">
+            <font>dgreensmall</font>
+        </textarea>
+
+        <shape name="infobg" from="basegreenbg">
+            <area>10,420,780,175</area>
+            <cornerradius>6</cornerradius>
+        </shape>
+
+        <!-- Required Items -->
+
+        <buttonlist name="settings" from="popupbuttonlist">
+            <area>15,45,400,375</area>
+            <scrollstyle>free</scrollstyle>
+            <wrapstyle>none</wrapstyle>
+            <buttonarea>0,0,400,375</buttonarea>
+            <statetype name="upscrollarrow">
+                <position>20,345</position>
+                <state type="off">
+                    <imagetype name="upon">
+                        <filename>shared/uparrow.png</filename>
+                        <alpha>100</alpha>
+                    </imagetype>
+                </state>
+                <state type="full">
+                    <imagetype name="upoff">
+                        <filename>shared/uparrow.png</filename>
+                    </imagetype>
+                </state>
+            </statetype>
+            <statetype name="downscrollarrow">
+                <position>345,350</position>
+                <state type="off">
+                    <imagetype name="dnon">
+                        <filename>shared/downarrow.png</filename>
+                        <alpha>100</alpha>
+                    </imagetype>
+                </state>
+                <state type="full">
+                    <imagetype name="dnoff">
+                        <filename>shared/downarrow.png</filename>
+                    </imagetype>
+                </state>
+            </statetype>
+        </buttonlist>
+
+        <textarea name="label-text">
+            <area>15,425,770,35</area>
+            <font>dgreenlarge</font>
+            <align>allcenter</align>
+        </textarea>
+
+        <textedit name="settingvalue" from="basetexteditwide">
+            <position>15,465</position>
+        </textedit>
+
+        <button name="cancel" from="basesmallbutton">
+            <position>20,520</position>
+            <value>Cancel</value>
+        </button>
+    
+        <button name="save" from="basesmallbutton">
+            <position>600,520</position>
+            <value>Save</value>
+        </button>
+
+    </window>
+
+</mythuitheme>

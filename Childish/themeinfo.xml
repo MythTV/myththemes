@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<themeinfo>
+    <name>Childish</name>
+   
+    <types>
+        <type>UI</type>
+    </types>
+   
+    <aspect>4:3</aspect>
+   
+    <baseres>800x600</baseres>
+   
+    <author>
+        <name>Michael Lynch</name>
+        <email>lynchmv@gmail.com</email>
+    </author>
+   
+    <version>
+        <major>1</major>
+        <minor>1</minor>
+    </version>
+   
+    <detail>
+        <thumbnail name="preview">preview.jpg</thumbnail>
+        <description>My first attempt at a theme, aimed at creating a theme suitable for children.</description>
+        <errata>The font is GPL v2 licensed and can be found at http://www.dafont.com/penguin-attack.font.  The background is provided by Nicolas at http://www.studiokobalt.com/.  Status icons: http://www.pixelpressicons.com/?p=108 released under http://creativecommons.org/licenses/by/2.5/ca/.</errata>
+    </detail>
+</themeinfo>

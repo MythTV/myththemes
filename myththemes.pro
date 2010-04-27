@@ -14,6 +14,7 @@ themes.path = $${PREFIX}/share/mythtv/themes/
 themes.files = Graphite metallurgy Mythbuntu Arclight
 themes.files += blootube-osd blueosd Iulius-OSD Mono-OSD
 themes.files += ProjectGrayhem-OSD Retro-OSD Titivillus-OSD
+themes.files += Childish
 
 INSTALLS += themes
 

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mythuitheme>
+
+    <window name="gameui">
+
+        <!-- Optional Items -->
+
+        <imagetype name="topbar" from="basetopbar" />
+
+        <textarea name="heading" from="baseheading">
+            <value>Play Games</value>
+        </textarea>
+
+        <!-- Required Items -->
+
+        <buttontree name="gametreelist">
+            <area>0,45,800,550</area>
+            <numlists>2</numlists>
+            <buttonlist name="listtemplate" from="popupbuttonlist" />
+        </buttontree>
+
+    </window>
+
+    <window name="gamedetailspopup">
+        <!-- TODO -->
+    </window>
+
+    <window name="edit_metadata">
+        <!-- TODO -->
+    </window>
+
+</mythuitheme>

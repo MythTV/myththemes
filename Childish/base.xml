@@ -949,10 +949,15 @@
 
         <area>0,0,800,600</area>
 
-        <imagetype name="working">
-            <position>10,10</position>
-            <filename>popups/busydialog.png</filename>
-        </imagetype>
+        <shape name="working" from="basegreenbg">
+            <area>10,10,780,580</area>
+        </shape>
+
+        <textarea name="message" from="basetextarea">
+            <area>0,0,100%,100%</area>
+            <font>lgreenmed</font>
+            <align>allcenter</align>
+        </textarea>
 
     </window>
 

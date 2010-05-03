@@ -1730,6 +1730,17 @@
         </imagetype>
     </progressbar>
 
+    <!-- Background Window -->
+    <window name="backgroundwindow">
+        <area>0,0,1920,1080</area>
+
+        <imagetype name="fanart">
+            <area>0,0,1920,1080</area>
+            <filename>Backgrounds/</filename>
+        </imagetype>
+
+    </window>
+
     <!-- Popup Dialogue Box -->
     <window name="MythPopupBox">
         <area>-1,-1,518,633</area>

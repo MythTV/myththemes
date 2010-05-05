@@ -222,7 +222,7 @@
                         <cutdown>true</cutdown>
                         <multiline>false</multiline>
                     </textarea>
-                    <textarea name="filesize_str">
+                    <textarea name="time">
                         <area>700,56,418,30</area>
                         <align>right,vcenter</align>
                         <font>basesmall</font>
@@ -262,7 +262,7 @@
                     <textarea name="title">
                         <area>185,10,710,40</area>
                     </textarea>
-                    <textarea name="filesize_str">
+                    <textarea name="time">
                         <area>700,143,418,30</area>
                     </textarea>
                     <textarea name="author">
@@ -471,7 +471,7 @@
             <align>left,vcenter</align>
         </textarea>
 
-        <textarea name="date" from="basetextarea">
+        <textarea name="time" from="basetextarea">
             <area>45,385,674,57</area>
             <multiline>yes</multiline>
             <font>basegothicmidblue</font>
@@ -917,7 +917,7 @@
             <align>left,vcenter</align>
         </textarea>
 
-        <textarea name="date" from="basetextarea">
+        <textarea name="time" from="basetextarea">
             <area>45,385,674,57</area>
             <multiline>yes</multiline>
             <font>basegothicmidblue</font>
@@ -1170,7 +1170,7 @@
                         <font>basesmall</font>
                         <alpha>210</alpha>
                     </textarea>
-                    <textarea name="filesize_str">
+                    <textarea name="time">
                         <area>937,56,187,30</area>
                         <align>right,vcenter</align>
                         <font>basesmall</font>

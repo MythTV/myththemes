@@ -932,14 +932,17 @@
 
         <button name="done_button" from="basebutton">
             <position>700,550</position>
+            <value>Done</value>
         </button>
 
         <button name="new_button" from="basebutton">
-            <position>600,550</position>
+            <position>500,550</position>
+            <value>New</value>
         </button>
 
         <button name="delete_button" from="basebutton">
-            <position>0,550</position>
+            <position>50,550</position>
+            <value>Delete</value>
         </button>
     </window>
 

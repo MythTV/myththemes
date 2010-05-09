@@ -118,7 +118,6 @@
             <area>35,13,694,1033</area>
             <type>roundbox</type>
             <fill color="#000000" alpha="180" />
-
         </shape>
 
         <imagetype name="screenshot">
@@ -156,17 +155,16 @@
             <template>Season/Episode: %1</template>
         </textarea>
 
-        <textarea name="director" from="basetextarea">
+        <textarea name="tagline" from="basetextarea">
             <area>45,460,674,57</area>
             <multiline>yes</multiline>
             <font>basesmalllightblue</font>
             <align>left,vcenter</align>
             <cutdown>yes</cutdown>
-            <template>Directed by %1</template>
         </textarea>
 
         <textarea name="description" from="basetextarea">
-            <area>45,510,674,395</area>
+            <area>45,510,674,380</area>
             <multiline>yes</multiline>
             <font>basesmall</font>
             <align>left,top</align>
@@ -412,7 +410,6 @@
             <area>35,13,694,1033</area>
             <type>roundbox</type>
             <fill color="#000000" alpha="180" />
-
         </shape>
 
         <imagetype name="screenshot">
@@ -450,17 +447,16 @@
             <template>Season/Episode: %1</template>
         </textarea>
 
-        <textarea name="director" from="basetextarea">
+        <textarea name="tagline" from="basetextarea">
             <area>45,460,674,57</area>
             <multiline>yes</multiline>
             <font>basesmalllightblue</font>
             <align>left,vcenter</align>
             <cutdown>yes</cutdown>
-            <template>Directed by %1</template>
         </textarea>
 
         <textarea name="description" from="basetextarea">
-            <area>45,510,674,395</area>
+            <area>45,510,674,380</area>
             <multiline>yes</multiline>
             <font>basesmall</font>
             <align>left,top</align>
@@ -630,17 +626,16 @@
             <template>Season/Episode: %1</template>
         </textarea>
 
-        <textarea name="director" from="basetextarea">
+        <textarea name="tagline" from="basetextarea">
             <area>45,460,674,57</area>
             <multiline>yes</multiline>
             <font>basesmalllightblue</font>
             <align>left,vcenter</align>
             <cutdown>yes</cutdown>
-            <template>Directed by %1</template>
         </textarea>
 
         <textarea name="description" from="basetextarea">
-            <area>45,510,674,390</area>
+            <area>45,510,674,380</area>
             <multiline>yes</multiline>
             <font>basesmall</font>
             <align>left,top</align>
@@ -825,7 +820,6 @@
             <area>35,13,694,1033</area>
             <type>roundbox</type>
             <fill color="#000000" alpha="180" />
-
         </shape>
 
         <imagetype name="screenshot">
@@ -863,17 +857,16 @@
             <template>Season/Episode: %1</template>
         </textarea>
 
-        <textarea name="director" from="basetextarea">
+        <textarea name="tagline" from="basetextarea">
             <area>45,460,674,57</area>
             <multiline>yes</multiline>
             <font>basesmalllightblue</font>
             <align>left,vcenter</align>
             <cutdown>yes</cutdown>
-            <template>Directed by %1</template>
         </textarea>
 
         <textarea name="description" from="basetextarea">
-            <area>45,510,674,395</area>
+            <area>45,510,674,380</area>
             <multiline>yes</multiline>
             <font>basesmall</font>
             <align>left,top</align>
@@ -1016,31 +1009,20 @@
 
         <!-- Labels  -->
 
-        <textarea name="pagetitle" from="basetextarea">
-            <area>45,24,674,60</area>
-            <font>basegothicmedium</font>
-            <align>left,vcenter</align>
-            <value>Edit Metadata</value>
-        </textarea>
-
-        <textarea name="pagesubtitle" from="basetextarea">
-            <area>45,70,674,57</area>
-            <multiline>yes</multiline>
-            <font>basesmalllightblue</font>
-            <align>left,vcenter</align>
-            <cutdown>yes</cutdown>
-            <value>Modify your film's metadata.</value>
-        </textarea>
-
         <textarea name="title_text" from="basetextarea">
-            <area>8,125,190,40</area>
+            <area>8,65,190,40</area>
             <value>Title:</value>
             <align>right,vcenter</align>
         </textarea>
 
         <textarea name="subtitle_text" from="title_text">
-            <position>8,185</position>
+            <position>8,125</position>
             <value>Subtitle:</value>
+        </textarea>
+
+        <textarea name="tagline_text" from="title_text">
+            <position>8,185</position>
+            <value>Tagline:</value>
         </textarea>
 
         <textarea name="rating_text" from="title_text">
@@ -1159,10 +1141,14 @@
         <!-- Widgets -->
 
         <textedit name="title_edit" from="basecentertextedit">
-            <position>217,123</position>
+            <position>217,63</position>
         </textedit>
 
         <textedit name="subtitle_edit" from="basecentertextedit">
+            <position>217,123</position>
+        </textedit>
+
+        <textedit name="tagline_edit" from="basecentertextedit">
             <position>217,183</position>
         </textedit>
 

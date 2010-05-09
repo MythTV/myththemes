@@ -2,29 +2,29 @@
 
   <window name="keyboard">
 
-    <fontdef name="normal" face="CartoGothic Std">
+    <font name="normal" face="CartoGothic Std">
       <color>#ffffff</color>
       <size>10</size>
       <bold>yes</bold>
-    </fontdef>
+    </font>
 
-    <fontdef name="focused" face="CartoGothic Std">
+    <font name="focused" face="CartoGothic Std">
       <color>#ffffff</color>
       <size>10</size>
       <bold>yes</bold>
-    </fontdef>
+    </font>
 
-    <fontdef name="down" face="CartoGothic Std">
+    <font name="down" face="CartoGothic Std">
       <color>#ffffff</color>
       <size>10</size>
       <bold>yes</bold>
-    </fontdef>
+    </font>
 
-    <fontdef name="downfocused" face="CartoGothic Std">
+    <font name="downfocused" face="CartoGothic Std">
       <color>#ffffff</color>
       <size>10</size>
       <bold>yes</bold>
-    </fontdef>
+    </font>
 
     <container name="keyboard_container">
       <area>0,0,537,193</area>

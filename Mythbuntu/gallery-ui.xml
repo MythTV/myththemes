@@ -3,17 +3,17 @@
 
     <window name="gallery">
 
-    <font name="menu" from="basesmall">
+    <fontdef name="menu" from="basesmall">
       <color>#ffffff</color>
       <size>16</size>
-    </font>
+    </fontdef>
 
-    <font name="title" face="baselarge">
+    <fontdef name="title" face="baselarge">
       <color>#ffffff</color>
       <shadowcolor>#666666</shadowcolor>
       <shadow>2,2</shadow>
       <size>24</size>
-    </font>
+    </fontdef>
 
         <buttonlist name="images">
             <area>0,70,1280,520</area>

@@ -6,10 +6,10 @@
 	    <filename>background.png</filename>
 	</imagetype>
 
-        <font name="title" from="basesmall">
+        <fontdef name="title" from="basesmall">
             <color>#ffffff</color>
             <size>18</size>
-        </font>
+        </fontdef>
 
         <textarea name="part">
             <font>title</font>

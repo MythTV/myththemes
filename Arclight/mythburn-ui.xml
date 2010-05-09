@@ -429,13 +429,13 @@
 
   <window name="edit_metadata">
 
-        <font name="title" from="baselarge">
+        <fontdef name="title" from="baselarge">
             <color>#ffff00</color>
             <dropcolor>#000000</dropcolor>
             <size>24</size>
             <shadow>3,3</shadow>
             <bold>yes</bold>
-        </font>
+        </fontdef>
 
         <textarea name="title" from="basetextarea">
             <area>0,15,800,50</area>
@@ -515,13 +515,13 @@
 
   <window name="thumbfinder">
 
-        <font name="title" from="baselarge">
+        <fontdef name="title" from="baselarge">
             <color>#ffff00</color>
             <dropcolor>#000000</dropcolor>
             <size>24</size>
             <shadow>3,3</shadow>
             <bold>yes</bold>
-        </font>
+        </fontdef>
 
         <textarea name="title" from="basetextarea">
             <area>0,10,800,45</area>

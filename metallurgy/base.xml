@@ -2,87 +2,87 @@
 <mythuitheme>
 
     <!-- Base Fonts -->
-    <font name="extralarge" face="DejaVu Sans">
+    <fontdef name="extralarge" face="DejaVu Sans">
         <color>#FFFFFF</color>
         <pixelsize>27</pixelsize>
         <bold>yes</bold>
-    </font>
+    </fontdef>
 
-    <font name="large" face="DejaVu Sans">
+    <fontdef name="large" face="DejaVu Sans">
         <color>#FFFFFF</color>
         <pixelsize>25</pixelsize>
-    </font>
+    </fontdef>
 
-    <font name="medium" face="DejaVu Sans">
+    <fontdef name="medium" face="DejaVu Sans">
         <color>#FFFFFF</color>
         <pixelsize>22</pixelsize>
-    </font>
+    </fontdef>
 
-    <font name="small" face="DejaVu Sans">
+    <fontdef name="small" face="DejaVu Sans">
         <color>#FFFFFF</color>
         <pixelsize>19</pixelsize>
-    </font>
+    </fontdef>
 
     <!-- Derived Fonts -->
-    <font name="extralargebold" from="extralarge">
+    <fontdef name="extralargebold" from="extralarge">
         <bold>yes</bold>
-    </font>
+    </fontdef>
 
-    <font name="extralargeboldgrey" from="extralargebold">
+    <fontdef name="extralargeboldgrey" from="extralargebold">
         <color>#CCCCCC</color>
-    </font>
+    </fontdef>
 
-    <font name="largelightgrey" from="large">
+    <fontdef name="largelightgrey" from="large">
         <color>#CCCCCC</color>
-    </font>
+    </fontdef>
 
-    <font name="mediumbold" from="medium">
+    <fontdef name="mediumbold" from="medium">
         <bold>yes</bold>
-    </font>
+    </fontdef>
 
-    <font name="mediumlightgrey" from="medium">
+    <fontdef name="mediumlightgrey" from="medium">
         <color>#CCCCCC</color>
-    </font>
+    </fontdef>
 
-    <font name="mediumgrey" from="medium">
+    <fontdef name="mediumgrey" from="medium">
         <color>#AAAAAA</color>
-    </font>
+    </fontdef>
 
-    <font name="smalllightgrey" from="small">
+    <fontdef name="smalllightgrey" from="small">
         <color>#CCCCCC</color>
-    </font>
+    </fontdef>
 
-    <font name="smallgrey" from="small">
+    <fontdef name="smallgrey" from="small">
         <color>#AAAAAA</color>
-    </font>
+    </fontdef>
 
-    <font name="smallblack" from="small">
+    <fontdef name="smallblack" from="small">
         <color>#000000</color>
-    </font>
+    </fontdef>
 
-    <font name="smallgreen" from="small">
+    <fontdef name="smallgreen" from="small">
         <color>#3EAE09</color>
-    </font>
+    </fontdef>
 
-    <font name="smallred" from="small">
+    <fontdef name="smallred" from="small">
         <color>#D40101</color>
-    </font>
+    </fontdef>
 
-    <font name="smallblue" from="small">
+    <fontdef name="smallblue" from="small">
         <color>#0492A7</color>
-    </font>
+    </fontdef>
 
-    <font name="smallboldgreen" from="smallgreen">
+    <fontdef name="smallboldgreen" from="smallgreen">
         <bold>yes</bold>
-    </font>
+    </fontdef>
 
-    <font name="smallboldred" from="smallred">
+    <fontdef name="smallboldred" from="smallred">
         <bold>yes</bold>
-    </font>
+    </fontdef>
 
-    <font name="smallboldblue" from="smallblue">
+    <fontdef name="smallboldblue" from="smallblue">
         <bold>yes</bold>
-    </font>
+    </fontdef>
 
     <!-- Base definition of a button -->
     <button name="basebutton">

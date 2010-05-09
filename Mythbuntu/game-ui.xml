@@ -6,17 +6,17 @@
         <area>0,0,1280,720</area>
     </imagetype>
 
-    <font name="largetitle" face="DejaVu Sans">
+    <fontdef name="largetitle" face="DejaVu Sans">
         <color>#ffffff</color>
         <dropcolor>#000000</dropcolor>
         <size>32</size>
         <shadow>3,3</shadow>
-    </font>
+    </fontdef>
 
-    <font name="infofont" face="DejaVu Sans">
+    <fontdef name="infofont" face="DejaVu Sans">
         <color>#ffffff</color>
         <size>18</size>
-    </font>
+    </fontdef>
 
     <buttontree name="gametreelist">
         <area>8,52,1264,310</area>

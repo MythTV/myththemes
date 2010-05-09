@@ -1,8 +1,8 @@
 <mythuitheme>
     <window name="mainmenu">
-        <font name="menufont" from="basesmall">
+        <fontdef name="menufont" from="basesmall">
             <color>#666666</color>
-        </font>
+        </fontdef>
         
         <imagetype name="background" draworder="0">
             <area>0,0,1280,720</area>

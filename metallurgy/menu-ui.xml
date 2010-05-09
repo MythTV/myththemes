@@ -2,18 +2,18 @@
 
     <window name="mainmenu">
 
-        <font name="menufont" face="DejaVu Sans">
+        <fontdef name="menufont" face="DejaVu Sans">
             <color>#BBBBBB</color>
             <size>19</size>
             <bold>yes</bold>
             <shadow>2,2</shadow>
             <shadowcolor>#000000</shadowcolor>
             <shadowalpha>128</shadowalpha>
-        </font>
+        </fontdef>
 
-        <font name="menufontselected" from="menufont">
+        <fontdef name="menufontselected" from="menufont">
             <color>#EBEBEB</color>
-        </font>
+        </fontdef>
 
         <imagetype name="background" from="basebackground0" />
 

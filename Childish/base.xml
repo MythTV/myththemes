@@ -2,115 +2,115 @@
 <mythuitheme>
 
     <!-- dark green -->
-    <font name="dgreen" face="PenguinAttack">
+    <fontdef name="dgreen" face="PenguinAttack">
         <size>14</size>
         <color>#106732</color>
-    </font>
+    </fontdef>
 
-    <font name="dgreensmall" from="dgreen">
+    <fontdef name="dgreensmall" from="dgreen">
         <size>12</size>
-    </font>
+    </fontdef>
 
-    <font name="dgreenmed" from="dgreen">
+    <fontdef name="dgreenmed" from="dgreen">
         <size>16</size>
-    </font>
+    </fontdef>
 
-    <font name="dgreenlarge" from="dgreen">
+    <fontdef name="dgreenlarge" from="dgreen">
         <size>18</size>
-    </font>
+    </fontdef>
 
-    <font name="dgreenxlarge" from="dgreen">
+    <fontdef name="dgreenxlarge" from="dgreen">
         <size>22</size>
         <shadowcolor>#bed996</shadowcolor>
         <shadowoffset>2,2</shadowoffset>
         <shadowalpha>100</shadowalpha>
-    </font>
+    </fontdef>
 
     <!-- light green -->
-    <font name="lgreen" face="PenguinAttack">
+    <fontdef name="lgreen" face="PenguinAttack">
         <size>14</size>
         <color>#77ab77</color>
-    </font>
+    </fontdef>
 
-    <font name="lgreensmall" from="lgreen">
+    <fontdef name="lgreensmall" from="lgreen">
         <size>12</size>
-    </font>
+    </fontdef>
 
-    <font name="lgreenmed" from="lgreen">
+    <fontdef name="lgreenmed" from="lgreen">
         <size>16</size>
-    </font>
+    </fontdef>
 
-    <font name="lgreenlarge" from="lgreen">
+    <fontdef name="lgreenlarge" from="lgreen">
         <size>18</size>
-    </font>
+    </fontdef>
 
-    <font name="lgreenxlarge" from="lgreen">
+    <fontdef name="lgreenxlarge" from="lgreen">
         <size>22</size>
         <shadowcolor>#106732</shadowcolor>
         <shadowoffset>2,2</shadowoffset>
         <shadowalpha>100</shadowalpha>
-    </font>
+    </fontdef>
 
     <!-- white green -->
-    <font name="wgreen" face="PenguinAttack">
+    <fontdef name="wgreen" face="PenguinAttack">
         <size>14</size>
         <color>#bed996</color>
-    </font>
+    </fontdef>
 
-    <font name="wgreensmall" from="wgreen">
+    <fontdef name="wgreensmall" from="wgreen">
         <size>12</size>
-    </font>
+    </fontdef>
 
-    <font name="wgreenmed" from="wgreen">
+    <fontdef name="wgreenmed" from="wgreen">
         <size>16</size>
-    </font>
+    </fontdef>
 
-    <font name="wgreenlarge" from="wgreen">
+    <fontdef name="wgreenlarge" from="wgreen">
         <size>18</size>
-    </font>
+    </fontdef>
 
-    <font name="wgreenxlarge" from="wgreen">
+    <fontdef name="wgreenxlarge" from="wgreen">
         <size>22</size>
         <shadowcolor>#106732</shadowcolor>
         <shadowoffset>2,2</shadowoffset>
         <shadowalpha>100</shadowalpha>
-    </font>
+    </fontdef>
 
     <!-- dark pink -->
-    <font name="dpink" face="PenguinAttack">
+    <fontdef name="dpink" face="PenguinAttack">
         <size>14</size>
         <color>#dabdc1</color>
-    </font>
+    </fontdef>
 
-    <font name="dpinkmed" from="dpink">
+    <fontdef name="dpinkmed" from="dpink">
         <size>16</size>
-    </font>
+    </fontdef>
 
-    <font name="dpinklarge" from="dpink">
+    <fontdef name="dpinklarge" from="dpink">
         <size>18</size>
-    </font>
+    </fontdef>
 
-    <font name="dpinkxlarge" from="dpink">
+    <fontdef name="dpinkxlarge" from="dpink">
         <size>22</size>
-    </font>
+    </fontdef>
 
     <!-- light pink -->
-    <font name="lpink" face="PenguinAttack">
+    <fontdef name="lpink" face="PenguinAttack">
         <size>14</size>
         <color>#f8dcd9</color>
-    </font>
+    </fontdef>
 
-    <font name="lpinkmed" from="lpink">
+    <fontdef name="lpinkmed" from="lpink">
         <size>16</size>
-    </font>
+    </fontdef>
 
-    <font name="lpinklarge" from="lpink">
+    <fontdef name="lpinklarge" from="lpink">
         <size>18</size>
-    </font>
+    </fontdef>
 
-    <font name="lpinkxlarge" from="lpink">
+    <fontdef name="lpinkxlarge" from="lpink">
         <size>22</size>
-    </font>
+    </fontdef>
 
     <!-- base widgets -->
     <shape name="basefadebg">

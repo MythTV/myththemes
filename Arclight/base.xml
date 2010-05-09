@@ -7,123 +7,123 @@
 
     <!-- Used for Edit Metadata, description text, etc. -->
     <!-- http://www.fontsite.com/download-free-fonts/cartogothic-std/ -->
-    <font name="basesmall" face="CartoGothic Std">
+    <fontdef name="basesmall" face="CartoGothic Std">
         <pixelsize>25</pixelsize>
         <color>#FFFFFF</color>
-    </font>
+    </fontdef>
 
     <!-- http://www.theleagueofmoveabletype.com/fonts/7-league-gothic -->
-    <font name="basegothicsmall" face="League Gothic">
+    <fontdef name="basegothicsmall" face="League Gothic">
         <pixelsize>25</pixelsize>
         <color>#FFFFFF</color>
-    </font>
+    </fontdef>
 
-    <font name="baseextrasmall" from="basesmall">
+    <fontdef name="baseextrasmall" from="basesmall">
         <pixelsize>20</pixelsize>
-    </font>
+    </fontdef>
 
-    <font name="basesmallblk" from="basesmall">
+    <fontdef name="basesmallblk" from="basesmall">
         <color>#000000</color>
-    </font>
+    </fontdef>
 
-    <font name="baseextrasmallblk" from="basesmallblk">
+    <fontdef name="baseextrasmallblk" from="basesmallblk">
         <pixelsize>20</pixelsize>
-    </font>
+    </fontdef>
 
-    <font name="basesmallred" from="basesmall">
+    <fontdef name="basesmallred" from="basesmall">
         <color>#FF0000</color>
-    </font>
+    </fontdef>
 
-    <font name="basesmallblue" from="basesmall">
+    <fontdef name="basesmallblue" from="basesmall">
         <color>#0000FF</color>
-    </font>
+    </fontdef>
 
-    <font name="basesmallgreen" from="basesmall">
+    <fontdef name="basesmallgreen" from="basesmall">
         <color>#00FF00</color>
-    </font>
+    </fontdef>
 
-    <font name="basesmalllightblue" from="basesmall">
+    <fontdef name="basesmalllightblue" from="basesmall">
         <color>#0767AB</color>
-    </font>
+    </fontdef>
 
-    <font name="basegothicsmalllightblue" from="basegothicsmall">
+    <fontdef name="basegothicsmalllightblue" from="basegothicsmall">
         <color>#0767AB</color>
-    </font>
+    </fontdef>
 
-    <font name="basesmalllightgreen" from="basesmall">
+    <fontdef name="basesmalllightgreen" from="basesmall">
         <color>#00FF22</color>
-    </font>
+    </fontdef>
 
     <!-- Used for Menu items -->
-    <font name="basenormal" from="basesmall">
+    <fontdef name="basenormal" from="basesmall">
         <!--<size>20</size>-->
         <pixelsize>29</pixelsize>
-    </font>
+    </fontdef>
 
     <!-- Used for Menu items -->
-    <font name="basenormalblk" from="basesmallblk">
+    <fontdef name="basenormalblk" from="basesmallblk">
         <!--<size>20</size>-->
         <pixelsize>29</pixelsize>
-    </font>
+    </fontdef>
 
     <!-- Used for plots, long descriptions, clock -->
-    <font name="basesmallest" from="basesmall">
+    <fontdef name="basesmallest" from="basesmall">
         <!--<size>15</size>-->
         <pixelsize>21</pixelsize>
-    </font>
+    </fontdef>
 
     <!-- Used for Menu Headings, Sub-subtitles (year, etc)  -->
-    <font name="basemedium" from="basesmall">
+    <fontdef name="basemedium" from="basesmall">
         <pixelsize>35</pixelsize>
-    </font>
+    </fontdef>
 
-    <font name="basegothicmedium" from="basegothicsmall">
+    <fontdef name="basegothicmedium" from="basegothicsmall">
         <pixelsize>55</pixelsize>
-    </font>
+    </fontdef>
 
-    <font name="basegothicmid" from="basegothicsmall">
+    <fontdef name="basegothicmid" from="basegothicsmall">
         <pixelsize>38</pixelsize>
-    </font>
+    </fontdef>
 
-    <font name="basemid" from="basesmall">
+    <fontdef name="basemid" from="basesmall">
         <pixelsize>38</pixelsize>
-    </font>
+    </fontdef>
 
-    <font name="basemediumblue" from="basesmalllightblue">
+    <fontdef name="basemediumblue" from="basesmalllightblue">
         <pixelsize>35</pixelsize>
-    </font>
+    </fontdef>
 
-    <font name="basegothicmediumblue" from="basegothicsmalllightblue">
+    <fontdef name="basegothicmediumblue" from="basegothicsmalllightblue">
         <pixelsize>55</pixelsize>
-    </font>
+    </fontdef>
 
-    <font name="basegothicmidblue" from="basegothicsmalllightblue">
+    <fontdef name="basegothicmidblue" from="basegothicsmalllightblue">
         <color>#3A9ADE</color>
         <pixelsize>38</pixelsize>
-    </font>
+    </fontdef>
 
-    <font name="basemidblue" from="basesmalllightblue">
+    <fontdef name="basemidblue" from="basesmalllightblue">
         <pixelsize>38</pixelsize>
-    </font>
+    </fontdef>
 
     <!-- Used for Menu Headings, Sub-subtitles (year, etc)  -->
-    <font name="basemediumblk" from="basemedium">
+    <fontdef name="basemediumblk" from="basemedium">
         <color>#000000</color>
-    </font>
+    </fontdef>
 
     <!-- Used for Page Headers, Time, Subtitle -->
-    <font name="baselarge" from="basesmall">
+    <fontdef name="baselarge" from="basesmall">
         <pixelsize>49</pixelsize>
-    </font>
+    </fontdef>
 
-    <font name="basegothiclarge" from="basegothicsmall">
+    <fontdef name="basegothiclarge" from="basegothicsmall">
         <pixelsize>49</pixelsize>
-    </font>
+    </fontdef>
 
     <!-- Used for Titles -->
-    <font name="baseextralarge" from="basesmall">
+    <fontdef name="baseextralarge" from="basesmall">
         <pixelsize>72</pixelsize>
-    </font>
+    </fontdef>
 
     <!--Buttonlist for the popup menu -->
     <buttonlist name="basepopupbuttonlist">

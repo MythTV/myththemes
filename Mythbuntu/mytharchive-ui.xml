@@ -7,32 +7,32 @@ Common MythArchive window definitions
 
     <window name="selectdestination">
 
-        <font name="title" from="basesmall">
+        <fontdef name="title" from="basesmall">
             <color>#ffff00</color>
             <dropcolor>#000000</dropcolor>
             <size>24</size>
             <shadow>3,3</shadow>
-        </font>
+        </fontdef>
 
-        <font name="description" from="basesmall">
+        <fontdef name="description" from="basesmall">
             <color>#ffffff</color>
             <size>18</size>
-        </font>
+        </fontdef>
 
-        <font name="detail" from="basesmall">
+        <fontdef name="detail" from="basesmall">
             <color>#ffffff</color>
             <size>14</size>
-        </font>
+        </fontdef>
 
-        <font name="detailtitle" from="basesmall">
+        <fontdef name="detailtitle" from="basesmall">
             <color>#ffff00</color>
             <size>14</size>
-        </font>
+        </fontdef>
 
-        <font name="label" from="basesmall">
+        <fontdef name="label" from="basesmall">
             <color>#ffff00</color>
             <size>16</size>
-        </font>
+        </fontdef>
 
         <!--
             destination selector
@@ -138,12 +138,12 @@ Common MythArchive window definitions
   -->
   <window name="recording_selector">
 
-        <font name="title" from="baselarge">
+        <fontdef name="title" from="baselarge">
             <color>#ffff00</color>
             <dropcolor>#000000</dropcolor>
             <size>24</size>
             <shadow>3,3</shadow>
-        </font>
+        </fontdef>
 
         <shape name="topbackground" from="basebackground">
             <area>30,60,1220,300</area>
@@ -250,12 +250,12 @@ Common MythArchive window definitions
   -->
 
     <window name="file_selector">
-        <font name="title" from="baselarge">
+        <fontdef name="title" from="baselarge">
             <color>#ffff00</color>
             <dropcolor>#000000</dropcolor>
             <size>24</size>
             <shadow>3,3</shadow>
-        </font>
+        </fontdef>
 
         <textarea name="title_text" from="basetextarea">
             <area>0,5,1280,45</area>
@@ -325,12 +325,12 @@ Common MythArchive window definitions
   -->
   <window name="video_selector">
 
-        <font name="title" from="baselarge">
+        <fontdef name="title" from="baselarge">
             <color>#ffff00</color>
             <dropcolor>#000000</dropcolor>
             <size>24</size>
             <shadow>3,3</shadow>
-        </font>
+        </fontdef>
 
         <shape name="topbackground" from="basebackground">
             <area>30,60,1220,340</area>
@@ -443,12 +443,12 @@ Common MythArchive window definitions
 
     <window name="logviewer">
 
-        <font name="title" from="basesmall">
+        <fontdef name="title" from="basesmall">
             <color>#ffff00</color>
             <dropcolor>#000000</dropcolor>
             <size>24</size>
             <shadow>3,3</shadow>
-        </font>
+        </fontdef>
 
         <textarea name="title1" from="basetextarea">
             <area>0,10,1280,50</area>

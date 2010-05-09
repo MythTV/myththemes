@@ -4,9 +4,9 @@
 
         <area>-1,-1,580,165</area>
 
-        <font name="key" from="basesmall">
+        <fontdef name="key" from="basesmall">
             <size>12</size>
-        </font>
+        </fontdef>
 
         <imagetype name="backimg">
             <filename>images/textentry_bg.png</filename>

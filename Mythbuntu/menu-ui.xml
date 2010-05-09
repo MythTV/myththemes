@@ -14,15 +14,15 @@
             <fill color="#000000" alpha="150" />
         </shape>
 
-        <font name="menufont" from="baseextralarge">
+        <fontdef name="menufont" from="baseextralarge">
             <color>#FFFFFF</color>
             <size>28</size>
-        </font>
+        </fontdef>
 
-        <font name="selectedmenufont" from="menufont">
+        <fontdef name="selectedmenufont" from="menufont">
             <color>#FFFFFF</color>
             <size>36</size>
-        </font>
+        </fontdef>
 
         <buttonlist name="menu">
             <area>40,95,740,580</area>

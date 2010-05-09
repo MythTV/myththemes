@@ -157,7 +157,7 @@
 
         <textarea name="tagline" from="basetextarea">
             <area>45,460,674,57</area>
-            <multiline>yes</multiline>
+            <multiline>no</multiline>
             <font>basesmalllightblue</font>
             <align>left,vcenter</align>
             <cutdown>yes</cutdown>
@@ -449,7 +449,7 @@
 
         <textarea name="tagline" from="basetextarea">
             <area>45,460,674,57</area>
-            <multiline>yes</multiline>
+            <multiline>no</multiline>
             <font>basesmalllightblue</font>
             <align>left,vcenter</align>
             <cutdown>yes</cutdown>
@@ -628,7 +628,7 @@
 
         <textarea name="tagline" from="basetextarea">
             <area>45,460,674,57</area>
-            <multiline>yes</multiline>
+            <multiline>no</multiline>
             <font>basesmalllightblue</font>
             <align>left,vcenter</align>
             <cutdown>yes</cutdown>
@@ -859,7 +859,7 @@
 
         <textarea name="tagline" from="basetextarea">
             <area>45,460,674,57</area>
-            <multiline>yes</multiline>
+            <multiline>no</multiline>
             <font>basesmalllightblue</font>
             <align>left,vcenter</align>
             <cutdown>yes</cutdown>

@@ -2,7 +2,7 @@
 <mythuitheme>
 
     <!-- dark green -->
-    <fontdef name="dgreen" face="PenguinAttack">
+    <fontdef name="dgreen" face="Penguin Attack">
         <size>14</size>
         <color>#106732</color>
     </fontdef>
@@ -27,7 +27,7 @@
     </fontdef>
 
     <!-- light green -->
-    <fontdef name="lgreen" face="PenguinAttack">
+    <fontdef name="lgreen" face="Penguin Attack">
         <size>14</size>
         <color>#77ab77</color>
     </fontdef>
@@ -52,7 +52,7 @@
     </fontdef>
 
     <!-- white green -->
-    <fontdef name="wgreen" face="PenguinAttack">
+    <fontdef name="wgreen" face="Penguin Attack">
         <size>14</size>
         <color>#bed996</color>
     </fontdef>
@@ -77,7 +77,7 @@
     </fontdef>
 
     <!-- dark pink -->
-    <fontdef name="dpink" face="PenguinAttack">
+    <fontdef name="dpink" face="Penguin Attack">
         <size>14</size>
         <color>#dabdc1</color>
     </fontdef>
@@ -95,7 +95,7 @@
     </fontdef>
 
     <!-- light pink -->
-    <fontdef name="lpink" face="PenguinAttack">
+    <fontdef name="lpink" face="Penguin Attack">
         <size>14</size>
         <color>#f8dcd9</color>
     </fontdef>

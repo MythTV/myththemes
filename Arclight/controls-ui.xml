@@ -62,7 +62,7 @@
             <area>1620,-2,303,50</area>
             <font>basesmall</font>
             <align>allcenter</align>
-            <format>%DATE%, %TIME%</format>
+            <template>%DATE%, %TIME%</template>
         </clock>
 
         <shape name="infobox">

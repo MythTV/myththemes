@@ -353,12 +353,10 @@
     </window>
 
     <window name="importnative">
+
         <fontdef name="title" from="baselarge">
             <color>#ffff00</color>
-            <dropcolor>#000000</dropcolor>
-            <size>24</size>
-            <shadow>3,3</shadow>
-            <bold>yes</bold>
+            <pixelsize>33</pixelsize>
         </fontdef>
 
         <textarea name="title1" from="basetextarea">

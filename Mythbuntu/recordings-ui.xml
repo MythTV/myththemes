@@ -40,9 +40,9 @@
         </shape>
 
         <clock name="clock">
-            <area>420,23,520,60</area>
+            <area>420,10,520,60</area>
             <font>baselarge</font>
-            <align>left</align>
+            <align>vcenter,left</align>
             <format>%DATE%, %TIME%</format>
         </clock>
 

@@ -39,6 +39,14 @@
             <line color="#FFFFFF" alpha="0" width="0" />
         </shape>
 
+        <clock name="clock">
+            <area>420,23,520,60</area>
+            <font>baselarge</font>
+            <font>clock</font>    
+            <align>left</align>
+            <format>%DATE%, %TIME%</format>
+        </clock>
+
         <textarea name="pagetitle" from="basetextarea">
             <area>50,10,670,60</area>
             <font>baselarge</font>

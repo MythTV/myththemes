@@ -4,8 +4,130 @@
 
 <!-- Arclight-osd -->
 
+    <!-- Popup Dialogue Box -->
+    <window name="MythPopupBox">
+        <area>-1,-1,518,633</area>
+
+        <fontdef name="basenormal" face="CartoGothic Std">
+            <color>#FFFFFF</color>
+            <pixelsize>29</pixelsize>
+        </fontdef>
+
+        <imagetype name="backimg">
+            <filename>images/arclight_popup_bg2.png</filename>
+        </imagetype>
+
+        <textarea name="messagearea">
+            <area>35,40,448,195</area>
+            <multiline>yes</multiline>
+            <font>basenormal</font>
+            <align>allcenter</align>
+        </textarea>
+
+        <imagetype name="dialogboxoverlay">
+            <position>0,0</position>
+            <filename>images/arclight_popup_overlay.png</filename>
+        </imagetype>
+
+        <buttonlist name="list">
+            <area>36,249,444,328</area>
+            <wrapstyle>items</wrapstyle>
+            <drawfrombottom>yes</drawfrombottom>
+            <align>center</align>
+            <showarrow>no</showarrow>
+            <layout>vertical</layout>
+            <spacing>0</spacing>
+            <buttonarea>0,0,100%,100%</buttonarea>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>0,0,100%,54</area>
+                    <imagetype name="buttonline">
+                        <area>0,52,442,2</area>
+                        <filename>images/arclight_popup_divider.png</filename>
+                    </imagetype>
+                    <textarea name="buttontext">
+                        <area>5,5,434,54</area>
+                        <font>basenormal</font>
+                        <cutdown>yes</cutdown>
+                        <align>allcenter</align>
+                        <alpha>100</alpha>
+                    </textarea>
+                    <statetype name="buttoncheck">
+                        <position>91%,10</position>
+                        <state type="off">
+                            <imagetype name="checkoff">
+                            </imagetype>
+                        </state>
+                        <state type="half">
+                            <imagetype name="checkhalf">
+                            </imagetype>
+                        </state>
+                        <state type="full">
+                            <imagetype name="checkfull">
+                            </imagetype>
+                        </state>
+                    </statetype>
+                    <imagetype name="buttonarrow">
+                        <position>405,18</position>
+                        <filename>images/arclight_popup_rightarrow.png</filename>
+                        <alpha>100</alpha>
+                    </imagetype>
+                </state>
+                <state name="selectedactive" from="active">
+                    <textarea name="buttontext">
+                        <alpha>255</alpha>
+                    </textarea>
+                    <imagetype name="buttonarrow">
+                        <alpha>255</alpha>
+                    </imagetype>
+                </state>
+                <state name="selectedinactive" from="active">
+                    <imagetype name="buttonbackground">
+                        <alpha>100</alpha>
+                    </imagetype>
+                </state>
+            </statetype>
+            <statetype name="upscrollarrow">
+                <position>395,326</position>
+                <state type="off">
+                    <imagetype name="upoff">
+                        <filename>images/arclight_popup_uparrow.png</filename>
+                        <alpha>60</alpha>
+                    </imagetype>
+                </state>
+                <state type="full">
+                    <imagetype name="upon">
+                        <filename>images/arclight_popup_uparrow.png</filename>
+                        <alpha>190</alpha>
+                    </imagetype>
+                </state>
+            </statetype>
+            <statetype name="downscrollarrow">
+                <position>412,326</position>
+                <state type="off">
+                    <imagetype name="dnoff">
+                        <filename>images/arclight_popup_downarrow.png</filename>
+                        <alpha>60</alpha>
+                    </imagetype>
+                </state>
+                <state type="full">
+                    <imagetype name="dnon">
+                        <filename>images/arclight_popup_downarrow.png</filename>
+                        <alpha>190</alpha>
+                    </imagetype>
+                </state>
+            </statetype>
+        </buttonlist>
+
+    </window>
+
     <window name="osd_message">
         <area>1200,60,706,298</area>
+
+        <fontdef name="basenormal" face="CartoGothic Std">
+            <color>#FFFFFF</color>
+            <pixelsize>29</pixelsize>
+        </fontdef>
 
         <shape name="panel_dark">
             <area>15,15,676,268</area>
@@ -17,7 +139,7 @@
             <filename>images/textentry_bg.png</filename>
         </imagetype>
 
-        <textarea name="message_text" from="basetextarea">
+        <textarea name="message_text">
             <area>53,80,600,150</area>
             <font>basenormal</font>
             <align>allcenter</align>
@@ -34,6 +156,11 @@
     <window name="osd_input">
         <area>1200,60,706,298</area>
 
+        <fontdef name="basegothicmedium" face="League Gothic">
+            <pixelsize>55</pixelsize>
+            <color>#FFFFFF</color>
+        </fontdef>
+
         <shape name="panel_dark">
             <area>15,15,676,268</area>
             <fill color="#000000" alpha="150" />
@@ -44,7 +171,7 @@
             <filename>images/textentry_bg.png</filename>
         </imagetype>
 
-        <textarea name="osd_number_entry" from="basetextarea">
+        <textarea name="osd_number_entry">
             <area>53,80,600,150</area>
             <font>basegothicmedium</font>
             <align>allcenter</align>
@@ -60,6 +187,34 @@
 
     <window name="program_info">
         <area>0,0,1920,1080</area>
+
+        <fontdef name="basesmall" face="CartoGothic Std">
+            <pixelsize>25</pixelsize>
+            <color>#FFFFFF</color>
+        </fontdef>
+
+        <fontdef name="basegothicmedium" face="League Gothic">
+            <pixelsize>55</pixelsize>
+            <color>#FFFFFF</color>
+        </fontdef>
+
+        <fontdef name="basegothicsmall" face="League Gothic">
+            <pixelsize>25</pixelsize>
+            <color>#FFFFFF</color>
+        </fontdef>
+
+        <fontdef name="basegothicsmalllightblue" from="basegothicsmall">
+            <color>#0767AB</color>
+        </fontdef>
+
+        <fontdef name="basegothicmidblue" from="basegothicsmalllightblue">
+            <color>#3A9ADE</color>
+            <pixelsize>38</pixelsize>
+        </fontdef>
+
+        <fontdef name="basesmalllightblue" from="basesmall">
+            <color>#0767AB</color>
+        </fontdef>
 
         <imagetype name="leftpanel_bg">
             <position>-20,0</position>
@@ -105,13 +260,13 @@
             <preserveaspect>true</preserveaspect>
         </imagetype>
 
-        <textarea name="title" from="basetextarea">
+        <textarea name="title">
             <area>45,54,674,60</area>
             <font>basegothicmedium</font>
             <align>left,vcenter</align>
         </textarea>
 
-        <textarea name="subtitle" from="basetextarea">
+        <textarea name="subtitle">
             <area>45,105,674,57</area>
             <multiline>no</multiline>
             <font>basegothicmidblue</font>
@@ -119,7 +274,7 @@
             <cutdown>yes</cutdown>
         </textarea>
 
-        <textarea name="starttime" from="basetextarea">
+        <textarea name="starttime">
             <area>45,145,674,57</area>
             <multiline>yes</multiline>
             <font>basesmalllightblue</font>
@@ -128,7 +283,7 @@
             <template>%STARTTIME%-%ENDTIME%, %RECSTARTDATE%</template>
         </textarea>
 
-        <textarea name="channel" from="basetextarea">
+        <textarea name="channel">
             <area>45,180,674,57</area>
             <multiline>yes</multiline>
             <font>basesmalllightblue</font>
@@ -136,7 +291,7 @@
             <cutdown>yes</cutdown>
         </textarea>
 
-        <textarea name="description" from="basetextarea">
+        <textarea name="description">
             <area>45,230,674,300</area>
             <multiline>yes</multiline>
             <font>basesmall</font>
@@ -148,6 +303,34 @@
 
     <window name="browse_info">
         <area>0,0,1920,1080</area>
+
+        <fontdef name="basesmall" face="CartoGothic Std">
+            <pixelsize>25</pixelsize>
+            <color>#FFFFFF</color>
+        </fontdef>
+
+        <fontdef name="basesmalllightblue" from="basesmall">
+            <color>#0767AB</color>
+        </fontdef>
+
+        <fontdef name="basegothicmedium" face="League Gothic">
+            <pixelsize>55</pixelsize>
+            <color>#FFFFFF</color>
+        </fontdef>
+
+        <fontdef name="basegothicsmall" face="League Gothic">
+            <pixelsize>25</pixelsize>
+            <color>#FFFFFF</color>
+        </fontdef>
+
+        <fontdef name="basegothicsmalllightblue" from="basegothicsmall">
+            <color>#0767AB</color>
+        </fontdef>
+
+        <fontdef name="basegothicmidblue" from="basegothicsmalllightblue">
+            <color>#3A9ADE</color>
+            <pixelsize>38</pixelsize>
+        </fontdef>
 
         <imagetype name="leftpanel_bg">
             <position>-20,0</position>
@@ -183,14 +366,14 @@
             <preserveaspect>true</preserveaspect>
         </imagetype>
 
-        <textarea name="title" from="basetextarea">
+        <textarea name="title">
             <area>45,54,674,60</area>
             <font>basegothicmedium</font>
             <align>left,vcenter</align>
             <template>(%CHANNUM%) %TITLE%</template>
         </textarea>
 
-        <textarea name="subtitle" from="basetextarea">
+        <textarea name="subtitle">
             <area>45,105,674,57</area>
             <multiline>no</multiline>
             <font>basegothicmidblue</font>
@@ -198,7 +381,7 @@
             <cutdown>yes</cutdown>
         </textarea>
 
-        <textarea name="starttime" from="basetextarea">
+        <textarea name="starttime">
             <area>45,145,674,57</area>
             <multiline>yes</multiline>
             <font>basesmalllightblue</font>
@@ -207,7 +390,7 @@
             <template>%STARTTIME%-%ENDTIME%, %RECSTARTDATE%</template>
         </textarea>
 
-        <textarea name="channel" from="basetextarea">
+        <textarea name="channel">
             <area>45,180,674,57</area>
             <multiline>yes</multiline>
             <font>basesmalllightblue</font>
@@ -215,7 +398,7 @@
             <cutdown>yes</cutdown>
         </textarea>
 
-        <textarea name="description" from="basetextarea">
+        <textarea name="description">
             <area>45,230,674,430</area>
             <multiline>yes</multiline>
             <font>basesmall</font>
@@ -228,23 +411,36 @@
     <window name="osd_status">
         <area>838,736,1029,312</area>
 
+        <fontdef name="basenormal" face="CartoGothic Std">
+            <color>#FFFFFF</color>
+            <pixelsize>29</pixelsize>
+        </fontdef>
+
         <imagetype name="entry_bg">
             <position>0,0</position>
             <filename>images/osd_bg.png</filename>
         </imagetype>
 
-        <textarea name="title" from="basetextarea">
+        <textarea name="title">
             <area>61,80,900,50</area>
             <font>basenormal</font>
             <align>allcenter</align>
             <multiline>false</multiline>
         </textarea>
 
-        <progressbar name="position" from="basewideprogressbar">
+        <progressbar name="position">
             <position>61,166</position>
+            <layout>horizontal</layout>
+            <style>reveal</style>
+            <imagetype name="background">
+                <filename>images/progressbar/progressbar_large_background.png</filename>
+            </imagetype>
+            <imagetype name="progressimage">
+                <filename>images/progressbar/progressbar_large_fill.png</filename>
+            </imagetype>
         </progressbar>
 
-        <textarea name="description" from="basetextarea">
+        <textarea name="description">
             <area>61,200,900,50</area>
             <font>basenormal</font>
             <align>allcenter</align>
@@ -262,6 +458,30 @@
     <window name="ChannelEditor">
         <area>-1,-1,1920,1079</area>
 
+        <fontdef name="basesmall" face="CartoGothic Std">
+            <pixelsize>25</pixelsize>
+            <color>#FFFFFF</color>
+        </fontdef>
+
+        <fontdef name="basegothicmedium" face="League Gothic">
+            <pixelsize>55</pixelsize>
+            <color>#FFFFFF</color>
+        </fontdef>
+
+        <fontdef name="basegothicsmall" face="League Gothic">
+            <pixelsize>25</pixelsize>
+            <color>#FFFFFF</color>
+        </fontdef>
+
+        <fontdef name="basegothicsmalllightblue" from="basegothicsmall">
+            <color>#0767AB</color>
+        </fontdef>
+
+        <fontdef name="basegothicmidblue" from="basegothicsmalllightblue">
+            <color>#3A9ADE</color>
+            <pixelsize>38</pixelsize>
+        </fontdef>
+
         <shape name="rightpanel_dark">
             <area>1238,0,682,1080</area>
             <fill color="#000000" alpha="150" />
@@ -278,14 +498,14 @@
             <fill color="#000000" alpha="180" />
         </shape>
 
-        <textarea name="tit" from="basetextarea">
+        <textarea name="tit">
             <area>1260,234,674,60</area>
             <font>basegothicmedium</font>
             <align>left,vcenter</align>
             <value>Channel Editor</value>
         </textarea>
 
-        <textarea name="message" from="basetextarea">
+        <textarea name="message">
             <area>1260,285,674,57</area>
             <multiline>yes</multiline>
             <font>basesmalllightblue</font>
@@ -294,56 +514,108 @@
             <value>Edit the details about this channel.</value>
         </textarea>
 
-        <textarea name="callsign_label" from="basetextarea">
+        <textarea name="callsign_label">
             <area>1140,392,250,30</area>
             <align>right,vcenter</align>
             <font>basesmall</font>
             <value>Callsign:</value>
         </textarea>
 
-        <textedit name="callsign" from="basetextedit">
-            <position>1396,384</position>
+        <textedit name="callsign">
+            <area>1396,384,500,38</area>
+            <statetype name="background">
+                <state name="active">
+                    <imagetype name="background">
+                        <filename>images/textedit_unselected.png</filename>
+                    </imagetype>
+                </state>
+                <state name="selected">
+                    <imagetype name="background">
+                        <filename>images/textedit_selected.png</filename>
+                    </imagetype>
+                </state>
+                <state name="inactive">
+                    <imagetype name="background">
+                        <filename>images/textedit_unselected.png</filename>
+                    </imagetype>
+                </state>
+            </statetype>
+            <imagetype name="cursor">
+                <position>0,0</position>
+                <filename>images/textedit_cursor.png</filename>
+            </imagetype>
+            <textarea name="text">
+                <area>5,8,490,30</area>
+                <font>basesmall</font>
+                <align>allcenter</align>
+            </textarea>
         </textedit>
 
-        <textarea name="channum_label" from="basetextarea">
+        <textarea name="channum_label">
             <area>1140,452,250,30</area>
             <align>right,vcenter</align>
             <font>basesmall</font>
             <value>Channel #:</value>
         </textarea>
 
-        <textedit name="channum" from="basetextedit">
+        <textedit name="channum" from="callsign">
             <position>1396,444</position>
         </textedit>
 
-        <textarea name="channame_label" from="basetextarea">
+        <textarea name="channame_label">
             <area>1140,512,250,30</area>
             <align>right,vcenter</align>
             <font>basesmall</font>
             <value>Chan Name:</value>
         </textarea>
 
-        <textedit name="channame" from="basetextedit">
+        <textedit name="channame" from="callsign">
             <position>1396,504</position>
         </textedit>
 
-        <textarea name="xmltv_label" from="basetextarea">
+        <textarea name="xmltv_label">
             <area>1140,572,250,30</area>
             <align>right,vcenter</align>
             <font>basesmall</font>
             <value>XMLTV #:</value>
         </textarea>
 
-        <textedit name="XMLTV" from="basetextedit">
+        <textedit name="XMLTV" from="callsign">
             <position>1396,564</position>
         </textedit>
 
-        <button name="probe" from="basebutton">
+        <button name="probe">
             <position>1396,694</position>
             <value>Probe</value>
+            <statetype name="buttonstate">
+                <state name="active">
+                    <imagetype name="buttonbackground">
+                        <area>0,0,156,38</area>
+                        <filename>images/spinbox_unselected.png</filename>
+                    </imagetype>
+                    <textarea name="text">
+                        <area>5,8,146,30</area>
+                        <align>allcenter</align>
+                        <font>basesmall</font>
+                        <alpha>100</alpha>
+                    </textarea>
+                </state>
+                <state name="selected" from="active">
+                    <imagetype name="buttonbackground">
+                        <area>0,0,156,38</area>
+                        <filename>images/spinbox_selected.png</filename>
+                    </imagetype>
+                    <textarea name="text">
+                        <alpha>255</alpha>
+                    </textarea>
+                </state>
+                <state name="disabled" from="active" />
+                <state name="pushed" from="selected">
+                </state>
+            </statetype>
         </button>
 
-        <button name="ok" from="basebutton">
+        <button name="ok" from="probe">
             <position>1594,694</position>
             <value>OK</value>
         </button>
@@ -353,40 +625,45 @@
     <window name="osd_program_editor">
         <area>838,736,1029,312</area>
 
+        <fontdef name="basenormal" face="CartoGothic Std">
+            <color>#FFFFFF</color>
+            <pixelsize>29</pixelsize>
+        </fontdef>
+
         <imagetype name="entry_bg">
             <position>0,0</position>
             <filename>images/osd_bg.png</filename>
         </imagetype>
 
-        <textarea name="title" from="basetextarea">
+        <textarea name="title">
             <area>61,80,450,50</area>
             <font>basenormal</font>
             <align>left,vcenter</align>
             <multiline>false</multiline>
         </textarea>
 
-        <textarea name="seekamount" from="basetextarea">
+        <textarea name="seekamount">
             <area>511,80,450,50</area>
             <font>basenormal</font>
             <align>right,vcenter</align>
             <multiline>false</multiline>
         </textarea>
 
-        <textarea name="timedisplay" from="basetextarea">
+        <textarea name="timedisplay">
             <area>261,220,500,50</area>
             <font>basenormal</font>
             <align>allcenter</align>
             <multiline>false</multiline>
         </textarea>
 
-        <textarea name="cutindicator" from="basetextarea">
+        <textarea name="cutindicator">
             <area>61,220,200,50</area>
             <font>basenormal</font>
             <align>left,vcenter</align>
             <multiline>false</multiline>
         </textarea>
 
-        <textarea name="framedisplay" from="basetextarea">
+        <textarea name="framedisplay">
             <area>761,220,200,50</area>
             <font>basenormal</font>
             <align>right,vcenter</align>

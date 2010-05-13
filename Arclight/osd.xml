@@ -639,7 +639,7 @@
         </fontdef>
 
         <imagetype name="entry_bg">
-            <position>0,0</position>
+            <area>0,0,1029,312</area>
             <filename>images/osd_bg.png</filename>
         </imagetype>
 
@@ -712,7 +712,7 @@
         </editbar>
 
         <imagetype name="entry_overlay">
-            <position>28,18</position>
+            <area>28,18,975,149</area>
             <filename>images/osd_overlay.png</filename>
         </imagetype>
 

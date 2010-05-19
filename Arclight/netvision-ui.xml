@@ -558,7 +558,7 @@
             <area>45,334,674,60</area>
             <font>basegothicmedium</font>
             <align>left,vcenter</align>
-            <value>Manage Tree Subscriptions</value>
+            <value>Manage Subscriptions</value>
         </textarea>
 
         <textarea name="subtitle" from="basetextarea">
@@ -567,7 +567,7 @@
             <font>basesmalllightblue</font>
             <align>left,vcenter</align>
             <cutdown>yes</cutdown>
-            <value>Choose the sites you wish to browse.</value>
+            <value>Choose the sites you wish to browse/search.</value>
         </textarea>
 
         <buttonlist name="grabbers">

@@ -13,14 +13,143 @@
             <line color="#000000" alpha="230" width="-1" />
         </shape>
 
-        <buttonlist name="results" from="baserecordinglistwide">
-            <area>786,542,1136,540</area>
+        <buttonlist name="results" from="baseVBLwide">
+            <align>bottom</align>
+            <area>786,172,1136,909</area>
             <scrollstyle>free</scrollstyle>
             <wrapstyle>items</wrapstyle>
             <layout>vertical</layout>
-            <spacing>1</spacing>
-            <drawfrombottom>true</drawfrombottom>
-            <buttonarea>2,0,1136,540</buttonarea>
+            <spacing>0</spacing>
+            <buttonarea>2,0,1136,909</buttonarea>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <imagetype name="buttonimage">
+                        <area>10,5,100,80</area>
+                        <preserveaspect>true</preserveaspect>
+                    </imagetype>
+                    <textarea name="buttontext">
+                        <area>0,0,0,0</area>
+                    </textarea>
+                    <textarea name="title">
+                        <area>130,10,453,40</area>
+                        <align>left,vcenter</align>
+                        <font>basemedium</font>
+                        <alpha>210</alpha>
+                    </textarea>
+                    <textarea name="subtitle">
+                        <area>150,56,430,30</area>
+                        <align>left,vcenter</align>
+                        <font>basesmall</font>
+                        <alpha>210</alpha>
+                    </textarea>
+                    <textarea name="releasedate" from="timedate">
+                        <template>Released %1</template>
+                    </textarea>
+                </state>
+                <state name="selectedactive">
+                    <imagetype name="buttonimage">
+                        <area>10,5,100,190</area>
+                        <preserveaspect>true</preserveaspect>
+                    </imagetype>
+                    <textarea name="buttontext">
+                        <area>0,0,0,0</area>
+                    </textarea>
+                    <textarea name="title">
+                        <area>130,10,453,40</area>
+                        <align>left,vcenter</align>
+                        <font>basemedium</font>
+                        <alpha>210</alpha>
+                    </textarea>
+                    <textarea name="subtitle">
+                        <area>150,56,430,30</area>
+                        <align>left,vcenter</align>
+                        <font>basesmall</font>
+                        <alpha>210</alpha>
+                    </textarea>
+                    <textarea name="releasedate" from="timedate">
+                        <template>Released %1</template>
+                    </textarea>
+                    <textarea name="userrating" from="basetextarea">
+                        <area>700,56,423,30</area>
+                        <multiline>no</multiline>
+                        <align>vcenter,right</align>
+                        <alpha>210</alpha>
+                        <template>User Rating: %1</template>
+                    </textarea>
+                    <textarea name="description" from="basetextarea">
+                        <area>130,97,1000,82</area>
+                        <multiline>yes</multiline>
+                        <align>vcenter,left</align>
+                        <alpha>160</alpha>
+                    </textarea>
+                </state>
+            </statetype>
+        </buttonlist>
+
+    </window>
+
+    <window name="artworksel">
+        <area>-1,-1,1920,1080</area>
+
+        <shape name="shape">
+            <area>784,0,1138,1080</area>
+            <type>box</type>
+            <fill color="#000000" alpha="230" />
+            <line color="#000000" alpha="230" width="-1" />
+        </shape>
+
+        <buttonlist name="results" from="baseVBLwide">
+            <align>bottom</align>
+            <area>786,172,1136,909</area>
+            <scrollstyle>free</scrollstyle>
+            <wrapstyle>items</wrapstyle>
+            <layout>vertical</layout>
+            <spacing>0</spacing>
+            <buttonarea>2,0,1136,909</buttonarea>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <imagetype name="buttonimage">
+                        <area>10,5,300,80</area>
+                        <preserveaspect>true</preserveaspect>
+                    </imagetype>
+                    <textarea name="buttontext">
+                        <area>0,0,0,0</area>
+                    </textarea>
+                    <textarea name="url">
+                        <area>330,10,750,40</area>
+                        <align>left,vcenter</align>
+                        <font>basenormal</font>
+                        <alpha>210</alpha>
+                    </textarea>
+                    <textarea name="resolution">
+                        <area>350,56,580,30</area>
+                        <align>left,vcenter</align>
+                        <font>basesmall</font>
+                        <alpha>210</alpha>
+                    </textarea>
+                </state>
+                <state name="selectedactive">
+                    <imagetype name="buttonimage">
+                        <area>10,5,400,190</area>
+                        <preserveaspect>true</preserveaspect>
+                    </imagetype>
+                    <textarea name="buttontext">
+                        <area>0,0,0,0</area>
+                    </textarea>
+                    <textarea name="url">
+                        <area>430,10,700,40</area>
+                        <align>left,vcenter</align>
+                        <font>basenormal</font>
+                        <alpha>210</alpha>
+                    </textarea>
+                    <textarea name="resolution">
+                        <area>450,56,530,30</area>
+                        <align>left,vcenter</align>
+                        <font>basesmall</font>
+                        <alpha>210</alpha>
+                    </textarea>
+                </state>
+            </statetype>
         </buttonlist>
 
     </window>
@@ -1012,86 +1141,86 @@
         <!-- Labels  -->
 
         <textarea name="title_text" from="basetextarea">
-            <area>8,65,190,40</area>
+            <area>8,25,190,40</area>
             <value>Title:</value>
             <align>right,vcenter</align>
         </textarea>
 
         <textarea name="subtitle_text" from="title_text">
-            <position>8,125</position>
+            <position>8,75</position>
             <value>Subtitle:</value>
         </textarea>
 
         <textarea name="tagline_text" from="title_text">
-            <position>8,185</position>
+            <position>8,125</position>
             <value>Tagline:</value>
         </textarea>
 
         <textarea name="rating_text" from="title_text">
-            <position>8,245</position>
+            <position>8,175</position>
             <value>Rating:</value>
         </textarea>
 
         <textarea name="director_text" from="title_text">
-            <position>8,305</position>
+            <position>8,225</position>
             <value>Director:</value>
         </textarea>
 
         <textarea name="inetref_text" from="title_text">
-            <position>8,365</position>
+            <position>8,275</position>
             <value>TMDB Number:</value>
         </textarea>
 
         <textarea name="desc_text" from="title_text">
-            <position>8,425</position>
+            <position>8,325</position>
             <value>Plot:</value>
         </textarea>
 
         <textarea name="coverart_text_label" from="title_text">
-            <position>8,605</position>
+            <position>8,495</position>
             <value>Cover Art:</value>
         </textarea>
 
         <textarea name="screenshot_text_label" from="title_text">
-            <position>8,665</position>
+            <position>8,595</position>
             <value>Screenshot:</value>
         </textarea>
 
         <textarea name="banner_text_label" from="title_text">
-            <position>8,725</position>
+            <position>8,695</position>
             <value>Banner:</value>
         </textarea>
 
         <textarea name="fanart_text_label" from="title_text">
-            <position>8,785</position>
+            <position>8,795</position>
             <value>Fanart:</value>
         </textarea>
 
         <textarea name="trailer_text_label" from="title_text">
-            <position>8,845</position>
+            <position>8,895</position>
             <value>Trailer:</value>
         </textarea>
 
         <textarea name="homepage_text_label" from="title_text">
-            <position>8,905</position>
+            <position>8,945</position>
             <value>Homepage:</value>
         </textarea>
 
         <textarea name="player_text" from="title_text">
-            <position>8,965</position>
+            <position>8,995</position>
             <value>Custom Player:</value>
         </textarea>
 
         <textarea name="watched_text" from="title_text">
-            <area>119,1019,260,40</area>
-            <align>left,vcenter</align>
-            <value>Film has been Watched</value>
+            <area>1515,366,162,40</area>
+            <align>right,vcenter</align>
+            <value>Watched:</value>
         </textarea>
 
         <textarea name="browse_text" from="title_text">
-            <position>479,1019</position>
-            <align>left,vcenter</align>
-            <value>Film is Browsable</value>
+            <area>1515,426,162,40</area>
+            <align>right,vcenter</align>
+            <value>Browsable:</value>
         </textarea>
 
         <textarea name="season_text" from="basetextarea">
@@ -1136,102 +1265,122 @@
         </textarea>
 
         <imagetype name="coverart">
-            <area>1574,37,266,399</area>
-            <filename />
+            <area>1594,37,266,299</area>
+            <preserveaspect>true</preserveaspect>
         </imagetype>
 
         <!-- Widgets -->
 
         <textedit name="title_edit" from="basecentertextedit">
-            <position>217,63</position>
+            <position>217,23</position>
         </textedit>
 
         <textedit name="subtitle_edit" from="basecentertextedit">
-            <position>217,123</position>
+            <position>217,73</position>
         </textedit>
 
         <textedit name="tagline_edit" from="basecentertextedit">
-            <position>217,183</position>
+            <position>217,123</position>
         </textedit>
 
         <textedit name="rating_edit" from="basecentertextedit">
-            <position>217,243</position>
+            <position>217,173</position>
         </textedit>
 
         <textedit name="director_edit" from="basecentertextedit">
-            <position>217,303</position>
+            <position>217,223</position>
         </textedit>
 
         <textedit name="inetref_edit" from="basecentertextedit">
-            <position>217,363</position>
+            <position>217,273</position>
         </textedit>
 
         <textedit name="description_edit" from="basemultilinetextedit">
-            <position>217,423</position>
+            <position>217,323</position>
         </textedit>
 
         <button name="coverart_button" from="basesearchbutton">
-            <position>217,603</position>
+            <position>217,493</position>
         </button>
 
         <textarea name="coverart_text" from="basetextarea">
-            <area>222,606,490,38</area>
+            <area>222,496,490,38</area>
             <value></value>
             <align>allcenter</align>
             <cutdown>yes</cutdown>
             <value>Click here to search existing coverart...</value>
         </textarea>
 
+        <button name="net_coverart_button" from="basesearchbutton">
+            <position>217,543</position>
+            <value>Click to select from online coverart...</value>
+        </button>
+
         <button name="screenshot_button" from="basesearchbutton">
-            <position>217,663</position>
+            <position>217,593</position>
         </button>
 
         <textarea name="screenshot_text" from="coverart_text">
-            <position>217,666</position>
+            <position>217,596</position>
             <value>Click here to search existing screenshots...</value>
         </textarea>
 
+        <button name="net_screenshot_button" from="basesearchbutton">
+            <position>217,643</position>
+            <value>Click to select from online screenshots...</value>
+        </button>
+
         <button name="banner_button" from="basesearchbutton">
-            <position>217,723</position>
+            <position>217,693</position>
         </button>
 
         <textarea name="banner_text" from="coverart_text">
-            <position>217,726</position>
+            <position>217,696</position>
             <value>Click here to search existing banners...</value>
         </textarea>
 
+        <button name="net_banner_button" from="basesearchbutton">
+            <position>217,743</position>
+            <value>Click to select from online banners...</value>
+        </button>
+
         <button name="fanart_button" from="basesearchbutton">
-            <position>217,783</position>
+            <position>217,793</position>
         </button>
 
         <textarea name="fanart_text" from="coverart_text">
-            <position>217,786</position>
+            <position>217,796</position>
             <value>Click here to search existing fanart...</value>
         </textarea>
 
-        <button name="trailer_button" from="basesearchbutton">
+        <button name="net_fanart_button" from="basesearchbutton">
             <position>217,843</position>
+            <value>Click to select from online fanart...</value>
+        </button>
+
+        <button name="trailer_button" from="basesearchbutton">
+            <position>217,893</position>
         </button>
 
         <textarea name="trailer_text" from="coverart_text">
-            <position>217,846</position>
+            <position>217,896</position>
             <value>Click here to search existing trailers...</value>
         </textarea>
 
         <textedit name="homepage_edit" from="basecentertextedit">
-            <position>217,903</position>
+            <position>217,943</position>
         </textedit>
 
         <textedit name="player_edit" from="basecentertextedit">
-            <position>217,963</position>
+            <position>217,993</position>
         </textedit>
 
         <checkbox name="watched_check" from="basecheckbox">
-            <position>81,1019</position>
+            <position>1696,368</position>
         </checkbox>
 
         <checkbox name="browse_check" from="basecheckbox">
-            <position>441,1019</position>
+            <position>1696,428</position>
         </checkbox>
 
         <spinbox name="season" from="basespinbox">

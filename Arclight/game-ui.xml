@@ -2,6 +2,84 @@
 <!DOCTYPE mythuitheme SYSTEM "../mythuitheme.dtd"> 
 <mythuitheme>
 
+    <window name="gamesel">
+        <area>-1,-1,1920,1080</area>
+
+        <shape name="shape">
+            <area>784,0,1138,1080</area>
+            <type>box</type>
+            <fill color="#000000" alpha="230" />
+            <line color="#000000" alpha="230" width="-1" />
+        </shape>
+
+        <buttonlist name="results" from="baseVBLwide">
+            <align>bottom</align>
+            <area>786,172,1136,909</area>
+            <scrollstyle>free</scrollstyle>
+            <wrapstyle>items</wrapstyle>
+            <layout>vertical</layout>
+            <spacing>0</spacing>
+            <buttonarea>2,0,1136,909</buttonarea>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <imagetype name="buttonimage">
+                        <area>10,5,100,80</area>
+                        <preserveaspect>true</preserveaspect>
+                    </imagetype>
+                    <textarea name="buttontext">
+                        <area>0,0,0,0</area>
+                    </textarea>
+                    <textarea name="title">
+                        <area>130,10,453,40</area>
+                        <align>left,vcenter</align>
+                        <font>basemedium</font>
+                        <alpha>210</alpha>
+                    </textarea>
+                    <textarea name="system">
+                        <area>150,56,430,30</area>
+                        <align>left,vcenter</align>
+                        <font>basesmall</font>
+                        <alpha>210</alpha>
+                    </textarea>
+                    <textarea name="year" from="timedate">
+                        <template>Released %1</template>
+                    </textarea>
+                </state>
+                <state name="selectedactive">
+                    <imagetype name="buttonimage">
+                        <area>10,5,100,190</area>
+                        <preserveaspect>true</preserveaspect>
+                    </imagetype>
+                    <textarea name="buttontext">
+                        <area>0,0,0,0</area>
+                    </textarea>
+                    <textarea name="title">
+                        <area>130,10,453,40</area>
+                        <align>left,vcenter</align>
+                        <font>basemedium</font>
+                        <alpha>210</alpha>
+                    </textarea>
+                    <textarea name="system">
+                        <area>150,56,430,30</area>
+                        <align>left,vcenter</align>
+                        <font>basesmall</font>
+                        <alpha>210</alpha>
+                    </textarea>
+                    <textarea name="year" from="timedate">
+                        <template>Released %1</template>
+                    </textarea>
+                    <textarea name="description" from="basetextarea">
+                        <area>130,97,1000,82</area>
+                        <multiline>yes</multiline>
+                        <align>vcenter,left</align>
+                        <alpha>160</alpha>
+                    </textarea>
+                </state>
+            </statetype>
+        </buttonlist>
+
+    </window>
+
     <window name="gameui">
         <area>0,0,1920,1080</area>
 

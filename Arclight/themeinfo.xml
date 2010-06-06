@@ -10,6 +10,7 @@
 
     <types>
         <type>UI</type>
+        <type>OSD</type>
     </types>
 
     <baseres>1920x1080</baseres>

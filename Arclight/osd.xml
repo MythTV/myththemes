@@ -59,7 +59,6 @@
                         <alpha>100</alpha>
                     </textarea>
                     <statetype name="buttoncheck">
-                        <position>91%,10</position>
                         <state type="off">
                             <imagetype name="checkoff">
                             </imagetype>
@@ -74,7 +73,7 @@
                         </state>
                     </statetype>
                     <imagetype name="buttonarrow">
-                        <position>405,18</position>
+                        <area>405,18,18,21</area>
                         <filename>images/arclight_popup_rightarrow.png</filename>
                         <alpha>100</alpha>
                     </imagetype>
@@ -94,7 +93,7 @@
                 </state>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>395,326</position>
+                <area>395,326,21,18</area>
                 <state type="off">
                     <imagetype name="upoff">
                         <filename>images/arclight_popup_uparrow.png</filename>
@@ -109,7 +108,7 @@
                 </state>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>412,326</position>
+                <area>412,326,21,18</area>
                 <state type="off">
                     <imagetype name="dnoff">
                         <filename>images/arclight_popup_downarrow.png</filename>
@@ -223,7 +222,7 @@
         </fontdef>
 
         <imagetype name="leftpanel_bg">
-            <position>-20,0</position>
+            <area>-20,0,920,1080</area>
             <filename>images/editmetadata_leftpanel_bg.png</filename>
         </imagetype>
 
@@ -339,7 +338,7 @@
         </fontdef>
 
         <imagetype name="leftpanel_bg">
-            <position>-20,0</position>
+            <area>-20,0,920,1080</area>
             <filename>images/editmetadata_leftpanel_bg.png</filename>
         </imagetype>
 
@@ -435,7 +434,7 @@
         </textarea>
 
         <progressbar name="position">
-            <position>61,166</position>
+            <area>61,166,900,33</area>
             <layout>horizontal</layout>
             <style>reveal</style>
             <imagetype name="background">
@@ -496,7 +495,7 @@
         </shape>
 
         <imagetype name="rightpanel_bg">
-            <position>1100,0</position>
+            <area>1100,0,840,1040</area>
             <filename>images/editmetadata_leftpanelwide_bg.png</filename>
         </imagetype>
 
@@ -549,7 +548,7 @@
                 </state>
             </statetype>
             <imagetype name="cursor">
-                <position>0,0</position>
+                <area>0,0,8,44</area>
                 <filename>images/textedit_cursor.png</filename>
             </imagetype>
             <textarea name="text">
@@ -567,7 +566,7 @@
         </textarea>
 
         <textedit name="channum" from="callsign">
-            <position>1396,444</position>
+            <area>1396,444,500,38</area>
         </textedit>
 
         <textarea name="channame_label">
@@ -578,7 +577,7 @@
         </textarea>
 
         <textedit name="channame" from="callsign">
-            <position>1396,504</position>
+            <area>1396,504,500,38</area>
         </textedit>
 
         <textarea name="xmltv_label">
@@ -589,11 +588,11 @@
         </textarea>
 
         <textedit name="XMLTV" from="callsign">
-            <position>1396,564</position>
+            <area>1396,564,500,38</area>
         </textedit>
 
         <button name="probe">
-            <position>1396,694</position>
+            <area>1396,694,156,38</area>
             <value>Probe</value>
             <statetype name="buttonstate">
                 <state name="active">
@@ -624,7 +623,7 @@
         </button>
 
         <button name="ok" from="probe">
-            <position>1594,694</position>
+            <area>1594,694,156,38</area>
             <value>OK</value>
         </button>
 
@@ -682,11 +681,11 @@
         <editbar name="editbar">
             <area>61,166,900,37</area>
             <imagetype name="cut">
-                <position>0,2</position>
+                <area>0,2,900,33</area>
                 <filename>images/progressbar/progressbar_large_background.png</filename>
             </imagetype>
             <imagetype name="keep">
-                <position>0,2</position>
+                <area>0,2,900,33</area>
                 <filename>images/progressbar/progressbar_large_fill.png</filename>
             </imagetype>
             <shape name="cuttoright">

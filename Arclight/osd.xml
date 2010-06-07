@@ -285,7 +285,7 @@
             <font>basesmalllightblue</font>
             <align>left,vcenter</align>
             <cutdown>yes</cutdown>
-            <template>%STARTTIME%-%ENDTIME%, %RECSTARTDATE%</template>
+            <template>%STARTTIME|-%%ENDTIME|,% %RECSTARTDATE%</template>
         </textarea>
 
         <textarea name="channel">

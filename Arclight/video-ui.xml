@@ -1834,64 +1834,56 @@
             <align>allcenter</align>
         </textarea>
 
-        <textarea name="movie_text" from="basetextarea">
-            <area>25,460,175,40</area>
-            <value>Movie Grab:</value>
-            <align>right,vcenter</align>
+        <textarea name="autometacheck_text" from="basetextarea">
+            <area>255,500,400,40</area>
+            <value>Update metadata after video scan</value>
+            <align>left,vcenter</align>
         </textarea>
 
-        <textarea name="tv_text" from="movie_text">
-            <position>25,520</position>
-            <value>TV Grab:</value>
-        </textarea>
-
-        <textarea name="unknownfilecheck_text" from="movie_text">
-            <area>285,580,400,40</area>
+        <textarea name="unknownfilecheck_text" from="basetextarea">
+            <area>255,560,400,40</area>
             <value>Display unknown file types</value>
             <align>left,vcenter</align>
         </textarea>
 
-        <textarea name="treeloadsmetacheck_text" from="movie_text">
-            <area>285,640,400,40</area>
+        <textarea name="treeloadsmetacheck_text" from="unknownfilecheck_text">
+            <area>255,620,400,40</area>
             <value>Enable metadata in file browse mode</value>
             <align>left,vcenter</align>
         </textarea>
 
-        <textarea name="trailercheck_text" from="movie_text">
-            <area>285,700,400,40</area>
+        <textarea name="trailercheck_text" from="unknownfilecheck_text">
+            <area>255,680,400,40</area>
             <value>Enable Random Trailer Playback</value>
             <align>left,vcenter</align>
         </textarea>
 
-        <textarea name="trailerplay_text" from="movie_text">
-            <position>25,760</position>
+        <textarea name="trailerplay_text" from="unknownfilecheck_text">
+            <area>35,740,140,40</area>
+            <align>right,vcenter</align>
             <value>Trailer #:</value>
         </textarea>
 
         <!--Widgets-->
 
-        <buttonlist name="moviegrabber" from="basewideselector">
-            <position>205,457</position>
-        </buttonlist>
-
-        <buttonlist name="tvgrabber" from="basewideselector">
-            <position>205,517</position>
-        </buttonlist>
+        <checkbox name="autometaupdatecheck" from="basecheckbox">
+            <position>215,502</position>
+        </checkbox>
 
         <checkbox name="unknownfilecheck" from="basecheckbox">
-            <position>245,582</position>
+            <position>215,562</position>
         </checkbox>
 
         <checkbox name="treeloadsmetacheck" from="basecheckbox">
-            <position>245,642</position>
+            <position>215,622</position>
         </checkbox>
 
         <checkbox name="randomtrailercheck" from="basecheckbox">
-            <position>245,702</position>
+            <position>215,682</position>
         </checkbox>
 
         <spinbox name="trailernum" from="basewidespinbox">
-            <position>205,757</position>
+            <position>185,737</position>
         </spinbox>
 
         <imagetype name="dialogboxoverlay">

@@ -30,7 +30,7 @@
         </shape>
 
         <shape name="headerbox">
-            <area>10,10,780,60</area>
+            <area>10,10,1250,60</area>
             <type>roundbox</type>
             <fill color="#000000" alpha="150" />
             <cornerradius>30</cornerradius>
@@ -54,7 +54,7 @@
         </textarea>
 
         <textarea name="update_text" from="basetextarea">
-            <area>100,670,1120,40</area>
+            <area>760,20,480,40</area>
             <align>right,vcenter</align>
 	    <font>basesmalldarkgrey</font>
         </textarea>
@@ -160,15 +160,16 @@
         </imagetype>
 
         <textarea name="observation_time" from="basetextarea">
-            <area>100,670,1120,40</area>
+            <area>760,20,480,40</area>
             <align>right,vcenter</align>
 	    <font>basesmalldarkgrey</font>
         </textarea>
 
-<!--        <textarea name="copyright" from="basetextarea">
-            <area>590,640,620,40</area>
-            <align>right,vcenter</align>
-        </textarea>-->
+        <textarea name="copyright" from="basetextarea">
+            <area>40,670,1140,40</area>
+            <align>left,vcenter</align>
+	    <font>basesmalldarkgrey</font>
+        </textarea>
     </window>
 
     <window name="Three Day Forecast">
@@ -273,6 +274,12 @@
 
         <textarea name="high-2" from="low-0">
             <position>1010,440</position>
+        </textarea>
+
+        <textarea name="copyright" from="basetextarea">
+            <area>40,670,1140,40</area>
+            <align>left,vcenter</align>
+	    <font>basesmalldarkgrey</font>
         </textarea>
     </window>
 
@@ -435,6 +442,12 @@
         <textarea name="low-5" from="low-0">
             <position>1080,585</position>
         </textarea>
+
+        <textarea name="copyright" from="basetextarea">
+            <area>40,670,1140,40</area>
+            <align>left,vcenter</align>
+	    <font>basesmalldarkgrey</font>
+        </textarea>
     </window>
 
     <window name="Static Map">
@@ -448,6 +461,12 @@
             <area>25,140,1230,510</area>
             <preserveaspect>yes</preserveaspect>
         </imagetype>
+
+        <textarea name="copyright" from="basetextarea">
+            <area>40,670,1140,40</area>
+            <align>left,vcenter</align>
+	    <font>basesmalldarkgrey</font>
+        </textarea>
     </window>
 
     <window name="Animated Map">
@@ -462,6 +481,12 @@
             <area>25,140,1230,510</area>
             <preserveaspect>yes</preserveaspect>
         </imagetype>
+
+        <textarea name="copyright" from="basetextarea">
+            <area>40,670,1140,40</area>
+            <align>left,vcenter</align>
+	    <font>basesmalldarkgrey</font>
+        </textarea>
     </window>
 
     <window name="Severe Weather Alerts">
@@ -483,6 +508,12 @@
             <area>25,140,1230,510</area>
             <multiline>yes</multiline>
             <value>Weather Alerts</value>
+        </textarea>
+
+        <textarea name="copyright" from="basetextarea">
+            <area>40,670,1140,40</area>
+            <align>left,vcenter</align>
+	    <font>basesmalldarkgrey</font>
         </textarea>
     </window>
 
@@ -647,6 +678,11 @@
             <position>1080,585</position>
         </textarea>
 
+        <textarea name="copyright" from="basetextarea">
+            <area>40,670,1140,40</area>
+            <align>left,vcenter</align>
+	    <font>basesmalldarkgrey</font>
+        </textarea>
     </window>
 
     <window name="global-setup">

@@ -1,3 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mythuitheme SYSTEM "../mythuitheme.dtd"> 
 <mythuitheme>
 
     <window name="weatherbase">
@@ -28,7 +30,7 @@
             <area>1620,-2,303,50</area>
             <font>basesmall</font>
             <align>allcenter</align>
-            <format>%DATE%, %TIME%</format>
+            <template>%DATE%, %TIME%</template>
         </clock>
 
         <shape name="infobox">
@@ -56,6 +58,14 @@
             <multiline>yes</multiline>
             <font>basesmalllightblue</font>
             <align>right,vcenter</align>
+            <cutdown>yes</cutdown>
+        </textarea>
+
+        <textarea name="copyright" from="basetextarea">
+            <area>45,890,674,70</area>
+            <multiline>yes</multiline>
+            <font>basesmalllightblue</font>
+            <align>left,vcenter</align>
             <cutdown>yes</cutdown>
         </textarea>
 
@@ -170,6 +180,14 @@
             <template>Last Updated %1</template>
         </textarea>
 
+        <textarea name="copyright" from="basetextarea">
+            <area>45,890,674,70</area>
+            <multiline>yes</multiline>
+            <font>basesmalllightblue</font>
+            <align>left,vcenter</align>
+            <cutdown>yes</cutdown>
+        </textarea>
+
     </window>
 
     <window name="Three Day Forecast">
@@ -259,6 +277,14 @@
 
         <textarea name="low-2" from="low-0">
             <position>1106,980</position>
+        </textarea>
+
+        <textarea name="copyright" from="basetextarea">
+            <area>45,890,674,70</area>
+            <multiline>yes</multiline>
+            <font>basesmalllightblue</font>
+            <align>left,vcenter</align>
+            <cutdown>yes</cutdown>
         </textarea>
 
     </window>
@@ -419,6 +445,14 @@
             <position>966,1024</position>
         </textarea>
 
+        <textarea name="copyright" from="basetextarea">
+            <area>45,890,674,70</area>
+            <multiline>yes</multiline>
+            <font>basesmalllightblue</font>
+            <align>left,vcenter</align>
+            <cutdown>yes</cutdown>
+        </textarea>
+
     </window>
 
     <window name="Static Map">
@@ -435,6 +469,15 @@
             <area>45,191,674,657</area>
             <preserveaspect>true</preserveaspect>
         </imagetype>
+
+        <textarea name="copyright" from="basetextarea">
+            <area>45,890,674,70</area>
+            <multiline>yes</multiline>
+            <font>basesmalllightblue</font>
+            <align>left,vcenter</align>
+            <cutdown>yes</cutdown>
+        </textarea>
+
     </window>
 
     <window name="Animated Map">
@@ -451,6 +494,15 @@
             <area>45,191,674,657</area>
             <preserveaspect>true</preserveaspect>
         </imagetype>
+
+        <textarea name="copyright" from="basetextarea">
+            <area>45,890,674,70</area>
+            <multiline>yes</multiline>
+            <font>basesmalllightblue</font>
+            <align>left,vcenter</align>
+            <cutdown>yes</cutdown>
+        </textarea>
+
     </window>
 
     <window name="Severe Weather Alerts">
@@ -464,10 +516,18 @@
         </textarea>
 
         <textarea name="alerts" from="basetextarea">
-            <area>45,291,674,657</area>
+            <area>45,291,674,607</area>
             <multiline>yes</multiline>
             <font>basesmalllightblue</font>
             <align>left</align>
+            <cutdown>yes</cutdown>
+        </textarea>
+
+        <textarea name="copyright" from="basetextarea">
+            <area>45,890,674,70</area>
+            <multiline>yes</multiline>
+            <font>basesmalllightblue</font>
+            <align>left,vcenter</align>
             <cutdown>yes</cutdown>
         </textarea>
 
@@ -629,6 +689,14 @@
             <position>966,1024</position>
         </textarea>
 
+        <textarea name="copyright" from="basetextarea">
+            <area>45,890,674,70</area>
+            <multiline>yes</multiline>
+            <font>basesmalllightblue</font>
+            <align>left,vcenter</align>
+            <cutdown>yes</cutdown>
+        </textarea>
+
     </window>
 
     <window name="global-setup">
@@ -715,7 +783,7 @@
             <area>1620,-2,303,50</area>
             <font>basesmall</font>
             <align>allcenter</align>
-            <format>%DATE%, %TIME%</format>
+            <template>%DATE%, %TIME%</template>
         </clock>
 
         <shape name="infobox">

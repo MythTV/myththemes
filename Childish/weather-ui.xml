@@ -128,7 +128,12 @@
         </textarea>
 
         <textarea name="copyright" from="basetextarea">
-            <area>15,533,770,35</area>
+            <area>15,560,770,35</area>
+            <align>allcenter</align>
+        </textarea>
+
+        <textarea name="copyright" from="basetextarea">
+            <area>15,560,770,35</area>
             <align>allcenter</align>
         </textarea>
 
@@ -236,6 +241,11 @@
 
         <textarea name="high-2" from="low-0">
             <position>650,450</position>
+        </textarea>
+
+        <textarea name="copyright" from="basetextarea">
+            <area>15,560,770,35</area>
+            <align>allcenter</align>
         </textarea>
     </window>
 
@@ -392,6 +402,11 @@
         <textarea name="low-5" from="low-0">
             <position>531,532</position>
         </textarea>
+
+        <textarea name="copyright" from="basetextarea">
+            <area>15,560,770,35</area>
+            <align>allcenter</align>
+        </textarea>
     </window>
 
     <window name="Static Map">
@@ -403,7 +418,13 @@
         </textarea>
         <imagetype name="map">
             <area>40,190,720,360</area>
+            <preserveaspect>true</preserveaspect>
         </imagetype>
+
+        <textarea name="copyright" from="basetextarea">
+            <area>15,560,770,35</area>
+            <align>allcenter</align>
+        </textarea>
     </window>
 
     <window name="Animated Map">
@@ -416,7 +437,13 @@
 
         <imagetype name="animatedimage">
             <area>40,190,720,360</area>
+            <preserveaspect>true</preserveaspect>
         </imagetype>
+
+        <textarea name="copyright" from="basetextarea">
+            <area>15,560,770,35</area>
+            <align>allcenter</align>
+        </textarea>
     </window>
 
     <window name="Severe Weather Alerts">
@@ -431,6 +458,11 @@
             <area>40,190,720,360</area>
             <multiline>yes</multiline>
             <value>Weather Alerts</value>
+        </textarea>
+
+        <textarea name="copyright" from="basetextarea">
+            <area>15,560,770,35</area>
+            <align>allcenter</align>
         </textarea>
     </window>
 
@@ -584,6 +616,11 @@
         </textarea>
         <textarea name="pop-5" from="pop-0">
             <position>531,532</position>
+        </textarea>
+
+        <textarea name="copyright" from="basetextarea">
+            <area>15,560,770,35</area>
+            <align>allcenter</align>
         </textarea>
 
     </window>

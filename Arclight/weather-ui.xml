@@ -457,7 +457,7 @@
 
     <window name="Static Map">
 
-        <textarea name="smdec" from="basetextarea">
+        <textarea name="smdesc" from="basetextarea">
             <area>45,135,674,57</area>
             <multiline>no</multiline>
             <font>basegothicmidblue</font>

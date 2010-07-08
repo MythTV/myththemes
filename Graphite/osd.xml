@@ -1,0 +1,142 @@
+<mythuitheme>
+    <window name="MythPopupBox">
+        <fontdef name="basesmall" face="DejaVu Sans">
+            <pixelsize>22</pixelsize>
+            <color>#FFFFFF</color>
+        </fontdef>
+        <fontdef name="basesmallgrey" from="basesmall">
+            <color>#666666</color>
+        </fontdef>
+
+        <area>0,0,1280,720</area>
+        
+        <imagetype name="darken">
+            <area>0,0,1280,720</area>
+            <filename>images/popup_darken.png</filename>
+        </imagetype>
+        
+        <imagetype name="backimg">
+            <area>450,160,380,463</area>
+            <filename>images/popup_background.png</filename>
+        </imagetype>
+        
+        <textarea name="messagearea">
+            <area>475,180,328,140</area>
+            <font>basesmall</font>
+            <multiline>yes</multiline>
+            <align>allcenter</align>
+        </textarea>
+        
+        <imagetype name="dialogboxoverlay">
+            <area>450,160,380,117</area>
+            <filename>images/dialogbox_overlay.png</filename>
+        </imagetype>
+        
+        <buttonlist name="list">
+            <area>466,365,349,260</area>
+            <spacing>3</spacing>
+            <layout>vertical</layout>
+            <buttonarea>0,0,100%,97%</buttonarea>
+            <drawfrombottom>yes</drawfrombottom>
+            <align>center</align>
+            <showarrow>no</showarrow>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>0,0,100%,30</area>
+                    <imagetype name="buttonbackground">
+                        <area>0,0,349,39</area>
+                        <filename>images/buttonbackground.png</filename>
+                    </imagetype>
+                    <textarea name="buttontext">
+                        <area>0,7,100%,30</area>
+                        <font>basesmall</font>
+                        <cutdown>yes</cutdown>
+                        <align>allcenter</align>
+                    </textarea>
+                    <statetype name="buttoncheck">
+                        <area>91%,10,20,20</area>
+                        <state type="off">
+                            <imagetype name="checkoff">
+                                <area>0,0,20,20</area>
+                                <filename>images/lb-check-empty.png</filename>
+                            </imagetype>
+                        </state>
+                        <state type="half">
+                            <imagetype name="checkhalf">
+                                <area>0,0,20,20</area>
+                                <filename>images/lb-check-half.png</filename>
+                            </imagetype>
+                        </state>
+                        <state type="full">
+                            <imagetype name="checkfull">
+                                <area>0,0,20,20</area>
+                                <filename>images/lb-check-full.png</filename>
+                            </imagetype>
+                        </state>
+                    </statetype>
+                    <imagetype name="buttonarrow">
+                        <area>92%,11,20,20</area>
+                        <filename>images/rightarrow.png</filename>
+                    </imagetype>
+                </state>
+                <state name="selectedinactive" from="active">
+                    <imagetype name="buttonbackground">
+                        <area>0,0,349,39</area>
+                        <filename>images/buttonbackground_selected.png</filename>
+                        <alpha>127</alpha>
+                    </imagetype>
+                    <textarea name="buttontext">
+                        <font>basesmallgrey</font>
+                        <area>0,7,100%,30</area>
+                        <align>allcenter</align>
+                    </textarea>
+                </state>
+                <state name="selectedactive" from="active">
+                    <imagetype name="buttonbackground">
+                        <area>0,0,349,39</area>
+                        <filename>images/buttonbackground_selected.png</filename>
+                        <alphapulse min="200" max="255" change="1"/>
+                    </imagetype>
+                    <textarea name="buttontext">
+                        <area>0,7,100%,30</area>
+                        <align>allcenter</align>
+                    </textarea>
+                </state>
+            </statetype>
+
+            <statetype name="upscrollarrow">
+                <area>10,97%,20,20</area>
+                <state type="off">
+                    <imagetype name="upon">
+                        <area>0,0,20,20</area>
+                        <filename>images/uparrow.png</filename>
+                        <alpha>90</alpha>
+                    </imagetype>
+                </state>
+                <state type="full">
+                    <imagetype name="upoff">
+                        <area>0,0,20,20</area>
+                        <filename>images/uparrow.png</filename>
+                    </imagetype>
+                </state>
+            </statetype>
+
+            <statetype name="downscrollarrow">
+                <area>40,97%,20,20</area>
+                <state type="off">
+                    <imagetype name="dnon">
+                        <area>0,0,20,20</area>
+                        <filename>images/downarrow.png</filename>
+                        <alpha>90</alpha>
+                    </imagetype>
+                </state>
+                <state type="full">
+                    <imagetype name="dnoff">
+                        <area>0,0,20,20</area>
+                        <filename>images/downarrow.png</filename>
+                    </imagetype>
+                </state>
+            </statetype>
+        </buttonlist>
+    </window>
+</mythuitheme>

@@ -38,14 +38,14 @@
             <area>30,300,200,60</area>
             <font>basesmallpurple</font>
             <align>left</align>
-            <value>12.34GB</value>
+            <value>12.34 GB</value>
         </textarea>
 
        <textarea name="newsize_text" from="basetextarea">
             <area>170,300,200,60</area>
             <font>basesmallpurple</font>
             <align>right</align>
-            <value>12.34GB</value>
+            <value>12.34 GB</value>
         </textarea>
 
         <button name="ok_button" from="basebutton">
@@ -285,19 +285,19 @@
         <textarea name="maxsize" from="basetextarea">
             <area>680,460,100,35</area>
             <align>right,vcenter</align>
-            <value>xxxxx mb</value>
+            <value>xxxxx MB</value>
         </textarea>
 
         <textarea name="minsize" from="maxsize">
             <position>20,460</position>
-            <value>0 mb</value>
+            <value>0 MB</value>
             <align>left,vcenter</align>
         </textarea>
 
         <textarea name="currentsize" from="basetextarea">
             <area>120,460,560,35</area>
             <align>allcenter</align>
-            <value>xxxxx mb</value>
+            <value>xxxxx MB</value>
         </textarea>
 
         <textarea name="currentsize_error" from="currentsize" />

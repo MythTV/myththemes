@@ -21,7 +21,7 @@
 
     <detail>
         <thumbnail name="preview">preview.jpg</thumbnail>
-        <description>Mythbuntu is based off of ProjectGrayhem, a dark, shiny theme originally inspired by XBMC's ProjectMayhem skin</description>
+        <description>Mythbuntu is based on ProjectGrayhem - a dark, shiny theme originally inspired by XBMC's ProjectMayhem skin</description>
         <errata>N/A</errata>
     </detail>
 </themeinfo>

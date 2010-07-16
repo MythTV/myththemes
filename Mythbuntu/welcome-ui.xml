@@ -89,7 +89,7 @@
 
         <textarea name="recording_text" from="status_text">
             <area>32,198,1216,180</area>
-            <value>Retrieving Recording Status ...</value>
+            <value>Retrieving Recording Status...</value>
         </textarea>
 
         <!--
@@ -102,7 +102,7 @@
 
         <textarea name="scheduled_text" from="recording_text">
             <area>32,426,1216,144</area>
-            <value>Retrieving Scheduled Recordings ...</value>
+            <value>Retrieving Scheduled Recordings...</value>
         </textarea>
 
         <!--

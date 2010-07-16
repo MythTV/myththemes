@@ -93,7 +93,7 @@
         <textarea name="filesize" from="basetextarea">
             <area>620,345,80,35</area>
             <align>left,vcenter</align>
-            <value>x.xx Gb</value>
+            <value>x.xx GB</value>
             <multiline>yes</multiline>
         </textarea>
 
@@ -104,19 +104,19 @@
         <textarea name="maxsize" from="basetextarea">
             <area>680,490,100,35</area>
             <align>right,vcenter</align>
-            <value>xxxxx mb</value>
+            <value>xxxxx MB</value>
         </textarea>
 
         <textarea name="minsize" from="maxsize">
             <position>20,490</position>
-            <value>0 mb</value>
+            <value>0 MB</value>
             <align>left,vcenter</align>
         </textarea>
 
         <textarea name="currentsize" from="basetextarea">
             <area>120,490,560,35</area>
             <align>allcenter</align>
-            <value>xxxxx mb</value>
+            <value>xxxxx MB</value>
         </textarea>
 
         <textarea name="currentsize_error" from="currentsize" />

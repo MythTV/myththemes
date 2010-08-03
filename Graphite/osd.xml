@@ -10,11 +10,6 @@
 
         <area>0,0,1280,720</area>
         
-        <imagetype name="darken">
-            <area>0,0,1280,720</area>
-            <filename>images/popup_darken.png</filename>
-        </imagetype>
-        
         <imagetype name="backimg">
             <area>450,160,380,463</area>
             <filename>images/popup_background.png</filename>

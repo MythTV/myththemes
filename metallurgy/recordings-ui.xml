@@ -23,7 +23,7 @@
                 <state name="selectedactive" from="active" />
             </statetype>
         </buttonlist>
-        
+
         <buttonlist name="recordings" from="basebuttonlist">
             <area>397,75,825,285</area>
             <spacing>10</spacing>
@@ -71,7 +71,7 @@
             <position>955,415</position>
             <state name="yes">
                 <imagetype name="on">
-                    <filename>type/commflagged.png</filename>                  
+                    <filename>type/commflagged.png</filename>
                 </imagetype>
             </state>
         </statetype>
@@ -299,9 +299,9 @@
         </button>
     </window>
 
-    <!-- Exact copy of watchrecordings, 
+    <!-- Exact copy of watchrecordings,
          except for pagetitle, starttime => filesize_str,
-         and added usedbar and freereport --> 
+         and added usedbar and freereport -->
     <window name="deleterecordings">
 
         <textarea name="heading" from="baseheading">
@@ -325,7 +325,7 @@
                 <state name="selectedactive" from="active" />
             </statetype>
         </buttonlist>
-        
+
         <buttonlist name="recordings" from="basebuttonlist">
             <area>397,75,825,285</area>
             <spacing>10</spacing>
@@ -373,7 +373,7 @@
             <position>955,415</position>
             <state name="yes">
                 <imagetype name="on">
-                    <filename>type/commflagged.png</filename>                  
+                    <filename>type/commflagged.png</filename>
                 </imagetype>
             </state>
         </statetype>
@@ -490,7 +490,6 @@
 
         <textarea name="channel">
             <area>665,474,250,30</area>
-            <altarea>700,70,410,30</altarea>
             <font>smallgrey</font>
             <align>right</align>
         </textarea>
@@ -502,7 +501,6 @@
 
         <textarea name="description">
             <area>85,501,830,140</area>
-            <altarea>0,97,1110,140</altarea>
             <font>medium</font>
             <multiline>yes</multiline>
             <cutdown>yes</cutdown>
@@ -527,24 +525,24 @@
             <align>allcenter</align>
         </textarea>
 
-        <!-- Copy of baseprogressbar from base.xml with changed fill image, 
-             so that its like a "temperature" gauge, where full=danger=red --> 
-        <progressbar name="usedbar"> 
-            <area>700,664,536,38</area> 
-            <layout>horizontal</layout> 
-            <style>reveal</style> 
-            <imagetype name="background"> 
-                <filename>progressbar_background.png</filename> 
-            </imagetype> 
-            <imagetype name="progressimage"> 
-                <area>0,0,100%,100%</area> 
-                <filename>progressbar_fill2.png</filename> 
-            </imagetype> 
-        </progressbar> 
- 
-        <textarea name="freereport"> 
-            <area>710,668,325,40</area> 
-            <font>large</font> 
+        <!-- Copy of baseprogressbar from base.xml with changed fill image,
+             so that its like a "temperature" gauge, where full=danger=red -->
+        <progressbar name="usedbar">
+            <area>700,664,536,38</area>
+            <layout>horizontal</layout>
+            <style>reveal</style>
+            <imagetype name="background">
+                <filename>progressbar_background.png</filename>
+            </imagetype>
+            <imagetype name="progressimage">
+                <area>0,0,100%,100%</area>
+                <filename>progressbar_fill2.png</filename>
+            </imagetype>
+        </progressbar>
+
+        <textarea name="freereport">
+            <area>710,668,325,40</area>
+            <font>large</font>
         </textarea>
     </window>
 

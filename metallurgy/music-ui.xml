@@ -1186,53 +1186,48 @@
     </window>
 
     <window name="miniplayer">
+        <area>218,660,844,47</area>
 
-        <container name="player_container">
-            <area>218,660,844,47</area>
+        <imagetype name="background">
+            <position>0,0</position>
+            <filename>backgrounds/miniplayer_background.png</filename>
+        </imagetype>
 
-            <image name="background" draworder="0">
-                <filename>backgrounds/miniplayer_background.png</filename>
-                <position>0,0</position>
-            </image>
+        <imagetype name="icon">
+            <position>18,5</position>
+            <filename>music/music_icon.png</filename>
+        </imagetype>
 
-            <image name="background" draworder="0">
-                <filename>music/music_icon.png</filename>
-                <position>18,5</position>
-            </image>
+        <textarea name="artist" from="basetextarea">
+            <font>small</font>
+            <area>80,0,430,23</area>
+            <cutdown>yes</cutdown>
+        </textarea>
 
-            <textarea name="artist_text" draworder="1" align="left">
-                <font>small</font>
-                <area>80,0,430,23</area>
-                <cutdown>yes</cutdown>
-            </textarea>
+        <textarea name="title" from="basetextarea">
+            <font>small</font>
+            <area>80,21,430,23</area>
+            <cutdown>yes</cutdown>
+        </textarea>
 
-            <textarea name="title_text" draworder="1" align="left">
-                <font>small</font>
-                <area>80,21,430,23</area>
-                <cutdown>yes</cutdown>
-            </textarea>
+        <progressbar name="progress" from="baseshortprogressbar">
+            <position>520,4</position>
+        </progressbar>
 
-            <statusbar name="progress_bar" draworder="5">
-                <container>shared/small_slider_background.png</container>
-                <fill>shared/small_slider_foreground.png</fill>
-                <position>520,4</position>
-                <orientation>LeftToRight</orientation>
-            </statusbar>
+        <textarea name="time">
+            <font>small</font>
+            <area>520,21,251,22</area>
+            <align>hcenter</align>
+        </textarea>
 
-            <textarea name="time_text" draworder="1" align="center">
-                <font>small</font>
-                <area>520,21,251,22</area>
-            </textarea>
-
-            <textarea name="volume_text" draworder="1" align="center">
-                <font>smallgrey</font>
-                <area>779,0,56,46</area>
-                <multiline>yes</multiline>
-                <cutdown>no</cutdown>
-                <value>%1%</value>
-            </textarea>
-
-        </container>
+<!--        <textarea name="volume">
+            <font>smallgrey</font>
+            <area>779,0,56,46</area>
+            <multiline>yes</multiline>
+            <cutdown>no</cutdown>
+            <template>%n%</template>
+            <align>hcenter</align>
+        </textarea>-->
 
     </window>
 

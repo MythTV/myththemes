@@ -4,9 +4,9 @@
 
         <fontdef name="menufont" face="DejaVu Sans">
             <color>#BBBBBB</color>
-            <size>19</size>
-            <bold>yes</bold>
-            <shadow>2,2</shadow>
+            <pixelsize>27</pixelsize>
+            <weight>bold</weight>
+            <shadowoffset>2,2</shadowoffset>
             <shadowcolor>#000000</shadowcolor>
             <shadowalpha>128</shadowalpha>
         </fontdef>

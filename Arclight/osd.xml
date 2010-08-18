@@ -262,6 +262,82 @@
             <cutdown>yes</cutdown>
         </textarea>
 
+        <statetype name="tvstate">
+            <state name="WatchingLiveTV">
+                <imagetype name="image">
+                    <area>1780,930,101,62</area>
+                    <filename>codecs/LiveTV.png</filename>
+                    <preserveaspect>true</preserveaspect>
+                </imagetype>
+            </state>
+            <state name="WatchingPreRecorded">
+                <imagetype name="image">
+                    <area>1780,930,101,62</area>
+                    <filename>codecs/Recorded.png</filename>
+                    <preserveaspect>true</preserveaspect>
+                </imagetype>
+            </state>
+            <state name="WatchingVideo">
+                <imagetype name="image">
+                    <area>1780,930,101,62</area>
+                    <filename>codecs/Video.png</filename>
+                    <preserveaspect>true</preserveaspect>
+                </imagetype>
+            </state>
+            <state name="WatchingDVD">
+                <imagetype name="image">
+                    <area>1780,930,101,62</area>
+                    <filename>codecs/DVD.png</filename>
+                    <preserveaspect>true</preserveaspect>
+                </imagetype>
+            </state>
+            <state name="WatchingBD">
+                <imagetype name="image">
+                    <area>1780,930,101,62</area>
+                    <filename>codecs/Blu-ray.png</filename>
+                    <preserveaspect>true</preserveaspect>
+                </imagetype>
+            </state>
+            <state name="WatchingRecording">
+                <imagetype name="image">
+                    <area>1780,930,101,62</area>
+                    <filename>codecs/Recording.png</filename>
+                    <preserveaspect>true</preserveaspect>
+                </imagetype>
+            </state>
+        </statetype>
+
+        <statetype name="videocodec">
+            <state name="MPEG-2">
+                <imagetype name="image">
+                    <area>1780,1000,101,62</area>
+                    <filename>codecs/MPEG2.png</filename>
+                    <preserveaspect>true</preserveaspect>
+                </imagetype>
+            </state>
+            <state name="VC-1">
+                <imagetype name="image">
+                    <area>1780,1000,101,62</area>
+                    <filename>codecs/VC1.png</filename>
+                    <preserveaspect>true</preserveaspect>
+                </imagetype>
+            </state>
+            <state name="H.264">
+                <imagetype name="image">
+                    <area>1780,1000,101,62</area>
+                    <filename>codecs/H264.png</filename>
+                    <preserveaspect>true</preserveaspect>
+                </imagetype>
+            </state>
+            <state name="MPEG-4">
+                <imagetype name="image">
+                    <area>1780,1000,101,62</area>
+                    <filename>codecs/ASP.png</filename>
+                    <preserveaspect>true</preserveaspect>
+                </imagetype>
+            </state>
+        </statetype>
+
     </window>
 
     <window name="browse_info">

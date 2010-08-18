@@ -336,6 +336,27 @@
                     <preserveaspect>true</preserveaspect>
                 </imagetype>
             </state>
+            <state name="RTjpeg">
+                <imagetype name="image">
+                    <area>1780,1000,101,62</area>
+                    <filename>codecs/RTJPEG.png</filename>
+                    <preserveaspect>true</preserveaspect>
+                </imagetype>
+            </state>
+            <state name="WMV3">
+                <imagetype name="image">
+                    <area>1780,1000,101,62</area>
+                    <filename>codecs/WMV3.png</filename>
+                    <preserveaspect>true</preserveaspect>
+                </imagetype>
+            </state>
+            <state name="H.263">
+                <imagetype name="image">
+                    <area>1780,1000,101,62</area>
+                    <filename>codecs/H263.png</filename>
+                    <preserveaspect>true</preserveaspect>
+                </imagetype>
+            </state>
         </statetype>
 
     </window>

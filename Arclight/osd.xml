@@ -265,43 +265,116 @@
         <statetype name="tvstate">
             <state name="WatchingLiveTV">
                 <imagetype name="image">
-                    <area>1780,930,101,62</area>
+                    <area>1780,860,101,62</area>
                     <filename>codecs/LiveTV.png</filename>
                     <preserveaspect>true</preserveaspect>
                 </imagetype>
             </state>
             <state name="WatchingPreRecorded">
                 <imagetype name="image">
-                    <area>1780,930,101,62</area>
+                    <area>1780,860,101,62</area>
                     <filename>codecs/Recorded.png</filename>
                     <preserveaspect>true</preserveaspect>
                 </imagetype>
             </state>
             <state name="WatchingVideo">
                 <imagetype name="image">
-                    <area>1780,930,101,62</area>
+                    <area>1780,860,101,62</area>
                     <filename>codecs/Video.png</filename>
                     <preserveaspect>true</preserveaspect>
                 </imagetype>
             </state>
             <state name="WatchingDVD">
                 <imagetype name="image">
-                    <area>1780,930,101,62</area>
+                    <area>1780,860,101,62</area>
                     <filename>codecs/DVD.png</filename>
                     <preserveaspect>true</preserveaspect>
                 </imagetype>
             </state>
             <state name="WatchingBD">
                 <imagetype name="image">
-                    <area>1780,930,101,62</area>
+                    <area>1780,860,101,62</area>
                     <filename>codecs/Blu-ray.png</filename>
                     <preserveaspect>true</preserveaspect>
                 </imagetype>
             </state>
             <state name="WatchingRecording">
                 <imagetype name="image">
-                    <area>1780,930,101,62</area>
+                    <area>1780,860,101,62</area>
                     <filename>codecs/Recording.png</filename>
+                    <preserveaspect>true</preserveaspect>
+                </imagetype>
+            </state>
+        </statetype>
+
+        <statetype name="audiocodec">
+            <state name="PCM_DVD">
+                <imagetype name="image">
+                    <area>1780,930,101,62</area>
+                    <filename>codecs/PCM.png</filename>
+                    <preserveaspect>true</preserveaspect>
+                </imagetype>
+            </state>
+            <state name="PCM_BLURAY">
+                <imagetype name="image">
+                    <area>1780,930,101,62</area>
+                    <filename>codecs/PCM-Blu-ray.png</filename>
+                    <preserveaspect>true</preserveaspect>
+                </imagetype>
+            </state>
+            <state name="AC3">
+                <imagetype name="image">
+                    <area>1780,930,101,62</area>
+                    <filename>codecs/AC3.png</filename>
+                    <preserveaspect>true</preserveaspect>
+                </imagetype>
+            </state>
+            <state name="E-AC3">
+                <imagetype name="image">
+                    <area>1780,930,101,62</area>
+                    <filename>codecs/EAC3.png</filename>
+                    <preserveaspect>true</preserveaspect>
+                </imagetype>
+            </state>
+            <state name="TRUEHD">
+                <imagetype name="image">
+                    <area>1780,930,101,62</area>
+                    <filename>codecs/TrueHD.png</filename>
+                    <preserveaspect>true</preserveaspect>
+                </imagetype>
+            </state>
+            <state name="WMAPRO">
+                <imagetype name="image">
+                    <area>1780,930,101,62</area>
+                    <filename>codecs/WMAPRO.png</filename>
+                    <preserveaspect>true</preserveaspect>
+                </imagetype>
+            </state>
+            <state name="DTS">
+                <imagetype name="image">
+                    <area>1780,930,101,62</area>
+                    <filename>codecs/DTS.png</filename>
+                    <preserveaspect>true</preserveaspect>
+                </imagetype>
+            </state>
+            <state name="AAC">
+                <imagetype name="image">
+                    <area>1780,930,101,62</area>
+                    <filename>codecs/AAC.png</filename>
+                    <preserveaspect>true</preserveaspect>
+                </imagetype>
+            </state>
+            <state name="MP2">
+                <imagetype name="image">
+                    <area>1780,930,101,62</area>
+                    <filename>codecs/MP2.png</filename>
+                    <preserveaspect>true</preserveaspect>
+                </imagetype>
+            </state>
+            <state name="MP3">
+                <imagetype name="image">
+                    <area>1780,930,101,62</area>
+                    <filename>codecs/MP3.png</filename>
                     <preserveaspect>true</preserveaspect>
                 </imagetype>
             </state>

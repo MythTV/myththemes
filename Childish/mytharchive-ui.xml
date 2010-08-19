@@ -53,7 +53,7 @@
 
         <textarea name="freespace_text" from="dest_text">
             <position>215,280</position>
-            <value>0.00Gb</value>
+            <value>0.00 GB</value>
         </textarea>
 
         <textarea name="title" from="basetextarea">

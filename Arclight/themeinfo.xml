@@ -23,6 +23,6 @@
     <detail>
         <thumbnail name="preview">preview.png</thumbnail>
         <description>Arclight is a sleek theme meant for widescreen HD screens.  It is high contrast and uses shapes and attractive layout to convey information simply, consistently, and attractively.</description>
-        <errata>Arclight is distributed under the GPL version 2.  Please install both included fonts before using.</errata>
+        <errata>Arclight is distributed under the GPL version 2.  Included fonts are under their own licenses, see included LICENSE file.</errata>
     </detail>
 </themeinfo>

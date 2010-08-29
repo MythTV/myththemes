@@ -226,28 +226,46 @@
         </fontdef>
 
         <shape name="panel_dark">
-            <area>0,830,1920,260</area>
+            <area>0,730,1920,360</area>
             <fill color="#000000" alpha="225" />
         </shape>
 
+        <imagetype name="bumperleft">
+            <area>0,720,191,360</area>
+            <preserveaspect>true</preserveaspect>
+            <filename>images/osd_bumper_left.png</filename>
+        </imagetype>
+
+        <imagetype name="bumperright">
+            <area>1729,720,191,360</area>
+            <preserveaspect>true</preserveaspect>
+            <filename>images/osd_bumper_right.png</filename>
+        </imagetype>
+
+        <imagetype name="infooverlay">
+            <area>0,540,1920,234</area>
+            <preserveaspect>true</preserveaspect>
+            <filename>images/infooverlay.png</filename>
+        </imagetype>
+
         <imagetype name="iconpath">
-            <area>170,860,190,190</area>
+            <area>250,770,200,200</area>
             <preserveaspect>true</preserveaspect>
         </imagetype>
 
         <imagetype name="coverart">
-            <area>40,390,433,650</area>
+            <area>200,750,290,320</area>
             <preserveaspect>true</preserveaspect>
         </imagetype>
 
         <textarea name="title">
-            <area>500,870,1300,60</area>
+            <area>500,770,1300,60</area>
             <font>basegothicmedium</font>
             <align>left,vcenter</align>
         </textarea>
 
         <textarea name="subtitle">
-            <area>500,930,1300,42</area>
+            <area>500,830,1300,42</area>
             <multiline>no</multiline>
             <font>basegothicmidblue</font>
             <align>left,vcenter</align>
@@ -255,7 +273,7 @@
         </textarea>
 
         <textarea name="channel">
-            <area>500,980,1300,42</area>
+            <area>500,880,1300,42</area>
             <multiline>no</multiline>
             <font>basegothicmid</font>
             <align>left,vcenter</align>
@@ -265,42 +283,42 @@
         <statetype name="tvstate">
             <state name="WatchingLiveTV">
                 <imagetype name="image">
-                    <area>1330,1000,101,62</area>
+                    <area>1785,740,101,62</area>
                     <filename>codecs/LiveTV.png</filename>
                     <preserveaspect>true</preserveaspect>
                 </imagetype>
             </state>
             <state name="WatchingPreRecorded">
                 <imagetype name="image">
-                    <area>1330,1000,101,62</area>
+                    <area>1785,740,101,62</area>
                     <filename>codecs/Recorded.png</filename>
                     <preserveaspect>true</preserveaspect>
                 </imagetype>
             </state>
             <state name="WatchingVideo">
                 <imagetype name="image">
-                    <area>1330,1000,101,62</area>
+                    <area>1785,740,101,62</area>
                     <filename>codecs/Video.png</filename>
                     <preserveaspect>true</preserveaspect>
                 </imagetype>
             </state>
             <state name="WatchingDVD">
                 <imagetype name="image">
-                    <area>1330,1000,101,62</area>
+                    <area>1785,740,101,62</area>
                     <filename>codecs/DVD.png</filename>
                     <preserveaspect>true</preserveaspect>
                 </imagetype>
             </state>
             <state name="WatchingBD">
                 <imagetype name="image">
-                    <area>1330,1000,101,62</area>
+                    <area>1785,740,101,62</area>
                     <filename>codecs/Blu-ray.png</filename>
                     <preserveaspect>true</preserveaspect>
                 </imagetype>
             </state>
             <state name="WatchingRecording">
                 <imagetype name="image">
-                    <area>1330,1000,101,62</area>
+                    <area>1785,740,101,62</area>
                     <filename>codecs/Recording.png</filename>
                     <preserveaspect>true</preserveaspect>
                 </imagetype>
@@ -310,77 +328,77 @@
         <statetype name="audiocodec">
             <state name="PCM_DVD">
                 <imagetype name="image">
-                    <area>1440,1000,101,62</area>
+                    <area>1785,805,101,62</area>
                     <filename>codecs/PCM.png</filename>
                     <preserveaspect>true</preserveaspect>
                 </imagetype>
             </state>
             <state name="PCM_BLURAY">
                 <imagetype name="image">
-                    <area>1440,1000,101,62</area>
+                    <area>1785,805,101,62</area>
                     <filename>codecs/PCM-Blu-ray.png</filename>
                     <preserveaspect>true</preserveaspect>
                 </imagetype>
             </state>
             <state name="AC3">
                 <imagetype name="image">
-                    <area>1440,1000,101,62</area>
+                    <area>1785,805,101,62</area>
                     <filename>codecs/AC3.png</filename>
                     <preserveaspect>true</preserveaspect>
                 </imagetype>
             </state>
             <state name="E-AC3">
                 <imagetype name="image">
-                    <area>1440,1000,101,62</area>
+                    <area>1785,700,101,62</area>
                     <filename>codecs/EAC3.png</filename>
                     <preserveaspect>true</preserveaspect>
                 </imagetype>
             </state>
             <state name="TRUEHD">
                 <imagetype name="image">
-                    <area>1440,1000,101,62</area>
+                    <area>1785,805,101,62</area>
                     <filename>codecs/TrueHD.png</filename>
                     <preserveaspect>true</preserveaspect>
                 </imagetype>
             </state>
             <state name="WMAPRO">
                 <imagetype name="image">
-                    <area>1440,1000,101,62</area>
+                    <area>1785,805,101,62</area>
                     <filename>codecs/WMAPRO.png</filename>
                     <preserveaspect>true</preserveaspect>
                 </imagetype>
             </state>
             <state name="DTS">
                 <imagetype name="image">
-                    <area>1440,1000,101,62</area>
+                    <area>1785,805,101,62</area>
                     <filename>codecs/DTS.png</filename>
                     <preserveaspect>true</preserveaspect>
                 </imagetype>
             </state>
             <state name="AAC">
                 <imagetype name="image">
-                    <area>1440,1000,101,62</area>
+                    <area>1785,805,101,62</area>
                     <filename>codecs/AAC.png</filename>
                     <preserveaspect>true</preserveaspect>
                 </imagetype>
             </state>
             <state name="MP2">
                 <imagetype name="image">
-                    <area>1440,1000,101,62</area>
+                    <area>1785,805,101,62</area>
                     <filename>codecs/MP2.png</filename>
                     <preserveaspect>true</preserveaspect>
                 </imagetype>
             </state>
             <state name="MP3">
                 <imagetype name="image">
-                    <area>1440,1000,101,62</area>
+                    <area>1785,805,101,62</area>
                     <filename>codecs/MP3.png</filename>
                     <preserveaspect>true</preserveaspect>
                 </imagetype>
             </state>
             <state name="VORBIS">
                 <imagetype name="image">
-                    <area>1440,1000,101,62</area>
+                    <area>1785,805,101,62</area>
                     <filename>codecs/Vorbis.png</filename>
                     <preserveaspect>true</preserveaspect>
                 </imagetype>
@@ -390,42 +408,42 @@
         <statetype name="audiochannels">
             <state name="1">
                 <imagetype name="image">
-                    <area>1550,1000,101,62</area>
+                    <area>1785,870,101,62</area>
                     <filename>codecs/1chan.png</filename>
                     <preserveaspect>true</preserveaspect>
                 </imagetype>
             </state>
             <state name="2">
                 <imagetype name="image">
-                    <area>1550,1000,101,62</area>
+                    <area>1785,870,101,62</area>
                     <filename>codecs/2chan.png</filename>
                     <preserveaspect>true</preserveaspect>
                 </imagetype>
             </state>
             <state name="5">
                 <imagetype name="image">
-                    <area>1550,1000,101,62</area>
+                    <area>1785,870,101,62</area>
                     <filename>codecs/5chan.png</filename>
                     <preserveaspect>true</preserveaspect>
                 </imagetype>
             </state>
             <state name="6">
                 <imagetype name="image">
-                    <area>1550,1000,101,62</area>
+                    <area>1785,870,101,62</area>
                     <filename>codecs/6chan.png</filename>
                     <preserveaspect>true</preserveaspect>
                 </imagetype>
             </state>
             <state name="7">
                 <imagetype name="image">
-                    <area>1550,1000,101,62</area>
+                    <area>1785,870,101,62</area>
                     <filename>codecs/7chan.png</filename>
                     <preserveaspect>true</preserveaspect>
                 </imagetype>
             </state>
             <state name="8">
                 <imagetype name="image">
-                    <area>1550,1000,101,62</area>
+                    <area>1785,870,101,62</area>
                     <filename>codecs/8chan.png</filename>
                     <preserveaspect>true</preserveaspect>
                 </imagetype>
@@ -435,49 +453,49 @@
         <statetype name="videocodec">
             <state name="MPEG-2">
                 <imagetype name="image">
-                    <area>1660,1000,101,62</area>
+                    <area>1785,935,101,62</area>
                     <filename>codecs/MPEG2.png</filename>
                     <preserveaspect>true</preserveaspect>
                 </imagetype>
             </state>
             <state name="VC-1">
                 <imagetype name="image">
-                    <area>1660,1000,101,62</area>
+                    <area>1785,935,101,62</area>
                     <filename>codecs/VC1.png</filename>
                     <preserveaspect>true</preserveaspect>
                 </imagetype>
             </state>
             <state name="H.264">
                 <imagetype name="image">
-                    <area>1660,1000,101,62</area>
+                    <area>1785,935,101,62</area>
                     <filename>codecs/H264.png</filename>
                     <preserveaspect>true</preserveaspect>
                 </imagetype>
             </state>
             <state name="MPEG-4">
                 <imagetype name="image">
-                    <area>1660,1000,101,62</area>
+                    <area>1785,935,101,62</area>
                     <filename>codecs/ASP.png</filename>
                     <preserveaspect>true</preserveaspect>
                 </imagetype>
             </state>
             <state name="RTjpeg">
                 <imagetype name="image">
-                    <area>1660,1000,101,62</area>
+                    <area>1785,935,101,62</area>
                     <filename>codecs/RTJPEG.png</filename>
                     <preserveaspect>true</preserveaspect>
                 </imagetype>
             </state>
             <state name="WMV3">
                 <imagetype name="image">
-                    <area>1660,1000,101,62</area>
+                    <area>1785,935,101,62</area>
                     <filename>codecs/WMV3.png</filename>
                     <preserveaspect>true</preserveaspect>
                 </imagetype>
             </state>
             <state name="H.263">
                 <imagetype name="image">
-                    <area>1660,1000,101,62</area>
+                    <area>1785,935,101,62</area>
                     <filename>codecs/H263.png</filename>
                     <preserveaspect>true</preserveaspect>
                 </imagetype>
@@ -487,28 +505,28 @@
         <statetype name="videodescrip">
             <state name="SD">
                 <imagetype name="image">
-                    <area>1770,1000,101,62</area>
+                    <area>1785,1000,101,62</area>
                     <filename>codecs/SD.png</filename>
                     <preserveaspect>true</preserveaspect>
                 </imagetype>
             </state>
             <state name="HD_720_P">
                 <imagetype name="image">
-                    <area>1770,1000,101,62</area>
+                    <area>1785,1000,101,62</area>
                     <filename>codecs/720p.png</filename>
                     <preserveaspect>true</preserveaspect>
                 </imagetype>
             </state>
             <state name="HD_1080_I">
                 <imagetype name="image">
-                    <area>1770,1000,101,62</area>
+                    <area>1785,1000,101,62</area>
                     <filename>codecs/1080i.png</filename>
                     <preserveaspect>true</preserveaspect>
                 </imagetype>
             </state>
             <state name="HD_1080_P">
                 <imagetype name="image">
-                    <area>1770,1000,101,62</area>
+                    <area>1785,1000,101,62</area>
                     <filename>codecs/1080p.png</filename>
                     <preserveaspect>true</preserveaspect>
                 </imagetype>

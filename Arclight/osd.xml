@@ -349,7 +349,7 @@
             </state>
             <state name="E-AC3">
                 <imagetype name="image">
-                    <area>1785,700,101,62</area>
+                    <area>1785,805,101,62</area>
                     <filename>codecs/EAC3.png</filename>
                     <preserveaspect>true</preserveaspect>
                 </imagetype>

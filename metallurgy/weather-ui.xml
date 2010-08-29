@@ -670,31 +670,31 @@
         </textarea>
 
         <textarea name="inactivehdr">
-            <area>30,135,300,30</area>
+            <area>190,120,400,30</area>
             <font>mediumgrey</font>
             <align>allcenter</align>
         </textarea>
 
         <buttonlist name="inactivelist" from="basebuttonlist">
-            <area>30,170,300,240</area>
+            <area>240,155,400,240</area>
         </buttonlist>
 
         <textarea name="activehdr" from="inactivehdr">
-            <position>400,135</position>
+            <position>700,120</position>
         </textarea>
 
         <buttonlist name="activelist" from="basebuttonlist">
-            <area>400,170,300,240</area>
+            <area>750,155,400,240</area>
         </buttonlist>
 
         <textarea name="helptxt" from="basetextarea">
-            <area>50,420,700,150</area>
+            <area>50,390,1180,220</area>
             <multiline>yes</multiline>
             <align>allcenter</align>
         </textarea>
 
         <button name="finishbutton" from="basebutton">
-            <position>600,575</position>
+            <position>960,585</position>
         </button>
 
     </window>
@@ -708,39 +708,39 @@
         </textarea>
 
         <buttonlist name="srclist" from="basebuttonlist">
-            <area>30,195,200,348</area>
+            <area>230,180,420,300</area>
         </buttonlist>
 
         <textarea name="updatetxt">
-            <area>290,230,300,60</area>
+            <area>690,150,300,60</area>
             <font>mediumgrey</font>
             <multiline>yes</multiline>
             <value>Source Update Timeout (seconds):</value>
         </textarea>
 
         <textarea name="retrievetxt">
-            <area>290,310,300,60</area>
+            <area>690,260,300,60</area>
             <font>mediumgrey</font>
             <multiline>yes</multiline>
             <value>Data Retrieval Interval (minutes):</value>
         </textarea>
 
         <spinbox name="update_spinbox" from="basespinbox">
-            <position>600,225</position>
+            <position>1000,150</position>
         </spinbox>
 
         <spinbox name="retrieve_spinbox" from="basespinbox">
-            <position>600,305</position>
+            <position>1000,260</position>
         </spinbox>
 
         <textarea name="srcinfo">
-            <area>290,440,450,90</area>
+            <area>690,390,450,90</area>
             <multiline>yes</multiline>
             <font>small</font>
         </textarea>
 
         <button name="finishbutton" from="basebutton">
-            <position>600,540</position>
+            <position>960,585</position>
         </button>
 
     </window>
@@ -754,37 +754,37 @@
         </textarea>
 
         <textarea name="helptxt" from="basetextarea">
-            <area>0,50,800,60</area>
+            <area>50,110,1180,60</area>
             <value>Enter your current location, nearest large town or city. In some countries postal codes are also supported.</value>
             <multiline>yes</multiline>
             <align>allcenter</align>
         </textarea>
 
         <textarea name="editlbl" from="basetextarea">
-            <area>25,115,170,40</area>
+            <area>100,185,170,40</area>
             <value>Enter Location:</value>
             <align>right,top</align>
         </textarea>
 
         <textedit name="loc-edit" from="basetextedit">
-            <area>215,110,375,50</area>
+            <area>285,180,375,50</area>
         </textedit>
 
         <button name="searchbtn" from="basebutton">
-            <position>610,120</position>
+            <position>680,175</position>
         </button>
 
         <buttonlist name="results" from="basebuttonlist">
-            <area>25,190,700,380</area>
+            <area>125,260,800,320</area>
         </buttonlist>
 
         <textarea name="numresults" from="basetextarea">
-            <area>200,550,400,40</area>
+            <area>300,585,300,40</area>
             <align>allcenter</align>
         </textarea>
 
         <textarea name="source" from="basetextarea">
-            <area>600,550,200,40</area>
+            <area>700,585,300,40</area>
             <align>allcenter</align>
         </textarea>
 

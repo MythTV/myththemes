@@ -95,7 +95,7 @@
                 <textarea name="text">
                     <area>11,6,170,40</area>
                     <align>allcenter</align>
-                    <font>basemedium</font>
+                    <font>medium</font>
                     <font state="selected">mediumlightgrey</font>
                     <font state="disabled">mediumlightgrey</font>
                 </textarea>

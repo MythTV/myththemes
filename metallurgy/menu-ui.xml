@@ -93,6 +93,11 @@
                     <value>Music Setup</value>
                 </textarea>
             </state>
+            <state name="WEATHER_SETTINGS">
+                <textarea name="title" from="baseheading">
+                    <value>Weather Setup</value>
+                </textarea>
+            </state>
             <state name="VIDEO_SETTINGS">
                 <textarea name="title" from="baseheading">
                     <value>Video Setup</value>

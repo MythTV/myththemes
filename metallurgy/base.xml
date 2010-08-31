@@ -5,7 +5,7 @@
     <fontdef name="extralarge" face="DejaVu Sans">
         <color>#FFFFFF</color>
         <pixelsize>27</pixelsize>
-        <bold>yes</bold>
+        <weight>bold</weight>
     </fontdef>
 
     <fontdef name="large" face="DejaVu Sans">
@@ -25,7 +25,7 @@
 
     <!-- Derived Fonts -->
     <fontdef name="extralargebold" from="extralarge">
-        <bold>yes</bold>
+        <weight>bold</weight>
     </fontdef>
 
     <fontdef name="extralargeboldgrey" from="extralargebold">
@@ -37,7 +37,7 @@
     </fontdef>
 
     <fontdef name="mediumbold" from="medium">
-        <bold>yes</bold>
+        <weight>bold</weight>
     </fontdef>
 
     <fontdef name="mediumlightgrey" from="medium">
@@ -73,15 +73,15 @@
     </fontdef>
 
     <fontdef name="smallboldgreen" from="smallgreen">
-        <bold>yes</bold>
+        <weight>bold</weight>
     </fontdef>
 
     <fontdef name="smallboldred" from="smallred">
-        <bold>yes</bold>
+        <weight>bold</weight>
     </fontdef>
 
     <fontdef name="smallboldblue" from="smallblue">
-        <bold>yes</bold>
+        <weight>bold</weight>
     </fontdef>
 
     <!-- Base definition of a button -->

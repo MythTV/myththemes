@@ -332,7 +332,7 @@
             <dropcolor>#000000</dropcolor>
             <size>24</size>
             <shadow>3,3</shadow>
-            <bold>yes</bold>
+            <weight>bold</weight>
         </fontdef>
 
         <textarea name="title" from="basetextarea">
@@ -418,7 +418,7 @@
             <dropcolor>#000000</dropcolor>
             <size>24</size>
             <shadow>3,3</shadow>
-            <bold>yes</bold>
+            <weight>bold</weight>
         </fontdef>
 
         <textarea name="title" from="basetextarea">

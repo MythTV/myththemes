@@ -167,7 +167,6 @@
             <align>bottom,right</align>
             <font>clock</font>
             <format>%TIME%</format>
-            <secondflash>yes</secondflash>
         </clock>
 
 <!--        <imagetype name="channelicon">
@@ -390,7 +389,6 @@
             <area>1090,15,150,32</area>
             <align>bottom,right</align>
             <format>%TIME%</format>
-            <secondflash>yes</secondflash>
         </clock>
 
 <!--        <imagetype name="channelicon">

@@ -275,7 +275,7 @@
                         <alpha>210</alpha>
                     </textarea>
                     <textarea name="description">
-                        <area>205,54,850,88	</area>
+                        <area>205,54,850,88</area>
                         <multiline>true</multiline>
                         <cutdown>true</cutdown>
                         <align>top,justify</align>

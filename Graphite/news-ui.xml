@@ -156,7 +156,7 @@
         
         <button name="ok" from="basebutton">
             <position>660,600</position>
-            <value>Ok</value>
+            <value>OK</value>
         </button>
         
         <imagetype name="clockback">

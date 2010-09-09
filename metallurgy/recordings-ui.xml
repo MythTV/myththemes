@@ -622,7 +622,7 @@
 
         <button name="ok" from="basebutton">
             <position>135,290</position>
-            <value>Ok</value>
+            <value>OK</value>
         </button>
     </window>
 
@@ -659,7 +659,7 @@
 
         <button name="ok" from="basebutton">
             <position>135,290</position>
-            <value>Ok</value>
+            <value>OK</value>
         </button>
     </window>
 

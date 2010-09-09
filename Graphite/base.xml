@@ -1031,7 +1031,7 @@
         
         <button name="ok" from="basebutton">
             <position>733,552</position>
-            <value>Ok</value>
+            <value>OK</value>
         </button>
         
         <buttonlist name="filelist">

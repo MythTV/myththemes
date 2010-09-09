@@ -260,7 +260,7 @@
 
         <button name="ok" from="basesmallbutton">
             <position>60,515</position>
-            <value>Ok</value>
+            <value>OK</value>
         </button>
 
         <button name="cancel" from="basesmallbutton">
@@ -320,7 +320,7 @@
 
         <button name="ok" from="basesmallbutton">
             <position>550,480</position>
-            <value>Ok</value>
+            <value>OK</value>
         </button>
 
         <button name="cancel" from="basesmallbutton">

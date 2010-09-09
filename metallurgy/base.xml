@@ -378,7 +378,7 @@
 
         <button name="ok" from="basebutton">
             <position>285,465</position>
-            <value>Ok</value>
+            <value>OK</value>
         </button>
 
     </window>

@@ -294,9 +294,6 @@
                     <alpha>255</alpha>
                     <preserveaspect>true</preserveaspect>
                 </imagetype>
-                <textarea name="fullscreenname">
-                    <area>0,0,0,0</area>
-                </textarea>
             </state>
         </statetype>
 

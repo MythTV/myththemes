@@ -184,14 +184,12 @@
 
         <buttonlist name="themes">
             <area>786,90,1136,980</area>
-<!--            <area>786,549,1136,535</area>-->
             <scrollstyle>free</scrollstyle>
             <wrapstyle>items</wrapstyle>
             <layout>vertical</layout>
             <spacing>0</spacing>
             <drawfrombottom>true</drawfrombottom>
             <buttonarea>0,15,100%,990</buttonarea>
-<!--            <buttonarea>2,0,1136,535</buttonarea>-->
             <statetype name="buttonitem">
                 <state name="active">
                     <area>1,0,1132,89</area>
@@ -283,6 +281,24 @@
                 </state>
             </statetype>
         </buttonlist>
+
+        <statetype name="fullpreviewstate">
+            <state name="fullscreen">
+                <shape name="darken_background">
+                    <area>0,0,1920,1080</area>
+                    <type>box</type>
+                    <fill color="#000000" alpha="190" />
+                </shape>
+                <imagetype name="fullscreenpreview">
+                    <area>50,50,1824,980</area>
+                    <alpha>255</alpha>
+                    <preserveaspect>true</preserveaspect>
+                </imagetype>
+                <textarea name="fullscreenname">
+                    <area>0,0,0,0</area>
+                </textarea>
+            </state>
+        </statetype>
 
     </window>
     

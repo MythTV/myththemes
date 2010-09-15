@@ -22,7 +22,9 @@
    
     <detail>
         <thumbnail name="preview">preview.jpg</thumbnail>
-        <description>My first attempt at a theme, aimed at creating a theme suitable for children.</description>
-        <errata>The font is GPL v2 licensed and can be found at http://www.dafont.com/penguin-attack.font.  The background is provided by Nicolas at http://www.studiokobalt.com/.  Status icons: http://www.pixelpressicons.com/?p=108 released under http://creativecommons.org/licenses/by/2.5/ca/.</errata>
+		<!-- Original Description: DMy first attempt at a theme, aimed at creating a theme suitable for children. -->
+        <description>Childish is the first MythTV theme designed specifically with children in mind.  It was the winner of MythTV's v0.23 theming contest.</description>
+		<!-- Original errata: The font is GPL v2 licensed and can be found at http://www.dafont.com/penguin-attack.font.  The background is provided by Nicolas at http://www.studiokobalt.com/.  Status icons: http://www.pixelpressicons.com/?p=108 released under http://creativecommons.org/licenses/by/2.5/ca/. -->
+        <errata>N/A</errata>
     </detail>
 </themeinfo>

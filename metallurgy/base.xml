@@ -197,17 +197,19 @@
                     <font state="warning">smallyellow</font>
                 </textarea>
                 <imagetype name="buttonarrow">
-                    <position>270,0</position>
+                    <area>270,0,16,21</area>
                     <filename>shared/rightarrow.png</filename>
                 </imagetype>
             </state>
             <state name="selectedactive" from="active">
                 <imagetype name="selectindicator">
+                    <area>0,0,24,24</area>
                     <filename>shared/selectbar.png</filename>
                 </imagetype>
             </state>
             <state name="selectedinactive" from="active">
                 <imagetype name="selectindicator">
+                    <area>0,0,24,24</area>
                     <filename>shared/inactiveselectbar.png</filename>
                 </imagetype>
             </state>
@@ -217,6 +219,7 @@
             <showempty>yes</showempty>
             <state type="full">
                 <imagetype name="upon">
+                    <area>0,0,20,10</area>
                     <filename>shared/uparrow.png</filename>
                 </imagetype>
             </state>
@@ -226,6 +229,7 @@
             <showempty>yes</showempty>
             <state type="full">
                 <imagetype name="dnon">
+                    <area>0,0,20,10</area>
                     <filename>shared/downarrow.png</filename>
                 </imagetype>
             </state>

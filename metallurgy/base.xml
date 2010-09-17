@@ -193,7 +193,7 @@
                     <font state="running">smallgreen</font>
                     <font state="disabled">smallgrey</font>
                     <font state="error">smallred</font>
-                    <font state="normal">smallblue</font>
+                    <font state="normal">small</font>
                     <font state="warning">smallyellow</font>
                 </textarea>
                 <imagetype name="buttonarrow">
@@ -201,13 +201,14 @@
                     <filename>shared/rightarrow.png</filename>
                 </imagetype>
             </state>
+            <state name="inactive" from="active" />
             <state name="selectedactive" from="active">
                 <imagetype name="selectindicator">
                     <area>0,0,24,24</area>
                     <filename>shared/selectbar.png</filename>
                 </imagetype>
             </state>
-            <state name="selectedinactive" from="active">
+            <state name="selectedinactive" from="selectedactive">
                 <imagetype name="selectindicator">
                     <area>0,0,24,24</area>
                     <filename>shared/inactiveselectbar.png</filename>

@@ -9,16 +9,16 @@
         </textarea>
 
         <buttonlist name="category" from="basebuttonlist">
-            <area>40,75,250,260</area>
-            <buttonarea>25,10,250,250</buttonarea>
+            <area>40,75,250,285</area>
+            <buttonarea>25,10,250,265</buttonarea>
             <statetype name="buttonitem">
                 <area>0,0,250,30</area>
             </statetype>
         </buttonlist>
 
-        <buttonlist name="log" from="category">
-            <position>390,75</position>
-            <buttonarea>25,10,800,250</buttonarea>
+        <buttonlist name="log" from="basebuttonlist">
+            <area>390,75,800,285</area>
+            <buttonarea>25,10,800,265</buttonarea>
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,800,30</area>

@@ -658,6 +658,7 @@
 
         <button name="finishbutton" from="basebutton">
             <position>600,540</position>
+            <value>Finish</value>
         </button>
     </window>
 
@@ -695,6 +696,7 @@
 
         <button name="finishbutton" from="basebutton">
             <position>960,585</position>
+            <value>Finish</value>
         </button>
 
     </window>
@@ -741,6 +743,7 @@
 
         <button name="finishbutton" from="basebutton">
             <position>960,585</position>
+            <value>Finish</value>
         </button>
 
     </window>
@@ -772,6 +775,7 @@
 
         <button name="searchbtn" from="basebutton">
             <position>680,175</position>
+            <value>Search</value>
         </button>
 
         <buttonlist name="results" from="basebuttonlist">

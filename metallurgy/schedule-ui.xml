@@ -138,6 +138,7 @@
                         <align>right</align>
                     </textarea>
                 </state>
+                <state name="inactive" from="active" />
                 <state name="selectedactive" from="active" />
                 <state name="selectedinactive" from="active" />
             </statetype>
@@ -538,16 +539,9 @@
                         <area>30,0,450,30</area>
                     </textarea>
                 </state>
-                <state name="selectedinactive">
-                    <textarea name="buttontext">
-                        <area>30,0,450,30</area>
-                    </textarea>
-                </state>
-                <state name="selectedactive">
-                    <textarea name="buttontext">
-                        <area>30,0,450,30</area>
-                    </textarea>
-                </state>
+                <state name="inactive" from="active" />
+                <state name="selectedinactive" from="active" />
+                <state name="selectedactive" from="active" />
             </statetype>
             <statetype name="upscrollarrow">
                 <position>550,0</position>
@@ -563,14 +557,17 @@
 
         <button name="ok_button" from="basebutton">
             <position>12,520</position>
+            <value>OK</value>
         </button>
 
         <button name="delete_button" from="basebutton">
             <position>210,520</position>
+            <value>Delete</value>
         </button>
 
         <button name="record_button" from="basebutton">
             <position>409,520</position>
+            <value>Record</value>
         </button>
 
     </window>
@@ -599,6 +596,7 @@
 
         <button name="ok_button" from="basebutton">
             <position>140,290</position>
+            <value>OK</value>
         </button>
 
     </window>
@@ -624,16 +622,9 @@
                         <area>30,0,450,30</area>
                     </textarea>
                 </state>
-                <state name="selectedinactive">
-                    <textarea name="buttontext">
-                        <area>30,0,450,30</area>
-                    </textarea>
-                </state>
-                <state name="selectedactive">
-                    <textarea name="buttontext">
-                        <area>30,0,450,30</area>
-                    </textarea>
-                </state>
+                <state name="inactive" from="active" />
+                <state name="selectedinactive" from="active" />
+                <state name="selectedactive" from="active" />
             </statetype>
             <statetype name="upscrollarrow">
                 <position>550,0</position>
@@ -645,14 +636,17 @@
 
         <button name="edit_button" from="basebutton">
             <position>12,515</position>
+            <value>Edit</value>
         </button>
 
         <button name="delete_button" from="basebutton">
             <position>210,515</position>
+            <value>Delete</value>
         </button>
 
         <button name="record_button" from="basebutton">
             <position>409,515</position>
+            <value>Record</value>
         </button>
 
     </window>
@@ -715,6 +709,7 @@
 
         <button name="ok_button" from="basebutton">
             <position>220,560</position>
+            <value>OK</value>
         </button>
 
     </window>
@@ -772,8 +767,9 @@
                         <align>right</align>
                     </textarea>
                 </state>
-                <state name="selectedactive" from="active" />
+                <state name="inactive" from="active" />
                 <state name="selectedinactive" from="active" />
+                <state name="selectedactive" from="active" />
             </statetype>
             <statetype name="upscrollarrow">
                 <position>560,0</position>

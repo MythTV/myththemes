@@ -21,6 +21,7 @@
                         <case>capitaliseall</case>
                     </textarea>
                 </state>
+                <state name="inactive" from="active" />
                 <state name="selectedinactive" from="active" />
                 <state name="selectedactive" from="active" />
             </statetype>
@@ -44,6 +45,7 @@
                         <align>hcenter</align>
                     </textarea>
                 </state>
+                <state name="inactive" from="active" />
                 <state name="selectedinactive" from="active" />
                 <state name="selectedactive" from="active" />
             </statetype>
@@ -190,7 +192,6 @@
 
         <textarea name="channel">
             <area>665,474,250,30</area>
-            <altarea>700,70,410,30</altarea>
             <font>smallgrey</font>
             <align>right</align>
         </textarea>
@@ -202,7 +203,6 @@
 
         <textarea name="description">
             <area>85,501,830,140</area>
-            <altarea>0,97,1110,140</altarea>
             <font>medium</font>
             <multiline>yes</multiline>
             <cutdown>yes</cutdown>
@@ -323,6 +323,7 @@
                         <case>capitaliseall</case>
                     </textarea>
                 </state>
+                <state name="inactive" from="active" />
                 <state name="selectedinactive" from="active" />
                 <state name="selectedactive" from="active" />
             </statetype>
@@ -346,6 +347,7 @@
                         <align>hcenter</align>
                     </textarea>
                 </state>
+                <state name="inactive" from="active" />
                 <state name="selectedinactive" from="active" />
                 <state name="selectedactive" from="active" />
             </statetype>
@@ -569,16 +571,9 @@
                         <align>hcenter</align>
                     </textarea>
                 </state>
-                <state name="selectedactive" from="active">
-                    <imagetype name="selectindicator">
-                        <filename>shared/selectbar.png</filename>
-                    </imagetype>
-                </state>
-                <state name="selectedinactive" from="active">
-                    <imagetype name="selectindicator">
-                        <filename>shared/inactiveselectbar.png</filename>
-                    </imagetype>
-                </state>
+                <state name="inactive" from="active" />
+                <state name="selectedactive" from="active" />
+                <state name="selectedinactive" from="active" />
             </statetype>
             <statetype name="upscrollarrow">
                 <position>423,0</position>

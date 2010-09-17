@@ -27,10 +27,6 @@
             <area>18,18,360,325</area>
             <showarrow>no</showarrow>
         </buttonlist>
-
-        <button name="ok" from="basebutton">
-            <position>119,350</position>
-        </button>
     </window>
 
     <window name="plotpopup">
@@ -44,10 +40,6 @@
             <area>18,18,360,325</area>
             <multiline>yes</multiline>
         </textarea>
-
-        <button name="ok" from="basebutton">
-            <position>119,350</position>
-        </button>
     </window>
 
     <!-- Main Windows -->
@@ -721,14 +713,17 @@
 
         <button name="done_button" from="basebutton">
             <position>700,550</position>
+            <value>Save</value>
         </button>
 
         <button name="new_button" from="basebutton">
             <position>600,550</position>
+            <value>New</value>
         </button>
 
         <button name="delete_button" from="basebutton">
             <position>0,550</position>
+            <value>Delete</value>
         </button>
     </window>
 
@@ -853,10 +848,12 @@
 
         <button name="done_button" from="basebutton">
             <position>400,505</position>
+            <value>Done</value>
         </button>
 
         <button name="save_button" from="basebutton">
             <position>200,505</position>
+            <value>Save</value>
         </button>
 
     </window>

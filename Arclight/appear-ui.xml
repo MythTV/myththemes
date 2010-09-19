@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?> 
-<!DOCTYPE mythuitheme SYSTEM "../mythuitheme.dtd"> 
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mythuitheme SYSTEM "../mythuitheme.dtd">
 <mythuitheme>
     <window name="appearance">
 
@@ -33,7 +33,6 @@
             <font>basemedium</font>
             <area>300,450,1320,140</area>
             <align>allcenter</align>
-            <value>1920 x 1080</value>
         </textarea>
 
         <textarea name="offsets" from="size">
@@ -44,7 +43,6 @@
         <textarea name="changeamount" from="size">
             <area>300,650,1320,140</area>
             <align>allcenter</align>
-            <value>1 pixel</value>
         </textarea>
 
         <imagetype name="topleft">
@@ -56,7 +54,6 @@
             <position>800,600</position>
             <filename>bottomright.png</filename>
         </imagetype>
-
 
     </window>
 </mythuitheme>

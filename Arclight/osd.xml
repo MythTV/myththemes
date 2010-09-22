@@ -259,13 +259,13 @@
         </imagetype>
 
         <textarea name="title">
-            <area>500,770,1300,60</area>
+            <area>500,770,1100,60</area>
             <font>basegothicmedium</font>
             <align>left,vcenter</align>
         </textarea>
 
         <textarea name="subtitle">
-            <area>500,830,1300,42</area>
+            <area>500,830,1100,42</area>
             <multiline>no</multiline>
             <font>basegothicmidblue</font>
             <align>left,vcenter</align>
@@ -273,7 +273,7 @@
         </textarea>
 
         <textarea name="channel">
-            <area>500,880,1300,42</area>
+            <area>500,880,1100,42</area>
             <multiline>no</multiline>
             <font>basegothicmid</font>
             <align>left,vcenter</align>

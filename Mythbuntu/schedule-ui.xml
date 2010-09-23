@@ -869,15 +869,15 @@
             <area>340,400,600,100</area>
             <statetype name="background">
                 <state name="active">
-                    <imagetype name="background">
+                    <shape name="background">
                         <area>0,0,600,100</area>
-                        <gradient start="#FFFFFF" end="#FFFFFF" alpha="180" />
-                    </imagetype>
+                        <fill color="#FFFFFF" alpha="180" />
+                    </shape>
                 </state>
                 <state name="selected" from="active">
-                    <imagetype name="background">
-                        <gradient start="#FFFFFF" end="#FFFFFF" alpha="255" />
-                    </imagetype>
+                    <shape name="background">
+                        <fill color="#FFFFFF" alpha="255" />
+                    </shape>
                 </state>
                 <state name="inactive" from="active" />
             </statetype>
@@ -1600,15 +1600,15 @@
             <area>100,350,1080,150</area>
             <statetype name="background">
                 <state name="active">
-                    <imagetype name="background">
+                    <shape name="background">
                         <area>0,0,1080,150</area>
-                        <gradient start="#FFFFFF" end="#FFFFFF" alpha="180" />
-                    </imagetype>
+                        <fill color="#FFFFFF" alpha="180" />
+                    </shape>
                 </state>
                 <state name="selected" from="active">
-                    <imagetype name="background">
-                        <gradient start="#FFFFFF" end="#FFFFFF" alpha="255" />
-                    </imagetype>
+                    <shape name="background">
+                        <fill color="#FFFFFF" alpha="255" />
+                    </shape>
                 </state>
                 <state name="inactive" from="active" />
             </statetype>
@@ -1632,15 +1632,15 @@
             <area>300,520,880,85</area>
             <statetype name="background">
                 <state name="active">
-                    <imagetype name="background">
+                    <shape name="background">
                         <area>0,0,880,85</area>
-                        <gradient start="#FFFFFF" end="#FFFFFF" alpha="180" />
-                    </imagetype>
+                        <fill color="#FFFFFF" alpha="180" />
+                    </shape>
                 </state>
                 <state name="selected" from="active">
-                    <imagetype name="background">
-                        <gradient start="#FFFFFF" end="#FFFFFF" alpha="255" />
-                    </imagetype>
+                    <shape name="background">
+                        <fill color="#FFFFFF" alpha="255" />
+                    </shape>
                 </state>
                 <state name="inactive" from="active" />
             </statetype>
@@ -1686,11 +1686,11 @@
         <shape name="details_background" from="baseboxbackground">
             <area>125,80,1030,190</area>
         </shape>
-          
+
         <shape name="options_background" from="baseboxbackground">
             <area>347,280,586,430</area>
         </shape>
-      
+
         <textarea name="windowtitle" from="basetextarea">
             <area>50,10,590,60</area>
             <value>Schedule Editor</value>
@@ -1717,7 +1717,7 @@
             <multiline>yes</multiline>
             <template>%|"SUBTITLE|"% %LONGREPEAT%%STARS| %%DESCRIPTION%</template>
         </textarea>
-    
+
         <buttonlist name="rules" from="basewideselector">
             <position>377,310</position>
             <helptext>Select the recording rule</helptext>
@@ -1745,7 +1745,7 @@
             <position>500,490</position>
             <value>Schedule Info</value>
             <helptext></helptext>
-        </button>        
+        </button>
 
         <button name="preview" from="basewidebutton">
             <position>500,535</position>
@@ -1774,7 +1774,7 @@
         <shape name="details_background" from="baseboxbackground">
             <area>125,80,1030,190</area>
         </shape>
-          
+
         <shape name="options_background" from="baseboxbackground">
             <area>347,280,586,430</area>
         </shape>
@@ -1877,7 +1877,7 @@
         <shape name="details_background" from="baseboxbackground">
             <area>125,80,1030,190</area>
         </shape>
-        
+
         <shape name="options_background" from="baseboxbackground">
             <area>347,280,586,430</area>
         </shape>
@@ -1967,7 +1967,7 @@
         <shape name="details_background" from="baseboxbackground">
             <area>125,80,1030,190</area>
         </shape>
-        
+
         <shape name="options_background" from="baseboxbackground">
             <area>347,280,586,430</area>
         </shape>

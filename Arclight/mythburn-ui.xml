@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE mythuitheme SYSTEM "../mythuitheme.dtd"> 
+<!DOCTYPE mythuitheme SYSTEM "http://www.mythtv.org/schema/mythuitheme.dtd">
 <mythuitheme>
 
     <window name="profilepopup">
@@ -204,21 +204,21 @@
             <area>946,638,700,50</area>
             <align>vcenter,left</align>
             <font>basegothicmedium</font>
-            <value>Main Menu</value> 
+            <value>Main Menu</value>
         </textarea>
 
         <textarea name="chaptertitle" from="basetextarea">
             <area>946,789,700,50</area>
             <align>vcenter,left</align>
             <font>basegothicmedium</font>
-            <value>Chapter Menu</value> 
+            <value>Chapter Menu</value>
         </textarea>
 
         <textarea name="detailtitle" from="basetextarea">
             <area>946,940,700,50</area>
             <align>vcenter,left</align>
             <font>basegothicmedium</font>
-            <value>Details</value> 
+            <value>Details</value>
         </textarea>
 
     </window>

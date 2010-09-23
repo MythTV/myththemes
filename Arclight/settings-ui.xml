@@ -1,45 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE mythuitheme SYSTEM "../mythuitheme.dtd"> 
+<!DOCTYPE mythuitheme SYSTEM "http://www.mythtv.org/schema/mythuitheme.dtd">
 <mythuitheme>
-    
+
     <window name="rawsettingseditor">
         <area>0,0,1920,1080</area>
-        
+
         <imagetype name="fanart">
             <area>0,0,1920,1080</area>
             <filename>Backgrounds/</filename>
         </imagetype>
-        
+
         <imagetype name="leftpanel_bg">
             <position>-20,0</position>
             <filename>images/editmetadata_leftpanel_bg.png</filename>
         </imagetype>
-        
+
         <shape name="item">
             <area>1620,-14,313,55</area>
             <type>roundbox</type>
             <fill color="#000000" alpha="200" />
         </shape>
-        
+
         <clock name="clock">
             <area>1620,-2,303,50</area>
             <font>basesmall</font>
             <align>allcenter</align>
             <template>%DATE%, %TIME%</template>
         </clock>
-        
+
         <shape name="infobox">
             <area>35,324,694,410</area>
             <type>roundbox</type>
             <fill color="#000000" alpha="180" />
         </shape>
-        
+
         <textarea name="heading" from="basetextarea">
             <area>45,334,674,60</area>
             <font>basegothicmedium</font>
             <align>left,vcenter</align>
         </textarea>
-        
+
         <textarea name="label-text" from="basetextarea">
             <area>45,385,674,57</area>
             <multiline>yes</multiline>
@@ -47,7 +47,7 @@
             <align>left,vcenter</align>
             <cutdown>yes</cutdown>
         </textarea>
-        
+
         <buttonlist name="settings" from="baseshapebuttonlistwide">
             <statetype name="buttonitem">
                 <state name="active">
@@ -77,21 +77,21 @@
                 </state>
             </statetype>
         </buttonlist>
-        
+
         <textedit name="settingvalue" from="basemultilinetextedit">
             <position>50,528</position>
         </textedit>
-        
+
         <button name="save" from="basebutton">
             <position>565,558</position>
             <value>Save</value>
         </button>
-        
+
         <button name="cancel" from="basebutton">
             <position>565,618</position>
             <value>Cancel</value>
         </button>
-        
+
     </window>
 
     <window name="themechooser">
@@ -298,5 +298,5 @@
         </statetype>
 
     </window>
-    
+
 </mythuitheme>

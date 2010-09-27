@@ -230,6 +230,19 @@
             <fill color="#000000" alpha="225" />
         </shape>
 
+        <shape name="item">
+            <area>1620,-14,313,55</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="200" />
+        </shape>
+
+        <clock name="clock">
+            <area>1620,-2,303,50</area>
+            <font>basesmall</font>
+            <align>allcenter</align>
+            <template>%DATE%, %TIME%</template>
+        </clock>
+
         <imagetype name="bumperleft">
             <area>0,720,191,360</area>
             <preserveaspect>true</preserveaspect>

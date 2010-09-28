@@ -180,7 +180,7 @@
     </window>
     
     <window name="config">
-        <area>-1-1,500,500</area>
+        <area>-1,-1,500,500</area>
         
         <shape name="shape">
             <area>90,50,1100,520</area>

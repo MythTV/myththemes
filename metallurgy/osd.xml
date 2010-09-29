@@ -1,3 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mythuitheme SYSTEM "http://www.mythtv.org/schema/mythuitheme.dtd">
 <mythuitheme>
 
     <window name="program_info">
@@ -17,7 +19,7 @@
             <multiline>yes</multiline>
             <area>185,585,1054,130</area>
             <font>medium</font>
-            <template>%|"SUBTITLE|"% %DESCRIPTION%</template>
+            <template>%"|SUBTITLE|" %%DESCRIPTION%</template>
         </textarea>
 
         <textarea name="starttime">
@@ -76,13 +78,13 @@
             <multiline>yes</multiline>
             <area>185,585,1054,130</area>
             <font>medium</font>
-            <template>%|"SUBTITLE|"% %DESCRIPTION%</template>
+            <template>%"|SUBTITLE|" %%DESCRIPTION%</template>
         </textarea>
 
         <textarea name="starttime">
             <area>185,551,880,25</area>
             <font>smallgrey</font>
-            <template>(%STARTTIME% - %ENDTIME%)  %LENMINS%</template>
+            <template>(%STARTTIME% - %ENDTIME%) %LENMINS%</template>
         </textarea>
 
         <imagetype name="channelicon">

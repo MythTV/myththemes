@@ -4,7 +4,7 @@
 
     <window name="manualschedule">
 
-        <textarea name="pagetitle" from="baseheading">
+        <textarea name="heading" from="baseheading">
             <value>Manual Recording</value>
         </textarea>
 
@@ -89,7 +89,7 @@
 
     <window name="viewscheduled">
 
-        <textarea name="pagetitle" from="baseheading">
+        <textarea name="heading" from="baseheading">
             <value>Upcoming Recordings</value>
         </textarea>
 
@@ -176,7 +176,7 @@
             <area>85,532,1115,110</area>
             <font>medium</font>
             <multiline>yes</multiline>
-            <template>%YEARSTARS| %%DESCRIPTION%%| LONGREPEAT%</template>
+            <template>%YEARSTARS| %%DESCRIPTION%% |LONGREPEAT%</template>
         </textarea>
 
         <textarea name="rectypestatus" from="basetextarea">
@@ -199,7 +199,7 @@
 
     <window name="programfind">
 
-        <textarea name="pagetitle" from="baseheading">
+        <textarea name="heading" from="baseheading">
             <value>Programme Finder</value>
         </textarea>
 
@@ -278,7 +278,7 @@
             <area>85,498,1110,155</area>
             <font>medium</font>
             <multiline>yes</multiline>
-            <template>%YEARSTARS% %DESCRIPTION% %LONGREPEAT%</template>
+            <template>%YEARSTARS| %%DESCRIPTION%% |LONGREPEAT%</template>
         </textarea>
 
         <textarea name="recstatus" from="basetextarea">
@@ -294,7 +294,7 @@
 
     <window name="programguide">
 
-        <textarea name="pagetitle" from="baseheading">
+        <textarea name="heading" from="baseheading">
             <value>Programme Guide</value>
         </textarea>
 
@@ -391,14 +391,14 @@
         <textarea name="subtitle">
             <area>85,529,760,25</area>
             <font>mediumbold</font>
-            <template>%|"SUBTITLE|"%</template>
+            <template>%"|SUBTITLE|"%</template>
         </textarea>
 
         <textarea name="description">
             <area>85,558,1115,90</area>
             <font>medium</font>
             <multiline>yes</multiline>
-            <template>%YEARSTARS% %DESCRIPTION% %LONGREPEAT%</template>
+            <template>%YEARSTARS| %%DESCRIPTION%% |LONGREPEAT%</template>
         </textarea>
 
         <textarea name="rectypestatus" from="basetextarea">
@@ -411,7 +411,7 @@
 
     <window name="programguide-video">
 
-        <textarea name="pagetitle" from="baseheading">
+        <textarea name="heading" from="baseheading">
             <value>Programme Guide</value>
         </textarea>
 
@@ -501,14 +501,14 @@
         <textarea name="subtitle">
             <area>375,480,830,30</area>
             <font>mediumbold</font>
-            <template>%|"SUBTITLE|"%</template>
+            <template>%"|SUBTITLE|"%</template>
         </textarea>
 
         <textarea name="description">
             <area>375,514,830,120</area>
             <font>medium</font>
             <multiline>yes</multiline>
-            <template>%YEARSTARS% %DESCRIPTION% %LONGREPEAT%</template>
+            <template>%YEARSTARS| %%DESCRIPTION%% |LONGREPEAT%</template>
         </textarea>
 
         <imagetype name="video">
@@ -717,7 +717,7 @@
     <!-- Previously recorded screen -->
     <window name="programlist">
 
-        <textarea name="sched" from="baseheading">
+        <textarea name="heading" from="baseheading">
             <value>Previously Recorded</value>
         </textarea>
 
@@ -805,7 +805,7 @@
             <area>85,532,1115,110</area>
             <font>medium</font>
             <multiline>yes</multiline>
-            <template>%YEARSTARS% %DESCRIPTION% %LONGREPEAT%</template>
+            <template>%YEARSTARS| %%DESCRIPTION%% |LONGREPEAT%</template>
         </textarea>
 
         <textarea name="rectype" from="basetextarea">
@@ -827,7 +827,7 @@
 
     <window name="progdetails">
 
-        <textarea name="title" from="baseheading">
+        <textarea name="heading" from="baseheading">
             <value>Program Details</value>
         </textarea>
 

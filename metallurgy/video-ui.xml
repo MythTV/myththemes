@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<!DOCTYPE mythuitheme SYSTEM "../mythuitheme.dtd">
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mythuitheme SYSTEM "http://www.mythtv.org/schema/mythuitheme.dtd">
 <mythuitheme>
 
     <!-- Popups -->
@@ -44,6 +44,12 @@
 
     <!-- Main Windows -->
     <window name="manager">
+
+        <textarea name="heading" from="baseheading">
+            <value>Video Manager</value>
+        </textarea>
+
+        <imagetype name="background" from="basebackground0" />
 
         <statetype name="parentallevel">
             <position>740,10</position>
@@ -297,10 +303,11 @@
 
     <window name="browser">
 
-        <imagetype name="filler">
-            <position>0,0</position>
-            <filename>mv_browse_background.png</filename>
-        </imagetype>
+        <textarea name="heading" from="baseheading">
+            <value>Video Browser</value>
+        </textarea>
+
+        <imagetype name="background" from="basebackground0" />
 
         <buttonlist name="videos">
             <area>15,440,770,150</area>
@@ -581,7 +588,13 @@
 
     <window name="tree">
 
-       <textarea name="breadcrumbs" from="basetextarea">
+        <textarea name="heading" from="baseheading">
+            <value>Video List</value>
+        </textarea>
+
+        <imagetype name="background" from="basebackground0" />
+
+        <textarea name="breadcrumbs" from="basetextarea">
             <area>50,20,700,40</area>
             <font>basemedium</font>
         </textarea>
@@ -668,11 +681,12 @@
     </window>
 
     <window name="file_associations">
-        <textarea name="title" from="basetextarea">
-            <area>10,10,760,50</area>
-            <value>MythVideo File Associations</value>
-            <align>hcenter,vcenter</align>
+
+        <textarea name="heading" from="baseheading">
+            <value>File Associations</value>
         </textarea>
+
+        <imagetype name="background" from="basebackground0" />
 
         <textarea name="extension_text" from="basetextarea">
             <area>90,200,200,40</area>
@@ -729,12 +743,11 @@
 
     <window name="filter">
 
-        <textarea name="title" from="basetextarea">
-            <area>20,50,760,40</area>
-            <value>Filters video list</value>
-            <align>hcenter,vcenter</align>
-            <font>baselarge</font>
+        <textarea name="heading" from="baseheading">
+            <value>Video Filters</value>
         </textarea>
+
+        <imagetype name="background" from="basebackground0" />
 
         <!-- Labels -->
 

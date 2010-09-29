@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<!DOCTYPE mythuitheme SYSTEM "http://miffteevee.co.uk/mythuitheme.dtd">
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mythuitheme SYSTEM "http://www.mythtv.org/schema/mythuitheme.dtd">
 <mythuitheme>
 
     <window name="watchrecordings">
@@ -206,7 +206,7 @@
             <font>medium</font>
             <multiline>yes</multiline>
             <cutdown>yes</cutdown>
-            <template>%YEARSTARS% %DESCRIPTION% %LONGREPEAT%</template>
+            <template>%YEARSTARS| %%DESCRIPTION%% |LONGREPEAT%</template>
         </textarea>
 
         <imagetype name="video_background">
@@ -508,7 +508,7 @@
             <font>medium</font>
             <multiline>yes</multiline>
             <cutdown>yes</cutdown>
-            <template>%YEARSTARS% %DESCRIPTION% %LONGREPEAT%</template>
+            <template>%YEARSTARS| %%DESCRIPTION%% |LONGREPEAT%</template>
         </textarea>
 
         <imagetype name="video_background">

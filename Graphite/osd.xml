@@ -1,34 +1,36 @@
 <mythuitheme>
     <window name="MythPopupBox">
+
         <fontdef name="basesmall" face="DejaVu Sans">
             <pixelsize>22</pixelsize>
             <color>#FFFFFF</color>
         </fontdef>
+
         <fontdef name="basesmallgrey" from="basesmall">
             <color>#666666</color>
         </fontdef>
 
-        <area>0,0,1280,720</area>
-        
+        <area>50,50,380,463</area>
+
         <imagetype name="backimg">
-            <area>450,160,380,463</area>
+            <area>0,0,380,463</area>
             <filename>images/popup_background.png</filename>
         </imagetype>
         
         <textarea name="messagearea">
-            <area>475,180,328,140</area>
+            <area>25,20,328,140</area>
             <font>basesmall</font>
             <multiline>yes</multiline>
             <align>allcenter</align>
         </textarea>
         
         <imagetype name="dialogboxoverlay">
-            <area>450,160,380,117</area>
+            <area>0,0,380,117</area>
             <filename>images/dialogbox_overlay.png</filename>
         </imagetype>
         
         <buttonlist name="list">
-            <area>466,365,349,260</area>
+            <area>16,185,349,260</area>
             <spacing>3</spacing>
             <layout>vertical</layout>
             <buttonarea>0,0,100%,97%</buttonarea>

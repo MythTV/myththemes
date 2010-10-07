@@ -845,10 +845,12 @@
             </state>
         </statetype>
 
-	<imagetype name="titleboxshadow">
+	<shape name="titleboxshadow">
             <area>-10,110,1300,10</area>
-            <gradient start="#ffffff" end="#000000" alpha="50" />
-	</imagetype>
+	    <fill style="gradient">
+	            <gradient start="#ffffff" end="#000000" alpha="50" />
+	    </fill>
+	</shape>
 
 	<imagetype name="overlay">
             <area>0,0,1280,720</area>

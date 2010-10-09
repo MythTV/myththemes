@@ -149,6 +149,12 @@
             <value>Text Size:</value>
         </textarea>
 
+        <textarea name="plugins_text" from="command_text">
+            <area>95,750,500,40</area>
+            <align>allcenter</align>
+            <value>Enable browser plugins (Flash, etc):</value>
+        </textarea>
+
         <textedit name="command" from="basetextedit">
             <position>195,487</position>
         </textedit>
@@ -156,6 +162,10 @@
         <textedit name="zoom" from="basetextedit">
             <position>195,617</position>
         </textedit>
+
+        <checkbox name="enablepluginscheck" from="basecheckbox">
+            <position>550,752</position>
+        </checkbox>
 
         <button name="cancel" from="basebutton">
             <position>208,850</position>

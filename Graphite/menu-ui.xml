@@ -4,7 +4,7 @@
             <color>#666666</color>
         </fontdef>
         
-        <imagetype name="background" draworder="0">
+        <imagetype name="background">
             <area>0,0,1280,720</area>
             <filename>images/backgrounds/</filename>
         </imagetype>
@@ -62,7 +62,7 @@
         <clock name="clock">
             <area>529,700,219,25</area>
             <font>clock</font>
-            <format>%DATE%, %TIME%</format>
+            <template>%DATE%, %TIME%</template>
             <align>center</align>
             <alpha>255</alpha>
         </clock>

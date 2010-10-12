@@ -428,7 +428,7 @@
         <clock name="clock">
             <area>529,700,219,25</area>
             <font>clock</font>
-            <format>%DATE%, %TIME%</format>
+            <template>%DATE%, %TIME%</template>
             <align>center</align>
             <alpha>255</alpha>
         </clock>
@@ -496,7 +496,7 @@
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,80,125</area>
-                    <imagetype name="buttonimage" draworder="0">
+                    <imagetype name="buttonimage">
                         <area>0,0,80,125</area>
                         <alpha>35</alpha>
                         <filename>images/mv_browse_nocover.png</filename>
@@ -607,7 +607,7 @@
         <clock name="clock">
             <area>529,700,219,25</area>
             <font>clock</font>
-            <format>%DATE%, %TIME%</format>
+            <template>%DATE%, %TIME%</template>
             <align>center</align>
             <alpha>255</alpha>
         </clock>
@@ -696,7 +696,7 @@
             <font>basemedium</font>
         </textarea>
         
-        <imagetype name="clockback" draworder="0">
+        <imagetype name="clockback">
             <area>540,695,200,51</area>
             <filename>images/clock_backdrop.png</filename>
         </imagetype>
@@ -704,12 +704,12 @@
         <clock name="clock">
             <area>544,700,189,25</area>
             <font>clock</font>
-            <format>%DATE%, %TIME%</format>
+            <template>%DATE%, %TIME%</template>
             <align>center</align>
             <alpha>255</alpha>
         </clock>
         
-        <imagetype name="clockbackoverlay" draworder="0">
+        <imagetype name="clockbackoverlay">
             <area>540,695,200,23</area>
             <filename>images/clock_backdrop_overlay.png</filename>
         </imagetype>
@@ -762,7 +762,7 @@
         <clock name="clock">
             <area>529,700,219,25</area>
             <font>clock</font>
-            <format>%DATE%, %TIME%</format>
+            <template>%DATE%, %TIME%</template>
             <align>center</align>
             <alpha>255</alpha>
         </clock>
@@ -842,7 +842,7 @@
         <clock name="clock">
             <area>529,700,219,25</area>
             <font>clock</font>
-            <format>%DATE%, %TIME%</format>
+            <template>%DATE%, %TIME%</template>
             <align>center</align>
             <alpha>255</alpha>
         </clock>
@@ -1172,7 +1172,7 @@
         <clock name="clock">
             <area>529,700,219,25</area>
             <font>clock</font>
-            <format>%DATE%, %TIME%</format>
+            <template>%DATE%, %TIME%</template>
             <align>center</align>
             <alpha>255</alpha>
         </clock>
@@ -1351,7 +1351,7 @@
         <clock name="clock">
             <area>529,700,219,25</area>
             <font>clock</font>
-            <format>%DATE%, %TIME%</format>
+            <template>%DATE%, %TIME%</template>
             <align>center</align>
             <alpha>255</alpha>
         </clock>
@@ -1411,7 +1411,6 @@
             <font>basesmaller</font>
             <align>center</align>
             <cutdown>yes</cutdown>
-            <italics>yes</italics>
         </textarea>
         
         <textarea name="seasonlabel" from="basetextarea">
@@ -1500,7 +1499,7 @@
         <clock name="clock">
             <area>529,700,219,25</area>
             <font>clock</font>
-            <format>%DATE%, %TIME%</format>
+            <template>%DATE%, %TIME%</template>
             <align>center</align>
             <alpha>255</alpha>
         </clock>

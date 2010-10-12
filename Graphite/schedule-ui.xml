@@ -184,7 +184,7 @@
         <clock name="clock">
             <area>529,700,219,25</area>
             <font>clock</font>
-            <format>%DATE%, %TIME%</format>
+            <template>%DATE%, %TIME%</template>
             <align>center</align>
             <alpha>255</alpha>
         </clock>
@@ -219,7 +219,6 @@
             <area>420,328,210,29</area>
             <align>right</align>
         </textarea>
-        -
 
         <buttonlist name="timelist">
             <area>650,328,210,29</area>
@@ -393,7 +392,7 @@
         <clock name="clock">
             <area>529,700,219,25</area>
             <font>clock</font>
-            <format>%DATE%, %TIME%</format>
+            <template>%DATE%, %TIME%</template>
             <align>center</align>
             <alpha>255</alpha>
         </clock>
@@ -497,7 +496,7 @@
         <clock name="clock">
             <area>529,700,219,25</area>
             <font>clock</font>
-            <format>%DATE%, %TIME%</format>
+            <template>%DATE%, %TIME%</template>
             <align>center</align>
             <alpha>255</alpha>
         </clock>
@@ -531,7 +530,6 @@
         <textarea name="title" from="basetextarea">
             <area>430,65,780,35</area>
             <font>baseextralarge</font>
-            <pixelsize>39</pixelsize>
             <cutdown>yes</cutdown>
             <align>vcenter</align>
         </textarea>
@@ -658,7 +656,7 @@
         <clock name="clock">
             <area>529,700,219,25</area>
             <font>clock</font>
-            <format>%DATE%, %TIME%</format>
+            <template>%DATE%, %TIME%</template>
             <align>center</align>
             <alpha>255</alpha>
         </clock>
@@ -837,7 +835,7 @@
         <clock name="clock">
             <area>529,700,219,25</area>
             <font>clock</font>
-            <format>%DATE%, %TIME%</format>
+            <template>%DATE%, %TIME%</template>
             <align>center</align>
             <alpha>255</alpha>
         </clock>
@@ -871,7 +869,6 @@
         <textarea name="title" from="basetextarea">
             <area>60,65,1100,35</area>
             <font>baseextralarge</font>
-            <pixelsize>39</pixelsize>
             <cutdown>yes</cutdown>
             <align>vcenter</align>
         </textarea>
@@ -1020,7 +1017,7 @@
         <clock name="clock">
             <area>529,700,219,25</area>
             <font>clock</font>
-            <format>%DATE%, %TIME%</format>
+            <template>%DATE%, %TIME%</template>
             <align>center</align>
             <alpha>255</alpha>
         </clock>
@@ -1148,7 +1145,7 @@
         <clock name="clock">
             <area>529,700,219,25</area>
             <font>clock</font>
-            <format>%DATE%, %TIME%</format>
+            <template>%DATE%, %TIME%</template>
             <align>center</align>
             <alpha>255</alpha>
         </clock>
@@ -1390,7 +1387,6 @@
         <textarea name="title" from="basetextarea">
             <area>30,65,1100,35</area>
             <font>baseextralarge</font>
-            <pixelsize>39</pixelsize>
             <cutdown>yes</cutdown>
             <align>vcenter</align>
         </textarea>
@@ -1493,7 +1489,7 @@
         <clock name="clock">
             <area>529,700,219,25</area>
             <font>clock</font>
-            <format>%DATE%, %TIME%</format>
+            <template>%DATE%, %TIME%</template>
             <align>center</align>
             <alpha>255</alpha>
         </clock>
@@ -1537,7 +1533,7 @@
         <clock name="clock">
             <area>529,700,219,25</area>
             <font>clock</font>
-            <format>%DATE%, %TIME%</format>
+            <template>%DATE%, %TIME%</template>
             <align>center</align>
             <alpha>255</alpha>
         </clock>
@@ -1669,7 +1665,7 @@
         <clock name="clock">
             <area>529,700,219,25</area>
             <font>clock</font>
-            <format>%DATE%, %TIME%</format>
+            <template>%DATE%, %TIME%</template>
             <align>center</align>
             <alpha>255</alpha>
         </clock>
@@ -1717,7 +1713,7 @@
                     <shape name="buttonback">
                         <area>0,0,100%,100%</area>
                         <type>roundbox</type>
-                        <cornerradius>5</cornerradius>#
+                        <cornerradius>5</cornerradius>
                         <line color="#ffffff" width="2" />
                         <fill color="#000000" alpha="100" />
                     </shape>

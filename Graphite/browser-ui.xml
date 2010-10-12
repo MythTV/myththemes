@@ -36,7 +36,7 @@
         <clock name="clock">
             <area>529,700,219,25</area>
             <font>clock</font>
-            <format>%DATE%, %TIME%</format>
+            <template>%DATE%, %TIME%</template>
             <align>center</align>
             <alpha>255</alpha>
         </clock>
@@ -132,7 +132,7 @@
         <clock name="clock">
             <area>529,700,219,25</area>
             <font>clock</font>
-            <format>%DATE%, %TIME%</format>
+            <template>%DATE%, %TIME%</template>
             <align>center</align>
             <alpha>255</alpha>
         </clock>
@@ -206,7 +206,7 @@
         <clock name="clock">
             <area>529,700,219,25</area>
             <font>clock</font>
-            <format>%DATE%, %TIME%</format>
+            <template>%DATE%, %TIME%</template>
             <align>center</align>
             <alpha>255</alpha>
         </clock>
@@ -293,7 +293,7 @@
         <clock name="clock">
             <area>529,700,219,25</area>
             <font>clock</font>
-            <format>%DATE%, %TIME%</format>
+            <template>%DATE%, %TIME%</template>
             <align>center</align>
             <alpha>255</alpha>
         </clock>

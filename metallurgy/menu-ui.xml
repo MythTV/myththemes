@@ -264,8 +264,8 @@
                         </state>
                         <state name="TV_RECPRIORITIES_SETTINGS_GENERAL" from="TV_SETTINGS_RECPRIORITIES" />
                         <state name="TV_RECPRIORITIES_CHANNEL" from="TV_RECPRIORITIES_SETTINGS_GENERAL" />
-                        <state name="SETUP_GENERAL" FROM="TV" />
-                        <state name="SETUP_CAPTURE_CARDS" FROM="TV" />
+                        <state name="SETUP_GENERAL" from="TV" />
+                        <state name="SETUP_CAPTURE_CARDS" from="TV" />
                         <state name="SETUP_VIDEO_SOURCES" from="TV" />
                         <state name="SETUP_INPUT_CONNECTIONS" from="TV" />
                         <state name="SETUP_CHANNEL_EDITOR" from="TV" />
@@ -544,8 +544,8 @@
                         </state>
                         <state name="TV_RECPRIORITIES_SETTINGS_GENERAL" from="TV_SETTINGS_RECPRIORITIES" />
                         <state name="TV_RECPRIORITIES_CHANNEL" from="TV_RECPRIORITIES_SETTINGS_GENERAL" />
-                        <state name="SETUP_GENERAL" FROM="TV" />
-                        <state name="SETUP_CAPTURE_CARDS" FROM="TV" />
+                        <state name="SETUP_GENERAL" from="TV" />
+                        <state name="SETUP_CAPTURE_CARDS" from="TV" />
                         <state name="SETUP_VIDEO_SOURCES" from="TV" />
                         <state name="SETUP_INPUT_CONNECTIONS" from="TV" />
                         <state name="SETUP_CHANNEL_EDITOR" from="TV" />

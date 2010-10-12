@@ -733,14 +733,14 @@
             <position>462,20</position>
         </imagetype>
 
-        <textarea name="showinstr" align="allcenter">
+        <textarea name="showinstr">
             <area>462,665,356,35</area>
             <font>small</font>
             <value>(1) Time (2) Title</value>
             <align>allcenter</align>
         </textarea>
 
-        <textarea name="curview" align="allcenter">
+        <textarea name="curview">
             <area>462,20,356,35</area>
             <font>small</font>
             <align>allcenter</align>

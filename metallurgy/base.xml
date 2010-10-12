@@ -266,14 +266,14 @@
         <clock name="date">
             <area>846,24,257,30</area>
             <font>small</font>
-            <format>%DATE%</format>
+            <template>%DATE%</template>
             <align>allcenter</align>
             <cutdown>true</cutdown>
         </clock>
 
         <clock name="time" from="date">
             <area>1114,24,123,30</area>
-            <format>%TIME%</format>
+            <template>%TIME%</template>
         </clock>
 
 <!--        <imagetype name="alert_background">

@@ -221,6 +221,11 @@
             <pixelsize>38</pixelsize>
         </fontdef>
 
+        <fontdef name="basegothicmidwhite" from="basegothicsmalllightblue">
+            <color>#FFFFFF</color>
+            <pixelsize>38</pixelsize>
+        </fontdef>
+
         <fontdef name="basesmalllightblue" from="basesmall">
             <color>#0767AB</color>
         </fontdef>
@@ -286,9 +291,17 @@
         </textarea>
 
         <textarea name="channel">
-            <area>500,880,1100,42</area>
+            <area>500,880,1100,32</area>
             <multiline>no</multiline>
             <font>basegothicmid</font>
+            <align>left,vcenter</align>
+            <cutdown>yes</cutdown>
+        </textarea>
+
+        <textarea name="description">
+            <area>500,920,1100,150</area>
+            <multiline>yes</multiline>
+            <font>basegothicmidwhite</font>
             <align>left,vcenter</align>
             <cutdown>yes</cutdown>
         </textarea>
@@ -556,10 +569,6 @@
             <color>#FFFFFF</color>
         </fontdef>
 
-        <fontdef name="basesmalllightblue" from="basesmall">
-            <color>#0767AB</color>
-        </fontdef>
-
         <fontdef name="basegothicmedium" face="League Gothic">
             <pixelsize>55</pixelsize>
             <color>#FFFFFF</color>
@@ -574,31 +583,33 @@
             <color>#0767AB</color>
         </fontdef>
 
+        <fontdef name="basegothicmid" from="basegothicsmall">
+            <pixelsize>30</pixelsize>
+        </fontdef>
+
         <fontdef name="basegothicmidblue" from="basegothicsmalllightblue">
             <color>#3A9ADE</color>
             <pixelsize>38</pixelsize>
         </fontdef>
 
-        <imagetype name="leftpanel_bg">
-            <area>-20,0,920,1080</area>
-            <filename>images/editmetadata_leftpanel_bg.png</filename>
-        </imagetype>
+        <fontdef name="basegothicmidwhite" from="basegothicsmalllightblue">
+            <color>#FFFFFF</color>
+            <pixelsize>38</pixelsize>
+        </fontdef>
+
+        <fontdef name="basesmalllightblue" from="basesmall">
+            <color>#0767AB</color>
+        </fontdef>
 
         <shape name="panel_dark">
-            <area>0,0,768,1080</area>
-            <fill color="#000000" alpha="80" />
-        </shape>
-
-        <shape name="infobox">
-            <area>35,13,694,1033</area>
-            <type>roundbox</type>
-            <fill color="#000000" alpha="180" />
+            <area>180,730,1560,360</area>
+            <fill color="#000000" alpha="225" />
         </shape>
 
         <shape name="item">
             <area>1620,-14,313,55</area>
             <type>roundbox</type>
-            <fill color="#000000" alpha="220" />
+            <fill color="#000000" alpha="200" />
         </shape>
 
         <clock name="clock">
@@ -608,48 +619,61 @@
             <template>%DATE%, %TIME%</template>
         </clock>
 
+        <imagetype name="bumperleft">
+            <area>0,720,191,360</area>
+            <preserveaspect>true</preserveaspect>
+            <filename>images/osd_bumper_left.png</filename>
+        </imagetype>
+
+        <imagetype name="bumperright">
+            <area>1729,720,191,360</area>
+            <preserveaspect>true</preserveaspect>
+            <filename>images/osd_bumper_right.png</filename>
+        </imagetype>
+
+        <imagetype name="infooverlay">
+            <area>0,540,1920,234</area>
+            <preserveaspect>true</preserveaspect>
+            <filename>images/infooverlay.png</filename>
+        </imagetype>
+
         <imagetype name="iconpath">
-            <area>535,860,174,174</area>
+            <area>250,770,200,200</area>
+            <preserveaspect>true</preserveaspect>
+        </imagetype>
+
+        <imagetype name="coverart">
+            <area>200,750,290,320</area>
             <preserveaspect>true</preserveaspect>
         </imagetype>
 
         <textarea name="title">
-            <area>45,54,674,60</area>
+            <area>500,770,1100,60</area>
             <font>basegothicmedium</font>
             <align>left,vcenter</align>
-            <template>(%CHANNUM%) %TITLE%</template>
         </textarea>
 
         <textarea name="subtitle">
-            <area>45,105,674,57</area>
+            <area>500,830,1100,42</area>
             <multiline>no</multiline>
             <font>basegothicmidblue</font>
             <align>left,vcenter</align>
             <cutdown>yes</cutdown>
         </textarea>
 
-        <textarea name="starttime">
-            <area>45,145,674,57</area>
-            <multiline>yes</multiline>
-            <font>basesmalllightblue</font>
-            <align>left,vcenter</align>
-            <cutdown>yes</cutdown>
-            <template>%STARTTIME%-%ENDTIME%, %RECSTARTDATE%</template>
-        </textarea>
-
         <textarea name="channel">
-            <area>45,180,674,57</area>
-            <multiline>yes</multiline>
-            <font>basesmalllightblue</font>
+            <area>500,880,1100,42</area>
+            <multiline>no</multiline>
+            <font>basegothicmid</font>
             <align>left,vcenter</align>
             <cutdown>yes</cutdown>
         </textarea>
 
         <textarea name="description">
-            <area>45,230,674,430</area>
+            <area>500,920,1100,150</area>
             <multiline>yes</multiline>
-            <font>basesmall</font>
-            <align>left,top</align>
+            <font>basegothicmidwhite</font>
+            <align>left,vcenter</align>
             <cutdown>yes</cutdown>
         </textarea>
 

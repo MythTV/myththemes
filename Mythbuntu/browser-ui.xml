@@ -294,6 +294,16 @@
             <position>445,240</position>
         </textedit>
 
+        <textarea name="pluginslabel" from="basetextarea">
+            <area>445,345,450,30</area>
+            <align>allcenter</align>
+            <value>Enable browser plugins (Flash, etc):</value>
+        </textarea>
+                            
+        <checkbox name="enablepluginscheck" from="basecheckbox">
+            <position>405,350</position>
+        </checkbox>
+
         <shape name="background">
             <area>200,400,800,140</area>
             <type>roundbox</type>

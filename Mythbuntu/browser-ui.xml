@@ -297,7 +297,7 @@
         <textarea name="pluginslabel" from="basetextarea">
             <area>445,345,450,30</area>
             <align>allcenter</align>
-            <value>Enable browser plugins (Flash, etc):</value>
+            <value>Enable browser plugins (Flash, etc)</value>
         </textarea>
                             
         <checkbox name="enablepluginscheck" from="basecheckbox">

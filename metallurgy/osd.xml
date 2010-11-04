@@ -3,7 +3,6 @@
 <mythuitheme>
 
     <window name="program_info">
-        <area>0,480,1280,240</area>
 
         <imagetype name="background">
             <area>0,480,1280,240</area>

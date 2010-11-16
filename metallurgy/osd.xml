@@ -65,40 +65,40 @@
         <area>0,480,1280,240</area>
 
         <imagetype name="background">
-            <area>0,480,1280,240</area>
+            <area>0,0,1280,240</area>
             <filename>osd/background.png</filename>
         </imagetype>
 
         <textarea name="title">
-            <area>185,510,830,38</area>
+            <area>185,30,830,38</area>
             <font>extralarge</font>
         </textarea>
 
         <textarea name="description">
             <multiline>yes</multiline>
-            <area>185,585,1054,130</area>
+            <area>185,105,1054,130</area>
             <font>medium</font>
             <template>%"|SUBTITLE|" %%DESCRIPTION%</template>
         </textarea>
 
         <textarea name="starttime">
-            <area>185,551,880,25</area>
+            <area>185,71,880,25</area>
             <font>smallgrey</font>
             <template>(%STARTTIME% - %ENDTIME%) %LENMINS%</template>
         </textarea>
 
         <imagetype name="channelicon">
-            <area>46,520,120,90</area>
+            <area>46,40,120,90</area>
         </imagetype>
 
         <textarea name="time">
-            <area>1034,510,200,40</area>
+            <area>1034,30,200,40</area>
             <font>medium</font>
             <align>right</align>
         </textarea>
 
         <textarea name="channum">
-            <area>46,635,120,30</area>
+            <area>46,155,120,30</area>
             <font>extralarge</font>
             <align>hcenter</align>
         </textarea>

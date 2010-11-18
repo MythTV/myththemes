@@ -207,15 +207,12 @@
                         <state name="SHUTDOWN" from="DEFAULT" />
                         <state name="DVD_SETTINGS_GENERAL" from="DVD" />
                         <state name="DVD_SETTINGS_PLAY" from="DVD" />
-                        <state name="DVD_SETTINGS_RIP" from="DVD" />
                         <state name="EJECT">
                             <imagetype name="icon">
                                 <filename>icons/eject.png</filename>
                             </imagetype>
                         </state>
-                        <state name="DVD_PLAY" from="DVD" />
-                        <state name="VCD_PLAY" from="DVD" />
-                        <state name="DVD_RIP" from="DVD" />
+                        <state name="DISC_PLAY" from="DVD" />
                         <state name="GAME_SETTINGS_GENERAL" from="GAME" />
                         <state name="GAME_SETTINGS_PLAYERS" from="GAME" />
                         <state name="GAME_SCAN" from="GAME" />
@@ -494,8 +491,6 @@
                             </imagetype>
                         </state>
                         <state name="DVD_PLAY" from="DVD" />
-                        <state name="VCD_PLAY" from="DVD" />
-                        <state name="DVD_RIP" from="DVD" />
                         <state name="GAME_SETTINGS_GENERAL" from="GAME" />
                         <state name="GAME_SETTINGS_PLAYERS" from="GAME" />
                         <state name="GAME_SCAN" from="GAME" />

@@ -1744,23 +1744,18 @@
             <value>DVD Drive:</value>
         </textarea>
 
-        <textarea name="vcdplay_text" from="title_text">
+        <textarea name="bluraymount_text" from="title_text">
             <position>25,640</position>
-            <value>VCD Player:</value>
-        </textarea>
-
-        <textarea name="vcddrive_text" from="title_text">
-            <position>25,700</position>
-            <value>VCD Drive:</value>
+            <value>BD Mount:</value>
         </textarea>
 
         <textarea name="altcheck_text" from="title_text">
-            <area>135,750,400,40</area>
+            <area>135,700,400,40</area>
             <value>Enable Alternate Player</value>
         </textarea>
 
         <textarea name="altplay_text" from="title_text">
-            <position>25,800</position>
+            <position>25,750</position>
             <value>Alt. Player:</value>
         </textarea>
 
@@ -1779,20 +1774,16 @@
             <position>205,577</position>
         </textedit>
 
-        <textedit name="vcdplayer" from="basetextedit">
+        <textedit name="bluraymount" from="basetextedit">
             <position>205,637</position>
         </textedit>
 
-        <textedit name="vcddrive" from="basetextedit">
-            <position>205,697</position>
-        </textedit>
-
         <checkbox name="altcheck" from="basecheckbox">
-            <position>245,752</position>
+            <position>245,702</position>
         </checkbox>
 
         <textedit name="altplayer" from="basetextedit">
-            <position>205,797</position>
+            <position>205,747</position>
         </textedit>
 
         <imagetype name="dialogboxoverlay">

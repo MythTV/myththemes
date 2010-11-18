@@ -100,12 +100,9 @@
                             </imagetype>
                         </state>
                         <state name="MENU_OPTICAL_DISKS" from="DVD" />
-                        <state name="DVD_PLAY" from="DVD" />
-                        <state name="VCD_PLAY" from="DVD" />
-                        <state name="DVD_RIP" from="DVD" />
+                        <state name="DISC_PLAY" from="DVD" />
                         <state name="DVD_SETTINGS_GENERAL" from="DVD" />
                         <state name="DVD_SETTINGS_PLAY" from="DVD" />
-                        <state name="DVD_SETTINGS_RIP" from="DVD" />
                         <state name="MUSIC_RIP" from="DVD" />
                         <state name="EJECT" from="DVD" />
                         <state name="ARCHIVE" from="DVD" />

@@ -124,22 +124,10 @@
             <!-- ########  dvdmenu.xml  ########-->
             <!-- ###############################-->
 
-            <state name="DVD_PLAY">
+            <state name="DISC_PLAY">
                 <imagetype name="watermark">
                     <filename>watermark/dvd.png</filename>
 		    <position>0,0</position>
-                </imagetype>
-            </state>
-
-            <state name="VCD_PLAY">
-                <imagetype name="watermark">
-                    <filename>watermark/dvd.png</filename>
-                </imagetype>
-            </state>
-
-            <state name="DVD_RIP">
-                <imagetype name="watermark">
-                    <filename>watermark/dvd.png</filename>
                 </imagetype>
             </state>
 

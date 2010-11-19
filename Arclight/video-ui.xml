@@ -782,137 +782,7 @@
             <template>Starring: %1</template>
         </textarea>
 
-        <buttonlist name="videos">
-            <area>786,549,1136,535</area>
-            <scrollstyle>free</scrollstyle>
-            <wrapstyle>items</wrapstyle>
-            <layout>vertical</layout>
-            <spacing>0</spacing>
-            <drawfrombottom>true</drawfrombottom>
-            <buttonarea>2,0,1136,535</buttonarea>
-            <statetype name="buttonitem">
-                <state name="active">
-                    <area>1,0,1132,89</area>
-                    <shape name="item">
-                        <area>0,0,100%,88</area>
-                        <type>box</type>
-                        <fill color="#000000" alpha="180" />
-                    </shape>
-                    <imagetype name="coverart">
-                        <area>6,2,50,85</area>
-                        <preserveaspect>true</preserveaspect>
-                        <alpha>160</alpha>
-                    </imagetype>
-                    <textarea name="title">
-                        <area>70,10,1070,40</area>
-                        <align>left,vcenter</align>
-                        <font>basemedium</font>
-                        <alpha>210</alpha>
-                    </textarea>
-                    <textarea name="subtitle">
-                        <area>90,56,860,30</area>
-                        <align>left,vcenter</align>
-                        <font>basesmall</font>
-                        <alpha>210</alpha>
-                    </textarea>
-                    <textarea name="year">
-                        <area>674,10,450,40</area>
-                        <align>right,vcenter</align>
-                        <font>basesmall</font>
-                        <alpha>210</alpha>
-                    </textarea>
-                    <textarea name="##x##">
-                        <area>937,56,187,30</area>
-                        <align>right,vcenter</align>
-                        <font>basesmall</font>
-                        <alpha>210</alpha>
-                    </textarea>
-                    <imagetype name="divider">
-                        <area>0,88,1136,2</area>
-                        <filename>images/baserecordinglistwide_divider.png</filename>
-                        <alpha>100</alpha>
-                    </imagetype>
-                    <statetype name="nodetype">
-                        <state name="subfolder">
-                            <imagetype name="buttonarrow">
-                                <position>1090,32</position>
-                                <filename>images/reclist-arrow-white.png</filename>
-                                <alpha>210</alpha>
-                            </imagetype>
-                        </state>
-                        <state name="upfolder">
-                            <imagetype name="buttonarrow">
-                                <position>10,32</position>
-                                <filename>images/reclist-arrow-white-left.png</filename>
-                                <alpha>210</alpha>
-                            </imagetype>
-                        </state>
-                    </statetype>
-                </state>
-                <state name="selectedactive" from="active">
-                    <shape name="item">
-                        <fill color="#0767AB" alpha="240" />
-                    </shape>
-                    <textarea name="title">
-                        <alpha>200</alpha>
-                    </textarea>
-                    <imagetype name="coverart">
-                        <alpha>255</alpha>
-                    </imagetype>
-                    <textarea name="subtitle">
-                        <alpha>200</alpha>
-                    </textarea>
-                    <textarea name="year">
-                        <alpha>200</alpha>
-                    </textarea>
-                    <textarea name="##x##">
-                        <alpha>200</alpha>
-                    </textarea>
-                    <imagetype name="divider">
-                        <filename />
-                    </imagetype>
-                    <statetype name="nodetype">
-                        <state name="subfolder">
-                            <imagetype name="buttonarrow">
-                                <position>1090,32</position>
-                                <filename>images/reclist-arrow-white.png</filename>
-                                <alpha>210</alpha>
-                            </imagetype>
-                        </state>
-                        <state name="upfolder">
-                            <imagetype name="buttonarrow">
-                                <position>10,32</position>
-                                <filename>images/reclist-arrow-white-left.png</filename>
-                                <alpha>210</alpha>
-                            </imagetype>
-                        </state>
-                    </statetype>
-                </state>
-                <state name="selectedinactive" from="active" />
-            </statetype>
-            <statetype name="upscrollarrow">
-                <position>1075,-30</position>
-                <state type="off">
-                </state>
-                <state type="full">
-                    <imagetype name="upon">
-                        <filename>images/arclight_popup_uparrow.png</filename>
-                        <alpha>230</alpha>
-                    </imagetype>
-                </state>
-            </statetype>
-            <statetype name="downscrollarrow">
-                <position>1057,-30</position>
-                <state type="off">
-                </state>
-                <state type="full">
-                    <imagetype name="dnon">
-                        <filename>images/arclight_popup_downarrow.png</filename>
-                        <alpha>230</alpha>
-                    </imagetype>
-                </state>
-            </statetype>
-        </buttonlist>
+        <buttonlist name="videos" from="basevideolist" />
 
     </window>
 
@@ -1016,7 +886,7 @@
         <buttontree name="videos">
             <area>786,557,1136,525</area>
             <numlists>1</numlists>
-            <buttonlist name="listtemplate" from="baserecordinglistwide" />
+            <buttonlist name="listtemplate" from="basevideolist" />
         </buttontree>
 
     </window>

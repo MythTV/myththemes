@@ -941,7 +941,7 @@
 
         <textarea name="status" from="position">
             <position>250,545</position>
-            <value>All ready in database</value>
+            <value>Already in database</value>
         </textarea>
 
         <button name="play" from="basesmallbutton">

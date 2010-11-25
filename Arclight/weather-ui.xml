@@ -719,7 +719,7 @@
             <multiline>yes</multiline>
             <font>basesmall</font>
             <align>allcenter</align>
-            <value>This screen governs the behavior of the weather screens.  You can enable a background weather update which will run regardless of being on the weather screen, and configure how many seconds each screen will display.\n\nWhen you are done configuring the Weather Plugin, click "Finish" to continue.</value>
+            <value>This screen governs the behavior of the weather screens.  You can enable a background weather update which will run regardless of being on the weather screen, and configure how many seconds each screen will display.\n\nWhen you are done configuring the weather plugin, click "Finish" to continue.</value>
         </textarea>
 
         <textarea name="backgroundlabel" from="basetextarea">

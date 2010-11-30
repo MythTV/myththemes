@@ -1619,13 +1619,18 @@
             <value>BD Mount:</value>
         </textarea>
 
+        <textarea name="blurayregion_text" from="title_text">
+            <position>25,700</position>
+            <value>BD Region:</value>
+        </textarea>
+
         <textarea name="altcheck_text" from="title_text">
-            <area>135,700,400,40</area>
+            <area>135,750,400,40</area>
             <value>Enable Alternate Player</value>
         </textarea>
 
         <textarea name="altplay_text" from="title_text">
-            <position>25,750</position>
+            <position>25,800</position>
             <value>Alt. Player:</value>
         </textarea>
 
@@ -1648,12 +1653,16 @@
             <position>205,637</position>
         </textedit>
 
+        <buttonlist name="blurayregionlist" from="basewideselector">
+            <position>205,697</position>
+        </buttonlist>
+
         <checkbox name="altcheck" from="basecheckbox">
-            <position>245,702</position>
+            <position>245,752</position>
         </checkbox>
 
         <textedit name="altplayer" from="basetextedit">
-            <position>205,747</position>
+            <position>205,797</position>
         </textedit>
 
         <imagetype name="dialogboxoverlay">

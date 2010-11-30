@@ -952,6 +952,15 @@
             <position>250,245</position>
         </textedit>
 
+        <textarea name="blurayreg_text" from="default_text">
+            <position>10,295</position>
+            <value>Blu-ray Region:</value>
+        </textarea>
+
+        <buttonlist name="blurayregionlist" from="basewideselector">
+            <position>250,295</position>
+        </buttonlist>
+
         <checkbox name="altcheck" from="basecheckbox">
             <position>500,350</position>
         </checkbox>

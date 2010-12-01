@@ -135,6 +135,31 @@
                     <value>Search Lists</value>
                 </textarea>
             </state>
+            <state name="TV">
+                <textarea name="title" from="baseheading">
+                    <value>TV</value>
+                </textarea>
+            </state>
+            <state name="VIDEO">
+                <textarea name="title" from="baseheading">
+                    <value>Videos</value>
+                </textarea>
+            </state>
+            <state name="NETVISION">
+                <textarea name="title" from="baseheading">
+                    <value>Internet Video</value>
+                </textarea>
+            </state>
+            <state name="ARCHIVEUTILS">
+                <textarea name="title" from="baseheading">
+                    <value>Archive Utilities</value>
+                </textarea>
+            </state>
+            <state name="SETUP_TVRECPRIORITIES">
+                <textarea name="title" from="baseheading">
+                    <value>Recording Priorities</value>
+                </textarea>
+            </state>
         </statetype>
 
         <buttonlist name="menu">

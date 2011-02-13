@@ -70,7 +70,7 @@
         </buttonlist>
 
         <button name="delete" from="basebutton">
-            <position>620,472</position>
+            <position>750,472</position>
             <value>Delete</value>
         </button>
 
@@ -89,12 +89,12 @@
         </button>
 
         <button name="importicons" from="basewidebutton">
-            <position>325,585</position>
+            <position>375,585</position>
             <value>Icon Download</value>
         </button>
 
         <button name="edittransport" from="basewidebutton">
-            <position>585,585</position>
+            <position>700,585</position>
             <value>Edit Transports</value>
         </button>
 

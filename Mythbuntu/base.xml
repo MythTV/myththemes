@@ -123,22 +123,23 @@
         <spacing>5</spacing>
         <buttonarea>0,0,100%,97%</buttonarea>
         <statetype name="buttonitem">
+            <area>0,0,100%,30</area>
             <state name="active">
                 <area>0,0,100%,30</area>
-	        <shape name="buttonbackground">
-	            <type>roundbox</type>
-	            <area>0,0,99%,30</area>
-		    <fill color="#666666" alpha="50" />
-		    <cornerradius>15</cornerradius>
-	        </shape>
+                <shape name="buttonbackground">
+                    <type>roundbox</type>
+                    <area>0,0,100%,30</area>
+                    <fill color="#666666" alpha="50" />
+                    <cornerradius>15</cornerradius>
+                </shape>
                 <textarea name="buttontext">
-                    <area>16,0,85%,31</area>
+                    <area>16,0,94%,31</area>
                     <font>basesmallgrey</font>
                     <cutdown>yes</cutdown>
                     <align>left,vcenter</align>
                 </textarea>
                 <statetype name="buttoncheck">
-                    <position>91%,5</position>
+                    <position>94%,5</position>
                     <state type="off">
                         <imagetype name="checkoff">
                             <filename>shared/lb-check-empty.png</filename>
@@ -161,23 +162,23 @@
                 </imagetype>
             </state>
             <state name="selectedactive" from="active">
-	        <shape name="buttonbackground">
-	            <type>roundbox</type>
-	            <area>0,0,99%,30</area>
-	            <fill color="#ffffff" alpha="50" />
-	            <cornerradius>15</cornerradius>
-	        </shape>
+                <shape name="buttonbackground">
+                    <type>roundbox</type>
+                    <area>0,0,100%,30</area>
+                    <fill color="#ffffff" alpha="50" />
+                    <cornerradius>15</cornerradius>
+                </shape>
                 <textarea name="buttontext">
                     <font>basesmall</font>
                 </textarea>
             </state>
             <state name="selectedinactive" from="active">
-	        <shape name="buttonbackground">
-	            <type>roundbox</type>
-        	    <area>0,0,99%,30</area>
-	            <fill color="#ffffff" alpha="50" />
-	            <cornerradius>15</cornerradius>
-	        </shape>
+            <shape name="buttonbackground">
+                <type>roundbox</type>
+                <area>0,0,100%,30</area>
+                <fill color="#ffffff" alpha="50" />
+                <cornerradius>15</cornerradius>
+            </shape>
                 <textarea name="buttontext">
                     <font>basesmallgrey</font>
                 </textarea>

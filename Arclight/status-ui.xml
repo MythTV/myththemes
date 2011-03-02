@@ -65,7 +65,7 @@
         </textarea>
 
         <buttonlist name="category" from="baseshapebuttonlist">
-            <area>0,669,100%,360</area>
+            <position>0,669</position>
             <spacing>0</spacing>
             <scrollstyle>free</scrollstyle>
             <wrapstyle>items</wrapstyle>

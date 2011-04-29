@@ -87,7 +87,6 @@
          <size>20</size>
         <color>#666666</color>
     </fontdef>
-
     <!-- Base definition of a shape used as a background on many screens -->
     <shape name="basebackground">
         <area>0,0,10,10</area>
@@ -123,23 +122,22 @@
         <spacing>5</spacing>
         <buttonarea>0,0,100%,97%</buttonarea>
         <statetype name="buttonitem">
-            <area>0,0,100%,30</area>
             <state name="active">
                 <area>0,0,100%,30</area>
-                <shape name="buttonbackground">
-                    <type>roundbox</type>
-                    <area>0,0,100%,30</area>
-                    <fill color="#666666" alpha="50" />
-                    <cornerradius>15</cornerradius>
-                </shape>
+	        <shape name="buttonbackground">
+	            <type>roundbox</type>
+	            <area>0,0,99%,30</area>
+		    <fill color="#666666" alpha="50" />
+		    <cornerradius>15</cornerradius>
+	        </shape>
                 <textarea name="buttontext">
-                    <area>16,0,94%,31</area>
+                    <area>16,0,85%,31</area>
                     <font>basesmallgrey</font>
                     <cutdown>yes</cutdown>
                     <align>left,vcenter</align>
                 </textarea>
                 <statetype name="buttoncheck">
-                    <position>94%,5</position>
+                    <position>91%,5</position>
                     <state type="off">
                         <imagetype name="checkoff">
                             <filename>shared/lb-check-empty.png</filename>
@@ -162,23 +160,23 @@
                 </imagetype>
             </state>
             <state name="selectedactive" from="active">
-                <shape name="buttonbackground">
-                    <type>roundbox</type>
-                    <area>0,0,100%,30</area>
-                    <fill color="#ffffff" alpha="50" />
-                    <cornerradius>15</cornerradius>
-                </shape>
+	        <shape name="buttonbackground">
+	            <type>roundbox</type>
+	            <area>0,0,99%,30</area>
+	            <fill color="#ffffff" alpha="50" />
+	            <cornerradius>15</cornerradius>
+	        </shape>
                 <textarea name="buttontext">
                     <font>basesmall</font>
                 </textarea>
             </state>
             <state name="selectedinactive" from="active">
-            <shape name="buttonbackground">
-                <type>roundbox</type>
-                <area>0,0,100%,30</area>
-                <fill color="#ffffff" alpha="50" />
-                <cornerradius>15</cornerradius>
-            </shape>
+	        <shape name="buttonbackground">
+	            <type>roundbox</type>
+        	    <area>0,0,99%,30</area>
+	            <fill color="#ffffff" alpha="50" />
+	            <cornerradius>15</cornerradius>
+	        </shape>
                 <textarea name="buttontext">
                     <font>basesmallgrey</font>
                 </textarea>
@@ -510,6 +508,112 @@
         </statetype>
     </buttonlist>
 
+    <!-- Base definition of a narrow list in 'selector' configuration -->
+    <buttonlist name="basenarrowselector">
+        <area>0,0,100,40</area>
+        <layout>horizontal</layout>
+        <buttonarea>0,0,80,40</buttonarea>
+        <statetype name="buttonitem">
+            <state name="active">
+                <area>0,5,80,30</area>
+                <shape name="background" from="basewidgetshape">
+            	    <cornerradius>15</cornerradius>
+            	</shape>
+                <textarea name="buttontext">
+                    <area>15,0,70,30</area>
+                    <font>basesmall</font>
+                    <cutdown>yes</cutdown>
+                    <align>left,vcenter</align>
+                </textarea>
+            </state>
+            <state name="selectedactive" from="active">
+                <shape name="background" from="baseselectedwidgetshape">
+            	    <cornerradius>15</cornerradius>
+            	</shape>
+            </state>
+            <state name="selectedinactive" from="active" />
+        </statetype>
+        <statetype name="downscrollarrow">
+            <position>105,2</position>
+            <state type="off">
+                <imagetype name="dnon">
+                    <filename>lb-rtarrow-reg.png</filename>
+                </imagetype>
+            </state>
+            <state type="full">
+                <imagetype name="dnoff">
+                    <filename>lb-rtarrow-sel.png</filename>
+                </imagetype>
+            </state>
+        </statetype>
+        <statetype name="upscrollarrow">
+            <position>105,21</position>
+            <state type="off">
+                <imagetype name="upon">
+                    <filename>lb-ltarrow-reg.png</filename>
+                </imagetype>
+            </state>
+            <state type="full">
+                <imagetype name="upoff">
+                    <filename>lb-ltarrow-sel.png</filename>
+                </imagetype>
+            </state>
+        </statetype>
+    </buttonlist>
+
+    <!-- Base definition of a longer list in 'selector' configuration -->
+    <buttonlist name="basemediumselector">
+        <area>0,0,375,40</area>
+        <layout>horizontal</layout>
+        <buttonarea>0,0,355,40</buttonarea>
+        <statetype name="buttonitem">
+            <state name="active">
+                <area>0,5,355,30</area>
+                <shape name="background" from="basewidgetshape">
+            	    <cornerradius>15</cornerradius>
+            	</shape>
+                <textarea name="buttontext">
+                    <area>15,0,305,30</area>
+                    <font>basesmall</font>
+                    <cutdown>yes</cutdown>
+                    <align>left,vcenter</align>
+                </textarea>
+            </state>
+            <state name="selectedactive" from="active">
+                <shape name="background" from="baseselectedwidgetshape">
+            	    <cornerradius>15</cornerradius>
+            	</shape>
+            </state>
+            <state name="selectedinactive" from="active" />
+        </statetype>
+        <statetype name="downscrollarrow">
+            <position>380,2</position>
+            <state type="off">
+                <imagetype name="dnon">
+                    <filename>lb-rtarrow-reg.png</filename>
+                </imagetype>
+            </state>
+            <state type="full">
+                <imagetype name="dnoff">
+                    <filename>lb-rtarrow-sel.png</filename>
+                </imagetype>
+            </state>
+        </statetype>
+        <statetype name="upscrollarrow">
+            <position>380,21</position>
+            <state type="off">
+                <imagetype name="upon">
+                    <filename>lb-ltarrow-reg.png</filename>
+                </imagetype>
+            </state>
+            <state type="full">
+                <imagetype name="upoff">
+                    <filename>lb-ltarrow-sel.png</filename>
+                </imagetype>
+            </state>
+        </statetype>
+    </buttonlist>
+
     <!-- Base definition of a list in wide 'selector' configuration -->
     <buttonlist name="basewideselector">
         <area>0,0,525,40</area>
@@ -596,6 +700,35 @@
         </imagetype>
         <textarea name="text">
             <area>25,0,305,30</area>
+            <align>vcenter,left</align>
+            <font>basesmallblack</font>
+        </textarea>
+    </textedit>
+
+<!-- Base definition of small textedit -->
+    <textedit name="smalltextedit">
+        <statetype name="background">
+            <state name="active">
+                <area>0,0,100,30</area>
+                <shape name="textbackground">
+                    <area>0,0,80,30</area>
+                    <type>roundbox</type>
+                    <cornerradius>15</cornerradius>
+                    <fill color="#666666" alpha="100" />
+                </shape>
+            </state>
+            <state name="selected" from="active">
+                <shape name="textbackground">
+                    <fill color="#FFFFFF" alpha="100" />
+                </shape>
+            </state>
+            <state name="inactive" from="active" />
+        </statetype>
+        <imagetype name="cursor">
+            <filename>cursor.png</filename>
+        </imagetype>
+        <textarea name="text">
+            <area>20,0,80,30</area>
             <align>vcenter,left</align>
             <font>basesmallblack</font>
         </textarea>

@@ -935,21 +935,21 @@
     </window>
 
     <window name="videowindow">
-
-        <shape name="shape1">
-            <area>0,0,1280,720</area>
-            <type>box</type>
-            <fill color="#000000" alpha="255"></fill>
-        </shape>
+        <area>0,0,1280,720</area>
+        <imagetype name="backimg">
+          <filename>background.png</filename>
+        </imagetype>
 
         <textarea name="title" from="basetextarea">
             <area>500,325,280,50</area>
             <font>baseextralarge</font>
             <align>allcenter</align>
-	    <alphapulse min="75" max="255" change="5"/>
             <value>Please Wait...</value>
         </textarea>
 
+        <progressbar name="progress" from="baseprogressbar">
+            <position>372,425</position>
+        </progressbar>
     </window>
 
     <window name="backgroundwindow">

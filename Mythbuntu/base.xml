@@ -952,10 +952,11 @@
 
     </window>
 
-    <!-- empty window -->
     <window name="backgroundwindow">
         <area>0,0,1280,720</area>
+        <imagetype name="backimg">
+          <filename>background.png</filename>
+        </imagetype>
     </window>
-
 
 </mythuitheme>

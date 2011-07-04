@@ -1570,6 +1570,12 @@
             <helptext></helptext>
         </button>
 
+        <button name="metadata" from="basebutton">
+            <position>270,480</position>
+            <value>Metadata Options</value>
+            <helptext></helptext>
+        </button>
+
         <button name="cancel" from="basesmallbutton">
             <position>40,520</position>
             <value>Cancel</value>
@@ -1787,62 +1793,71 @@
             <template>%|"SUBTITLE|"% %LONGREPEAT%%STARS| %%DESCRIPTION%</template>
         </textarea>
 
-        <checkbox name="autocommflag" from="basecheckbox">
+        <checkbox name="metadatalookup" from="basecheckbox">
             <position>215,225</position>
         </checkbox>
 
-        <textarea name="autocommflaglabel" from="basetextarea">
+        <textarea name="autometadatalabel" from="basetextarea">
             <area>260,227,300,30</area>
+            <value>Automatically Look Up Metadata</value>
+        </textarea>
+
+        <checkbox name="autocommflag" from="basecheckbox">
+            <position>215,260</position>
+        </checkbox>
+
+        <textarea name="autocommflaglabel" from="basetextarea">
+            <area>260,262,300,30</area>
             <value>Commercial Flag new recordings</value>
         </textarea>
 
         <checkbox name="autotranscode" from="basecheckbox">
-            <position>215,260</position>
+            <position>215,295</position>
         </checkbox>
 
         <textarea name="autotranscodelabel" from="basetextarea">
-            <area>260,262,300,30</area>
+            <area>260,297,300,30</area>
             <value>Transcode new recordings</value>
         </textarea>
 
         <buttonlist name="transcodeprofile" from="basewideselector">
-            <position>215,295</position>
+            <position>215,330</position>
             <helptext></helptext>
         </buttonlist>
 
         <checkbox name="userjob1" from="basecheckbox">
-            <position>215,335</position>
-        </checkbox>
-
-        <textarea name="userjob1label" from="basetextarea">
-            <area>260,337,300,30</area>
-            <value>Transcode new recordings</value>
-        </textarea>
-
-        <checkbox name="userjob2" from="basecheckbox">
             <position>215,370</position>
         </checkbox>
 
-        <textarea name="userjob2label" from="basetextarea">
+        <textarea name="userjob1text" from="basetextarea">
             <area>260,372,300,30</area>
             <value>Transcode new recordings</value>
         </textarea>
 
-        <checkbox name="userjob3" from="basecheckbox">
+        <checkbox name="userjob2" from="basecheckbox">
             <position>215,405</position>
         </checkbox>
 
-        <textarea name="userjob3label" from="basetextarea">
+        <textarea name="userjob2text" from="basetextarea">
             <area>260,407,300,30</area>
             <value>Transcode new recordings</value>
         </textarea>
 
-        <checkbox name="userjob4" from="basecheckbox">
+        <checkbox name="userjob3" from="basecheckbox">
             <position>215,440</position>
         </checkbox>
 
-        <textarea name="userjob4label" from="basetextarea">
+        <textarea name="userjob3text" from="basetextarea">
             <area>260,442,300,30</area>
+            <value>Transcode new recordings</value>
+        </textarea>
+
+        <checkbox name="userjob4" from="basecheckbox">
+            <position>215,475</position>
+        </checkbox>
+
+        <textarea name="userjob4text" from="basetextarea">
+            <area>260,477,300,30</area>
             <value>Transcode new recordings</value>
         </textarea>
 

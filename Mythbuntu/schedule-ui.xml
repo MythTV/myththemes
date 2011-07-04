@@ -1753,6 +1753,12 @@
             <helptext></helptext>
         </button>
 
+        <button name="metadata" from="basewidebutton">
+            <position>500,580</position>
+            <value>Metadata Options</value>
+            <helptext></helptext>
+        </button>
+
         <button name="cancel" from="basebutton">
             <position>377,642</position>
             <value>Cancel</value>
@@ -1987,72 +1993,81 @@
         </textarea>
 
         <textarea name="description" from="basetextarea">
-            <area>150,125,980,200</area>
+            <area>150,125,980,150</area>
             <multiline>yes</multiline>
             <template>%|"SUBTITLE|"% %LONGREPEAT%%STARS| %%DESCRIPTION%</template>
         </textarea>
 
+        <checkbox name="metadatalookup" from="basecheckbox">
+            <position>377,293</position>
+        </checkbox>
+
+        <textarea name="mlookuplabel" from="basetextarea">
+            <area>407,288,526,30</area>
+            <value>Automatically Look Up Metadata</value>
+        </textarea>
+
         <checkbox name="autocommflag" from="basecheckbox">
-            <position>377,318</position>
+            <position>377,338</position>
         </checkbox>
 
         <textarea name="autocommflaglabel" from="basetextarea">
-            <area>407,313,526,30</area>
+            <area>407,333,526,30</area>
             <value>Commercial Flag new recordings</value>
         </textarea>
 
         <checkbox name="autotranscode" from="basecheckbox">
-            <position>377,363</position>
+            <position>377,383</position>
         </checkbox>
 
         <textarea name="autotranscodelabel" from="basetextarea">
-            <area>407,358,526,30</area>
+            <area>407,378,526,30</area>
             <value>Transcode new recordings</value>
         </textarea>
 
         <buttonlist name="transcodeprofile" from="basewideselector">
-            <position>377,397</position>
+            <position>377,417</position>
             <helptext></helptext>
         </buttonlist>
 
         <checkbox name="userjob1" from="basecheckbox">
-            <position>377,453</position>
+            <position>377,473</position>
         </checkbox>
 
         <textarea name="userjob1label" from="basetextarea">
-            <area>407,448,526,30</area>
+            <area>407,468,526,30</area>
             <value>Run User Job #1</value>
         </textarea>
 
         <checkbox name="userjob2" from="basecheckbox">
-            <position>377,498</position>
+            <position>377,518</position>
         </checkbox>
 
         <textarea name="userjob2label" from="basetextarea">
-            <area>407,493,526,30</area>
+            <area>407,513,526,30</area>
             <value>Run User job #2</value>
         </textarea>
 
         <checkbox name="userjob3" from="basecheckbox">
-            <position>377,543</position>
+            <position>377,563</position>
         </checkbox>
 
         <textarea name="userjob3label" from="basetextarea">
-            <area>407,538,526,30</area>
+            <area>407,558,526,30</area>
             <value>Run User Job #3</value>
         </textarea>
 
         <checkbox name="userjob4" from="basecheckbox">
-            <position>377,588</position>
+            <position>377,608</position>
         </checkbox>
 
         <textarea name="userjob4label" from="basetextarea">
-            <area>407,583,526,30</area>
+            <area>407,603,526,30</area>
             <value>Run User Job #4</value>
         </textarea>
 
         <button name="back" from="basebutton">
-            <position>565,642</position>
+            <position>565,652</position>
             <value>Back</value>
         </button>
     </window>

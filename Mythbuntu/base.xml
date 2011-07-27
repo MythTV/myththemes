@@ -83,10 +83,11 @@
         <color>#9999cc</color>
     </fontdef>
 
-    <fontdef name="clock"  from="basesmall">
+    <fontdef name="clock" from="basesmall">
          <size>20</size>
         <color>#666666</color>
     </fontdef>
+
     <!-- Base definition of a shape used as a background on many screens -->
     <shape name="basebackground">
         <area>0,0,10,10</area>
@@ -123,13 +124,13 @@
         <buttonarea>0,0,100%,97%</buttonarea>
         <statetype name="buttonitem">
             <state name="active">
-                <area>0,0,100%,30</area>
-	        <shape name="buttonbackground">
-	            <type>roundbox</type>
-	            <area>0,0,99%,30</area>
-		    <fill color="#666666" alpha="50" />
-		    <cornerradius>15</cornerradius>
-	        </shape>
+               <area>0,0,100%,30</area>
+               <shape name="buttonbackground">
+               <type>roundbox</type>
+               <area>0,0,99%,30</area>
+               <fill color="#666666" alpha="50" />
+               <cornerradius>15</cornerradius>
+            </shape>
                 <textarea name="buttontext">
                     <area>16,0,85%,31</area>
                     <font>basesmallgrey</font>
@@ -160,23 +161,23 @@
                 </imagetype>
             </state>
             <state name="selectedactive" from="active">
-	        <shape name="buttonbackground">
-	            <type>roundbox</type>
-	            <area>0,0,99%,30</area>
-	            <fill color="#ffffff" alpha="50" />
-	            <cornerradius>15</cornerradius>
-	        </shape>
+                <shape name="buttonbackground">
+                    <type>roundbox</type>
+                    <area>0,0,90%,30</area>
+                    <fill color="#ffffff" alpha="50" />
+                    <cornerradius>15</cornerradius>
+                </shape>
                 <textarea name="buttontext">
                     <font>basesmall</font>
                 </textarea>
             </state>
             <state name="selectedinactive" from="active">
-	        <shape name="buttonbackground">
-	            <type>roundbox</type>
-        	    <area>0,0,99%,30</area>
-	            <fill color="#ffffff" alpha="50" />
-	            <cornerradius>15</cornerradius>
-	        </shape>
+            <shape name="buttonbackground">
+                <type>roundbox</type>
+                <area>0,0,90%,30</area>
+                <fill color="#ffffff" alpha="50" />
+                <cornerradius>15</cornerradius>
+            </shape>
                 <textarea name="buttontext">
                     <font>basesmallgrey</font>
                 </textarea>
@@ -288,12 +289,12 @@
         <position>0,0</position>
         <statetype name="buttonstate">
             <state name="active">
-	        <shape name="buttonbackground">
-	            <type>roundbox</type>
-	            <area>0,0,150,40</area>
-		    <fill color="#666666" alpha="50" />
-		    <cornerradius>20</cornerradius>
-	        </shape>
+<shape name="buttonbackground">
+<type>roundbox</type>
+<area>0,0,150,40</area>
+<fill color="#666666" alpha="50" />
+<cornerradius>20</cornerradius>
+</shape>
                 <textarea name="text">
                     <area>5,5,140,30</area>
                     <align>allcenter</align>
@@ -303,9 +304,9 @@
                 </textarea>
             </state>
             <state name="selected" from="active">
-	        <shape name="buttonbackground">
-		    <fill color="#ffffff" alpha="50" />
-	        </shape>
+<shape name="buttonbackground">
+<fill color="#ffffff" alpha="50" />
+</shape>
             </state>
             <state name="disabled" from="active" />
             <state name="pushed" from="active" />
@@ -317,10 +318,10 @@
         <statetype name="buttonstate">
             <state name="active">
                 <shape name="buttonbackground">
-	            <type>roundbox</type>
+<type>roundbox</type>
                     <area>0,0,300,40</area>
-		    <fill color="#666666" alpha="50" />
-		    <cornerradius>20</cornerradius>
+<fill color="#666666" alpha="50" />
+<cornerradius>20</cornerradius>
                 </shape>
                 <textarea name="text">
                     <area>10,0,280,40</area>
@@ -331,9 +332,9 @@
                 </textarea>
             </state>
             <state name="selected" from="active">
-	        <shape name="buttonbackground">
-		    <fill color="#ffffff" alpha="50" />
-	        </shape>
+<shape name="buttonbackground">
+<fill color="#ffffff" alpha="50" />
+</shape>
             </state>
             <state name="disabled" from="active" />
             <state name="pushed" from="active" />
@@ -381,8 +382,8 @@
             <state name="active">
                 <area>0,5,70,30</area>
                 <shape name="background" from="basewidgetshape">
-            	    <cornerradius>15</cornerradius>
-            	</shape>
+             <cornerradius>15</cornerradius>
+             </shape>
                 <textarea name="buttontext">
                     <area>10,0,55,30</area>
                     <font>basesmall</font>
@@ -392,8 +393,8 @@
             </state>
             <state name="selectedactive" from="active">
                 <shape name="background" from="baseselectedwidgetshape">
-            	    <cornerradius>15</cornerradius>
-            	</shape>
+             <cornerradius>15</cornerradius>
+             </shape>
             </state>
             <state name="selectedinactive" from="active" />
         </statetype>
@@ -434,16 +435,16 @@
             <state name="active">
                 <area>0,5,505,30</area>
                 <shape name="background" from="basewidgetshape">
-            	    <cornerradius>15</cornerradius>
-            	</shape>
+             <cornerradius>15</cornerradius>
+             </shape>
                 <textarea name="buttontext">
                     <area>15,0,475,30</area>
                 </textarea>
             </state>
             <state name="selectedactive" from="active">
                 <shape name="background" from="baseselectedwidgetshape">
-            	    <cornerradius>15</cornerradius>
-            	</shape>
+             <cornerradius>15</cornerradius>
+             </shape>
             </state>
             <state name="selectedinactive" from="active" />
         </statetype>
@@ -464,8 +465,8 @@
             <state name="active">
                 <area>0,5,200,30</area>
                 <shape name="background" from="basewidgetshape">
-            	    <cornerradius>15</cornerradius>
-            	</shape>
+             <cornerradius>15</cornerradius>
+             </shape>
                 <textarea name="buttontext">
                     <area>15,0,170,30</area>
                     <font>basesmall</font>
@@ -475,8 +476,8 @@
             </state>
             <state name="selectedactive" from="active">
                 <shape name="background" from="baseselectedwidgetshape">
-            	    <cornerradius>15</cornerradius>
-            	</shape>
+             <cornerradius>15</cornerradius>
+             </shape>
             </state>
             <state name="selectedinactive" from="active" />
         </statetype>
@@ -517,8 +518,8 @@
             <state name="active">
                 <area>0,5,80,30</area>
                 <shape name="background" from="basewidgetshape">
-            	    <cornerradius>15</cornerradius>
-            	</shape>
+                  <cornerradius>15</cornerradius>
+              </shape>
                 <textarea name="buttontext">
                     <area>15,0,70,30</area>
                     <font>basesmall</font>
@@ -528,8 +529,8 @@
             </state>
             <state name="selectedactive" from="active">
                 <shape name="background" from="baseselectedwidgetshape">
-            	    <cornerradius>15</cornerradius>
-            	</shape>
+                  <cornerradius>15</cornerradius>
+              </shape>
             </state>
             <state name="selectedinactive" from="active" />
         </statetype>
@@ -570,8 +571,8 @@
             <state name="active">
                 <area>0,5,355,30</area>
                 <shape name="background" from="basewidgetshape">
-            	    <cornerradius>15</cornerradius>
-            	</shape>
+                  <cornerradius>15</cornerradius>
+              </shape>
                 <textarea name="buttontext">
                     <area>15,0,305,30</area>
                     <font>basesmall</font>
@@ -581,8 +582,8 @@
             </state>
             <state name="selectedactive" from="active">
                 <shape name="background" from="baseselectedwidgetshape">
-            	    <cornerradius>15</cornerradius>
-            	</shape>
+                  <cornerradius>15</cornerradius>
+              </shape>
             </state>
             <state name="selectedinactive" from="active" />
         </statetype>
@@ -607,7 +608,7 @@
                 </imagetype>
             </state>
             <state type="full">
-                <imagetype name="upoff">
+               <imagetype name="upoff">
                     <filename>lb-ltarrow-sel.png</filename>
                 </imagetype>
             </state>
@@ -623,8 +624,8 @@
             <state name="active">
                 <area>0,5,505,30</area>
                 <shape name="background" from="basewidgetshape">
-            	    <cornerradius>15</cornerradius>
-            	</shape>
+             <cornerradius>15</cornerradius>
+             </shape>
                 <textarea name="buttontext">
                     <area>15,0,475,30</area>
                     <font>basesmall</font>
@@ -634,8 +635,8 @@
             </state>
             <state name="selectedactive" from="active">
                 <shape name="background" from="baseselectedwidgetshape">
-            	    <cornerradius>15</cornerradius>
-            	</shape>
+             <cornerradius>15</cornerradius>
+             </shape>
             </state>
             <state name="selectedinactive" from="active" />
         </statetype>
@@ -705,7 +706,7 @@
         </textarea>
     </textedit>
 
-<!-- Base definition of small textedit -->
+    <!-- Base definition of small textedit -->
     <textedit name="smalltextedit">
         <statetype name="background">
             <state name="active">
@@ -740,11 +741,11 @@
         <layout>horizontal</layout>
         <style>reveal</style>
         <imagetype name="background">
-    	    <area>0,0,100%,100%</area>
+     <area>0,0,100%,100%</area>
             <filename>progressbar_background.png</filename>
         </imagetype>
         <imagetype name="progressimage">
-    	    <area>0,0,100%,100%</area>
+     <area>0,0,100%,100%</area>
             <filename>progressbar_fill.png</filename>
         </imagetype>
     </progressbar>
@@ -1027,9 +1028,9 @@
                 <state name="selectedactive" from="active">
                     <shape name="buttonbackground">
                         <area>0,0,165,105</area>
-			<fill style="gradient"> 
-	                        <gradient start="#999999" end="#666666" alpha="220" />
-			</fill>
+<fill style="gradient">
+<gradient start="#999999" end="#666666" alpha="220" />
+</fill>
                     </shape>
                 </state>
             </statetype>
@@ -1068,27 +1069,28 @@
     </window>
 
     <window name="videowindow">
-
-        <shape name="shape1">
-            <area>0,0,1280,720</area>
-            <type>box</type>
-            <fill color="#000000" alpha="255"></fill>
-        </shape>
+        <area>0,0,1280,720</area>
+        <imagetype name="backimg">
+          <filename>background.png</filename>
+        </imagetype>
 
         <textarea name="title" from="basetextarea">
             <area>500,325,280,50</area>
             <font>baseextralarge</font>
             <align>allcenter</align>
-	    <alphapulse min="75" max="255" change="5"/>
             <value>Please Wait...</value>
         </textarea>
 
+        <progressbar name="progress" from="baseprogressbar">
+            <position>372,425</position>
+        </progressbar>
     </window>
 
-    <!-- empty window -->
     <window name="backgroundwindow">
         <area>0,0,1280,720</area>
+        <imagetype name="backimg">
+          <filename>background.png</filename>
+        </imagetype>
     </window>
-
 
 </mythuitheme>

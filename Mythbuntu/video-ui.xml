@@ -14,6 +14,53 @@
         </buttonlist>
     </window>
 
+
+    <window name="artworksel">
+        <area>-1,-1,500,600</area>
+
+        <shape name="shape" from="basebackground">
+            <area>0,0,500,600</area>
+        </shape>
+
+        <buttonlist name="results" from="basebuttonlist">
+            <align>bottom</align>
+            <area>10,15,480,575</area>
+            <scrollstyle>free</scrollstyle>
+            <wrapstyle>items</wrapstyle>
+            <layout>vertical</layout>
+            <arrange>stack</arrange>
+            <spacing>10</spacing>
+            <buttonarea>2,0,560,560</buttonarea>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <imagetype name="buttonimage">
+                        <area>10,0,300,80</area>
+                        <preserveaspect>true</preserveaspect>
+                    </imagetype>
+                    <textarea name="resolution">
+                        <area>250,0,180,30</area>
+                        <align>left,vcenter</align>
+                        <font>basesmall</font>
+                        <alpha>210</alpha>
+                    </textarea>
+                </state>
+                <state name="selectedactive">
+                    <imagetype name="buttonimage">
+                        <area>0,0,400,190</area>
+                        <preserveaspect>true</preserveaspect>
+                    </imagetype>
+                    <textarea name="resolution">
+                        <area>390,0,130,30</area>
+                        <align>left,vcenter</align>
+                        <font>basesmall</font>
+                        <alpha>210</alpha>
+                    </textarea>
+                </state>
+            </statetype>
+        </buttonlist>
+
+    </window>
+
     <window name="castpopup">
         <area>-1,-1,413,426</area>
 
@@ -701,10 +748,10 @@
                         </state>
                     </statetype>
                     <textarea name="buttontext">
-                        <area>5,165,216,25</area>
+                        <area>9,155,216,45</area>
                         <font>basesmallgrey</font>
-                        <case>capitaliseall</case>
-                        <align>hcenter,bottom</align>
+                        <align>hcenter,vcenter</align>
+			<multiline>yes</multiline>
                     </textarea>
                     <textarea name="childcount" from="basetextarea">
                         <area>65,72,55,20</area>
@@ -719,8 +766,9 @@
 		        <fill color="#666666" alpha="150" />
                     </shape>
                     <textarea name="buttontext">
-                        <area>0,171,226,30</area>
+                        <area>2,158,230,55</area>
                         <font>basegallerymedium</font>
+			<multiline>yes</multiline>
                     </textarea>
                     <imagetype name="buttonimage">
                         <area>5,5,216,160</area>
@@ -966,24 +1014,7 @@
             <area>590,80,90,40</area>
             <value>Subtitle:</value>
             <align>right,top</align>
-        </    <window name="edit_metadata">
-
-        <textarea name="title" from="basetextarea">
-            <area>10,30,1260,50</area>
-            <value>Edit Video Information</value>
-            <align>hcenter,vcenter</align>
-            <font>baselarge</font>
         </textarea>
-
-        <!-- Labels  -->
-        <textarea name="title_text" from="basetextarea">
-            <area>30,80,50,40</area>
-            <value>Title:</value>
-            <align>right,top</align>
-        </textarea>
-
-        <textarea name="subtitle_text" from="basetextarea">
-          textarea>
 
         <textarea name="tagline_text" from="basetextarea">
             <area>10,120,70,40</area>
@@ -1004,7 +1035,7 @@
         </textarea>
 
 	<textarea name="level_text" from="title_text">
-	    <area>340,155,40,40</area>
+	    <area>335,155,40,40</area>
 	    <align>right</align>
 	    <value>Age:</value>
 	</textarea>
@@ -1027,43 +1058,49 @@
             <align>right,top</align>
        
 	<textarea name="browse_text" from="basetextarea">
-	    <area>510,-40,280,40</area>
+	    <area>310,-40,280,40</area>
 	    <align>left</align>
 	    <value>Include while Browsing:</value>
 	</textarea>
 
 	<textarea name="watched_text" from="basetextarea">
-	    <area>510,0,280,40</area>
+	    <area>310,0,280,40</area>
 	    <align>left</align>
 	    <value>Item has been watched:</value>
 	</textarea>       
 
+	<textarea name="inetref_text" from="basetextarea">
+	    <area>510,-40,160,40</area>
+	    <align>right</align>
+	    <value>TMDB/TVDB No.:</value>
+	</textarea>  
+
 	<textarea name="coverart_text_label" from="basetextarea">
-	    <area>10,82,120,40</area>
+	    <area>10,80,120,40</area>
 	    <align>right</align>
 	    <value>Cover Art:</value>
 	</textarea>
 
 	<textarea name="screenshot_text_label" from="basetextarea">
-	    <area>10,126,120,40</area>
+	    <area>10,120,120,40</area>
 	    <align>right</align>
 	    <value>Screenshot:</value>
 	</textarea>
 
 	<textarea name="banner_text_label" from="basetextarea">
-	    <area>10,170,120,40</area>
+	    <area>10,160,120,40</area>
 	    <align>right</align>
 	    <value>Banner:</value>
 	</textarea>
 
 	<textarea name="fanart_text_label" from="basetextarea">
-	    <area>10,215,120,40</area>
+	    <area>10,200,120,40</area>
 	    <align>right</align>
 	    <value>Fanart:</value>
 	</textarea>
 
 	<textarea name="trailer_text_label" from="basetextarea">
-	    <area>10,260,120,40</area>
+	    <area>10,240,120,40</area>
 	    <align>right</align>
 	    <value>Trailer:</value>
 	</textarea>
@@ -1123,12 +1160,16 @@
 	</spinbox>
 
 	<checkbox name="browse_check" from="basecheckbox">
-	    <position>700,225</position>
+	    <position>485,225</position>
 	</checkbox>
 
 	<checkbox name="watched_check" from="basecheckbox">
-	    <position>700,265</position>
+	    <position>485,265</position>
 	</checkbox>
+
+        <textedit name="inetref_edit" from="basetextedit">
+            <position>700,218</position>
+        </textedit>
 
 	<button name="coverart_button">
 	    <area>170,340,32,32</area>
@@ -1153,17 +1194,17 @@
 	</button>
 
 	<textarea name="coverart_text" from="basetextarea">
-	    <area>210,348,250,40</area>
+	    <area>210,345,250,40</area>
 	    <value>/path/to/the/thing.jpg</value>
 	</textarea>
 
         <button name="net_coverart_button" from="basebutton">
-            <position>435,338</position>
+            <position>400,335</position>
             <value>Search...</value>
         </button>
 
 	<button name="screenshot_button">
-	    <area>170,385,32,32</area>
+	    <area>170,380,32,32</area>
 		<statetype name="buttonstate">
 		    <state name="active">
 			<imagetype name="background">
@@ -1185,17 +1226,17 @@
 	</button>
 
 	<textarea name="screenshot_text" from="basetextarea">
-	    <area>210,393,250,40</area>
+	    <area>210,385,250,40</area>
 	    <value>/path/to/the/thing.jpg</value>
         </textarea>
 
         <button name="net_screenshot_button" from="basebutton">
-            <position>435,383</position>
+            <position>400,375</position>
             <value>Search...</value>
         </button>
 
 	<button name="banner_button">
-	    <area>170,430,32,32</area>
+	    <area>170,420,32,32</area>
 	    <statetype name="buttonstate">
 		<state name="active">
 		    <imagetype name="background">
@@ -1217,17 +1258,17 @@
 	</button>
 
 	<textarea name="banner_text" from="basetextarea">
-	    <area>210,438,250,40</area>
+	    <area>210,425,250,40</area>
 	    <value>/path/to/the/thing.jpg</value>
 	</textarea>
 
         <button name="net_banner_button" from="basebutton">
-            <position>435,428</position>
+            <position>400,415</position>
             <value>Search...</value>
         </button>
 
 	<button name="fanart_button">
-	    <area>170,475,32,32</area>
+	    <area>170,460,32,32</area>
 	    <statetype name="buttonstate">
 		<state name="active">
 		    <imagetype name="background">
@@ -1249,17 +1290,17 @@
 	</button>
 
 	<textarea name="fanart_text" from="basetextarea">
-	    <area>210,483,250,40</area>
+	    <area>210,465,250,40</area>
 	    <value>/path/to/the/thing.jpg</value>
 	</textarea>
 
         <button name="net_fanart_button" from="basebutton">
-            <position>435,473</position>
+            <position>400,455</position>
             <value>Search...</value>
         </button>
 
 	<button name="trailer_button">
-	    <area>170,520,32,32</area>
+	    <area>170,500,32,32</area>
 	    <statetype name="buttonstate">
 		<state name="active">
 		<imagetype name="background">
@@ -1281,7 +1322,7 @@
 	</button>
 
 	<textarea name="trailer_text" from="basetextarea">
-	    <area>210,520,250,40</area>
+	    <area>210,505,250,40</area>
 	    <value>/path/to/the/thing.jpg</value>
 	</textarea>
 
@@ -1463,4 +1504,3 @@
 
     </window>
 </mythuitheme>
-<!-- vim: set expandtab ts=4 sw=4 : -->

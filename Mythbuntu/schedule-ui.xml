@@ -65,12 +65,12 @@
             <statetype name="buttonitem">
                 <area>0,0,258,36</area>
                 <state name="active">
-            	    <shape name="buttonbackground">
-            		<area>0,0,258,36</area>
-            		<fill color="#222222" alpha="150" />
-            		<type>roundbox</type>
-            		<cornerradius>18</cornerradius>
-            	    </shape>
+             <shape name="buttonbackground">
+             <area>0,0,258,36</area>
+             <fill color="#222222" alpha="150" />
+             <type>roundbox</type>
+             <cornerradius>18</cornerradius>
+             </shape>
                     <textarea name="buttontext" from="basetextarea">
                         <area>10,0,238,36</area>
                         <font>basesmall</font>
@@ -114,12 +114,12 @@
             <statetype name="buttonitem">
                 <area>0,0,190,74</area>
                 <state name="active">
-            	    <shape name="buttonbackground">
-            		<area>0,0,190,78</area>
-            		<fill color="#222222" alpha="150" />
-            		<type>roundbox</type>
-            		<cornerradius>10</cornerradius>
-            	    </shape>
+             <shape name="buttonbackground">
+             <area>0,0,190,78</area>
+             <fill color="#222222" alpha="150" />
+             <type>roundbox</type>
+             <cornerradius>10</cornerradius>
+             </shape>
                     <imagetype name="channelicon">
                         <area>10,15,40,40</area>
                     </imagetype>
@@ -169,9 +169,9 @@
             <format>%TIME%</format>
         </clock>
 
-<!--        <imagetype name="channelicon">
-            <area>40,22,50,50</area>
-        </imagetype>
+<!-- <imagetype name="channelicon">
+<area>40,22,50,50</area>
+</imagetype>
 -->
         <textarea name="title" from="basetextarea">
             <area>50,10,590,60</area>
@@ -185,7 +185,7 @@
             <font>basesmall</font>
         </textarea>
 
-        <textarea name="description"  from="basetextarea">
+        <textarea name="description" from="basetextarea">
             <area>50,130,1200,90</area>
             <multiline>yes</multiline>
             <template>%LONGREPEAT%%YEARSTARS%%DESCRIPTION%</template>
@@ -391,9 +391,9 @@
             <format>%TIME%</format>
         </clock>
 
-<!--        <imagetype name="channelicon">
-            <area>40,22,50,50</area>
-        </imagetype>
+<!-- <imagetype name="channelicon">
+<area>40,22,50,50</area>
+</imagetype>
 -->
         <textarea name="title" from="basetextarea">
             <area>100,22,800,50</area>
@@ -407,7 +407,7 @@
             <font>basesmall</font>
         </textarea>
 
-        <textarea name="description"  from="basetextarea">
+        <textarea name="description" from="basetextarea">
             <area>40,130,870,90</area>
             <multiline>yes</multiline>
             <template>%LONGREPEAT%%YEARSTARS%%DESCRIPTION%</template>
@@ -423,12 +423,12 @@
 
     <window name="manualschedule">
 
-	<shape name="titlebox" from="baseboxbackground">
+<shape name="titlebox" from="baseboxbackground">
             <area>10,10,780,60</area>
             <cornerradius>30</cornerradius>
         </shape>
 
-	<shape name="infobox" from="baseboxbackground">
+<shape name="infobox" from="baseboxbackground">
             <area>15,80,1250,630</area>
         </shape>
 
@@ -603,7 +603,7 @@
 
         <textarea name="helptext" from="basetextarea">
             <area>0,680,1280,30</area>
-            <value>(1) All  (2) Important</value>
+            <value>(1) All (2) Important</value>
             <align>center</align>
         </textarea>
     </window>
@@ -916,7 +916,7 @@
     <window name="phrasepopup">
         <area>-1,-1,500,500</area>
 
-	<shape name="box" from="basebackground">
+<shape name="box" from="basebackground">
             <area>0,0,500,500</area>
         </shape>
 
@@ -971,7 +971,7 @@
     <window name="timepopup">
         <area>-1,-1,580,165</area>
 
-	<shape name="box" from="basebackground">
+<shape name="box" from="basebackground">
             <area>0,0,580,165</area>
         </shape>
 
@@ -999,7 +999,7 @@
     <window name="powersearchpopup">
         <area>-1,-1,500,500</area>
 
-	<shape name="box" from="basebackground">
+<shape name="box" from="basebackground">
             <area>0,0,500,500</area>
         </shape>
 
@@ -1050,8 +1050,8 @@
     <window name="editpowersearchpopup">
         <area>-1,-1,500,550</area>
 
-	<shape name="box" from="basebackground">
-	    <area>0,0,500,550</area>
+<shape name="box" from="basebackground">
+<area>0,0,500,550</area>
         </shape>
 
         <textarea name="title_text" from="basetextarea">
@@ -1111,12 +1111,12 @@
 
     <window name="programlist">
 
-	<shape name="titlebox" from="baseboxbackground">
+<shape name="titlebox" from="baseboxbackground">
             <area>10,10,780,60</area>
             <cornerradius>30</cornerradius>
         </shape>
 
-	<shape name="currviewbox" from="baseboxbackground">
+<shape name="currviewbox" from="baseboxbackground">
             <area>800,10,470,60</area>
             <cornerradius>30</cornerradius>
         </shape>
@@ -1128,11 +1128,11 @@
             <value>Program Listings</value>
         </textarea>
 
-<!--        <textarea name="keyinstr" from="basetextarea">
-           <area>570,10,200,60</area>
-            <align>right,vcenter</align>
-            <value>(1)Time (2)Title</value>
-        </textarea>
+<!-- <textarea name="keyinstr" from="basetextarea">
+<area>570,10,200,60</area>
+<align>right,vcenter</align>
+<value>(1)Time (2)Title</value>
+</textarea>
 -->
         <shape name="list_background" from="baseboxbackground">
             <area>15,80,1250,360</area>
@@ -1235,7 +1235,7 @@
     <window name="searchpopup" from="MythTextInputDialog">
         <area>-1,10,580,165</area>
 
-	<shape name="backimg" from="basebackground">
+<shape name="backimg" from="basebackground">
             <area>0,0,580,165</area>
         </shape>
 
@@ -1545,7 +1545,7 @@
 
     <window name="customedit">
 
-	<shape name="titlebox" from="baseboxbackground">
+<shape name="titlebox" from="baseboxbackground">
             <area>10,10,780,60</area>
             <cornerradius>30</cornerradius>
         </shape>
@@ -1678,7 +1678,7 @@
 
     <window name="scheduleeditor">
 
-	<shape name="titlebox" from="baseboxbackground">
+<shape name="titlebox" from="baseboxbackground">
             <area>10,10,780,60</area>
             <cornerradius>30</cornerradius>
         </shape>
@@ -1753,6 +1753,12 @@
             <helptext></helptext>
         </button>
 
+        <button name="metadata" from="basewidebutton">
+            <position>500,580</position>
+            <value>Metadata Options</value>
+            <helptext></helptext>
+        </button>
+
         <button name="cancel" from="basebutton">
             <position>377,642</position>
             <value>Cancel</value>
@@ -1766,7 +1772,7 @@
 
     <window name="scheduleoptionseditor">
 
-	<shape name="titlebox" from="baseboxbackground">
+<shape name="titlebox" from="baseboxbackground">
             <area>10,10,780,60</area>
             <cornerradius>30</cornerradius>
         </shape>
@@ -1862,7 +1868,7 @@
 
     <window name="storageoptionseditor">
 
-	<shape name="titlebox" from="baseboxbackground">
+<shape name="titlebox" from="baseboxbackground">
             <area>10,10,780,60</area>
             <cornerradius>30</cornerradius>
         </shape>
@@ -1952,7 +1958,7 @@
 
     <window name="postproceditor">
 
-	<shape name="titlebox" from="baseboxbackground">
+<shape name="titlebox" from="baseboxbackground">
             <area>10,10,780,60</area>
             <cornerradius>30</cornerradius>
         </shape>
@@ -1987,72 +1993,81 @@
         </textarea>
 
         <textarea name="description" from="basetextarea">
-            <area>150,125,980,200</area>
+            <area>150,125,980,150</area>
             <multiline>yes</multiline>
             <template>%|"SUBTITLE|"% %LONGREPEAT%%STARS| %%DESCRIPTION%</template>
         </textarea>
 
+        <checkbox name="metadatalookup" from="basecheckbox">
+            <position>377,293</position>
+        </checkbox>
+
+        <textarea name="mlookuplabel" from="basetextarea">
+            <area>407,288,526,30</area>
+            <value>Automatically Look Up Metadata</value>
+        </textarea>
+
         <checkbox name="autocommflag" from="basecheckbox">
-            <position>377,318</position>
+            <position>377,338</position>
         </checkbox>
 
         <textarea name="autocommflaglabel" from="basetextarea">
-            <area>407,313,526,30</area>
+            <area>407,333,526,30</area>
             <value>Commercial Flag new recordings</value>
         </textarea>
 
         <checkbox name="autotranscode" from="basecheckbox">
-            <position>377,363</position>
+            <position>377,383</position>
         </checkbox>
 
         <textarea name="autotranscodelabel" from="basetextarea">
-            <area>407,358,526,30</area>
+            <area>407,378,526,30</area>
             <value>Transcode new recordings</value>
         </textarea>
 
         <buttonlist name="transcodeprofile" from="basewideselector">
-            <position>377,397</position>
+            <position>377,417</position>
             <helptext></helptext>
         </buttonlist>
 
         <checkbox name="userjob1" from="basecheckbox">
-            <position>377,453</position>
+            <position>377,473</position>
         </checkbox>
 
         <textarea name="userjob1label" from="basetextarea">
-            <area>407,448,526,30</area>
+            <area>407,468,526,30</area>
             <value>Run User Job #1</value>
         </textarea>
 
         <checkbox name="userjob2" from="basecheckbox">
-            <position>377,498</position>
+            <position>377,518</position>
         </checkbox>
 
         <textarea name="userjob2label" from="basetextarea">
-            <area>407,493,526,30</area>
+            <area>407,513,526,30</area>
             <value>Run User job #2</value>
         </textarea>
 
         <checkbox name="userjob3" from="basecheckbox">
-            <position>377,543</position>
+            <position>377,563</position>
         </checkbox>
 
         <textarea name="userjob3label" from="basetextarea">
-            <area>407,538,526,30</area>
+            <area>407,558,526,30</area>
             <value>Run User Job #3</value>
         </textarea>
 
         <checkbox name="userjob4" from="basecheckbox">
-            <position>377,588</position>
+            <position>377,608</position>
         </checkbox>
 
         <textarea name="userjob4label" from="basetextarea">
-            <area>407,583,526,30</area>
+            <area>407,603,526,30</area>
             <value>Run User Job #4</value>
         </textarea>
 
         <button name="back" from="basebutton">
-            <position>565,642</position>
+            <position>565,652</position>
             <value>Back</value>
         </button>
     </window>

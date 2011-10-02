@@ -30,6 +30,8 @@
             <spacing>30</spacing>
             <wrapstyle>items</wrapstyle>
             <buttonarea>40,55,730,460</buttonarea>
+            <triggerevent context="Global" action="SELECT">RIGHT</triggerevent>
+            <triggerevent context="Global" action="ESCAPE">LEFT</triggerevent>
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,700,60</area>

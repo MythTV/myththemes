@@ -35,6 +35,7 @@
             <layout>horizontal</layout>
             <spacing>10</spacing>
             <buttonarea>33,0,1190,40</buttonarea>
+            <triggerevent context="Global" action="ESCAPE">UP</triggerevent>
             <statetype name="buttonitem">
                 <area>0,0,180,40</area>
                 <state name="active">

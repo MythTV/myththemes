@@ -58,6 +58,7 @@
             <buttonarea>32,5,434,328</buttonarea>
             <spacing>6</spacing>
             <wrapstyle>items</wrapstyle>
+            <triggerevent context="Global" action="ESCAPE">LEFT</triggerevent>
             <statetype name="buttonitem">
                 <state name="active">
                     <shape name="buttonbackground"> 
@@ -95,6 +96,7 @@
             <buttonarea>0,5,731,338</buttonarea>
             <spacing>6</spacing>
             <wrapstyle>items</wrapstyle>
+            <triggerevent context="Global" action="MENU">RIGHT</triggerevent>
             <statetype name="buttonitem">
                 <state name="active">
                     <shape name="buttonbackground">

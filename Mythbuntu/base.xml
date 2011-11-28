@@ -962,4 +962,92 @@
         </imagetype>
     </window>
 
+    <window name="MythMetadataResults">
+        <area>-1,-1,1100,600</area>
+        <shape name="backimg" from="basebackground">
+            <area>0,0,1100,600</area>
+        </shape>
+        <buttonlist name="results" from="basebuttonlist">
+            <area>20,20,1060,560</area>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <shape name="buttonbackground">
+                        <type>roundbox</type>
+                        <area>0,0,100%,100</area>
+                        <fill color="#666666" alpha="50" />
+                        <cornerradius>15</cornerradius>
+                    </shape>
+                    <imagetype name="buttonimage">
+                        <area>10,10,150,80</area>
+                        <preserveaspect>true</preserveaspect>
+                    </imagetype>
+                    <textarea name="buttontext">
+                        <area>0,0,0,0</area>
+                    </textarea>
+                    <textarea name="title">
+                        <area>170,10,780,40</area>
+                        <align>left,vcenter</align>
+                        <font>basemedium</font>
+                    </textarea>
+                    <textarea name="subtitle">
+                        <area>170,60,880,40</area>
+                        <align>left,vcenter</align>
+                        <font>basesmall</font>
+                    </textarea>
+                    <textarea name="year">
+                        <area>950,10,100,40</area>
+                        <align>right,vcenter</align>
+                        <font>basemedium</font>
+                    </textarea>
+                </state>
+                <state name="selectedactive" from="active">
+                    <shape name="buttonbackground">
+                        <type>roundbox</type>
+                        <area>0,0,100%,100</area>
+                        <fill color="#FFFFFF" alpha="50" />
+                        <cornerradius>15</cornerradius>
+                    </shape>
+                </state>
+            </statetype>
+        </buttonlist>
+    </window>
+    <window name="MythArtworkResults">
+        <area>-1,-1,1100,600</area>
+        <shape name="backimg" from="basebackground">
+            <area>0,0,1100,600</area>
+        </shape>
+        <buttonlist name="results" from="basebuttonlist">
+            <area>20,20,1060,560</area>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <shape name="buttonbackground">
+                        <type>roundbox</type>
+                        <area>0,0,100%,100</area>
+                        <fill color="#666666" alpha="50" />
+                        <cornerradius>15</cornerradius>
+                    </shape>
+                    <imagetype name="buttonimage">
+                        <area>10,10,300,80</area>
+                        <preserveaspect>true</preserveaspect>
+                    </imagetype>
+                    <textarea name="buttontext">
+                        <area>0,0,0,0</area>
+                    </textarea>
+                    <textarea name="resolution">
+                        <area>310,10,900,80</area>
+                        <align>left,vcenter</align>
+                        <font>basemedium</font>
+                    </textarea>
+                </state>
+                <state name="selectedactive" from="active">
+                    <shape name="buttonbackground">
+                        <type>roundbox</type>
+                        <area>0,0,100%,100</area>
+                        <fill color="#FFFFFF" alpha="50" />
+                        <cornerradius>15</cornerradius>
+                    </shape>
+                </state>
+            </statetype>
+        </buttonlist>
+    </window>
 </mythuitheme>

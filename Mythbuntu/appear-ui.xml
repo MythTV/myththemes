@@ -2,9 +2,9 @@
 <mythuitheme>
     <window name="appearance">
 
-	<imagetype name="backimg">
-	    <filename>background.png</filename>
-	</imagetype>
+        <imagetype name="backimg">
+            <filename>background.png</filename>
+        </imagetype>
 
         <fontdef name="title" from="basesmall">
             <color>#ffffff</color>

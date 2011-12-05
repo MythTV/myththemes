@@ -3,10 +3,10 @@
 
     <window name="news">
 
-	<imagetype name="newsbackground">
-	    <filename>background.png</filename>
-	    <position>0,0</position>
-	</imagetype>
+        <imagetype name="newsbackground">
+            <filename>background.png</filename>
+            <position>0,0</position>
+        </imagetype>
 
         <shape name="headingbox">
             <area>10,10,780,60</area>
@@ -38,7 +38,7 @@
         <textarea name="heading" from="basetextarea">
             <area>50,10,680,60</area>
             <font>baselarge</font>
-	    <value>News Feeds</value>
+            <value>News Feeds</value>
     	    <align>left,vcenter</align>
         </textarea>
 

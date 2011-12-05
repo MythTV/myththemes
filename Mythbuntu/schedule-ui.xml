@@ -66,12 +66,12 @@
             <statetype name="buttonitem">
                 <area>0,0,258,36</area>
                 <state name="active">
-             <shape name="buttonbackground">
-             <area>0,0,258,36</area>
-             <fill color="#222222" alpha="150" />
-             <type>roundbox</type>
-             <cornerradius>18</cornerradius>
-             </shape>
+                    <shape name="buttonbackground">
+                        <area>0,0,258,36</area>
+                        <fill color="#222222" alpha="150" />
+                        <type>roundbox</type>
+                        <cornerradius>18</cornerradius>
+                    </shape>
                     <textarea name="buttontext" from="basetextarea">
                         <area>10,0,238,36</area>
                         <font>basesmall</font>
@@ -116,12 +116,12 @@
             <statetype name="buttonitem">
                 <area>0,0,190,74</area>
                 <state name="active">
-             <shape name="buttonbackground">
-             <area>0,0,190,78</area>
-             <fill color="#222222" alpha="150" />
-             <type>roundbox</type>
-             <cornerradius>10</cornerradius>
-             </shape>
+                    <shape name="buttonbackground">
+                        <area>0,0,190,78</area>
+                        <fill color="#222222" alpha="150" />
+                        <type>roundbox</type>
+                        <cornerradius>10</cornerradius>
+                    </shape>
                     <imagetype name="channelicon">
                         <area>10,15,40,40</area>
                     </imagetype>
@@ -427,12 +427,12 @@
 
     <window name="manualschedule">
 
-<shape name="titlebox" from="baseboxbackground">
+        <shape name="titlebox" from="baseboxbackground">
             <area>10,10,780,60</area>
             <cornerradius>30</cornerradius>
         </shape>
 
-<shape name="infobox" from="baseboxbackground">
+        <shape name="infobox" from="baseboxbackground">
             <area>15,80,1250,630</area>
         </shape>
 
@@ -920,7 +920,7 @@
     <window name="phrasepopup">
         <area>-1,-1,500,500</area>
 
-<shape name="box" from="basebackground">
+        <shape name="box" from="basebackground">
             <area>0,0,500,500</area>
         </shape>
 
@@ -975,7 +975,7 @@
     <window name="timepopup">
         <area>-1,-1,580,165</area>
 
-<shape name="box" from="basebackground">
+        <shape name="box" from="basebackground">
             <area>0,0,580,165</area>
         </shape>
 
@@ -1003,7 +1003,7 @@
     <window name="powersearchpopup">
         <area>-1,-1,500,500</area>
 
-<shape name="box" from="basebackground">
+        <shape name="box" from="basebackground">
             <area>0,0,500,500</area>
         </shape>
 
@@ -1054,8 +1054,8 @@
     <window name="editpowersearchpopup">
         <area>-1,-1,500,550</area>
 
-<shape name="box" from="basebackground">
-<area>0,0,500,550</area>
+        <shape name="box" from="basebackground">
+            <area>0,0,500,550</area>
         </shape>
 
         <textarea name="title_text" from="basetextarea">
@@ -1115,12 +1115,12 @@
 
     <window name="programlist">
 
-<shape name="titlebox" from="baseboxbackground">
+        <shape name="titlebox" from="baseboxbackground">
             <area>10,10,780,60</area>
             <cornerradius>30</cornerradius>
         </shape>
 
-<shape name="currviewbox" from="baseboxbackground">
+        <shape name="currviewbox" from="baseboxbackground">
             <area>800,10,470,60</area>
             <cornerradius>30</cornerradius>
         </shape>
@@ -1239,7 +1239,7 @@
     <window name="searchpopup" from="MythTextInputDialog">
         <area>-1,10,580,165</area>
 
-<shape name="backimg" from="basebackground">
+        <shape name="backimg" from="basebackground">
             <area>0,0,580,165</area>
         </shape>
 
@@ -1549,7 +1549,7 @@
 
     <window name="customedit">
 
-<shape name="titlebox" from="baseboxbackground">
+        <shape name="titlebox" from="baseboxbackground">
             <area>10,10,780,60</area>
             <cornerradius>30</cornerradius>
         </shape>
@@ -1682,7 +1682,7 @@
 
     <window name="scheduleeditor">
 
-<shape name="titlebox" from="baseboxbackground">
+        <shape name="titlebox" from="baseboxbackground">
             <area>10,10,780,60</area>
             <cornerradius>30</cornerradius>
         </shape>
@@ -1776,7 +1776,7 @@
 
     <window name="scheduleoptionseditor">
 
-<shape name="titlebox" from="baseboxbackground">
+        <shape name="titlebox" from="baseboxbackground">
             <area>10,10,780,60</area>
             <cornerradius>30</cornerradius>
         </shape>
@@ -1872,7 +1872,7 @@
 
     <window name="storageoptionseditor">
 
-<shape name="titlebox" from="baseboxbackground">
+        <shape name="titlebox" from="baseboxbackground">
             <area>10,10,780,60</area>
             <cornerradius>30</cornerradius>
         </shape>
@@ -1962,7 +1962,7 @@
 
     <window name="postproceditor">
 
-<shape name="titlebox" from="baseboxbackground">
+        <shape name="titlebox" from="baseboxbackground">
             <area>10,10,780,60</area>
             <cornerradius>30</cornerradius>
         </shape>

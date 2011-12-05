@@ -2,9 +2,9 @@
 
     <window name="channeloverview">
 
-	<imagetype name="backimg">
-	    <filename>background.png</filename>
-	</imagetype>
+        <imagetype name="backimg">
+            <filename>background.png</filename>
+        </imagetype>
               
         <textarea name="pagetitle">
             <area>20,5,570,40</area>

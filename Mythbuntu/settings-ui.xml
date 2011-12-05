@@ -205,8 +205,7 @@
             </statetype>
             <statetype name="upscrollarrow">
                 <position>520,630</position>
-                <state type="off">
-                </state>
+                <state type="off"></state>
                 <state type="full">
                     <imagetype name="upon">
                         <filename>lb-uparrow-reg.png</filename>
@@ -216,8 +215,7 @@
             </statetype>
             <statetype name="downscrollarrow">
                 <position>550,630</position>
-                <state type="off">
-                </state>
+                <state type="off"></state>
                 <state type="full">
                     <imagetype name="dnon">
                         <filename>lb-dnarrow-reg.png</filename>

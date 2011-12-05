@@ -442,7 +442,7 @@ Common MythArchive window definitions
         </textarea>
 
         <button name="cancel_button" from="basebutton">
-            <position>55,650</position >
+            <position>55,650</position>
             <value>Cancel</value>
         </button>
 

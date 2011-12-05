@@ -32,10 +32,8 @@
                 <area>20,20,1240,400</area>
                 <listsize>0,0,372,400</listsize>
                 <leveloffset>12</leveloffset>
-                <gradient type="unselected" start="#333333" end="#333333" alpha="50">
-                </gradient>
-                <gradient type="selected" start="#666666" end="#666666" alpha="50">
-                </gradient>
+                <gradient type="unselected" start="#333333" end="#333333" alpha="50"></gradient>
+                <gradient type="selected" start="#666666" end="#666666" alpha="50"></gradient>
                 <fcnfont name="active" function="active"></fcnfont>
                 <fcnfont name="inactive" function="inactive"></fcnfont>
             </listtreearea>
@@ -1060,7 +1058,7 @@
 
     <window name="miniplayer">
         <area>-1,5,590,190</area>
-	<shape name="track_info_background" from="basebackground">
+        <shape name="track_info_background" from="basebackground">
             <area>10,10,569,170</area>
         </shape>
 
@@ -1101,17 +1099,17 @@
             <area>22,22,144,144</area>
         </imagetype>
 
-    <progressbar name="progress">
-        <area>170,150,10,10</area>
-        <layout>horizontal</layout>
-        <style>reveal</style>
-        <imagetype name="background">
-            <filename>mm_progress-bg.png</filename>
-        </imagetype>
-        <imagetype name="progressimage">
-            <filename>mm_progress-fg.png</filename>
-        </imagetype>
-    </progressbar>
-</window>
+        <progressbar name="progress">
+            <area>170,150,10,10</area>
+            <layout>horizontal</layout>
+            <style>reveal</style>
+            <imagetype name="background">
+                <filename>mm_progress-bg.png</filename>
+            </imagetype>
+            <imagetype name="progressimage">
+                <filename>mm_progress-fg.png</filename>
+            </imagetype>
+        </progressbar>
+    </window>
 
 </mythuitheme>

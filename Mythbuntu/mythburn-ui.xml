@@ -275,7 +275,7 @@ MythArchive GUI theme
                         <font>basesmallyellow</font>
                     </textarea>
                 </state>
-               <state name="selectedinactive" from="active">
+                <state name="selectedinactive" from="active">
                     <imagetype name="buttonbackground">
                         <gradient start="#52CA38" end="#349838" alpha="100" />
                     </imagetype>

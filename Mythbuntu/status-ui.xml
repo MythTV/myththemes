@@ -39,13 +39,13 @@
             <statetype name="buttonitem">
                 <area>0,0,180,40</area>
                 <state name="active">
-	            <shape name="list_background">
-	                <area>0,0,190,40</area>
-	                <type>roundbox</type>
-	                <fill color="#999999" alpha="50" />
-	                <line color="#FFFFFF" alpha="0" width="0" />
-	                <cornerradius>20</cornerradius>
-	            </shape>
+                    <shape name="list_background">
+                        <area>0,0,190,40</area>
+                        <type>roundbox</type>
+                        <fill color="#999999" alpha="50" />
+                        <line color="#FFFFFF" alpha="0" width="0" />
+                        <cornerradius>20</cornerradius>
+                    </shape>
                     <textarea name="buttontext" from="basetextarea">
                         <area>5,0,180,40</area>
                         <font>basesmall</font>
@@ -55,22 +55,22 @@
                     </textarea>
                 </state>
                 <state name="selectedactive" from="active">
-	            <shape name="list_background">
-	                <area>0,0,190,40</area>
-	                <type>roundbox</type>
-	                <fill color="#ffffff" alpha="50" />
-	                <line color="#FFFFFF" alpha="0" width="0" />
-	                <cornerradius>20</cornerradius>
-	            </shape>
+                    <shape name="list_background">
+                        <area>0,0,190,40</area>
+                        <type>roundbox</type>
+                        <fill color="#ffffff" alpha="50" />
+                        <line color="#FFFFFF" alpha="0" width="0" />
+                        <cornerradius>20</cornerradius>
+                    </shape>
                 </state>
                 <state name="selectedinactive" from="active">
-	            <shape name="list_background">
-	                <area>0,0,190,40</area>
-	                <type>roundbox</type>
-	                <fill color="#ffffff" alpha="25" />
-	                <line color="#FFFFFF" alpha="0" width="0" />
-	                <cornerradius>20</cornerradius>
-	            </shape>
+                    <shape name="list_background">
+                        <area>0,0,190,40</area>
+                        <type>roundbox</type>
+                        <fill color="#ffffff" alpha="25" />
+                        <line color="#FFFFFF" alpha="0" width="0" />
+                        <cornerradius>20</cornerradius>
+                    </shape>
                 </state>
             </statetype>
             <statetype name="downscrollarrow">

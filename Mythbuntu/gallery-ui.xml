@@ -3,17 +3,17 @@
 
     <window name="gallery">
 
-    <fontdef name="menu" from="basesmall">
-      <color>#ffffff</color>
-      <size>16</size>
-    </fontdef>
+        <fontdef name="menu" from="basesmall">
+            <color>#ffffff</color>
+            <size>16</size>
+        </fontdef>
 
-    <fontdef name="title" face="baselarge">
-      <color>#ffffff</color>
-      <shadowcolor>#666666</shadowcolor>
-      <shadow>2,2</shadow>
-      <size>24</size>
-    </fontdef>
+        <fontdef name="title" face="baselarge">
+            <color>#ffffff</color>
+            <shadowcolor>#666666</shadowcolor>
+            <shadow>2,2</shadow>
+            <size>24</size>
+        </fontdef>
 
         <buttonlist name="images">
             <area>0,70,1280,520</area>
@@ -24,12 +24,12 @@
                 <area>0,0,150,115</area>
                 <state name="active">
             	    <shape name="btnbckgrnd">
-            		<area>0,0,150,115</area>
-        		<type>roundbox</type> 
-            		<fill color="#666666" alpha="50" />
-            		<line color="#FFFFFF" alpha="0" width="0" /> 
-            		<cornerradius>10</cornerradius> 
-            	    </shape>
+                        <area>0,0,150,115</area>
+                        <type>roundbox</type> 
+                        <fill color="#666666" alpha="50" />
+                        <line color="#FFFFFF" alpha="0" width="0" /> 
+                        <cornerradius>10</cornerradius> 
+                    </shape>
                     <imagetype name="buttonimage">
                         <area>5,5,140,105</area>
                         <preserveaspect>yes</preserveaspect>
@@ -69,31 +69,31 @@
         </buttonlist>
 
         <shape name="infobox">
-	    <area>-10,600,1300,150</area>.
-	    <type>box</type>.
+            <area>-10,600,1300,150</area>
+            <type>box</type>
             <fill color="#000000" alpha="100" />
-            <line color="#FFFFFF" alpha="200" width="3" />.
+            <line color="#FFFFFF" alpha="200" width="3" />
         </shape>
 
-      <textarea name="help1" draworder="1">
-        <area>0,620,1280,35</area>
-        <font>menu</font>
-        <align>allcenter</align>
-        <value>SELECT: View</value>
-      </textarea>
+        <textarea name="help1" draworder="1">
+            <area>0,620,1280,35</area>
+            <font>menu</font>
+            <align>allcenter</align>
+            <value>SELECT: View</value>
+        </textarea>
 
-      <textarea name="help2" draworder="1">
-        <area>0,660,1280,35</area>
-        <font>menu</font>
-        <align>allcenter</align>
-        <value>MENU: Activate Menu</value>
-      </textarea>
+        <textarea name="help2" draworder="1">
+            <area>0,660,1280,35</area>
+            <font>menu</font>
+            <align>allcenter</align>
+            <value>MENU: Activate Menu</value>
+        </textarea>
 
         <shape name="titlebox">
-	    <area>-10,-10,1300,65</area>.
-	    <type>box</type>.
+            <area>-10,-10,1300,65</area>
+            <type>box</type>
             <fill color="#000000" alpha="100" />
-            <line color="#FFFFFF" alpha="200" width="3" />.
+            <line color="#FFFFFF" alpha="200" width="3" />
         </shape>
 
         <textarea name="title" from="basetextarea">

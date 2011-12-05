@@ -36,11 +36,11 @@
                 <state name="active">
                     <area>0,0,700,60</area>
                     <shape name="slctbr">
-                	<area>0,0,680,60</area>
-		        <type>roundbox</type> 
-		        <fill color="#666666" alpha="50" />
-        	        <cornerradius>30</cornerradius> 
-        	    </shape>
+                        <area>0,0,680,60</area>
+                        <type>roundbox</type> 
+                        <fill color="#666666" alpha="50" />
+                        <cornerradius>30</cornerradius> 
+                    </shape>
                     <textarea name="buttontext">
                         <area>30,0,620,60</area>
                         <font>menufont</font>
@@ -50,11 +50,11 @@
                 </state>
                 <state name="selectedactive" from="active">
                     <shape name="slctbr">
-                	<area>-10,-10,700,80</area>
-		        <type>roundbox</type> 
-		        <fill color="#FFFFFF" alpha="50" />
-        	        <cornerradius>40</cornerradius> 
-        	    </shape>
+                        <area>-10,-10,700,80</area>
+                        <type>roundbox</type> 
+                        <fill color="#FFFFFF" alpha="50" />
+                        <cornerradius>40</cornerradius> 
+                    </shape>
                     <textarea name="buttontext">
                         <area>30,-10,640,80</area>
                         <font>selectedmenufont</font>
@@ -92,14 +92,14 @@
             <state name="DVD_SETTINGS_GENERAL">
                 <imagetype name="watermark">
                     <filename>watermark/dvd.png</filename>
-	            <position>0,0</position>
+                    <position>0,0</position>
                 </imagetype>
             </state>
 
             <state name="DVD_SETTINGS_PLAY">
                 <imagetype name="watermark">
                     <filename>watermark/dvd.png</filename>
-	            <position>0,0</position>
+                    <position>0,0</position>
                 </imagetype>
             </state>
 
@@ -129,7 +129,7 @@
             <state name="DISC_PLAY">
                 <imagetype name="watermark">
                     <filename>watermark/dvd.png</filename>
-		    <position>0,0</position>
+                    <position>0,0</position>
                 </imagetype>
             </state>
 
@@ -186,7 +186,7 @@
             <state name="DVD">
                 <imagetype name="watermark">
                     <filename>watermark/dvd.png</filename>
-		    <position>0,0</position>
+                    <position>0,0</position>
                 </imagetype>
             </state>
 
@@ -778,36 +778,6 @@
                 </imagetype>
             </state>
 
-            <state name="NETFLIX">
-                <imagetype name="watermark">
-                    <filename>watermark/netflix.png</filename>
-                </imagetype>
-            </state>
-
-            <state name="SETTINGS_NETFLIX">
-                <imagetype name="watermark">
-                    <filename>watermark/netflix.png</filename>
-                </imagetype>
-            </state>
-
-            <state name="NETFLIX_QUEUE">
-                <imagetype name="watermark">
-                    <filename>watermark/netflix.png</filename>
-                </imagetype>
-            </state>
-
-            <state name="NETFLIX_BROWSE">
-                <imagetype name="watermark">
-                    <filename>watermark/netflix.png</filename>
-                </imagetype>
-            </state>
-
-            <state name="NETFLIX_HISTORY">
-                <imagetype name="watermark">
-                    <filename>watermark/netflix.png</filename>
-                </imagetype>
-            </state>
-
             <!-- ZONEMINDER -->
 
             <state name="ZONEMINDER">
@@ -821,31 +791,19 @@
                     <filename>watermark/cctv.png</filename>
                 </imagetype>
             </state>
-
-            <state name="MOVIETIMES">
-                <imagetype name="watermark">
-                    <filename>watermark/dvd.png</filename>
-                </imagetype>
-            </state>
-
-            <state name="SETTINGS_MOVIETIME">
-                <imagetype name="watermark">
-                    <filename>watermark/dvd.png</filename>
-                </imagetype>
-            </state>
         </statetype>
 
-	<shape name="titleboxshadow">
+        <shape name="titleboxshadow">
             <area>-10,110,1300,10</area>
-	    <fill style="gradient">
-	            <gradient start="#ffffff" end="#000000" alpha="50" />
-	    </fill>
-	</shape>
+            <fill style="gradient">
+                <gradient start="#ffffff" end="#000000" alpha="50" />
+            </fill>
+        </shape>
 
-	<imagetype name="overlay">
+        <imagetype name="overlay">
             <area>0,0,1280,720</area>
             <filename>panels-with-drop.png</filename>
-	</imagetype>
+        </imagetype>
 
         <clock name="clock">
             <area>100,642,1120,60</area>

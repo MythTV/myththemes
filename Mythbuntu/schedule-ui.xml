@@ -2075,5 +2075,108 @@
             <value>Back</value>
         </button>
     </window>
+    
+    <window name="metadataoptions">
+
+        <shape name="titlebox" from="baseboxbackground">
+            <area>10,10,780,60</area>
+            <cornerradius>30</cornerradius>
+        </shape>
+
+        <shape name="details_background" from="baseboxbackground">
+            <area>125,80,1030,625</area>
+        </shape>
+
+        <shape name="clockbox" from="baseboxbackground">
+            <area>800,10,470,60</area>
+            <fill color="#000000" alpha="255" />
+            <cornerradius>30</cornerradius>
+        </shape>
+
+        <textarea name="windowtitle" from="basetextarea">
+            <area>50,10,590,60</area>
+            <value>Metadata Options</value>
+            <align>left,vcenter</align>
+            <font>baselarge</font>
+        </textarea>
+	
+        <clock name="clock">
+            <area>800,10,450,60</area>
+            <font>baselarge</font>
+            <align>vcenter,right</align>
+            <format>%DATE%, %TIME%</format>
+        </clock>
+
+	<textarea name="inet" from="basetextarea">
+            <area>320,110,180,40</area>
+            <align>right,vcenter</align>
+            <value>TMDB/TVDB #:</value>
+        </textarea>
+
+        <textedit name="inetref_edit" from="basetextedit">
+            <position>515,110</position>
+        </textedit>
+
+        <textarea name="seas" from="basetextarea">
+            <area>320,165,180,40</area>
+            <align>right,vcenter</align>
+            <value>Season:</value>
+        </textarea>
+
+        <spinbox name="season_spinbox" from="basespinbox">
+            <position>515,165</position>
+        </spinbox>
+
+        <textarea name="ep" from="basetextarea">
+            <area>610,165,180,40</area>
+            <align>right,vcenter</align>
+            <value>Episode:</value>
+        </textarea>
+
+        <spinbox name="episode_spinbox" from="basespinbox">
+            <position>805,165</position>
+        </spinbox>
+
+        <button name="query_button" from="basewidebutton">
+            <position>545,220</position>
+            <value>Perform Query</value>
+        </button>
+
+        <button name="online_coverart_button" from="basewidebutton">
+            <position>545,275</position>
+            <value>Find Online Coverart</value>
+        </button>
+
+        <button name="online_fanart_button" from="basewidebutton">
+            <position>545,330</position>
+            <value>Find Online Fanart</value>
+        </button>
+
+        <button name="online_banner_button" from="basewidebutton">
+            <position>545,385</position>
+            <value>Find Online Banners</value>
+        </button>
+
+        <button name="local_coverart_button" from="basewidebutton">
+            <position>545,440</position>
+            <value>Find Local Coverart</value>
+        </button>
+
+        <button name="local_fanart_button" from="basewidebutton">
+            <position>545,495</position>
+            <value>Find Local Fanart</value>
+        </button>
+
+        <button name="local_banner_button" from="basewidebutton">
+            <position>545,550</position>
+            <value>Find Local Banners</value>
+        </button>
+
+        <button name="back" from="basebutton">
+            <position>600,640</position>
+            <value>Back</value>
+        </button>
+    </window>
+    
 
 </mythuitheme>

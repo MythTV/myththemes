@@ -132,7 +132,7 @@
                     <cornerradius>15</cornerradius>
                 </shape>
                 <textarea name="buttontext">
-                    <area>16,0,85%,31</area>
+                    <area>16,0,94%,31</area>
                     <font>basesmallgrey</font>
                     <cutdown>yes</cutdown>
                     <align>left,vcenter</align>
@@ -163,7 +163,6 @@
             <state name="selectedactive" from="active">
                 <shape name="buttonbackground">
                     <type>roundbox</type>
-                    <area>0,0,90%,30</area>
                     <fill color="#ffffff" alpha="50" />
                     <cornerradius>15</cornerradius>
                 </shape>
@@ -174,7 +173,6 @@
             <state name="selectedinactive" from="active">
                 <shape name="buttonbackground">
                     <type>roundbox</type>
-                    <area>0,0,90%,30</area>
                     <fill color="#ffffff" alpha="50" />
                     <cornerradius>15</cornerradius>
                 </shape>

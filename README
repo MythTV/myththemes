@@ -1,7 +1,9 @@
-This module provides a number of themes for MythTV that are not distributed in
-the main download.
+The MythTV/myththemes repository is no longer active.
 
-To install:
+Active themes have been moved to https://github.com/MythTV-Themes for
+maintenance by theme authors and maintainers.
 
-$ ./configure
-$ sudo make install
+Users looking for MythTV themes should use the Theme Chooser to find and
+install those themes. The Theme Chooser is available in mythfrontend setup,
+and makes all known-working themes available, regardless of where those themes
+are hosted.
